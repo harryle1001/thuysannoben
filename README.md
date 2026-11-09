@@ -9,7 +9,8 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
   - Lọc theo nhóm, theo vấn đề ao nuôi, hoặc tìm theo tên.
   - Tìm kiếm có dấu hay không dấu đều được.
   - Mỗi sản phẩm có trang riêng: công dụng, hướng dẫn sử dụng, nút Gọi / Zalo / Gửi yêu cầu, sản phẩm liên quan.
-- **Kỹ thuật nuôi và Tin tức:** 18 bài viết từ website cũ. Mỗi bài tự liệt kê các sản phẩm được nhắc đến trong bài.
+- **Kiến thức nuôi tôm:** 28 bài (17 bài mới chuẩn SEO và 11 bài từ website cũ), chia 4 chuyên mục, có mục lục, hỏi đáp và sản phẩm liên quan.
+- **Giải pháp theo vấn đề ao nuôi:** 8 trang như "Thuốc trị phân trắng, gan tụy cho tôm", mỗi trang có dấu hiệu, các bước xử lý và sản phẩm phù hợp.
 - **Các trang khác:** Về Noben, Chứng nhận, Gia công, Liên hệ (có bản đồ), các trang chính sách.
 - **Sửa nội dung bằng cây bút:** quản trị viên đăng nhập rồi sửa chữ ngay trên trang (xem phần bên dưới).
 - **Form liên hệ:**
@@ -116,6 +117,49 @@ Trên gói Business/Cloud, file `data/leads.jsonl` có thể bị xóa mỗi l�
 
 Ảnh nằm trong `public/images/`. Sau khi sửa nội dung, khởi động lại ứng dụng (hoặc deploy lại).
 
+## Viết thêm bài kiến thức (chuẩn SEO)
+
+Bài viết nằm trong `content/kien-thuc/`, mỗi bài là một file Markdown. Phần đầu file khai báo thông tin SEO:
+
+```
+---
+title: Tiêu đề hiển thị trên trang
+seo_title: Tiêu đề cho Google, dưới 60 ký tự
+description: Mô tả 120 đến 160 ký tự, có từ khóa bà con hay tìm
+category: benh-tom | moi-truong | ky-thuat | dinh-duong
+keywords: từ khóa 1, từ khóa 2
+symptoms: gan-ruot, mem-vo        (gắn bài với trang giải pháp)
+products: prazi-s, caphote         (sản phẩm hiện bên cạnh bài)
+photo: /images/posts/....webp      (ảnh nền cho ảnh bìa)
+date: 2026-11-09
+---
+```
+
+- Dùng `## ` cho các mục lớn: website tự tạo mục lục.
+- Mục `## Câu hỏi thường gặp` với các câu hỏi `### ...` sẽ thành phần hỏi đáp mở/đóng và dữ liệu FAQ cho Google.
+- Sau khi thêm bài, tạo ảnh bìa bằng lệnh dưới, rồi khởi động lại ứng dụng.
+
+```bash
+pip install pillow fonttools brotli
+```
+
+```bash
+python3 scripts/make-covers.py
+```
+
+Kiểm tra SEO toàn bộ trang khi website đang chạy:
+
+```bash
+node scripts/seo-audit.js http://localhost:3000
+```
+
+## SEO đã có sẵn
+
+- Trang **Giải pháp** cho 8 vấn đề ao nuôi (`/giai-phap/...`) và trang **Kiến thức nuôi tôm** theo chuyên mục (`/ky-thuat-nuoi/...`).
+- Dữ liệu cấu trúc: doanh nghiệp (Organization, LocalBusiness), ô tìm kiếm Google (WebSite SearchAction), bài viết (BlogPosting), hỏi đáp (FAQPage), sản phẩm (Product), danh sách (ItemList), breadcrumb.
+- `sitemap.xml` có ảnh và ngày cập nhật, `rss.xml`, ảnh chia sẻ Facebook/Zalo riêng cho từng bài.
+- Sau khi website chạy trên tên miền thật: khai báo `https://thuysannoben.vn/sitemap.xml` trong Google Search Console và tạo hồ sơ Google Business cho địa chỉ nhà máy để hiện trên Google Maps.
+
 ## Sửa nội dung ngay trên trang (cây bút)
 
 1. Đặt biến môi trường `ADMIN_PASS` (và `ADMIN_USER` nếu muốn, mặc định là `admin`).
@@ -135,6 +179,10 @@ Thay đổi được lưu trong `data/overrides.json` trên máy chủ, đè lê
 server.js            Khởi động Express, bảo mật, nén, file tĩnh
 src/routes.js        Toàn bộ đường dẫn, SEO, chuyển hướng từ website cũ
 src/content.js       Đọc nội dung JSON, tìm kiếm, gợi ý sản phẩm liên quan
+src/articles.js      Đọc bài Markdown, tạo mục lục và FAQ
+src/seo.js           Dữ liệu cấu trúc schema.org
+content/kien-thuc/   Bài kiến thức nuôi tôm (Markdown)
+content/giai-phap.json  Nội dung 8 trang giải pháp
 src/leads.js         Xử lý form liên hệ (lưu file + gửi email)
 src/auth.js          Đăng nhập quản trị (cookie có chữ ký)
 src/sanitize.js      Làm sạch HTML khi lưu nội dung sửa trên trang

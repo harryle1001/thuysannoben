@@ -482,7 +482,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .crumbs li + li::before { content: '/'; margin-inline: 8px; opacity: 0.6; }
 .crumbs a { color: var(--muted); text-decoration: none; }
 .crumbs a:hover { color: var(--link); text-decoration: underline; }
-.crumbs [aria-current] { color: var(--text); max-width: 40ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.crumbs li { min-width: 0; max-width: 100%; }
+.crumbs [aria-current] { display: block; color: var(--text); max-width: min(40ch, 72vw); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* ---------- Catalog ---------- */
 .catalog { display: grid; gap: var(--space-6); padding-block: var(--space-6) var(--space-8); }
