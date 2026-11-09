@@ -27,6 +27,10 @@
       </div>
     </nav>
     <div class="site-header__actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Chuyển sang giao diện tối" aria-pressed="false">
+        <svg class="ico ico--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="ico ico--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
       <a class="btn btn--sun site-header__call" href="<%= tel(company.hotline) %>">
         <svg class="ico"><use href="#i-phone"/></svg>
         <span><small>Hotline kỹ thuật</small><%- ef('company.hotline', company.hotline) %></span>

@@ -44,10 +44,22 @@
 </footer>
 
 <nav class="action-bar" aria-label="Liên hệ nhanh">
-  <a href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi ngay</a>
-  <a href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>Zalo</a>
+  <a href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
   <a href="/lien-he"><svg class="ico"><use href="#i-mail"/></svg>Để lại lời nhắn</a>
 </nav>
+
+<div class="float-chat" role="group" aria-label="Nhắn tin với Noben">
+  <a class="float-chat__btn float-chat__btn--zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener" aria-label="Chat Zalo với Noben, số <%= company.hotline %>">
+    <span class="float-chat__zalo" aria-hidden="true">Zalo</span>
+    <span class="float-chat__tip" aria-hidden="true">Chat Zalo</span>
+  </a>
+  <% if (company.messenger) { %>
+  <a class="float-chat__btn float-chat__btn--messenger" href="<%= company.messenger %>" target="_blank" rel="noopener" aria-label="Nhắn tin Messenger với Noben">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.14.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm6 7.46-2.94 4.66c-.47.75-1.47.93-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66c.47-.75 1.47-.93 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.69.63z"/></svg>
+    <span class="float-chat__tip" aria-hidden="true">Nhắn Messenger</span>
+  </a>
+  <% } %>
+</div>
 
 <dialog class="lightbox" data-lightbox aria-label="Xem ảnh">
   <button class="lightbox__close" type="button" data-lb-close><svg class="ico"><use href="#i-x"/></svg><span class="sr-only">Đóng</span></button>
