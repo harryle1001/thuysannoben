@@ -4,7 +4,7 @@ const c = require('./content');
 const leads = require('./leads');
 
 const router = express.Router();
-const SITE_URL = (process.env.SITE_URL || 'https://thuocthuysannoben.com').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
 
 // Values every template can use.
 router.use((req, res, next) => {

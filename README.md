@@ -46,7 +46,8 @@ Sao chép `.env.example` thành `.env` rồi điền thông tin. Trên Hostinger
 
 | Biến | Ý nghĩa |
 |------|---------|
-| `SITE_URL` | Tên miền chính, ví dụ `https://thuocthuysannoben.com` |
+| `SITE_URL` | Tên miền chính: `https://thuysannoben.vn` |
+| `OLD_HOSTS` | Tên miền cũ hoặc phụ sẽ tự chuyển 301 sang tên miền chính. Mặc định: `thuocthuysannoben.com`, `www.thuocthuysannoben.com`, `www.thuysannoben.vn` |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` | Hộp thư dùng để gửi email báo khi có khách điền form |
 | `MAIL_TO` | Email nhận thông báo khách liên hệ |
 | `ADMIN_USER`, `ADMIN_PASS` | Tài khoản xem danh sách khách tại `/quan-tri/lien-he` |
@@ -66,7 +67,12 @@ Hostinger chạy ứng dụng Node.js trên gói **Business / Cloud** (mục Nod
    - Lệnh start: `npm start`
    - File khởi động: `server.js`
 5. Thêm biến môi trường theo bảng ở trên, sau đó bấm Deploy.
-6. Trỏ tên miền về ứng dụng và bật SSL.
+6. Trỏ tên miền `thuysannoben.vn` (và `www.thuysannoben.vn`) về ứng dụng và bật SSL.
+7. Nếu công ty còn giữ tên miền cũ `thuocthuysannoben.com`, trỏ nó về cùng ứng dụng: website sẽ tự chuyển 301 sang `thuysannoben.vn`.
+
+### Tên miền .vn
+
+Tên miền `.vn` mua qua nhà đăng ký trong nước được VNNIC công nhận (Mắt Bão, PA Vietnam, Nhân Hòa, iNET…), cần CCCD hoặc giấy phép kinh doanh. Sau khi mua, tại trang quản lý tên miền đổi nameserver sang Hostinger, hoặc tạo bản ghi A trỏ về IP mà Hostinger cung cấp cho ứng dụng.
 
 Mỗi lần push lên GitHub, bạn bấm Deploy lại (hoặc bật tự động deploy nếu hPanel có hỗ trợ).
 
