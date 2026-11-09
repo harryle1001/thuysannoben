@@ -11,6 +11,7 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
   - Mỗi sản phẩm có trang riêng: công dụng, hướng dẫn sử dụng, nút Gọi / Zalo / Gửi yêu cầu, sản phẩm liên quan.
 - **Kỹ thuật nuôi và Tin tức:** 18 bài viết từ website cũ. Mỗi bài tự liệt kê các sản phẩm được nhắc đến trong bài.
 - **Các trang khác:** Về Noben, Chứng nhận, Gia công, Liên hệ (có bản đồ), các trang chính sách.
+- **Sửa nội dung bằng cây bút:** quản trị viên đăng nhập rồi sửa chữ ngay trên trang (xem phần bên dưới).
 - **Form liên hệ:**
   - Kiểm tra lỗi ngay khi nhập, chống spam.
   - Lưu vào `data/leads.jsonl` và gửi email nếu đã cấu hình SMTP.
@@ -50,7 +51,8 @@ Sao chép `.env.example` thành `.env` rồi điền thông tin. Trên Hostinger
 | `OLD_HOSTS` | Tên miền cũ hoặc phụ sẽ tự chuyển 301 sang tên miền chính. Mặc định: `thuocthuysannoben.com`, `www.thuocthuysannoben.com`, `www.thuysannoben.vn` |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` | Hộp thư dùng để gửi email báo khi có khách điền form |
 | `MAIL_TO` | Email nhận thông báo khách liên hệ |
-| `ADMIN_USER`, `ADMIN_PASS` | Tài khoản xem danh sách khách tại `/quan-tri/lien-he` |
+| `ADMIN_USER`, `ADMIN_PASS` | Tài khoản quản trị: sửa nội dung bằng cây bút và xem khách liên hệ tại `/quan-tri/lien-he` |
+| `SESSION_SECRET` | (Không bắt buộc) chuỗi bí mật để ký phiên đăng nhập |
 
 ## Triển khai lên Hostinger
 
@@ -114,6 +116,19 @@ Trên gói Business/Cloud, file `data/leads.jsonl` có thể bị xóa mỗi l�
 
 Ảnh nằm trong `public/images/`. Sau khi sửa nội dung, khởi động lại ứng dụng (hoặc deploy lại).
 
+## Sửa nội dung ngay trên trang (cây bút)
+
+1. Đặt biến môi trường `ADMIN_PASS` (và `ADMIN_USER` nếu muốn, mặc định là `admin`).
+2. Vào `/quan-tri/dang-nhap` và đăng nhập. Phiên đăng nhập kéo dài 7 ngày.
+3. Ở góc dưới bên trái mỗi trang có **nút cây bút**. Bấm vào, các chữ sửa được sẽ có viền nét đứt: tên và mô tả sản phẩm, công dụng, hướng dẫn sử dụng, tiêu đề và nội dung bài viết, các trang chính sách, thông tin công ty (hotline, địa chỉ, email, tầm nhìn, sứ mệnh) và các tiêu đề, đoạn giới thiệu trên trang chủ, Gia công, Liên hệ.
+4. Bấm vào chữ, sửa, rồi bấm **Lưu thay đổi**. Người xem thấy ngay nội dung mới.
+
+Người xem bình thường không thấy cây bút. Nội dung sửa được làm sạch trước khi lưu (chỉ giữ in đậm, nghiêng, danh sách, chỉ số trên/dưới).
+
+Thay đổi được lưu trong `data/overrides.json` trên máy chủ, đè lên nội dung gốc trong `content/`. File này không nằm trong Git, nên:
+- Trên **VPS**, file được giữ nguyên khi cập nhật code bằng `git pull`.
+- Trên gói **Business/Cloud**, một lần deploy lại có thể xóa file này. Trước khi deploy lại, vào menu cây bút → **Tải nội dung đã sửa** để tải bản sao, rồi gửi cho người phát triển đưa vào `content/` hoặc đặt lại file vào `data/overrides.json`.
+
 ## Cấu trúc thư mục
 
 ```
@@ -121,6 +136,9 @@ server.js            Khởi động Express, bảo mật, nén, file tĩnh
 src/routes.js        Toàn bộ đường dẫn, SEO, chuyển hướng từ website cũ
 src/content.js       Đọc nội dung JSON, tìm kiếm, gợi ý sản phẩm liên quan
 src/leads.js         Xử lý form liên hệ (lưu file + gửi email)
+src/auth.js          Đăng nhập quản trị (cookie có chữ ký)
+src/sanitize.js      Làm sạch HTML khi lưu nội dung sửa trên trang
+public/js/editor.js  Nút cây bút và chế độ sửa trên trang
 views/               Giao diện EJS (partials/ và pages/)
 public/              CSS, JS, font, ảnh
 content/             Nội dung website

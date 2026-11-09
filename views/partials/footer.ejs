@@ -6,15 +6,15 @@
         <img src="/images/brand/logo-noben.webp" width="56" height="56" alt="" loading="lazy">
         <span class="brand__text"><strong>Noben</strong><small>Thuốc thủy sản</small></span>
       </a>
-      <p><%= company.legal %> sản xuất, gia công và phân phối thuốc thú y thủy sản, chế phẩm sinh học và thức ăn bổ sung cho ao tôm, cá.</p>
+      <p><%- tx('footer-about', 'CÔNG TY TNHH NOBEN sản xuất, gia công và phân phối thuốc thú y thủy sản, chế phẩm sinh học và thức ăn bổ sung cho ao tôm, cá.') %></p>
       <p class="site-footer__cert"><svg class="ico"><use href="#i-shield"/></svg> Nhà máy đạt ISO 9001:2015</p>
     </div>
     <div>
       <h2 class="site-footer__title">Liên hệ</h2>
       <ul class="contact-list">
-        <li><svg class="ico"><use href="#i-pin"/></svg><span><%= company.address %></span></li>
-        <li><svg class="ico"><use href="#i-phone"/></svg><span>Hotline <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a><br>Phòng kinh doanh <% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= p %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></span></li>
-        <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:<%= company.email %>"><%= company.email %></a></li>
+        <li><svg class="ico"><use href="#i-pin"/></svg><span><%- ef('company.address', company.address) %></span></li>
+        <li><svg class="ico"><use href="#i-phone"/></svg><span>Hotline <a href="<%= tel(company.hotline) %>"><%- ef('company.hotline', company.hotline) %></a><br>Phòng kinh doanh <% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= p %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></span></li>
+        <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:<%= company.email %>"><%- ef('company.email', company.email) %></a></li>
       </ul>
     </div>
     <div>

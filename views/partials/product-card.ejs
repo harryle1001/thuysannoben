@@ -3,8 +3,8 @@
     <div class="pcard__media"><%- img(p.image, { alt: p.name, sizes: '(min-width: 1100px) 220px, 45vw' }) %></div>
     <div class="pcard__body">
       <p class="cat-tag cat-tag--<%= p.category %>"><%= p.categoryInfo.name %></p>
-      <h3 class="pcard__name"><%= p.name %></h3>
-      <p class="pcard__tagline"><%= p.tagline %></p>
+      <h3 class="pcard__name"><%- ef(`products.${p.slug}.name`, p.name) %></h3>
+      <p class="pcard__tagline"><%- ef(`products.${p.slug}.tagline`, p.tagline) %></p>
     </div>
   </a>
 </article>

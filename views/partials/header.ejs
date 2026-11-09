@@ -29,7 +29,7 @@
     <div class="site-header__actions">
       <a class="btn btn--sun site-header__call" href="<%= tel(company.hotline) %>">
         <svg class="ico"><use href="#i-phone"/></svg>
-        <span><small>Hotline kỹ thuật</small><%= company.hotline %></span>
+        <span><small>Hotline kỹ thuật</small><%- ef('company.hotline', company.hotline) %></span>
       </a>
       <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" data-menu-toggle>
         <svg class="ico ico--open"><use href="#i-menu"/></svg>

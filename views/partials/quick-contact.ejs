@@ -1,8 +1,8 @@
 <section class="section quick-contact" aria-labelledby="qc-title">
   <div class="wrap quick-contact__grid">
     <div class="quick-contact__intro">
-      <h2 id="qc-title" class="h2"><%= locals.title || 'Cần tư vấn cho ao của bạn?' %></h2>
-      <p class="lead">Kỹ thuật viên Noben tư vấn miễn phí: cách dùng, liều lượng, phối hợp sản phẩm, và giá cho đại lý.</p>
+      <h2 id="qc-title" class="h2"><% if (locals.title) { %><%= title %><% } else { %><%- tx('qc-title', 'Cần tư vấn cho ao của bạn?') %><% } %></h2>
+      <p class="lead"><%- tx('qc-lead', 'Kỹ thuật viên Noben tư vấn miễn phí: cách dùng, liều lượng, phối hợp sản phẩm, và giá cho đại lý.') %></p>
       <a class="phone-big" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
       <p class="quick-contact__alt">hoặc phòng kinh doanh <a href="<%= tel(company.phones[0]) %>"><%= company.phones[0] %></a>, <a href="<%= tel(company.phones[2]) %>"><%= company.phones[2] %></a></p>
     </div>

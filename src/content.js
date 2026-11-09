@@ -1,11 +1,13 @@
 'use strict';
 // Loads the JSON content once at startup and builds lookup indexes.
-// To edit products, posts or company details, change the files in /content and restart.
+// Edits made with the on-page editor are stored in data/overrides.json and applied on top of /content.
 const fs = require('fs');
 const path = require('path');
+const { sanitizeHtml, sanitizeText } = require('./sanitize');
 
 const dir = path.join(__dirname, '..', 'content');
 const read = (name) => JSON.parse(fs.readFileSync(path.join(dir, `${name}.json`), 'utf8'));
+const overridesFile = path.join(__dirname, '..', 'data', 'overrides.json');
 
 const company = read('company');
 const categories = read('categories');
@@ -13,6 +15,7 @@ const products = read('products');
 const posts = read('posts');
 const pages = read('pages');
 const symptoms = read('symptoms');
+const texts = {};
 
 const categoryBySlug = Object.fromEntries(categories.map((c) => [c.slug, c]));
 const categoryByOldSlug = Object.fromEntries(categories.map((c) => [c.old_slug, c]));
@@ -29,7 +32,7 @@ const fold = (s) =>
     .replace(/Đ/g, 'D')
     .toLowerCase();
 
-for (const p of products) {
+function refreshProduct(p) {
   p.url = `/san-pham/${p.slug}`;
   p.categoryInfo = categoryBySlug[p.category];
   p.image = p.images[0] || null;
@@ -49,6 +52,92 @@ for (const p of posts) {
   const d = new Date(p.date + 'T00:00:00+07:00');
   p.dateLabel = d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
 }
+
+/* ---------- On-page editing ----------
+   A key names one editable value, for example:
+     company.hotline            company.values.2
+     products.prazi-s.tagline   products.prazi-s.uses.0
+     posts.<slug>.body          pages.<slug>.body
+     categories.<slug>.blurb    texts.home-hero-title
+   "rich" values keep simple formatting (bold, lists, superscript); "text" values are plain. */
+const FIELDS = {
+  company: { hotline: 'text', address: 'text', email: 'text', vision: 'text', mission: 'text', 'phones.*': 'text', 'values.*': 'text', 'overview.*': 'text' },
+  products: { name: 'text', tagline: 'text', packaging: 'text', 'uses.*': 'rich', 'dose.*': 'rich', 'composition.*': 'rich' },
+  posts: { title: 'text', excerpt: 'text', body: 'rich' },
+  categories: { name: 'text', blurb: 'text' },
+  pages: { title: 'text', body: 'rich' },
+};
+const COLLECTIONS = { products: productBySlug, posts: postBySlug, categories: categoryBySlug, pages };
+
+// Resolve a key to { obj, prop, type } or null when it is not an editable field.
+function resolve(key) {
+  if (typeof key !== 'string' || key.length > 200) return null;
+  const parts = key.split('.');
+  if (parts[0] === 'texts') return parts.length === 2 && /^[a-z0-9-]+$/.test(parts[1]) ? { obj: texts, prop: parts[1], type: 'text', create: true } : null;
+  if (parts[0] === 'company') {
+    const [, field, idx] = parts;
+    const spec = FIELDS.company[idx === undefined ? field : `${field}.*`];
+    if (!spec) return null;
+    if (idx === undefined) return { obj: company, prop: field, type: spec };
+    const arr = company[field];
+    const i = Number(idx);
+    return Array.isArray(arr) && Number.isInteger(i) && i >= 0 && i < arr.length ? { obj: arr, prop: i, type: spec } : null;
+  }
+  const coll = COLLECTIONS[parts[0]];
+  if (!coll) return null;
+  const [, slug, field, idx] = parts;
+  const item = Object.prototype.hasOwnProperty.call(coll, slug) ? coll[slug] : null;
+  if (!item) return null;
+  const spec = FIELDS[parts[0]][idx === undefined ? field : `${field}.*`];
+  if (!spec) return null;
+  if (idx === undefined) return { obj: item, prop: field, type: spec, item, kind: parts[0] };
+  const arr = item[field];
+  const i = Number(idx);
+  return Array.isArray(arr) && Number.isInteger(i) && i >= 0 && i < arr.length ? { obj: arr, prop: i, type: spec, item, kind: parts[0] } : null;
+}
+
+function clean(type, value) {
+  return type === 'rich' ? sanitizeHtml(value).slice(0, 100000) : sanitizeText(value);
+}
+
+function applyOne(key, value) {
+  const r = resolve(key);
+  if (!r) return false;
+  r.obj[r.prop] = clean(r.type, value);
+  if (r.kind === 'products') refreshProduct(r.item);
+  return true;
+}
+
+let overrides = {};
+try {
+  overrides = JSON.parse(fs.readFileSync(overridesFile, 'utf8'));
+} catch {
+  overrides = {};
+}
+for (const [k, v] of Object.entries(overrides)) applyOne(k, v);
+for (const p of products) refreshProduct(p);
+
+async function saveEdits(changes) {
+  const applied = {};
+  const rejected = [];
+  for (const [key, value] of Object.entries(changes || {})) {
+    if (applyOne(key, value)) {
+      const r = resolve(key);
+      applied[key] = r.obj[r.prop];
+    } else rejected.push(key);
+  }
+  if (Object.keys(applied).length) {
+    Object.assign(overrides, applied);
+    await fs.promises.mkdir(path.dirname(overridesFile), { recursive: true });
+    const tmp = overridesFile + '.tmp';
+    await fs.promises.writeFile(tmp, JSON.stringify(overrides, null, 2), 'utf8');
+    await fs.promises.rename(tmp, overridesFile);
+  }
+  return { applied, rejected };
+}
+
+const getOverrides = () => ({ ...overrides });
+const text = (key, fallback) => (Object.prototype.hasOwnProperty.call(texts, key) ? texts[key] : fallback);
 
 // Hand-picked products for the home page, one per common pond problem.
 const FEATURED = ['prazi-s', 'ben-xid-3000', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'nb-brown-gay-mau-nuoc-mau-tra', 'aqualac-fs'];
@@ -83,8 +172,8 @@ function relatedProducts(product, n = 4) {
 
 // Products mentioned by name inside an article, so readers can jump straight to them.
 function productsMentioned(post, n = 4) {
-  const text = fold(post.title + ' ' + post.body.replace(/<[^>]+>/g, ' '));
-  return products.filter((p) => p.name.length > 3 && text.includes(fold(p.name))).slice(0, n);
+  const t = fold(post.title + ' ' + post.body.replace(/<[^>]+>/g, ' '));
+  return products.filter((p) => p.name.length > 3 && t.includes(fold(p.name))).slice(0, n);
 }
 
 module.exports = {
@@ -105,4 +194,8 @@ module.exports = {
   relatedProducts,
   productsMentioned,
   fold,
+  saveEdits,
+  getOverrides,
+  text,
+  resolveField: resolve,
 };

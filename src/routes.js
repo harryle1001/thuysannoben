@@ -2,6 +2,7 @@
 const express = require('express');
 const c = require('./content');
 const leads = require('./leads');
+const auth = require('./auth');
 
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
@@ -25,8 +26,73 @@ router.use((req, res, next) => {
     return `<img src="${i.src}" width="${i.w}" height="${i.h}"${attrs}>`;
   };
   res.locals.jsonld = [];
+
+  // On-page editing helpers. For visitors they print plain content; for a signed-in admin they
+  // also mark each value with data-edit so the pencil editor can change it in place.
+  const admin = auth.isAdmin(req);
+  res.locals.isAdmin = admin;
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[ch]);
+  const typeOf = (key) => (c.resolveField(key) || {}).type || 'text';
+  res.locals.ed = (key) => (admin ? ` data-edit="${esc(key)}" data-edit-type="${typeOf(key)}"` : '');
+  res.locals.ef = (key, value) => {
+    const type = typeOf(key);
+    const out = type === 'rich' ? String(value == null ? '' : value) : esc(value);
+    return admin ? `<span data-edit="${esc(key)}" data-edit-type="${type}">${out}</span>` : out;
+  };
+  res.locals.tx = (key, fallback) => res.locals.ef(`texts.${key}`, c.text(key, fallback));
+  if (admin) res.set('Cache-Control', 'private, no-store');
   next();
 });
+
+// ---------- Admin: sign in, sign out, save on-page edits ----------
+const loginAttempts = new Map();
+router.get('/quan-tri/dang-nhap', (req, res) => {
+  if (auth.isAdmin(req)) return res.redirect(303, '/');
+  res.render('pages/admin-login', { meta: { title: 'Đăng nhập quản trị', noindex: true }, error: '', next: safeNext(req.query.next), configured: Boolean(process.env.ADMIN_PASS) });
+});
+router.post('/quan-tri/dang-nhap', (req, res) => {
+  const now = Date.now();
+  const recent = (loginAttempts.get(req.ip) || []).filter((t) => now - t < 15 * 60 * 1000);
+  const next = safeNext(req.body.next);
+  const fail = (msg, code = 401) =>
+    res.status(code).render('pages/admin-login', { meta: { title: 'Đăng nhập quản trị', noindex: true }, error: msg, next, configured: Boolean(process.env.ADMIN_PASS) });
+  if (recent.length >= 8) return fail('Đăng nhập sai nhiều lần. Thử lại sau 15 phút.', 429);
+  if (!auth.sameOrigin(req)) return fail('Yêu cầu không hợp lệ.', 403);
+  if (!auth.checkPassword(String(req.body.user || ''), String(req.body.pass || ''))) {
+    recent.push(now);
+    loginAttempts.set(req.ip, recent);
+    return fail('Tên đăng nhập hoặc mật khẩu chưa đúng.');
+  }
+  loginAttempts.delete(req.ip);
+  auth.setSession(req, res);
+  res.redirect(303, next);
+});
+router.get('/quan-tri/dang-xuat', (req, res) => {
+  auth.clearSession(res);
+  res.redirect(303, '/');
+});
+router.post('/quan-tri/noi-dung', async (req, res, next) => {
+  try {
+    if (!auth.isAdmin(req)) return res.status(401).json({ ok: false, message: 'Phiên đăng nhập đã hết. Đăng nhập lại để lưu.' });
+    if (!auth.sameOrigin(req)) return res.status(403).json({ ok: false, message: 'Yêu cầu không hợp lệ.' });
+    const changes = req.body && typeof req.body.changes === 'object' ? req.body.changes : {};
+    if (Object.keys(changes).length > 300) return res.status(413).json({ ok: false, message: 'Quá nhiều thay đổi trong một lần lưu.' });
+    const result = await c.saveEdits(changes);
+    res.json({ ok: true, saved: Object.keys(result.applied).length, applied: result.applied, rejected: result.rejected });
+  } catch (err) {
+    next(err);
+  }
+});
+// Download every on-page edit, e.g. to send to the developer so the change can be committed to /content.
+router.get('/quan-tri/noi-dung.json', (req, res) => {
+  if (!auth.isAdmin(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/noi-dung.json');
+  res.set('Content-Disposition', 'attachment; filename="noben-noi-dung-da-sua.json"');
+  res.json(c.getOverrides());
+});
+function safeNext(v) {
+  const s = String(v || '/');
+  return /^\/(?!\/)[\w\-./?=&%]*$/.test(s) ? s : '/';
+}
 
 const org = () => ({
   '@context': 'https://schema.org',
@@ -236,15 +302,9 @@ router.post('/lien-he', async (req, res, next) => {
   }
 });
 
-// Read-only list of form submissions, protected by HTTP basic auth (ADMIN_USER / ADMIN_PASS).
+// Read-only list of form submissions for the signed-in admin (basic auth also accepted).
 router.get('/quan-tri/lien-he', async (req, res) => {
-  const user = process.env.ADMIN_USER || 'admin';
-  const pass = process.env.ADMIN_PASS;
-  const [u, p] = Buffer.from((req.get('authorization') || '').replace(/^Basic /, ''), 'base64').toString().split(':');
-  if (!pass || u !== user || p !== pass) {
-    res.set('WWW-Authenticate', 'Basic realm="Noben"');
-    return res.status(401).send(pass ? 'Cần đăng nhập.' : 'Chưa đặt ADMIN_PASS trong biến môi trường.');
-  }
+  if (!auth.isAdmin(req) && !auth.basicAuthOk(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he');
   res.render('pages/admin-leads', { meta: { title: 'Khách liên hệ', noindex: true }, leads: await leads.list(), mailEnabled: leads.mailEnabled() });
 });
 

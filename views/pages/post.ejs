@@ -2,14 +2,14 @@
 <article class="article">
   <header class="wrap article__head">
     <%- include('../partials/crumbs', { items: [[post.section.label, post.section.list], [post.title]] }) %>
-    <h1 class="article__title"><%= post.title %></h1>
+    <h1 class="article__title"><%- ef(`posts.${post.slug}.title`, post.title) %></h1>
     <p class="article__meta"><%= post.section.label %>, đăng ngày <time datetime="<%= post.date %>"><%= post.dateLabel %></time></p>
   </header>
   <% if (post.cover && !post.gallery.length) { %>
   <figure class="wrap article__cover"><%- img(post.cover, { alt: post.title, loading: 'eager', fetchpriority: 'high' }) %></figure>
   <% } %>
   <div class="wrap article__layout">
-    <div class="prose" data-gallery><%- post.body %></div>
+    <div class="prose" data-gallery<%- ed(`posts.${post.slug}.body`) %>><%- post.body %></div>
     <aside class="article__aside">
       <% if (mentioned.length) { %>
       <section class="aside-box">

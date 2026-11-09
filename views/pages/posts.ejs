@@ -2,8 +2,8 @@
 <section class="page-head">
   <div class="wrap">
     <%- include('../partials/crumbs', { items: [[heading]] }) %>
-    <h1 class="page-head__title"><%= heading %></h1>
-    <p class="page-head__lead"><%= intro %></p>
+    <h1 class="page-head__title"><%- tx('list-' + path.replace(/\W+/g, '') + '-title', heading) %></h1>
+    <p class="page-head__lead"><%- tx('list-' + path.replace(/\W+/g, '') + '-lead', intro) %></p>
   </div>
 </section>
 <section class="section section--top-tight">
@@ -13,8 +13,8 @@
       <a class="post-lead__media" href="<%= first.url %>" tabindex="-1" aria-hidden="true"><%- img(first.cover, { alt: '', loading: 'eager' }) %></a>
       <div class="post-lead__body">
         <p class="post-item__meta"><time datetime="<%= first.date %>"><%= first.dateLabel %></time></p>
-        <h2 class="post-lead__title"><a href="<%= first.url %>"><%= first.title %></a></h2>
-        <p class="lead"><%= first.excerpt %></p>
+        <h2 class="post-lead__title"><a href="<%= first.url %>"><%- ef(`posts.${first.slug}.title`, first.title) %></a></h2>
+        <p class="lead"><%- ef(`posts.${first.slug}.excerpt`, first.excerpt) %></p>
         <a class="btn btn--line" href="<%= first.url %>">Đọc bài</a>
       </div>
     </article>

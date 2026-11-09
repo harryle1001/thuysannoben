@@ -6,21 +6,21 @@
 <section class="page-head">
   <div class="wrap">
     <%- include('../partials/crumbs', { items: [['Liên hệ']] }) %>
-    <h1 class="page-head__title">Liên hệ Noben</h1>
-    <p class="page-head__lead">Gọi hotline để được tư vấn ngay, hoặc để lại lời nhắn, kỹ thuật viên sẽ gọi lại cho bạn.</p>
+    <h1 class="page-head__title"><%- tx('contact-title', 'Liên hệ Noben') %></h1>
+    <p class="page-head__lead"><%- tx('contact-lead', 'Gọi hotline để được tư vấn ngay, hoặc để lại lời nhắn, kỹ thuật viên sẽ gọi lại cho bạn.') %></p>
   </div>
 </section>
 
 <section class="section section--top-tight">
   <div class="wrap contact">
     <div class="contact__info">
-      <a class="phone-big phone-big--dark" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
+      <a class="phone-big phone-big--dark" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%- ef('company.hotline', company.hotline) %></a>
       <p class="contact__hint">Hotline tư vấn kỹ thuật và đặt hàng</p>
       <dl class="contact__list">
         <div><dt>Phòng kinh doanh</dt><dd><% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= p %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></dd></div>
         <div><dt>Zalo</dt><dd><a href="<%= zaloUrl %>" target="_blank" rel="noopener">Nhắn tin Zalo <%= company.hotline %></a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:<%= company.email %>"><%= company.email %></a></dd></div>
-        <div><dt>Địa chỉ</dt><dd><%= company.address %></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:<%= company.email %>"><%- ef('company.email', company.email) %></a></dd></div>
+        <div><dt>Địa chỉ</dt><dd><%- ef('company.address', company.address) %></dd></div>
       </dl>
       <div class="map">
         <iframe title="Bản đồ đường đến Công ty TNHH Noben" loading="lazy" referrerpolicy="no-referrer-when-downgrade"

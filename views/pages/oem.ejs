@@ -3,8 +3,8 @@
   <div class="wrap page-head__split">
     <div>
       <%- include('../partials/crumbs', { items: [['Gia công']] }) %>
-      <h1 class="page-head__title">Gia công thuốc thủy sản cho doanh nghiệp</h1>
-      <p class="page-head__lead">Hơn 15 năm sản xuất thức ăn bổ sung, chế phẩm sinh học và sản phẩm xử lý môi trường nuôi trồng thủy sản. Noben gia công cho công ty của bạn, kèm đầy đủ hồ sơ pháp lý theo quy định của Bộ NN&amp;PTNT.</p>
+      <h1 class="page-head__title"><%- tx('oem-title', 'Gia công thuốc thủy sản cho doanh nghiệp') %></h1>
+      <p class="page-head__lead"><%- tx('oem-lead', 'Hơn 15 năm sản xuất thức ăn bổ sung, chế phẩm sinh học và sản phẩm xử lý môi trường nuôi trồng thủy sản. Noben gia công cho công ty của bạn, kèm đầy đủ hồ sơ pháp lý theo quy định của Bộ NN&PTNT.') %></p>
       <div class="btn-row">
         <a class="btn btn--sun" href="/lien-he?nhu-cau=Gia%20c%C3%B4ng%20s%E1%BA%A3n%20ph%E1%BA%A9m">Gửi yêu cầu báo giá gia công</a>
         <a class="btn btn--ghost" href="<%= tel(company.phones[1]) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.phones[1] %></a>
@@ -16,12 +16,12 @@
 
 <section class="section">
   <div class="wrap">
-    <h2 class="h2">Noben làm gì cho đơn hàng của bạn</h2>
+    <h2 class="h2"><%- tx('oem-h-services', 'Noben làm gì cho đơn hàng của bạn') %></h2>
     <div class="services">
-      <div class="service"><svg class="ico ico--lg"><use href="#i-factory"/></svg><h3>Gia công thành phẩm và bán thành phẩm</h3><p>Sản xuất trên dây chuyền tự động hóa, đóng gói theo nhãn và quy cách của công ty bạn.</p></div>
-      <div class="service"><svg class="ico ico--lg"><use href="#i-file"/></svg><h3>Hồ sơ lưu hành sản phẩm</h3><p>Hướng dẫn đăng ký mã số, cấp giấy chứng nhận hợp chuẩn hợp quy và lập hồ sơ xin phép lưu hành sản phẩm.</p></div>
-      <div class="service"><svg class="ico ico--lg"><use href="#i-shield"/></svg><h3>Thành lập công ty mới</h3><p>Tư vấn thủ tục thành lập doanh nghiệp kinh doanh thuốc và chế phẩm thủy sản.</p></div>
-      <div class="service"><svg class="ico ico--lg"><use href="#i-package"/></svg><h3>Tư vấn giá đầu vào, đầu ra</h3><p>Tính giá thành và giá bán cho từng sản phẩm để cạnh tranh tốt với thị trường.</p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-factory"/></svg><h3><%- tx('oem-1', 'Gia công thành phẩm và bán thành phẩm') %></h3><p><%- tx('oem-2', 'Sản xuất trên dây chuyền tự động hóa, đóng gói theo nhãn và quy cách của công ty bạn.') %></p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-file"/></svg><h3><%- tx('oem-3', 'Hồ sơ lưu hành sản phẩm') %></h3><p><%- tx('oem-4', 'Hướng dẫn đăng ký mã số, cấp giấy chứng nhận hợp chuẩn hợp quy và lập hồ sơ xin phép lưu hành sản phẩm.') %></p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-shield"/></svg><h3><%- tx('oem-5', 'Thành lập công ty mới') %></h3><p><%- tx('oem-6', 'Tư vấn thủ tục thành lập doanh nghiệp kinh doanh thuốc và chế phẩm thủy sản.') %></p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-package"/></svg><h3><%- tx('oem-7', 'Tư vấn giá đầu vào, đầu ra') %></h3><p><%- tx('oem-8', 'Tính giá thành và giá bán cho từng sản phẩm để cạnh tranh tốt với thị trường.') %></p></div>
     </div>
   </div>
 </section>
@@ -29,25 +29,25 @@
 <section class="section section--tint">
   <div class="wrap split">
     <div class="split__aside">
-      <h2 class="h2">Dòng sản phẩm đang nhận gia công</h2>
-      <p class="lead">Các dòng được đặt nhiều nhất, giá cạnh tranh cho đơn hàng số lượng lớn.</p>
+      <h2 class="h2"><%- tx('oem-h-lines', 'Dòng sản phẩm đang nhận gia công') %></h2>
+      <p class="lead"><%- tx('oem-lines-lead', 'Các dòng được đặt nhiều nhất, giá cạnh tranh cho đơn hàng số lượng lớn.') %></p>
     </div>
     <ul class="oem-lines">
-      <li><h3>Vi sinh xử lý đáy ao</h3><p>Làm sạch nền đáy, phân hủy NO<sub>2</sub>, NH<sub>3</sub> hiệu quả.</p></li>
-      <li><h3>Đặc trị và cải thiện môi trường</h3><p>Sản phẩm trị bệnh gan, phân trắng; BKC, Yucca, Iodine; các loại khoáng trị cong thân, đục cơ, kích lột và khoáng cải thiện môi trường.</p></li>
-      <li><h3>Men xử lý nước đậm đặc</h3><p>Dòng Rhodobacter, Pseudomonas, Rhodococcus, Spirillum (men thối) đậm đặc.</p></li>
+      <li><h3><%- tx('oem-9', 'Vi sinh xử lý đáy ao') %></h3><p><%- tx('oem-10', 'Làm sạch nền đáy, phân hủy NO₂, NH₃ hiệu quả.') %></p></li>
+      <li><h3><%- tx('oem-11', 'Đặc trị và cải thiện môi trường') %></h3><p><%- tx('oem-12', 'Sản phẩm trị bệnh gan, phân trắng; BKC, Yucca, Iodine; các loại khoáng trị cong thân, đục cơ, kích lột và khoáng cải thiện môi trường.') %></p></li>
+      <li><h3><%- tx('oem-13', 'Men xử lý nước đậm đặc') %></h3><p><%- tx('oem-14', 'Dòng Rhodobacter, Pseudomonas, Rhodococcus, Spirillum (men thối) đậm đặc.') %></p></li>
     </ul>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <h2 class="h2">Quy trình làm việc</h2>
+    <h2 class="h2"><%- tx('oem-h-steps', 'Quy trình làm việc') %></h2>
     <ol class="steps">
-      <li><h3>Trao đổi nhu cầu</h3><p>Bạn cho biết dòng sản phẩm, công dụng mong muốn, quy cách và số lượng dự kiến.</p></li>
-      <li><h3>Báo giá và mẫu thử</h3><p>Noben đề xuất công thức, báo giá gia công và gửi mẫu để bạn đánh giá.</p></li>
-      <li><h3>Hoàn thiện hồ sơ</h3><p>Chuẩn bị nhãn, hồ sơ công bố hợp quy và đăng ký lưu hành theo quy định.</p></li>
-      <li><h3>Sản xuất và giao hàng</h3><p>Sản xuất tại nhà máy đạt ISO 9001:2015, kiểm tra chất lượng từng lô trước khi giao.</p></li>
+      <li><h3><%- tx('oem-15', 'Trao đổi nhu cầu') %></h3><p><%- tx('oem-16', 'Bạn cho biết dòng sản phẩm, công dụng mong muốn, quy cách và số lượng dự kiến.') %></p></li>
+      <li><h3><%- tx('oem-17', 'Báo giá và mẫu thử') %></h3><p><%- tx('oem-18', 'Noben đề xuất công thức, báo giá gia công và gửi mẫu để bạn đánh giá.') %></p></li>
+      <li><h3><%- tx('oem-19', 'Hoàn thiện hồ sơ') %></h3><p><%- tx('oem-20', 'Chuẩn bị nhãn, hồ sơ công bố hợp quy và đăng ký lưu hành theo quy định.') %></p></li>
+      <li><h3><%- tx('oem-21', 'Sản xuất và giao hàng') %></h3><p><%- tx('oem-22', 'Sản xuất tại nhà máy đạt ISO 9001:2015, kiểm tra chất lượng từng lô trước khi giao.') %></p></li>
     </ol>
   </div>
 </section>

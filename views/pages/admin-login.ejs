@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+<section class="section">
+  <div class="wrap admin-login">
+    <h1 class="page-head__title">Đăng nhập quản trị</h1>
+    <p class="lead">Sau khi đăng nhập, nút cây bút ở góc dưới bên trái mỗi trang cho phép sửa chữ ngay trên trang.</p>
+    <% if (!configured) { %>
+    <p class="notice notice--warn" role="alert">Website chưa có mật khẩu quản trị. Đặt biến môi trường <code>ADMIN_PASS</code> trên Hostinger rồi khởi động lại ứng dụng.</p>
+    <% } else { %>
+    <form class="form form--card" action="/quan-tri/dang-nhap" method="post">
+      <% if (error) { %><p class="field__error" role="alert"><%= error %></p><% } %>
+      <div class="field">
+        <label for="a-user">Tên đăng nhập</label>
+        <input id="a-user" name="user" autocomplete="username" value="admin" required>
+      </div>
+      <div class="field">
+        <label for="a-pass">Mật khẩu</label>
+        <input id="a-pass" name="pass" type="password" autocomplete="current-password" required autofocus>
+      </div>
+      <input type="hidden" name="next" value="<%= next %>">
+      <button class="btn btn--blue" type="submit">Đăng nhập</button>
+    </form>
+    <% } %>
+  </div>
+</section>
+<%- include('../partials/footer') %>

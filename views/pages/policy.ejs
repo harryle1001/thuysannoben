@@ -2,7 +2,7 @@
 <section class="page-head">
   <div class="wrap">
     <%- include('../partials/crumbs', { items: [[page.title]] }) %>
-    <h1 class="page-head__title"><%= page.title %></h1>
+    <h1 class="page-head__title"><%- ef(`pages.${slug}.title`, page.title) %></h1>
   </div>
 </section>
 <section class="section section--top-tight">
@@ -14,7 +14,7 @@
         <% } %>
       </ul>
     </nav>
-    <div class="prose"><%- page.body %></div>
+    <div class="prose"<%- ed(`pages.${slug}.body`) %>><%- page.body %></div>
   </div>
 </section>
 <%- include('../partials/footer') %>

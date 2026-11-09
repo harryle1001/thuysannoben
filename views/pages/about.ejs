@@ -3,8 +3,8 @@
   <div class="wrap page-head__split">
     <div>
       <%- include('../partials/crumbs', { items: [['Về Noben']] }) %>
-      <h1 class="page-head__title">Hơn 15 năm làm thuốc cho ao tôm, cá Việt Nam</h1>
-      <p class="page-head__lead"><%= company.overview[0] %></p>
+      <h1 class="page-head__title"><%- tx('about-title', 'Hơn 15 năm làm thuốc cho ao tôm, cá Việt Nam') %></h1>
+      <p class="page-head__lead"><%- ef('company.overview.0', company.overview[0]) %></p>
     </div>
     <figure class="page-head__photo"><%- img({ src: '/images/brand/banner-1.webp', w: 1200, h: 745 }, { alt: 'Toàn cảnh nhà máy Noben', loading: 'eager' }) %></figure>
   </div>
@@ -13,7 +13,7 @@
 <section class="section">
   <div class="wrap about-intro">
     <div class="prose prose--lead">
-      <% company.overview.slice(1).forEach((p) => { %><p><%= p %></p><% }) %>
+      <% company.overview.slice(1).forEach((p, i) => { %><p><%- ef(`company.overview.${i + 1}`, p) %></p><% }) %>
     </div>
     <dl class="about-facts">
       <div><dt>Hơn <%= company.founded_years %> năm</dt><dd>sản xuất và kinh doanh thuốc thủy sản</dd></div>
@@ -27,15 +27,15 @@
   <div class="wrap mvv">
     <div class="mvv__item">
       <h2 class="h3">Tầm nhìn</h2>
-      <p><%= company.vision %></p>
+      <p><%- ef('company.vision', company.vision) %></p>
     </div>
     <div class="mvv__item">
       <h2 class="h3">Sứ mệnh</h2>
-      <p><%= company.mission %></p>
+      <p><%- ef('company.mission', company.mission) %></p>
     </div>
     <div class="mvv__item">
       <h2 class="h3">Giá trị cốt lõi</h2>
-      <ul class="dia-list"><% company.values.forEach((v) => { %><li><%= v %></li><% }) %></ul>
+      <ul class="dia-list"><% company.values.forEach((v, i) => { %><li><%- ef(`company.values.${i}`, v) %></li><% }) %></ul>
     </div>
   </div>
 </section>
@@ -43,7 +43,7 @@
 <% if (gallery.factory.length) { %>
 <section class="section" aria-labelledby="fac-title">
   <div class="wrap">
-    <h2 id="fac-title" class="h2">Văn phòng và hoạt động</h2>
+    <h2 id="fac-title" class="h2"><%- tx('about-gallery', 'Văn phòng và hoạt động') %></h2>
     <div class="photo-grid" data-gallery>
       <% gallery.factory.forEach((g, i) => { %>
       <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="Văn phòng và hoạt động của Noben"><%- img(g, { alt: 'Văn phòng và hoạt động của Noben, ảnh ' + (i + 1) }) %></a>
@@ -56,7 +56,7 @@
 <% if (gallery.team.length) { %>
 <section class="section section--top-tight" aria-labelledby="team-title">
   <div class="wrap">
-    <h2 id="team-title" class="h2">Đội ngũ Noben</h2>
+    <h2 id="team-title" class="h2"><%- tx('about-team', 'Đội ngũ Noben') %></h2>
     <div class="photo-grid photo-grid--dense" data-gallery>
       <% gallery.team.slice(0, 12).forEach((g, i) => { %>
       <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="Hoạt động của đội ngũ Noben"><%- img(g, { alt: 'Đội ngũ Noben, ảnh ' + (i + 1) }) %></a>

@@ -27,6 +27,8 @@ const checks = [
   ['/benh-dom-den-tren-tom-the', 301, '/bai-viet/benh-dom-den-tren-tom-the'],
   ['/tong-quan-ve-cong-ty', 301, '/ve-chung-toi'],
   ['/trang-khong-ton-tai', 404],
+  ['/quan-tri/dang-nhap', 200],
+  ['/quan-tri/lien-he', 303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he'],
 ];
 
 const server = spawn(process.execPath, [path.join(__dirname, '..', 'server.js')], {

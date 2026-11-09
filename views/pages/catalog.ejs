@@ -6,8 +6,8 @@
 <section class="page-head">
   <div class="wrap">
     <%- include('../partials/crumbs', { items: cat ? [['Sản phẩm', '/san-pham'], [cat.name]] : [['Sản phẩm']] }) %>
-    <h1 class="page-head__title"><%= heading %></h1>
-    <p class="page-head__lead"><%= cat ? cat.blurb : 'Lọc theo nhóm sản phẩm hoặc theo vấn đề ao nuôi đang gặp. Gõ tên sản phẩm hoặc triệu chứng, có dấu hay không dấu đều được.' %></p>
+    <h1 class="page-head__title"><% if (cat) { %><%- ef(`categories.${cat.slug}.name`, cat.name) %> cho ao tôm, cá<% } else { %><%- tx('catalog-title', heading) %><% } %></h1>
+    <p class="page-head__lead"><% if (cat) { %><%- ef(`categories.${cat.slug}.blurb`, cat.blurb) %><% } else { %><%- tx('catalog-lead', 'Lọc theo nhóm sản phẩm hoặc theo vấn đề ao nuôi đang gặp. Gõ tên sản phẩm hoặc triệu chứng, có dấu hay không dấu đều được.') %><% } %></p>
   </div>
 </section>
 
