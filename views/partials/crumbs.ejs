@@ -1,0 +1,8 @@
+<nav class="crumbs" aria-label="Đường dẫn">
+  <ol>
+    <li><a href="/">Trang chủ</a></li>
+    <% items.forEach(([label, href], i) => { %>
+    <li><% if (href && i < items.length - 1) { %><a href="<%= href %>"><%= label %></a><% } else { %><span aria-current="page"><%= label %></span><% } %></li>
+    <% }) %>
+  </ol>
+</nav>

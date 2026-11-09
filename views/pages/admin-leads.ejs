@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<section class="section">
+  <div class="wrap">
+    <h1 class="page-head__title">Khách liên hệ qua website</h1>
+    <p class="lead"><%= leads.length %> lời nhắn. <%= mailEnabled ? 'Mỗi lời nhắn mới cũng được gửi về email.' : 'Chưa cấu hình SMTP nên lời nhắn chỉ lưu tại đây.' %></p>
+    <% if (!leads.length) { %>
+    <p>Chưa có lời nhắn nào.</p>
+    <% } else { %>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Thời gian</th><th>Họ tên</th><th>Điện thoại</th><th>Nhu cầu</th><th>Tỉnh</th><th>Sản phẩm</th><th>Lời nhắn</th></tr></thead>
+        <tbody>
+          <% leads.forEach((l) => { %>
+          <tr>
+            <td><%= new Date(l.at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) %></td>
+            <td><%= l.name %></td>
+            <td><a href="<%= tel(l.phone) %>"><%= l.phone %></a></td>
+            <td><%= l.need %></td>
+            <td><%= l.province %></td>
+            <td><%= l.product %></td>
+            <td><%= l.message %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+    <% } %>
+  </div>
+</section>
+<%- include('../partials/footer') %>

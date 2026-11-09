@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<section class="page-head">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [[page.title]] }) %>
+    <h1 class="page-head__title"><%= page.title %></h1>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap policy">
+    <nav class="policy__nav" aria-label="Chính sách">
+      <ul>
+        <% for (const [s, pg] of Object.entries(policies)) { %>
+        <li><a href="/chinh-sach/<%= s %>"<% if (s === slug) { %> aria-current="page"<% } %>><%= pg.title %></a></li>
+        <% } %>
+      </ul>
+    </nav>
+    <div class="prose"><%- page.body %></div>
+  </div>
+</section>
+<%- include('../partials/footer') %>

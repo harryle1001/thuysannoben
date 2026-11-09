@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "sinh-hoc",
+    "name": "Chế phẩm sinh học & hóa chất",
+    "blurb": "Vi sinh xử lý đáy, khử khí độc, sát trùng nguồn nước và các hóa chất cải tạo môi trường ao nuôi.",
+    "count": 45,
+    "old_slug": "nhom-che-pham-sinh-hoc-va-hoa-chat"
+  },
+  {
+    "slug": "khoang-chat",
+    "name": "Khoáng chất",
+    "blurb": "Khoáng đa lượng, vi lượng giúp tôm lột xác đều, cứng vỏ nhanh, hạn chế cong thân, đục cơ.",
+    "count": 13,
+    "old_slug": "nhom-khoang-chat"
+  },
+  {
+    "slug": "thuc-an-bo-sung",
+    "name": "Thức ăn bổ sung",
+    "blurb": "Men tiêu hóa, vitamin, bổ gan và chất tăng trọng trộn vào thức ăn hằng ngày.",
+    "count": 34,
+    "old_slug": "nhom-thuc-an-bo-sung"
+  },
+  {
+    "slug": "tri-benh",
+    "name": "Trị bệnh, gây màu nước & diệt ốc",
+    "blurb": "Sản phẩm đặc trị ký sinh trùng, bệnh gan ruột, gây màu nước và diệt ốc, hến trước khi thả giống.",
+    "count": 12,
+    "old_slug": "nhom-tri-benh-gay-mau-nuoc-diet-oc"
+  }
+]

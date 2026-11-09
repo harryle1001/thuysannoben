@@ -1,0 +1,93 @@
+<%- include('../partials/header') %>
+<section class="page-head page-head--ink">
+  <div class="wrap page-head__split">
+    <div>
+      <%- include('../partials/crumbs', { items: [['Về Noben']] }) %>
+      <h1 class="page-head__title">Hơn 15 năm làm thuốc cho ao tôm, cá Việt Nam</h1>
+      <p class="page-head__lead"><%= company.overview[0] %></p>
+    </div>
+    <figure class="page-head__photo"><%- img({ src: '/images/brand/banner-1.webp', w: 1200, h: 745 }, { alt: 'Toàn cảnh nhà máy Noben', loading: 'eager' }) %></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap about-intro">
+    <div class="prose prose--lead">
+      <% company.overview.slice(1).forEach((p) => { %><p><%= p %></p><% }) %>
+    </div>
+    <dl class="about-facts">
+      <div><dt>Hơn <%= company.founded_years %> năm</dt><dd>sản xuất và kinh doanh thuốc thủy sản</dd></div>
+      <div><dt><%= productCount %> sản phẩm</dt><dd>chế phẩm sinh học, khoáng, thức ăn bổ sung, đặc trị</dd></div>
+      <div><dt>ISO 9001:2015</dt><dd>nhà máy sản xuất tại Củ Chi, TP.HCM</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap mvv">
+    <div class="mvv__item">
+      <h2 class="h3">Tầm nhìn</h2>
+      <p><%= company.vision %></p>
+    </div>
+    <div class="mvv__item">
+      <h2 class="h3">Sứ mệnh</h2>
+      <p><%= company.mission %></p>
+    </div>
+    <div class="mvv__item">
+      <h2 class="h3">Giá trị cốt lõi</h2>
+      <ul class="dia-list"><% company.values.forEach((v) => { %><li><%= v %></li><% }) %></ul>
+    </div>
+  </div>
+</section>
+
+<% if (gallery.factory.length) { %>
+<section class="section" aria-labelledby="fac-title">
+  <div class="wrap">
+    <h2 id="fac-title" class="h2">Văn phòng và hoạt động</h2>
+    <div class="photo-grid" data-gallery>
+      <% gallery.factory.forEach((g, i) => { %>
+      <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="Văn phòng và hoạt động của Noben"><%- img(g, { alt: 'Văn phòng và hoạt động của Noben, ảnh ' + (i + 1) }) %></a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (gallery.team.length) { %>
+<section class="section section--top-tight" aria-labelledby="team-title">
+  <div class="wrap">
+    <h2 id="team-title" class="h2">Đội ngũ Noben</h2>
+    <div class="photo-grid photo-grid--dense" data-gallery>
+      <% gallery.team.slice(0, 12).forEach((g, i) => { %>
+      <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="Hoạt động của đội ngũ Noben"><%- img(g, { alt: 'Đội ngũ Noben, ảnh ' + (i + 1) }) %></a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (company.youtube && company.youtube.length) { %>
+<section class="section section--tint" aria-labelledby="vid-title">
+  <div class="wrap">
+    <h2 id="vid-title" class="h2">Video</h2>
+    <div class="videos">
+      <% company.youtube.forEach((id) => { %>
+      <div class="yt" data-yt="<%= id %>">
+        <img src="https://i.ytimg.com/vi/<%= id %>/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <a class="yt__play" href="https://www.youtube.com/watch?v=<%= id %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-play"/></svg><span>Xem video</span></a>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<section class="section">
+  <div class="wrap section-head">
+    <h2 class="h2">Chứng nhận chất lượng</h2>
+    <a class="btn btn--line" href="/chung-nhan">Xem giấy chứng nhận</a>
+  </div>
+</section>
+
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

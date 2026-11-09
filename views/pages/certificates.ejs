@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+<section class="page-head">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Chứng nhận']] }) %>
+    <h1 class="page-head__title">Chứng nhận chất lượng</h1>
+    <p class="page-head__lead">Hệ thống quản lý chất lượng của nhà máy Noben đạt ISO 9001:2015. Sản phẩm thức ăn bổ sung được VinaCert chứng nhận hợp quy theo QCVN 02-31-2:2019/BNNPTNT.</p>
+  </div>
+</section>
+<% certPosts.forEach((post) => { %>
+<section class="section section--top-tight">
+  <div class="wrap">
+    <h2 class="h2"><%= post.title %></h2>
+    <p class="lead cert-intro"><%= post.excerpt %></p>
+    <div class="certs certs--all" data-gallery>
+      <% post.gallery.forEach((g, i) => { %>
+      <a class="cert" href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="<%= post.title %>, trang <%= i + 1 %>"><%- img(g, { alt: post.title + ', trang ' + (i + 1) }) %></a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% }) %>
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

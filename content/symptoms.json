@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "gan-ruot",
+    "label": "Phân trắng, gan tụy, đường ruột"
+  },
+  {
+    "slug": "mang-dom-den",
+    "label": "Đốm đen, đen mang, đóng rong"
+  },
+  {
+    "slug": "mem-vo",
+    "label": "Mềm vỏ, cong thân, chậm lớn"
+  },
+  {
+    "slug": "mau-nuoc",
+    "label": "Tảo, màu nước"
+  },
+  {
+    "slug": "khi-doc",
+    "label": "Khí độc, nhớt bạt, đáy ao"
+  },
+  {
+    "slug": "oxy-stress",
+    "label": "Thiếu oxy, sốc, stress"
+  },
+  {
+    "slug": "sat-trung",
+    "label": "Sát trùng, diệt ốc, ký sinh"
+  },
+  {
+    "slug": "tieu-hoa",
+    "label": "Tiêu hóa, đề kháng, vitamin"
+  }
+]

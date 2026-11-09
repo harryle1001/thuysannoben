@@ -1,0 +1,91 @@
+<%- include('../partials/header') %>
+<div class="wrap">
+  <%- include('../partials/crumbs', { items: [['Sản phẩm', '/san-pham'], [p.categoryInfo.name, '/san-pham/nhom/' + p.category], [p.name]] }) %>
+</div>
+
+<article class="wrap product">
+  <div class="product__media" data-gallery>
+    <a class="product__image" href="<%= p.image && p.image.src %>" data-lb="<%= p.image && p.image.src %>" data-caption="<%= p.name %>">
+      <%- img(p.image, { alt: 'Bao bì sản phẩm ' + p.name, loading: 'eager', fetchpriority: 'high' }) %>
+      <span class="product__zoom">Bấm để phóng to nhãn</span>
+    </a>
+    <% p.images.slice(1).forEach((im, i) => { %>
+    <a class="product__thumb" href="<%= im.src %>" data-lb="<%= im.src %>" data-caption="<%= p.name %>"><%- img(im, { alt: p.name + ' ảnh ' + (i + 2) }) %></a>
+    <% }) %>
+  </div>
+
+  <div class="product__info">
+    <p class="cat-tag cat-tag--<%= p.category %>"><a href="/san-pham/nhom/<%= p.category %>"><%= p.categoryInfo.name %></a></p>
+    <h1 class="product__name"><%= p.name %></h1>
+    <p class="product__tagline"><%= p.tagline %></p>
+
+    <% if (p.symptoms.length) { %>
+    <div class="product__syms">
+      <p class="product__syms-label">Dùng khi ao gặp</p>
+      <ul class="tag-list">
+        <% p.symptoms.forEach((s) => { const sym = symptoms.find((x) => x.slug === s); %>
+        <li><a class="chip chip--light chip--sm" href="/san-pham?van-de=<%= s %>"><%= sym.label %></a></li>
+        <% }) %>
+      </ul>
+    </div>
+    <% } %>
+
+    <div class="buy-box">
+      <p class="buy-box__title">Đặt hàng hoặc hỏi giá đại lý</p>
+      <a class="btn btn--sun btn--block" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
+      <div class="buy-box__row">
+        <a class="btn btn--line" href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>Nhắn Zalo</a>
+        <a class="btn btn--line" href="/lien-he?san-pham=<%= p.slug %>"><svg class="ico"><use href="#i-mail"/></svg>Gửi yêu cầu</a>
+      </div>
+      <p class="buy-box__note">Sản xuất bởi <%= company.legal %>, nhà máy đạt ISO 9001:2015.</p>
+    </div>
+
+    <div class="spec">
+      <% if (p.uses.length) { %>
+      <section class="spec__block">
+        <h2 class="spec__title">Công dụng</h2>
+        <ul class="dia-list"><% p.uses.forEach((u) => { %><li><%- u %></li><% }) %></ul>
+      </section>
+      <% } %>
+      <% if (p.dose.length) { %>
+      <section class="spec__block">
+        <h2 class="spec__title">Hướng dẫn sử dụng</h2>
+        <ul class="dose-list"><% p.dose.forEach((u) => { %><li><%- u %></li><% }) %></ul>
+      </section>
+      <% } %>
+      <% if (p.composition.length) { %>
+      <section class="spec__block">
+        <h2 class="spec__title">Thành phần</h2>
+        <ul class="dia-list"><% p.composition.forEach((u) => { %><li><%- u %></li><% }) %></ul>
+      </section>
+      <% } %>
+      <p class="spec__note">Liều dùng có thể thay đổi theo tình trạng ao và sức khỏe tôm. Đọc kỹ hướng dẫn trên nhãn, hoặc gọi kỹ thuật viên trước khi dùng.</p>
+    </div>
+  </div>
+</article>
+
+<% if (articles.length) { %>
+<section class="section section--tint" aria-labelledby="art-title">
+  <div class="wrap">
+    <h2 id="art-title" class="h2">Bài kỹ thuật nhắc đến <%= p.name %></h2>
+    <div class="post-list post-list--two">
+      <% articles.forEach((post) => { %><%- include('../partials/post-item', { post }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<section class="section" aria-labelledby="rel-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="rel-title" class="h2">Thường dùng cùng</h2>
+      <a class="text-link" href="/san-pham/nhom/<%= p.category %>">Xem nhóm <%= p.categoryInfo.name.toLowerCase() %></a>
+    </header>
+    <div class="pgrid">
+      <% related.forEach((r) => { %><%- include('../partials/product-card', { p: r }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('../partials/quick-contact', { product: p.name, title: 'Hỏi kỹ thuật viên về ' + p.name }) %>
+<%- include('../partials/footer') %>

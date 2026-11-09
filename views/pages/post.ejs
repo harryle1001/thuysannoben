@@ -1,0 +1,42 @@
+<%- include('../partials/header') %>
+<article class="article">
+  <header class="wrap article__head">
+    <%- include('../partials/crumbs', { items: [[post.section.label, post.section.list], [post.title]] }) %>
+    <h1 class="article__title"><%= post.title %></h1>
+    <p class="article__meta"><%= post.section.label %>, đăng ngày <time datetime="<%= post.date %>"><%= post.dateLabel %></time></p>
+  </header>
+  <% if (post.cover && !post.gallery.length) { %>
+  <figure class="wrap article__cover"><%- img(post.cover, { alt: post.title, loading: 'eager', fetchpriority: 'high' }) %></figure>
+  <% } %>
+  <div class="wrap article__layout">
+    <div class="prose" data-gallery><%- post.body %></div>
+    <aside class="article__aside">
+      <% if (mentioned.length) { %>
+      <section class="aside-box">
+        <h2 class="aside-box__title">Sản phẩm trong bài</h2>
+        <ul class="mini-products">
+          <% mentioned.forEach((p) => { %>
+          <li><a href="<%= p.url %>"><%- img(p.image, { alt: '' }) %><span><strong><%= p.name %></strong><small><%= p.tagline %></small></span></a></li>
+          <% }) %>
+        </ul>
+      </section>
+      <% } %>
+      <section class="aside-box aside-box--ink">
+        <h2 class="aside-box__title">Ao đang có triệu chứng tương tự?</h2>
+        <p>Gọi kỹ thuật viên Noben để được hướng dẫn xử lý cụ thể cho ao của bạn.</p>
+        <a class="btn btn--sun btn--block" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
+      </section>
+    </aside>
+  </div>
+</article>
+<% if (more.length) { %>
+<section class="section section--tint" aria-labelledby="more-title">
+  <div class="wrap">
+    <h2 id="more-title" class="h2">Bài cùng chủ đề</h2>
+    <div class="post-list post-list--three">
+      <% more.forEach((p) => { %><%- include('../partials/post-item', { post: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+<%- include('../partials/footer') %>

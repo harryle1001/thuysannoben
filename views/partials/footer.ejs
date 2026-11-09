@@ -1,0 +1,59 @@
+</main>
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="brand brand--light" href="/">
+        <img src="/images/brand/logo-noben.webp" width="56" height="56" alt="" loading="lazy">
+        <span class="brand__text"><strong>Noben</strong><small>Thuốc thủy sản</small></span>
+      </a>
+      <p><%= company.legal %> sản xuất, gia công và phân phối thuốc thú y thủy sản, chế phẩm sinh học và thức ăn bổ sung cho ao tôm, cá.</p>
+      <p class="site-footer__cert"><svg class="ico"><use href="#i-shield"/></svg> Nhà máy đạt ISO 9001:2015</p>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Liên hệ</h2>
+      <ul class="contact-list">
+        <li><svg class="ico"><use href="#i-pin"/></svg><span><%= company.address %></span></li>
+        <li><svg class="ico"><use href="#i-phone"/></svg><span>Hotline <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a><br>Phòng kinh doanh <% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= p %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></span></li>
+        <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:<%= company.email %>"><%= company.email %></a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Sản phẩm</h2>
+      <ul class="link-list">
+        <% for (const cat of categories) { %><li><a href="/san-pham/nhom/<%= cat.slug %>"><%= cat.name %></a></li><% } %>
+        <li><a href="/san-pham">Tất cả sản phẩm</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Công ty</h2>
+      <ul class="link-list">
+        <li><a href="/ve-chung-toi">Về Noben</a></li>
+        <li><a href="/chung-nhan">Chứng nhận</a></li>
+        <li><a href="/gia-cong">Gia công</a></li>
+        <li><a href="/ky-thuat-nuoi">Kỹ thuật nuôi</a></li>
+        <li><a href="/tin-tuc">Tin tức</a></li>
+        <li><a href="/chinh-sach/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
+        <li><a href="/chinh-sach/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
+        <li><a href="/chinh-sach/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap site-footer__legal">
+    <p>© <%= new Date().getFullYear() %> <%= company.legal %>. Đọc kỹ hướng dẫn sử dụng trên nhãn trước khi dùng sản phẩm.</p>
+  </div>
+</footer>
+
+<nav class="action-bar" aria-label="Liên hệ nhanh">
+  <a href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi ngay</a>
+  <a href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>Zalo</a>
+  <a href="/lien-he"><svg class="ico"><use href="#i-mail"/></svg>Để lại lời nhắn</a>
+</nav>
+
+<dialog class="lightbox" data-lightbox aria-label="Xem ảnh">
+  <button class="lightbox__close" type="button" data-lb-close><svg class="ico"><use href="#i-x"/></svg><span class="sr-only">Đóng</span></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev><svg class="ico"><use href="#i-left"/></svg><span class="sr-only">Ảnh trước</span></button>
+  <figure class="lightbox__figure"><img alt="" data-lb-img><figcaption data-lb-caption></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next><svg class="ico"><use href="#i-right"/></svg><span class="sr-only">Ảnh sau</span></button>
+</dialog>
+</body>
+</html>

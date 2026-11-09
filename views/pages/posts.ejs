@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<section class="page-head">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [[heading]] }) %>
+    <h1 class="page-head__title"><%= heading %></h1>
+    <p class="page-head__lead"><%= intro %></p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap">
+    <% if (list.length) { const [first, ...rest] = list; %>
+    <article class="post-lead">
+      <a class="post-lead__media" href="<%= first.url %>" tabindex="-1" aria-hidden="true"><%- img(first.cover, { alt: '', loading: 'eager' }) %></a>
+      <div class="post-lead__body">
+        <p class="post-item__meta"><time datetime="<%= first.date %>"><%= first.dateLabel %></time></p>
+        <h2 class="post-lead__title"><a href="<%= first.url %>"><%= first.title %></a></h2>
+        <p class="lead"><%= first.excerpt %></p>
+        <a class="btn btn--line" href="<%= first.url %>">Đọc bài</a>
+      </div>
+    </article>
+    <div class="post-list post-list--two">
+      <% rest.forEach((post) => { %><%- include('../partials/post-item', { post }) %><% }) %>
+    </div>
+    <% } else { %>
+    <p>Chưa có bài viết.</p>
+    <% } %>
+  </div>
+</section>
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

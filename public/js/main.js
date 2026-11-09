@@ -1,0 +1,229 @@
+/* Thủy sản Noben – progressive enhancement. Every feature here also works without JavaScript. */
+(function () {
+  'use strict';
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  // Same diacritic folding as the server, so "phan trang" matches "phân trắng".
+  function fold(s) {
+    return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+  }
+
+  /* ---------- Header: shadow on scroll, mobile menu ---------- */
+  var header = $('[data-header]');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+  var toggle = $('[data-menu-toggle]');
+  var menu = $('#menu');
+  if (toggle && menu) {
+    var setMenu = function (open) {
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.querySelector('.sr-only').textContent = open ? 'Đóng menu' : 'Mở menu';
+      menu.classList.toggle('is-open', open);
+      document.body.classList.toggle('menu-open', open);
+    };
+    toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('is-open')) { setMenu(false); toggle.focus(); } });
+    window.matchMedia('(min-width: 961px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+  }
+
+  /* ---------- Home: pond-problem finder ---------- */
+  var finder = $('[data-finder]');
+  if (finder) {
+    var data = JSON.parse($('[data-finder-data]', finder).textContent);
+    var list = $('[data-finder-list]', finder);
+    var more = $('[data-finder-more]', finder);
+    var count = $('[data-finder-count]', finder);
+    var chips = $$('.chip', finder);
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    var show = function (chip) {
+      var sym = chip.getAttribute('data-sym');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+      var matches = data.filter(function (p) { return p.s.indexOf(sym) > -1; }).sort(function (a, b) { return b.r[sym] - a.r[sym]; });
+      list.classList.add('is-swapping');
+      window.setTimeout(function () {
+        list.innerHTML = matches.slice(0, 5).map(function (p) {
+          return '<li><a href="' + esc(p.u) + '"><img src="' + esc(p.i) + '" alt="" width="532" height="1009" decoding="async"><span>' + esc(p.n) + '</span></a></li>';
+        }).join('');
+        list.classList.remove('is-swapping');
+      }, 120);
+      count.textContent = matches.length;
+      more.href = '/san-pham?van-de=' + encodeURIComponent(sym);
+    };
+    chips.forEach(function (chip) {
+      chip.setAttribute('role', 'button');
+      chip.addEventListener('click', function (e) { e.preventDefault(); show(chip); chip.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' }); });
+      chip.addEventListener('keydown', function (e) { if (e.key === ' ') { e.preventDefault(); show(chip); } });
+    });
+  }
+
+  /* ---------- Catalog: instant filtering ---------- */
+  var catalog = $('[data-catalog]');
+  if (catalog) {
+    var form = $('[data-filters]', catalog);
+    var cards = $$('[data-product]', catalog);
+    var countEl = $('[data-count]', catalog);
+    var empty = $('[data-empty]', catalog);
+    var q = $('[data-filter-q]', form);
+    var locked = catalog.getAttribute('data-locked') === 'true';
+    var timer;
+    var current = function (name) { var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : ''; };
+    var apply = function () {
+      var cat = locked ? '' : current('nhom');
+      var sym = current('van-de');
+      var words = fold(q.value).trim().split(/\s+/).filter(Boolean);
+      var n = 0;
+      cards.forEach(function (card) {
+        var ok = (!cat || card.getAttribute('data-cat') === cat) &&
+          (!sym || (' ' + card.getAttribute('data-sym') + ' ').indexOf(' ' + sym + ' ') > -1) &&
+          words.every(function (w) { return card.getAttribute('data-search').indexOf(w) > -1; });
+        card.hidden = !ok;
+        if (ok) n++;
+      });
+      countEl.textContent = n;
+      empty.hidden = n > 0;
+      var params = new URLSearchParams();
+      if (cat) params.set('nhom', cat);
+      if (sym) params.set('van-de', sym);
+      if (q.value.trim()) params.set('q', q.value.trim());
+      var qs = params.toString();
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
+    };
+    // Bring the active chip into view inside horizontally scrolling rows on phones.
+    $$('input:checked', form).forEach(function (i) {
+      var row = i.closest('.filters__radios, .filters__chips');
+      var lab = i.closest('label');
+      if (row && lab && row.scrollWidth > row.clientWidth) row.scrollLeft = lab.offsetLeft - row.offsetLeft - 16;
+    });
+    form.addEventListener('change', apply);
+    q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(apply, 140); });
+    form.addEventListener('submit', function (e) { e.preventDefault(); apply(); });
+    var reset = $('[data-reset]', catalog);
+    if (reset) reset.addEventListener('click', function (e) {
+      e.preventDefault();
+      q.value = '';
+      $$('input[type="radio"][value=""]', form).forEach(function (r) { r.checked = true; });
+      apply();
+      q.focus();
+    });
+  }
+
+  /* ---------- Lead forms: inline validation + fetch submit ---------- */
+  $$('[data-lead-form]').forEach(function (f) {
+    var status = $('[data-form-status]', f);
+    var btn = $('button[type="submit"]', f);
+    var setError = function (name, msg) {
+      var input = f.elements[name];
+      var out = $('[data-error-for="' + name + '"]', f);
+      if (!input || !out) return;
+      out.textContent = msg || '';
+      if (!out.id) out.id = input.id + '-err';
+      if (msg) { input.setAttribute('aria-invalid', 'true'); input.setAttribute('aria-describedby', out.id); }
+      else { input.removeAttribute('aria-invalid'); }
+    };
+    var check = function () {
+      var errs = {};
+      if (f.elements.name.value.trim().length < 2) errs.name = 'Nhập họ tên để chúng tôi biết cách xưng hô.';
+      var digits = f.elements.phone.value.replace(/\D/g, '');
+      if (!/^(0|84)\d{8,10}$/.test(digits)) errs.phone = 'Số điện thoại chưa đúng. Ví dụ: 0913 489 429.';
+      return errs;
+    };
+    ['name', 'phone'].forEach(function (n) {
+      f.elements[n].addEventListener('blur', function () { if (f.elements[n].value) setError(n, check()[n]); });
+      f.elements[n].addEventListener('input', function () { if (f.elements[n].getAttribute('aria-invalid')) setError(n, check()[n]); });
+    });
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var errs = check();
+      setError('name', errs.name); setError('phone', errs.phone);
+      var first = Object.keys(errs)[0];
+      if (first) { f.elements[first].focus(); return; }
+      btn.disabled = true;
+      var label = btn.textContent;
+      btn.textContent = 'Đang gửi…';
+      status.className = 'form__status';
+      status.textContent = '';
+      fetch(f.action, { method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(f)).toString() })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+        .then(function (res) {
+          if (res.ok) {
+            f.reset();
+            status.className = 'form__status is-ok';
+            status.textContent = 'Đã gửi. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.';
+          } else if (res.body.errors) {
+            Object.keys(res.body.errors).forEach(function (k) { setError(k, res.body.errors[k]); });
+          } else {
+            throw new Error(res.body.message);
+          }
+        })
+        .catch(function (err) {
+          status.className = 'form__status is-error';
+          status.textContent = (err && err.message) || 'Chưa gửi được do lỗi kết nối. Vui lòng thử lại hoặc gọi hotline.';
+        })
+        .then(function () { btn.disabled = false; btn.textContent = label; });
+    });
+  });
+
+  /* ---------- Lightbox for product labels, certificates and photos ---------- */
+  var lb = $('[data-lightbox]');
+  if (lb && typeof lb.showModal === 'function') {
+    var lbImg = $('[data-lb-img]', lb);
+    var lbCap = $('[data-lb-caption]', lb);
+    var items = [];
+    var idx = 0;
+    var opener = null;
+    var render = function () {
+      var it = items[idx];
+      lbImg.src = it.src;
+      lbImg.alt = it.caption || '';
+      lbCap.textContent = it.caption ? it.caption + (items.length > 1 ? ' (' + (idx + 1) + '/' + items.length + ')' : '') : '';
+    };
+    var open = function (group, i, from) {
+      items = group; idx = i; opener = from;
+      lb.toggleAttribute('data-single', items.length < 2);
+      render();
+      lb.showModal();
+    };
+    var step = function (d) { idx = (idx + d + items.length) % items.length; render(); };
+    $$('[data-gallery]').forEach(function (g) {
+      var links = $$('[data-lb]', g);
+      var group = links.map(function (a) { return { src: a.getAttribute('data-lb'), caption: a.getAttribute('data-caption') }; });
+      links.forEach(function (a, i) { a.addEventListener('click', function (e) { e.preventDefault(); open(group, i, a); }); });
+      // Images inside article bodies.
+      var imgs = $$('.prose img', g.parentNode).filter(function (im) { return g.contains(im); });
+      if (!links.length && imgs.length) {
+        var igroup = imgs.map(function (im) { return { src: im.currentSrc || im.src, caption: im.alt }; });
+        imgs.forEach(function (im, i) {
+          im.tabIndex = 0;
+          im.setAttribute('role', 'button');
+          im.addEventListener('click', function () { open(igroup, i, im); });
+          im.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(igroup, i, im); } });
+        });
+      }
+    });
+    $('[data-lb-close]', lb).addEventListener('click', function () { lb.close(); });
+    $('[data-lb-prev]', lb).addEventListener('click', function () { step(-1); });
+    $('[data-lb-next]', lb).addEventListener('click', function () { step(1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+    lb.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1); });
+    lb.addEventListener('close', function () { lbImg.removeAttribute('src'); if (opener) opener.focus(); });
+  }
+
+  /* ---------- YouTube: load the player only when asked ---------- */
+  $$('[data-yt]').forEach(function (box) {
+    var a = $('.yt__play', box);
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-yt') + '?autoplay=1&rel=0';
+      f.title = 'Video Noben';
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+      box.appendChild(f);
+      a.remove();
+    });
+  });
+})();

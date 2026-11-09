@@ -1,0 +1,37 @@
+<%
+  const m = locals.meta || {};
+  const fullTitle = m.title && !/Noben/.test(m.title) ? `${m.title} – Thủy sản Noben` : (m.title || 'Thủy sản Noben');
+  const desc = m.description || 'Công ty TNHH Noben sản xuất thuốc thú y thủy sản, chế phẩm sinh học, khoáng chất và thức ăn bổ sung cho ao tôm, cá.';
+  const ogImage = siteUrl + (m.image || '/images/brand/banner-1.webp');
+%><!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= fullTitle %></title>
+  <meta name="description" content="<%= desc %>">
+  <% if (m.noindex) { %><meta name="robots" content="noindex, follow"><% } %>
+  <link rel="canonical" href="<%= canonical %>">
+  <meta property="og:type" content="<%= m.type === 'article' ? 'article' : 'website' %>">
+  <meta property="og:site_name" content="Thủy sản Noben">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="<%= fullTitle %>">
+  <meta property="og:description" content="<%= desc %>">
+  <meta property="og:url" content="<%= canonical %>">
+  <meta property="og:image" content="<%= ogImage %>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0B2347">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/archivo-vietnamese-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/be-vietnam-pro-vietnamese-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/main.css?v=1">
+  <% for (const block of (locals.jsonld || [])) { %>
+  <script type="application/ld+json"><%- JSON.stringify(block).replace(/</g, '\\u003c') %></script>
+  <% } %>
+  <script src="/js/main.js?v=1" defer></script>
+</head>
+<body>
+<%- include('icons') %>
+<a class="skip" href="#noi-dung">Bỏ qua, đến nội dung chính</a>

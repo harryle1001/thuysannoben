@@ -1,0 +1,34 @@
+<section class="section quick-contact" aria-labelledby="qc-title">
+  <div class="wrap quick-contact__grid">
+    <div class="quick-contact__intro">
+      <h2 id="qc-title" class="h2"><%= locals.title || 'Cần tư vấn cho ao của bạn?' %></h2>
+      <p class="lead">Kỹ thuật viên Noben tư vấn miễn phí: cách dùng, liều lượng, phối hợp sản phẩm, và giá cho đại lý.</p>
+      <a class="phone-big" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
+      <p class="quick-contact__alt">hoặc phòng kinh doanh <a href="<%= tel(company.phones[0]) %>"><%= company.phones[0] %></a>, <a href="<%= tel(company.phones[2]) %>"><%= company.phones[2] %></a></p>
+    </div>
+    <form class="form form--card" action="/lien-he" method="post" data-lead-form novalidate>
+      <h3 class="form__title">Để lại số, chúng tôi gọi lại</h3>
+      <div class="field">
+        <label for="qc-name">Họ tên</label>
+        <input id="qc-name" name="name" autocomplete="name" required minlength="2">
+        <p class="field__error" data-error-for="name"></p>
+      </div>
+      <div class="field">
+        <label for="qc-phone">Số điện thoại</label>
+        <input id="qc-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+        <p class="field__error" data-error-for="phone"></p>
+      </div>
+      <div class="field">
+        <label for="qc-need">Bạn cần</label>
+        <select id="qc-need" name="need">
+          <option>Tư vấn kỹ thuật</option><option>Mua sản phẩm</option><option>Làm đại lý</option><option>Gia công sản phẩm</option>
+        </select>
+      </div>
+      <% if (locals.product) { %><input type="hidden" name="product" value="<%= product %>"><% } %>
+      <input type="hidden" name="page" value="<%= path %>">
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn--blue btn--block" type="submit">Gửi yêu cầu gọi lại</button>
+      <p class="form__status" role="status" data-form-status></p>
+    </form>
+  </div>
+</section>

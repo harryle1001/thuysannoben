@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+<section class="section">
+  <div class="wrap notfound">
+    <h1 class="page-head__title"><%= locals.serverError ? 'Trang đang gặp lỗi' : 'Không tìm thấy trang này' %></h1>
+    <p class="lead"><%= locals.serverError ? 'Máy chủ gặp lỗi khi tải trang. Vui lòng thử lại sau ít phút.' : 'Đường dẫn có thể đã thay đổi khi Noben làm mới website. Tìm sản phẩm bạn cần hoặc quay về trang chủ.' %></p>
+    <form class="field field--search notfound__search" action="/san-pham" method="get" role="search">
+      <label for="nf-q" class="sr-only">Tìm sản phẩm</label>
+      <svg class="ico"><use href="#i-search"/></svg>
+      <input id="nf-q" name="q" type="search" placeholder="Tên sản phẩm hoặc triệu chứng">
+    </form>
+    <div class="btn-row">
+      <a class="btn btn--blue" href="/san-pham">Xem sản phẩm</a>
+      <a class="btn btn--line" href="/">Về trang chủ</a>
+    </div>
+  </div>
+</section>
+<%- include('../partials/footer') %>
