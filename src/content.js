@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { sanitizeHtml, sanitizeText } = require('./sanitize');
+const articles = require('./articles');
 
 const dir = path.join(__dirname, '..', 'content');
 const read = (name) => JSON.parse(fs.readFileSync(path.join(dir, `${name}.json`), 'utf8'));
@@ -12,7 +13,8 @@ const overridesFile = path.join(__dirname, '..', 'data', 'overrides.json');
 const company = read('company');
 const categories = read('categories');
 const products = read('products');
-const posts = read('posts');
+const posts = [...read('posts'), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
+const solutions = read('giai-phap');
 const pages = read('pages');
 const symptoms = read('symptoms');
 const texts = {};
@@ -40,15 +42,64 @@ function refreshProduct(p) {
 }
 
 const POST_SECTIONS = {
-  'ky-thuat': { label: 'Kỹ thuật nuôi', list: '/ky-thuat-nuoi' },
+  'ky-thuat': { label: 'Kiến thức nuôi tôm', list: '/ky-thuat-nuoi' },
   'gia-cong': { label: 'Gia công', list: '/gia-cong' },
   'cong-ty': { label: 'Tin công ty', list: '/tin-tuc' },
   'chung-nhan': { label: 'Chứng nhận', list: '/chung-nhan' },
   'tin-tuc': { label: 'Tin tức', list: '/tin-tuc' },
 };
+// Knowledge topics shown as filters on /ky-thuat-nuoi and as their own SEO pages.
+const TOPICS = [
+  { slug: 'benh-tom', name: 'Bệnh tôm', blurb: 'Nhận biết sớm và xử lý các bệnh thường gặp trên tôm thẻ, tôm sú: phân trắng, gan tụy, đốm trắng, EHP, đen mang, cong thân.' },
+  { slug: 'moi-truong', name: 'Môi trường ao', blurb: 'Quản lý pH, độ kiềm, oxy, khí độc, màu nước và tảo để ao nuôi luôn ổn định.' },
+  { slug: 'ky-thuat', name: 'Kỹ thuật nuôi', blurb: 'Cải tạo ao, chọn giống, dùng vi sinh, nuôi ao bạt mật độ cao và lịch chăm sóc theo ngày tuổi.' },
+  { slug: 'dinh-duong', name: 'Dinh dưỡng & thức ăn', blurb: 'Cho ăn đúng cách, giảm FCR, bổ sung khoáng, vitamin và men tiêu hóa cho tôm.' },
+];
+const topicBySlug = Object.fromEntries(TOPICS.map((t) => [t.slug, t]));
+// Topics for the articles that came from the old website.
+const OLD_TOPICS = {
+  'khoang-tang-trong-luong-khi-thu-hoach': 'dinh-duong',
+  'nuoi-tom-mua-mua-va-cach-khac-phuc': 'moi-truong',
+  'ky-thuat-chon-tom-giong-tot-ngay-tai-trai-tom-giong': 'ky-thuat',
+};
+const OLD_SYMPTOMS = {
+  'benh-ruot-do-tren-tom-va-cach-phong-ngua': ['gan-ruot'],
+  'su-dung-prazi-s-de-phong-va-tri-benh-teo-gan-tuy-phan-trang-trong-duong-ruot-tren-tom': ['gan-ruot'],
+  'su-dung-thao-duoc-tu-nhien-an-toan-sinh-hoc-de-phong-va-tri-hieu-qua-benh-gan-chet-som-chet-tap-me': ['gan-ruot'],
+  'benh-dom-den-tren-tom-the': ['mang-dom-den'],
+  'benh-dong-rong-hay-mang-bam': ['mang-dom-den'],
+  'benh-mem-vo-rot-cuc-thit': ['mem-vo'],
+  'khoang-tang-trong-luong-khi-thu-hoach': ['mem-vo'],
+  'nuoi-tom-mua-mua-va-cach-khac-phuc': ['oxy-stress', 'khi-doc'],
+  'cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-sinh-trung-hen-trong-ao-nuoi-tom': ['sat-trung'],
+};
+const OLD_SEO_TITLES = {
+  'su-dung-prazi-s-de-phong-va-tri-benh-teo-gan-tuy-phan-trang-trong-duong-ruot-tren-tom': 'Tẩy ký sinh trùng tôm, phòng gan, phân trắng bằng PRAZI S',
+  'cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-sinh-trung-hen-trong-ao-nuoi-tom': 'Dùng DE ZOO diệt nấm, ký sinh trùng, hến trong ao tôm',
+  'su-dung-thao-duoc-tu-nhien-an-toan-sinh-hoc-de-phong-va-tri-hieu-qua-benh-gan-chet-som-chet-tap-me': 'Trị bệnh gan, chết sớm, chết tấp mé trên tôm bằng thảo dược',
+  'chuyen-tu-van-gia-cong-hang-thanh-pham-ban-thanh-pham-huong-dan-thu-tuc-cap-ma-so-hchq-san-pham': 'Tư vấn gia công, đăng ký lưu hành thuốc thủy sản – Noben',
+  'khoang-tang-trong-luong-khi-thu-hoach': 'Khoáng tăng trọng khi thu hoạch, chống còi, trị mềm vỏ tôm',
+  'mot-so-benh-thuong-gap-tren-tom-the': 'Các bệnh thường gặp trên tôm thẻ và cách phòng trị',
+  'benh-dong-rong-hay-mang-bam': 'Bệnh đóng rong, mảng bám trên tôm: dấu hiệu và cách trị',
+  'benh-dom-den-tren-tom-the': 'Bệnh đốm đen trên tôm thẻ: nguyên nhân và cách trị',
+  'benh-mem-vo-rot-cuc-thit': 'Bệnh mềm vỏ, rớt cục thịt trên tôm thẻ và cách xử lý',
+  'ky-thuat-chon-tom-giong-tot-ngay-tai-trai-tom-giong': 'Kỹ thuật chọn tôm giống tốt ngay tại trại giống',
+};
 for (const p of posts) {
   p.url = `/bai-viet/${p.slug}`;
   p.section = POST_SECTIONS[p.category] || POST_SECTIONS['tin-tuc'];
+  if (p.category === 'ky-thuat') {
+    p.topic = p.topic || OLD_TOPICS[p.slug] || 'benh-tom';
+    p.topicInfo = topicBySlug[p.topic];
+    p.symptoms = p.symptoms || OLD_SYMPTOMS[p.slug] || [];
+  }
+  p.seoTitle = p.seoTitle || OLD_SEO_TITLES[p.slug] || p.title;
+  p.description = p.description || p.excerpt;
+  p.updated = p.updated || p.date;
+  p.toc = p.toc || [];
+  p.faq = p.faq || [];
+  p.words = p.words || p.body.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
+  p.readingMinutes = p.readingMinutes || Math.max(1, Math.round(p.words / 200));
   const d = new Date(p.date + 'T00:00:00+07:00');
   p.dateLabel = d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
 }
@@ -139,6 +190,39 @@ async function saveEdits(changes) {
 const getOverrides = () => ({ ...overrides });
 const text = (key, fallback) => (Object.prototype.hasOwnProperty.call(texts, key) ? texts[key] : fallback);
 
+// Solution landing pages (/giai-phap/<slug>): one per pond problem, with ranked products and articles.
+for (const s of solutions) {
+  s.url = `/giai-phap/${s.slug}`;
+  s.symptomInfo = symptomBySlug[s.symptom];
+  if (s.symptomInfo) s.symptomInfo.solution = s;
+}
+const solutionBySlug = Object.fromEntries(solutions.map((s) => [s.slug, s]));
+const solutionProducts = (s) =>
+  products.filter((p) => p.symptoms.includes(s.symptom)).sort((a, b) => (b.symscore[s.symptom] || 0) - (a.symscore[s.symptom] || 0));
+const solutionArticles = (s) => {
+  const picked = s.articles.map((slug) => postBySlug[slug]).filter(Boolean);
+  const more = posts.filter((p) => p.category === 'ky-thuat' && !picked.includes(p) && (p.symptoms || []).includes(s.symptom));
+  return [...picked, ...more].slice(0, 6);
+};
+const knowledge = () => posts.filter((p) => p.category === 'ky-thuat');
+function relatedArticles(post, n = 3) {
+  const score = (p) => (p.symptoms || []).filter((s) => (post.symptoms || []).includes(s)).length * 2 + (p.topic === post.topic ? 1 : 0) + (p.source === 'md' ? 0.5 : 0);
+  return knowledge()
+    .filter((p) => p !== post)
+    .map((p) => [score(p), p])
+    .sort((a, b) => b[0] - a[0] || (a[1].date < b[1].date ? 1 : -1))
+    .slice(0, n)
+    .map(([, p]) => p);
+}
+function articleProducts(post, n = 4) {
+  const chosen = (post.productSlugs || []).map((s) => productBySlug[s]).filter(Boolean);
+  return (chosen.length ? chosen : productsMentioned(post, n)).slice(0, n);
+}
+const articlesForProduct = (product, n = 3) =>
+  knowledge()
+    .filter((p) => (p.productSlugs || []).includes(product.slug) || productsMentioned(p, 30).includes(product))
+    .slice(0, n);
+
 // Hand-picked products for the home page, one per common pond problem.
 const FEATURED = ['prazi-s', 'ben-xid-3000', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'nb-brown-gay-mau-nuoc-mau-tra', 'aqualac-fs'];
 const featured = FEATURED.map((s) => productBySlug[s]).filter(Boolean);
@@ -198,4 +282,14 @@ module.exports = {
   getOverrides,
   text,
   resolveField: resolve,
+  TOPICS,
+  topicBySlug,
+  solutions,
+  solutionBySlug,
+  solutionProducts,
+  solutionArticles,
+  knowledge,
+  relatedArticles,
+  articleProducts,
+  articlesForProduct,
 };

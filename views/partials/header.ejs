@@ -2,13 +2,20 @@
 <%
   const nav = [
     ['/san-pham', 'Sản phẩm'],
-    ['/ky-thuat-nuoi', 'Kỹ thuật nuôi'],
+    ['/giai-phap', 'Giải pháp'],
+    ['/ky-thuat-nuoi', 'Kiến thức nuôi tôm'],
     ['/gia-cong', 'Gia công'],
     ['/ve-chung-toi', 'Về Noben'],
     ['/lien-he', 'Liên hệ'],
   ];
   const active = (href) => path === href || path.startsWith(href + '/');
 %>
+<div class="topbar">
+  <div class="wrap topbar__row">
+    <p class="topbar__note"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><%- tx('topbar-note', 'Nhà máy đạt ISO 9001:2015 tại Củ Chi. Kỹ thuật viên tư vấn miễn phí cho từng ao.') %></p>
+    <p class="topbar__links"><a href="<%= zaloUrl %>" target="_blank" rel="noopener">Zalo <%= company.hotline %></a><a href="mailto:<%= company.email %>"><%= company.email %></a></p>
+  </div>
+</div>
 <header class="site-header" data-header>
   <div class="wrap site-header__bar">
     <a class="brand" href="/" aria-label="Thủy sản Noben, về trang chủ">

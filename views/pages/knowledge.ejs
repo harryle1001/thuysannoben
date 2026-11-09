@@ -1,0 +1,57 @@
+<%- include('../partials/header') %>
+<%
+  const [lead, ...rest] = list;
+%>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: topic ? [['Kiến thức nuôi tôm', '/ky-thuat-nuoi'], [topic.name]] : [['Kiến thức nuôi tôm']] }) %>
+    <div class="khead__grid">
+      <div>
+        <h1 class="khead__title"><%= topic ? topic.name : 'Kiến thức nuôi tôm' %></h1>
+        <p class="khead__lead"><%= topic ? topic.blurb : 'Cẩm nang do đội kỹ thuật Noben biên soạn từ kinh nghiệm ao nuôi thực tế: nhận biết bệnh tôm, quản lý môi trường ao, kỹ thuật nuôi và dinh dưỡng cho tôm thẻ, tôm sú.' %></p>
+      </div>
+      <form class="khead__search field field--search" action="/san-pham" method="get" role="search">
+        <label for="kq" class="sr-only">Tìm sản phẩm theo triệu chứng</label>
+        <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="kq" name="q" type="search" placeholder="Tìm thuốc theo triệu chứng: phân trắng, đen mang…">
+      </form>
+    </div>
+    <nav class="topic-nav" aria-label="Chuyên mục">
+      <a class="topic-chip" href="/ky-thuat-nuoi"<% if (!topic) { %> aria-current="page"<% } %>>Tất cả <span><%= total %></span></a>
+      <% for (const t of topics) { %>
+      <a class="topic-chip" href="/ky-thuat-nuoi/<%= t.slug %>"<% if (topic && topic.slug === t.slug) { %> aria-current="page"<% } %>><%= t.name %> <span><%= t.count %></span></a>
+      <% } %>
+    </nav>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap">
+    <% if (lead) { %>
+    <div class="kfeature">
+      <%- include('../partials/article-card', { post: lead, big: true, eager: true }) %>
+      <div class="kfeature__side">
+        <% rest.slice(0, 3).forEach((p) => { %><%- include('../partials/article-card', { post: p, compact: true }) %><% }) %>
+      </div>
+    </div>
+    <% } %>
+    <% if (rest.length > 3) { %>
+    <div class="agrid">
+      <% rest.slice(3).forEach((p) => { %><%- include('../partials/article-card', { post: p }) %><% }) %>
+    </div>
+    <% } %>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="sol-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="sol-title" class="h2">Ao đang gặp vấn đề? Xem giải pháp ngay</h2>
+      <a class="text-link" href="/giai-phap">Tất cả giải pháp</a>
+    </header>
+    <%- include('../partials/solution-tiles', { solutions }) %>
+  </div>
+</section>
+
+<%- include('../partials/quick-contact', { title: 'Cần kỹ thuật viên xem giúp ao của bạn?' }) %>
+<%- include('../partials/footer') %>

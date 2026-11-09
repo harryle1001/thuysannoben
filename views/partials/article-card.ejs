@@ -1,0 +1,13 @@
+<article class="acard<%= locals.big ? ' acard--big' : '' %>">
+  <a class="acard__media" href="<%= post.url %>" tabindex="-1" aria-hidden="true">
+    <%- img(post.cover, { alt: '', sizes: locals.big ? '(min-width: 1000px) 640px, 100vw' : '(min-width: 1000px) 380px, 100vw', loading: locals.eager ? 'eager' : 'lazy' }) %>
+  </a>
+  <div class="acard__body">
+    <p class="acard__meta">
+      <% if (post.topicInfo) { %><a class="acard__topic" href="/ky-thuat-nuoi/<%= post.topic %>"><%= post.topicInfo.name %></a><% } %>
+      <span><%= post.readingMinutes %> phút đọc</span>
+    </p>
+    <h3 class="acard__title"><a href="<%= post.url %>"><%- ef(`posts.${post.slug}.title`, post.title) %></a></h3>
+    <% if (locals.big || !locals.compact) { %><p class="acard__excerpt"><%- ef(`posts.${post.slug}.excerpt`, post.excerpt) %></p><% } %>
+  </div>
+</article>

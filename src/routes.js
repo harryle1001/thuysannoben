@@ -3,6 +3,7 @@ const express = require('express');
 const c = require('./content');
 const leads = require('./leads');
 const auth = require('./auth');
+const seo = require('./seo');
 
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
@@ -94,43 +95,29 @@ function safeNext(v) {
   return /^\/(?!\/)[\w\-./?=&%]*$/.test(s) ? s : '/';
 }
 
-const org = () => ({
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: c.company.legal,
-  alternateName: 'Thủy sản Noben',
-  url: SITE_URL,
-  logo: SITE_URL + '/images/brand/logo-noben.png',
-  email: c.company.email,
-  telephone: c.company.hotline,
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung',
-    addressLocality: 'Củ Chi',
-    addressRegion: 'TP. Hồ Chí Minh',
-    addressCountry: 'VN',
-  },
-});
-const crumbs = (items) => ({
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: items.map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + url })),
-});
+const org = seo.organization;
+const crumbs = seo.crumbs;
+const clip = (s, n) => (s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s);
 
 // ---------- Pages ----------
 router.get('/', (req, res) => {
+  const knowledge = c.knowledge();
   res.render('pages/home', {
     meta: {
-      title: 'Thuốc và chế phẩm thủy sản Noben – Nhà máy đạt ISO 9001:2015',
+      title: 'Thuốc thủy sản Noben – Thuốc nuôi tôm, chế phẩm sinh học, khoáng chất',
       description:
-        'Noben sản xuất thuốc thú y thủy sản, chế phẩm sinh học, khoáng chất và thức ăn bổ sung cho ao tôm, cá. Hơn 15 năm kinh nghiệm, nhà máy tại Củ Chi đạt ISO 9001:2015.',
+        'Thuốc thủy sản Noben: thuốc trị bệnh tôm, vi sinh xử lý đáy, khoáng chất, men tiêu hóa cho ao tôm, cá. Nhà máy ISO 9001:2015 tại Củ Chi, hơn 15 năm kinh nghiệm, tư vấn kỹ thuật miễn phí.',
+      image: '/images/brand/banner-1.webp',
     },
     featured: c.featured,
-    articles: c.posts.filter((p) => p.category === 'ky-thuat').slice(0, 4),
+    articles: knowledge.filter((p) => p.source === 'md').slice(0, 6),
+    knowledgeCount: knowledge.length,
+    solutions: c.solutions,
+    topics: c.TOPICS,
     productCount: c.products.length,
     allProducts: c.products,
     certificates: c.gallery.certificates.slice(0, 4),
-    jsonld: [org()],
+    jsonld: [org(), seo.website()],
   });
 });
 
@@ -143,7 +130,7 @@ function renderCatalog(req, res, category) {
   const title = catInfo ? `${catInfo.name} cho ao tôm, cá` : 'Sản phẩm thuốc và chế phẩm thủy sản';
   res.render('pages/catalog', {
     meta: {
-      title: catInfo ? `${catInfo.name} – Thủy sản Noben` : 'Sản phẩm – Thủy sản Noben',
+      title: catInfo ? `${catInfo.name} cho tôm, cá – Thuốc thủy sản Noben` : 'Sản phẩm thuốc thủy sản, thuốc nuôi tôm – Noben',
       description: catInfo ? catInfo.blurb : `${c.products.length} sản phẩm thuốc thủy sản Noben: chế phẩm sinh học, khoáng chất, thức ăn bổ sung, đặc trị bệnh tôm cá.`,
       noindex: Boolean(symptom || q),
     },
@@ -152,7 +139,10 @@ function renderCatalog(req, res, category) {
     list,
     filters: { category: cat, symptom, q },
     lockedCategory: Boolean(category),
-    jsonld: [crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], ...(catInfo ? [[catInfo.name, `/san-pham/nhom/${cat}`]] : [])])],
+    jsonld: [
+      crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], ...(catInfo ? [[catInfo.name, `/san-pham/nhom/${cat}`]] : [])]),
+      seo.itemList(title, list),
+    ],
   });
 }
 router.get('/san-pham', (req, res) => renderCatalog(req, res));
@@ -162,25 +152,14 @@ router.get('/san-pham/:slug', (req, res, next) => {
   const p = c.productBySlug[req.params.slug.toLowerCase()];
   if (!p) return next();
   if (req.params.slug !== p.slug) return res.redirect(301, p.url);
-  const desc = `${p.name}: ${p.tagline}. Sản phẩm của Công ty TNHH Noben, nhà máy đạt ISO 9001:2015.`;
+  const desc = `${p.name}: ${p.tagline}. ${p.uses[0] ? p.uses[0].replace(/<[^>]+>/g, '') + ' ' : ''}Sản phẩm của Thủy sản Noben, nhà máy ISO 9001:2015. Gọi ${c.company.hotline} để được tư vấn.`;
   res.render('pages/product', {
-    meta: { title: `${p.name} – ${p.tagline}`.slice(0, 90), description: desc.slice(0, 300), image: p.image && p.image.src, type: 'product' },
+    meta: { title: clip(`${p.name}: ${p.tagline}`, 62), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
     p,
     related: c.relatedProducts(p),
-    articles: c.posts.filter((post) => post.category === 'ky-thuat' && c.productsMentioned(post, 20).includes(p)).slice(0, 2),
-    jsonld: [
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Product',
-        name: p.name,
-        description: p.tagline,
-        image: p.images.map((i) => SITE_URL + i.src),
-        brand: { '@type': 'Brand', name: 'Noben' },
-        manufacturer: { '@type': 'Organization', name: c.company.legal },
-        category: p.categoryInfo.name,
-      },
-      crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]]),
-    ],
+    articles: c.articlesForProduct(p, 3),
+    solutions: p.symptoms.map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean),
+    jsonld: [seo.product(p), crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]])],
   });
 });
 
@@ -193,45 +172,82 @@ function renderPostList(res, { title, intro, list, path, description }) {
     jsonld: [crumbs([['Trang chủ', '/'], [title, path]])],
   });
 }
-router.get('/ky-thuat-nuoi', (req, res) =>
-  renderPostList(res, {
-    title: 'Kỹ thuật nuôi',
-    intro: 'Kinh nghiệm phòng và trị bệnh thường gặp trên tôm thẻ, tôm sú do đội kỹ thuật Noben tổng hợp từ ao nuôi thực tế.',
-    description: 'Cẩm nang kỹ thuật nuôi tôm: bệnh phân trắng, đốm đen, mềm vỏ, đóng rong, gan tụy và cách xử lý ao nuôi mùa mưa.',
-    list: c.posts.filter((p) => p.category === 'ky-thuat'),
-    path: '/ky-thuat-nuoi',
-  })
-);
+function renderKnowledge(req, res, topic) {
+  const all = c.knowledge();
+  const list = topic ? all.filter((p) => p.topic === topic.slug) : all;
+  const title = topic ? `${topic.name} – Kiến thức nuôi tôm` : 'Kiến thức nuôi tôm';
+  res.render('pages/knowledge', {
+    meta: {
+      title: topic ? `${topic.name}: kiến thức nuôi tôm thẻ, tôm sú – Noben` : 'Kiến thức nuôi tôm: bệnh tôm, môi trường ao, kỹ thuật nuôi – Noben',
+      description: topic ? topic.blurb : 'Cẩm nang nuôi tôm thẻ chân trắng, tôm sú: nhận biết và xử lý bệnh tôm, quản lý môi trường ao, kỹ thuật nuôi và dinh dưỡng do đội kỹ thuật Noben biên soạn.',
+    },
+    topic,
+    topics: c.TOPICS.map((t) => ({ ...t, count: all.filter((p) => p.topic === t.slug).length })),
+    list,
+    total: all.length,
+    solutions: c.solutions,
+    jsonld: [
+      crumbs([['Trang chủ', '/'], ['Kiến thức nuôi tôm', '/ky-thuat-nuoi'], ...(topic ? [[topic.name, `/ky-thuat-nuoi/${topic.slug}`]] : [])]),
+      seo.itemList(title, list),
+    ],
+  });
+}
+router.get('/ky-thuat-nuoi', (req, res) => renderKnowledge(req, res));
+router.get('/ky-thuat-nuoi/:topic', (req, res, next) => (c.topicBySlug[req.params.topic] ? renderKnowledge(req, res, c.topicBySlug[req.params.topic]) : next()));
 router.get('/tin-tuc', (req, res) =>
   renderPostList(res, {
     title: 'Tin tức',
     intro: 'Hoạt động của Công ty TNHH Noben, nhà máy và đội ngũ.',
-    description: 'Tin tức và hoạt động của Công ty TNHH Noben.',
+    description: 'Tin tức, hình ảnh nhà máy và hoạt động của đội ngũ Công ty TNHH Noben, nhà sản xuất thuốc thủy sản tại Củ Chi, TP.HCM.',
     list: c.posts.filter((p) => p.category === 'cong-ty' || p.category === 'tin-tuc'),
     path: '/tin-tuc',
   })
 );
 
+// Solution pages: one per pond problem, the pages people land on when they search for a treatment.
+router.get('/giai-phap', (req, res) =>
+  res.render('pages/solutions', {
+    meta: { title: 'Giải pháp cho ao nuôi tôm theo từng vấn đề – Noben', description: 'Chọn vấn đề ao tôm đang gặp: phân trắng, gan tụy, đen mang, mềm vỏ, khí độc, tảo, thiếu oxy để xem cách xử lý và sản phẩm phù hợp.' },
+    solutions: c.solutions.map((s) => ({ ...s, count: c.solutionProducts(s).length })),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Giải pháp', '/giai-phap']]), seo.itemList('Giải pháp cho ao nuôi tôm', c.solutions.map((s) => ({ url: s.url, name: s.h1 })))],
+  })
+);
+router.get('/giai-phap/:slug', (req, res, next) => {
+  const s = c.solutionBySlug[req.params.slug];
+  if (!s) return next();
+  const prods = c.solutionProducts(s);
+  res.render('pages/solution', {
+    meta: { title: s.seo_title, description: s.description },
+    s,
+    products: prods,
+    articles: c.solutionArticles(s),
+    others: c.solutions.filter((x) => x !== s),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Giải pháp', '/giai-phap'], [s.h1, s.url]]), seo.itemList(s.h1, prods), seo.faqPage(s.faq)].filter(Boolean),
+  });
+});
+
 router.get('/bai-viet/:slug', (req, res, next) => {
   const post = c.postBySlug[req.params.slug];
   if (!post) return next();
+  const isKnowledge = post.category === 'ky-thuat';
   res.render('pages/post', {
-    meta: { title: post.title, description: post.excerpt, image: post.cover && post.cover.src, type: 'article' },
+    meta: {
+      title: post.seoTitle,
+      description: clip(post.description || post.excerpt, 300),
+      image: post.ogImage || (post.cover && post.cover.src),
+      type: 'article',
+      published: post.date,
+      modified: post.updated,
+    },
     post,
-    mentioned: c.productsMentioned(post),
-    more: c.posts.filter((p) => p.category === post.category && p !== post).slice(0, 3),
+    mentioned: c.articleProducts(post),
+    more: isKnowledge ? c.relatedArticles(post, 3) : c.posts.filter((p) => p.category === post.category && p !== post).slice(0, 3),
+    solutions: (post.symptoms || []).map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean),
     jsonld: [
-      {
-        '@context': 'https://schema.org',
-        '@type': 'Article',
-        headline: post.title,
-        datePublished: post.date,
-        image: post.cover ? [SITE_URL + post.cover.src] : undefined,
-        author: { '@type': 'Organization', name: c.company.legal },
-        publisher: { '@type': 'Organization', name: c.company.legal, logo: { '@type': 'ImageObject', url: SITE_URL + '/images/brand/logo-noben.png' } },
-      },
-      crumbs([['Trang chủ', '/'], [post.section.label, post.section.list], [post.title, post.url]]),
-    ],
+      seo.article(post),
+      seo.faqPage(post.faq),
+      crumbs([['Trang chủ', '/'], [post.section.label, post.section.list], ...(post.topicInfo ? [[post.topicInfo.name, `/ky-thuat-nuoi/${post.topic}`]] : []), [post.title, post.url]]),
+    ].filter(Boolean),
   });
 });
 
@@ -271,7 +287,7 @@ router.get('/lien-he', (req, res) => {
 router.get('/chinh-sach/:slug', (req, res, next) => {
   const page = c.pages[req.params.slug];
   if (!page) return next();
-  res.render('pages/policy', { meta: { title: `${page.title} – Thủy sản Noben`, description: page.title }, page, slug: req.params.slug, policies: c.pages });
+  res.render('pages/policy', { meta: { title: `${page.title} – Thủy sản Noben`, description: `${page.title} khi mua thuốc thủy sản, chế phẩm sinh học và khoáng chất tại Công ty TNHH Noben. Hotline ${c.company.hotline}.` }, page, slug: req.params.slug, policies: c.pages });
 });
 
 // ---------- Contact form ----------
@@ -309,20 +325,47 @@ router.get('/quan-tri/lien-he', async (req, res) => {
 });
 
 // ---------- SEO ----------
-router.get('/robots.txt', (req, res) => res.type('text/plain').send(`User-agent: *\nDisallow: /quan-tri/\nSitemap: ${SITE_URL}/sitemap.xml\n`));
+router.get('/robots.txt', (req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /quan-tri/\nDisallow: /*?q=\nSitemap: ${SITE_URL}/sitemap.xml\n`));
+const xmlEsc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 router.get('/sitemap.xml', (req, res) => {
-  const urls = [
-    '/', '/san-pham', '/ky-thuat-nuoi', '/tin-tuc', '/ve-chung-toi', '/chung-nhan', '/gia-cong', '/lien-he',
-    ...c.categories.map((x) => `/san-pham/nhom/${x.slug}`),
-    ...c.products.map((p) => p.url),
-    ...c.posts.map((p) => p.url),
-    ...Object.keys(c.pages).map((s) => `/chinh-sach/${s}`),
+  const today = new Date().toISOString().slice(0, 10);
+  const entries = [
+    { loc: '/', priority: '1.0', changefreq: 'weekly', images: ['/images/brand/banner-1.webp'] },
+    { loc: '/san-pham', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/ky-thuat-nuoi', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/giai-phap', priority: '0.9', changefreq: 'monthly' },
+    ...c.solutions.map((s) => ({ loc: s.url, priority: '0.9', changefreq: 'monthly' })),
+    ...c.TOPICS.map((t) => ({ loc: `/ky-thuat-nuoi/${t.slug}`, priority: '0.7', changefreq: 'weekly' })),
+    ...c.categories.map((x) => ({ loc: `/san-pham/nhom/${x.slug}`, priority: '0.8', changefreq: 'weekly' })),
+    ...c.products.map((p) => ({ loc: p.url, priority: '0.8', changefreq: 'monthly', images: p.images.map((i) => i.src), imageTitle: p.name })),
+    ...c.posts.map((p) => ({ loc: p.url, priority: p.category === 'ky-thuat' ? '0.8' : '0.5', changefreq: 'monthly', lastmod: p.updated || p.date, images: [p.ogImage || (p.cover && p.cover.src)].filter(Boolean), imageTitle: p.title })),
+    ...['/ve-chung-toi', '/chung-nhan', '/gia-cong', '/lien-he', '/tin-tuc'].map((loc) => ({ loc, priority: '0.6', changefreq: 'monthly' })),
+    ...Object.keys(c.pages).map((s) => ({ loc: `/chinh-sach/${s}`, priority: '0.3', changefreq: 'yearly' })),
   ];
-  res.type('application/xml').send(
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-      .map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`)
-      .join('\n')}\n</urlset>\n`
-  );
+  const body = entries
+    .map((e) => {
+      const imgs = (e.images || [])
+        .map((i) => `    <image:image><image:loc>${xmlEsc(seo.abs(i))}</image:loc>${e.imageTitle ? `<image:title>${xmlEsc(e.imageTitle)}</image:title>` : ''}</image:image>`)
+        .join('\n');
+      return `  <url>\n    <loc>${xmlEsc(SITE_URL + e.loc)}</loc>\n    <lastmod>${e.lastmod || today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>${imgs ? '\n' + imgs : ''}\n  </url>`;
+    })
+    .join('\n');
+  res
+    .type('application/xml')
+    .send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${body}\n</urlset>\n`);
+});
+router.get('/rss.xml', (req, res) => {
+  const items = c
+    .knowledge()
+    .slice(0, 30)
+    .map(
+      (p) =>
+        `  <item>\n    <title>${xmlEsc(p.title)}</title>\n    <link>${SITE_URL}${p.url}</link>\n    <guid>${SITE_URL}${p.url}</guid>\n    <pubDate>${new Date(p.date + 'T08:00:00+07:00').toUTCString()}</pubDate>\n    <description>${xmlEsc(p.description || p.excerpt)}</description>\n  </item>`
+    )
+    .join('\n');
+  res
+    .type('application/rss+xml')
+    .send(`<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n  <title>Kiến thức nuôi tôm – Thủy sản Noben</title>\n  <link>${SITE_URL}/ky-thuat-nuoi</link>\n  <description>Cẩm nang nuôi tôm, bệnh tôm và quản lý ao nuôi từ đội kỹ thuật Noben</description>\n  <language>vi</language>\n${items}\n</channel>\n</rss>\n`);
 });
 
 // ---------- Permanent redirects from the old website's URLs ----------
@@ -341,6 +384,10 @@ const REDIRECTS = {
   '/he-thong-thong-minh': '/',
   '/partnersearch': '/lien-he',
 };
+router.get('/van-de/:sym', (req, res) => {
+  const s = c.symptomBySlug[req.params.sym];
+  res.redirect(301, s && s.solution ? s.solution.url : '/giai-phap');
+});
 router.get('/products/:slug', (req, res, next) => {
   const p = c.productBySlug[req.params.slug.toLowerCase()];
   return p ? res.redirect(301, p.url) : res.redirect(301, '/san-pham');

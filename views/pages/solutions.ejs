@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Giải pháp']] }) %>
+    <h1 class="khead__title"><%- tx('solutions-title', 'Giải pháp cho ao nuôi tôm theo từng vấn đề') %></h1>
+    <p class="khead__lead"><%- tx('solutions-lead', 'Chọn đúng vấn đề ao đang gặp để xem dấu hiệu, các bước xử lý do kỹ thuật viên Noben khuyến nghị và những sản phẩm phù hợp nhất.') %></p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap">
+    <%- include('../partials/solution-tiles', { solutions }) %>
+  </div>
+</section>
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

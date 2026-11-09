@@ -1,19 +1,85 @@
 <%- include('../partials/header') %>
+<%
+  const isKnowledge = post.category === 'ky-thuat';
+  const showCover = post.cover && !post.gallery.length;
+  const shareUrl = encodeURIComponent(canonical);
+  const dateFmt = (d) => new Date(d + 'T00:00:00+07:00').toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+%>
 <article class="article">
-  <header class="wrap article__head">
-    <%- include('../partials/crumbs', { items: [[post.section.label, post.section.list], [post.title]] }) %>
-    <h1 class="article__title"><%- ef(`posts.${post.slug}.title`, post.title) %></h1>
-    <p class="article__meta"><%= post.section.label %>, đăng ngày <time datetime="<%= post.date %>"><%= post.dateLabel %></time></p>
+  <header class="ahero<%= showCover && post.source === 'md' ? ' ahero--cover' : '' %>">
+    <div class="wrap ahero__grid">
+      <div class="ahero__text">
+        <%- include('../partials/crumbs', { items: [[post.section.label, post.section.list], ...(post.topicInfo ? [[post.topicInfo.name, '/ky-thuat-nuoi/' + post.topic]] : []), [post.title]] }) %>
+        <% if (post.topicInfo) { %><a class="ahero__topic" href="/ky-thuat-nuoi/<%= post.topic %>"><%= post.topicInfo.name %></a><% } %>
+        <h1 class="article__title"><%- ef(`posts.${post.slug}.title`, post.title) %></h1>
+        <% if (post.source === 'md' && post.description) { %><p class="ahero__lead"><%= post.description %></p><% } %>
+        <p class="article__meta">
+          <span>Đội ngũ kỹ thuật Noben</span>
+          <span>Cập nhật <time datetime="<%= post.updated %>"><%= dateFmt(post.updated) %></time></span>
+          <span><%= post.readingMinutes %> phút đọc</span>
+        </p>
+      </div>
+      <% if (showCover) { %>
+      <figure class="ahero__cover"><%- img(post.cover, { alt: post.title, loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 1000px) 560px, 100vw' }) %></figure>
+      <% } %>
+    </div>
   </header>
-  <% if (post.cover && !post.gallery.length) { %>
-  <figure class="wrap article__cover"><%- img(post.cover, { alt: post.title, loading: 'eager', fetchpriority: 'high' }) %></figure>
-  <% } %>
+
   <div class="wrap article__layout">
-    <div class="prose" data-gallery<%- ed(`posts.${post.slug}.body`) %>><%- post.body %></div>
+    <div class="article__main">
+      <% if (post.toc.length > 2) { %>
+      <details class="toc" open>
+        <summary>Nội dung bài viết</summary>
+        <ol>
+          <% post.toc.forEach((t) => { %><li><a href="#<%= t.id %>"><%= t.text %></a></li><% }) %>
+          <% if (post.faq.length) { %><li><a href="#cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li><% } %>
+        </ol>
+      </details>
+      <% } %>
+
+      <div class="prose prose--article" data-gallery<%- ed(`posts.${post.slug}.body`) %>><%- post.body %></div>
+
+      <% if (post.faq.length) { %>
+      <section class="faq-block" aria-labelledby="cau-hoi-thuong-gap">
+        <h2 id="cau-hoi-thuong-gap" class="faq-block__title">Câu hỏi thường gặp</h2>
+        <div class="faq">
+          <% post.faq.forEach((f, i) => { %>
+          <details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details>
+          <% }) %>
+        </div>
+      </section>
+      <% } %>
+
+      <% if (isKnowledge) { %>
+      <aside class="author-box" aria-label="Về tác giả">
+        <img src="/images/brand/logo-noben.webp" width="56" height="56" alt="" loading="lazy">
+        <div>
+          <p class="author-box__name">Đội ngũ kỹ thuật Noben</p>
+          <p>Bài viết được biên soạn bởi đội kỹ thuật của Công ty TNHH Noben, đơn vị sản xuất thuốc thủy sản hơn 15 năm với nhà máy đạt ISO 9001:2015. Thông tin mang tính tham khảo; liều dùng cụ thể theo nhãn sản phẩm và tình trạng ao.</p>
+        </div>
+      </aside>
+      <% } %>
+
+      <p class="share">
+        <span>Chia sẻ bài viết:</span>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<%= shareUrl %>" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://zalo.me/share?url=<%= shareUrl %>" target="_blank" rel="noopener">Zalo</a>
+        <button type="button" class="share__copy" data-copy-link="<%= canonical %>">Sao chép liên kết</button>
+      </p>
+    </div>
+
     <aside class="article__aside">
+      <% if (solutions && solutions.length) { %>
+      <section class="aside-box">
+        <h2 class="aside-box__title">Giải pháp liên quan</h2>
+        <ul class="aside-links">
+          <% solutions.forEach((s) => { %><li><a href="<%= s.url %>"><%= s.h1 %></a></li><% }) %>
+        </ul>
+      </section>
+      <% } %>
       <% if (mentioned.length) { %>
       <section class="aside-box">
-        <h2 class="aside-box__title">Sản phẩm trong bài</h2>
+        <h2 class="aside-box__title">Sản phẩm được nhắc đến</h2>
         <ul class="mini-products">
           <% mentioned.forEach((p) => { %>
           <li><a href="<%= p.url %>"><%- img(p.image, { alt: '' }) %><span><strong><%= p.name %></strong><small><%= p.tagline %></small></span></a></li>
@@ -23,19 +89,26 @@
       <% } %>
       <section class="aside-box aside-box--ink">
         <h2 class="aside-box__title">Ao đang có triệu chứng tương tự?</h2>
-        <p>Gọi kỹ thuật viên Noben để được hướng dẫn xử lý cụ thể cho ao của bạn.</p>
+        <p>Gọi kỹ thuật viên Noben, mô tả tuổi tôm, diện tích ao và triệu chứng để được hướng dẫn xử lý miễn phí.</p>
         <a class="btn btn--sun btn--block" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
+        <a class="btn btn--ghost btn--block" href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>Gửi ảnh tôm qua Zalo</a>
       </section>
     </aside>
   </div>
 </article>
+
 <% if (more.length) { %>
 <section class="section section--tint" aria-labelledby="more-title">
   <div class="wrap">
-    <h2 id="more-title" class="h2">Bài cùng chủ đề</h2>
-    <div class="post-list post-list--three">
-      <% more.forEach((p) => { %><%- include('../partials/post-item', { post: p }) %><% }) %>
-    </div>
+    <header class="section-head">
+      <h2 id="more-title" class="h2"><%= isKnowledge ? 'Bài viết liên quan' : 'Bài cùng chủ đề' %></h2>
+      <% if (isKnowledge) { %><a class="text-link" href="/ky-thuat-nuoi">Tất cả kiến thức nuôi tôm</a><% } %>
+    </header>
+    <% if (isKnowledge) { %>
+    <div class="agrid"><% more.forEach((p) => { %><%- include('../partials/article-card', { post: p }) %><% }) %></div>
+    <% } else { %>
+    <div class="post-list post-list--three"><% more.forEach((p) => { %><%- include('../partials/post-item', { post: p }) %><% }) %></div>
+    <% } %>
   </div>
 </section>
 <% } %>

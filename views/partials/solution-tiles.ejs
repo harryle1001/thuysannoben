@@ -1,0 +1,11 @@
+<ul class="soltiles">
+  <% solutions.forEach((s) => { %>
+  <li class="soltile">
+    <a href="<%= s.url %>">
+      <span class="soltile__label"><%= s.symptomInfo ? s.symptomInfo.label : s.h1 %></span>
+      <span class="soltile__title"><%= s.h1 %></span>
+      <span class="soltile__more">Xem cách xử lý<% if (s.count) { %> và <%= s.count %> sản phẩm<% } %></span>
+    </a>
+  </li>
+  <% }) %>
+</ul>

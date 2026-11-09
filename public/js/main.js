@@ -226,4 +226,13 @@
       a.remove();
     });
   });
+  /* ---------- Copy article link ---------- */
+  $$('[data-copy-link]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var url = b.getAttribute('data-copy-link');
+      var done = function () { var old = b.textContent; b.textContent = 'Đã sao chép'; setTimeout(function () { b.textContent = old; }, 1600); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { window.prompt('Sao chép liên kết:', url); });
+      else window.prompt('Sao chép liên kết:', url);
+    });
+  });
 })();

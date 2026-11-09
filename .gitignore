@@ -6,3 +6,4 @@ data/*.jsonl
 preview/
 data/overrides.json
 data/*.tmp
+public/images/kien-thuc/.fonts/
