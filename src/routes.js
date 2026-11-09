@@ -15,6 +15,7 @@ router.use((req, res, next) => {
   res.locals.symptoms = c.symptoms;
   res.locals.path = req.path;
   res.locals.siteUrl = SITE_URL;
+  res.locals.googleVerify = String(process.env.GOOGLE_SITE_VERIFICATION || '').trim();
   res.locals.canonical = SITE_URL + (req.path === '/' ? '/' : req.path.replace(/\/$/, ''));
   res.locals.tel = (n) => 'tel:' + String(n).replace(/\D/g, '');
   res.locals.zaloUrl = 'https://zalo.me/' + c.company.zalo;
