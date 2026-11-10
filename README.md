@@ -165,15 +165,22 @@ node scripts/seo-audit.js http://localhost:3000
 ## Ảnh sản phẩm tách nền và trưng bày 3D
 
 - Mỗi sản phẩm có ảnh bao bì đã tách nền trong `public/images/products-cutout/`. Website dùng ảnh này cho thẻ sản phẩm (đặt trên bệ có ánh đèn, bóng đổ, nghiêng theo chuột), băng chuyền 3D kéo qua lại ở trang chủ và trang sản phẩm, và khu xoay sản phẩm ở trang chi tiết. Ảnh poster gốc vẫn giữ để bấm "Xem nhãn gốc" đọc thông tin trên bao bì.
-- Thêm sản phẩm mới: đặt ảnh poster vào `public/images/products/`, khai báo trong `content/products.json`, rồi tách nền:
+- Ảnh tách nền được làm nét bằng AI: gói hàng trên poster được phóng to 4 lần bằng Real-ESRGAN (chữ trên nhãn rõ, không nhòe), tách nền ở độ phân giải cao, rồi nắn lại viền theo loại bao bì: túi và bao có viền thẳng, bo góc nhẹ; chai có viền cân đối hai bên (loại bỏ bọt nước, mảng nền dính vào); viền ảnh được khử màu nền để đặt lên nền nào cũng sạch.
+- Thêm sản phẩm mới: đặt ảnh poster vào `public/images/products/`, khai báo trong `content/products.json`, thêm tên sản phẩm vào nhóm `POUCH` (túi, bao) hoặc `BOTTLE` (chai) đầu file `scripts/enhance-products.py`, rồi chạy:
 
 ```bash
-pip install "rembg[cpu]" pillow numpy scipy
+pip install "rembg[cpu]" pillow numpy scipy opencv-python-headless spandrel torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu
 ```
 
 ```bash
-MODEL=birefnet-general-lite python3 scripts/cutout-products.py ten-san-pham
+mkdir -p ~/.sr && curl -L -o ~/.sr/RealESRGAN_x4plus.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
 ```
+
+```bash
+python3 scripts/enhance-products.py ten-san-pham
+```
+
+Mỗi sản phẩm mất khoảng 45 giây trên máy không có GPU. Nếu poster quá lạ khiến máy không tìm đúng gói hàng, khai báo khung gói trong `BOX` ở đầu script (như Down Max). Script cũ `scripts/cutout-products.py` (tách nền nhanh, không làm nét) vẫn giữ để dùng khi cần.
 
 Sản phẩm chưa có ảnh tách nền sẽ tự hiển thị ảnh poster.
 
