@@ -15,7 +15,9 @@ const categories = read('categories');
 const products = read('products');
 const posts = [...read('posts'), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
 const solutions = read('giai-phap');
-const pages = read('pages');
+const policies = require('./policies');
+// Policy pages: Markdown in content/chinh-sach/ (falls back to the old content/pages.json entries).
+const pages = { ...read('pages'), ...policies.load() };
 const symptoms = read('symptoms');
 const texts = {};
 
@@ -120,6 +122,8 @@ for (const p of posts) {
     p.topicInfo = topicBySlug[p.topic];
     p.symptoms = p.symptoms || OLD_SYMPTOMS[p.slug] || [];
   }
+  // Old-site articles used bold paragraphs as headings: turn them into real headings.
+  if (p.source !== 'md') p.body = p.body.replace(/<p>\s*<strong>([^<]{3,120})<\/strong>\s*:?\s*<\/p>/g, '<h3>$1</h3>');
   p.seoTitle = p.seoTitle || OLD_SEO_TITLES[p.slug] || p.title;
   p.description = p.description || p.excerpt;
   p.updated = p.updated || p.date;
@@ -128,7 +132,7 @@ for (const p of posts) {
   p.words = p.words || p.body.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
   p.readingMinutes = p.readingMinutes || Math.max(1, Math.round(p.words / 200));
   const d = new Date(p.date + 'T00:00:00+07:00');
-  p.dateLabel = d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  p.dateLabel = d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' });
 }
 
 /* ---------- On-page editing ----------
@@ -139,7 +143,7 @@ for (const p of posts) {
      categories.<slug>.blurb    texts.home-hero-title
    "rich" values keep simple formatting (bold, lists, superscript); "text" values are plain. */
 const FIELDS = {
-  company: { hotline: 'text', address: 'text', email: 'text', vision: 'text', mission: 'text', 'phones.*': 'text', 'values.*': 'text', 'overview.*': 'text' },
+  company: { hotline: 'text', address: 'text', email: 'text', vision: 'text', mission: 'text', 'phones.*': 'text', 'values.*': 'text', 'overview.*': 'text', tax_id: 'text', reg_date: 'text', reg_place: 'text', representative: 'text', bank_name: 'text', bank_account: 'text', bank_holder: 'text', bct_url: 'text' },
   products: { name: 'text', tagline: 'text', packaging: 'text', 'uses.*': 'rich', 'dose.*': 'rich', 'composition.*': 'rich' },
   posts: { title: 'text', excerpt: 'text', body: 'rich' },
   categories: { name: 'text', blurb: 'text' },

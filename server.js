@@ -45,7 +45,7 @@ app.use(
         'script-src': ["'self'"],
         'style-src': ["'self'"],
         'font-src': ["'self'"],
-        'img-src': ["'self'", 'data:', 'https://i.ytimg.com', 'https://img.youtube.com'],
+        'img-src': ["'self'", 'data:', 'https://i.ytimg.com', 'https://img.youtube.com', 'https://online.gov.vn'],
         'frame-src': ['https://www.google.com', 'https://maps.google.com', 'https://www.youtube-nocookie.com'],
         'connect-src': ["'self'"],
         'form-action': ["'self'"],

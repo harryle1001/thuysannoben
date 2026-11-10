@@ -4,6 +4,7 @@ const c = require('./content');
 const leads = require('./leads');
 const auth = require('./auth');
 const seo = require('./seo');
+const policies = require('./policies');
 
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
@@ -289,7 +290,15 @@ router.get('/lien-he', (req, res) => {
 router.get('/chinh-sach/:slug', (req, res, next) => {
   const page = c.pages[req.params.slug];
   if (!page) return next();
-  res.render('pages/policy', { meta: { title: `${page.title} – Thủy sản Noben`, description: `${page.title} khi mua thuốc thủy sản, chế phẩm sinh học và khoáng chất tại Công ty TNHH Noben. Hotline ${c.company.hotline}.` }, page, slug: req.params.slug, policies: c.pages });
+  const fill = (s) => policies.fill(s, c.company, SITE_URL);
+  const list = Object.entries(c.pages).sort((a, b) => (a[1].order || 99) - (b[1].order || 99));
+  res.render('pages/policy', {
+    meta: { title: `${page.title} – Thủy sản Noben`, description: policies.fillText(page.description || `${page.title} khi mua hàng tại ${c.company.legal}.`, c.company, SITE_URL) },
+    page: { ...page, body: fill(page.body) },
+    slug: req.params.slug,
+    policies: Object.fromEntries(list),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Chính sách', '/chinh-sach/huong-dan-mua-hang'], [page.title, `/chinh-sach/${req.params.slug}`]])],
+  });
 });
 
 // ---------- Contact form ----------

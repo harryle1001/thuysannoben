@@ -3,7 +3,7 @@
   const isKnowledge = post.category === 'ky-thuat';
   const showCover = post.cover && !post.gallery.length;
   const shareUrl = encodeURIComponent(canonical);
-  const dateFmt = (d) => new Date(d + 'T00:00:00+07:00').toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  const dateFmt = (d) => new Date(d + 'T00:00:00+07:00').toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' });
 %>
 <article class="article">
   <header class="ahero<%= showCover && post.source === 'md' ? ' ahero--cover' : '' %>">

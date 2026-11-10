@@ -30,16 +30,39 @@
         <li><a href="/ve-chung-toi">Về Noben</a></li>
         <li><a href="/chung-nhan">Chứng nhận</a></li>
         <li><a href="/gia-cong">Gia công</a></li>
-        <li><a href="/ky-thuat-nuoi">Kỹ thuật nuôi</a></li>
+        <li><a href="/ky-thuat-nuoi">Kiến thức nuôi tôm</a></li>
+        <li><a href="/giai-phap">Giải pháp ao nuôi</a></li>
         <li><a href="/tin-tuc">Tin tức</a></li>
+        <li><a href="/lien-he">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Chính sách</h2>
+      <ul class="link-list">
         <li><a href="/chinh-sach/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
-        <li><a href="/chinh-sach/chinh-sach-doi-tra">Chính sách đổi trả</a></li>
-        <li><a href="/chinh-sach/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+        <li><a href="/chinh-sach/huong-dan-thanh-toan">Hướng dẫn thanh toán</a></li>
+        <li><a href="/chinh-sach/chinh-sach-van-chuyen">Vận chuyển và giao nhận</a></li>
+        <li><a href="/chinh-sach/chinh-sach-doi-tra">Đổi trả và hoàn tiền</a></li>
+        <li><a href="/chinh-sach/huong-dan-doi-tra">Hướng dẫn đổi trả</a></li>
+        <li><a href="/chinh-sach/chinh-sach-bao-mat">Bảo mật thông tin</a></li>
+        <li><a href="/chinh-sach/dieu-khoan-su-dung">Điều khoản và khiếu nại</a></li>
       </ul>
     </div>
   </div>
   <div class="wrap site-footer__legal">
-    <p>© <%= new Date().getFullYear() %> <%= company.legal %>. Đọc kỹ hướng dẫn sử dụng trên nhãn trước khi dùng sản phẩm.</p>
+    <div class="legal-info">
+      <p><strong><%= company.legal %></strong></p>
+      <p>Mã số doanh nghiệp: <%- ef('company.tax_id', company.tax_id || 'Đang cập nhật') %>, cấp ngày <%- ef('company.reg_date', company.reg_date || 'Đang cập nhật') %> tại <%- ef('company.reg_place', company.reg_place || 'Đang cập nhật') %></p>
+      <p>Người đại diện theo pháp luật: <%- ef('company.representative', company.representative || 'Đang cập nhật') %></p>
+      <p>Địa chỉ: <%= company.address %>. Điện thoại: <%= company.hotline %>. Email: <%= company.email %></p>
+      <% if (locals.isAdmin) { %><p class="legal-info__admin">Link thông báo Bộ Công Thương (dán link online.gov.vn): <%- ef('company.bct_url', company.bct_url || 'Chưa có') %></p><% } %>
+    </div>
+    <% if (company.bct_url && /^https?:\/\/(www\.)?online\.gov\.vn\//.test(company.bct_url)) { %>
+    <a class="bct-badge" href="<%= company.bct_url %>" target="_blank" rel="noopener" title="Đã thông báo Bộ Công Thương">
+      <img src="https://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png" width="150" height="57" alt="Đã thông báo Bộ Công Thương" loading="lazy">
+    </a>
+    <% } %>
+    <p class="legal-info__copy">© <%= new Date().getFullYear() %> <%= company.legal %>. Đọc kỹ hướng dẫn sử dụng trên nhãn trước khi dùng sản phẩm.</p>
   </div>
 </footer>
 

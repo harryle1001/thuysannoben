@@ -574,7 +574,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 .prose { font-size: 1.075rem; line-height: 1.75; max-width: 72ch; }
 .prose > * + * { margin-top: 1em; }
-.prose p > strong:only-child, .prose h3 { display: block; font-family: var(--font-display); font-stretch: 85%; font-weight: 800; font-size: var(--step-2); color: var(--heading); line-height: 1.25; margin-top: 0.8em; }
+.prose h3 { display: block; font-family: var(--font-display); font-stretch: 85%; font-weight: 800; font-size: var(--step-2); color: var(--heading); line-height: 1.25; margin-top: 0.8em; }
 .prose ul, .prose ol { padding-left: 1.3em; }
 .prose li + li { margin-top: 0.4em; }
 .prose img { border-radius: var(--radius-m); margin-block: var(--space-4); cursor: zoom-in; }
@@ -1090,3 +1090,27 @@ body.menu-open .float-chat { display: none; }
 .hero__trio-item:hover { transform: translateY(-6px); }
 .hero__photo figcaption { margin-top: var(--space-4); }
 @media (max-width: 999px) { .hero__trio { margin-top: -22%; } .hero__trio-item img { height: 130px; } .hero__trio-item.is-center img { height: 165px; } }
+
+/* Footer: five columns, legal block for the Ministry of Industry and Trade notice */
+@media (min-width: 1100px) { .site-footer__grid { grid-template-columns: 1.25fr 1.35fr 1fr 0.9fr 1.05fr; gap: var(--space-6); } }
+@media (min-width: 760px) and (max-width: 1099px) { .site-footer__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .site-footer__brand { grid-column: 1 / -1; } }
+.site-footer__legal { display: grid; gap: var(--space-4); align-items: center; }
+@media (min-width: 900px) { .site-footer__legal { grid-template-columns: minmax(0, 1fr) auto; } .legal-info__copy { grid-column: 1 / -1; } }
+.legal-info { display: grid; gap: 4px; font-size: 0.86rem; color: var(--on-ink-muted); }
+.legal-info strong { color: #fff; font-size: 0.95rem; }
+.legal-info__admin { color: var(--sun); }
+.bct-badge img { display: block; width: 150px; height: auto; }
+.legal-info__copy { font-size: 0.82rem; color: var(--on-ink-muted); padding-top: var(--space-3); border-top: 1px solid rgba(169, 185, 214, 0.15); }
+
+/* Policy pages */
+.policy__meta { font-size: 1rem; }
+.policy__nav { align-self: start; }
+@media (min-width: 900px) { .policy__nav { position: sticky; top: calc(var(--header-h) + 20px); } }
+.policy__nav-title { font-family: var(--font-display); font-stretch: 85%; font-weight: 800; font-size: 1.1rem; color: var(--heading); margin-bottom: var(--space-3); }
+.policy__help { margin-top: var(--space-5); padding: var(--space-4); border-radius: var(--radius-m); background: var(--blue-050); display: grid; gap: 10px; font-weight: 600; color: var(--heading); }
+.policy__main { min-width: 0; }
+.prose--policy { max-width: 76ch; }
+.prose--policy h2:first-child { margin-top: 0; }
+.info-table th { width: 42%; font-weight: 600; color: var(--muted); background: var(--blue-050); }
+.info-table td { color: var(--heading); font-weight: 500; }
+@media (max-width: 600px) { .info-table th, .info-table td { display: block; width: 100%; } .info-table th { border-bottom: 0; } }

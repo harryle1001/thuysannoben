@@ -1,20 +1,39 @@
 <%- include('../partials/header') %>
+<%
+  const dateFmt = (d) => new Date(d + 'T00:00:00+07:00').toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' });
+%>
 <section class="page-head">
   <div class="wrap">
-    <%- include('../partials/crumbs', { items: [[page.title]] }) %>
+    <%- include('../partials/crumbs', { items: [['Chính sách', '/chinh-sach/huong-dan-mua-hang'], [page.title]] }) %>
     <h1 class="page-head__title"><%- ef(`pages.${slug}.title`, page.title) %></h1>
+    <p class="page-head__lead policy__meta">
+      Áp dụng cho khách hàng mua sản phẩm của <%= company.legal %><% if (page.updated) { %>. Cập nhật ngày <time datetime="<%= page.updated %>"><%= dateFmt(page.updated) %></time><% } %>.
+    </p>
   </div>
 </section>
 <section class="section section--top-tight">
   <div class="wrap policy">
-    <nav class="policy__nav" aria-label="Chính sách">
+    <nav class="policy__nav" aria-label="Chính sách và hướng dẫn">
+      <p class="policy__nav-title">Chính sách và hướng dẫn</p>
       <ul>
         <% for (const [s, pg] of Object.entries(policies)) { %>
         <li><a href="/chinh-sach/<%= s %>"<% if (s === slug) { %> aria-current="page"<% } %>><%= pg.title %></a></li>
         <% } %>
       </ul>
+      <div class="policy__help">
+        <p>Cần hỗ trợ?</p>
+        <a class="btn btn--sun btn--block" href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><%= company.hotline %></a>
+      </div>
     </nav>
-    <div class="prose"<%- ed(`pages.${slug}.body`) %>><%- page.body %></div>
+    <div class="policy__main">
+      <% if (page.toc && page.toc.length > 3) { %>
+      <details class="toc" open>
+        <summary>Nội dung chính</summary>
+        <ol><% page.toc.forEach((t) => { %><li><a href="#<%= t.id %>"><%= t.text %></a></li><% }) %></ol>
+      </details>
+      <% } %>
+      <div class="prose prose--article prose--policy"<%- ed(`pages.${slug}.body`) %>><%- page.body %></div>
+    </div>
   </div>
 </section>
 <%- include('../partials/footer') %>
