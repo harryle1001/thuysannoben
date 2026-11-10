@@ -160,6 +160,21 @@ node scripts/seo-audit.js http://localhost:3000
 - `sitemap.xml` có ảnh và ngày cập nhật, `rss.xml`, ảnh chia sẻ Facebook/Zalo riêng cho từng bài.
 - Sau khi website chạy trên tên miền thật: khai báo `https://thuysannoben.vn/sitemap.xml` trong Google Search Console và tạo hồ sơ Google Business cho địa chỉ nhà máy để hiện trên Google Maps.
 
+## Ảnh sản phẩm tách nền và trưng bày 3D
+
+- Mỗi sản phẩm có ảnh bao bì đã tách nền trong `public/images/products-cutout/`. Website dùng ảnh này cho thẻ sản phẩm (đặt trên bệ có ánh đèn, bóng đổ, nghiêng theo chuột), băng chuyền 3D kéo qua lại ở trang chủ và trang sản phẩm, và khu xoay sản phẩm ở trang chi tiết. Ảnh poster gốc vẫn giữ để bấm "Xem nhãn gốc" đọc thông tin trên bao bì.
+- Thêm sản phẩm mới: đặt ảnh poster vào `public/images/products/`, khai báo trong `content/products.json`, rồi tách nền:
+
+```bash
+pip install "rembg[cpu]" pillow numpy scipy
+```
+
+```bash
+MODEL=birefnet-general-lite python3 scripts/cutout-products.py ten-san-pham
+```
+
+Sản phẩm chưa có ảnh tách nền sẽ tự hiển thị ảnh poster.
+
 ## Sửa nội dung ngay trên trang (cây bút)
 
 1. Đặt biến môi trường `ADMIN_PASS` (và `ADMIN_USER` nếu muốn, mặc định là `admin`).
@@ -187,6 +202,8 @@ src/leads.js         Xử lý form liên hệ (lưu file + gửi email)
 src/auth.js          Đăng nhập quản trị (cookie có chữ ký)
 src/sanitize.js      Làm sạch HTML khi lưu nội dung sửa trên trang
 public/js/editor.js  Nút cây bút và chế độ sửa trên trang
+public/js/showcase.js  Băng chuyền 3D, nghiêng thẻ, kéo để xoay sản phẩm
+scripts/cutout-products.py  Tách nền ảnh sản phẩm
 views/               Giao diện EJS (partials/ và pages/)
 public/              CSS, JS, font, ảnh
 content/             Nội dung website

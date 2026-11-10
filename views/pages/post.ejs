@@ -82,7 +82,7 @@
         <h2 class="aside-box__title">Sản phẩm được nhắc đến</h2>
         <ul class="mini-products">
           <% mentioned.forEach((p) => { %>
-          <li><a href="<%= p.url %>"><%- img(p.image, { alt: '' }) %><span><strong><%= p.name %></strong><small><%= p.tagline %></small></span></a></li>
+          <li><a href="<%= p.url %>"><span class="mini-products__shot"><%- img(p.shot, { alt: '' }) %></span><span><strong><%= p.name %></strong><small><%= p.tagline %></small></span></a></li>
           <% }) %>
         </ul>
       </section>

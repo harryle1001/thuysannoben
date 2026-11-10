@@ -1,0 +1,42 @@
+<%#
+  3D product carousel. Drag or swipe left and right, use the arrow buttons or keyboard arrows.
+  Params: items (products), title, lead, id
+%>
+<section class="showcase" aria-labelledby="<%= id %>-title" data-showcase>
+  <div class="wrap">
+    <header class="section-head section-head--light">
+      <div>
+        <h2 id="<%= id %>-title" class="h2"><%= title %></h2>
+        <% if (locals.lead) { %><p class="section-head__lead"><%= lead %></p><% } %>
+      </div>
+      <p class="showcase__hint" aria-hidden="true"><span class="showcase__hand"></span>Kéo qua lại để xem sản phẩm</p>
+    </header>
+  </div>
+  <div class="showcase__stage" tabindex="0" role="region" aria-roledescription="băng chuyền" aria-label="<%= title %>. Dùng phím mũi tên trái phải để xem sản phẩm khác." data-sc-stage>
+    <ul class="showcase__track" data-sc-track>
+      <% items.forEach((p, i) => { %>
+      <li class="showcase__item" data-sc-item
+          data-name="<%= p.name %>" data-tagline="<%= p.tagline %>" data-cat="<%= p.categoryInfo.name %>" data-catslug="<%= p.category %>" data-url="<%= p.url %>">
+        <a href="<%= p.url %>" draggable="false" tabindex="-1" aria-label="<%= p.name %>: <%= p.tagline %>">
+          <%- img(p.shot, { alt: p.name, draggable: 'false', loading: i < 5 ? 'eager' : 'lazy', class: p.cutout ? 'is-cutout' : '' }) %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+    <span class="showcase__floor" aria-hidden="true"></span>
+  </div>
+  <div class="wrap showcase__bar">
+    <button class="showcase__nav" type="button" data-sc-prev aria-label="Sản phẩm trước"><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg></button>
+    <div class="showcase__info" aria-live="polite" data-sc-info>
+      <p class="showcase__cat" data-sc-cat><%= items[0].categoryInfo.name %></p>
+      <p class="showcase__name" data-sc-name><%= items[0].name %></p>
+      <p class="showcase__tagline" data-sc-tagline><%= items[0].tagline %></p>
+      <div class="showcase__actions">
+        <a class="btn btn--sun" href="<%= items[0].url %>" data-sc-link>Xem chi tiết sản phẩm</a>
+        <a class="btn btn--ghost" href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Đặt hàng <%= company.hotline %></a>
+      </div>
+      <p class="showcase__count"><span data-sc-index>1</span> / <%= items.length %></p>
+    </div>
+    <button class="showcase__nav" type="button" data-sc-next aria-label="Sản phẩm sau"><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+  </div>
+</section>

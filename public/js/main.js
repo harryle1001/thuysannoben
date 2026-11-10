@@ -46,7 +46,7 @@
       list.classList.add('is-swapping');
       window.setTimeout(function () {
         list.innerHTML = matches.slice(0, 5).map(function (p) {
-          return '<li><a href="' + esc(p.u) + '"><img src="' + esc(p.i) + '" alt="" width="532" height="1009" decoding="async"><span>' + esc(p.n) + '</span></a></li>';
+          return '<li><a href="' + esc(p.u) + '"><span class="finder__shot"><img src="' + esc(p.i) + '" alt="" decoding="async"></span><span>' + esc(p.n) + '</span></a></li>';
         }).join('');
         list.classList.remove('is-swapping');
       }, 120);

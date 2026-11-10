@@ -34,10 +34,37 @@ const fold = (s) =>
     .replace(/Đ/g, 'D')
     .toLowerCase();
 
+// Width and height of a WebP file, read from its header (VP8X, VP8L or VP8).
+function webpSize(file) {
+  try {
+    const b = Buffer.alloc(30);
+    const fd = fs.openSync(file, 'r');
+    fs.readSync(fd, b, 0, 30, 0);
+    fs.closeSync(fd);
+    const kind = b.toString('ascii', 12, 16);
+    if (kind === 'VP8X') return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+    if (kind === 'VP8L') {
+      const bits = b.readUInt32LE(21);
+      return { w: 1 + (bits & 0x3fff), h: 1 + ((bits >> 14) & 0x3fff) };
+    }
+    if (kind === 'VP8 ') return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+  } catch {
+    /* missing file */
+  }
+  return null;
+}
+const cutoutDir = path.join(__dirname, '..', 'public', 'images', 'products-cutout');
+
 function refreshProduct(p) {
   p.url = `/san-pham/${p.slug}`;
   p.categoryInfo = categoryBySlug[p.category];
   p.image = p.images[0] || null;
+  // Package photo without the poster background (scripts/cutout-products.py); falls back to the poster.
+  if (p.cutout === undefined) {
+    const size = webpSize(path.join(cutoutDir, `${p.slug}.webp`));
+    p.cutout = size ? { src: `/images/products-cutout/${p.slug}.webp`, ...size } : null;
+  }
+  p.shot = p.cutout || p.image;
   p.search = fold([p.name, p.tagline, ...p.uses].join(' ').replace(/<[^>]+>/g, ' '));
 }
 
@@ -226,6 +253,9 @@ const articlesForProduct = (product, n = 3) =>
 // Hand-picked products for the home page, one per common pond problem.
 const FEATURED = ['prazi-s', 'ben-xid-3000', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'nb-brown-gay-mau-nuoc-mau-tra', 'aqualac-fs'];
 const featured = FEATURED.map((s) => productBySlug[s]).filter(Boolean);
+// Products shown in the 3D carousel on the home page: the featured ones plus one or two from every group.
+const SHOWCASE = [...FEATURED, 'kalimix', 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30', 'top-weigh', 'ben-iq'];
+const showcase = SHOWCASE.map((s) => productBySlug[s]).filter(Boolean);
 
 // Images that show the company itself (factory, team, certificates), taken from the old site's posts.
 const gallery = {
@@ -268,6 +298,7 @@ module.exports = {
   pages,
   symptoms,
   featured,
+  showcase,
   gallery,
   categoryBySlug,
   categoryByOldSlug,

@@ -1,10 +1,15 @@
 <article class="pcard" data-product data-cat="<%= p.category %>" data-sym="<%= p.symptoms.join(' ') %>" data-search="<%= p.search %>"<% if (locals.hidden) { %> hidden<% } %>>
   <a class="pcard__link" href="<%= p.url %>">
-    <div class="pcard__media"><%- img(p.image, { alt: p.name, sizes: '(min-width: 1100px) 220px, 45vw' }) %></div>
+    <div class="pcard__media cat-bg--<%= p.category %>" data-tilt>
+      <span class="pcard__floor" aria-hidden="true"></span>
+      <%- img(p.shot, { alt: p.name, class: p.cutout ? 'pcard__img is-cutout' : 'pcard__img', sizes: '(min-width: 1100px) 240px, 45vw' }) %>
+      <span class="pcard__glare" aria-hidden="true"></span>
+    </div>
     <div class="pcard__body">
       <p class="cat-tag cat-tag--<%= p.category %>"><%= p.categoryInfo.name %></p>
       <h3 class="pcard__name"><%- ef(`products.${p.slug}.name`, p.name) %></h3>
       <p class="pcard__tagline"><%- ef(`products.${p.slug}.tagline`, p.tagline) %></p>
+      <span class="pcard__cta">Xem chi tiết</span>
     </div>
   </a>
 </article>

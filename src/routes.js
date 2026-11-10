@@ -111,6 +111,7 @@ router.get('/', (req, res) => {
       image: '/images/brand/banner-1.webp',
     },
     featured: c.featured,
+    showcase: c.showcase,
     articles: knowledge.filter((p) => p.source === 'md').slice(0, 6),
     knowledgeCount: knowledge.length,
     solutions: c.solutions,
@@ -157,7 +158,7 @@ router.get('/san-pham/:slug', (req, res, next) => {
   res.render('pages/product', {
     meta: { title: clip(`${p.name}: ${p.tagline}`, 62), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
     p,
-    related: c.relatedProducts(p),
+    related: c.relatedProducts(p, 10),
     articles: c.articlesForProduct(p, 3),
     solutions: p.symptoms.map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean),
     jsonld: [seo.product(p), crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]])],

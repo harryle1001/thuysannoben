@@ -2,7 +2,7 @@
 <%
   const firstSym = symptoms[0];
   const firstList = allProducts.filter((p) => p.symptoms.includes(firstSym.slug)).sort((a, b) => b.symscore[firstSym.slug] - a.symscore[firstSym.slug]);
-  const finderData = allProducts.map((p) => ({ n: p.name, u: p.url, i: p.image && p.image.src, s: p.symptoms, r: p.symscore }));
+  const finderData = allProducts.map((p) => ({ n: p.name, u: p.url, i: p.shot && p.shot.src, c: Boolean(p.cutout), s: p.symptoms, r: p.symscore }));
   const factory = { src: '/images/brand/banner-1.webp', w: 1200, h: 745 };
 %>
 <section class="hero" aria-labelledby="hero-title">
@@ -28,7 +28,7 @@
         <div class="finder__result" aria-live="polite">
           <ul class="finder__list" data-finder-list>
             <% firstList.slice(0, 5).forEach((p) => { %>
-            <li><a href="<%= p.url %>"><%- img(p.image, { alt: '', loading: 'eager' }) %><span><%= p.name %></span></a></li>
+            <li><a href="<%= p.url %>"><span class="finder__shot"><%- img(p.shot, { alt: '', loading: 'eager' }) %></span><span><%= p.name %></span></a></li>
             <% }) %>
           </ul>
           <a class="finder__more" href="/san-pham?van-de=<%= firstSym.slug %>" data-finder-more>Xem cả <span data-finder-count><%= firstList.length %></span> sản phẩm cho vấn đề này</a>
@@ -39,6 +39,12 @@
 
     <figure class="hero__photo">
       <%- img(factory, { alt: 'Nhà máy Công ty TNHH Noben nhìn từ trên cao', loading: 'eager', fetchpriority: 'high' }) %>
+      <% const trio = ['kalimix', 'prazi-s', 'oxy-99'].map((s) => allProducts.find((p) => p.slug === s)).filter((p) => p && p.cutout); %>
+      <% if (trio.length === 3) { %>
+      <div class="hero__trio">
+        <% trio.forEach((p, i) => { %><a class="hero__trio-item<%= i === 1 ? ' is-center' : '' %>" href="<%= p.url %>" aria-label="<%= p.name %>"><%- img(p.cutout, { alt: '', loading: 'eager' }) %></a><% }) %>
+      </div>
+      <% } %>
       <figcaption><%- tx('home-photo', 'Nhà máy Noben, xã Tân Phú Trung, Củ Chi') %></figcaption>
       <span class="iso-badge" aria-hidden="true"><span>ISO<br>9001<br>2015</span></span>
     </figure>
@@ -83,7 +89,7 @@
             <span class="group__count"><%= cat.count %> sản phẩm</span>
           </div>
           <div class="group__shelf" aria-hidden="true">
-            <% sample.forEach((p) => { %><%- img(p.image, { alt: '' }) %><% }) %>
+            <% sample.forEach((p) => { %><span class="group__item"><%- img(p.shot, { alt: '' }) %></span><% }) %>
           </div>
         </a>
       </li>
@@ -117,7 +123,7 @@
         <p class="stage__goal"><%= s.goal %></p>
         <ul class="stage__products">
           <% s.items.map((x) => bySlug[x]).filter(Boolean).forEach((p) => { %>
-          <li><a href="<%= p.url %>"><%- img(p.image, { alt: '' }) %><span><%= p.name %></span></a></li>
+          <li><a href="<%= p.url %>"><span class="stage__shot"><%- img(p.shot, { alt: '' }) %></span><span><%= p.name %></span></a></li>
           <% }) %>
         </ul>
       </li>
@@ -126,17 +132,7 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="featured-title">
-  <div class="wrap">
-    <header class="section-head">
-      <h2 id="featured-title" class="h2"><%- tx('home-featured', 'Sản phẩm bà con hỏi nhiều') %></h2>
-      <a class="text-link" href="/san-pham">Tất cả sản phẩm</a>
-    </header>
-    <div class="pgrid">
-      <% featured.forEach((p) => { %><%- include('../partials/product-card', { p }) %><% }) %>
-    </div>
-  </div>
-</section>
+<%- include('../partials/showcase', { items: showcase, id: 'featured', title: 'Sản phẩm bà con tin dùng', lead: 'Kéo qua lại để ngắm từng sản phẩm, bấm vào sản phẩm ở giữa để xem công dụng và liều dùng.' }) %>
 
 <section class="section section--tint" aria-labelledby="kt-title">
   <div class="wrap">
