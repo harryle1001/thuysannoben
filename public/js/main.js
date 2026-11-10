@@ -128,7 +128,7 @@
       var errs = {};
       if (f.elements.name.value.trim().length < 2) errs.name = 'Nhập họ tên để chúng tôi biết cách xưng hô.';
       var digits = f.elements.phone.value.replace(/\D/g, '');
-      if (!/^(0|84)\d{8,10}$/.test(digits)) errs.phone = 'Số điện thoại chưa đúng. Ví dụ: 0913 489 429.';
+      if (!/^(0|84)\d{8,10}$/.test(digits)) errs.phone = 'Số điện thoại chưa đúng. Ví dụ: 0934 246 420.';
       return errs;
     };
     ['name', 'phone'].forEach(function (n) {

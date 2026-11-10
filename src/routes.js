@@ -5,6 +5,7 @@ const leads = require('./leads');
 const auth = require('./auth');
 const seo = require('./seo');
 const policies = require('./policies');
+const chat = require('./chat');
 
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
@@ -302,6 +303,12 @@ router.get('/chinh-sach/:slug', (req, res, next) => {
 });
 
 // ---------- Contact form ----------
+// Website chat assistant (streams plain text).
+router.post('/api/chat', (req, res, next) => {
+  if (!auth.sameOrigin(req)) return res.status(403).json({ error: 'Yêu cầu không hợp lệ.' });
+  chat.handle(req, res).catch(next);
+});
+
 router.post('/lien-he', async (req, res, next) => {
   try {
     const wantsJson = (req.get('accept') || '').includes('application/json');

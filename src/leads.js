@@ -32,7 +32,7 @@ function validate(body) {
   const errors = {};
   if (lead.name.length < 2) errors.name = 'Nhập họ tên để chúng tôi biết cách xưng hô.';
   const digits = lead.phone.replace(/\D/g, '');
-  if (!/^(0|84)\d{8,10}$/.test(digits)) errors.phone = 'Số điện thoại chưa đúng. Ví dụ: 0913 489 429.';
+  if (!/^(0|84)\d{8,10}$/.test(digits)) errors.phone = 'Số điện thoại chưa đúng. Ví dụ: 0934 246 420.';
   if (!NEEDS.includes(lead.need)) lead.need = 'Khác';
   return { lead, errors };
 }

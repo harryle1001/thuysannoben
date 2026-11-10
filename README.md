@@ -54,6 +54,8 @@ Sao chép `.env.example` thành `.env` rồi điền thông tin. Trên Hostinger
 | `MAIL_TO` | Email nhận thông báo khách liên hệ |
 | `ADMIN_USER`, `ADMIN_PASS` | Tài khoản quản trị: sửa nội dung bằng cây bút và xem khách liên hệ tại `/quan-tri/lien-he` |
 | `SESSION_SECRET` | (Không bắt buộc) chuỗi bí mật để ký phiên đăng nhập |
+| `ANTHROPIC_API_KEY` | Khóa Claude API cho Trợ lý Noben (chatbot). Để trống thì trợ lý trả lời bằng cách tìm trong nội dung website |
+| `CHAT_DAILY_LIMIT` | (Không bắt buộc) số câu trả lời AI tối đa mỗi ngày, mặc định 800. Vượt mức thì trợ lý chuyển sang chế độ tìm kiếm |
 
 ## Triển khai lên Hostinger
 
@@ -174,6 +176,18 @@ MODEL=birefnet-general-lite python3 scripts/cutout-products.py ten-san-pham
 ```
 
 Sản phẩm chưa có ảnh tách nền sẽ tự hiển thị ảnh poster.
+
+## Trợ lý Noben (chatbot)
+
+Nút tròn màu vàng ở góc phải mỗi trang mở khung **Trợ lý Noben**. Trợ lý trả lời tự động 24/7 bằng tiếng Việt, dựa trên danh mục sản phẩm, các trang giải pháp theo bệnh và bài kiến thức của chính website, có gắn liên kết tới trang sản phẩm. Trợ lý không tự báo giá: khách hỏi giá, đặt hàng, đại lý sẽ được mời gọi hotline, nhắn Zalo hoặc để lại thông tin.
+
+- Bật AI: lấy khóa tại https://platform.claude.com (mục API Keys, cần nạp tiền vào tài khoản), rồi nhập vào biến môi trường `ANTHROPIC_API_KEY` trên Hostinger và khởi động lại ứng dụng. Không đưa khóa vào GitHub.
+- Chưa có khóa (hoặc vượt `CHAT_DAILY_LIMIT`): trợ lý vẫn hoạt động, tìm trang giải pháp và sản phẩm khớp với câu hỏi, kèm nút gọi và Zalo.
+- Mỗi khách được hỏi tối đa 20 câu trong 10 phút; chỉ trang của website mới gọi được `/api/chat`.
+- Nội dung trò chuyện không lưu trên máy chủ (đã ghi trong Chính sách bảo mật, mục "Trợ lý tự động").
+- Mã nguồn: `src/chat.js` (máy chủ), `public/js/chat.js` (khung chat). Đổi model bằng biến `CHAT_MODEL` nếu cần.
+
+Nút **Zalo** mở chat với số `zalo` trong `content/company.json`; nút **Messenger** mở đường dẫn `messenger` trong cùng file (dạng `https://m.me/<tên-trang-hoặc-tài-khoản>`).
 
 ## Sửa nội dung ngay trên trang (cây bút)
 

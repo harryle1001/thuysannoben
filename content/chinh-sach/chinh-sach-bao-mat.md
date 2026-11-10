@@ -24,6 +24,7 @@ Chúng tôi chỉ thu thập thông tin cần thiết để:
 | Tỉnh, thành phố, địa chỉ nhận hàng | Khi đặt hàng hoặc yêu cầu giao hàng |
 | Sản phẩm quan tâm, nội dung lời nhắn | Khi Quý khách gửi yêu cầu tư vấn |
 | Tên doanh nghiệp, mã số thuế, email | Khi Quý khách cần hóa đơn hoặc hợp tác đại lý, gia công |
+| Nội dung câu hỏi gửi cho Trợ lý Noben | Khi Quý khách trò chuyện với trợ lý tự động trên website |
 | Dữ liệu kỹ thuật cơ bản (địa chỉ IP, loại trình duyệt) | Tự động khi truy cập, dùng để bảo vệ website khỏi gửi tin rác và tấn công |
 
 Website không yêu cầu đăng ký tài khoản và **không thu thập thông tin thẻ ngân hàng**. Website có thể lưu một số tùy chọn trên trình duyệt của Quý khách, như chế độ giao diện sáng hoặc tối; các tùy chọn này không chứa thông tin cá nhân.
@@ -36,6 +37,15 @@ Thông tin có thể được chia sẻ trong phạm vi cần thiết với:
 
 - Đơn vị vận chuyển, chuyển phát: họ tên, số điện thoại, địa chỉ nhận hàng để giao hàng.
 - Cơ quan nhà nước có thẩm quyền khi có yêu cầu theo quy định của pháp luật.
+
+## Trợ lý tự động
+
+Website có **Trợ lý Noben**, một trợ lý trả lời tự động sử dụng trí tuệ nhân tạo (AI) để gợi ý thông tin về sản phẩm và kỹ thuật nuôi. Khi Quý khách trò chuyện với trợ lý:
+
+- Nội dung câu hỏi trong cuộc trò chuyện được gửi tới nhà cung cấp dịch vụ AI (Anthropic) để tạo câu trả lời. Chúng tôi không gửi kèm họ tên, số điện thoại hay thông tin định danh khác của Quý khách.
+- Chúng tôi không lưu nội dung cuộc trò chuyện trên máy chủ của website. Lịch sử trò chuyện chỉ được giữ tạm trên trình duyệt của Quý khách và tự xóa khi đóng thẻ trình duyệt hoặc khi bấm "Cuộc trò chuyện mới".
+- Quý khách không nên nhập số tài khoản, mật khẩu, giấy tờ tùy thân hay thông tin nhạy cảm vào khung trò chuyện.
+- Câu trả lời của trợ lý chỉ mang tính tham khảo và có thể sai sót. Liều dùng luôn theo nhãn sản phẩm; với trường hợp cần chẩn đoán hoặc tư vấn cụ thể, vui lòng liên hệ kỹ thuật viên qua hotline {{HOTLINE}}.
 
 ## Thời gian lưu trữ
 

@@ -72,7 +72,11 @@
 </nav>
 
 <div class="float-chat" role="group" aria-label="Nhắn tin với Noben">
-  <a class="float-chat__btn float-chat__btn--zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener" aria-label="Chat Zalo với Noben, số <%= company.hotline %>">
+  <button class="float-chat__btn float-chat__btn--bot" type="button" data-chat-open aria-controls="chatbot" aria-expanded="false" aria-label="Hỏi Trợ lý Noben">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.4 1.2 4.6 3.1 6.1L4.5 21l3.9-1.9c1.1.3 2.3.5 3.6.5 5.5 0 10-3.8 10-8.6S17.5 3 12 3z"/><circle cx="8" cy="11.5" r="1.3" fill="currentColor"/><circle cx="12" cy="11.5" r="1.3" fill="currentColor"/><circle cx="16" cy="11.5" r="1.3" fill="currentColor"/></svg>
+    <span class="float-chat__tip" aria-hidden="true">Hỏi trợ lý Noben</span>
+  </button>
+  <a class="float-chat__btn float-chat__btn--zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener" aria-label="Chat Zalo với kỹ thuật Noben, số <%= company.hotline %>">
     <span class="float-chat__zalo" aria-hidden="true">Zalo</span>
     <span class="float-chat__tip" aria-hidden="true">Chat Zalo</span>
   </a>
@@ -83,6 +87,37 @@
   </a>
   <% } %>
 </div>
+
+<section class="chatbot" id="chatbot" data-chatbot hidden aria-label="Trợ lý Noben" data-hotline="<%= company.hotline %>" data-zalo="<%= zaloUrl %>">
+  <header class="chatbot__head">
+    <img class="chatbot__avatar" src="/images/brand/logo-noben.webp" width="40" height="40" alt="">
+    <div class="chatbot__who">
+      <p class="chatbot__name">Trợ lý Noben</p>
+      <p class="chatbot__status"><span class="chatbot__dot" aria-hidden="true"></span>Trả lời tự động 24/7</p>
+    </div>
+    <button class="chatbot__icon" type="button" data-chat-reset title="Cuộc trò chuyện mới"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg><span class="sr-only">Cuộc trò chuyện mới</span></button>
+    <button class="chatbot__icon" type="button" data-chat-close title="Đóng"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span class="sr-only">Đóng</span></button>
+  </header>
+  <div class="chatbot__log" data-chat-log role="log" aria-live="polite" tabindex="0">
+    <div class="chatbot__msg chatbot__msg--bot"><p>Dạ, em là trợ lý tự động của Noben. Anh/chị cứ mô tả tình trạng ao, tuổi tôm hoặc hỏi về sản phẩm, em gợi ý cách xử lý ngay.</p></div>
+  </div>
+  <div class="chatbot__chips" data-chat-chips>
+    <button type="button">Tôm bị phân trắng, gan nhạt</button>
+    <button type="button">Ao bạt nhiều nhớt, khí độc</button>
+    <button type="button">Tôm chậm lớn, mềm vỏ</button>
+    <button type="button">Báo giá và đặt hàng</button>
+  </div>
+  <div class="chatbot__human">
+    <a href="<%= zaloUrl %>" target="_blank" rel="noopener"><span class="chatbot__zalo" aria-hidden="true">Zalo</span>Nhắn kỹ thuật</a>
+    <a href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><%= company.hotline %></a>
+  </div>
+  <form class="chatbot__form" data-chat-form>
+    <label class="sr-only" for="chatbot-input">Nhập câu hỏi</label>
+    <textarea id="chatbot-input" name="q" rows="1" maxlength="1200" placeholder="Nhập câu hỏi…" required></textarea>
+    <button class="chatbot__send" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12.6 2-12.6 2z"/></svg><span class="sr-only">Gửi</span></button>
+  </form>
+  <p class="chatbot__note">Trợ lý AI có thể sai sót, liều dùng theo nhãn sản phẩm. Xem <a href="/chinh-sach/chinh-sach-bao-mat#tro-ly-tu-dong">bảo mật</a>.</p>
+</section>
 
 <dialog class="lightbox" data-lightbox aria-label="Xem ảnh">
   <button class="lightbox__close" type="button" data-lb-close><svg class="ico"><use href="#i-x"/></svg><span class="sr-only">Đóng</span></button>
