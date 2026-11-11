@@ -3,7 +3,7 @@
 // breadcrumbs, FAQ dropdowns, sitelinks search box, article dates and business details.
 const c = require('./content');
 
-const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\/$/, '');
 const abs = (u) => (!u ? undefined : /^https?:/.test(u) ? u : SITE_URL + u);
 const strip = (s) => String(s || '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 

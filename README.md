@@ -48,8 +48,8 @@ Sao chép `.env.example` thành `.env` rồi điền thông tin. Trên Hostinger
 
 | Biến | Ý nghĩa |
 |------|---------|
-| `SITE_URL` | Tên miền chính: `https://thuysannoben.vn` |
-| `OLD_HOSTS` | Tên miền cũ hoặc phụ sẽ tự chuyển 301 sang tên miền chính. Mặc định: `thuocthuysannoben.com`, `www.thuocthuysannoben.com`, `www.thuysannoben.vn` |
+| `SITE_URL` | Tên miền chính: `https://thuysannoben.com` |
+| `OLD_HOSTS` | Tên miền cũ hoặc phụ sẽ tự chuyển 301 sang tên miền chính. Mặc định: `thuocthuysannoben.com`, `www.thuocthuysannoben.com`, `www.thuysannoben.com` |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS` | Hộp thư dùng để gửi email báo khi có khách điền form |
 | `MAIL_TO` | Email nhận thông báo khách liên hệ |
 | `ADMIN_USER`, `ADMIN_PASS` | Tài khoản quản trị: sửa nội dung bằng cây bút và xem khách liên hệ tại `/quan-tri/lien-he` |
@@ -72,8 +72,8 @@ Hostinger chạy ứng dụng Node.js trên gói **Business / Cloud** (mục Nod
    - Lệnh start: `npm start`
    - File khởi động: `server.js`
 5. Thêm biến môi trường theo bảng ở trên, sau đó bấm Deploy.
-6. Trỏ tên miền `thuysannoben.vn` (và `www.thuysannoben.vn`) về ứng dụng và bật SSL.
-7. Nếu công ty còn giữ tên miền cũ `thuocthuysannoben.com`, trỏ nó về cùng ứng dụng: website sẽ tự chuyển 301 sang `thuysannoben.vn`.
+6. Trỏ tên miền `thuysannoben.com` (và `www.thuysannoben.com`) về ứng dụng và bật SSL.
+7. Nếu công ty còn giữ tên miền cũ `thuocthuysannoben.com`, trỏ nó về cùng ứng dụng: website sẽ tự chuyển 301 sang `thuysannoben.com`.
 
 ### Tên miền .vn
 
@@ -160,7 +160,7 @@ node scripts/seo-audit.js http://localhost:3000
 - Trang **Giải pháp** cho 8 vấn đề ao nuôi (`/giai-phap/...`) và trang **Kiến thức nuôi tôm** theo chuyên mục (`/ky-thuat-nuoi/...`).
 - Dữ liệu cấu trúc: doanh nghiệp (Organization, LocalBusiness), ô tìm kiếm Google (WebSite SearchAction), bài viết (BlogPosting), hỏi đáp (FAQPage), sản phẩm (Product), danh sách (ItemList), breadcrumb.
 - `sitemap.xml` có ảnh và ngày cập nhật, `rss.xml`, ảnh chia sẻ Facebook/Zalo riêng cho từng bài.
-- Sau khi website chạy trên tên miền thật: khai báo `https://thuysannoben.vn/sitemap.xml` trong Google Search Console và tạo hồ sơ Google Business cho địa chỉ nhà máy để hiện trên Google Maps.
+- Sau khi website chạy trên tên miền thật: khai báo `https://thuysannoben.com/sitemap.xml` trong Google Search Console và tạo hồ sơ Google Business cho địa chỉ nhà máy để hiện trên Google Maps.
 
 ## Ảnh sản phẩm tách nền và trưng bày 3D
 

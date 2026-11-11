@@ -144,7 +144,7 @@ const Brand: React.FC = () => {
         <Mark size={190} />
         <WordReveal delay={Math.round(fps * 0.45)} per={4} text="NOBEN" style={{ ...display, fontSize: 168, letterSpacing: "0.08em", marginTop: 36 }} />
         <Entrance delay={Math.round(fps * 0.9)} y={26}><div style={{ ...body, fontSize: 40, color: theme.colors.text, marginTop: 14 }}>Đồng hành cùng người nuôi tôm Việt</div></Entrance>
-        <Entrance delay={Math.round(fps * 1.2)} y={20}><div style={{ ...kicker, fontSize: 26, marginTop: 34, letterSpacing: "0.16em" }}>Hotline 0934 246 420 · thuysannoben.vn</div></Entrance>
+        <Entrance delay={Math.round(fps * 1.2)} y={20}><div style={{ ...kicker, fontSize: 26, marginTop: 34, letterSpacing: "0.16em" }}>Hotline 0934 246 420 · thuysannoben.com</div></Entrance>
       </div>
       <div style={{ position: "absolute", width: W, height: H, pointerEvents: "none" }} />
     </AbsoluteFill>

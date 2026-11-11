@@ -34,7 +34,7 @@
   }
   function safeUrl(u) {
     if (/^\/(?!\/)/.test(u)) return u;
-    if (/^https:\/\/(www\.)?(thuysannoben\.vn|zalo\.me)\//.test(u)) return u;
+    if (/^https:\/\/(www\.)?(thuysannoben\.com|zalo\.me)\//.test(u)) return u;
     if (/^(tel|mailto):[\w@.+\-]+$/.test(u)) return u;
     return null;
   }
@@ -43,7 +43,7 @@
     out = out.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (all, label, url) {
       var u = safeUrl(url.replace(/&amp;/g, '&'));
       if (!u) return label;
-      var ext = /^https:/.test(u) && u.indexOf('thuysannoben.vn') < 0;
+      var ext = /^https:/.test(u) && u.indexOf('thuysannoben.com') < 0;
       return '<a href="' + esc(u) + '"' + (ext ? ' target="_blank" rel="noopener"' : '') + '>' + label + '</a>';
     });
     out = out.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');

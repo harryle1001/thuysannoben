@@ -25,9 +25,9 @@ app.set('trust proxy', 1);
 app.disable('x-powered-by');
 
 // Visitors arriving on an old or alternate domain get a permanent redirect to the main one,
-// so links and Google rankings carry over (e.g. thuocthuysannoben.com -> thuysannoben.vn).
-const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
-const OLD_HOSTS = (process.env.OLD_HOSTS || 'thuocthuysannoben.com,www.thuocthuysannoben.com,www.thuysannoben.vn')
+// so links and Google rankings carry over (e.g. thuocthuysannoben.com -> thuysannoben.com).
+const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\/$/, '');
+const OLD_HOSTS = (process.env.OLD_HOSTS || 'www.thuysannoben.com,thuocthuysannoben.com,www.thuocthuysannoben.com,thuysannoben.vn,www.thuysannoben.vn')
   .split(',')
   .map((h) => h.trim().toLowerCase())
   .filter(Boolean);

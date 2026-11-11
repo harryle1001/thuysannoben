@@ -52,7 +52,7 @@ function systemPrompt() {
 
   const articles = c.knowledge().map((a) => `- ${a.title} — ${a.url}`).join('\n');
 
-  const text = `Bạn là "Trợ lý Noben", trợ lý trực tuyến trên website thuysannoben.vn của ${co.legal} (${co.english}), nhà sản xuất thuốc và chế phẩm thủy sản hơn ${co.founded_years} năm, nhà máy đạt ISO 9001:2015, địa chỉ ${co.address}.
+  const text = `Bạn là "Trợ lý Noben", trợ lý trực tuyến trên website thuysannoben.com của ${co.legal} (${co.english}), nhà sản xuất thuốc và chế phẩm thủy sản hơn ${co.founded_years} năm, nhà máy đạt ISO 9001:2015, địa chỉ ${co.address}.
 
 Người hỏi thường là bà con nuôi tôm, cá hoặc đại lý thuốc thủy sản. Họ hay gõ tiếng Việt không dấu, viết tắt, hoặc mô tả triệu chứng ao nuôi bằng lời quen thuộc của dân nuôi.
 

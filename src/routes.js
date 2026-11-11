@@ -8,7 +8,7 @@ const policies = require('./policies');
 const chat = require('./chat');
 
 const router = express.Router();
-const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.vn').replace(/\/$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\/$/, '');
 
 // Values every template can use.
 router.use((req, res, next) => {

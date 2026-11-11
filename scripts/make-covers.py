@@ -112,7 +112,7 @@ def cover(slug, meta):
     # Footer: diamond mark + brand
     d.polygon([(92, 532), (112, 512), (132, 532), (112, 552)], fill=SUN)
     d.text((150, 512), 'Thủy sản Noben', font=font(800, 85, 34), fill=(255, 255, 255))
-    d.text((150, 552), 'thuysannoben.vn  ·  Kiến thức nuôi tôm', font=font(500, 100, 24), fill=(169, 185, 214))
+    d.text((150, 552), 'thuysannoben.com  ·  Kiến thức nuôi tôm', font=font(500, 100, 24), fill=(169, 185, 214))
 
     os.makedirs(OUT, exist_ok=True)
     base.save(os.path.join(OUT, f'{slug}.webp'), 'WEBP', quality=80, method=5)
