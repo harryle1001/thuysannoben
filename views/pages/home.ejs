@@ -39,7 +39,7 @@
 
     <figure class="hero__photo">
       <%- img(factory, { alt: 'Nhà máy Công ty TNHH Noben nhìn từ trên cao', loading: 'eager', fetchpriority: 'high' }) %>
-      <% const trio = ['kalimix', 'prazi-s', 'oxy-99'].map((s) => allProducts.find((p) => p.slug === s)).filter((p) => p && p.cutout); %>
+      <% const trio = ['kalimix', 'super-yucca', 'oxy-99'].map((s) => allProducts.find((p) => p.slug === s)).filter((p) => p && p.cutout); %>
       <% if (trio.length === 3) { %>
       <div class="hero__trio">
         <% trio.forEach((p, i) => { %><a class="hero__trio-item<%= i === 1 ? ' is-center' : '' %>" href="<%= p.url %>" aria-label="<%= p.name %>"><%- img(p.cutout, { alt: '', loading: 'eager' }) %></a><% }) %>
@@ -103,7 +103,7 @@
   const stages = [
     { when: 'Chuẩn bị ao', goal: 'Diệt tạp, diệt khuẩn nguồn nước, gây màu và cấy vi sinh trước khi thả giống.', items: ['d-oc', 'ben-bkc-80', 'nb-brown-gay-mau-nuoc-mau-tra', 'proticbest'] },
     { when: '1 đến 30 ngày', goal: 'Xây nền gan ruột khỏe, phòng hoại tử gan tụy và chết sớm.', items: ['aqualac-fs', 'sorbest', 'aqua-bac'] },
-    { when: '31 đến 60 ngày', goal: 'Phòng phân trắng, xổ ký sinh trùng, giữ khoáng và độ kiềm ổn định.', items: ['prazi-s', 'mega-cid', 'miral-n8'] },
+    { when: '31 đến 60 ngày', goal: 'Phòng phân trắng, bổ gan, giữ khoáng và độ kiềm ổn định.', items: ['g7-phong-va-tri-benh-gan-chet-som', 'mega-cid', 'miral-n8'] },
     { when: 'Trên 60 ngày', goal: 'Tăng trọng, cứng vỏ, giữ đáy sạch và oxy đủ đến ngày thu hoạch.', items: ['caphote', 'top-weigh', 'super-yucca'] },
   ];
 %>

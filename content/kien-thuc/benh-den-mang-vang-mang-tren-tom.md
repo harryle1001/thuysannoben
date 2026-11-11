@@ -5,7 +5,7 @@ description: Mang tôm chuyển màu đen, vàng hoặc nâu, tôm nổi đầu 
 category: benh-tom
 keywords: tôm bị đen mang, vàng mang tôm, trị đen mang tôm, bệnh mang tôm thẻ, tôm đóng rong mang
 symptoms: mang-dom-den, khi-doc
-products: ben-xid-3000, ben-mkc-4000, aqua-tech, de-zoo, aqua-bac, super-yucca
+products: ben-iq, iodine-99, super-din-600, aqua-bac, super-yucca
 photo: /images/posts/benh-dong-rong-hay-mang-bam-cover.webp
 date: 2026-10-14
 ---
@@ -41,7 +41,7 @@ Ao vùng đất phèn có sắt, nhôm hòa tan cao làm mang tôm chuyển vàn
 
 1. **Tăng quạt khí**, nhất là ban đêm và sáng sớm, để tôm đủ oxy.
 2. **Xử lý đáy và khí độc**: dùng vi sinh [AQUA BAC](/san-pham/aqua-bac) phân hủy chất thải, kết hợp yucca như [SUPER YUCCA](/san-pham/super-yucca) để hấp thụ nhanh khí độc.
-3. **Diệt khuẩn, nấm và ký sinh trùng bám mang**: dùng [BEN XID 3000](/san-pham/ben-xid-3000), [BEN MKC 4000](/san-pham/ben-mkc-4000) hoặc [AQUA TECH](/san-pham/aqua-tech) theo liều điều trị trên nhãn. Với ao có nấm và nguyên sinh động vật nhiều, có thể dùng [DE ZOO](/san-pham/de-zoo).
+3. **Diệt khuẩn, nấm và nguyên sinh động vật bám mang**: dùng sản phẩm sát trùng iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600), liều khi có dấu hiệu bệnh là 1 lít cho 3.000 m³ nước, dùng liên tục 2 ngày theo nhãn.
 4. **Sau diệt khuẩn 2 đến 3 ngày**, cấy lại vi sinh để ổn định đáy và màu nước.
 5. **Bổ sung khoáng và vitamin C** để tôm lột xác. Khi tôm lột, lớp mang và vỏ bẩn sẽ được thay mới.
 

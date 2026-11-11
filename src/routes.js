@@ -199,6 +199,8 @@ function productFaq(p, related, solutions) {
 }
 
 router.get('/san-pham/:slug', (req, res, next) => {
+  const gone = c.hiddenProducts[req.params.slug.toLowerCase()];
+  if (gone) return res.redirect(301, `/san-pham/nhom/${gone}`);
   const p = c.productBySlug[req.params.slug.toLowerCase()];
   if (!p) return next();
   if (req.params.slug !== p.slug) return res.redirect(301, p.url);
@@ -459,8 +461,10 @@ router.get('/van-de/:sym', (req, res) => {
   res.redirect(301, s && s.solution ? s.solution.url : '/giai-phap');
 });
 router.get('/products/:slug', (req, res, next) => {
-  const p = c.productBySlug[req.params.slug.toLowerCase()];
-  return p ? res.redirect(301, p.url) : res.redirect(301, '/san-pham');
+  const slug = req.params.slug.toLowerCase();
+  const p = c.productBySlug[slug];
+  if (p) return res.redirect(301, p.url);
+  return res.redirect(301, c.hiddenProducts[slug] ? `/san-pham/nhom/${c.hiddenProducts[slug]}` : '/san-pham');
 });
 router.get('/product-categories/:old', (req, res) => {
   const cat = c.categoryByOldSlug[req.params.old];

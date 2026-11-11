@@ -12,12 +12,25 @@ const overridesFile = path.join(__dirname, '..', 'data', 'overrides.json');
 
 const company = read('company');
 const categories = read('categories');
-const products = read('products');
+// Products not shown on the website (antibiotics and antiparasitic products, by company
+// decision). Their data stays in products.json; their pages redirect to the product group.
+const HIDDEN = new Set([
+  'flophen', 'flophenicol-40', 'zicotrim', // kháng sinh
+  'prazi-s', 'de-zoo', 'bronopol', 'ben-xid-3000', 'ben-mkc-4000', 'aqua-tech', 'super-gold', // ký sinh trùng
+]);
+
+const productData = read('products');
+const products = productData.filter((p) => !HIDDEN.has(p.slug));
+// Hidden product slug -> its group, so old links can redirect somewhere useful.
+const hiddenProducts = Object.fromEntries(productData.filter((p) => HIDDEN.has(p.slug)).map((p) => [p.slug, p.category]));
 // Old posts whose content now lives in a fuller article (one page per topic, no duplicates
 // competing in search). Their URLs redirect 301 to the article.
 const MERGED = {
   'benh-ruot-do-tren-tom-va-cach-phong-ngua': 'benh-phan-trang-tren-tom-the',
   'benh-mem-vo-rot-cuc-thit': 'tom-mem-vo-cham-lot-nguyen-nhan-cach-xu-ly',
+  // Posts promoting products no longer listed on the site.
+  'su-dung-prazi-s-de-phong-va-tri-benh-teo-gan-tuy-phan-trang-trong-duong-ruot-tren-tom': 'benh-phan-trang-tren-tom-the',
+  'cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-sinh-trung-hen-trong-ao-nuoi-tom': 'tom-bi-nam-nam-dong-tien-ao-bat',
 };
 const posts = [...read('posts').filter((p) => !MERGED[p.slug]), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
 const solutions = read('giai-phap');
@@ -144,7 +157,7 @@ for (const p of posts) {
 /* ---------- On-page editing ----------
    A key names one editable value, for example:
      company.hotline            company.values.2
-     products.prazi-s.tagline   products.prazi-s.uses.0
+     products.kalimix.tagline   products.kalimix.uses.0
      posts.<slug>.body          pages.<slug>.body
      categories.<slug>.blurb    texts.home-hero-title
    "rich" values keep simple formatting (bold, lists, superscript); "text" values are plain. */
@@ -261,10 +274,10 @@ const articlesForProduct = (product, n = 3) =>
     .slice(0, n);
 
 // Hand-picked products for the home page, one per common pond problem.
-const FEATURED = ['prazi-s', 'ben-xid-3000', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'nb-brown-gay-mau-nuoc-mau-tra', 'aqualac-fs'];
+const FEATURED = ['g7-phong-va-tri-benh-gan-chet-som', 'ben-iq', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'nb-brown-gay-mau-nuoc-mau-tra', 'aqualac-fs'];
 const featured = FEATURED.map((s) => productBySlug[s]).filter(Boolean);
 // Products shown in the 3D carousel on the home page: the featured ones plus one or two from every group.
-const SHOWCASE = [...FEATURED, 'kalimix', 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30', 'top-weigh', 'ben-iq'];
+const SHOWCASE = [...FEATURED, 'kalimix', 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30', 'top-weigh', 'super-din-600'];
 const showcase = SHOWCASE.map((s) => productBySlug[s]).filter(Boolean);
 
 // Images that show the company itself (factory, team, certificates), taken from the old site's posts.
@@ -302,6 +315,7 @@ function productsMentioned(post, n = 4) {
 
 module.exports = {
   MERGED,
+  hiddenProducts,
   company,
   categories,
   products,

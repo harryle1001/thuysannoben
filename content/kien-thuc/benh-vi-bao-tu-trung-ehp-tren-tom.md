@@ -5,7 +5,7 @@ description: Tôm ăn đều nhưng không lớn, lệch cỡ nhiều, hay bị 
 category: benh-tom
 keywords: bệnh EHP tôm, vi bào tử trùng, tôm chậm lớn, tôm lệch cỡ, Enterocytozoon hepatopenaei
 symptoms: gan-ruot, tieu-hoa
-products: prazi-s, hepaliver-fs, biozyme, prozyme, aqualac-fs
+products: hepaliver-fs, biozyme, prozyme, aqualac-fs
 photo: /images/posts/khoang-tang-trong-luong-khi-thu-hoach-cover.webp
 date: 2026-10-11
 ---
@@ -44,7 +44,7 @@ Chỉ thả tôm giống có kết quả PCR âm tính với EHP từ trại uy 
 - Vớt tôm chết, tôm yếu ra khỏi ao mỗi ngày.
 - Giữ đáy sạch bằng vi sinh, tránh tích tụ phân và thức ăn dư.
 - Hỗ trợ gan tụy bằng sản phẩm bổ gan như [HEPALIVER FS](/san-pham/hepaliver-fs) và men tiêu hóa như [BIOZYME](/san-pham/biozyme), [PROZYME](/san-pham/prozyme) giúp tôm tiêu hóa tốt hơn.
-- Xổ ký sinh trùng đường ruột định kỳ bằng [PRAZI S](/san-pham/prazi-s) để giảm áp lực bệnh đường ruột đi kèm.
+- Bổ sung men tiêu hóa và sản phẩm bổ gan định kỳ để giảm áp lực bệnh đường ruột đi kèm.
 
 ## Khi ao đã nhiễm EHP
 

@@ -5,7 +5,7 @@ description: Lịch chăm sóc tôm thẻ chân trắng theo từng giai đoạn
 category: ky-thuat
 keywords: lịch chăm sóc tôm thẻ, nuôi tôm thẻ chân trắng, kỹ thuật nuôi tôm thẻ, chăm sóc tôm theo ngày tuổi, quy trình nuôi tôm thẻ
 symptoms: tieu-hoa, gan-ruot, mem-vo
-products: aqualac-fs, prazi-s, sorbest, caphote, aqua-bac, miral-n8
+products: aqualac-fs, g7-phong-va-tri-benh-gan-chet-som, sorbest, caphote, aqua-bac, miral-n8
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-11-05
 ---
@@ -32,7 +32,7 @@ Mỗi giai đoạn phát triển của tôm thẻ chân trắng có nhu cầu di
 ## Giai đoạn 31 đến 60 ngày: phòng phân trắng, ký sinh trùng
 
 - Tăng số cữ ăn lên 4 cữ, điều chỉnh theo nhá.
-- Xổ ký sinh trùng đường ruột định kỳ 7 đến 10 ngày một lần bằng [PRAZI S](/san-pham/prazi-s).
+- Bổ gan, giải độc gan định kỳ bằng thảo dược như [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): trộn 3 đến 5 ml/kg thức ăn, 2 lần/ngày, liên tục 3 đến 5 ngày rồi nghỉ 5 ngày.
 - Bổ sung khoáng tạt vào ban đêm, giữ độ kiềm 120 đến 180 mg/L, có thể dùng [MIRAL N8](/san-pham/miral-n8).
 - Vi sinh xử lý đáy 3 đến 5 ngày một lần như [AQUA BAC](/san-pham/aqua-bac).
 - Kiểm tra khí độc NH₃, NO₂ 2 đến 3 lần mỗi tuần.

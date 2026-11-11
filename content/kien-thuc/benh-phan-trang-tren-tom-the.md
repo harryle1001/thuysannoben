@@ -5,7 +5,7 @@ description: Tôm thẻ đi phân trắng, phân nổi mặt ao, đường ruộ
 category: benh-tom
 keywords: bệnh phân trắng tôm thẻ, tôm đi phân trắng, trị phân trắng tôm, thuốc trị phân trắng, phân trắng nổi mặt ao
 symptoms: gan-ruot
-products: prazi-s, mega-cid, davi-cid-liquid, aqualac-fs, sorbest, aqua-bac
+products: g7-phong-va-tri-benh-gan-chet-som, mega-cid, davi-cid-liquid, aqualac-fs, sorbest, aqua-bac
 photo: /images/posts/benh-ruot-do-tren-tom-va-cach-phong-ngua-cover.webp
 updated: 2026-11-11
 date: 2026-10-02
@@ -55,7 +55,7 @@ Bà con xử lý theo thứ tự: giảm thức ăn, làm sạch môi trường,
 
 1. **Giảm 30 đến 50% lượng thức ăn** và vớt bỏ phân trắng nổi mặt ao mỗi ngày.
 2. **Xử lý đáy và nước**: dùng vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải, giảm khí độc. Nếu mật độ vi khuẩn cao, diệt khuẩn nước trước rồi 2 đến 3 ngày sau cấy lại vi sinh.
-3. **Xổ ký sinh trùng đường ruột** nếu soi thấy trùng hai tế bào hoặc ao có tiền sử ký sinh trùng: trộn [PRAZI S](/san-pham/prazi-s) vào thức ăn theo liều trị trên nhãn, liên tục 3 đến 5 ngày.
+3. **Kiểm soát ký sinh trùng đường ruột** nếu soi thấy trùng hai tế bào hoặc ao có tiền sử ký sinh trùng: gửi mẫu tôm cho kỹ thuật viên hoặc cán bộ thú y để có phác đồ phù hợp.
 4. **Hỗ trợ đường ruột và gan tụy**: trộn sản phẩm hỗ trợ điều trị phân trắng như [MEGA CID](/san-pham/mega-cid) hoặc [DAVI CID LIQUID](/san-pham/davi-cid-liquid), kết hợp bổ gan [SORBEST](/san-pham/sorbest) để giải độc gan.
 5. **Phục hồi hệ vi sinh đường ruột** sau đợt trị bằng men vi sinh trộn thức ăn như [AQUALAC FS](/san-pham/aqualac-fs), giúp ruột to, phân dài trở lại.
 

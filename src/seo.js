@@ -29,8 +29,8 @@ function organization() {
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung',
-      addressLocality: 'Củ Chi',
+      streetAddress: '228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi A',
+      addressLocality: 'Xã Củ Chi',
       addressRegion: 'TP. Hồ Chí Minh',
       addressCountry: 'VN',
     },

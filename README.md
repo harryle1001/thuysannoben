@@ -5,7 +5,7 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
 ## Website có gì
 
 - **Trang chủ:** phần "Ao của bạn đang gặp" để bà con chọn vấn đề ao nuôi và xem ngay sản phẩm phù hợp. Kèm 4 nhóm sản phẩm, sản phẩm nổi bật, bài kỹ thuật, dịch vụ gia công, chứng nhận và form gọi lại.
-- **Sản phẩm (`/san-pham`):** 104 sản phẩm lấy từ website cũ.
+- **Sản phẩm (`/san-pham`):** sản phẩm lấy từ website cũ; các sản phẩm kháng sinh và trị ký sinh trùng được ẩn khỏi web (danh sách `HIDDEN` trong `src/content.js`, trang cũ tự chuyển 301 về nhóm sản phẩm).
   - Lọc theo nhóm, theo vấn đề ao nuôi, hoặc tìm theo tên.
   - Tìm kiếm có dấu hay không dấu đều được.
   - Mỗi sản phẩm có trang riêng: công dụng, hướng dẫn sử dụng, nút Gọi / Zalo / Gửi yêu cầu, sản phẩm liên quan.
