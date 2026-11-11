@@ -18,6 +18,7 @@ function organization() {
     name: co.legal,
     alternateName: ['Thủy sản Noben', 'Noben', 'Thuốc thủy sản Noben'],
     description: co.overview && co.overview[0],
+    foundingDate: co.founded_year || undefined,
     url: SITE_URL,
     logo: abs('/images/brand/logo-noben.png'),
     image: abs('/images/brand/banner-1.webp'),

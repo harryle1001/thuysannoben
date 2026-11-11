@@ -23,7 +23,7 @@ const Hook: React.FC = () => {
       <div style={{ position: "absolute", left: 140, top: H * 0.3, width: 860 }}>
         <Entrance delay={6}><div style={kicker}>Thủy sản Noben</div></Entrance>
         <WordReveal delay={12} per={4} text="Khoa học cho từng ao tôm" style={{ ...display, fontSize: 124, marginTop: 22 }} />
-        <Entrance delay={34} y={24}><p style={{ ...body, fontSize: 34, marginTop: 30, lineHeight: 1.4 }}>Nhà sản xuất thuốc và chế phẩm thủy sản hơn 15 năm tại TP.HCM</p></Entrance>
+        <Entrance delay={34} y={24}><p style={{ ...body, fontSize: 34, marginTop: 30, lineHeight: 1.4 }}>Nhà sản xuất thuốc và chế phẩm thủy sản từ năm 2002 tại TP.HCM</p></Entrance>
       </div>
     </AbsoluteFill>
   );
@@ -92,7 +92,7 @@ const Proof: React.FC = () => {
   const { fps, width: W } = useVideoConfig();
   const breathe = useBreath(3, 0.01);
   const items: Array<[React.ReactNode, string]> = [
-    [<Counter key="y" to={15} suffix="+" delay={Math.round(fps * 0.4)} />, "năm sản xuất thuốc thủy sản"],
+    [<Counter key="y" to={22} suffix="+" delay={Math.round(fps * 0.4)} />, "năm sản xuất thuốc thủy sản"],
     [<Counter key="p" to={94} delay={Math.round(fps * 0.55)} />, "sản phẩm cho ao tôm, cá"],
     ["ISO", "nhà máy đạt chuẩn ISO 9001:2015"],
     ["Hợp quy", "thức ăn bổ sung chứng nhận VinaCert"],

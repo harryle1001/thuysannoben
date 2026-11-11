@@ -109,7 +109,7 @@ router.get('/', (req, res) => {
     meta: {
       title: 'Thuốc thủy sản Noben – Thuốc nuôi tôm, chế phẩm sinh học, khoáng chất',
       description:
-        'Thuốc thủy sản Noben: thuốc trị bệnh tôm, vi sinh xử lý đáy, khoáng chất, men tiêu hóa cho ao tôm, cá. Nhà máy ISO 9001:2015 tại Củ Chi, hơn 15 năm kinh nghiệm, tư vấn kỹ thuật miễn phí.',
+        'Thuốc thủy sản Noben: thuốc trị bệnh tôm, vi sinh xử lý đáy, khoáng chất, men tiêu hóa cho ao tôm, cá. Nhà máy ISO 9001:2015 tại Củ Chi, hơn 22 năm kinh nghiệm, tư vấn kỹ thuật miễn phí.',
       image: '/images/brand/banner-1.webp',
     },
     featured: c.featured,
@@ -311,7 +311,7 @@ router.get('/bai-viet/:slug', (req, res, next) => {
 
 router.get('/ve-chung-toi', (req, res) =>
   res.render('pages/about', {
-    meta: { title: 'Về Noben – Hơn 15 năm sản xuất thuốc thủy sản', description: c.company.overview[0] },
+    meta: { title: 'Về Noben – Hơn 22 năm sản xuất thuốc thủy sản', description: c.company.overview[0] },
     gallery: c.gallery,
     productCount: c.products.length,
     jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']])],
