@@ -152,18 +152,69 @@ function renderCatalog(req, res, category) {
 router.get('/san-pham', (req, res) => renderCatalog(req, res));
 router.get('/san-pham/nhom/:cat', (req, res, next) => (c.categoryBySlug[req.params.cat] ? renderCatalog(req, res, req.params.cat) : next()));
 
+
+// Product pages: a title that names the product and what it is for, cut at a word (no "…"),
+// and a short FAQ answering what buyers search for (what it does, how to use, price, where to buy),
+// built only from the label data on file.
+const KIND = {
+  'sinh-hoc': 'chế phẩm sinh học cho ao tôm',
+  'khoang-chat': 'khoáng chất cho tôm',
+  'thuc-an-bo-sung': 'thức ăn bổ sung cho tôm',
+  'tri-benh': 'thuốc thủy sản cho tôm',
+};
+const plain = (h) => String(h || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+function cutWords(str, n) {
+  if (str.length <= n) return str;
+  return str.slice(0, n).replace(/[\s,;:–-]+\S*$/, '');
+}
+function productTitle(p) {
+  const tail = ' | Noben';
+  const head = `${p.name} – `;
+  if (p.name.length > 34) return cutWords(p.name, 64 - tail.length) + tail;
+  const room = 64 - head.length - tail.length;
+  const tag = plain(p.tagline);
+  return head + (room > 18 ? cutWords(tag.charAt(0).toUpperCase() + tag.slice(1), room) : KIND[p.category]) + tail;
+}
+function productFaq(p, related, solutions) {
+  const co = c.company;
+  const esc = (x) => String(x).replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[ch]);
+  const faq = [];
+  const uses = p.uses.map(plain).filter(Boolean);
+  if (uses.length) {
+    faq.push({ q: `${p.name} dùng để làm gì?`, a: `<p>${esc(p.name)} là ${KIND[p.category] || 'sản phẩm thủy sản'} của Noben. ${esc(plain(p.tagline))}.</p><ul>${uses.map((u) => `<li>${esc(u)}</li>`).join('')}</ul>` });
+  }
+  const dose = p.dose.map(plain).filter(Boolean);
+  if (dose.length) {
+    faq.push({ q: `Cách sử dụng ${p.name} như thế nào?`, a: `<p>Theo hướng dẫn trên nhãn:</p><ul>${dose.slice(0, 4).map((d) => `<li>${esc(d)}</li>`).join('')}</ul><p>Liều có thể điều chỉnh theo tình trạng ao; gọi kỹ thuật viên ${esc(co.hotline)} để được hướng dẫn cụ thể.</p>` });
+  }
+  if (solutions.length) {
+    faq.push({ q: `${p.name} dùng khi ao tôm gặp vấn đề gì?`, a: `<p>${esc(p.name)} thường được dùng trong phác đồ xử lý: ${solutions.map((s) => `<a href="${s.url}">${esc(s.symptomInfo.label.toLowerCase())}</a>`).join(', ')}.</p>` });
+  }
+  faq.push({ q: `${p.name} giá bao nhiêu?`, a: `<p>Giá ${esc(p.name)} tùy quy cách đóng gói, số lượng và khu vực giao hàng. Noben là nhà sản xuất nên báo giá trực tiếp từ nhà máy, có giá riêng cho đại lý. Gọi hoặc nhắn Zalo <a href="tel:${co.hotline.replace(/\D/g, '')}">${esc(co.hotline)}</a> để nhận báo giá trong ngày.</p>` });
+  faq.push({ q: `Mua ${p.name} chính hãng ở đâu?`, a: `<p>Mua trực tiếp từ ${esc(co.name)} (nhà máy tại Củ Chi, TP.HCM) qua hotline ${esc(co.hotline)}, Zalo hoặc <a href="/lien-he?san-pham=${p.slug}">form liên hệ</a>, hoặc tại các đại lý thuốc thủy sản phân phối sản phẩm Noben. Noben giao hàng toàn quốc, xem <a href="/chinh-sach/huong-dan-mua-hang">hướng dẫn mua hàng</a> và <a href="/chinh-sach/chinh-sach-van-chuyen">chính sách vận chuyển</a>.</p>` });
+  if (related.length) {
+    faq.push({ q: `Có thể dùng ${p.name} cùng sản phẩm nào?`, a: `<p>Sản phẩm Noben thường phối hợp cho cùng vấn đề ao nuôi: ${related.slice(0, 4).map((r) => `<a href="${r.url}">${esc(r.name)}</a>`).join(', ')}. Nên hỏi kỹ thuật viên trước khi phối hợp để có liều và thời điểm phù hợp.</p>` });
+  }
+  return faq;
+}
+
 router.get('/san-pham/:slug', (req, res, next) => {
   const p = c.productBySlug[req.params.slug.toLowerCase()];
   if (!p) return next();
   if (req.params.slug !== p.slug) return res.redirect(301, p.url);
   const desc = `${p.name}: ${p.tagline}. ${p.uses[0] ? p.uses[0].replace(/<[^>]+>/g, '') + ' ' : ''}Sản phẩm của Thủy sản Noben, nhà máy ISO 9001:2015. Gọi ${c.company.hotline} để được tư vấn.`;
+  const related = c.relatedProducts(p, 10);
+  const solutions = p.symptoms.map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean);
+  const faq = productFaq(p, related, solutions);
   res.render('pages/product', {
-    meta: { title: clip(`${p.name}: ${p.tagline}`, 62), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
+    meta: { title: productTitle(p), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
     p,
-    related: c.relatedProducts(p, 10),
+    kind: KIND[p.category] || 'thuốc thủy sản',
+    related,
     articles: c.articlesForProduct(p, 3),
-    solutions: p.symptoms.map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean),
-    jsonld: [seo.product(p), crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]])],
+    solutions,
+    faq,
+    jsonld: [seo.product(p), crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]]), seo.faqPage(faq)].filter(Boolean),
   });
 });
 

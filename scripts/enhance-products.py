@@ -224,16 +224,17 @@ def locate_by_cutout(poster, ref):
     best = (-1, None)
     for scale in np.geomspace(0.12, 1.2, 60):
         w, h = int(rgba.shape[1] * scale), int(rgba.shape[0] * scale)
-        if w < 40 or h < 40 or w > P.shape[1] or h > P.shape[0]:
+        # The package fills a good part of the poster; tiny matches on flat colour are wrong.
+        if w < 0.3 * P.shape[1] or h < 40 or w > P.shape[1] or h > P.shape[0]:
             continue
         T = cv2.resize(T0, (w, h), interpolation=cv2.INTER_AREA)
         M = cv2.resize(M0, (w, h), interpolation=cv2.INTER_AREA)
-        res = cv2.matchTemplate(P, T, cv2.TM_CCORR_NORMED, mask=M)
+        res = cv2.matchTemplate(P, T, cv2.TM_CCOEFF_NORMED, mask=M)
         res[~np.isfinite(res)] = -1
         _, score, _, loc = cv2.minMaxLoc(res)
         if score > best[0]:
             best = (score, (loc[0], loc[1], w, h))
-    if best[1] is None or best[0] < 0.9:
+    if best[1] is None or best[0] < 0.6:
         return None
     x, y, w, h = best[1]
     return (x, y, x + w, y + h), np.asarray(ref.convert('RGBA'))[..., 3] > 127

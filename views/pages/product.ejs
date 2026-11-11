@@ -29,7 +29,7 @@
 
   <div class="product__info">
     <p class="cat-tag cat-tag--<%= p.category %>"><a href="/san-pham/nhom/<%= p.category %>"><%= p.categoryInfo.name %></a></p>
-    <h1 class="product__name"><%- ef(`products.${p.slug}.name`, p.name) %></h1>
+    <h1 class="product__name"><%- ef(`products.${p.slug}.name`, p.name) %><span class="product__kind"><span class="sr-only"> – </span><%= kind %></span></h1>
     <p class="product__tagline"><%- ef(`products.${p.slug}.tagline`, p.tagline) %></p>
 
     <% if (p.symptoms.length) { %>
@@ -81,6 +81,21 @@
     </div>
   </div>
 </article>
+
+<% if (faq.length) { %>
+<section class="section section--top-tight" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="faq-block faq-block--product">
+      <h2 id="faq-title" class="faq-block__title">Câu hỏi thường gặp về <%= p.name %></h2>
+      <div class="faq">
+        <% faq.forEach((f, i) => { %>
+        <details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+</section>
+<% } %>
 
 <% if (articles.length) { %>
 <section class="section section--tint" aria-labelledby="art-title">
