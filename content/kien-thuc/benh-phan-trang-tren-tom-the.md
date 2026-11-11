@@ -7,6 +7,7 @@ keywords: bệnh phân trắng tôm thẻ, tôm đi phân trắng, trị phân t
 symptoms: gan-ruot
 products: prazi-s, mega-cid, davi-cid-liquid, aqualac-fs, sorbest, aqua-bac
 photo: /images/posts/benh-ruot-do-tren-tom-va-cach-phong-ngua-cover.webp
+updated: 2026-11-11
 date: 2026-10-02
 ---
 
@@ -23,6 +24,10 @@ Bà con nên kiểm tra nhá (sàng ăn) và mặt nước mỗi ngày, vì bệ
 - **Tôm giảm ăn rõ rệt**, lượng thức ăn trong nhá dư nhiều hơn mọi ngày, tôm lờ đờ dạt bờ.
 
 Khi thấy từ hai dấu hiệu trở lên, bà con nên giảm ngay 30 đến 50% lượng thức ăn và bắt đầu xử lý, không chờ đến khi phân nổi khắp ao.
+
+### Bệnh phân trắng hay xuất hiện khi nào?
+
+Bệnh gặp trên cả tôm thẻ chân trắng lẫn tôm sú, nhiều nhất khi tôm nuôi được 40 đến 90 ngày và khi thời tiết bất thường: nắng nóng kéo dài, mưa nhiều hoặc chuyển mùa. Ở miền Bắc bệnh thường tập trung từ tháng 4 đến tháng 7, ở miền Nam từ tháng 8 đến tháng 10, khi nhiệt độ nước cao và ao nuôi mật độ dày. Vào những giai đoạn này bà con nên tăng cường kiểm tra nhá và đường ruột tôm mỗi ngày.
 
 ## Nguyên nhân gây bệnh phân trắng
 
@@ -63,6 +68,10 @@ Chỉ dùng kháng sinh khi đã xác định nguyên nhân do vi khuẩn, đún
 - Cho ăn theo nhá, không cho ăn dư; bảo quản thức ăn nơi khô ráo.
 - Bổ sung men tiêu hóa vào thức ăn hằng ngày và xổ ký sinh trùng định kỳ 7 đến 10 ngày một lần trong giai đoạn 20 đến 60 ngày.
 - Duy trì vi sinh xử lý đáy định kỳ, giữ khí độc ở ngưỡng an toàn.
+
+### Xử lý nước thải khi ao có bệnh
+
+Nước thải từ ao bệnh cần đưa vào ao chứa, xử lý chlorine khoảng 30 ppm và giữ ít nhất 4 ngày rồi mới thải ra ngoài, tránh lây bệnh sang ao khác và ao của hộ lân cận. Tôm chết phải vớt ra khỏi ao ngay để tôm khỏe không ăn tôm bệnh.
 
 ## Câu hỏi thường gặp
 

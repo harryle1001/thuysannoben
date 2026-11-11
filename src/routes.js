@@ -282,6 +282,7 @@ router.get('/giai-phap/:slug', (req, res, next) => {
 });
 
 router.get('/bai-viet/:slug', (req, res, next) => {
+  if (c.MERGED[req.params.slug]) return res.redirect(301, `/bai-viet/${c.MERGED[req.params.slug]}`);
   const post = c.postBySlug[req.params.slug];
   if (!post) return next();
   const isKnowledge = post.category === 'ky-thuat';
@@ -469,6 +470,7 @@ router.get(['/product-tags/:tag', '/tag/:tag'], (req, res) => res.redirect(301, 
 router.get('/:slug', (req, res, next) => {
   const s = req.params.slug;
   if (REDIRECTS['/' + s]) return res.redirect(301, REDIRECTS['/' + s]);
+  if (c.MERGED[s]) return res.redirect(301, `/bai-viet/${c.MERGED[s]}`);
   if (c.pages[s]) return res.redirect(301, `/chinh-sach/${s}`);
   if (c.postBySlug[s]) return res.redirect(301, `/bai-viet/${s}`);
   next();

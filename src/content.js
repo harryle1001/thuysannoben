@@ -13,7 +13,13 @@ const overridesFile = path.join(__dirname, '..', 'data', 'overrides.json');
 const company = read('company');
 const categories = read('categories');
 const products = read('products');
-const posts = [...read('posts'), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
+// Old posts whose content now lives in a fuller article (one page per topic, no duplicates
+// competing in search). Their URLs redirect 301 to the article.
+const MERGED = {
+  'benh-ruot-do-tren-tom-va-cach-phong-ngua': 'benh-phan-trang-tren-tom-the',
+  'benh-mem-vo-rot-cuc-thit': 'tom-mem-vo-cham-lot-nguyen-nhan-cach-xu-ly',
+};
+const posts = [...read('posts').filter((p) => !MERGED[p.slug]), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
 const solutions = read('giai-phap');
 const policies = require('./policies');
 // Policy pages: Markdown in content/chinh-sach/ (falls back to the old content/pages.json entries).
@@ -295,6 +301,7 @@ function productsMentioned(post, n = 4) {
 }
 
 module.exports = {
+  MERGED,
   company,
   categories,
   products,
