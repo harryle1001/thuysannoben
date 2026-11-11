@@ -184,6 +184,25 @@ Mỗi sản phẩm mất khoảng 45 giây trên máy không có GPU. Nếu post
 
 Sản phẩm chưa có ảnh tách nền sẽ tự hiển thị ảnh poster.
 
+## Video motion graphic (Remotion)
+
+Video nền đầu trang chủ, trang Về Noben và phim "Kiểm soát chất lượng" được dựng bằng code trong thư mục `motion/` (Remotion, React), không dùng ảnh chụp. File đã xuất nằm ở `public/media/` (MP4 + WebM + ảnh chờ), mỗi file khoảng 0,6 đến 1,8 MB.
+
+- `HeroLoop`: 12 giây, lặp liền mạch, không chữ (chữ của trang nằm đè lên).
+- `BrandFilm`: 18 giây: tôm tự vẽ, quy trình khép kín 4 bước, chứng nhận và số liệu, logo cuối.
+
+Sửa chữ hoặc màu trong `motion/src/`, rồi xuất lại:
+
+```bash
+cd motion && npm install
+```
+
+```bash
+npm run render:hero && npm run render:film
+```
+
+Sau đó nén cho web bằng ffmpeg (xem lịch sử commit để lấy đúng lệnh) và chép vào `public/media/`. Skill hướng dẫn dựng video nằm trong `.claude/skills/remotion-motion-graphics/`.
+
 ## Trợ lý Noben (chatbot)
 
 Nút tròn màu vàng ở góc phải mỗi trang mở khung **Trợ lý Noben**. Trợ lý trả lời tự động 24/7 bằng tiếng Việt, dựa trên danh mục sản phẩm, các trang giải pháp theo bệnh và bài kiến thức của chính website, có gắn liên kết tới trang sản phẩm. Trợ lý không tự báo giá: khách hỏi giá, đặt hàng, đại lý sẽ được mời gọi hotline, nhắn Zalo hoặc để lại thông tin.

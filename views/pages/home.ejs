@@ -3,9 +3,15 @@
   const firstSym = symptoms[0];
   const firstList = allProducts.filter((p) => p.symptoms.includes(firstSym.slug)).sort((a, b) => b.symscore[firstSym.slug] - a.symscore[firstSym.slug]);
   const finderData = allProducts.map((p) => ({ n: p.name, u: p.url, i: p.shot && p.shot.src, c: Boolean(p.cutout), s: p.symptoms, r: p.symscore }));
-  const factory = { src: '/images/brand/banner-1.webp', w: 1200, h: 745 };
 %>
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero hero--video" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="/media/noben-hero-poster.webp" data-hero-video>
+      <source src="/media/noben-hero.webm" type="video/webm">
+      <source src="/media/noben-hero.mp4" type="video/mp4">
+    </video>
+    <span class="hero__shade"></span>
+  </div>
   <div class="wrap hero__grid">
     <div class="hero__copy">
       <p class="hero__kicker"><%- tx('home-kicker', 'Nhà sản xuất thuốc thủy sản tại Củ Chi, TP.HCM') %></p>
@@ -37,17 +43,7 @@
       </div>
     </div>
 
-    <figure class="hero__photo">
-      <%- img(factory, { alt: 'Nhà máy Công ty TNHH Noben nhìn từ trên cao', loading: 'eager', fetchpriority: 'high' }) %>
-      <% const trio = ['kalimix', 'super-yucca', 'oxy-99'].map((s) => allProducts.find((p) => p.slug === s)).filter((p) => p && p.cutout); %>
-      <% if (trio.length === 3) { %>
-      <div class="hero__trio">
-        <% trio.forEach((p, i) => { %><a class="hero__trio-item<%= i === 1 ? ' is-center' : '' %>" href="<%= p.url %>" aria-label="<%= p.name %>"><%- img(p.cutout, { alt: '', loading: 'eager' }) %></a><% }) %>
-      </div>
-      <% } %>
-      <figcaption><%- tx('home-photo', 'Nhà máy Noben, xã Tân Phú Trung, Củ Chi') %></figcaption>
-      <span class="iso-badge" aria-hidden="true"><span>ISO<br>9001<br>2015</span></span>
-    </figure>
+    <div class="hero__aside" aria-hidden="true"></div>
   </div>
 </section>
 
@@ -60,6 +56,51 @@
   </div>
 </section>
 
+<section class="section prodtabs" aria-labelledby="pt-title" data-tabs>
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="pt-title" class="h2"><%- tx('home-groups', 'Sản phẩm Noben') %></h2>
+        <p class="section-head__lead"><%- tx('home-groups-lead', productCount + ' sản phẩm trong 4 nhóm. Chọn nhóm để xem nhanh, bấm vào sản phẩm để xem công dụng và liều dùng.') %></p>
+      </div>
+      <a class="text-link" href="/san-pham">Xem toàn bộ <%= productCount %> sản phẩm</a>
+    </header>
+    <div class="prodtabs__tabs" role="tablist" aria-label="Nhóm sản phẩm">
+      <% categories.forEach((cat, i) => { %>
+      <button class="prodtabs__tab cat-tag--<%= cat.slug %>" type="button" role="tab" id="pt-tab-<%= cat.slug %>" aria-controls="pt-<%= cat.slug %>" aria-selected="<%= i === 0 %>" tabindex="<%= i === 0 ? 0 : -1 %>"><span class="prodtabs__dot" aria-hidden="true"></span><%= cat.name %><span class="prodtabs__count"><%= cat.count %></span></button>
+      <% }) %>
+    </div>
+    <% categories.forEach((cat, i) => { const list = allProducts.filter((p) => p.category === cat.slug).slice(0, 10); %>
+    <div class="prodtabs__panel" role="tabpanel" id="pt-<%= cat.slug %>" aria-labelledby="pt-tab-<%= cat.slug %>"<% if (i) { %> hidden<% } %>>
+      <div class="pgrid pgrid--fit">
+        <% list.forEach((p) => { %><%- include('../partials/product-card', { p }) %><% }) %>
+      </div>
+      <p class="prodtabs__more"><a class="btn btn--line" href="/san-pham/nhom/<%= cat.slug %>">Xem tất cả <%= cat.count %> sản phẩm <%= cat.name.toLowerCase() %></a></p>
+    </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('../partials/quality') %>
+
+<% if (certificates.length) { %>
+<section class="section" aria-labelledby="cert-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="cert-title" class="h2"><%- tx('home-cert', 'Chứng nhận đầy đủ') %></h2>
+      <a class="text-link" href="/chung-nhan">Xem tất cả chứng nhận</a>
+    </header>
+    <div class="certs" data-gallery>
+      <% certificates.forEach((c, i) => { %>
+      <a class="cert" href="<%= c.src %>" data-lb="<%= c.src %>" data-caption="Chứng nhận của Công ty TNHH Noben">
+        <%- img(c, { alt: 'Giấy chứng nhận của Công ty TNHH Noben, trang ' + (i + 1) }) %>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
 <section class="section" aria-labelledby="sol-title">
   <div class="wrap">
     <header class="section-head">
@@ -70,31 +111,6 @@
       <a class="text-link" href="/giai-phap">Tất cả giải pháp</a>
     </header>
     <%- include('../partials/solution-tiles', { solutions }) %>
-  </div>
-</section>
-
-<section class="section section--tint" aria-labelledby="groups-title">
-  <div class="wrap">
-    <header class="section-head">
-      <h2 id="groups-title" class="h2"><%- tx('home-groups', 'Bốn nhóm sản phẩm') %></h2>
-      <a class="text-link" href="/san-pham">Xem toàn bộ <%= productCount %> sản phẩm</a>
-    </header>
-    <ul class="groups">
-      <% for (const cat of categories) { const sample = allProducts.filter((p) => p.category === cat.slug).slice(0, 4); %>
-      <li class="group group--<%= cat.slug %>">
-        <a class="group__link" href="/san-pham/nhom/<%= cat.slug %>">
-          <div class="group__text">
-            <h3 class="group__name"><%- ef(`categories.${cat.slug}.name`, cat.name) %></h3>
-            <p class="group__blurb"><%- ef(`categories.${cat.slug}.blurb`, cat.blurb) %></p>
-            <span class="group__count"><%= cat.count %> sản phẩm</span>
-          </div>
-          <div class="group__shelf" aria-hidden="true">
-            <% sample.forEach((p) => { %><span class="group__item"><%- img(p.shot, { alt: '' }) %></span><% }) %>
-          </div>
-        </a>
-      </li>
-      <% } %>
-    </ul>
   </div>
 </section>
 
@@ -157,27 +173,6 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="why-title">
-  <div class="wrap why">
-    <figure class="why__photo">
-      <%- img({ src: '/images/brand/banner-2.webp', w: 1200, h: 745 }, { alt: 'Nhà máy sản xuất của Noben tại Củ Chi' }) %>
-    </figure>
-    <div>
-      <h2 id="why-title" class="h2"><%- tx('home-why', 'Vì sao bà con và đại lý chọn Noben') %></h2>
-      <dl class="why__list">
-        <div><dt><%- tx('why-1', 'Sản xuất tại nhà máy riêng') %></dt><dd><%- tx('why-1-d', 'Dây chuyền tự động hóa, hệ thống quản lý chất lượng đạt ISO 9001:2015, kiểm soát từng lô hàng.') %></dd></div>
-        <div><dt><%- tx('why-2', 'Đủ giải pháp cho cả vụ nuôi') %></dt><dd><%- tx('why-2-d', productCount + ' sản phẩm trong 4 nhóm: chế phẩm sinh học, khoáng chất, thức ăn bổ sung và đặc trị.') %></dd></div>
-        <div><dt><%- tx('why-3', 'Kỹ thuật viên đồng hành') %></dt><dd><%- tx('why-3-d', 'Tư vấn miễn phí qua điện thoại và Zalo, lên phác đồ theo tình trạng thực tế của từng ao.') %></dd></div>
-        <div><dt><%- tx('why-4', 'Hơn 15 năm trong nghề') %></dt><dd><%- tx('why-4-d', 'Kinh nghiệm sản xuất, phân phối và gia công thuốc thủy sản cho bà con, đại lý và doanh nghiệp.') %></dd></div>
-      </dl>
-      <div class="btn-row">
-        <a class="btn btn--blue" href="/ve-chung-toi">Tìm hiểu về Noben</a>
-        <a class="btn btn--line" href="/lien-he?nhu-cau=L%C3%A0m%20%C4%91%E1%BA%A1i%20l%C3%BD">Đăng ký làm đại lý</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="oem-band" aria-labelledby="oem-title">
   <div class="wrap oem-band__grid">
     <div>
@@ -191,28 +186,10 @@
       <a class="btn btn--sun" href="/gia-cong">Tìm hiểu dịch vụ gia công</a>
     </div>
     <figure class="oem-band__photo">
-      <%- img({ src: '/images/brand/gioi-thieu.webp', w: 532, h: 250 }, { alt: 'Khu nhà xưởng sản xuất của Noben' }) %>
+      <%- img({ src: '/media/noben-brand.webp', w: 1600, h: 900 }, { alt: 'Thủy sản Noben, đồng hành cùng người nuôi tôm Việt' }) %>
     </figure>
   </div>
 </section>
-
-<% if (certificates.length) { %>
-<section class="section" aria-labelledby="cert-title">
-  <div class="wrap">
-    <header class="section-head">
-      <h2 id="cert-title" class="h2"><%- tx('home-cert', 'Chứng nhận chất lượng') %></h2>
-      <a class="text-link" href="/chung-nhan">Xem tất cả chứng nhận</a>
-    </header>
-    <div class="certs" data-gallery>
-      <% certificates.forEach((c, i) => { %>
-      <a class="cert" href="<%= c.src %>" data-lb="<%= c.src %>" data-caption="Chứng nhận của Công ty TNHH Noben">
-        <%- img(c, { alt: 'Giấy chứng nhận của Công ty TNHH Noben, trang ' + (i + 1) }) %>
-      </a>
-      <% }) %>
-    </div>
-  </div>
-</section>
-<% } %>
 
 <%- include('../partials/quick-contact') %>
 <%- include('../partials/footer') %>

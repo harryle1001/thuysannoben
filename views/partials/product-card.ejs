@@ -1,5 +1,5 @@
 <article class="pcard" data-product data-cat="<%= p.category %>" data-sym="<%= p.symptoms.join(' ') %>" data-search="<%= p.search %>"<% if (locals.hidden) { %> hidden<% } %>>
-  <a class="pcard__link" href="<%= p.url %>">
+  <a class="pcard__link" href="<%= p.url %>" title="<%= p.name %>">
     <div class="pcard__media cat-bg--<%= p.category %>" data-tilt>
       <span class="pcard__floor" aria-hidden="true"></span>
       <%- img(p.shot, { alt: p.name, class: p.cutout ? 'pcard__img is-cutout' : 'pcard__img', sizes: '(min-width: 1100px) 240px, 45vw' }) %>

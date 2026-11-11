@@ -236,3 +236,71 @@
     });
   });
 })();
+
+// Product tabs on the home page (arrow keys move between tabs).
+(function () {
+  document.querySelectorAll('[data-tabs]').forEach(function (root) {
+    var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
+    function select(tab, focus) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        if (panel) panel.hidden = !on;
+      });
+      if (focus) tab.focus();
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { select(tab); });
+      tab.addEventListener('keydown', function (e) {
+        var k = e.key, n = tabs.length, j = null;
+        if (k === 'ArrowRight') j = (i + 1) % n;
+        else if (k === 'ArrowLeft') j = (i - 1 + n) % n;
+        else if (k === 'Home') j = 0;
+        else if (k === 'End') j = n - 1;
+        if (j !== null) { e.preventDefault(); select(tabs[j], true); }
+      });
+    });
+  });
+})();
+
+// Motion-graphic videos: play only while on screen, never for visitors who ask for reduced motion.
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var videos = Array.prototype.slice.call(document.querySelectorAll('[data-hero-video], [data-inview-play]'));
+  if (!videos.length) return;
+  function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  videos.forEach(function (v) {
+    v.muted = true;
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.dataset.userPaused = '1'; }
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting && !v.dataset.userPaused) {
+          if (v.preload === 'none') v.preload = 'auto';
+          play(v);
+        } else if (!e.isIntersecting) v.pause();
+      });
+    }, { threshold: 0.25 });
+    videos.forEach(function (v) { io.observe(v); });
+  }
+  document.querySelectorAll('[data-video-toggle]').forEach(function (btn) {
+    var v = btn.parentNode.querySelector('video');
+    if (!v) return;
+    function label() {
+      var paused = v.paused;
+      btn.querySelector('span').textContent = paused ? 'Phát video' : 'Tạm dừng';
+      btn.setAttribute('aria-label', paused ? 'Phát video' : 'Tạm dừng video');
+      btn.querySelector('use').setAttribute('href', paused ? '#i-play' : '#i-pause');
+    }
+    v.addEventListener('play', label);
+    v.addEventListener('pause', label);
+    btn.addEventListener('click', function () {
+      if (v.paused) { delete v.dataset.userPaused; play(v); } else { v.dataset.userPaused = '1'; v.pause(); }
+    });
+    label();
+  });
+})();

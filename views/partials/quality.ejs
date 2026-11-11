@@ -1,0 +1,46 @@
+<%
+  // Quality control band: brand film + closed production process. Steps are editable texts (pencil editor).
+  const qcSteps = [
+    ['qc-1', 'Nguyên liệu đầu vào', 'qc-1-d', 'Chọn nhà cung cấp uy tín, kiểm tra nguyên liệu trước khi nhập kho sản xuất.'],
+    ['qc-2', 'Công thức từ đội kỹ thuật', 'qc-2-d', 'Công thức được xây dựng và điều chỉnh từ thực tế ao nuôi của bà con.'],
+    ['qc-3', 'Dây chuyền tự động hóa', 'qc-3-d', 'Cân, trộn, đóng gói trên dây chuyền tự động, hạn chế sai số định lượng.'],
+    ['qc-4', 'Kiểm tra trước khi xuất xưởng', 'qc-4-d', 'Thành phẩm được kiểm tra chất lượng theo hệ thống quản lý ISO 9001:2015.'],
+    ['qc-5', 'Nhãn mác đầy đủ', 'qc-5-d', 'Bao bì ghi rõ thành phần, công dụng, liều dùng, ngày sản xuất và hạn dùng.'],
+    ['qc-6', 'Giao hàng và theo dõi ao', 'qc-6-d', 'Giao hàng toàn quốc, kỹ thuật viên hỗ trợ miễn phí suốt vụ nuôi.'],
+  ];
+%>
+<section class="qc" aria-labelledby="quality-title">
+  <div class="wrap qc__grid">
+    <div class="qc__film">
+      <div class="qc__frame">
+        <video class="qc__video" muted playsinline loop preload="none" poster="/media/noben-film-poster.webp" data-inview-play aria-label="Phim giới thiệu Thủy sản Noben: quy trình sản xuất khép kín và chứng nhận chất lượng">
+          <source src="/media/noben-film.webm" type="video/webm">
+          <source src="/media/noben-film.mp4" type="video/mp4">
+        </video>
+        <button class="qc__sound" type="button" data-video-toggle aria-label="Tạm dừng video"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span>Tạm dừng</span></button>
+      </div>
+      <ul class="qc__certs" aria-label="Chứng nhận">
+        <li><strong>ISO 9001:2015</strong><span>Hệ thống quản lý chất lượng nhà máy</span></li>
+        <li><strong>Hợp quy VinaCert</strong><span>Sản phẩm thức ăn bổ sung</span></li>
+        <li><strong><%= company.founded_years %>+ năm</strong><span>Sản xuất thuốc thủy sản</span></li>
+      </ul>
+    </div>
+    <div class="qc__copy">
+      <p class="qc__kicker"><%- tx('qc-kicker', 'Kiểm soát chất lượng') %></p>
+      <h2 id="quality-title" class="h2 qc__title"><%- tx('qc-title', 'Quy trình sản xuất khép kín, từ nguyên liệu đến ao nuôi') %></h2>
+      <p class="qc__lead"><%- tx('qc-lead', 'Mỗi sản phẩm Noben đi qua cùng một quy trình tại nhà máy đạt chuẩn ISO 9001:2015, để bà con yên tâm về chất lượng của từng gói, từng chai.') %></p>
+      <ol class="qc__steps">
+        <% qcSteps.forEach(([k, t, kd, d], i) => { %>
+        <li class="qc__step">
+          <span class="qc__num" aria-hidden="true"><%= String(i + 1).padStart(2, '0') %></span>
+          <div><h3 class="qc__step-title"><%- tx(k, t) %></h3><p><%- tx(kd, d) %></p></div>
+        </li>
+        <% }) %>
+      </ol>
+      <div class="btn-row">
+        <a class="btn btn--sun" href="/chung-nhan">Xem giấy chứng nhận</a>
+        <a class="btn btn--ghost" href="/ve-chung-toi">Về nhà máy Noben</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -6,7 +6,12 @@
       <h1 class="page-head__title"><%- tx('about-title', 'Hơn 15 năm làm thuốc cho ao tôm, cá Việt Nam') %></h1>
       <p class="page-head__lead"><%- ef('company.overview.0', company.overview[0]) %></p>
     </div>
-    <figure class="page-head__photo"><%- img({ src: '/images/brand/banner-1.webp', w: 1200, h: 745 }, { alt: 'Toàn cảnh nhà máy Noben', loading: 'eager' }) %></figure>
+    <figure class="page-head__photo page-head__photo--video">
+      <video autoplay muted loop playsinline preload="auto" poster="/media/noben-hero-poster.webp" data-hero-video aria-hidden="true">
+        <source src="/media/noben-hero.webm" type="video/webm">
+        <source src="/media/noben-hero.mp4" type="video/mp4">
+      </video>
+    </figure>
   </div>
 </section>
 
@@ -40,31 +45,7 @@
   </div>
 </section>
 
-<% if (gallery.factory.length) { %>
-<section class="section" aria-labelledby="fac-title">
-  <div class="wrap">
-    <h2 id="fac-title" class="h2"><%- tx('about-gallery', 'Văn phòng và hoạt động') %></h2>
-    <div class="photo-grid" data-gallery>
-      <% gallery.factory.forEach((g, i) => { %>
-      <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="Văn phòng và hoạt động của Noben"><%- img(g, { alt: 'Văn phòng và hoạt động của Noben, ảnh ' + (i + 1) }) %></a>
-      <% }) %>
-    </div>
-  </div>
-</section>
-<% } %>
-
-<% if (gallery.team.length) { %>
-<section class="section section--top-tight" aria-labelledby="team-title">
-  <div class="wrap">
-    <h2 id="team-title" class="h2"><%- tx('about-team', 'Đội ngũ Noben') %></h2>
-    <div class="photo-grid photo-grid--dense" data-gallery>
-      <% gallery.team.slice(0, 12).forEach((g, i) => { %>
-      <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="Hoạt động của đội ngũ Noben"><%- img(g, { alt: 'Đội ngũ Noben, ảnh ' + (i + 1) }) %></a>
-      <% }) %>
-    </div>
-  </div>
-</section>
-<% } %>
+<%- include('../partials/quality') %>
 
 <% if (company.youtube && company.youtube.length) { %>
 <section class="section section--tint" aria-labelledby="vid-title">

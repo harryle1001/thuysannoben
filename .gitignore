@@ -7,3 +7,5 @@ preview/
 data/overrides.json
 data/*.tmp
 public/images/kien-thuc/.fonts/
+motion/node_modules/
+motion/out/

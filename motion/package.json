@@ -1,0 +1,16 @@
+{
+  "name": "noben-motion",
+  "private": true,
+  "description": "Motion graphics for the Noben website (Remotion). Not part of the site build.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:hero": "remotion render src/index.ts HeroLoop out/hero.mp4 --codec h264 --crf 17",
+    "render:film": "remotion render src/index.ts BrandFilm out/film.mp4 --codec h264 --crf 17"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.542",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.542"
+  }
+}
