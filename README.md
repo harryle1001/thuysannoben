@@ -217,6 +217,25 @@ Nút tròn màu vàng ở góc phải mỗi trang mở khung **Trợ lý Noben**
 
 Nút **Zalo** mở chat với số `zalo` trong `content/company.json`; nút **Messenger** mở đường dẫn `messenger` trong cùng file (dạng `https://m.me/<tên-trang-hoặc-tài-khoản>`).
 
+## Hệ thống đại lý
+
+Trang `/dai-ly` cho khách tìm đại lý theo tên, huyện, xã hoặc theo tỉnh, thành (34 tỉnh, thành mới). Mỗi tỉnh có trang riêng `/dai-ly/tinh/<tinh>` và mỗi đại lý có trang hồ sơ `/dai-ly/<ten-dai-ly>` (địa chỉ, điện thoại, người phụ trách, bản đồ, nút chỉ đường, các đại lý cùng tỉnh). Các trang này tự vào sitemap. Đường dẫn đại lý của web cũ (`/partnersearch`, `/partner/...`) chuyển 301 về `/dai-ly`.
+
+Nhập danh sách đại lý từ Excel hoặc Google Sheets: lưu thành file **CSV UTF-8** với các cột `ten, tinh, huyen, dia_chi, dien_thoai, nguoi_phu_trach, ghi_chu` (tên cột tiếng Việt có dấu cũng được), rồi chạy:
+
+```bash
+node scripts/import-dai-ly.js danh-sach-dai-ly.csv
+```
+
+Lệnh ghi đè `content/dai-ly.json`. Đẩy lên GitHub là web tự cập nhật. Khi chưa có đại lý nào, trang hiển thị lời mời gọi hotline để được giới thiệu đại lý gần nhất.
+
+## Báo giá nhiều sản phẩm, nhận tin, tuyển dụng
+
+- Trang sản phẩm có nút **Thêm vào danh sách báo giá**. Khách chọn nhiều sản phẩm, chỉnh số lượng ở `/bao-gia` và gửi một lần. Yêu cầu vào danh sách khách liên hệ với nhu cầu "Yêu cầu báo giá".
+- Chân trang có form **đăng ký nhận tin qua Zalo** (họ tên, số Zalo).
+- Trang `/tuyen-dung` có form ứng tuyển; nội dung "Vị trí đang tuyển" sửa được bằng cây bút.
+- Mọi form chống spam bằng ô ẩn, giới hạn 5 lần mỗi 10 phút cho mỗi máy và bẫy thời gian (gửi trong vòng 2,5 giây sau khi mở trang bị bỏ qua).
+
 ## Sửa nội dung ngay trên trang (cây bút)
 
 1. Đặt biến môi trường `ADMIN_PASS` (và `ADMIN_USER` nếu muốn, mặc định là `admin`).

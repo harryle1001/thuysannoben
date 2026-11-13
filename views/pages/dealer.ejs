@@ -1,0 +1,54 @@
+<%- include('../partials/header') %>
+<%
+  const mapQ = encodeURIComponent([d.name, full].filter(Boolean).join(', '));
+%>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Đại lý', '/dai-ly'], ...(d.province ? [[d.province, '/dai-ly/tinh/' + d.provinceSlug]] : []), [d.name]] }) %>
+    <p class="cat-tag">Đại lý phân phối sản phẩm Noben</p>
+    <h1 class="khead__title"><%= d.name %></h1>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap dprofile">
+    <div class="dprofile__info">
+      <dl class="contact__list">
+        <div><dt>Địa chỉ</dt><dd><%= full || 'Đang cập nhật' %></dd></div>
+        <% if (d.phone) { %><div><dt>Điện thoại</dt><dd><a href="<%= tel(d.phone) %>"><%= d.phone %></a></dd></div><% } %>
+        <% if (d.contact) { %><div><dt>Người phụ trách</dt><dd><%= d.contact %></dd></div><% } %>
+        <% if (d.note) { %><div><dt>Ghi chú</dt><dd><%= d.note %></dd></div><% } %>
+      </dl>
+      <div class="btn-row">
+        <% if (d.phone) { %><a class="btn btn--sun" href="<%= tel(d.phone) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Gọi đại lý</a><% } %>
+        <a class="btn btn--blue" href="https://www.google.com/maps/dir/?api=1&destination=<%= mapQ %>" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Chỉ đường</a>
+      </div>
+      <p class="dprofile__note">Cần tư vấn kỹ thuật hoặc chưa liên hệ được đại lý? Gọi Noben <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a> hoặc <a href="<%= zaloUrl %>" target="_blank" rel="noopener">nhắn Zalo</a>.</p>
+    </div>
+    <% if (full) { %>
+    <div class="map dprofile__map">
+      <iframe title="Bản đồ đường đến <%= d.name %>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=<%= mapQ %>&output=embed"></iframe>
+    </div>
+    <% } %>
+  </div>
+</section>
+<% if (related.length) { %>
+<section class="section section--tint" aria-labelledby="rel-d">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="rel-d" class="h2">Đại lý khác tại <%= d.province %></h2>
+      <a class="text-link" href="/dai-ly/tinh/<%= d.provinceSlug %>">Xem tất cả</a>
+    </header>
+    <ul class="dgrid">
+      <% related.forEach((x) => { %>
+      <li class="dcard">
+        <a class="dcard__name" href="<%= x.url %>"><%= x.name %></a>
+        <p class="dcard__addr"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><%= [x.address, x.district].filter(Boolean).join(', ') || x.province %></p>
+        <% if (x.phone) { %><div class="dcard__actions"><a class="btn btn--line btn--sm" href="<%= tel(x.phone) %>"><%= x.phone %></a></div><% } %>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
+<% } %>
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

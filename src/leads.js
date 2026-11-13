@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const file = path.join(__dirname, '..', 'data', 'leads.jsonl');
-const NEEDS = ['Mua sản phẩm', 'Làm đại lý', 'Gia công sản phẩm', 'Tư vấn kỹ thuật', 'Khác'];
+const NEEDS = ['Mua sản phẩm', 'Yêu cầu báo giá', 'Làm đại lý', 'Gia công sản phẩm', 'Tư vấn kỹ thuật', 'Đăng ký nhận tin', 'Ứng tuyển', 'Khác'];
 
 let transporter = null;
 if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
@@ -26,7 +26,7 @@ function validate(body) {
     phone: clean(body.phone, 20),
     province: clean(body.province, 60),
     need: clean(body.need, 40),
-    product: clean(body.product, 80),
+    product: clean(body.product, 1200),
     message: String(body.message || '').trim().slice(0, 2000),
   };
   const errors = {};
@@ -57,7 +57,7 @@ async function save(lead, meta) {
       `Điện thoại: ${lead.phone}`,
       `Tỉnh/thành: ${lead.province || '-'}`,
       `Nhu cầu: ${lead.need}`,
-      `Sản phẩm quan tâm: ${lead.product || '-'}`,
+      `Sản phẩm quan tâm: ${(lead.product || '-').split(' | ').join('\n  - ')}`,
       '',
       lead.message || '(không có lời nhắn)',
       '',

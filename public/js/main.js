@@ -113,6 +113,10 @@
 
   /* ---------- Lead forms: inline validation + fetch submit ---------- */
   $$('[data-lead-form]').forEach(function (f) {
+    // Time-trap stamp (see POST /lien-he); set as the default value so form.reset() keeps it.
+    var stamp = document.createElement('input');
+    stamp.type = 'hidden'; stamp.name = 't'; stamp.setAttribute('value', String(Date.now()));
+    f.appendChild(stamp);
     var status = $('[data-form-status]', f);
     var btn = $('button[type="submit"]', f);
     var setError = function (name, msg) {
@@ -152,7 +156,8 @@
           if (res.ok) {
             f.reset();
             status.className = 'form__status is-ok';
-            status.textContent = 'Đã gửi. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.';
+            status.textContent = f.getAttribute('data-success') || 'Đã gửi. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.';
+            f.dispatchEvent(new CustomEvent('lead:sent'));
           } else if (res.body.errors) {
             Object.keys(res.body.errors).forEach(function (k) { setError(k, res.body.errors[k]); });
           } else {

@@ -55,6 +55,7 @@
         <a class="btn btn--line" href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>Nhắn Zalo</a>
         <a class="btn btn--line" href="/lien-he?san-pham=<%= p.slug %>"><svg class="ico"><use href="#i-mail"/></svg>Gửi yêu cầu</a>
       </div>
+      <button class="btn btn--ghost btn--block buy-box__quote" type="button" data-quote-add data-slug="<%= p.slug %>" data-name="<%= p.name %>" data-url="<%= p.url %>" data-img="<%= p.shot ? p.shot.src : '' %>" aria-pressed="false"><svg class="ico" aria-hidden="true"><use href="#i-file"/></svg><span data-quote-label>Thêm vào danh sách báo giá</span></button>
       <p class="buy-box__note">Sản xuất bởi <%= company.legal %>, nhà máy đạt ISO 9001:2015.</p>
     </div>
 
@@ -77,6 +78,24 @@
         <ul class="dia-list"><% p.composition.forEach((u, i) => { %><li><%- ef(`products.${p.slug}.composition.${i}`, u) %></li><% }) %></ul>
       </section>
       <% } %>
+      <section class="spec__block">
+        <h2 class="spec__title">Thông số sản phẩm</h2>
+        <table class="spec-table">
+          <tr><th scope="row">Tên sản phẩm</th><td><%= p.name %></td></tr>
+          <tr><th scope="row">Nhóm sản phẩm</th><td><a href="/san-pham/nhom/<%= p.category %>"><%= p.categoryInfo.name %></a></td></tr>
+          <tr><th scope="row">Công dụng chính</th><td><%= p.tagline %></td></tr>
+          <% if (p.packaging) { %><tr><th scope="row">Quy cách</th><td><%= p.packaging %></td></tr><% } %>
+          <tr><th scope="row">Đối tượng sử dụng</th><td>Tôm thẻ chân trắng, tôm sú<%= p.category === 'sinh-hoc' ? ', ao nuôi thủy sản' : '' %></td></tr>
+          <tr><th scope="row">Nhà sản xuất</th><td><%= company.legal %>, nhà máy đạt ISO 9001:2015</td></tr>
+          <tr><th scope="row">Số đăng ký, hạn dùng</th><td>Ghi trên nhãn sản phẩm (<a href="<%= p.image.src %>" data-lb="<%= p.image.src %>">xem nhãn gốc</a>)</td></tr>
+        </table>
+      </section>
+      <p class="share share--product">
+        <span>Chia sẻ:</span>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<%= encodeURIComponent(canonical) %>" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://zalo.me/share?url=<%= encodeURIComponent(canonical) %>" target="_blank" rel="noopener">Zalo</a>
+        <button type="button" class="share__copy" data-copy-link="<%= canonical %>">Sao chép liên kết</button>
+      </p>
       <p class="spec__note">Liều dùng có thể thay đổi theo tình trạng ao và sức khỏe tôm. Đọc kỹ hướng dẫn trên nhãn, hoặc gọi kỹ thuật viên trước khi dùng.</p>
     </div>
   </div>

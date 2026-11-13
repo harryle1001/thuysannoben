@@ -1,0 +1,88 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: province ? [['Đại lý', '/dai-ly'], [province.name]] : [['Đại lý']] }) %>
+    <h1 class="khead__title"><%= province ? 'Đại lý Noben tại ' + province.name : 'Hệ thống đại lý Noben toàn quốc' %></h1>
+    <p class="khead__lead"><%- province ? `${province.count} đại lý phân phối thuốc thủy sản Noben tại ${province.name}. Mua đúng hàng chính hãng, giá nhà máy và được kỹ thuật viên Noben hỗ trợ tận ao.` : tx('dealers-lead', 'Tìm đại lý gần ao nuôi để mua sản phẩm Noben chính hãng. Chọn tỉnh, thành hoặc gõ tên đại lý, huyện, xã.') %></p>
+
+    <form class="dsearch" action="/dai-ly" method="get" role="search">
+      <div class="field dsearch__field">
+        <label for="d-q">Tên đại lý, huyện, xã</label>
+        <input id="d-q" name="q" value="<%= q %>" placeholder="Ví dụ: Năm Căn, Bạc Liêu…">
+      </div>
+      <div class="field dsearch__field">
+        <label for="d-tinh">Tỉnh, thành phố</label>
+        <select id="d-tinh" name="tinh">
+          <option value="">Tất cả tỉnh, thành</option>
+          <% provinces.forEach((p) => { %><option value="<%= p.slug %>"<%= province && province.slug === p.slug ? ' selected' : '' %>><%= p.name %> (<%= p.count %>)</option><% }) %>
+        </select>
+      </div>
+      <button class="btn btn--blue dsearch__btn" type="submit"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Tìm đại lý</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap">
+    <% if (!totalDealers) { %>
+    <div class="dempty">
+      <h2 class="h3">Danh sách đại lý đang được cập nhật</h2>
+      <p>Gọi hoặc nhắn Zalo cho Noben, kỹ thuật viên sẽ giới thiệu đại lý gần ao nuôi của bạn nhất hoặc giao hàng tận nơi.</p>
+      <div class="btn-row">
+        <a class="btn btn--sun" href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
+        <a class="btn btn--line" href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Nhắn Zalo</a>
+      </div>
+    </div>
+    <% } else { %>
+    <% if (!province && provinces.length) { %>
+    <nav class="dprov" aria-label="Đại lý theo tỉnh, thành">
+      <% provinces.forEach((p) => { %><a class="chip chip--light chip--sm" href="/dai-ly/tinh/<%= p.slug %>"><%= p.name %> <span>(<%= p.count %>)</span></a><% }) %>
+    </nav>
+    <% } %>
+    <p class="dcount"><%= total %> đại lý<%= where %><%= q ? ` khớp với “${q}”` : '' %></p>
+    <% if (list.length) { %>
+    <ul class="dgrid">
+      <% list.forEach((d) => { %>
+      <li class="dcard">
+        <a class="dcard__name" href="<%= d.url %>"><%= d.name %></a>
+        <p class="dcard__addr"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><%= [d.address, d.district, d.province].filter(Boolean).join(', ') || 'Đang cập nhật địa chỉ' %></p>
+        <% if (d.contact) { %><p class="dcard__meta">Phụ trách: <%= d.contact %></p><% } %>
+        <div class="dcard__actions">
+          <% if (d.phone) { %><a class="btn btn--line btn--sm" href="<%= tel(d.phone) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><%= d.phone %></a><% } %>
+          <a class="text-link" href="<%= d.url %>">Xem chi tiết</a>
+        </div>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p class="dempty">Chưa tìm thấy đại lý phù hợp. Thử từ khóa khác hoặc gọi <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a> để được giới thiệu đại lý gần nhất.</p>
+    <% } %>
+    <% if (pages > 1) { %>
+    <nav class="pager" aria-label="Phân trang">
+      <% for (let i = 1; i <= pages; i++) { const qs = new URLSearchParams(Object.assign({}, q ? { q } : {}, i > 1 ? { trang: i } : {})).toString(); %>
+      <a class="pager__link"<%= i === page ? ' aria-current=page' : '' %> href="<%= base %><%= qs ? '?' + qs : '' %>"><%= i %></a>
+      <% } %>
+    </nav>
+    <% } %>
+    <% } %>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="dk-title">
+  <div class="wrap dregister">
+    <div>
+      <h2 id="dk-title" class="h2"><%- tx('dealers-join', 'Trở thành đại lý của Noben') %></h2>
+      <p class="lead"><%- tx('dealers-join-lead', 'Noben tìm đối tác phân phối tại các vùng nuôi tôm, cá trên cả nước: giá nhà máy, chính sách chiết khấu rõ ràng, hỗ trợ kỹ thuật và tài liệu bán hàng.') %></p>
+      <ul class="ticks">
+        <li><svg class="ico"><use href="#i-check"/></svg><span>Sản phẩm sản xuất tại nhà máy đạt ISO 9001:2015</span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span>Kỹ thuật viên đồng hành tư vấn cho khách của đại lý</span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span>Giao hàng toàn quốc, hỗ trợ đổi trả theo chính sách</span></li>
+      </ul>
+    </div>
+    <div class="btn-col">
+      <a class="btn btn--blue btn--block" href="/lien-he?nhu-cau=L%C3%A0m%20%C4%91%E1%BA%A1i%20l%C3%BD">Đăng ký làm đại lý</a>
+      <a class="btn btn--sun btn--block" href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
+    </div>
+  </div>
+</section>
+<%- include('../partials/footer') %>

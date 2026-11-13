@@ -6,6 +6,7 @@ const auth = require('./auth');
 const seo = require('./seo');
 const policies = require('./policies');
 const chat = require('./chat');
+const dealers = require('./dealers');
 
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\/$/, '');
@@ -327,6 +328,15 @@ router.get('/chung-nhan', (req, res) =>
     jsonld: [crumbs([['Trang chủ', '/'], ['Chứng nhận', '/chung-nhan']])],
   })
 );
+router.get('/bao-gia', (req, res) =>
+  res.render('pages/quote', { meta: { title: 'Yêu cầu báo giá – Thủy sản Noben', description: 'Gửi yêu cầu báo giá nhiều sản phẩm Noben cùng lúc, nhận giá nhà máy và chính sách đại lý.', noindex: true } })
+);
+router.get('/tuyen-dung', (req, res) =>
+  res.render('pages/careers', {
+    meta: { title: 'Tuyển dụng – Cơ hội nghề nghiệp tại Thủy sản Noben', description: 'Noben tuyển kỹ thuật viên thủy sản, nhân viên kinh doanh phát triển đại lý và nhân sự sản xuất tại nhà máy Củ Chi, TP.HCM. Gửi hồ sơ ứng tuyển trực tuyến.' },
+    jsonld: [crumbs([['Trang chủ', '/'], ['Tuyển dụng', '/tuyen-dung']])],
+  })
+);
 router.get('/gia-cong', (req, res) =>
   res.render('pages/oem', {
     meta: { title: 'Gia công thuốc thủy sản, chế phẩm sinh học – Noben', description: 'Noben nhận gia công thành phẩm, bán thành phẩm thuốc thủy sản, tư vấn thành lập công ty và đăng ký lưu hành sản phẩm.' },
@@ -370,6 +380,9 @@ router.post('/lien-he', async (req, res, next) => {
   try {
     const wantsJson = (req.get('accept') || '').includes('application/json');
     if (req.body.website) return wantsJson ? res.json({ ok: true }) : res.redirect(303, '/lien-he?da_gui=1'); // honeypot
+    // Time trap: the page script stamps the form when it loads; bots post within a second or two.
+    const t = Number(req.body.t);
+    if (t && Date.now() - t < 2500) return wantsJson ? res.json({ ok: true }) : res.redirect(303, '/lien-he?da_gui=1');
     if (leads.throttled(req.ip)) {
       const msg = 'Bạn đã gửi nhiều lần liên tiếp. Vui lòng gọi hotline hoặc thử lại sau 10 phút.';
       return wantsJson ? res.status(429).json({ ok: false, message: msg }) : res.status(429).send(msg);
@@ -391,6 +404,64 @@ router.post('/lien-he', async (req, res, next) => {
   } catch (err) {
     next(err);
   }
+});
+
+
+// ---------- Đại lý ----------
+const PER_PAGE = 24;
+function renderDealers(req, res, province) {
+  const q = String(req.query.q || '').trim().slice(0, 80);
+  const page = Math.max(1, parseInt(req.query.trang, 10) || 1);
+  const all = dealers.search({ q, province: province ? province.slug : '' });
+  const pages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+  const list = all.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+  const where = province ? ` tại ${province.name}` : '';
+  const base = province ? `/dai-ly/tinh/${province.slug}` : '/dai-ly';
+  res.render('pages/dealers', {
+    meta: {
+      title: province ? `Đại lý thuốc thủy sản Noben tại ${province.name}` : 'Hệ thống đại lý thuốc thủy sản Noben toàn quốc',
+      description: province
+        ? `Danh sách ${province.count} đại lý phân phối thuốc thủy sản Noben tại ${province.name}: địa chỉ, số điện thoại, chỉ đường. Mua chính hãng, giá nhà máy, có kỹ thuật viên hỗ trợ.`
+        : 'Tìm đại lý thuốc thủy sản Noben gần ao nuôi của bạn theo tỉnh, thành: địa chỉ, điện thoại, chỉ đường. Đăng ký làm đại lý phân phối sản phẩm Noben.',
+      noindex: Boolean(q) || page > 1,
+    },
+    province, q, page, pages, base, list, total: all.length, where,
+    provinces: dealers.provinces(), totalDealers: dealers.dealers.length,
+    jsonld: [crumbs([['Trang chủ', '/'], ['Đại lý', '/dai-ly'], ...(province ? [[province.name, base]] : [])])],
+  });
+}
+router.get('/dai-ly', (req, res) => {
+  if (req.query.tinh && dealers.provinceBySlug(req.query.tinh)) {
+    const qs = req.query.q ? `?q=${encodeURIComponent(req.query.q)}` : '';
+    return res.redirect(302, `/dai-ly/tinh/${req.query.tinh}${qs}`);
+  }
+  renderDealers(req, res, null);
+});
+router.get('/dai-ly/tinh/:slug', (req, res, next) => {
+  const p = dealers.provinceBySlug(req.params.slug);
+  return p ? renderDealers(req, res, p) : next();
+});
+router.get('/dai-ly/:slug', (req, res, next) => {
+  const d = dealers.bySlug[req.params.slug];
+  if (!d) return next();
+  const full = [d.address, d.district, d.province].filter(Boolean).join(', ');
+  res.render('pages/dealer', {
+    meta: {
+      title: `${d.name}${d.province ? ' – đại lý Noben tại ' + d.province : ' – đại lý Noben'}`,
+      description: `${d.name}, đại lý thuốc thủy sản Noben${d.province ? ' tại ' + d.province : ''}${full ? ': ' + full : ''}${d.phone ? '. Điện thoại ' + d.phone : ''}. Mua sản phẩm Noben chính hãng, được kỹ thuật viên hỗ trợ.`,
+    },
+    d, full, related: dealers.related(d, 6),
+    jsonld: [
+      {
+        '@context': 'https://schema.org', '@type': 'Store', name: d.name, url: SITE_URL + d.url,
+        ...(d.phone ? { telephone: d.phone } : {}),
+        address: { '@type': 'PostalAddress', streetAddress: d.address || undefined, addressLocality: d.district || undefined, addressRegion: d.province || undefined, addressCountry: 'VN' },
+        brand: { '@type': 'Brand', name: 'Noben' },
+        parentOrganization: { '@id': seo.SITE_URL + '/#organization' },
+      },
+      crumbs([['Trang chủ', '/'], ['Đại lý', '/dai-ly'], ...(d.province ? [[d.province, `/dai-ly/tinh/${d.provinceSlug}`]] : []), [d.name, d.url]]),
+    ],
+  });
 });
 
 // Read-only list of form submissions for the signed-in admin (basic auth also accepted).
@@ -418,8 +489,11 @@ router.get('/sitemap.xml', (req, res) => {
     ...c.categories.map((x) => ({ loc: `/san-pham/nhom/${x.slug}`, priority: '0.8', changefreq: 'weekly' })),
     ...c.products.map((p) => ({ loc: p.url, priority: '0.8', changefreq: 'monthly', images: p.images.map((i) => i.src), imageTitle: p.name })),
     ...c.posts.map((p) => ({ loc: p.url, priority: p.category === 'ky-thuat' ? '0.8' : '0.5', changefreq: 'monthly', lastmod: p.updated || p.date, images: [p.ogImage || (p.cover && p.cover.src)].filter(Boolean), imageTitle: p.title })),
-    ...['/ve-chung-toi', '/chung-nhan', '/gia-cong', '/lien-he', '/tin-tuc'].map((loc) => ({ loc, priority: '0.6', changefreq: 'monthly' })),
+    ...['/ve-chung-toi', '/chung-nhan', '/gia-cong', '/lien-he', '/tin-tuc', '/tuyen-dung'].map((loc) => ({ loc, priority: '0.6', changefreq: 'monthly' })),
     ...Object.keys(c.pages).map((s) => ({ loc: `/chinh-sach/${s}`, priority: '0.3', changefreq: 'yearly' })),
+    { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
+    ...dealers.provinces().map((p) => ({ loc: `/dai-ly/tinh/${p.slug}`, priority: '0.6', changefreq: 'weekly' })),
+    ...dealers.dealers.map((d) => ({ loc: d.url, priority: '0.4', changefreq: 'monthly' })),
   ];
   const body = entries
     .map((e) => {
@@ -458,10 +532,13 @@ const REDIRECTS = {
   '/chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung': '/chung-nhan',
   '/chuyen-tu-van-gia-cong-hang-thanh-pham-ban-thanh-pham-huong-dan-thu-tuc-cap-ma-so-hchq-san-pham': '/gia-cong',
   '/ho-tro-tu-van': '/lien-he',
-  '/tuyen-dung': '/lien-he',
   '/khach-hang-than-thiet': '/lien-he',
   '/he-thong-thong-minh': '/',
-  '/partnersearch': '/lien-he',
+  '/partnersearch': '/dai-ly',
+  '/partner': '/dai-ly',
+  '/partners': '/dai-ly',
+  '/he-thong-dai-ly': '/dai-ly',
+  '/dai-ly-noben': '/dai-ly',
 };
 router.get('/van-de/:sym', (req, res) => {
   const s = c.symptomBySlug[req.params.sym];
@@ -477,6 +554,7 @@ router.get('/product-categories/:old', (req, res) => {
   const cat = c.categoryByOldSlug[req.params.old];
   res.redirect(301, cat ? `/san-pham/nhom/${cat.slug}` : '/san-pham');
 });
+router.get(['/partner/:any', '/partners/:any', '/partnersearch/:any', '/dai-ly-noben/:any'], (req, res) => res.redirect(301, '/dai-ly'));
 router.get(['/product-tags/:tag', '/tag/:tag'], (req, res) => res.redirect(301, '/san-pham'));
 router.get('/:slug', (req, res, next) => {
   const s = req.params.slug;

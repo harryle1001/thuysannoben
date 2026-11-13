@@ -1,5 +1,20 @@
 </main>
 <footer class="site-footer">
+  <div class="wrap newsletter">
+    <div>
+      <h2 class="newsletter__title"><%- tx('nl-title', 'Nhận cảnh báo dịch bệnh và kỹ thuật nuôi qua Zalo') %></h2>
+      <p><%- tx('nl-lead', 'Mỗi tháng vài tin ngắn: cảnh báo thời tiết, dịch bệnh theo mùa, mẹo xử lý ao và chương trình ưu đãi cho bà con, đại lý.') %></p>
+    </div>
+    <form class="newsletter__form" action="/lien-he" method="post" data-lead-form data-success="Đã đăng ký. Cảm ơn bạn, Noben sẽ gửi tin qua Zalo." novalidate>
+      <div class="field"><label for="nl-name">Họ tên</label><input id="nl-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+      <div class="field"><label for="nl-phone">Số Zalo</label><input id="nl-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="field__error" data-error-for="phone"></p></div>
+      <input type="hidden" name="need" value="Đăng ký nhận tin">
+      <input type="hidden" name="page" value="footer">
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn--sun" type="submit">Đăng ký nhận tin</button>
+      <p class="form__status" role="status" data-form-status></p>
+    </form>
+  </div>
   <div class="wrap site-footer__grid">
     <div class="site-footer__brand">
       <a class="brand brand--light" href="/">
@@ -29,6 +44,8 @@
       <ul class="link-list">
         <li><a href="/ve-chung-toi">Về Noben</a></li>
         <li><a href="/chung-nhan">Chứng nhận</a></li>
+        <li><a href="/dai-ly">Hệ thống đại lý</a></li>
+        <li><a href="/tuyen-dung">Tuyển dụng</a></li>
         <li><a href="/gia-cong">Gia công</a></li>
         <li><a href="/ky-thuat-nuoi">Kiến thức nuôi tôm</a></li>
         <li><a href="/giai-phap">Giải pháp ao nuôi</a></li>
@@ -70,6 +87,8 @@
   <a href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
   <a href="/lien-he"><svg class="ico"><use href="#i-mail"/></svg>Để lại lời nhắn</a>
 </nav>
+
+<a class="quote-badge" href="/bao-gia" data-quote-badge hidden><svg class="ico" aria-hidden="true"><use href="#i-file"/></svg>Báo giá <span class="quote-badge__n" data-quote-count>0</span></a>
 
 <div class="float-chat" role="group" aria-label="Nhắn tin với Noben">
   <button class="float-chat__btn float-chat__btn--bot" type="button" data-chat-open aria-controls="chatbot" aria-expanded="false" aria-label="Hỏi Trợ lý Noben">

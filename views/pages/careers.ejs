@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Tuyển dụng']] }) %>
+    <h1 class="khead__title"><%- tx('careers-title', 'Cơ hội nghề nghiệp tại Noben') %></h1>
+    <p class="khead__lead"><%- tx('careers-lead', 'Noben luôn chào đón những người yêu nghề thủy sản: kỹ thuật viên đồng hành cùng bà con tại ao, nhân viên kinh doanh phát triển đại lý và nhân sự sản xuất tại nhà máy Củ Chi.') %></p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap contact">
+    <div>
+      <h2 class="h3"><%- tx('careers-why', 'Làm việc tại Noben') %></h2>
+      <ul class="ticks">
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('careers-1', 'Hơn 22 năm trong ngành thuốc thủy sản, nhà máy đạt chuẩn ISO 9001:2015') %></span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('careers-2', 'Được đào tạo kỹ thuật nuôi, sản phẩm và kỹ năng tư vấn thực tế tại ao') %></span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('careers-3', 'Môi trường gắn bó, làm việc cùng bà con và đại lý trên khắp các vùng nuôi') %></span></li>
+      </ul>
+      <h2 class="h3 mt-6"><%- tx('careers-open', 'Vị trí đang tuyển') %></h2>
+      <p><%- tx('careers-positions', 'Thông tin các vị trí đang tuyển được cập nhật tại đây và trên trang Facebook của Noben. Bạn có thể gửi hồ sơ trước, chúng tôi sẽ liên hệ khi có vị trí phù hợp.') %></p>
+      <p>Gửi CV về email <a href="mailto:<%= company.email %>"><%= company.email %></a> với tiêu đề “Ứng tuyển – Vị trí – Họ tên”, hoặc để lại thông tin ở form bên cạnh.</p>
+    </div>
+    <form class="form form--card" action="/lien-he" method="post" data-lead-form data-success="Đã nhận thông tin ứng tuyển. Bộ phận nhân sự Noben sẽ liên hệ với bạn." novalidate>
+      <h2 class="form__title">Để lại thông tin ứng tuyển</h2>
+      <div class="field"><label for="cv-name">Họ tên</label><input id="cv-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+      <div class="field"><label for="cv-phone">Số điện thoại</label><input id="cv-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="field__error" data-error-for="phone"></p></div>
+      <div class="field"><label for="cv-pos">Vị trí quan tâm</label><input id="cv-pos" name="product" placeholder="Ví dụ: Kỹ thuật viên thủy sản"></div>
+      <div class="field"><label for="cv-prov">Nơi ở hiện tại <span class="opt">(không bắt buộc)</span></label><input id="cv-prov" name="province"></div>
+      <div class="field"><label for="cv-msg">Giới thiệu ngắn <span class="opt">(không bắt buộc)</span></label><textarea id="cv-msg" name="message" rows="4" placeholder="Kinh nghiệm, chuyên ngành, khu vực mong muốn làm việc…"></textarea></div>
+      <input type="hidden" name="need" value="Ứng tuyển">
+      <input type="hidden" name="page" value="/tuyen-dung">
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn--blue" type="submit">Gửi thông tin</button>
+      <p class="form__status" role="status" data-form-status></p>
+    </form>
+  </div>
+</section>
+<%- include('../partials/footer') %>

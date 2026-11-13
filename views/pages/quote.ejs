@@ -1,0 +1,34 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Danh sách báo giá']] }) %>
+    <h1 class="khead__title">Yêu cầu báo giá</h1>
+    <p class="khead__lead">Chọn số lượng cho từng sản phẩm rồi gửi một lần. Noben báo giá nhà máy và chính sách đại lý trong ngày làm việc qua điện thoại hoặc Zalo.</p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap quote">
+    <div>
+      <ul class="qlist" data-quote-list aria-live="polite"></ul>
+      <div class="dempty" data-quote-empty>
+        <h2 class="h3">Danh sách báo giá đang trống</h2>
+        <p>Vào trang sản phẩm và bấm <strong>“Thêm vào danh sách báo giá”</strong> để chọn nhiều sản phẩm, rồi quay lại đây gửi yêu cầu.</p>
+        <div class="btn-row"><a class="btn btn--blue" href="/san-pham">Xem sản phẩm</a><a class="btn btn--line" href="<%= tel(company.hotline) %>">Gọi <%= company.hotline %></a></div>
+      </div>
+    </div>
+    <form class="form form--card" action="/lien-he" method="post" data-lead-form data-quote-form data-success="Đã gửi yêu cầu báo giá. Noben sẽ gọi lại cho bạn trong giờ làm việc." novalidate hidden>
+      <h2 class="form__title">Thông tin nhận báo giá</h2>
+      <div class="field"><label for="q-name">Họ tên</label><input id="q-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+      <div class="field"><label for="q-phone">Số điện thoại / Zalo</label><input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="field__error" data-error-for="phone"></p></div>
+      <div class="field"><label for="q-prov">Tỉnh, thành phố <span class="opt">(không bắt buộc)</span></label><input id="q-prov" name="province" autocomplete="address-level1"></div>
+      <div class="field"><label for="q-msg">Ghi chú <span class="opt">(không bắt buộc)</span></label><textarea id="q-msg" name="message" rows="3" placeholder="Ví dụ: mua lẻ cho ao 5.000 m², hoặc đăng ký giá đại lý"></textarea></div>
+      <input type="hidden" name="need" value="Yêu cầu báo giá">
+      <input type="hidden" name="product" value="">
+      <input type="hidden" name="page" value="/bao-gia">
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn--sun btn--block" type="submit">Gửi yêu cầu báo giá</button>
+      <p class="form__status" role="status" data-form-status></p>
+    </form>
+  </div>
+</section>
+<%- include('../partials/footer') %>
