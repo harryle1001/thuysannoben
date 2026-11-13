@@ -77,6 +77,17 @@
         <ul class="dia-list"><% p.composition.forEach((u, i) => { %><li><%- ef(`products.${p.slug}.composition.${i}`, u) %></li><% }) %></ul>
       </section>
       <% } %>
+      <% if (p.registration && p.registration.code) { %>
+      <section class="spec__block">
+        <h2 class="spec__title">Thông tin công bố</h2>
+        <ul class="dia-list">
+          <li>Mã số công bố/lưu hành (CSDL Cục Thủy sản): <strong><%= p.registration.code %></strong></li>
+          <% if (p.registration.tccs) { %><li>Tiêu chuẩn cơ sở: TCCS <%= p.registration.tccs %></li><% } %>
+          <% if (p.packaging) { %><li>Quy cách: <%= p.packaging %></li><% } %>
+          <% if (p.registration.shelfLife) { %><li>Hạn sử dụng: <%= p.registration.shelfLife %></li><% } %>
+        </ul>
+      </section>
+      <% } %>
       <p class="spec__note">Liều dùng có thể thay đổi theo tình trạng ao và sức khỏe tôm. Đọc kỹ hướng dẫn trên nhãn, hoặc gọi kỹ thuật viên trước khi dùng.</p>
     </div>
   </div>

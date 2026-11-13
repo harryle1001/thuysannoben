@@ -42,6 +42,7 @@ function systemPrompt() {
     if (p.dose && p.dose.length) lines.push('Cách dùng (theo nhãn): ' + p.dose.map(strip).join('; '));
     if (p.composition && p.composition.length) lines.push('Thành phần: ' + p.composition.map(strip).join('; '));
     if (p.packaging) lines.push('Quy cách: ' + strip(p.packaging));
+    if (p.registration && p.registration.code) lines.push('Mã số công bố/lưu hành: ' + p.registration.code + (p.registration.tccs ? ' (TCCS ' + p.registration.tccs + ')' : ''));
     return lines.join('\n');
   }).join('\n\n');
 
