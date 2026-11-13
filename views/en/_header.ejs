@@ -1,0 +1,53 @@
+<%- include('../partials/head') %>
+<%
+  const nav = [
+    ['/en/products', 'Products'],
+    ['/en/oem-manufacturing', 'OEM manufacturing'],
+    ['/en/about', 'About Noben'],
+    ['/en/contact', 'Contact'],
+  ];
+  const active = (href) => path === href || path.startsWith(href + '/');
+  const wa = 'https://wa.me/84' + company.zalo.replace(/^0/, '');
+%>
+<div class="topbar">
+  <div class="wrap topbar__row">
+    <p class="topbar__note"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>ISO 9001:2015 certified factory in Ho Chi Minh City, Vietnam. Manufacturing since <%= company.founded_year %>.</p>
+    <p class="topbar__links"><a href="mailto:<%= company.email %>"><%= company.email %></a></p>
+  </div>
+</div>
+<header class="site-header" data-header>
+  <div class="wrap site-header__bar">
+    <a class="brand" href="/en" aria-label="Noben Aquaculture, home">
+      <img src="/images/brand/logo-noben.svg" width="56" height="56" alt="">
+      <span class="brand__text"><strong>Noben</strong><small>Aquaculture</small></span>
+    </a>
+    <nav class="nav" id="menu" aria-label="Main menu">
+      <ul class="nav__list">
+        <% for (const [href, label] of nav) { %>
+        <li><a class="nav__link" href="<%= href %>"<% if (active(href)) { %> aria-current="page"<% } %>><%= label %></a></li>
+        <% } %>
+      </ul>
+      <div class="nav__mobile-extra">
+        <a class="btn btn--sun btn--block" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg> Call +84 <%= company.hotline.replace(/^0/, '') %></a>
+        <a class="btn btn--line btn--block" href="<%= wa %>" rel="noopener" target="_blank"><svg class="ico"><use href="#i-chat"/></svg> WhatsApp</a>
+      </div>
+    </nav>
+    <div class="site-header__actions">
+      <a class="lang-switch lang-switch--en" href="<%= alt.vi %>" hreflang="vi" lang="vi" title="Tiếng Việt"><span class="lang-switch__off">VI</span><span class="lang-switch__on">EN</span></a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="ico ico--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="ico ico--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn--sun site-header__call" href="/en/contact">
+        <svg class="ico"><use href="#i-mail"/></svg>
+        <span><small>Distributors &amp; OEM</small>Request a quote</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" data-menu-toggle>
+        <svg class="ico ico--open"><use href="#i-menu"/></svg>
+        <svg class="ico ico--close"><use href="#i-x"/></svg>
+        <span class="sr-only">Open menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="noi-dung">

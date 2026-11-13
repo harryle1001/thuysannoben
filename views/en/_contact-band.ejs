@@ -1,0 +1,11 @@
+<section class="section quick-contact" aria-labelledby="qc-title">
+  <div class="wrap quick-contact__grid">
+    <div class="quick-contact__intro">
+      <h2 id="qc-title" class="h2"><%= locals.title || 'Looking for a reliable aquaculture supplier?' %></h2>
+      <p class="lead">Distributors, importers and brand owners: tell us what you need and we will reply with prices, specifications and documents within one working day.</p>
+      <a class="phone-big" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>+84 <%= company.hotline.replace(/^0/, '') %></a>
+      <p class="quick-contact__alt">WhatsApp / Zalo on the same number, or email <a href="mailto:<%= company.email %>"><%= company.email %></a></p>
+    </div>
+    <%- include('_form', { fid: 'qc', product: locals.product, need: locals.need }) %>
+  </div>
+</section>

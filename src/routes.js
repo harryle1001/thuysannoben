@@ -7,6 +7,7 @@ const seo = require('./seo');
 const policies = require('./policies');
 const chat = require('./chat');
 const dealers = require('./dealers');
+const en = require('./en');
 
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\/$/, '');
@@ -34,6 +35,9 @@ router.use((req, res, next) => {
     return `<img src="${i.src}" width="${i.w}" height="${i.h}"${attrs}>`;
   };
   res.locals.jsonld = [];
+  const enPath = en.enFor(req.path);
+  res.locals.alt = enPath ? { vi: req.path.replace(/\/$/, '') || '/', en: enPath } : null;
+  res.locals.lang = 'vi';
 
   // On-page editing helpers. For visitors they print plain content; for a signed-in admin they
   // also mark each value with data-edit so the pencil editor can change it in place.
@@ -51,6 +55,8 @@ router.use((req, res, next) => {
   if (admin) res.set('Cache-Control', 'private, no-store');
   next();
 });
+
+router.use(require('./routes-en'));
 
 // ---------- Admin: sign in, sign out, save on-page edits ----------
 const loginAttempts = new Map();
@@ -379,10 +385,11 @@ router.post('/api/chat', (req, res, next) => {
 router.post('/lien-he', async (req, res, next) => {
   try {
     const wantsJson = (req.get('accept') || '').includes('application/json');
-    if (req.body.website) return wantsJson ? res.json({ ok: true }) : res.redirect(303, '/lien-he?da_gui=1'); // honeypot
+    const done = req.body.lang === 'en' ? '/en/contact?sent=1' : '/lien-he?da_gui=1';
+    if (req.body.website) return wantsJson ? res.json({ ok: true }) : res.redirect(303, done); // honeypot
     // Time trap: the page script stamps the form when it loads; bots post within a second or two.
     const t = Number(req.body.t);
-    if (t && Date.now() - t < 2500) return wantsJson ? res.json({ ok: true }) : res.redirect(303, '/lien-he?da_gui=1');
+    if (t && Date.now() - t < 2500) return wantsJson ? res.json({ ok: true }) : res.redirect(303, done);
     if (leads.throttled(req.ip)) {
       const msg = 'Bạn đã gửi nhiều lần liên tiếp. Vui lòng gọi hotline hoặc thử lại sau 10 phút.';
       return wantsJson ? res.status(429).json({ ok: false, message: msg }) : res.status(429).send(msg);
@@ -390,6 +397,7 @@ router.post('/lien-he', async (req, res, next) => {
     const { lead, errors } = leads.validate(req.body);
     if (Object.keys(errors).length) {
       if (wantsJson) return res.status(422).json({ ok: false, errors });
+      if (req.body.lang === 'en') return res.redirect(303, '/en/contact');
       return res.status(422).render('pages/contact', {
         meta: { title: 'Liên hệ – Thủy sản Noben', noindex: true },
         prefill: {},
@@ -400,7 +408,7 @@ router.post('/lien-he', async (req, res, next) => {
       });
     }
     await leads.save(lead, { page: String(req.body.page || req.get('referer') || '').slice(0, 200), ip: req.ip });
-    return wantsJson ? res.json({ ok: true }) : res.redirect(303, '/lien-he?da_gui=1');
+    return wantsJson ? res.json({ ok: true }) : res.redirect(303, done);
   } catch (err) {
     next(err);
   }
@@ -494,6 +502,12 @@ router.get('/sitemap.xml', (req, res) => {
     { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
     ...dealers.provinces().map((p) => ({ loc: `/dai-ly/tinh/${p.slug}`, priority: '0.6', changefreq: 'weekly' })),
     ...dealers.dealers.map((d) => ({ loc: d.url, priority: '0.4', changefreq: 'monthly' })),
+    // English edition
+    { loc: '/en', priority: '0.7', changefreq: 'monthly' },
+    { loc: '/en/products', priority: '0.6', changefreq: 'monthly' },
+    ...en.categories.map((x) => ({ loc: x.url, priority: '0.5', changefreq: 'monthly' })),
+    ...en.products.map((p) => ({ loc: p.url, priority: '0.5', changefreq: 'monthly', images: [p.images[0].src], imageTitle: p.name })),
+    ...['/en/about', '/en/oem-manufacturing', '/en/contact'].map((loc) => ({ loc, priority: '0.5', changefreq: 'monthly' })),
   ];
   const body = entries
     .map((e) => {

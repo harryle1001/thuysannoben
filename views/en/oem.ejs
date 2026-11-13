@@ -1,0 +1,56 @@
+<%- include('_header') %>
+<section class="page-head page-head--ink">
+  <div class="wrap page-head__split">
+    <div>
+      <%- include('_crumbs', { items: [['OEM manufacturing']] }) %>
+      <h1 class="page-head__title">OEM and private-label aquaculture products</h1>
+      <p class="page-head__lead">More than <%= company.founded_years %> years producing feed supplements, probiotics and pond-environment products. Noben manufactures for your company and supports the legal files required in Vietnam.</p>
+      <div class="btn-row">
+        <a class="btn btn--sun" href="#oem-form">Request an OEM quotation</a>
+        <a class="btn btn--ghost" href="mailto:<%= company.email %>?subject=OEM%20enquiry"><svg class="ico"><use href="#i-mail"/></svg>Email us</a>
+      </div>
+    </div>
+    <figure class="page-head__photo"><%- img({ src: '/images/brand/banner-2.webp', w: 1200, h: 745 }, { alt: 'Noben factory in Cu Chi, Ho Chi Minh City', loading: 'eager' }) %></figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="h2">What Noben does for your order</h2>
+    <div class="services">
+      <div class="service"><svg class="ico ico--lg"><use href="#i-factory"/></svg><h3>Finished and semi-finished goods</h3><p>Produced on automated lines and packed to your label and pack sizes.</p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-file"/></svg><h3>Product registration files</h3><p>Guidance on product codes, conformity certificates and registration files for the Vietnamese market.</p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-shield"/></svg><h3>Setting up a new company</h3><p>Advice on the procedures to establish an aquaculture products business in Vietnam.</p></div>
+      <div class="service"><svg class="ico ico--lg"><use href="#i-package"/></svg><h3>Cost and pricing advice</h3><p>Costing and selling-price guidance for every product so you can compete in your market.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div class="split__aside">
+      <h2 class="h2">Product lines available for OEM</h2>
+      <p class="lead">Our most requested lines, with competitive pricing for volume orders.</p>
+    </div>
+    <ul class="oem-lines">
+      <li><h3>Pond-bottom probiotics</h3><p>Clean the pond bottom and break down NO₂ and NH₃ effectively.</p></li>
+      <li><h3>Health and environment products</h3><p>Liver and white-faeces support; BKC, Yucca, iodine; minerals for bent body, white muscle and moulting, and environment-improving minerals.</p></li>
+      <li><h3>Concentrated water-treatment cultures</h3><p>Concentrated Rhodobacter, Pseudomonas, Rhodococcus and Spirillum cultures.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="h2">How we work</h2>
+    <ol class="steps">
+      <li><h3>Brief</h3><p>Tell us the product line, the benefits you want, pack sizes and expected volumes.</p></li>
+      <li><h3>Quotation and samples</h3><p>Noben proposes a formula, quotes the manufacturing cost and sends samples for evaluation.</p></li>
+      <li><h3>Documentation</h3><p>We prepare labels, conformity declarations and registration files as required.</p></li>
+      <li><h3>Production and delivery</h3><p>Produced in our ISO 9001:2015 factory, with every batch quality-checked before delivery.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div id="oem-form"><%- include('_contact-band', { title: 'Discuss your OEM order', need: 'Gia công sản phẩm' }) %></div>
+<%- include('_footer') %>

@@ -60,6 +60,7 @@
     });
   }
 
+  var EN = document.documentElement.lang === 'en';
   /* ---------- Catalog: instant filtering ---------- */
   var catalog = $('[data-catalog]');
   if (catalog) {
@@ -72,8 +73,8 @@
     var timer;
     var current = function (name) { var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el.value : ''; };
     var apply = function () {
-      var cat = locked ? '' : current('nhom');
-      var sym = current('van-de');
+      var cat = locked ? '' : current(EN ? 'category' : 'nhom');
+      var sym = current(EN ? 'issue' : 'van-de');
       var words = fold(q.value).trim().split(/\s+/).filter(Boolean);
       var n = 0;
       cards.forEach(function (card) {
@@ -86,8 +87,8 @@
       countEl.textContent = n;
       empty.hidden = n > 0;
       var params = new URLSearchParams();
-      if (cat) params.set('nhom', cat);
-      if (sym) params.set('van-de', sym);
+      if (cat) params.set(EN ? 'category' : 'nhom', cat);
+      if (sym) params.set(EN ? 'issue' : 'van-de', sym);
       if (q.value.trim()) params.set('q', q.value.trim());
       var qs = params.toString();
       history.replaceState(null, '', location.pathname + (qs ? '?' + qs : ''));
@@ -130,9 +131,9 @@
     };
     var check = function () {
       var errs = {};
-      if (f.elements.name.value.trim().length < 2) errs.name = 'Nhập họ tên để chúng tôi biết cách xưng hô.';
+      if (f.elements.name.value.trim().length < 2) errs.name = EN ? 'Please enter your name.' : 'Nhập họ tên để chúng tôi biết cách xưng hô.';
       var digits = f.elements.phone.value.replace(/\D/g, '');
-      if (!/^(0|84)\d{8,10}$/.test(digits)) errs.phone = 'Số điện thoại chưa đúng. Ví dụ: 0934 246 420.';
+      if (EN ? !/^\d{7,15}$/.test(digits) : !/^(0|84)\d{8,10}$/.test(digits)) errs.phone = EN ? 'Please enter a valid phone number with country code, e.g. +84 934 246 420.' : 'Số điện thoại chưa đúng. Ví dụ: 0934 246 420.';
       return errs;
     };
     ['name', 'phone'].forEach(function (n) {
@@ -147,7 +148,7 @@
       if (first) { f.elements[first].focus(); return; }
       btn.disabled = true;
       var label = btn.textContent;
-      btn.textContent = 'Đang gửi…';
+      btn.textContent = EN ? 'Sending…' : 'Đang gửi…';
       status.className = 'form__status';
       status.textContent = '';
       fetch(f.action, { method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(f)).toString() })
@@ -156,7 +157,7 @@
           if (res.ok) {
             f.reset();
             status.className = 'form__status is-ok';
-            status.textContent = f.getAttribute('data-success') || 'Đã gửi. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.';
+            status.textContent = f.getAttribute('data-success') || (EN ? 'Sent. Our team will contact you soon.' : 'Đã gửi. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.');
             f.dispatchEvent(new CustomEvent('lead:sent'));
           } else if (res.body.errors) {
             Object.keys(res.body.errors).forEach(function (k) { setError(k, res.body.errors[k]); });
@@ -166,7 +167,7 @@
         })
         .catch(function (err) {
           status.className = 'form__status is-error';
-          status.textContent = (err && err.message) || 'Chưa gửi được do lỗi kết nối. Vui lòng thử lại hoặc gọi hotline.';
+          status.textContent = (err && err.message) || (EN ? 'Could not send because of a connection error. Please try again or email us.' : 'Chưa gửi được do lỗi kết nối. Vui lòng thử lại hoặc gọi hotline.');
         })
         .then(function () { btn.disabled = false; btn.textContent = label; });
     });

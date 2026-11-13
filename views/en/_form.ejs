@@ -1,0 +1,21 @@
+<%
+  const needs = [['Mua sản phẩm', 'Buy products'], ['Làm đại lý', 'Distribution / import'], ['Gia công sản phẩm', 'OEM / private label'], ['Yêu cầu báo giá', 'Quotation'], ['Tư vấn kỹ thuật', 'Technical advice'], ['Khác', 'Other']];
+  const fid = locals.fid || 'f';
+  const sel = locals.need || 'Làm đại lý';
+%>
+<form class="form form--card" action="/lien-he" method="post" data-lead-form data-success="Thank you. Our team will contact you within one working day." novalidate>
+  <h2 class="form__title"><%= locals.formTitle || 'Send an enquiry' %></h2>
+  <div class="field"><label for="<%= fid %>-name">Full name</label><input id="<%= fid %>-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+  <div class="field"><label for="<%= fid %>-phone">Phone / WhatsApp (with country code)</label><input id="<%= fid %>-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="+84 934 246 420"><p class="field__error" data-error-for="phone"></p></div>
+  <div class="field"><label for="<%= fid %>-need">I am interested in</label>
+    <select id="<%= fid %>-need" name="need"><% needs.forEach(([v, l]) => { %><option value="<%= v %>"<%= v === sel ? ' selected' : '' %>><%= l %></option><% }) %></select>
+  </div>
+  <div class="field"><label for="<%= fid %>-country">Company and country <span class="opt">(optional)</span></label><input id="<%= fid %>-country" name="province" autocomplete="organization"></div>
+  <div class="field"><label for="<%= fid %>-msg">Message <span class="opt">(optional)</span></label><textarea id="<%= fid %>-msg" name="message" rows="4" placeholder="Products, quantities, destination market, email address…"></textarea></div>
+  <% if (locals.product) { %><input type="hidden" name="product" value="<%= product %>"><% } %>
+  <input type="hidden" name="lang" value="en">
+  <input type="hidden" name="page" value="<%= path %>">
+  <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+  <button class="btn btn--blue btn--block" type="submit">Send enquiry</button>
+  <p class="form__status" role="status" data-form-status></p>
+</form>

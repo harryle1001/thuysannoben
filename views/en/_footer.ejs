@@ -1,0 +1,72 @@
+<% const wa = 'https://wa.me/84' + company.zalo.replace(/^0/, ''); const intl = (n) => '+84 ' + String(n).replace(/^0/, ''); %>
+</main>
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="brand brand--light" href="/en">
+        <img src="/images/brand/logo-noben.svg" width="56" height="56" alt="" loading="lazy">
+        <span class="brand__text"><strong>Noben</strong><small>Aquaculture</small></span>
+      </a>
+      <p>NOBEN CO., LTD manufactures, contract-manufactures and distributes aquaculture health products, probiotics and feed supplements for shrimp and fish farms.</p>
+      <p class="site-footer__cert"><svg class="ico"><use href="#i-shield"/></svg> ISO 9001:2015 certified factory</p>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Contact</h2>
+      <ul class="contact-list">
+        <li><svg class="ico"><use href="#i-pin"/></svg><span>228/9 Nguyen Thi Lang St., Group 5, Phu Loi A Hamlet, Cu Chi Commune, Ho Chi Minh City, Vietnam</span></li>
+        <li><svg class="ico"><use href="#i-phone"/></svg><span>Hotline / WhatsApp / Zalo <a href="<%= tel(company.hotline) %>"><%= intl(company.hotline) %></a><br>Sales <% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= intl(p) %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></span></li>
+        <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:<%= company.email %>"><%= company.email %></a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Products</h2>
+      <ul class="link-list">
+        <% for (const cat of categories) { %><li><a href="<%= cat.url %>"><%= cat.name %></a></li><% } %>
+        <li><a href="/en/products">All products</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__title">Company</h2>
+      <ul class="link-list">
+        <li><a href="/en/about">About Noben</a></li>
+        <li><a href="/en/oem-manufacturing">OEM manufacturing</a></li>
+        <li><a href="/en/contact">Contact</a></li>
+        <li><a href="/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap site-footer__legal">
+    <div class="legal-info">
+      <p><strong>NOBEN CO., LTD</strong> (<%= company.legal %>)</p>
+      <p>Address: 228/9 Nguyen Thi Lang St., Cu Chi Commune, Ho Chi Minh City, Vietnam. Phone: <%= intl(company.hotline) %>. Email: <%= company.email %></p>
+    </div>
+    <p class="legal-info__copy">© <%= new Date().getFullYear() %> NOBEN CO., LTD. Always read the label before use. Product registrations apply to the Vietnamese market; importers are responsible for local registration.</p>
+  </div>
+</footer>
+
+<nav class="action-bar" aria-label="Quick contact">
+  <a href="<%= wa %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>WhatsApp</a>
+  <a href="/en/contact"><svg class="ico"><use href="#i-mail"/></svg>Request a quote</a>
+</nav>
+
+<div class="float-chat" role="group" aria-label="Message Noben">
+  <a class="float-chat__btn float-chat__btn--zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener" aria-label="Chat with Noben on Zalo, <%= intl(company.hotline) %>">
+    <span class="float-chat__zalo" aria-hidden="true">Zalo</span>
+    <span class="float-chat__tip" aria-hidden="true">Chat on Zalo</span>
+  </a>
+  <% if (company.messenger) { %>
+  <a class="float-chat__btn float-chat__btn--messenger" href="<%= company.messenger %>" target="_blank" rel="noopener" aria-label="Message Noben on Messenger">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.14.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm6 7.46-2.94 4.66c-.47.75-1.47.93-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66c.47-.75 1.47-.93 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.69.63z"/></svg>
+    <span class="float-chat__tip" aria-hidden="true">Messenger</span>
+  </a>
+  <% } %>
+</div>
+
+<dialog class="lightbox" data-lightbox aria-label="Image viewer">
+  <button class="lightbox__close" type="button" data-lb-close><svg class="ico"><use href="#i-x"/></svg><span class="sr-only">Close</span></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev><svg class="ico"><use href="#i-left"/></svg><span class="sr-only">Previous</span></button>
+  <figure class="lightbox__figure"><img alt="" data-lb-img><figcaption data-lb-caption></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next><svg class="ico"><use href="#i-right"/></svg><span class="sr-only">Next</span></button>
+</dialog>
+</body>
+</html>

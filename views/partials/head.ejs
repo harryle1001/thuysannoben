@@ -1,10 +1,12 @@
 <%
   const m = locals.meta || {};
-  const fullTitle = !m.title ? 'Thủy sản Noben' : /Noben/.test(m.title) || m.title.length > 50 ? m.title : `${m.title} – Thủy sản Noben`;
-  const desc = m.description || 'Công ty TNHH Noben sản xuất thuốc thú y thủy sản, chế phẩm sinh học, khoáng chất và thức ăn bổ sung cho ao tôm, cá.';
+  const isEn = locals.lang === 'en';
+  const site = isEn ? 'Noben Aquaculture' : 'Thủy sản Noben';
+  const fullTitle = !m.title ? site : /Noben/.test(m.title) || m.title.length > 50 ? m.title : `${m.title} – ${site}`;
+  const desc = m.description || (isEn ? 'NOBEN CO., LTD manufactures aquaculture health products, probiotics, minerals and feed supplements for shrimp and fish ponds.' : '') || 'Công ty TNHH Noben sản xuất thuốc thú y thủy sản, chế phẩm sinh học, khoáng chất và thức ăn bổ sung cho ao tôm, cá.';
   const ogImage = /^https?:/.test(m.image || '') ? m.image : siteUrl + (m.image || '/images/brand/banner-1.webp');
 %><!doctype html>
-<html lang="vi">
+<html lang="<%= isEn ? 'en' : 'vi' %>">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +17,19 @@
   <% if (locals.gaId && !locals.isAdmin) { %><script async src="https://www.googletagmanager.com/gtag/js?id=<%= gaId %>"></script><script src="/js/analytics.js?v=1" data-ga="<%= gaId %>" defer></script><% } %>
   <% if (locals.googleVerify) { %><meta name="google-site-verification" content="<%= googleVerify %>"><% } %>
   <meta property="og:type" content="<%= m.type === 'article' ? 'article' : 'website' %>">
-  <meta property="og:site_name" content="Thủy sản Noben">
-  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="<%= site %>">
+  <meta property="og:locale" content="<%= isEn ? 'en_US' : 'vi_VN' %>">
   <meta property="og:title" content="<%= fullTitle %>">
   <meta property="og:description" content="<%= desc %>">
   <meta property="og:url" content="<%= canonical %>">
   <meta property="og:image" content="<%= ogImage %>">
-  <meta property="og:image:alt" content="<%= m.title || 'Thủy sản Noben' %>">
+  <meta property="og:image:alt" content="<%= m.title || site %>">
   <% if (m.published) { %><meta property="article:published_time" content="<%= m.published %>"><meta property="article:modified_time" content="<%= m.modified || m.published %>"><meta property="article:publisher" content="https://www.facebook.com/107785190995978"><% } %>
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="alternate" type="application/rss+xml" title="Kiến thức nuôi tôm – Thủy sản Noben" href="/rss.xml">
-  <link rel="alternate" hreflang="vi" href="<%= canonical %>">
+  <% if (!isEn) { %><link rel="alternate" type="application/rss+xml" title="Kiến thức nuôi tôm – Thủy sản Noben" href="/rss.xml"><% } %>
+  <% if (locals.alt && alt.en) { %><link rel="alternate" hreflang="vi" href="<%= siteUrl + (alt.vi === '/' ? '/' : alt.vi) %>">
+  <link rel="alternate" hreflang="en" href="<%= siteUrl + alt.en %>">
+  <link rel="alternate" hreflang="x-default" href="<%= siteUrl + (alt.vi === '/' ? '/' : alt.vi) %>"><% } else { %><link rel="alternate" hreflang="vi" href="<%= canonical %>"><% } %>
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#0b2347">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -34,16 +38,16 @@
   <link rel="preload" href="/fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/be-vietnam-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <script src="/js/theme.js?v=1"></script>
-  <link rel="stylesheet" href="/css/main.css?v=26">
+  <link rel="stylesheet" href="/css/main.css?v=27">
   <% for (const block of (locals.jsonld || [])) { %>
   <script type="application/ld+json"><%- JSON.stringify(block).replace(/</g, '\\u003c') %></script>
   <% } %>
-  <script src="/js/main.js?v=8" defer></script>
+  <script src="/js/main.js?v=9" defer></script>
   <script src="/js/showcase.js?v=1" defer></script>
-  <script src="/js/chat.js?v=2" defer></script>
-  <script src="/js/quote.js?v=1" defer></script>
+  <% if (!isEn) { %><script src="/js/chat.js?v=2" defer></script>
+  <script src="/js/quote.js?v=1" defer></script><% } %>
   <% if (locals.isAdmin) { %><script src="/js/editor.js?v=1" defer></script><% } %>
 </head>
 <body>
 <%- include('icons') %>
-<a class="skip" href="#noi-dung">Bỏ qua, đến nội dung chính</a>
+<a class="skip" href="#noi-dung"><%= isEn ? 'Skip to main content' : 'Bỏ qua, đến nội dung chính' %></a>

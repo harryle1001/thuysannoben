@@ -1,0 +1,65 @@
+<%- include('_header') %>
+<section class="page-head page-head--ink">
+  <div class="wrap page-head__split">
+    <div>
+      <%- include('_crumbs', { items: [['About Noben']] }) %>
+      <h1 class="page-head__title">More than <%= company.founded_years %> years of products for Vietnam's shrimp and fish ponds</h1>
+      <p class="page-head__lead">NOBEN CO., LTD manufactures, contract-manufactures, imports and distributes aquaculture health products: feed supplements, probiotics and products that treat and improve the pond environment.</p>
+    </div>
+    <figure class="page-head__photo page-head__photo--video">
+      <video autoplay muted loop playsinline preload="auto" poster="/media/noben-hero-poster.webp" data-hero-video aria-hidden="true">
+        <source src="/media/noben-hero.webm" type="video/webm">
+        <source src="/media/noben-hero.mp4" type="video/mp4">
+      </video>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap about-intro">
+    <div class="prose prose--lead">
+      <p>Founded in <%= company.founded_year %>, Noben runs an automated production line equipped with modern technology in Cu Chi, Ho Chi Minh City. The factory is certified to ISO 9001:2015, and our feed supplements carry VinaCert conformity certification.</p>
+      <p>Our customers are shrimp and fish farmers, aquaculture dealers and brand owners. We aim to deliver high-quality products at fair prices, supplied quickly to support high-tech shrimp farming in Vietnam and beyond.</p>
+    </div>
+    <dl class="about-facts">
+      <div><dt><%= company.founded_years %>+ years</dt><dd>manufacturing and trading aquaculture products</dd></div>
+      <div><dt>4 ranges</dt><dd>probiotics, minerals, feed supplements, health products</dd></div>
+      <div><dt>ISO 9001:2015</dt><dd>factory in Cu Chi, Ho Chi Minh City</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap mvv">
+    <div class="mvv__item"><h2 class="h3">Vision</h2><p>To grow Noben into a professional manufacturer and supplier of aquaculture products, with leading quality and reputation in Vietnam.</p></div>
+    <div class="mvv__item"><h2 class="h3">Mission</h2><p>To help farmers work with confidence, achieve strong economic results and prosper from their own land and their own crops.</p></div>
+    <div class="mvv__item"><h2 class="h3">Core values</h2>
+      <ul class="dia-list">
+        <li>Value for customers comes first</li>
+        <li>Products that are safe for people and animals</li>
+        <li>Honest, transparent, consistent and fair business</li>
+        <li>The best outcome for every partner in the value chain</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<%- include('_quality') %>
+
+<% if (gallery.certificates.length) { %>
+<section class="section" aria-labelledby="cert-title">
+  <div class="wrap">
+    <h2 id="cert-title" class="h2">Certificates</h2>
+    <div class="certs" data-gallery>
+      <% gallery.certificates.forEach((c, i) => { %>
+      <a class="cert" href="<%= c.src %>" data-lb="<%= c.src %>" data-caption="NOBEN CO., LTD certificate">
+        <%- img(c, { alt: 'NOBEN CO., LTD certificate, page ' + (i + 1) }) %>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<%- include('_contact-band') %>
+<%- include('_footer') %>

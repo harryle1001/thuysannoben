@@ -1,0 +1,59 @@
+<%- include('_header') %>
+<% const visible = new Set(list); const base = cat ? cat.url : '/en/products'; %>
+<section class="page-head">
+  <div class="wrap">
+    <%- include('_crumbs', { items: cat ? [['Products', '/en/products'], [cat.name]] : [['Products']] }) %>
+    <h1 class="page-head__title"><%= heading %></h1>
+    <p class="page-head__lead"><%= cat ? cat.blurb : 'Filter by product range or by the pond problem you need to solve. Search by product name or keyword.' %></p>
+  </div>
+</section>
+
+<div class="wrap catalog" data-catalog data-locked="<%= Boolean(cat) %>">
+  <form class="filters" action="<%= base %>" method="get" data-filters>
+    <div class="field field--search">
+      <label for="q" class="sr-only">Search products</label>
+      <svg class="ico"><use href="#i-search"/></svg>
+      <input id="q" name="q" type="search" value="<%= filters.q %>" placeholder="Search: probiotic, mineral, liver…" autocomplete="off" data-filter-q>
+    </div>
+    <% if (!cat) { %>
+    <fieldset class="filters__group">
+      <legend>Product range</legend>
+      <div class="filters__radios">
+      <label class="radio"><input type="radio" name="category" value="" <%= !filters.category ? 'checked' : '' %> data-filter-cat><span>All</span><small><%= all.length %></small></label>
+      <% for (const c of categories) { %>
+      <label class="radio"><input type="radio" name="category" value="<%= c.slug %>" <%= filters.category === c.slug ? 'checked' : '' %> data-filter-cat><span><i class="dia dia--<%= c.vi %>"></i><%= c.name %></span><small><%= c.count %></small></label>
+      <% } %>
+      </div>
+    </fieldset>
+    <% } else { %>
+    <p class="filters__back"><a class="text-link" href="/en/products">See all product ranges</a></p>
+    <% } %>
+    <fieldset class="filters__group">
+      <legend>Pond problem</legend>
+      <div class="filters__chips">
+        <label class="chip chip--light"><input type="radio" name="issue" value="" <%= !filters.symptom ? 'checked' : '' %> data-filter-sym><span>All</span></label>
+        <% for (const s of symptoms) { %>
+        <label class="chip chip--light"><input type="radio" name="issue" value="<%= s.slug %>" <%= filters.symptom === s.slug ? 'checked' : '' %> data-filter-sym><span><%= s.label %></span></label>
+        <% } %>
+      </div>
+    </fieldset>
+    <noscript><button class="btn btn--blue" type="submit">Filter</button></noscript>
+  </form>
+
+  <section class="catalog__results" aria-labelledby="result-count">
+    <p class="catalog__count" id="result-count" aria-live="polite"><span data-count><%= list.length %></span> products</p>
+    <div class="pgrid pgrid--catalog">
+      <% for (const p of all) { if (cat && p.category !== cat.slug) continue; %>
+        <%- include('_card', { p, hidden: !visible.has(p) }) %>
+      <% } %>
+    </div>
+    <div class="empty" data-empty<% if (list.length) { %> hidden<% } %>>
+      <h2 class="h3">No products match these filters</h2>
+      <p>Try removing a filter, or <a href="/en/contact">ask our technical team</a> to recommend a product.</p>
+      <a class="btn btn--line" href="<%= base %>" data-reset>Clear filters</a>
+    </div>
+  </section>
+</div>
+
+<%- include('_contact-band', { title: 'Need help choosing products for your market?' }) %>
+<%- include('_footer') %>

@@ -30,9 +30,11 @@ function validate(body) {
     message: String(body.message || '').trim().slice(0, 2000),
   };
   const errors = {};
-  if (lead.name.length < 2) errors.name = 'Nhập họ tên để chúng tôi biết cách xưng hô.';
+  const en = body.lang === 'en';
+  if (lead.name.length < 2) errors.name = en ? 'Please enter your name.' : 'Nhập họ tên để chúng tôi biết cách xưng hô.';
   const digits = lead.phone.replace(/\D/g, '');
-  if (!/^(0|84)\d{8,10}$/.test(digits)) errors.phone = 'Số điện thoại chưa đúng. Ví dụ: 0934 246 420.';
+  if (en ? !/^\d{7,15}$/.test(digits) : !/^(0|84)\d{8,10}$/.test(digits)) errors.phone = en ? 'Please enter a valid phone number with country code.' : 'Số điện thoại chưa đúng. Ví dụ: 0934 246 420.';
+  if (en) lead.message = '[EN] ' + lead.message;
   if (!NEEDS.includes(lead.need)) lead.need = 'Khác';
   return { lead, errors };
 }

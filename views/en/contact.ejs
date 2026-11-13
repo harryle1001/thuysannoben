@@ -1,0 +1,33 @@
+<%- include('_header') %>
+<% const intl = (n) => '+84 ' + String(n).replace(/^0/, ''); %>
+<section class="page-head">
+  <div class="wrap">
+    <%- include('_crumbs', { items: [['Contact']] }) %>
+    <h1 class="page-head__title">Contact Noben</h1>
+    <p class="page-head__lead">Quotations, distribution, import and OEM enquiries. We reply within one working day (GMT+7).</p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap contact">
+    <div class="contact__info">
+      <a class="phone-big phone-big--dark" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= intl(company.hotline) %></a>
+      <p class="contact__hint">Hotline, WhatsApp and Zalo</p>
+      <dl class="contact__list">
+        <div><dt>Sales</dt><dd><% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= intl(p) %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/84<%= company.zalo.replace(/^0/, '') %>" target="_blank" rel="noopener">Chat on WhatsApp</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:<%= company.email %>"><%= company.email %></a></dd></div>
+        <div><dt>Address</dt><dd>228/9 Nguyen Thi Lang St., Group 5, Phu Loi A Hamlet, Cu Chi Commune, Ho Chi Minh City, Vietnam</dd></div>
+      </dl>
+      <div class="map">
+        <iframe title="Map to NOBEN CO., LTD" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=<%= encodeURIComponent(company.address) %>&output=embed&hl=en"></iframe>
+      </div>
+    </div>
+    <div>
+      <% if (sent) { %>
+      <div class="notice notice--ok" role="status"><svg class="ico"><use href="#i-check"/></svg><div><h2 class="h3">Message sent</h2><p>Thank you. Our team will contact you within one working day.</p></div></div>
+      <% } %>
+      <%- include('_form', { fid: 'c', product: product, need: product ? 'Yêu cầu báo giá' : 'Làm đại lý', formTitle: 'Send an enquiry' }) %>
+    </div>
+  </div>
+</section>
+<%- include('_footer') %>

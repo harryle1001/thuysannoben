@@ -725,6 +725,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
   :root:not([data-theme='light']) .theme-toggle .ico--moon { display: none; }
 }
 
+/* ---------- Language switch (VI | EN) ---------- */
+.lang-switch { display: inline-flex; align-items: center; height: 48px; padding: 0 4px; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--surface); font-weight: 600; font-size: 0.8125rem; letter-spacing: 0.06em; text-decoration: none; color: var(--muted, var(--text)); white-space: nowrap; transition: border-color 160ms var(--ease); }
+.lang-switch span { padding: 6px 7px; border-radius: 6px; line-height: 1; }
+.lang-switch__on { background: var(--heading); color: var(--surface); }
+.lang-switch:hover { border-color: var(--link); }
+.lang-switch:hover .lang-switch__off { color: var(--link); }
+@media (min-width: 761px) and (max-width: 1439px) { .lang-switch { padding: 0 2px; } .lang-switch__on { display: none; } }
+
 /* ---------- Floating Zalo / Messenger buttons (stay on screen while scrolling) ---------- */
 .float-chat { position: fixed; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 35; display: flex; flex-direction: column; gap: 12px; }
 @media (max-width: 760px) { .float-chat { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); gap: 10px; } }

@@ -1,0 +1,45 @@
+<%
+  const qcSteps = [
+    ['Selected raw materials', 'Trusted suppliers; every raw material is checked before it enters production.'],
+    ['Formulas from our technical team', 'Formulas are built and refined from real results in farmers’ ponds.'],
+    ['Automated production lines', 'Weighing, mixing and packing on automated lines to keep dosing precise.'],
+    ['Checked before release', 'Finished goods are inspected under our ISO 9001:2015 quality system.'],
+    ['Complete labelling', 'Each pack states composition, uses, directions, manufacturing and expiry dates.'],
+    ['Delivery and field support', 'Nationwide delivery, with free technical support throughout the crop.'],
+  ];
+%>
+<section class="qc" aria-labelledby="quality-title">
+  <div class="wrap qc__grid">
+    <div class="qc__film">
+      <div class="qc__frame">
+        <video class="qc__video" muted playsinline loop preload="none" poster="/media/noben-film-poster.webp" data-inview-play aria-label="Noben brand film: closed production process and certified quality">
+          <source src="/media/noben-film.webm" type="video/webm">
+          <source src="/media/noben-film.mp4" type="video/mp4">
+        </video>
+        <button class="qc__sound" type="button" data-video-toggle aria-label="Pause video"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span>Pause</span></button>
+      </div>
+      <ul class="qc__certs" aria-label="Certifications">
+        <li><strong>ISO 9001:2015</strong><span>Factory quality management</span></li>
+        <li><strong>VinaCert</strong><span>Feed supplement conformity</span></li>
+        <li><strong><%= company.founded_years %>+ years</strong><span>Manufacturing experience</span></li>
+      </ul>
+    </div>
+    <div class="qc__copy">
+      <p class="qc__kicker">Quality control</p>
+      <h2 id="quality-title" class="h2 qc__title">A closed process, from raw material to the pond</h2>
+      <p class="qc__lead">Every Noben product goes through the same process in our ISO 9001:2015 factory, so farmers and distributors can trust every pack and every bottle.</p>
+      <ol class="qc__steps">
+        <% qcSteps.forEach(([t, d], i) => { %>
+        <li class="qc__step">
+          <span class="qc__num" aria-hidden="true"><%= String(i + 1).padStart(2, '0') %></span>
+          <div><h3 class="qc__step-title"><%= t %></h3><p><%= d %></p></div>
+        </li>
+        <% }) %>
+      </ol>
+      <div class="btn-row">
+        <a class="btn btn--sun" href="/en/about">About our factory</a>
+        <a class="btn btn--ghost" href="/en/contact">Request specifications</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,95 @@
+<%- include('_header') %>
+<div class="wrap">
+  <%- include('_crumbs', { items: [['Products', '/en/products'], [p.categoryInfo.name, p.categoryInfo.url], [p.name]] }) %>
+</div>
+
+<article class="wrap product">
+  <div class="product__media" data-gallery>
+    <div class="stage3d cat-bg--<%= p.categoryInfo.vi %>" data-spin tabindex="0" role="img" aria-label="<%= p.name %> packaging. Drag left or right to rotate.">
+      <span class="stage3d__spot" aria-hidden="true"></span>
+      <div class="stage3d__obj" data-spin-obj>
+        <%- img(p.shot, { alt: p.name + ' packaging', loading: 'eager', fetchpriority: 'high', draggable: 'false', class: p.cutout ? 'is-cutout' : '' }) %>
+        <span class="stage3d__glare" aria-hidden="true"></span>
+      </div>
+      <span class="stage3d__shadow" aria-hidden="true"></span>
+      <p class="stage3d__hint" aria-hidden="true"><span class="showcase__hand"></span>Drag to rotate</p>
+    </div>
+    <div class="product__views">
+      <% if (p.cutout) { %>
+      <a class="product__view" href="<%= p.image.src %>" data-lb="<%= p.image.src %>" data-caption="Original label of <%= p.name %>">
+        <%- img(p.image, { alt: '' }) %>
+        <span><strong>Original label</strong><small>Zoom in to read the packaging (Vietnamese)</small></span>
+      </a>
+      <% } %>
+    </div>
+  </div>
+
+  <div class="product__info">
+    <p class="cat-tag cat-tag--<%= p.categoryInfo.vi %>"><a href="<%= p.categoryInfo.url %>"><%= p.categoryInfo.name %></a></p>
+    <h1 class="product__name"><%= p.name %><span class="product__kind"><span class="sr-only"> – </span><%= p.categoryInfo.kind %></span></h1>
+    <p class="product__tagline"><%= p.tagline %></p>
+    <% if (p.symptoms.length) { %>
+    <div class="product__syms">
+      <p class="product__syms-label">Used for</p>
+      <ul class="tag-list">
+        <% p.symptoms.forEach((s) => { const sym = symptoms.find((x) => x.slug === s); if (!sym) return; %>
+        <li><a class="chip chip--light chip--sm" href="/en/products?issue=<%= s %>"><%= sym.label %></a></li>
+        <% }) %>
+      </ul>
+    </div>
+    <% } %>
+    <div class="buy-box">
+      <p class="buy-box__title">Quotation, distribution or OEM</p>
+      <a class="btn btn--sun btn--block" href="/en/contact?product=<%= p.slug %>"><svg class="ico"><use href="#i-mail"/></svg>Request a quote</a>
+      <div class="buy-box__row">
+        <a class="btn btn--line" href="https://wa.me/84<%= company.zalo.replace(/^0/, '') %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a class="btn btn--line" href="mailto:<%= company.email %>?subject=<%= encodeURIComponent('Enquiry: ' + p.name) %>"><svg class="ico"><use href="#i-mail"/></svg>Email</a>
+      </div>
+      <p class="buy-box__note">Manufactured by NOBEN CO., LTD in an ISO 9001:2015 certified factory.</p>
+    </div>
+
+    <div class="spec">
+      <% if (p.uses.length) { %>
+      <section class="spec__block"><h2 class="spec__title">Benefits</h2><ul class="dia-list"><% p.uses.forEach((u) => { %><li><%= u %></li><% }) %></ul></section>
+      <% } %>
+      <% if (p.dose.length) { %>
+      <section class="spec__block"><h2 class="spec__title">Directions</h2><ul class="dose-list"><% p.dose.forEach((u) => { %><li><%= u %></li><% }) %></ul></section>
+      <% } %>
+      <% if (p.composition.length) { %>
+      <section class="spec__block"><h2 class="spec__title">Composition</h2><ul class="dia-list"><% p.composition.forEach((u) => { %><li><%= u %></li><% }) %></ul></section>
+      <% } %>
+      <section class="spec__block">
+        <h2 class="spec__title">Specifications</h2>
+        <table class="spec-table">
+          <tr><th scope="row">Product</th><td><%= p.name %></td></tr>
+          <tr><th scope="row">Range</th><td><a href="<%= p.categoryInfo.url %>"><%= p.categoryInfo.name %></a></td></tr>
+          <tr><th scope="row">Main use</th><td><%= p.tagline %></td></tr>
+          <% if (p.packaging) { %><tr><th scope="row">Packaging</th><td><%= p.packaging %></td></tr><% } %>
+          <tr><th scope="row">For</th><td>Whiteleg shrimp, black tiger shrimp<%= p.categoryInfo.vi === 'sinh-hoc' ? ', aquaculture ponds' : '' %></td></tr>
+          <tr><th scope="row">Manufacturer</th><td>NOBEN CO., LTD, Vietnam (ISO 9001:2015)</td></tr>
+          <tr><th scope="row">Registration, expiry</th><td>Printed on the product label (<a href="<%= p.image.src %>" data-lb="<%= p.image.src %>">view label</a>)</td></tr>
+        </table>
+      </section>
+      <p class="spec__note">This is a translation of the Vietnamese label for reference. Rates may vary with pond conditions and shrimp health; always follow the label and local regulations.</p>
+    </div>
+  </div>
+</article>
+
+<% if (faq.length) { %>
+<section class="section section--top-tight" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="faq-block faq-block--product">
+      <h2 id="faq-title" class="faq-block__title">Questions about <%= p.name %></h2>
+      <div class="faq">
+        <% faq.forEach((f, i) => { %><details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details><% }) %>
+      </div>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (related.length) { %>
+<%- include('_showcase', { items: related, id: 'rel', title: 'Often used with ' + p.name, lead: 'Products combined for the same pond problem. Drag to browse.' }) %>
+<% } %>
+<%- include('_contact-band', { product: p.name, title: 'Ask about ' + p.name, need: 'Yêu cầu báo giá' }) %>
+<%- include('_footer') %>

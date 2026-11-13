@@ -1,0 +1,106 @@
+<%- include('_header') %>
+<section class="hero hero--video" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true">
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="/media/noben-hero-poster.webp" data-hero-video>
+      <source src="/media/noben-hero.webm" type="video/webm">
+      <source src="/media/noben-hero.mp4" type="video/mp4">
+    </video>
+    <span class="hero__shade"></span>
+  </div>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="hero__kicker">Aquaculture product manufacturer · Ho Chi Minh City, Vietnam</p>
+      <h1 id="hero-title" class="hero__title">Health products for every challenge in the shrimp&nbsp;pond</h1>
+      <p class="hero__lead"><%= all.length %> products made in Noben's ISO 9001:2015 factory: bottom-cleaning probiotics, minerals, digestive enzymes and liver support. Built from more than <%= company.founded_years %> years of work alongside Vietnamese shrimp farmers.</p>
+      <ul class="badges" aria-label="Certifications and experience">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>ISO 9001:2015</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-file"/></svg>VinaCert conformity</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-factory"/></svg>Since <%= company.founded_year %></li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--sun" href="/en/products">Explore products</a>
+        <a class="btn btn--ghost" href="/en/contact">Become a distributor</a>
+      </div>
+    </div>
+    <div class="hero__aside" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Noben in numbers">
+  <div class="wrap facts__row">
+    <p class="fact"><strong><%= company.founded_years %>+ years</strong><span>manufacturing aquaculture products</span></p>
+    <p class="fact"><strong><%= all.length %> products</strong><span>in 4 specialist ranges</span></p>
+    <p class="fact"><strong>ISO 9001:2015</strong><span>factory quality management</span></p>
+    <p class="fact"><strong>OEM ready</strong><span>private label for your brand</span></p>
+  </div>
+</section>
+
+<section class="section prodtabs" aria-labelledby="pt-title" data-tabs>
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="pt-title" class="h2">Noben product ranges</h2>
+        <p class="section-head__lead">Pick a range for a quick look; open any product for its uses and label directions.</p>
+      </div>
+      <a class="text-link" href="/en/products">See all <%= all.length %> products</a>
+    </header>
+    <div class="prodtabs__tabs" role="tablist" aria-label="Product ranges">
+      <% categories.forEach((cat, i) => { %>
+      <button class="prodtabs__tab cat-tag--<%= cat.vi %>" type="button" role="tab" id="pt-tab-<%= cat.slug %>" aria-controls="pt-<%= cat.slug %>" aria-selected="<%= i === 0 %>" tabindex="<%= i === 0 ? 0 : -1 %>"><span class="prodtabs__dot" aria-hidden="true"></span><%= cat.name %><span class="prodtabs__count"><%= cat.count %></span></button>
+      <% }) %>
+    </div>
+    <% categories.forEach((cat, i) => { const list = all.filter((p) => p.category === cat.slug).slice(0, 10); %>
+    <div class="prodtabs__panel" role="tabpanel" id="pt-<%= cat.slug %>" aria-labelledby="pt-tab-<%= cat.slug %>"<% if (i) { %> hidden<% } %>>
+      <div class="pgrid pgrid--fit">
+        <% list.forEach((p) => { %><%- include('_card', { p }) %><% }) %>
+      </div>
+      <p class="prodtabs__more"><a class="btn btn--line" href="<%= cat.url %>">All <%= cat.count %> <%= cat.name.toLowerCase() %> products</a></p>
+    </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('_quality') %>
+
+<% if (certificates.length) { %>
+<section class="section" aria-labelledby="cert-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="cert-title" class="h2">Certified quality</h2>
+      <a class="text-link" href="/en/about">About our factory</a>
+    </header>
+    <div class="certs" data-gallery>
+      <% certificates.forEach((c, i) => { %>
+      <a class="cert" href="<%= c.src %>" data-lb="<%= c.src %>" data-caption="NOBEN CO., LTD certificate">
+        <%- img(c, { alt: 'NOBEN CO., LTD certificate, page ' + (i + 1) }) %>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (featured.length) { %>
+<%- include('_showcase', { items: featured, id: 'featured', title: 'Farmers’ favourites', lead: 'Drag to browse, then open the product in the centre for its uses and directions.' }) %>
+<% } %>
+
+<section class="oem-band" aria-labelledby="oem-title">
+  <div class="wrap oem-band__grid">
+    <div>
+      <h2 id="oem-title" class="h2">OEM and private-label manufacturing</h2>
+      <p class="lead">Launch your own brand of probiotics, minerals or feed supplements, produced on the automated lines of our ISO 9001:2015 factory.</p>
+      <ul class="ticks">
+        <li><svg class="ico"><use href="#i-check"/></svg><span>Finished and semi-finished products, packed to your label</span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span>Support with Vietnamese product registration and conformity files</span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span>Formulation advice, samples and volume pricing</span></li>
+      </ul>
+      <a class="btn btn--sun" href="/en/oem-manufacturing">OEM manufacturing</a>
+    </div>
+    <figure class="oem-band__photo">
+      <%- img({ src: '/media/noben-brand.webp', w: 1600, h: 900 }, { alt: 'Noben Aquaculture, working with Vietnamese shrimp farmers' }) %>
+    </figure>
+  </div>
+</section>
+
+<%- include('_contact-band') %>
+<%- include('_footer') %>
