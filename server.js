@@ -81,4 +81,7 @@ app.use((err, req, res, _next) => {
   });
 });
 
-app.listen(PORT, () => console.log(`Noben website đang chạy tại http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Noben website đang chạy tại http://localhost:${PORT}`);
+  require('./src/indexnow').schedule({ port: PORT, siteUrl: SITE_URL });
+});

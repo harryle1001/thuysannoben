@@ -9,3 +9,4 @@ data/*.tmp
 public/images/kien-thuc/.fonts/
 motion/node_modules/
 motion/out/
+data/indexnow-sent.json

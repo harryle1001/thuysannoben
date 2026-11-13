@@ -57,6 +57,7 @@ Sao chép `.env.example` thành `.env` rồi điền thông tin. Trên Hostinger
 | `ANTHROPIC_API_KEY` | Khóa Claude API cho Trợ lý Noben (chatbot). Để trống thì trợ lý trả lời bằng cách tìm trong nội dung website |
 | `CHAT_DAILY_LIMIT` | (Không bắt buộc) số câu trả lời AI tối đa mỗi ngày, mặc định 800. Vượt mức thì trợ lý chuyển sang chế độ tìm kiếm |
 | `GA_MEASUREMENT_ID` | (Không bắt buộc) mã Google Analytics 4 dạng `G-XXXXXXXXXX`. Có thể điền thay vào trường `ga_id` trong `content/company.json` |
+| `INDEXNOW_AUTO` | (Không bắt buộc) đặt `0` để tắt việc tự báo trang mới cho Bing qua IndexNow sau mỗi lần triển khai |
 
 ## Triển khai lên Hostinger
 
