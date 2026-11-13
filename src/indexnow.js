@@ -18,8 +18,12 @@ async function submit({ port, siteUrl, log = console.log }) {
   const site = new URL(siteUrl);
   if (!key || process.env.INDEXNOW_AUTO === '0' || /^(localhost|127\.|0\.0\.0\.0)/.test(site.hostname)) return null;
 
-  log(`[indexnow] đọc sitemap (cổng ${port})`);
-  const xml = await (await fetch(`http://127.0.0.1:${port}/sitemap.xml`, { signal: AbortSignal.timeout(20000) })).text();
+  // Read the public sitemap (on some hosts the app does not listen on a TCP port it can call itself).
+  let xml = '';
+  for (const url of [`${site.origin}/sitemap.xml`, `http://127.0.0.1:${port}/sitemap.xml`]) {
+    try { xml = await (await fetch(url, { signal: AbortSignal.timeout(20000) })).text(); if (xml.includes('<loc>')) break; } catch { /* try the next one */ }
+  }
+  if (!xml.includes('<loc>')) { log('[indexnow] không đọc được sitemap'); return null; }
   const entries = [...xml.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map((m) => [m[1], m[2]]);
   const sent = readState();
   const changed = entries.filter(([loc, mod]) => sent[loc] !== mod).map(([loc]) => loc);
