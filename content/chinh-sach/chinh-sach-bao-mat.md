@@ -38,6 +38,10 @@ Thông tin có thể được chia sẻ trong phạm vi cần thiết với:
 - Đơn vị vận chuyển, chuyển phát: họ tên, số điện thoại, địa chỉ nhận hàng để giao hàng.
 - Cơ quan nhà nước có thẩm quyền khi có yêu cầu theo quy định của pháp luật.
 
+## Cookie và thống kê truy cập
+
+Website sử dụng Google Analytics để thống kê lượt truy cập (số người xem, trang được xem nhiều, thiết bị và khu vực truy cập) nhằm cải thiện nội dung. Google Analytics dùng cookie và không cho chúng tôi biết danh tính của Quý khách. Quý khách có thể chặn hoặc xóa cookie trong cài đặt trình duyệt, hoặc cài tiện ích chặn Google Analytics của Google; website vẫn hoạt động bình thường.
+
 ## Trợ lý tự động
 
 Website có **Trợ lý Noben**, một trợ lý trả lời tự động sử dụng trí tuệ nhân tạo (AI) để gợi ý thông tin về sản phẩm và kỹ thuật nuôi. Khi Quý khách trò chuyện với trợ lý:

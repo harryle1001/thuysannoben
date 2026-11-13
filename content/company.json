@@ -40,5 +40,6 @@
   "bank_name": "",
   "bank_account": "",
   "bank_holder": "",
-  "bct_url": ""
+  "bct_url": "",
+  "ga_id": ""
 }
