@@ -304,3 +304,51 @@
     label();
   });
 })();
+
+// Scroll motion: blocks rise in when scrolling down and settle in from above when scrolling up.
+// Added by script only, so without JavaScript (and for search engines) everything stays visible.
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+  var header = document.querySelector('[data-header]');
+  var bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(bar);
+  var lastY = window.scrollY, dirDown = true, ticking = false;
+  function onScroll() {
+    var y = window.scrollY;
+    dirDown = y >= lastY; lastY = y;
+    var max = root.scrollHeight - innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
+    if (header) header.classList.toggle('is-scrolled', y > 40);
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
+  if (reduce || !('IntersectionObserver' in window)) return;
+  var sel = '.section-head, .h2, .pcard, .acard, .tile, .stage, .fact, .qc__step, .qc__frame, .qc__certs li, .cert, .faq__item, .group, .mvv__item, .about-facts > div, .showcase, .quick-contact, .oem-band__grid > *, .spec__block, .post-item, .policy__main, .why__list > div';
+  var els = Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function (el) {
+    return !el.closest('.hero, .chatbot, .site-header, .site-footer') && !el.parentElement.closest('.rv');
+  });
+  els.forEach(function (el) {
+    var r = el.getBoundingClientRect();
+    if (r.top < innerHeight && r.bottom > 0) return; // already on screen: never hide it
+    var sibs = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+    el.style.setProperty('--rv-delay', Math.min(sibs % 6, 5) * 70 + 'ms');
+    el.classList.add('rv');
+  });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      var el = e.target;
+      if (e.isIntersecting) {
+        el.classList.toggle('rv--from-top', !dirDown);
+        requestAnimationFrame(function () { el.classList.add('is-in'); });
+      } else {
+        el.classList.remove('is-in');
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  els.forEach(function (el) { if (el.classList.contains('rv')) io.observe(el); });
+})();
