@@ -88,7 +88,12 @@
           <% if (p.packaging) { %><tr><th scope="row">Quy cách</th><td><%= p.packaging %></td></tr><% } %>
           <tr><th scope="row">Đối tượng sử dụng</th><td>Tôm thẻ chân trắng, tôm sú<%= p.category === 'sinh-hoc' ? ', ao nuôi thủy sản' : '' %></td></tr>
           <tr><th scope="row">Nhà sản xuất</th><td><%= company.legal %>, nhà máy đạt ISO 9001:2015</td></tr>
+          <% if (p.registration && p.registration.code) { %>
+          <tr><th scope="row">Mã số công bố/lưu hành (CSDL Cục Thủy sản)</th><td><strong><%= p.registration.code %></strong><% if (p.registration.tccs) { %> · TCCS <%= p.registration.tccs %><% } %></td></tr>
+          <% if (p.registration.shelfLife) { %><tr><th scope="row">Hạn sử dụng</th><td><%= p.registration.shelfLife %></td></tr><% } %>
+          <% } else { %>
           <tr><th scope="row">Số đăng ký, hạn dùng</th><td>Ghi trên nhãn sản phẩm (<a href="<%= p.image.src %>" data-lb="<%= p.image.src %>">xem nhãn gốc</a>)</td></tr>
+          <% } %>
         </table>
       </section>
       <p class="share share--product">
