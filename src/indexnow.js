@@ -18,7 +18,8 @@ async function submit({ port, siteUrl, log = console.log }) {
   const site = new URL(siteUrl);
   if (!key || process.env.INDEXNOW_AUTO === '0' || /^(localhost|127\.|0\.0\.0\.0)/.test(site.hostname)) return null;
 
-  const xml = await (await fetch(`http://127.0.0.1:${port}/sitemap.xml`)).text();
+  log(`[indexnow] đọc sitemap (cổng ${port})`);
+  const xml = await (await fetch(`http://127.0.0.1:${port}/sitemap.xml`, { signal: AbortSignal.timeout(20000) })).text();
   const entries = [...xml.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)].map((m) => [m[1], m[2]]);
   const sent = readState();
   const changed = entries.filter(([loc, mod]) => sent[loc] !== mod).map(([loc]) => loc);
@@ -28,6 +29,7 @@ async function submit({ port, siteUrl, log = console.log }) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
     body: JSON.stringify({ host: site.host, key, keyLocation: `${site.origin}/${key}.txt`, urlList: changed.slice(0, 10000) }),
+    signal: AbortSignal.timeout(30000),
   });
   log(`[indexnow] gửi ${changed.length} trang, phản hồi ${res.status}`);
   if (res.status === 200 || res.status === 202) {
@@ -40,6 +42,7 @@ async function submit({ port, siteUrl, log = console.log }) {
 
 // Run once, a minute after start, so the site is up and warm; never crash the app.
 function schedule(opts) {
+  console.log('[indexnow] sẽ báo trang mới sau 60 giây');
   const t = setTimeout(() => submit(opts).catch((e) => console.error('[indexnow]', e.message)), 60 * 1000);
   if (t.unref) t.unref();
 }
