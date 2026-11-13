@@ -397,6 +397,10 @@ router.get('/quan-tri/lien-he', async (req, res) => {
 });
 
 // ---------- SEO ----------
+// IndexNow key file (scripts/indexnow.js submits the sitemap to Bing and other engines).
+const INDEXNOW_KEY = (() => { try { return require('fs').readFileSync(require('path').join(__dirname, '..', 'content', 'indexnow-key.txt'), 'utf8').trim(); } catch { return ''; } })();
+if (INDEXNOW_KEY) router.get(`/${INDEXNOW_KEY}.txt`, (req, res) => res.type('text/plain').send(INDEXNOW_KEY));
+
 router.get('/robots.txt', (req, res) => res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /quan-tri/\nDisallow: /*?q=\nSitemap: ${SITE_URL}/sitemap.xml\n`));
 const xmlEsc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 router.get('/sitemap.xml', (req, res) => {
