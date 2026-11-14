@@ -1,0 +1,15 @@
+<%- include('../partials/head') %>
+<header class="lp-bar" data-header>
+  <div class="wrap lp-bar__row">
+    <a class="brand" href="/" aria-label="Thủy sản Noben, về trang chủ">
+      <img src="/images/brand/logo-noben.svg" width="48" height="48" alt="">
+      <span class="brand__text"><strong>Noben</strong><small>Thuốc thủy sản</small></span>
+    </a>
+    <p class="lp-bar__seal"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Nhà máy ISO 9001:2015 · <%= company.founded_years %>+ năm</p>
+    <div class="lp-bar__actions">
+      <a class="btn btn--line lp-bar__zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg><span>Zalo</span></a>
+      <a class="btn btn--sun" href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span><%= company.hotline %></span></a>
+    </div>
+  </div>
+</header>
+<main id="noi-dung" class="lp">

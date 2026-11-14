@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "g7",
+    "product": "g7-phong-va-tri-benh-gan-chet-som",
+    "solution": "phan-trang-gan-tuy",
+    "seo_title": "G7 – Thảo dược bổ gan, phòng và trị bệnh gan cho tôm | Noben",
+    "description": "G7 của Noben: hỗn hợp thảo dược và acid amin giúp phòng và trị bệnh gan cho tôm (teo gan, sưng gan, trắng gan, gan ứ nước), bổ gan, giải độc gan. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Giải pháp gan tụy cho tôm thẻ, tôm sú",
+    "title": "Gan tôm khỏe từ những ngày đầu với G7",
+    "lead": "Hỗn hợp thảo dược tự nhiên và acid amin, giúp phòng và trị các bệnh gan thường gặp: teo gan, sưng gan, trắng gan, gan ứ nước. Dùng trộn thức ăn hằng ngày hoặc tạt xuống ao khi có dịch.",
+    "points": [
+      "Bổ gan, giải độc gan, phục hồi chức năng gan",
+      "Hạn chế chết rải rác, chết tấp mé do bệnh gan",
+      "Thảo dược tự nhiên, dùng được cả trộn ăn và tạt ao"
+    ],
+    "pains_title": "Ao của bạn đang có những dấu hiệu này?",
+    "bundle_title": "Phác đồ gan ruột khuyên dùng cùng G7",
+    "bundle": ["sorbest", "hepaliver-fs", "davi-cid-liquid", "aqualac-fs"]
+  },
+  {
+    "slug": "caphote",
+    "product": "caphote",
+    "solution": "mem-vo-cong-than-cham-lon",
+    "seo_title": "CAPHOTE siêu khoáng – Cứng vỏ nhanh, vỏ dày cho tôm | Noben",
+    "description": "CAPHOTE siêu khoáng của Noben: khoáng vi lượng và đa lượng dễ hấp thụ, giúp tôm cứng vỏ nhanh, vỏ dày, phòng ngừa cong thân, đục cơ, mềm vỏ. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Siêu khoáng cho ao bạt, ao đất",
+    "title": "Tôm cứng vỏ nhanh, vỏ dày với CAPHOTE",
+    "lead": "Khoáng vi lượng và đa lượng ở dạng dễ hấp thụ, tôm hấp thu trực tiếp qua vỏ. Giải quyết nhanh tình trạng mềm vỏ kéo dài, giúp phòng ngừa cong thân, đục cơ, trắng lưng.",
+    "points": [
+      "Cứng vỏ nhanh, vỏ dày, hỗ trợ thu hoạch",
+      "Phòng ngừa cong thân, đục cơ, trắng lưng, vỏ xanh",
+      "Dùng tạt ao định kỳ hoặc trộn thức ăn hằng ngày"
+    ],
+    "pains_title": "Tôm của bạn đang gặp tình trạng này?",
+    "bundle_title": "Phác đồ khoáng khuyên dùng cùng CAPHOTE",
+    "bundle": ["nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo", "calcipho", "premix-khoang-khoang-kich-lot", "aqua-c30"]
+  }
+]

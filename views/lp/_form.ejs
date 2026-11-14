@@ -1,0 +1,30 @@
+<%#
+  Lead form used on landing pages. Params: fid, title, need, product, button, success, fields ('dealer' adds shop questions)
+%>
+<form class="form form--card lp-form" action="/lien-he" method="post" data-lead-form data-success="<%= success %>" novalidate>
+  <h2 class="form__title"><%= title %></h2>
+  <% if (locals.sub) { %><p class="lp-form__sub"><%= sub %></p><% } %>
+  <div class="field"><label for="<%= fid %>-name">Họ tên</label><input id="<%= fid %>-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+  <div class="field"><label for="<%= fid %>-phone">Số điện thoại / Zalo</label><input id="<%= fid %>-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="field__error" data-error-for="phone"></p></div>
+  <div class="field"><label for="<%= fid %>-prov">Tỉnh, thành phố</label><input id="<%= fid %>-prov" name="province" autocomplete="address-level1" placeholder="Ví dụ: Cà Mau"></div>
+  <% if (locals.fields === 'dealer') { %>
+  <div class="field"><label for="<%= fid %>-msg">Bạn đang có <span class="opt">(không bắt buộc)</span></label>
+    <select id="<%= fid %>-msg" name="message">
+      <option>Cửa hàng thuốc, vật tư thủy sản</option>
+      <option>Đang làm đại lý cho hãng khác</option>
+      <option>Kỹ thuật viên, muốn mở điểm bán</option>
+      <option>Trang trại nuôi lớn, muốn mua giá sỉ</option>
+      <option>Khác</option>
+    </select>
+  </div>
+  <% } else { %>
+  <div class="field"><label for="<%= fid %>-msg">Tình trạng ao <span class="opt">(không bắt buộc)</span></label><input id="<%= fid %>-msg" name="message" placeholder="Ví dụ: ao bạt 2.000 m², tôm 35 ngày"></div>
+  <% } %>
+  <input type="hidden" name="need" value="<%= need %>">
+  <% if (locals.product) { %><input type="hidden" name="product" value="<%= product %>"><% } %>
+  <input type="hidden" name="page" value="<%= path %>" data-page-field>
+  <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+  <button class="btn btn--sun btn--block btn--lg" type="submit"><%= button %></button>
+  <p class="lp-form__safe"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Thông tin chỉ dùng để Noben gọi lại tư vấn, không chia sẻ cho bên khác.</p>
+  <p class="form__status" role="status" data-form-status></p>
+</form>

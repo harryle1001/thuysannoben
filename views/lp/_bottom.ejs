@@ -1,0 +1,28 @@
+</main>
+<footer class="lp-foot">
+  <div class="wrap lp-foot__row">
+    <div>
+      <p><strong><%= company.legal %></strong></p>
+      <p><%= company.address %> · Hotline <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a> · <a href="mailto:<%= company.email %>"><%= company.email %></a></p>
+    </div>
+    <p class="lp-foot__links"><a href="/">Trang chủ</a><a href="/san-pham">Sản phẩm</a><a href="/chinh-sach/chinh-sach-bao-mat">Bảo mật</a><a href="/chinh-sach/dieu-khoan-su-dung">Điều khoản</a></p>
+  </div>
+</footer>
+<nav class="action-bar" aria-label="Liên hệ nhanh">
+  <a href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
+  <a href="#dang-ky"><svg class="ico"><use href="#i-mail"/></svg><%= locals.ctaShort || 'Để lại số' %></a>
+</nav>
+<div class="float-chat" role="group" aria-label="Nhắn tin với Noben">
+  <a class="float-chat__btn float-chat__btn--zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener" aria-label="Chat Zalo với Noben, số <%= company.hotline %>">
+    <span class="float-chat__zalo" aria-hidden="true">Zalo</span>
+    <span class="float-chat__tip" aria-hidden="true">Chat Zalo</span>
+  </a>
+</div>
+<dialog class="lightbox" data-lightbox aria-label="Xem ảnh">
+  <button class="lightbox__close" type="button" data-lb-close><svg class="ico"><use href="#i-x"/></svg><span class="sr-only">Đóng</span></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev><svg class="ico"><use href="#i-left"/></svg><span class="sr-only">Ảnh trước</span></button>
+  <figure class="lightbox__figure"><img alt="" data-lb-img><figcaption data-lb-caption></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next><svg class="ico"><use href="#i-right"/></svg><span class="sr-only">Ảnh sau</span></button>
+</dialog>
+</body>
+</html>

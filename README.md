@@ -236,6 +236,14 @@ Lệnh ghi đè `content/dai-ly.json`. Đẩy lên GitHub là web tự cập nh�
 - Trang `/tuyen-dung` có form ứng tuyển; nội dung "Vị trí đang tuyển" sửa được bằng cây bút.
 - Mọi form chống spam bằng ô ẩn, giới hạn 5 lần mỗi 10 phút cho mỗi máy và bẫy thời gian (gửi trong vòng 2,5 giây sau khi mở trang bị bỏ qua).
 
+## Landing page (chạy quảng cáo)
+
+- `/tuyen-dai-ly`: trang tuyển đại lý, có form ở ngay đầu trang và cuối trang. Trang được Google lập chỉ mục (từ khóa "tuyển đại lý thuốc thủy sản").
+- `/lp/g7`, `/lp/caphote`: trang sản phẩm chủ lực dùng cho quảng cáo Facebook, Zalo, Google. Không lập chỉ mục để tránh trùng với trang sản phẩm.
+- Thêm landing sản phẩm mới: thêm một mục vào `content/landings.json` (slug, sản phẩm, trang giải pháp, tiêu đề, lợi ích, sản phẩm phối hợp).
+- Gắn mã chiến dịch vào link quảng cáo, ví dụ `https://thuysannoben.com/lp/g7?utm_source=facebook&utm_campaign=g7-thang11`. Mã này được lưu kèm khách liên hệ (cột trang) để biết quảng cáo nào ra khách.
+- Chữ trên landing sửa được bằng cây bút khi đăng nhập quản trị.
+
 ## Sửa nội dung ngay trên trang (cây bút)
 
 1. Đặt biến môi trường `ADMIN_PASS` (và `ADMIN_USER` nếu muốn, mặc định là `admin`).

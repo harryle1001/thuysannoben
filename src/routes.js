@@ -230,6 +230,51 @@ router.get('/san-pham/:slug', (req, res, next) => {
   });
 });
 
+// ---------- Landing pages: dealer recruitment and flagship products (for ads and campaigns) ----------
+const LANDINGS = require('../content/landings.json');
+const DEALER_FAQ = [
+  { q: 'Mở đại lý thuốc thủy sản Noben cần vốn bao nhiêu?', a: '<p>Không có mức cố định. Noben tư vấn danh mục nhập hàng ban đầu phù hợp với quy mô cửa hàng và vùng nuôi, có thể bắt đầu với nhóm sản phẩm bán chạy rồi mở rộng dần.</p>' },
+  { q: 'Chính sách chiết khấu cho đại lý như thế nào?', a: '<p>Chiết khấu và thưởng doanh số tính theo sản lượng nhập. Phòng kinh doanh gửi bảng giá đại lý và chính sách cụ thể khi gọi lại cho bạn.</p>' },
+  { q: 'Noben giao hàng cho đại lý ở tỉnh xa không?', a: '<p>Có. Noben giao hàng toàn quốc từ nhà máy tại Củ Chi, TP.HCM qua nhà xe và đơn vị vận chuyển. Xem thêm <a href="/chinh-sach/chinh-sach-van-chuyen">chính sách vận chuyển</a>.</p>' },
+  { q: 'Đại lý có được hỗ trợ kỹ thuật không?', a: '<p>Có. Kỹ thuật viên Noben hướng dẫn đại lý về sản phẩm, phác đồ theo từng bệnh và hỗ trợ tư vấn cho bà con khi ao gặp ca khó.</p>' },
+  { q: 'Tôi chưa có cửa hàng, có làm đại lý được không?', a: '<p>Kỹ thuật viên, trang trại lớn hoặc người am hiểu nghề nuôi muốn mở điểm bán đều có thể đăng ký. Noben sẽ trao đổi để chọn hình thức hợp tác phù hợp.</p>' },
+];
+router.get('/tuyen-dai-ly', (req, res) => {
+  const ranges = c.categories.map((cat) => {
+    const list = c.products.filter((p) => p.category === cat.slug);
+    return { cat, count: list.length, items: list.filter((p) => p.cutout).slice(0, 3) };
+  });
+  res.render('lp/dealer', {
+    meta: {
+      title: 'Tuyển đại lý thuốc thủy sản toàn quốc – Giá nhà máy | Noben',
+      description: `Noben tuyển đại lý thuốc thủy sản tại các vùng nuôi tôm, cá: nhập hàng giá nhà máy, đủ ${c.products.length} sản phẩm, chiết khấu theo sản lượng, kỹ thuật viên hỗ trợ tại ao, giao hàng toàn quốc.`,
+      image: '/images/brand/banner-1.webp',
+    },
+    productCount: c.products.length,
+    ranges,
+    faq: DEALER_FAQ,
+    jsonld: [crumbs([['Trang chủ', '/'], ['Hệ thống đại lý', '/dai-ly'], ['Tuyển đại lý', '/tuyen-dai-ly']]), seo.faqPage(DEALER_FAQ)].filter(Boolean),
+  });
+});
+router.get('/lp/:slug', (req, res, next) => {
+  const lp = LANDINGS.find((x) => x.slug === req.params.slug);
+  const p = lp && c.productBySlug[lp.product];
+  if (!p) return next();
+  const s = c.solutionBySlug[lp.solution] || null;
+  const related = c.relatedProducts(p, 6);
+  const solutions = s ? [s] : [];
+  const faq = [...productFaq(p, related, solutions).slice(0, 4), ...((s && s.faq) || []).slice(0, 2).map((f) => ({ q: f.q, a: /^</.test(f.a) ? f.a : `<p>${f.a}</p>` }))];
+  res.render('lp/product', {
+    // Campaign page: indexing stays with the product page, so Google does not see two copies.
+    meta: { title: lp.seo_title, description: lp.description, image: p.image && p.image.src, noindex: true },
+    lp,
+    p,
+    s,
+    bundle: lp.bundle.map((x) => c.productBySlug[x]).filter(Boolean),
+    faq,
+  });
+});
+
 function renderPostList(res, { title, intro, list, path, description }) {
   res.render('pages/posts', {
     meta: { title: `${title} – Thủy sản Noben`, description },
@@ -500,6 +545,7 @@ router.get('/sitemap.xml', (req, res) => {
     ...['/ve-chung-toi', '/chung-nhan', '/gia-cong', '/lien-he', '/tin-tuc', '/tuyen-dung'].map((loc) => ({ loc, priority: '0.6', changefreq: 'monthly' })),
     ...Object.keys(c.pages).map((s) => ({ loc: `/chinh-sach/${s}`, priority: '0.3', changefreq: 'yearly' })),
     { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
+    { loc: '/tuyen-dai-ly', priority: '0.7', changefreq: 'monthly' },
     ...dealers.provinces().map((p) => ({ loc: `/dai-ly/tinh/${p.slug}`, priority: '0.6', changefreq: 'weekly' })),
     ...dealers.dealers.map((d) => ({ loc: d.url, priority: '0.4', changefreq: 'monthly' })),
     // English edition

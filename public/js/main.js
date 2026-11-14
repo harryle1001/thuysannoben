@@ -61,6 +61,13 @@
   }
 
   var EN = document.documentElement.lang === 'en';
+  /* Landing pages: keep the ad campaign (utm_*, gclid, fbclid) with the lead so you can see which ad brought it. */
+  (function () {
+    var q = new URLSearchParams(location.search), tags = [];
+    q.forEach(function (v, k) { if (/^(utm_|gclid$|fbclid$)/.test(k)) tags.push(k + '=' + v.slice(0, 40)); });
+    if (!tags.length) return;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-page-field]'), function (i) { i.value = (i.value + ' ' + tags.join('&')).slice(0, 190); });
+  })();
   /* ---------- Catalog: instant filtering ---------- */
   var catalog = $('[data-catalog]');
   if (catalog) {
@@ -334,9 +341,9 @@
   onScroll();
 
   if (reduce || !('IntersectionObserver' in window)) return;
-  var sel = '.section-head, .h2, .pcard, .acard, .tile, .stage, .fact, .qc__step, .qc__frame, .qc__certs li, .cert, .faq__item, .group, .mvv__item, .about-facts > div, .showcase, .quick-contact, .oem-band__grid > *, .spec__block, .post-item, .policy__main, .why__list > div';
+  var sel = '.section-head, .h2, .pcard, .acard, .tile, .stage, .fact, .qc__step, .qc__frame, .qc__certs li, .cert, .faq__item, .group, .mvv__item, .about-facts > div, .showcase, .quick-contact, .oem-band__grid > *, .spec__block, .post-item, .policy__main, .why__list > div, .lp-card, .lp-range, .lp-steps li, .lp-signs li, .lp-benefits li, .lp-flow li';
   var els = Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function (el) {
-    return !el.closest('.hero, .chatbot, .site-header, .site-footer') && !el.parentElement.closest('.rv');
+    return !el.closest('.hero, .lp-hero, .chatbot, .site-header, .site-footer') && !el.parentElement.closest('.rv');
   });
   els.forEach(function (el) {
     var r = el.getBoundingClientRect();

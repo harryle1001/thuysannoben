@@ -1,0 +1,126 @@
+<%- include('_top') %>
+<%
+  const form = (fid, title) => include('_form', { fid, title, sub: 'Noben gọi lại trong giờ làm việc, gửi bảng giá đại lý và chính sách chiết khấu.', need: 'Làm đại lý', fields: 'dealer', button: 'Đăng ký làm đại lý', success: 'Đã nhận đăng ký. Phòng kinh doanh Noben sẽ gọi lại cho bạn trong giờ làm việc.' });
+  const benefits = [
+    ['i-factory', 'lpd-b1', 'Giá gốc từ nhà máy', 'lpd-b1-d', 'Noben trực tiếp sản xuất tại Củ Chi, không qua trung gian. Đại lý nhập đúng giá nhà máy, biên lợi nhuận rõ ràng.'],
+    ['i-package', 'lpd-b2', 'Một nguồn hàng, đủ ' + productCount + ' sản phẩm', 'lpd-b2-d', 'Vi sinh, khoáng, thức ăn bổ sung, sản phẩm gan ruột, gây màu nước, diệt ốc. Nhập một nơi, đủ hàng cho cả vụ nuôi.'],
+    ['i-chat', 'lpd-b3', 'Kỹ thuật viên đồng hành', 'lpd-b3-d', 'Đội kỹ thuật hỗ trợ đại lý tư vấn cho bà con tại ao, xử lý ca khó và hướng dẫn phác đồ theo từng giai đoạn nuôi.'],
+    ['i-shield', 'lpd-b4', 'Dễ bán, dễ tạo niềm tin', 'lpd-b4-d', 'Nhà máy ISO 9001:2015, sản phẩm thức ăn bổ sung hợp quy VinaCert, nhãn mác đầy đủ thành phần, liều dùng, hạn dùng.'],
+    ['i-pin', 'lpd-b5', 'Có tên trên bản đồ đại lý', 'lpd-b5-d', 'Đại lý được đưa lên hệ thống đại lý của website thuysannoben.com kèm địa chỉ, số điện thoại, nút chỉ đường. Bà con trong vùng tìm đến bạn.'],
+    ['i-file', 'lpd-b6', 'Chiết khấu theo sản lượng', 'lpd-b6-d', 'Mức chiết khấu và thưởng doanh số theo sản lượng nhập, trao đổi trực tiếp khi Noben gọi lại. Có tài liệu, catalogue hỗ trợ bán hàng.'],
+  ];
+  const steps = [
+    ['lpd-s1', 'Đăng ký', 'lpd-s1-d', 'Để lại họ tên, số điện thoại và khu vực. Mất chưa tới một phút.'],
+    ['lpd-s2', 'Noben gọi tư vấn', 'lpd-s2-d', 'Phòng kinh doanh gọi lại trong giờ làm việc, gửi bảng giá đại lý, chính sách và danh mục sản phẩm.'],
+    ['lpd-s3', 'Thỏa thuận hợp tác', 'lpd-s3-d', 'Thống nhất khu vực, sản lượng, chiết khấu và phương thức giao hàng, thanh toán.'],
+    ['lpd-s4', 'Nhập hàng và bán', 'lpd-s4-d', 'Noben giao hàng toàn quốc, đưa cửa hàng lên bản đồ đại lý và hỗ trợ kỹ thuật suốt quá trình kinh doanh.'],
+  ];
+%>
+<section class="lp-hero lp-hero--dealer" aria-labelledby="lp-title">
+  <div class="lp-hero__bg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="/media/noben-hero-poster.webp" data-hero-video>
+      <source src="/media/noben-hero.webm" type="video/webm">
+      <source src="/media/noben-hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap lp-hero__grid">
+    <div class="lp-hero__copy">
+      <p class="lp-kicker"><%- tx('lpd-kicker', 'Chương trình hợp tác đại lý ' + new Date().getFullYear()) %></p>
+      <h1 id="lp-title" class="lp-hero__title"><%- tx('lpd-title', 'Trở thành đại lý thuốc thủy sản Noben') %></h1>
+      <p class="lp-hero__lead"><%- tx('lpd-lead', 'Nhập hàng trực tiếp từ nhà máy, đủ ' + productCount + ' sản phẩm cho ao tôm, cá, có kỹ thuật viên đồng hành. Noben đang mở rộng đại lý tại các vùng nuôi trên cả nước.') %></p>
+      <ul class="lp-checks">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><%- tx('lpd-h1', 'Giá nhà máy, chiết khấu theo sản lượng') %></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><%- tx('lpd-h2', 'Hỗ trợ kỹ thuật tại ao cho khách của đại lý') %></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><%- tx('lpd-h3', 'Giao hàng toàn quốc, có tên trên bản đồ đại lý') %></li>
+      </ul>
+      <div class="lp-proof">
+        <span><strong><%= company.founded_years %>+</strong> năm sản xuất</span>
+        <span><strong><%= productCount %></strong> sản phẩm</span>
+        <span><strong>ISO</strong> 9001:2015</span>
+      </div>
+    </div>
+    <div class="lp-hero__form" id="dang-ky"><%- form('lpd', 'Đăng ký làm đại lý') %></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="lp-why">
+  <div class="wrap">
+    <header class="lp-head">
+      <p class="lp-eyebrow">Quyền lợi đại lý</p>
+      <h2 id="lp-why" class="h2"><%- tx('lpd-why', 'Vì sao đại lý chọn Noben') %></h2>
+    </header>
+    <div class="lp-cards">
+      <% benefits.forEach(([ico, k, t, kd, d]) => { %>
+      <article class="lp-card"><span class="lp-card__ico"><svg class="ico" aria-hidden="true"><use href="#<%= ico %>"/></svg></span><h3><%- tx(k, t) %></h3><p><%- tx(kd, d) %></p></article>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="lp-range">
+  <div class="wrap">
+    <header class="lp-head">
+      <p class="lp-eyebrow">Danh mục sản phẩm</p>
+      <h2 id="lp-range" class="h2"><%- tx('lpd-range', 'Đủ hàng cho cả vụ nuôi, từ chuẩn bị ao đến thu hoạch') %></h2>
+    </header>
+    <div class="lp-ranges">
+      <% ranges.forEach((r) => { %>
+      <a class="lp-range lp-range--<%= r.cat.slug %>" href="/san-pham/nhom/<%= r.cat.slug %>">
+        <span class="lp-range__shots" aria-hidden="true"><% r.items.forEach((p) => { %><%- img(p.shot, { alt: '', class: p.cutout ? 'is-cutout' : '' }) %><% }) %></span>
+        <span class="lp-range__name"><%= r.cat.name %></span>
+        <span class="lp-range__n"><%= r.count %> sản phẩm</span>
+        <span class="lp-range__blurb"><%= r.cat.blurb %></span>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="lp-steps">
+  <div class="wrap">
+    <header class="lp-head">
+      <p class="lp-eyebrow">Quy trình</p>
+      <h2 id="lp-steps" class="h2"><%- tx('lpd-steps', '4 bước để trở thành đại lý') %></h2>
+    </header>
+    <ol class="lp-steps">
+      <% steps.forEach(([k, t, kd, d]) => { %><li><h3><%- tx(k, t) %></h3><p><%- tx(kd, d) %></p></li><% }) %>
+    </ol>
+  </div>
+</section>
+
+<%- include('../partials/quality') %>
+
+<section class="section" aria-labelledby="lp-req">
+  <div class="wrap lp-two">
+    <div>
+      <p class="lp-eyebrow">Điều kiện hợp tác</p>
+      <h2 id="lp-req" class="h2"><%- tx('lpd-req', 'Noben tìm đại lý như thế nào') %></h2>
+      <ul class="ticks lp-ticks">
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('lpd-r1', 'Có cửa hàng hoặc điểm bán thuốc, vật tư thủy sản tại vùng nuôi tôm, cá') %></span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('lpd-r2', 'Am hiểu hoặc sẵn sàng học kỹ thuật nuôi để tư vấn đúng cho bà con') %></span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('lpd-r3', 'Kinh doanh uy tín, bán đúng hàng chính hãng, đúng hướng dẫn trên nhãn') %></span></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span><%- tx('lpd-r4', 'Kỹ thuật viên, trang trại lớn muốn mở điểm bán cũng được chào đón') %></span></li>
+      </ul>
+    </div>
+    <div>
+      <p class="lp-eyebrow">Hỏi đáp</p>
+      <h2 class="h2">Câu hỏi thường gặp</h2>
+      <div class="faq">
+        <% faq.forEach((f, i) => { %><details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details><% }) %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lp-final" aria-labelledby="lp-final-title">
+  <div class="wrap lp-final__grid">
+    <div>
+      <h2 id="lp-final-title" class="h2"><%- tx('lpd-final', 'Mở rộng kinh doanh cùng Noben ngay mùa vụ này') %></h2>
+      <p class="lead"><%- tx('lpd-final-lead', 'Đăng ký hoặc gọi trực tiếp phòng kinh doanh để nhận bảng giá đại lý.') %></p>
+      <a class="phone-big" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
+      <p class="lp-final__alt">Phòng kinh doanh: <% company.phones.forEach((p, i) => { %><a href="<%= tel(p) %>"><%= p %></a><%= i < company.phones.length - 1 ? ', ' : '' %><% }) %></p>
+    </div>
+    <%- form('lpd2', 'Nhận bảng giá đại lý') %>
+  </div>
+</section>
+<%- include('_bottom', { ctaShort: 'Đăng ký đại lý' }) %>

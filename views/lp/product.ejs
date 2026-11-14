@@ -1,0 +1,117 @@
+<%- include('_top') %>
+<%
+  const form = (fid, title) => include('_form', { fid, title, sub: 'Kỹ thuật viên Noben gọi lại tư vấn cách dùng cho ao của bạn và báo giá nhà máy.', need: 'Mua sản phẩm', product: p.name, button: 'Nhận tư vấn và báo giá', success: 'Đã nhận thông tin. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.' });
+  const k = (x) => 'lp-' + lp.slug + '-' + x;
+%>
+<section class="lp-hero lp-hero--product" aria-labelledby="lp-title">
+  <div class="wrap lp-hero__grid">
+    <div class="lp-hero__copy">
+      <p class="lp-kicker"><%- tx(k('kicker'), lp.kicker) %></p>
+      <h1 id="lp-title" class="lp-hero__title"><%- tx(k('title'), lp.title) %></h1>
+      <p class="lp-hero__lead"><%- tx(k('lead'), lp.lead) %></p>
+      <ul class="lp-checks">
+        <% lp.points.forEach((pt, i) => { %><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><%- tx(k('pt' + i), pt) %></li><% }) %>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--sun btn--lg" href="#dang-ky">Nhận tư vấn và báo giá</a>
+        <a class="btn btn--ghost btn--lg" href="<%= tel(company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
+      </div>
+      <div class="lp-proof">
+        <span><strong>ISO</strong> 9001:2015</span>
+        <span><strong><%= company.founded_years %>+</strong> năm sản xuất</span>
+        <span><strong>Miễn phí</strong> tư vấn tại ao</span>
+      </div>
+    </div>
+    <figure class="lp-pack cat-bg--<%= p.category %>">
+      <span class="lp-pack__glow" aria-hidden="true"></span>
+      <%- img(p.shot, { alt: 'Bao bì sản phẩm ' + p.name, loading: 'eager', fetchpriority: 'high', class: p.cutout ? 'lp-pack__img is-cutout' : 'lp-pack__img' }) %>
+      <figcaption><span class="cat-tag cat-tag--<%= p.category %>"><%= p.categoryInfo.name %></span><strong><%= p.name %></strong></figcaption>
+    </figure>
+  </div>
+</section>
+
+<% if (s) { %>
+<section class="section" aria-labelledby="lp-pain">
+  <div class="wrap lp-two lp-two--wide">
+    <div>
+      <p class="lp-eyebrow">Nhận biết sớm</p>
+      <h2 id="lp-pain" class="h2"><%- tx(k('pains'), lp.pains_title) %></h2>
+      <p class="lead lp-muted"><%= s.intro %></p>
+      <a class="text-link" href="<%= s.url %>">Xem đầy đủ cách xử lý</a>
+    </div>
+    <ul class="lp-signs">
+      <% s.signs.forEach((x) => { %><li><span class="lp-signs__dot" aria-hidden="true"></span><%= x %></li><% }) %>
+    </ul>
+  </div>
+</section>
+<% } %>
+
+<section class="section section--tint" aria-labelledby="lp-benefit">
+  <div class="wrap">
+    <header class="lp-head">
+      <p class="lp-eyebrow">Công dụng theo nhãn</p>
+      <h2 id="lp-benefit" class="h2"><%= p.name %> giúp gì cho ao của bạn</h2>
+    </header>
+    <ol class="lp-benefits<%= p.uses.length === 3 ? " lp-benefits--3" : "" %>">
+      <% p.uses.forEach((u, i) => { %><li><span class="lp-benefits__n"><%= String(i + 1).padStart(2, '0') %></span><p><%- u %></p></li><% }) %>
+    </ol>
+    <p class="lp-label"><a href="<%= p.image.src %>" data-lb="<%= p.image.src %>" data-caption="Nhãn đầy đủ của <%= p.name %>"><%- img(p.image, { alt: '' }) %><span><strong>Xem nhãn gốc</strong> Thành phần, số đăng ký, hạn dùng in trên bao bì</span></a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="lp-dose">
+  <div class="wrap lp-two">
+    <div class="lp-dose">
+      <p class="lp-eyebrow">Hướng dẫn sử dụng</p>
+      <h2 id="lp-dose" class="h2">Cách dùng <%= p.name %></h2>
+      <ul class="dose-list"><% p.dose.forEach((d) => { %><li><%- d %></li><% }) %></ul>
+      <p class="spec__note">Liều có thể điều chỉnh theo tình trạng ao và sức khỏe tôm. Gọi kỹ thuật viên trước khi dùng để được hướng dẫn cụ thể.</p>
+    </div>
+    <% if (s && s.steps.length) { %>
+    <div>
+      <p class="lp-eyebrow">Phác đồ của kỹ thuật Noben</p>
+      <h2 class="h2">Các bước xử lý</h2>
+      <ol class="lp-flow"><% s.steps.forEach((x) => { %><li><%= x %></li><% }) %></ol>
+    </div>
+    <% } %>
+  </div>
+</section>
+
+<% if (bundle.length) { %>
+<section class="section section--tint" aria-labelledby="lp-bundle">
+  <div class="wrap">
+    <header class="lp-head">
+      <p class="lp-eyebrow">Kết hợp hiệu quả hơn</p>
+      <h2 id="lp-bundle" class="h2"><%- tx(k('bundle'), lp.bundle_title) %></h2>
+    </header>
+    <div class="lp-bundle">
+      <% bundle.forEach((x) => { %><%- include('../partials/product-card', { p: x }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<%- include('../partials/quality') %>
+
+<section class="section" aria-labelledby="lp-faq">
+  <div class="wrap lp-faqwrap">
+    <p class="lp-eyebrow">Hỏi đáp</p>
+    <h2 id="lp-faq" class="h2">Câu hỏi thường gặp về <%= p.name %></h2>
+    <div class="faq">
+      <% faq.forEach((f, i) => { %><details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="lp-final" aria-labelledby="lp-final-title" id="dang-ky">
+  <div class="wrap lp-final__grid">
+    <div>
+      <h2 id="lp-final-title" class="h2">Đặt <%= p.name %> chính hãng, giá nhà máy</h2>
+      <p class="lead">Để lại số hoặc gọi ngay, kỹ thuật viên Noben tư vấn liều dùng cho đúng ao của bạn và báo giá trong ngày.</p>
+      <a class="phone-big" href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= company.hotline %></a>
+      <p class="lp-final__alt">Giao hàng toàn quốc · Có giá riêng cho đại lý · <a href="/tuyen-dai-ly">Đăng ký làm đại lý</a></p>
+    </div>
+    <%- form('lpp', 'Nhận tư vấn và báo giá ' + p.name) %>
+  </div>
+</section>
+<%- include('_bottom', { ctaShort: 'Nhận báo giá' }) %>
