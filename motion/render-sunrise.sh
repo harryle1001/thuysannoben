@@ -19,9 +19,10 @@ enc() { # master name crf maxrate vp9crf
 }
 enc LogoSunrise             sunrise-rise        ${CRF:-23} 900k 36
 enc LogoSunriseLoop         sunrise-loop        ${CRF:-23} 900k 36
-enc LogoSunriseVertical     sunrise-rise-9x16   ${CRF:-23} 900k 36
-enc LogoSunriseLoopVertical sunrise-loop-9x16   ${CRF:-23} 900k 36
+# Phones: lighter cut (the hero shade sits on top of it anyway)
+enc LogoSunriseVertical     sunrise-rise-9x16   ${CRF:-26} 560k 40
+enc LogoSunriseLoopVertical sunrise-loop-9x16   ${CRF:-26} 560k 40
 # Posters: last frame of the rise (logo up) = first frame of the loop.
-ffmpeg -v error -y -i out/LogoSunriseLoop-master.mp4 -frames:v 1 -c:v libwebp -quality 72 -compression_level 6 "$OUT/sunrise-poster.webp"
-ffmpeg -v error -y -i out/LogoSunriseLoopVertical-master.mp4 -frames:v 1 -c:v libwebp -quality 66 -compression_level 6 "$OUT/sunrise-poster-9x16.webp"
+ffmpeg -v error -y -i out/LogoSunriseLoop-master.mp4 -frames:v 1 -c:v libwebp -quality 62 -compression_level 6 "$OUT/sunrise-poster.webp"
+ffmpeg -v error -y -i out/LogoSunriseLoopVertical-master.mp4 -frames:v 1 -c:v libwebp -quality 52 -compression_level 6 "$OUT/sunrise-poster-9x16.webp"
 ls -la "$OUT"
