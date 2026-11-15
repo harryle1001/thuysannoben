@@ -63,6 +63,7 @@ function render(cut) {
     if (k > 0) { whoosh(s.at, 0.9, 0.9); thump(s.at + 0.05, 0.4); }
     chime(s.at + 0.35, notes[k % notes.length], 0.045);
     if (s.key === "line" || s.key === "produce" || s.key === "pack") for (let t = s.at + 0.6; t < s.at + s.dur - 0.4; t += 1.1 / 2) tick(t, 0.06);
+    if (s.key === "harvest") { whoosh(s.at + 5.7, 1.6, 0.6); whoosh(s.at + 7.7, 0.5, 1.1); thump(s.at + 7.65, 0.18); chime(s.at + 10.9, 880, 0.05, 1.2); chime(s.at + 11.1, 1174.66, 0.04, 1.4); }
     if (s.key === "qc" || s.key === "outqc") chime(s.at + 1.65, 1318.5, 0.05, 0.9);
     if (s.key === "close") { chime(s.at + 0.2, 587.33, 0.06, 1.2); chime(s.at + 0.32, 880, 0.05, 1.2); chime(s.at + 0.44, 1174.66, 0.04, 1.4); }
   });
@@ -75,4 +76,4 @@ function render(cut) {
   fs.mkdirSync("public/sfx", { recursive: true }); fs.writeFileSync(`public/sfx/factory-${cut}.wav`, buf);
   console.log(`wrote public/sfx/factory-${cut}.wav ${DUR.toFixed(2)} s`);
 }
-render("full"); render("short"); render("process");
+render("full"); render("short"); render("process"); render("harvest");
