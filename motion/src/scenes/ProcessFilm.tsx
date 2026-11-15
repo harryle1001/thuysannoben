@@ -199,18 +199,18 @@ const Harvest: React.FC<{ dur: number }> = () => {
   const frame = useCurrentFrame();
   const { W, H, fps, v, pick } = useL();
   const sec = frame / fps;
-  const shadow = "0 2px 24px rgba(20,8,30,0.55)";
+  const shadow = "0 2px 6px rgba(20,8,30,0.55), 0 4px 30px rgba(20,8,30,0.6)";
   const a = interpolate(sec, [0.4, 1.0, 4.0, 4.5], [0, 1, 1, 0], theme.clamp);
   return (
     <AbsoluteFill>
       <HarvestStage />
-      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.06), top: pick(H * 0.07, H * 0.08), width: pick(W * 0.84, W * 0.5), opacity: a, transform: `translateY(${(1 - a) * 16}px)` }}>
+      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.06), top: pick(H * 0.07, H * 0.08), width: pick(W * 0.84, W * 0.88), opacity: a, transform: `translateY(${(1 - a) * 16}px)` }}>
         <div style={{ ...kickerStyle, color: "#ffe3a0", fontSize: v ? 28 : 24, textShadow: shadow }}>Đến tay bà con</div>
-        <div style={{ ...display, fontSize: v ? 84 : 70, marginTop: 14, textShadow: shadow }}>Giao tận ao, đồng hành suốt vụ nuôi</div>
+        <div style={{ ...display, fontSize: v ? 80 : 70, marginTop: 14, textShadow: shadow, textWrap: "balance", whiteSpace: v ? "normal" : "nowrap" } as React.CSSProperties}>Giao tận ao, đồng hành suốt vụ nuôi</div>
       </div>
       <Sequence from={Math.round(fps * 10.8)} layout="none">
         <div style={{ position: "absolute", left: 0, right: 0, top: pick(H * 0.08, H * 0.09), display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", padding: "0 60px" }}>
-          <WordReveal per={4} text="Niềm vui ngày thu hoạch" hero={["thu", "hoạch"]} style={{ ...display, fontSize: v ? 104 : 96, justifyContent: "center", columnGap: 24, textShadow: shadow }} />
+          <WordReveal per={4} text="Niềm vui ngày thu hoạch" hero={["thu", "hoạch"]} style={{ ...display, fontSize: v ? 96 : 96, justifyContent: "center", columnGap: 24, textShadow: shadow, maxWidth: v ? 640 : undefined }} />
           <Entrance delay={Math.round(fps * 0.6)} y={16}><p style={{ ...bodyStyle, color: "#fff3dc", fontSize: v ? 34 : 30, margin: "18px 0 0", textShadow: shadow }}>Kỹ thuật viên Noben hỗ trợ miễn phí suốt vụ nuôi.</p></Entrance>
         </div>
       </Sequence>

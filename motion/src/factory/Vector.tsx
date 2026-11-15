@@ -11,36 +11,37 @@ const ramp = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1],
 // ---------- generic Noben-style packs (not copies of real labels) ----------
 export type PackKind = "bottle" | "bag" | "bucket" | "jar";
 export const PACK_ORDER: PackKind[] = ["bottle", "bag", "bucket", "jar", "bottle", "bag"];
-export const PackIcon: React.FC<{ kind: PackKind; h: number; tone?: number }> = ({ kind, h, tone = 0 }) => {
-  const band = tone % 2 ? C.accent : C.primary;
-  const body = "rgba(11,35,71,0.92)";
+// `line`: pure outline version (same line-art as the machines) for packs riding the conveyor.
+export const PackIcon: React.FC<{ kind: PackKind; h: number; tone?: number; line?: boolean }> = ({ kind, h, tone = 0, line }) => {
+  const band = line ? "transparent" : tone % 2 ? C.accent : C.primary;
+  const body = line ? "rgba(4,20,46,0.55)" : "rgba(11,35,71,0.92)";
   const st = { stroke: C.text, strokeWidth: 3, strokeLinejoin: "round" as const };
   const mark = (x: number, y: number, s: number) => <path d={`M${x} ${y - s} L${x + s} ${y} L${x} ${y + s} L${x - s} ${y} Z`} fill={C.primary} stroke={C.bg} strokeWidth={1.5} />;
   const shapes: Record<PackKind, { vb: [number, number]; el: React.ReactNode }> = {
     bottle: { vb: [80, 160], el: (<g>
       <rect x={30} y={4} width={20} height={16} rx={3} fill={band} {...st} />
       <path d="M28 20 H52 V34 Q72 42 72 62 V148 Q72 156 64 156 H16 Q8 156 8 148 V62 Q8 42 28 34 Z" fill={body} {...st} />
-      <rect x={8} y={74} width={64} height={52} fill={band} opacity={0.9} />
+      <rect x={8} y={74} width={64} height={52} fill={band} stroke={line ? C.textDim : "none"} strokeWidth={2} opacity={0.9} />
       {mark(40, 92, 9)}<rect x={20} y={108} width={40} height={5} rx={2.5} fill={C.bg} opacity={0.6} />
       <path d="M16 64 V140" stroke="rgba(255,255,255,0.35)" strokeWidth={4} strokeLinecap="round" />
     </g>) },
     bag: { vb: [110, 150], el: (<g>
       <path d="M8 14 H102 L98 142 Q98 146 94 146 H16 Q12 146 12 142 Z" fill={body} {...st} />
       <path d="M8 14 H102" stroke={C.text} strokeWidth={3} strokeDasharray="6 4" />
-      <rect x={20} y={40} width={70} height={64} rx={6} fill={band} opacity={0.92} />
+      <rect x={20} y={40} width={70} height={64} rx={6} fill={band} stroke={line ? C.textDim : "none"} strokeWidth={2} opacity={0.92} />
       {mark(55, 64, 11)}<rect x={32} y={84} width={46} height={6} rx={3} fill={C.bg} opacity={0.6} />
     </g>) },
     bucket: { vb: [130, 140], el: (<g>
       <path d="M20 34 Q65 4 110 34" fill="none" stroke={C.textDim} strokeWidth={3} />
       <rect x={10} y={30} width={110} height={14} rx={4} fill={C.text} />
       <path d="M14 44 H116 L108 134 Q108 138 104 138 H26 Q22 138 22 134 Z" fill={body} {...st} />
-      <rect x={20} y={62} width={90} height={48} fill={band} opacity={0.9} />
+      <rect x={20} y={62} width={90} height={48} fill={band} stroke={line ? C.textDim : "none"} strokeWidth={2} opacity={0.9} />
       {mark(65, 80, 10)}<rect x={42} y={96} width={46} height={5} rx={2.5} fill={C.bg} opacity={0.6} />
     </g>) },
     jar: { vb: [110, 130], el: (<g>
       <rect x={12} y={6} width={86} height={22} rx={5} fill={band} {...st} />
       <rect x={8} y={28} width={94} height={98} rx={12} fill={body} {...st} />
-      <rect x={8} y={50} width={94} height={50} fill={band} opacity={0.9} />
+      <rect x={8} y={50} width={94} height={50} fill={band} stroke={line ? C.textDim : "none"} strokeWidth={2} opacity={0.9} />
       {mark(55, 68, 10)}<rect x={30} y={86} width={50} height={5} rx={2.5} fill={C.bg} opacity={0.6} />
     </g>) },
   };

@@ -230,14 +230,14 @@ export const LineArt: React.FC<{ width: number; delay?: number; labels?: boolean
         )}
       </svg>
       {/* finished packs roll off the end of the line */}
-      {PACK_ORDER.map((kind, i) => {
-        const slotT = (t * 0.55 + i / 6) % 1;
+      {PACK_ORDER.slice(0, 3).map((kind, i) => {
+        const slotT = (t * 0.3 + i / 3) % 1;
         const x = interpolate(slotT, [0, 1], [1300, 1620]);
         const o = Math.min(1, slotT * 6, (1 - slotT) * 5) * ramp(f, fps * 1.2, fps * 2);
         const s = width / VBW;
         return (
-          <div key={i} style={{ position: "absolute", left: x * s, top: (beltY - 130) * s, opacity: o, transform: "translateX(-50%)" }}>
-            <PackIcon kind={kind} h={130 * s} tone={i} />
+          <div key={i} style={{ position: "absolute", left: x * s, top: (beltY - 115) * s, opacity: o, transform: "translateX(-50%)" }}>
+            <PackIcon kind={kind} h={115 * s} tone={i} line />
           </div>
         );
       })}
