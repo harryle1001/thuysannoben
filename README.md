@@ -9,7 +9,7 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
   - Lọc theo nhóm, theo vấn đề ao nuôi, hoặc tìm theo tên.
   - Tìm kiếm có dấu hay không dấu đều được.
   - Mỗi sản phẩm có trang riêng: công dụng, hướng dẫn sử dụng, nút Gọi / Zalo / Gửi yêu cầu, sản phẩm liên quan.
-- **Kiến thức nuôi tôm:** 28 bài (17 bài mới chuẩn SEO và 11 bài từ website cũ), chia 4 chuyên mục, có mục lục, hỏi đáp và sản phẩm liên quan.
+- **Kiến thức nuôi tôm:** bài chuẩn SEO có nguồn tham khảo và bài từ website cũ, chia 4 chuyên mục, có mục lục, hỏi đáp và sản phẩm liên quan.
 - **Giải pháp theo vấn đề ao nuôi:** 8 trang như "Thuốc trị phân trắng, gan tụy cho tôm", mỗi trang có dấu hiệu, các bước xử lý và sản phẩm phù hợp.
 - **Các trang khác:** Về Noben, Chứng nhận, Gia công, Liên hệ (có bản đồ), các trang chính sách.
 - **Sửa nội dung bằng cây bút:** quản trị viên đăng nhập rồi sửa chữ ngay trên trang (xem phần bên dưới).

@@ -28,6 +28,8 @@ const hiddenProducts = Object.fromEntries(productData.filter((p) => HIDDEN.has(p
 const MERGED = {
   'benh-ruot-do-tren-tom-va-cach-phong-ngua': 'benh-phan-trang-tren-tom-the',
   'benh-mem-vo-rot-cuc-thit': 'tom-mem-vo-cham-lot-nguyen-nhan-cach-xu-ly',
+  'ky-thuat-chon-tom-giong-tot-ngay-tai-trai-tom-giong': 'cach-chon-tom-giong-the-tot-kiem-tra-pcr',
+  'nuoi-tom-mua-mua-va-cach-khac-phuc': 'nuoi-tom-mua-mua-phong-soc-ph-do-kiem-tao-tan',
   // Posts promoting products no longer listed on the site.
   'su-dung-prazi-s-de-phong-va-tri-benh-teo-gan-tuy-phan-trang-trong-duong-ruot-tren-tom': 'benh-phan-trang-tren-tom-the',
   'cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-sinh-trung-hen-trong-ao-nuoi-tom': 'tom-bi-nam-nam-dong-tien-ao-bat',
