@@ -239,7 +239,7 @@ router.get('/', (req, res) => {
     topics: c.TOPICS,
     productCount: c.products.length,
     allProducts: c.products,
-    certificates: c.gallery.certificates.slice(0, 4),
+    certificates: certSlides(),
     videos: c.videos,
     homeReviews: reviews.approved().length >= 3 ? reviews.approved().slice(0, 6).map(reviewView) : [], // only real, approved reviews
     jsonld: [org(), seo.website()],
@@ -514,10 +514,31 @@ router.get('/thuong-hieu', (req, res) =>
     jsonld: [crumbs([['Trang chủ', '/'], ['Nhận diện thương hiệu', '/thuong-hieu']])],
   })
 );
+// Certificate slides in a meaningful order, each labelled by what the page actually is
+// (the old site's two posts mixed the documents, so labels come from the documents themselves).
+const CERT_SLIDES = [
+  ['chung-nhan-iso-9001-2015-1', 'Chứng nhận ISO 9001:2015 (BVQA)'],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-1', 'Hợp quy VinaCert QCVN 02-31-2:2019: thức ăn bổ sung'],
+  ['chung-nhan-iso-9001-2015-4', 'Hợp quy VinaCert QCVN 02-32-1:2019: sản phẩm xử lý môi trường'],
+  ['chung-nhan-iso-9001-2015-3', 'Hợp quy VinaCert QCVN 02-32-2:2020: sản phẩm xử lý môi trường'],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-2', 'Bản công bố hợp quy số 02/2021: thức ăn bổ sung', 1, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-3', 'Bản công bố hợp quy số 02/2021: thức ăn bổ sung', 2, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-4', 'Bản công bố hợp quy số 02/2021: thức ăn bổ sung', 3, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-5', 'Bản công bố hợp quy số 02/2021: thức ăn bổ sung', 4, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-6', 'Bản công bố hợp quy số 01/2021: sản phẩm xử lý môi trường', 1, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-7', 'Bản công bố hợp quy số 01/2021: sản phẩm xử lý môi trường', 2, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-8', 'Bản công bố hợp quy số 01/2021: sản phẩm xử lý môi trường', 3, 4],
+  ['chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung-9', 'Bản công bố hợp quy số 01/2021: sản phẩm xử lý môi trường', 4, 4],
+];
+function certSlides() {
+  const bySrc = Object.fromEntries(c.gallery.certificates.map((g) => [g.src.replace(/^.*\/|\.webp$/g, ''), g]));
+  return CERT_SLIDES.filter(([k]) => bySrc[k]).map(([k, group, page, pages]) => ({ ...bySrc[k], group, page: page || 1, pages: pages || 1 }));
+}
 router.get('/chung-nhan', (req, res) =>
   res.render('pages/certificates', {
     meta: { title: 'Chứng nhận ISO 9001:2015 và hợp quy – Noben', description: 'Công ty TNHH Noben đạt chứng nhận ISO 9001:2015 và chứng nhận hợp quy sản phẩm thức ăn thủy sản, thức ăn bổ sung do VinaCert cấp.' },
     certPosts: c.posts.filter((p) => p.category === 'chung-nhan'),
+    certSlides: certSlides(),
     jsonld: [crumbs([['Trang chủ', '/'], ['Chứng nhận', '/chung-nhan']])],
   })
 );

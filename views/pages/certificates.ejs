@@ -6,6 +6,7 @@
     <p class="page-head__lead"><%- tx('cert-lead', 'Hệ thống quản lý chất lượng của nhà máy Noben đạt ISO 9001:2015. Sản phẩm thức ăn bổ sung được VinaCert chứng nhận hợp quy theo QCVN 02-31-2:2019/BNNPTNT.') %></p>
   </div>
 </section>
+<%- include('../partials/cert-carousel', { items: certSlides, id: 'certflow', title: 'Xem nhanh tất cả giấy chứng nhận', lead: 'Kéo qua lại, bấm vào tờ ở giữa để phóng to.', more: false }) %>
 <% certPosts.forEach((post) => { %>
 <section class="section section--top-tight">
   <div class="wrap">

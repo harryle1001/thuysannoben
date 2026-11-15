@@ -1,0 +1,34 @@
+<%#
+  Certificate carousel: every certificate page in one draggable row (coverflow).
+  Params: items [{ src, w, h, group, page, pages }], id, title, lead, more (link to /chung-nhan or false)
+%>
+<section class="certflow" aria-labelledby="<%= id %>-title" data-certflow>
+  <div class="wrap certflow__head">
+    <div>
+      <p class="lp-eyebrow">Chất lượng được chứng nhận</p>
+      <h2 id="<%= id %>-title" class="h2"><%= title %></h2>
+      <% if (locals.lead) { %><p class="certflow__lead"><%= lead %></p><% } %>
+    </div>
+    <ul class="certflow__seals" aria-label="Các chứng nhận">
+      <li><strong>ISO 9001:2015</strong><span>Hệ thống quản lý chất lượng nhà máy</span></li>
+      <li><strong>Hợp quy VinaCert</strong><span>Thức ăn bổ sung và sản phẩm xử lý môi trường</span></li>
+    </ul>
+  </div>
+  <div class="certflow__stage">
+    <ul class="certflow__track" tabindex="0" role="region" aria-roledescription="băng chuyền" aria-label="<%= items.length %> trang giấy chứng nhận. Kéo hoặc dùng phím mũi tên để xem." data-certflow-track data-gallery>
+      <% items.forEach((g, i) => { %>
+      <li class="certflow__item" data-certflow-item data-group="<%= g.group %>" data-page="<%= g.page %>/<%= g.pages %>">
+        <a href="<%= g.src %>" data-lb="<%= g.src %>" data-caption="<%= g.group %><%= g.pages > 1 ? ', trang ' + g.page + '/' + g.pages : '' %>" draggable="false">
+          <%- img(g, { alt: g.group + (g.pages > 1 ? ', trang ' + g.page : ''), draggable: 'false', loading: i < 5 ? 'eager' : 'lazy' }) %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+  <div class="wrap certflow__bar">
+    <button class="certflow__nav" type="button" data-certflow-prev aria-label="Chứng nhận trước"><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg></button>
+    <p class="certflow__info" aria-live="polite"><strong data-certflow-group><%= items[0].group %></strong><span><span data-certflow-index>1</span> / <%= items.length %> · Bấm để phóng to</span></p>
+    <button class="certflow__nav" type="button" data-certflow-next aria-label="Chứng nhận sau"><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+  </div>
+  <% if (locals.more) { %><p class="wrap certflow__more"><a class="text-link text-link--light" href="<%= more %>">Xem trang chứng nhận</a></p><% } %>
+</section>

@@ -1953,3 +1953,38 @@ html.has-sunrise body { background: transparent; }
   .float-chat__label { animation: chat-label-out 0.618s ease 6.854s forwards; }
 }
 @keyframes chat-label-out { to { opacity: 0; visibility: hidden; } }
+
+/* =====================================================================
+   Certificate coverflow (partials/cert-carousel.ejs, js/certflow.js)
+   card width 61.8 % of the phone screen; side cards 1/√φ, far cards 1/φ
+   ===================================================================== */
+.certflow { background: radial-gradient(120% 90% at 50% 0%, #10306a 0%, #071a3a 61.8%, #041029 100%); color: var(--on-ink); padding-block: var(--space-8) var(--space-7); overflow: hidden; }
+.certflow .h2 { color: #fff; }
+.certflow .lp-eyebrow { color: var(--sun); }
+.certflow__head { display: grid; gap: var(--space-5); margin-bottom: var(--space-6); }
+@media (min-width: 900px) { .certflow__head { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); align-items: end; } }
+.certflow__lead { margin-top: var(--space-3); color: var(--on-ink-muted); max-width: 58ch; }
+.certflow__seals { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
+.certflow__seals li { padding: var(--space-4); border: 1px solid rgba(255, 194, 14, 0.38); border-radius: var(--radius-m); background: rgba(255, 255, 255, 0.04); }
+.certflow__seals strong { display: block; font-family: var(--font-display); font-size: var(--step-2); color: var(--sun); line-height: 1.1; }
+.certflow__seals span { font-size: var(--step--1); color: var(--on-ink-muted); }
+.certflow__track {
+  list-style: none; margin: 0; display: flex; gap: var(--space-4); overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: var(--space-6) calc(50% - min(30.9vw, 130px)); scrollbar-width: none; cursor: grab; outline: none;
+  overscroll-behavior-x: contain;
+}
+.certflow__track::-webkit-scrollbar { display: none; }
+.certflow__track.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+.certflow__item { flex: 0 0 min(61.8vw, 260px); scroll-snap-align: center; transition: transform 262ms var(--ease), opacity 262ms var(--ease); transform-origin: 50% 50%; }
+.certflow__track.is-dragging .certflow__item, .certflow__track:active .certflow__item { transition: none; }
+.certflow__item a { display: block; padding: 10px; border-radius: var(--radius-m); background: linear-gradient(135deg, #ffe08a, #c99a2e 38.2%, #ffe6a0 61.8%, #b78516); box-shadow: 0 26px 42px -16px rgba(0, 0, 0, 0.6); user-select: none; -webkit-user-drag: none; }
+.certflow__item img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.382; object-fit: cover; object-position: top; border-radius: 4px; background: #fff; pointer-events: none; }
+.certflow__item.is-active a { cursor: zoom-in; box-shadow: 0 34px 68px -20px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 230, 160, 0.6), 0 0 42px rgba(255, 194, 14, 0.28); }
+.certflow__bar { display: flex; align-items: center; justify-content: center; gap: var(--space-5); margin-top: var(--space-4); }
+.certflow__nav { width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.35); background: transparent; color: #fff; display: grid; place-items: center; cursor: pointer; transition: border-color 162ms var(--ease), background-color 162ms var(--ease); }
+.certflow__nav:hover { border-color: var(--sun); background: rgba(255, 194, 14, 0.12); }
+.certflow__info { text-align: center; min-width: 0; flex: 0 1 26rem; }
+.certflow__info strong { display: block; color: #fff; font-weight: 600; }
+.certflow__info span { font-size: var(--step--1); color: var(--on-ink-muted); }
+.certflow__more { margin-top: var(--space-4); text-align: center; }
+@media (prefers-reduced-motion: reduce) { .certflow__item { transition: none; } }

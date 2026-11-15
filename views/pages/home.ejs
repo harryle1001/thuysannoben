@@ -95,21 +95,7 @@
 <%- include('../partials/quality') %>
 
 <% if (certificates.length) { %>
-<section class="section" aria-labelledby="cert-title">
-  <div class="wrap">
-    <header class="section-head">
-      <h2 id="cert-title" class="h2"><%- tx('home-cert', 'Chứng nhận đầy đủ') %></h2>
-      <a class="text-link" href="/chung-nhan">Xem tất cả chứng nhận</a>
-    </header>
-    <div class="certs" data-gallery>
-      <% certificates.forEach((c, i) => { %>
-      <a class="cert" href="<%= c.src %>" data-lb="<%= c.src %>" data-caption="Chứng nhận của Công ty TNHH Noben">
-        <%- img(c, { alt: 'Giấy chứng nhận của Công ty TNHH Noben, trang ' + (i + 1) }) %>
-      </a>
-      <% }) %>
-    </div>
-  </div>
-</section>
+<%- include('../partials/cert-carousel', { items: certificates, id: 'cert', title: 'Chứng nhận đầy đủ, minh bạch từng trang', lead: 'Chứng nhận ISO 9001:2015, 3 chứng nhận hợp quy VinaCert và bản công bố hợp quy của Noben. Kéo qua lại để xem, bấm vào tờ ở giữa để phóng to đọc rõ.', more: '/chung-nhan' }) %>
 <% } %>
 
 <section class="section" aria-labelledby="sol-title">
