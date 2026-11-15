@@ -8,6 +8,7 @@ symptoms: gan-ruot
 products: sorbest, antiliv, g7-phong-va-tri-benh-gan-chet-som, liver-max, hepaliver-fs, aqua-bac
 photo: /images/posts/su-dung-thao-duoc-tu-nhien-an-toan-sinh-hoc-de-phong-va-tri--cover.webp
 date: 2026-10-05
+updated: 2026-11-16
 ---
 
 Bệnh hoại tử gan tụy cấp, còn gọi là hội chứng tôm chết sớm (EMS) hay AHPND, gây chết hàng loạt ở tôm thẻ và tôm sú trong 10 đến 35 ngày đầu sau khi thả giống. Tỷ lệ chết có thể lên tới 70 đến 100% chỉ trong vài ngày nếu không phòng ngừa tốt.
@@ -39,7 +40,7 @@ Bà con có thể gửi mẫu tôm đến phòng xét nghiệm để làm PCR x�
 ### Trước khi thả giống
 
 - Cải tạo ao kỹ, nạo vét bùn, phơi đáy hoặc vệ sinh bạt sạch sẽ.
-- Diệt khuẩn nguồn nước, sau đó gây màu và cấy vi sinh có lợi trước khi thả 5 đến 7 ngày.
+- Diệt khuẩn nguồn nước, chờ 2 đến 3 ngày cho hết dư lượng hóa chất rồi mới gây màu và cấy vi sinh có lợi, hoàn tất trước khi thả 5 đến 7 ngày.
 - Chọn tôm giống khỏe, đã xét nghiệm PCR âm tính với AHPND.
 
 ### Trong 45 ngày đầu
@@ -52,11 +53,11 @@ Bà con có thể gửi mẫu tôm đến phòng xét nghiệm để làm PCR x�
 ## Xử lý khi ao có dấu hiệu bệnh
 
 1. Giảm 50% thức ăn hoặc ngưng cho ăn 1 cữ, theo dõi sát.
-2. Xử lý đáy, giảm mật độ vi khuẩn trong nước; tăng cường quạt khí.
-3. Trộn sản phẩm phòng và trị bệnh gan như [ANTILIV](/san-pham/antiliv) hoặc [LIVER MAX](/san-pham/liver-max) theo hướng dẫn trên nhãn.
+2. Tăng cường quạt khí, kiểm tra oxy hòa tan (≥ 4 mg/L) và pH; xi phông, xử lý đáy. Nếu diệt khuẩn nước bằng hóa chất được phép, chờ 2 đến 3 ngày mới cấy lại vi sinh.
+3. Trộn sản phẩm hỗ trợ gan như [ANTILIV](/san-pham/antiliv) hoặc [LIVER MAX](/san-pham/liver-max) theo hướng dẫn trên nhãn; đồng thời gửi mẫu xét nghiệm PCR để xác định bệnh.
 4. Nếu tôm chết nhiều và đã đạt cỡ có thể bán, cân nhắc thu hoạch sớm để hạn chế thiệt hại.
 
-Việc dùng kháng sinh phải có chẩn đoán của cán bộ kỹ thuật, dùng đúng danh mục được phép và đảm bảo thời gian ngừng thuốc trước thu hoạch.
+Không dùng kháng sinh để phòng bệnh và tuyệt đối không dùng kháng sinh cấm. Việc dùng kháng sinh phải có chẩn đoán của cán bộ thú y, dùng đúng danh mục được phép và đảm bảo thời gian ngừng thuốc trước thu hoạch.
 
 ## Câu hỏi thường gặp
 

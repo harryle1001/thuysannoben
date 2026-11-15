@@ -8,6 +8,7 @@ symptoms: oxy-stress
 products: vita-c-tat, super-oxy-02, nb-c-sormin, aqua-c30
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Tôm giống từ trại về thường sống trong nước có nhiệt độ, độ mặn và pH khác nước ao. Đổ thẳng xuống ao, tôm dễ sốc, chết rải rác ngay mấy ngày đầu mà bà con khó phát hiện. Bài này hướng dẫn **cách thả tôm giống đúng kỹ thuật**: chuẩn bị ao, **thuần độ mặn và nhiệt độ**, so pH, chọn giờ thả, mật độ thả và cách ước tỷ lệ sống sau khi thả.
@@ -77,7 +78,7 @@ Dùng khi chênh lệch độ mặn lớn hoặc muốn kiểm tra tôm trước
 3. Thêm nước ao vào thau từ từ để tôm thích nghi dần.
 4. Sau 10 đến 15 phút (khi chênh lệch nhỏ), nghiêng thau cho tôm bơi ra. Chênh lệch lớn thì kéo dài thời gian thuần theo mức không quá 3‰ mỗi giờ.
 
-Mật độ khoảng 10.000 con trong 20 lít tương đương 500 con/lít, nằm trong mức Jory (2016) khuyến cáo khi thuần: không quá 300 đến 500 con/lít tùy cỡ tôm và thời gian thuần. Nếu thuần lâu, Jory khuyên cho tôm ăn trong lúc thuần và theo dõi sát.
+Mật độ khoảng 10.000 con trong 20 lít tương đương 500 con/lít, là mức tối đa Jory (2016) khuyến cáo khi thuần: không quá 300 đến 500 con/lít tùy cỡ tôm và thời gian thuần; thuần lâu thì nên giảm số tôm mỗi thau. Nếu thuần lâu, Jory khuyên cho tôm ăn trong lúc thuần và theo dõi sát.
 
 **Dấu hiệu tôm thích nghi tốt** (TTKNQG, 2016): không có tôm chết khi thuần, tôm bơi linh hoạt, bám thành thau; sau khi thả tôm lặn xuống đáy, không bám mé, không nổi trên mặt nước.
 
@@ -110,9 +111,9 @@ Theo hướng dẫn của Cục Thủy sản và Kiểm ngư (2026), hoại tử
 Hỗ trợ giảm sốc, giữ oxy khi thả giống, dùng theo nhãn:
 
 - [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao giúp chống sốc, giảm stress; trước khi thả tôm dùng 5 kg/2.000 m³ nước, tạt trước khi thả 30 phút.
-- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy; dùng 3 kg/3.000 m³ nước, kết hợp mở quạt.
+- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy; dùng 2 đến 3 kg/1.000 m³ nước, rải đều trên mặt ao, kết hợp mở quạt.
 - [NB C SORMIN](/san-pham/nb-c-sormin): bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress khi môi trường thay đổi; trộn 5 đến 10 g/kg thức ăn.
-- [AQUA C30%](/san-pham/aqua-c30): bổ sung vitamin C, methionine vào thức ăn giúp tăng sức đề kháng, chống sốc; trộn 5 g/kg thức ăn.
+- [AQUA C30%](/san-pham/aqua-c30): bổ sung vitamin C vào thức ăn; trộn 3 đến 5 g/kg thức ăn, khi môi trường thay đổi, thời tiết giao mùa trộn 10 g/kg thức ăn trong 2 đến 3 ngày.
 
 Dùng [công cụ tính liều](/tinh-lieu) để quy đổi liều trên nhãn theo thể tích ao.
 

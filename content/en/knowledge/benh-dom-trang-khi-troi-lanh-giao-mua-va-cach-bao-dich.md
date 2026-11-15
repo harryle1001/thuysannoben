@@ -8,6 +8,7 @@ symptoms: sat-trung, oxy-stress
 products: super-vidal, vita-c-tat, nb-c-sormin, beta-13-16-glucan
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-3.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Every year towards the end of the year, when the northeast monsoon arrives, nights turn cold and out-of-season rain falls, many farming areas again report ponds with white spot. The article on [white spot disease (WSSV)](/bai-viet/benh-dom-trang-wssv-tren-tom) covers the signs and general prevention. This article answers three specific questions: **why white spot breaks out more easily in cold weather**, **where the pathogen enters the pond from**, and **how to report and handle a diseased pond in line with regulations**.
@@ -81,7 +82,7 @@ After a disease crop, according to recommendations published by the National Agr
 
 The following products provide support according to the uses stated on their labels and do not cure white spot disease; use at label doses:
 
-- [SUPER VIDAL](/san-pham/super-vidal): disinfects water in grow-out and settling ponds before water is supplied.
+- [SUPER VIDAL](/san-pham/super-vidal): supports stable algal density and pH, helping limit environmental swings in cold, rainy weather (do not apply when it is raining or overcast).
 - [VITA C (pond application)](/san-pham/vita-c-tat): vitamin C applied to the pond, helping prevent shock when the weather changes.
 - [NB C SORMIN](/san-pham/nb-c-sormin): helps prevent shock and reduce stress when the pond environment fluctuates.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): boosts resistance and improves shrimp tolerance.

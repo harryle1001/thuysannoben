@@ -8,6 +8,7 @@ symptoms: sat-trung, oxy-stress
 products: super-vidal, iodine-99, vita-c-tat, beta-13-16-glucan
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Postlarvae are the first stage of the whole culture cycle and the hardest to correct: stock a weak or pathogen-carrying batch and, however carefully you farm, it is difficult to recover. This article explains **how to choose good whiteleg shrimp postlarvae** step by step: visual inspection at the tank, microscope examination, stress testing, reading the **PCR test** report, checking quarantine certificates and choosing a reputable hatchery.
@@ -106,8 +107,8 @@ The pond must be ready before the delivery date, following the [pond preparation
 
 Support for pond preparation and stocking, used according to the label:
 
-- [SUPER VIDAL](/san-pham/super-vidal): disinfects the water source of culture and settling ponds; before stocking use 1 kg/1,000 m³ of water, 7–10 days before stocking shrimp.
-- [IODINE 99](/san-pham/iodine-99): kills harmful bacteria, fungi and protozoa; 2–3 days before stocking use 1 litre/2,000 m³ of water.
+- [SUPER VIDAL](/san-pham/super-vidal): supports stable algal density and pH while building water colour before stocking; for algae stabilisation use 50 g/3,000 m³ of water, applied in strong sun at 9–10 a.m., not when it is raining.
+- [IODINE 99](/san-pham/iodine-99): disinfects the water source, reducing harmful bacteria, fungi and protozoa; for pond preparation use 1 litre/3,000 m³ of water, applied in the cool late afternoon; wait 2–3 days before building water colour and adding probiotics.
 - [VITA C (pond application)](/san-pham/vita-c-tat): vitamin C for pond application to help prevent shock and reduce stress; before stocking use 5 kg/2,000 m³ of water, applied 30 minutes before stocking.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): strengthens resistance and boosts the immunity of shrimp; mix 5–10 g/kg of feed.
 

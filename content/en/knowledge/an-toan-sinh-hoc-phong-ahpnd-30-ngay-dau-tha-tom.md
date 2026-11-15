@@ -8,6 +8,7 @@ symptoms: gan-ruot, sat-trung
 products: liver-max, iodine-99, aqua-bac, prozyme
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-4.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Acute hepatopancreatic necrosis disease (AHPND, also known as early mortality syndrome, EMS) is the biggest concern in the early part of the crop. The article on [acute hepatopancreatic necrosis disease (EMS)](/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom) describes the signs of the disease. This article focuses on **biosecurity during the first 30–35 days**, the period when shrimp are most likely to die, following the recommendations of WOAH, FAO and the Vietnamese veterinary authority.
@@ -58,7 +59,7 @@ For high-density lined ponds, the principle is the same: have a settling pond, a
 - **Moderate stocking density**, ponds deeper than 1.8 m, and aeration were also risk-reducing factors in the same study.
 - **Siphon regularly** to remove moulted shells and organic sludge. Shrimp shells contain chitin, which is a substrate for Vibrio growth (Global Seafood Alliance, 2016).
 - Keep dissolved oxygen **above 4 mg/L** and alkalinity sufficient for stable pH. See [managing pH and alkalinity in shrimp ponds](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
-- After each water disinfection, re-inoculate beneficial probiotics; killing bacteria without replenishing probiotics can leave a gap for opportunistic Vibrio to grow.
+- After each water disinfection, wait 2–3 days for chemical residues to dissipate before re-inoculating beneficial probiotics (never apply both on the same day); killing bacteria without replenishing probiotics can leave a gap for opportunistic Vibrio to grow.
 - Do not use antibiotics for prevention.
 
 ## Regular sampling for testing in the first 6 weeks
@@ -81,7 +82,7 @@ No product cures AHPND. The following products provide support according to the 
 
 - [IODINE 99](/san-pham/iodine-99): kills harmful bacteria, fungi and protozoa in pond water.
 - [AQUA BAC](/san-pham/aqua-bac): breaks down waste, uneaten feed and dead algae on the pond bottom, cleaning the bottom.
-- [LIVER MAX](/san-pham/liver-max): liver tonic, helps prevent liver diseases and early mortality in shrimp under 2 months old.
+- [LIVER MAX](/san-pham/liver-max): supplies sorbitol and methionine in feed, supporting liver health and liver detoxification in shrimp.
 - [PROZYME](/san-pham/prozyme): enzymes and probiotics that support digestion and feed absorption.
 
 Farmers can use the [dose calculator](/tinh-lieu) based on pond area and depth to work out product quantities according to the label.

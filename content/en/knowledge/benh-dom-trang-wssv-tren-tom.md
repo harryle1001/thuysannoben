@@ -8,6 +8,7 @@ symptoms: sat-trung
 products: ben-iq, iodine-99, super-vidal, vita-c-tat, beta-13-16-glucan, nb-c-sormin
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-10-08
+updated: 2026-11-16
 ---
 
 White spot disease, caused by WSSV (White Spot Syndrome Virus), is one of the most dangerous diseases in shrimp farming. The virus spreads very fast, and shrimp in almost an entire pond can die within just 3–10 days after the first signs appear.
@@ -25,7 +26,7 @@ Note: white spots can also be caused by bacteria or by high-alkalinity water dep
 
 - **Sudden temperature changes**, especially during seasonal transitions, prolonged heavy rain, or when water temperature falls below 28°C.
 - Intake water contaminated with virus from surrounding diseased ponds.
-- Wild crustaceans (crabs, fiddler crabs, small shrimp), birds and equipment carrying the pathogen into the pond.
+- Wild crustaceans (crabs, fiddler crabs, small shrimp, copepods), birds and equipment carrying the pathogen into the pond.
 - Postlarvae carrying the virus from the hatchery.
 
 ## Preventing white spot disease
@@ -33,9 +34,9 @@ Note: white spots can also be caused by bacteria or by high-alkalinity water dep
 There is currently no cure for white spot disease. Prevention based on biosecurity principles is the only approach.
 
 - **Select disease-free postlarvae** with a PCR-negative result for WSSV.
-- **Settle, filter and disinfect water** before supplying it to grow-out ponds; use disinfectant products such as [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) or [SUPER VIDAL](/san-pham/super-vidal) as instructed.
+- **Settle, filter and disinfect water** before supplying it to grow-out ponds; use disinfectant products such as [BEN IQ](/san-pham/ben-iq) or [IODINE 99](/san-pham/iodine-99) as instructed; wait 2–3 days after disinfection before building water colour and adding probiotics.
 - **Install crab-proof fencing and bird-deterrent lines**, and use separate equipment for each pond.
-- **Keep temperature and the environment stable**: raise the water level and cover with netting in the cold or rainy season.
+- **Keep temperature and the environment stable**: raise the water level and cover with netting in the cold or rainy season; keep algal density and pH stable, for example with [SUPER VIDAL](/san-pham/super-vidal), which supports algae and pH stabilisation, used per the label.
 - **Boost resistance** in bad weather: add [BETA 1.3](/san-pham/beta-13-16-glucan), vitamin C such as [VITA C (pond application)](/san-pham/vita-c-tat) or [NB C SORMIN](/san-pham/nb-c-sormin) to reduce stress.
 
 ## What to do when a pond is infected with white spot

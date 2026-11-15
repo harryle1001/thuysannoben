@@ -8,6 +8,7 @@ symptoms: sat-trung
 products: ben-iq, iodine-99, super-vidal, vita-c-tat, beta-13-16-glucan, nb-c-sormin
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-10-08
+updated: 2026-11-16
 ---
 
 Bệnh đốm trắng do virus WSSV (White Spot Syndrome Virus) là bệnh nguy hiểm bậc nhất trong nghề nuôi tôm. Virus lây rất nhanh, tôm có thể chết gần như toàn bộ ao chỉ trong 3 đến 10 ngày sau khi có dấu hiệu đầu tiên.
@@ -25,7 +26,7 @@ Lưu ý: đốm trắng cũng có thể do vi khuẩn hoặc nước có độ k
 
 - **Nhiệt độ thay đổi đột ngột**, nhất là khi trời chuyển mùa, mưa lớn kéo dài hoặc nhiệt độ nước giảm dưới 28°C.
 - Nguồn nước cấp nhiễm virus từ ao bệnh xung quanh.
-- Giáp xác hoang dã (cua, còng, tép), chim và dụng cụ mang mầm bệnh vào ao.
+- Giáp xác hoang dã (cua, còng, tép, chân chèo), chim và dụng cụ mang mầm bệnh vào ao.
 - Tôm giống mang virus từ trại.
 
 ## Phòng bệnh đốm trắng
@@ -33,9 +34,9 @@ Lưu ý: đốm trắng cũng có thể do vi khuẩn hoặc nước có độ k
 Hiện chưa có thuốc chữa bệnh đốm trắng. Phòng bệnh theo nguyên tắc an toàn sinh học là cách duy nhất.
 
 - **Chọn giống sạch bệnh**, có kết quả PCR âm tính với WSSV.
-- **Lắng lọc và diệt khuẩn nước** trước khi cấp vào ao nuôi; dùng sản phẩm diệt khuẩn như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER VIDAL](/san-pham/super-vidal) theo hướng dẫn.
+- **Lắng lọc và diệt khuẩn nước** trước khi cấp vào ao nuôi; dùng sản phẩm diệt khuẩn như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99) theo hướng dẫn; sau diệt khuẩn 2 đến 3 ngày mới gây màu, cấy vi sinh.
 - **Rào lưới chắn cua còng, giăng dây chống chim**, dụng cụ dùng riêng từng ao.
-- **Giữ nhiệt độ và môi trường ổn định**: tăng mực nước, che lưới vào mùa lạnh hoặc mưa nhiều.
+- **Giữ nhiệt độ và môi trường ổn định**: tăng mực nước, che lưới vào mùa lạnh hoặc mưa nhiều; giữ mật độ tảo và pH ổn định, có thể dùng [SUPER VIDAL](/san-pham/super-vidal) hỗ trợ ổn định tảo, pH theo nhãn.
 - **Tăng sức đề kháng** khi thời tiết xấu: bổ sung [BETA 1.3](/san-pham/beta-13-16-glucan), vitamin C như [VITA C TẠT](/san-pham/vita-c-tat) hoặc [NB C SORMIN](/san-pham/nb-c-sormin) để giảm stress.
 
 ## Xử lý khi ao nhiễm đốm trắng

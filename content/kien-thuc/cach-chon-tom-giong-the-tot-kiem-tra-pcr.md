@@ -8,6 +8,7 @@ symptoms: sat-trung, oxy-stress
 products: super-vidal, iodine-99, vita-c-tat, beta-13-16-glucan
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Con giống là khâu đầu tiên và khó sửa nhất của cả vụ nuôi: thả nhầm lô giống yếu hoặc mang mầm bệnh thì chăm kỹ đến đâu cũng khó gỡ. Bài này hướng dẫn **cách chọn tôm giống thẻ chân trắng tốt** theo từng bước: nhìn bằng mắt tại bể, soi kính hiển vi, làm test sốc, đọc phiếu **xét nghiệm PCR**, kiểm tra giấy kiểm dịch và chọn trại uy tín.
@@ -106,8 +107,8 @@ Ao phải sẵn sàng trước ngày nhận tôm theo [quy trình cải tạo ao
 
 Hỗ trợ khâu chuẩn bị ao và thả giống, dùng theo nhãn:
 
-- [SUPER VIDAL](/san-pham/super-vidal): sát trùng nguồn nước ao nuôi và ao lắng; trước khi thả nuôi dùng 1 kg/1.000 m³ nước, trước khi thả tôm 7 đến 10 ngày.
-- [IODINE 99](/san-pham/iodine-99): diệt khuẩn, nấm, nguyên sinh động vật gây hại; trước khi thả giống 2 đến 3 ngày dùng 1 lít/2.000 m³ nước.
+- [SUPER VIDAL](/san-pham/super-vidal): hỗ trợ ổn định mật độ tảo, ổn định pH khi gây màu nước trước thả; ổn định tảo dùng 50 g/3.000 m³ nước, tạt lúc nắng 9 đến 10 giờ, không dùng khi mưa.
+- [IODINE 99](/san-pham/iodine-99): sát trùng nguồn nước, giảm vi khuẩn, nấm, nguyên sinh động vật gây hại; chuẩn bị ao dùng 1 lít/3.000 m³ nước, tạt lúc chiều mát; sau 2 đến 3 ngày mới gây màu, cấy vi sinh.
 - [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao giúp chống sốc, giảm stress; trước khi thả tôm dùng 5 kg/2.000 m³ nước, tạt trước khi thả 30 phút.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): tăng sức đề kháng, tăng khả năng miễn dịch cho tôm; trộn 5 đến 10 g/kg thức ăn.
 

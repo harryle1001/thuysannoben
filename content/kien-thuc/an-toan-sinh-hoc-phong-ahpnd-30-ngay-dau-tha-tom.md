@@ -8,6 +8,7 @@ symptoms: gan-ruot, sat-trung
 products: liver-max, iodine-99, aqua-bac, prozyme
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-4.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Bệnh hoại tử gan tụy cấp (AHPND, hay hội chứng chết sớm EMS) là nỗi lo lớn nhất của giai đoạn đầu vụ. Bài [bệnh hoại tử gan tụy cấp EMS](/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom) đã mô tả dấu hiệu bệnh. Bài này tập trung vào **an toàn sinh học trong khoảng 30 đến 35 ngày đầu**, giai đoạn tôm dễ chết nhất, theo khuyến cáo của WOAH, FAO và cơ quan thú y Việt Nam.
@@ -58,7 +59,7 @@ Với ao bạt mật độ cao, nguyên tắc vẫn vậy: có ao lắng, nướ
 - **Thả mật độ vừa phải**, ao sâu hơn 1,8 m, có quạt khí cũng là những yếu tố giảm nguy cơ trong cùng nghiên cứu.
 - **Xi phông đều đặn** để loại vỏ lột và bùn hữu cơ. Vỏ tôm chứa kitin là chất nền để Vibrio phát triển (Global Seafood Alliance, 2016).
 - Giữ oxy hòa tan **trên 4 mg/L** và độ kiềm đủ để pH ổn định. Tham khảo [quản lý pH và độ kiềm ao nuôi tôm](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
-- Sau mỗi lần sát trùng nước, cần cấy lại vi sinh có lợi; diệt khuẩn mà không bổ sung vi sinh có thể tạo khoảng trống cho Vibrio cơ hội phát triển.
+- Sau mỗi lần sát trùng nước, chờ 2 đến 3 ngày cho hết dư lượng hóa chất rồi cấy lại vi sinh có lợi (không tạt chung một ngày); diệt khuẩn mà không bổ sung vi sinh có thể tạo khoảng trống cho Vibrio cơ hội phát triển.
 - Không dùng kháng sinh để phòng bệnh.
 
 ## Lấy mẫu xét nghiệm định kỳ trong 6 tuần đầu
@@ -81,7 +82,7 @@ Không có sản phẩm nào chữa khỏi AHPND. Các sản phẩm sau hỗ tr�
 
 - [IODINE 99](/san-pham/iodine-99): diệt khuẩn, nấm, nguyên sinh động vật gây hại trong nước ao.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy chất thải, thức ăn dư, xác tảo ở đáy ao, làm sạch đáy.
-- [LIVER MAX](/san-pham/liver-max): bổ gan, hỗ trợ phòng ngừa các bệnh gan, chết sớm trên tôm giai đoạn dưới 2 tháng.
+- [LIVER MAX](/san-pham/liver-max): bổ sung sorbitol, methionine vào thức ăn, hỗ trợ bồi bổ gan, giải độc gan cho tôm.
 - [PROZYME](/san-pham/prozyme): enzyme và vi sinh hỗ trợ tiêu hóa, hấp thu thức ăn.
 
 Bà con có thể dùng [công cụ tính liều](/tinh-lieu) theo diện tích, độ sâu ao để tính lượng sản phẩm theo nhãn.

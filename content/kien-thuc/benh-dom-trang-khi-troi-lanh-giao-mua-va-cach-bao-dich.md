@@ -8,6 +8,7 @@ symptoms: sat-trung, oxy-stress
 products: super-vidal, vita-c-tat, nb-c-sormin, beta-13-16-glucan
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-3.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Cứ vào cuối năm, khi gió bấc về, đêm lạnh và mưa trái mùa, nhiều vùng nuôi lại ghi nhận ao tôm bị đốm trắng. Bài [bệnh đốm trắng WSSV](/bai-viet/benh-dom-trang-wssv-tren-tom) đã nêu dấu hiệu và cách phòng chung. Bài này trả lời ba câu hỏi cụ thể: **vì sao trời lạnh tôm dễ bùng đốm trắng**, **mầm bệnh vào ao từ đâu**, và **khi ao bị bệnh phải khai báo, xử lý thế nào cho đúng quy định**.
@@ -81,7 +82,7 @@ Sau vụ bệnh, theo khuyến cáo được Trung tâm Khuyến nông Quốc gi
 
 Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, không có tác dụng chữa bệnh đốm trắng; liều theo nhãn:
 
-- [SUPER VIDAL](/san-pham/super-vidal): sát trùng nguồn nước ao nuôi và ao lắng trước khi cấp nước.
+- [SUPER VIDAL](/san-pham/super-vidal): hỗ trợ ổn định mật độ tảo, ổn định pH ao nuôi, giúp hạn chế biến động môi trường khi trời lạnh, mưa nhiều (không dùng khi trời mưa, ít nắng).
 - [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao, giúp chống sốc khi thời tiết thay đổi.
 - [NB C SORMIN](/san-pham/nb-c-sormin): hỗ trợ chống sốc, giảm stress khi môi trường ao biến động.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): tăng sức đề kháng, tăng khả năng chống chịu cho tôm.
