@@ -1,0 +1,5 @@
+{
+  "_": "Scene lengths in multiples of pi seconds (the site's phi/pi rhythm). Shared by FactoryFilm.tsx and make-factory-sfx.mjs.",
+  "full": [["intro", 1.5], ["raw", 2], ["formula", 2], ["line", 2.5], ["qc", 2.5], ["team", 2.5], ["reach", 2], ["close", 2.25]],
+  "short": [["intro", 1], ["line", 1.5], ["qc", 1.25], ["team", 1.5], ["close", 1.25]]
+}
