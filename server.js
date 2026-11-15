@@ -60,7 +60,8 @@ app.use(
   express.static(path.join(__dirname, 'public'), {
     maxAge: '30d',
     setHeaders(res, file) {
-      if (/\.(css|js)$/.test(file)) res.setHeader('Cache-Control', 'public, max-age=86400');
+      // CSS/JS are always linked with ?v=N (bump it when a file changes); fonts never change.
+      if (/\.(css|js|woff2)$/.test(file)) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     },
   })
 );
