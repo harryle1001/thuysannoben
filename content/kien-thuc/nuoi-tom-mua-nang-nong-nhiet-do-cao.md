@@ -8,6 +8,7 @@ symptoms: oxy-stress, mau-nuoc
 products: super-oxy-02, nb-algae, proticbest, nb-c-sormin, aqua-yucca
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Nuôi tôm mùa nắng nóng tưởng thuận lợi vì tôm lớn nhanh, nhưng khi nước ao vượt 32°C thì rủi ro tăng rõ: oxy hòa tan giảm, tảo nở dày rồi tàn, pH dao động mạnh, độ mặn tăng do bốc hơi, đáy ao nhanh bẩn. Bài này giúp bà con hiểu **nhiệt độ cao tác động thế nào** và **cách giữ ao ổn định**: che lưới, giữ mực nước, chạy quạt và chỉnh giờ cho ăn.
@@ -26,7 +27,7 @@ Nước càng nóng càng giữ ít oxy: theo Boyd (2018), nước ngọt bão h
 
 FAO dẫn một khảo sát ao tôm: trong một đêm, tôm chỉ dùng khoảng 9% lượng oxy, còn nước (tảo, vi khuẩn, chất lơ lửng) dùng khoảng 69% và đáy khoảng 15%. Vì vậy giảm bớt tảo và chất hữu cơ cũng là cách giữ oxy.
 
-Hướng dẫn của ngành nông nghiệp Hà Tĩnh (2018) khuyến cáo giữ oxy trên 3,5 mg/L. Khi tôm có dấu hiệu nổi đầu, xem bài [tôm nổi đầu do thiếu oxy](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly) và trang giải pháp [thiếu oxy, sốc stress](/giai-phap/thieu-oxy-soc-stress).
+Hướng dẫn của ngành nông nghiệp Hà Tĩnh (2018) khuyến cáo giữ oxy trên 3,5 mg/L; với ao thâm canh, nhất là tôm thẻ mật độ cao, nên giữ oxy sáng sớm từ 4 mg/L trở lên (tốt nhất trên 5 mg/L). Khi tôm có dấu hiệu nổi đầu, xem bài [tôm nổi đầu do thiếu oxy](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly) và trang giải pháp [thiếu oxy, sốc stress](/giai-phap/thieu-oxy-soc-stress).
 
 ## Phân tầng nhiệt ban ngày
 
@@ -98,7 +99,7 @@ Tóm lại: cho ăn chủ yếu sáng sớm và chiều mát, giảm hoặc bỏ
 Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, liều dùng theo nhãn:
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy.
-- [NB ALGAE](/san-pham/nb-algae): vi sinh kết hợp enzyme cắt bớt tảo, ổn định màu nước; nhãn hướng dẫn dùng lúc 22 đến 23 giờ đêm.
+- [NB ALGAE](/san-pham/nb-algae): vi sinh Bacillus phân hủy xác tảo tàn, mùn bã, hỗ trợ giảm tảo, cắt tảo; nhãn hướng dẫn khi dùng để cắt tảo, giảm tảo thì tạt lúc 22 đến 24 giờ đêm (nhớ duy trì quạt).
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, phân hủy chất thải hữu cơ, thức ăn dư, xác tảo tàn và khí độc ở đáy ao.
 - [NB C SORMIN](/san-pham/nb-c-sormin): bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress khi môi trường ao nuôi thay đổi.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc, cấp cứu khi tôm nổi đầu.

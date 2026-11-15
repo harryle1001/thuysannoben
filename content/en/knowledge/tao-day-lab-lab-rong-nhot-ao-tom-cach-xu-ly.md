@@ -8,6 +8,7 @@ symptoms: mau-nuoc, khi-doc
 products: super-cut-algae, nb-brown-gay-mau-nuoc-mau-tra, proticbest, aqua-yucca, super-oxy-02
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 In many ponds recently stocked with shrimp, farmers find a green slimy layer on the bottom, foul-smelling patches of **lab-lab** floating in the downwind corner, or slimy algae and filamentous algae covering the liner. These are **benthic algae**. This article explains why lab-lab, benthic algae and slimy algae grow in shrimp ponds, the harm they cause, and how to prevent and treat them safely for the shrimp.
@@ -81,7 +82,7 @@ Vietnamese technical regulation QCVN 02-19:2014/BNNPTNT sets the transparency of
 
 ### Case 1: Pond not yet stocked
 
-This is when treatment can be most thorough: remove aquatic plants and filamentous algae, then use an algae- and moss-killing product at the **dose for ponds without shrimp or fish** stated on the label. Remove the dead material, drain some bottom water if possible, and only then treat the water and colour it. Do not stock shrimp while dead plants and algae are still decomposing.
+This is when treatment can be most thorough: remove aquatic plants and filamentous algae, then use an algae- and moss-killing product **at the label dose** (if the label gives a separate dose for unstocked ponds, use that). Remove the dead material, drain some bottom water if possible, and only then treat the water and colour it. Do not stock shrimp while dead plants and algae are still decomposing.
 
 ### Case 2: Pond in culture, lab-lab sparse or just starting
 
@@ -93,7 +94,7 @@ This is when treatment can be most thorough: remove aquatic plants and filamento
 ### Case 3: Pond in culture, dense filamentous algae and moss
 
 - **Remove mechanically first** to reduce the amount of algae dying in the pond.
-- If using an algicide in a pond with shrimp, **use only the dose for ponds with shrimp** stated on the label, and choose a sunny day without rain.
+- If using an algicide in a pond with shrimp, **use only the dose stated on the label**, never increase it, and choose a sunny day without rain. Copper-based products (CuSO₄) are more toxic to shrimp at low alkalinity, so check alkalinity before applying.
 - **Increase aeration** before and after application, because decomposing algae cause oxygen to drop (Boyd, 2006). New Mexico State University material advises that when algae cover a large area, the pond should be treated section by section rather than all at once to reduce the risk of oxygen shortage.
 - 24–48 hours later, use bottom-treatment probiotics to decompose the dead algae; if toxic gases rise, use a toxic-gas absorbing product.
 - Recolour the water once it is stable so the benthic algae do not return.
@@ -102,11 +103,11 @@ This is when treatment can be most thorough: remove aquatic plants and filamento
 
 Use for the stated purpose and at the dose on the label:
 
-- [SUPER CUT ALGAE](/san-pham/super-cut-algae): kills filamentous algae, moss and toxic algae. Ponds with shrimp: 100g/1,000m³ of water, applied at 10–11 a.m., in strong sunshine, without rain. To kill moss and slimy algae **when the pond has no shrimp or fish**: 200g/1,000m³.
+- [SUPER CUT ALGAE](/san-pham/super-cut-algae): supports algae cutting and thinning (copper-based). Algae cutting: 100g/1,500m³ of water; algae thinning: 100g/3,000m³. Very dense blue-green, filamentous or green algae: 500g/2,000m³, two doses 2 days apart. Apply in strong sunshine at 9–10 a.m., not in rain or overcast weather; stop 15 days before harvest.
 - [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): colours the water quickly to a tea-brown colour, blocking direct sunlight from reaching the pond bottom. Before stocking: 250g/1,500m³; on sudden loss of algae: 250g/1,000m³.
 - [PROTICBEST](/san-pham/proticbest): bottom-cleaning probiotic that decomposes organic waste, dead algae and toxic gases on the pond bottom. Apply directly at 1 litre/3,000m³, every 3–5 days.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic gases. When toxic gases are high: 500g/3,000m³, applied 2–3 times in succession.
-- [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergencies when shrimp surface due to oxygen shortage. 3kg/3,000m³.
+- [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergencies when shrimp surface due to oxygen shortage. 2–3kg/1,000m³, broadcast evenly over the pond surface.
 
 Use the [dose calculator](/tinh-lieu) to convert doses to your pond volume, and see also the [care schedule by days of culture](/lich-cham-soc). Detailed steps are on the solution pages for [water colouring and algae control](/giai-phap/gay-mau-nuoc-xu-ly-tao) and [bottom toxic gases and liner slime](/giai-phap/khi-doc-day-ao-nhot-bat).
 
@@ -122,11 +123,11 @@ In the early stage the water is often still clear and colouring has not yet take
 
 ### Does killing slimy algae affect the shrimp?
 
-The main risk is mass algae die-off causing oxygen shortage and toxic gas production. Remove some of it first, use the correct dose for ponds with shrimp as stated on the label, and increase aeration.
+The main risk is mass algae die-off causing oxygen shortage and toxic gas production. Remove some of it first, use the label dose, and increase aeration.
 
 ### Should I increase the algicide dose to kill algae faster?
 
-No. The higher moss-killing dose on the label is only for ponds without shrimp or fish. In a pond in culture, increasing the dose raises the risk of shocking the shrimp and of oxygen dropping.
+No. Exceeding the label dose raises the risk of shocking the shrimp, copper toxicity and an oxygen crash from mass algae die-off. For very dense algae, use the dense-algae dose on the label, split into applications, combined with mechanical removal and extra aeration.
 
 ## References
 

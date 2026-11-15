@@ -7,6 +7,7 @@ keywords: men vi sinh cho tôm, men vi sinh đường ruột cho tôm, men tiêu
 symptoms: tieu-hoa, gan-ruot
 products: aqualac-fs, prozyme, biozyme, ap-79, us-lacto, aqua-bac
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 "Men vi sinh" là cụm từ bà con dùng cho hai nhóm sản phẩm khác nhau: **men vi sinh đường ruột** trộn vào thức ăn và **vi sinh xử lý nước, đáy ao** tạt xuống ao. Dùng đúng loại, đúng lúc giúp tôm tiêu hóa tốt, ít bệnh đường ruột, đáy sạch và giảm chi phí thuốc. Dùng sai thì tốn tiền mà không thấy hiệu quả.
@@ -31,11 +32,11 @@ Bài này tập trung vào **men vi sinh đường ruột**.
 
 | Sản phẩm | Hằng ngày | Khi tôm có dấu hiệu bệnh đường ruột |
 | --- | --- | --- |
-| [AQUALAC FS](/san-pham/aqualac-fs) | 3 g/kg thức ăn, 2 đến 3 lần/ngày | 10 g/kg thức ăn |
-| [PROZYME](/san-pham/prozyme) (enzyme + vi sinh) | 5 g/kg thức ăn | 10 g/kg thức ăn |
-| [AP 79](/san-pham/ap-79) | 5 g/kg thức ăn | 10 đến 15 g/kg thức ăn |
-| [US LACTO](/san-pham/us-lacto) | 5 g/kg thức ăn | 10 đến 15 g/kg thức ăn |
-| [BIOZYME](/san-pham/biozyme) (men sống dạng nước) | 3 ml/kg thức ăn, 3 đến 4 lần/ngày | 5 đến 10 ml/kg, liên tục 5 ngày |
+| [AQUALAC FS](/san-pham/aqualac-fs) | 5 g/kg thức ăn, 2 lần/ngày | 10 g/kg thức ăn (gấp đôi) |
+| [PROZYME](/san-pham/prozyme) (enzyme + vi sinh) | 5 g/kg thức ăn, 2 lần/ngày | 10 g/kg thức ăn (gấp đôi) |
+| [AP 79](/san-pham/ap-79) | 5 g/kg thức ăn, 2 lần/ngày | 10 g/kg thức ăn (gấp đôi) |
+| [US LACTO](/san-pham/us-lacto) | 5 g/kg thức ăn, 2 đến 3 lần/ngày | 10 đến 15 g/kg thức ăn |
+| [BIOZYME](/san-pham/biozyme) (men sống dạng nước) | 5 ml/kg thức ăn, 2 lần/ngày | 10 ml/kg (gấp đôi) đến khi ruột tôm bình thường |
 
 Hòa men với một ít nước sạch, trộn đều lên thức ăn, để yên khoảng 15 phút cho thấm rồi mới cho tôm ăn.
 
@@ -43,7 +44,7 @@ Hòa men với một ít nước sạch, trộn đều lên thức ăn, để y�
 
 - **Dùng liên tục từ tuần đầu**, không đợi tôm bệnh mới dùng. Men vi sinh phòng bệnh tốt hơn chữa bệnh.
 - **Không trộn chung với thuốc đặc trị, acid hữu cơ, chất sát trùng** trong cùng một cữ ăn, vì chúng diệt luôn vi sinh có lợi.
-- **Sau mỗi đợt diệt khuẩn hoặc dùng thuốc**, tăng liều men vi sinh 3 đến 5 ngày để phục hồi đường ruột.
+- **Sau mỗi đợt diệt khuẩn hoặc dùng thuốc** (kháng sinh chỉ dùng khi có chẩn đoán và chỉ định của cán bộ thú y, đúng danh mục cho phép), tăng liều men vi sinh 3 đến 5 ngày để phục hồi đường ruột.
 - **Bảo quản nơi khô mát**, tránh nắng; men dạng bột đã mở bao nên dùng hết sớm.
 - Kết hợp **bổ gan định kỳ** vì gan và ruột hỗ trợ nhau. Xem [tôm bị teo gan, gan trắng](/bai-viet/tom-bi-teo-gan-gan-trang-cach-xu-ly).
 

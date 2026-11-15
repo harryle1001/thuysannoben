@@ -7,6 +7,7 @@ keywords: tôm bị xanh da trời, tôm bị xanh vỏ, tôm thẻ xanh vỏ, t
 symptoms: mem-vo, tieu-hoa
 products: butypho, calcipho, aqua-c30, mix-79, nb-brown-gay-mau-nuoc-mau-tra
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Tôm thẻ khỏe thường có màu trong hơi xám, khi luộc lên đỏ cam đẹp. Một số ao lại có tôm **màu xanh da trời, vỏ xanh nhạt**, luộc lên màu nhạt, kém hấp dẫn, thương lái ép giá. Đây là hiện tượng tôm **thiếu sắc tố và dinh dưỡng**, thường gặp ở ao bạt nước trong, ao nuôi mật độ cao và giai đoạn cuối vụ.
@@ -22,7 +23,7 @@ Tôm thẻ khỏe thường có màu trong hơi xám, khi luộc lên đỏ cam 
 
 ### Thiếu sắc tố carotenoid
 
-Màu đỏ cam của tôm đến từ **astaxanthin**, một loại sắc tố carotenoid tôm không tự tổng hợp mà phải lấy từ thức ăn và tảo trong ao. Khi thiếu, sắc tố xanh của protein vỏ chiếm ưu thế nên tôm có màu xanh.
+Màu đỏ cam của tôm đến từ **astaxanthin**, một loại sắc tố carotenoid tôm không tự tổng hợp mà phải lấy từ thức ăn và tảo trong ao. Khi thiếu, lượng astaxanthin trong vỏ thấp và phần còn lại chủ yếu ở dạng gắn với protein vỏ (crustacyanin) cho ánh xanh, nên tôm có màu xanh.
 
 ### Nước ao quá trong, thiếu tảo
 
@@ -41,8 +42,8 @@ pH dao động lớn, độ kiềm thấp, khí độc cao khiến tôm stress k
 ### 1. Bổ sung dinh dưỡng vào thức ăn
 
 - Dùng sản phẩm bổ sung acid amin, vitamin, khoáng như [BUTYPHO](/san-pham/butypho), giúp khắc phục tình trạng tôm còi, ốp thân, mềm vỏ, vỏ xanh da trời; liều theo nhãn sản phẩm.
-- Trộn khoáng dạng nước [CALCIPHO](/san-pham/calcipho) 10 ml/kg thức ăn, 2 đến 3 lần/ngày.
-- Bổ sung vitamin C như [AQUA C30%](/san-pham/aqua-c30) 5 g/kg thức ăn hằng ngày để giảm stress.
+- Trộn khoáng dạng nước [CALCIPHO](/san-pham/calcipho) 3 đến 5 ml/kg thức ăn, 3 lần/ngày; tôm mềm vỏ, chậm cứng vỏ thì trộn liều gấp đôi.
+- Bổ sung vitamin C như [AQUA C30%](/san-pham/aqua-c30) 3 đến 5 g/kg thức ăn, 3 lần/ngày để giảm stress.
 - Chọn thức ăn có nguồn gốc rõ ràng, có bổ sung sắc tố (astaxanthin) ở giai đoạn cuối vụ.
 
 ### 2. Giữ màu nước ổn định

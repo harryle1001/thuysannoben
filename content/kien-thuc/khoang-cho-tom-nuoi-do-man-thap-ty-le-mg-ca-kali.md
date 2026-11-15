@@ -8,6 +8,7 @@ symptoms: mem-vo
 products: kalimix, miral-n8, mix-79, caphote
 photo: /images/posts/benh-mem-vo-rot-cuc-thit-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Tôm thẻ chân trắng sống được ở độ mặn rất thấp, nên nhiều vùng nuôi bằng nước lợ nhạt, nước ngầm hoặc nuôi trong mùa mưa khi độ mặn tụt sâu. Vấn đề là ở độ mặn thấp, **tỷ lệ các khoáng chính trong nước thường lệch** so với nước biển, đặc biệt là thiếu **kali (K)** và **magie (Mg)**. Tôm có thể chết rải rác, mềm vỏ, chậm lớn dù độ kiềm và pH vẫn bình thường.
@@ -55,7 +56,7 @@ Với magie, một trang trại ở Alabama độ mặn khoảng 2,5‰ đạt t
 
 ## Đừng quên độ kiềm và canxi
 
-Cùng với cân bằng ion, nước ao cần có bicarbonate trên 60 mg/L (tương đương độ kiềm tổng trên 50 mg/L CaCO₃) và **độ cứng canxi ít nhất bằng độ kiềm tổng** (Boyd, 2018). Vôi nông nghiệp giúp tăng độ kiềm và độ cứng nhưng chỉ thêm được ít canxi, magie, nên không dùng để sửa mất cân bằng ion. Muốn tăng canxi có thể dùng thạch cao (CaSO₄·2H₂O): khoảng 1,72 mg/L thạch cao tăng 1 mg/L độ cứng canxi. Xem thêm [quản lý pH và độ kiềm](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
+Cùng với cân bằng ion, nước ao cần có bicarbonate trên 60 mg/L (tương đương độ kiềm tổng trên 50 mg/L CaCO₃) và **độ cứng canxi ít nhất bằng độ kiềm tổng** (Boyd, 2018). Đây là mức tối thiểu; trong nuôi thâm canh, bà con thường giữ độ kiềm 120 đến 180 mg/L CaCO₃ (ao bạt mật độ cao 150 đến 200 mg/L). Vôi nông nghiệp giúp tăng độ kiềm và độ cứng nhưng chỉ thêm được ít canxi, magie, nên không dùng để sửa mất cân bằng ion. Muốn tăng canxi có thể dùng thạch cao (CaSO₄·2H₂O): khoảng 1,72 mg/L thạch cao tăng 1 mg/L độ cứng canxi. Xem thêm [quản lý pH và độ kiềm](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
 
 ## Các loại muối khoáng thường dùng
 

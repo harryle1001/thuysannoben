@@ -8,6 +8,7 @@ symptoms: oxy-stress, mau-nuoc
 products: super-oxy-02, nb-algae, proticbest, nb-c-sormin, aqua-yucca
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Hot weather may seem favourable for shrimp farming because shrimp grow fast, but once pond water exceeds 32°C the risks rise clearly: dissolved oxygen falls, algae bloom densely and then crash, pH swings strongly, salinity rises through evaporation and the pond bottom fouls quickly. This article helps farmers understand **how high temperature affects the pond** and **how to keep it stable**: shade netting, keeping the water level up, running aerators and adjusting feeding times.
@@ -26,7 +27,7 @@ The warmer the water, the less oxygen it holds: according to Boyd (2018), satura
 
 FAO cites a survey of shrimp ponds: over one night, the shrimp used only about 9% of the oxygen, while the water (algae, bacteria, suspended matter) used about 69% and the bottom about 15%. Reducing algae and organic matter is therefore also a way of conserving oxygen.
 
-Guidance from the Ha Tinh agriculture sector (2018) recommends keeping oxygen above 3.5 mg/L. When shrimp show signs of surfacing, see the article [shrimp surfacing due to low oxygen](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly) and the solution page [low oxygen, shock and stress](/giai-phap/thieu-oxy-soc-stress).
+Guidance from the Ha Tinh agriculture sector (2018) recommends keeping oxygen above 3.5 mg/L; in intensive ponds, especially high-density whiteleg shrimp, keep dawn oxygen at 4 mg/L or more (ideally above 5 mg/L). When shrimp show signs of surfacing, see the article [shrimp surfacing due to low oxygen](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly) and the solution page [low oxygen, shock and stress](/giai-phap/thieu-oxy-soc-stress).
 
 ## Daytime thermal stratification
 
@@ -98,7 +99,7 @@ In short: feed mainly in the early morning and cool late afternoon, and reduce o
 The following products provide support strictly within the uses stated on their labels; use them at label doses:
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergency use when shrimp surface due to lack of oxygen.
-- [NB ALGAE](/san-pham/nb-algae): probiotics combined with enzymes to thin algae and stabilise water colour; the label instructs use at 10–11 pm.
+- [NB ALGAE](/san-pham/nb-algae): Bacillus probiotic that breaks down dead algae and organic debris and supports algae thinning; for thinning algae the label instructs application at 10 pm–midnight (keep aerators running).
 - [PROTICBEST](/san-pham/proticbest): probiotics that clean the bottom and water, breaking down organic waste, uneaten feed, dead algae and toxic gases on the pond bottom.
 - [NB C SORMIN](/san-pham/nb-c-sormin): supplies vitamins and minerals, helping prevent shock and reduce stress when pond conditions change.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic gases, for emergency use when shrimp surface.

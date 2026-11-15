@@ -7,6 +7,7 @@ keywords: ao tôm bị phèn, xử lý phèn ao tôm, hạ phèn ao nuôi tôm, 
 symptoms: khi-doc, mang-dom-den
 products: down-max-ha-phen, marimix, edta-99, no-toxin, mix-79, miral-n8
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Nhiều vùng nuôi tôm ở Đồng bằng sông Cửu Long và ven biển nằm trên **đất phèn**. Khi đất phèn tiếp xúc không khí rồi gặp nước, đặc biệt sau mưa lớn, axit và sắt, nhôm hòa tan sẽ bị rửa xuống ao. Phèn làm pH tụt, độ kiềm giảm, kim loại bám vào mang khiến tôm khó thở, chậm lột và dễ chết. Nắm rõ dấu hiệu và xử lý sớm giúp bà con tránh thiệt hại.
@@ -49,7 +50,7 @@ Nhiều vùng nuôi tôm ở Đồng bằng sông Cửu Long và ven biển nằ
 
 - [DOWN MAX](/san-pham/down-max-ha-phen): hạ phèn, giải độc phèn, tẩy phèn dính chân và mang tôm. Trong quá trình nuôi dùng **500 g cho 2.000 m³ nước**, định kỳ 3 ngày/lần; trước thả giống 2 đến 3 ngày dùng 500 g cho 1.000 m³.
 - [MARIMIX](/san-pham/marimix): chuyên xử lý phèn nhôm, phèn sắt. Khi phèn cao dùng **1 kg cho 2.000 m³ nước**, xử lý 2 ngày liên tục; định kỳ dùng 1 kg cho 5.000 m³, 3 đến 5 ngày/lần.
-- Khi nghi có kim loại nặng, thuốc trừ sâu tồn dư từ nguồn nước: dùng chất giải độc như [EDTA 99](/san-pham/edta-99) 3 kg cho 3.000 m³ nước hoặc [NO TOXIN](/san-pham/no-toxin) theo nhãn, tạt sáng sớm hoặc chiều mát.
+- Khi nghi có kim loại nặng, thuốc trừ sâu tồn dư từ nguồn nước: dùng chất giải độc như [EDTA 99](/san-pham/edta-99) 0,6 đến 1 kg cho 1.000 m³ nước (khử kim loại nặng, theo nhãn) hoặc [NO TOXIN](/san-pham/no-toxin) theo nhãn, tạt sáng sớm hoặc chiều mát.
 
 Hòa sản phẩm với nước ao, tạt đều khắp ao và mở quạt để thuốc phân tán.
 

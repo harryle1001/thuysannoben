@@ -8,6 +8,7 @@ symptoms: mau-nuoc, khi-doc
 products: super-cut-algae, nb-brown-gay-mau-nuoc-mau-tra, proticbest, aqua-yucca, super-oxy-02
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Nhiều ao mới thả tôm thấy đáy có lớp nhớt xanh, góc cuối gió nổi từng mảng **lab lab** hôi, hoặc rong nhớt, tảo sợi bám kín bạt. Đó là **tảo đáy**. Bài này giải thích vì sao lab lab, tảo đáy, rong nhớt mọc trong ao tôm, tác hại và cách phòng, xử lý an toàn cho tôm.
@@ -81,7 +82,7 @@ Quy chuẩn QCVN 02-19:2014/BNNPTNT quy định độ trong ao nuôi tôm nướ
 
 ### Trường hợp 1: Ao chưa thả tôm
 
-Đây là lúc xử lý triệt để nhất: vớt bỏ rong, tảo sợi, rồi dùng sản phẩm diệt rong rêu ở **liều dành cho ao không có tôm cá** theo nhãn. Vớt xác, xả bớt nước đáy nếu được, rồi mới xử lý nước và gây màu. Không thả tôm khi xác rong tảo còn đang phân hủy.
+Đây là lúc xử lý triệt để nhất: vớt bỏ rong, tảo sợi, rồi dùng sản phẩm diệt rong rêu **đúng liều theo nhãn** (nếu nhãn có liều riêng cho ao chưa thả thì dùng liều đó). Vớt xác, xả bớt nước đáy nếu được, rồi mới xử lý nước và gây màu. Không thả tôm khi xác rong tảo còn đang phân hủy.
 
 ### Trường hợp 2: Ao đang nuôi, lab lab ít hoặc mới chớm
 
@@ -93,7 +94,7 @@ Quy chuẩn QCVN 02-19:2014/BNNPTNT quy định độ trong ao nuôi tôm nướ
 ### Trường hợp 3: Ao đang nuôi, tảo sợi, rong rêu dày
 
 - **Vớt cơ học trước** để giảm lượng tảo chết trong ao.
-- Nếu dùng thuốc diệt tảo trong ao có tôm, **chỉ dùng liều dành cho ao có tôm** ghi trên nhãn, chọn ngày nắng, không mưa.
+- Nếu dùng thuốc diệt tảo trong ao có tôm, **chỉ dùng đúng liều ghi trên nhãn**, không tự tăng liều, chọn ngày nắng, không mưa. Thuốc gốc đồng (CuSO₄) độc với tôm hơn khi độ kiềm thấp, nên kiểm tra kiềm trước khi dùng.
 - **Tăng quạt khí** trước và sau khi dùng, vì xác tảo phân hủy làm tụt oxy (Boyd, 2006). Tài liệu của Đại học New Mexico khuyên khi tảo phủ diện rộng nên xử lý từng phần ao thay vì toàn ao một lúc để giảm nguy cơ thiếu oxy.
 - 24 đến 48 giờ sau, dùng vi sinh xử lý đáy để phân hủy xác tảo; nếu thấy khí độc tăng thì dùng sản phẩm hấp thụ khí độc.
 - Gây màu lại khi nước ổn định để tảo đáy không quay lại.
@@ -102,11 +103,11 @@ Quy chuẩn QCVN 02-19:2014/BNNPTNT quy định độ trong ao nuôi tôm nướ
 
 Dùng đúng công dụng và liều trên nhãn:
 
-- [SUPER CUT ALGAE](/san-pham/super-cut-algae): diệt tảo sợi, rong rêu, tảo độc. Ao có tôm: 100g/1.000m³ nước, dùng lúc 10 đến 11 giờ trưa, nắng gắt, không mưa. Diệt rong rêu, rong nhớt **khi ao không có tôm cá**: 200g/1.000m³.
+- [SUPER CUT ALGAE](/san-pham/super-cut-algae): hỗ trợ cắt tảo, giảm tảo (gốc đồng). Hỗ trợ cắt tảo: 100g/1.500m³ nước; giảm tảo: 100g/3.000m³. Tảo lam, tảo sợi, tảo xanh quá dày: 500g/2.000m³, dùng 2 liều cách nhau 2 ngày. Tạt lúc nắng gắt 9 đến 10 giờ, không dùng khi mưa hoặc ít nắng; ngưng dùng trước thu hoạch 15 ngày.
 - [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): gây màu nước nhanh, màu bã trà, che tia nắng chiếu thẳng xuống đáy ao. Trước khi thả: 250g/1.500m³; khi mất tảo đột ngột: 250g/1.000m³.
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ, xác tảo tàn và khí độc ở đáy ao. Tạt trực tiếp 1 lít/3.000m³, định kỳ 3 đến 5 ngày.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc. Khi khí độc cao: 500g/3.000m³, dùng liên tục 2 đến 3 lần.
-- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 3kg/3.000m³.
+- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 2 đến 3kg/1.000m³, rải đều trên mặt ao.
 
 Dùng [công cụ tính liều](/tinh-lieu) để quy đổi liều theo thể tích ao, xem thêm [lịch chăm sóc theo ngày tuổi](/lich-cham-soc). Các bước chi tiết có tại trang giải pháp [gây màu nước, xử lý tảo](/giai-phap/gay-mau-nuoc-xu-ly-tao) và [khí độc đáy ao, nhớt bạt](/giai-phap/khi-doc-day-ao-nhot-bat).
 
@@ -122,11 +123,11 @@ Giai đoạn đầu nước thường còn trong, gây màu chưa lên, ánh sá
 
 ### Diệt rong nhớt có ảnh hưởng tôm không?
 
-Rủi ro chính là xác tảo chết hàng loạt làm thiếu oxy, sinh khí độc. Nên vớt bớt trước, dùng đúng liều cho ao có tôm theo nhãn và tăng quạt khí.
+Rủi ro chính là xác tảo chết hàng loạt làm thiếu oxy, sinh khí độc. Nên vớt bớt trước, dùng đúng liều theo nhãn và tăng quạt khí.
 
 ### Có nên tăng liều diệt rong để diệt nhanh?
 
-Không. Liều diệt rong rêu cao trên nhãn chỉ dành cho ao không có tôm cá. Trong ao đang nuôi, tăng liều làm tăng nguy cơ sốc tôm và tụt oxy.
+Không. Vượt liều nhãn làm tăng nguy cơ sốc tôm, ngộ độc đồng và tụt oxy do tảo chết đồng loạt. Tảo quá dày thì dùng liều dành cho tảo dày ghi trên nhãn, chia lần, kết hợp vớt cơ học và tăng quạt.
 
 ## Nguồn tham khảo
 

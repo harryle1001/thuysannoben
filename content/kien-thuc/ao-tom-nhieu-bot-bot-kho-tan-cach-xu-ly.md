@@ -7,6 +7,7 @@ keywords: ao tôm bị bọt nhiều, bọt khó tan ao tôm, nhớt nước ao 
 symptoms: khi-doc, mau-nuoc
 products: toxic-algae, clear-12h, amylac, aqua-yucca, super-yucca
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Bọt trong ao tôm là "tấm gương" phản ánh chất lượng nước. Một ít bọt ở cuối dòng quạt, tan nhanh là bình thường. Nhưng khi **bọt dày, dai, lâu tan, có màu vàng nâu hoặc xám**, ao đang có quá nhiều chất hữu cơ, nhớt và xác tảo. Nếu không xử lý, nước sẽ thiếu oxy, khí độc tăng và tôm dễ mắc bệnh.
@@ -55,7 +56,10 @@ Nước nhiều hữu cơ thường kéo theo NH₃, NO₂ tăng. Dùng yucca nh
 
 ### Bước 4: Cấy vi sinh phân hủy hữu cơ, tẩy nhớt
 
-Ủ vi sinh như [CLEAR 12H](/san-pham/clear-12h) hoặc [AMYLAC](/san-pham/amylac): 1 gói với 3 kg đường cát và 50 lít nước, sục khí 12 đến 24 giờ; ao bạt dùng 15 đến 20 lít cho 1.000 m³ nước, 3 ngày/lần; ao đất 10 đến 15 lít cho 1.000 m³, 5 ngày/lần. Mở quạt liên tục khi dùng và dùng vào ngày có nắng. Xem [cách ủ và sử dụng vi sinh](/bai-viet/cach-u-va-su-dung-vi-sinh-cho-ao-tom).
+- [AMYLAC](/san-pham/amylac) (tẩy nhớt bạt, nhớt nước): ủ 1 gói với 3 kg đường cát và 50 lít nước, sục khí 12 đến 24 giờ; ao bạt dùng 15 đến 20 lít cho 1.000 m³ nước, 3 ngày/lần; ao đất 10 đến 15 lít cho 1.000 m³, 5 ngày/lần. Mở quạt liên tục khi dùng và dùng vào ngày có nắng.
+- [CLEAR 12H](/san-pham/clear-12h) (vi sinh Bacillus phân hủy mùn bã, xác tảo tàn): định kỳ 454 g cho 3.000 đến 5.000 m³ nước, 5 đến 7 ngày/lần; ao ô nhiễm nặng 1 kg cho 2.000 đến 3.000 m³, dùng liên tục 2 ngày. Có thể ủ sục khí trên 12 giờ trước khi dùng.
+
+Không tạt vi sinh cùng ngày với hóa chất diệt khuẩn. Xem [cách ủ và sử dụng vi sinh](/bai-viet/cach-u-va-su-dung-vi-sinh-cho-ao-tom).
 
 ### Bước 5: Tăng oxy
 

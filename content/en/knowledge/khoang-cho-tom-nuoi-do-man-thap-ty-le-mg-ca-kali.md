@@ -8,6 +8,7 @@ symptoms: mem-vo
 products: kalimix, miral-n8, mix-79, caphote
 photo: /images/posts/benh-mem-vo-rot-cuc-thit-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Whiteleg shrimp can survive at very low salinity, so many areas farm them in low-salinity brackish water or groundwater, or during the rainy season when salinity drops sharply. The problem is that at low salinity, **the ratio of the major minerals in the water is often skewed** compared with seawater, particularly with a shortage of **potassium (K)** and **magnesium (Mg)**. Shrimp may suffer scattered mortality, soft shell and slow growth even when alkalinity and pH are normal.
@@ -55,7 +56,7 @@ For magnesium, one Alabama farm at about 2.5 ppt salinity achieved good survival
 
 ## Do not forget alkalinity and calcium
 
-Alongside ionic balance, pond water needs bicarbonate above 60 mg/L (equivalent to total alkalinity above 50 mg/L CaCO₃) and **calcium hardness at least equal to total alkalinity** (Boyd, 2018). Agricultural lime helps raise alkalinity and hardness but adds only small amounts of calcium and magnesium, so it is not used to correct ionic imbalance. To raise calcium, gypsum (CaSO₄·2H₂O) can be used: about 1.72 mg/L of gypsum raises calcium hardness by 1 mg/L. See also [pH and alkalinity management](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
+Alongside ionic balance, pond water needs bicarbonate above 60 mg/L (equivalent to total alkalinity above 50 mg/L CaCO₃) and **calcium hardness at least equal to total alkalinity** (Boyd, 2018). This is a minimum; intensive farms usually keep alkalinity at 120–180 mg/L CaCO₃ (150–200 mg/L in high-density lined ponds). Agricultural lime helps raise alkalinity and hardness but adds only small amounts of calcium and magnesium, so it is not used to correct ionic imbalance. To raise calcium, gypsum (CaSO₄·2H₂O) can be used: about 1.72 mg/L of gypsum raises calcium hardness by 1 mg/L. See also [pH and alkalinity management](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
 
 ## Commonly used mineral salts
 

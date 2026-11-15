@@ -7,6 +7,7 @@ keywords: ao tôm bị sụp tảo, rớt tảo ao tôm, tảo tàn ao nuôi tô
 symptoms: mau-nuoc, khi-doc, oxy-stress
 products: toxic-algae, aqua-yucca, oxy-99, super-oxy-02, nb-brown-gay-mau-nuoc-mau-tra, kia-c-tat
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 **Sụp tảo (rớt tảo, tảo tàn)** là khi lượng tảo trong ao chết hàng loạt trong thời gian ngắn. Tảo chết không còn tạo oxy, đồng thời xác tảo phân hủy lại tiêu tốn oxy và sinh khí độc. Vì vậy sau sụp tảo, ao thường thiếu oxy về đêm, khí độc tăng, tôm nổi đầu và dễ chết nếu không xử lý kịp. Đây là sự cố cần xử lý **trong vài giờ đầu**.
@@ -31,8 +32,9 @@ date: 2026-11-11
 ### Bước 1: Cấp cứu oxy ngay
 
 - Chạy toàn bộ quạt nước, máy thổi khí, đặc biệt từ 22 giờ đến sáng.
-- Khi tôm nổi đầu, tạt oxy viên: [OXY 99](/san-pham/oxy-99) **3 kg cho 2.000 m³ nước** hoặc [SUPER OXY 02](/san-pham/super-oxy-02) 3 kg cho 3.000 m³, rải đều mặt ao.
+- Khi tôm nổi đầu, tạt oxy viên: [OXY 99](/san-pham/oxy-99) hoặc [SUPER OXY 02](/san-pham/super-oxy-02) **2 đến 3 kg cho 1.000 m³ nước**, rải đều mặt ao.
 - **Giảm 50% hoặc ngưng cho ăn** trong ngày đầu.
+- Không tạt thêm hóa chất diệt khuẩn, diệt tảo trong lúc ao đang sụp tảo.
 
 ### Bước 2: Gom và xử lý xác tảo
 

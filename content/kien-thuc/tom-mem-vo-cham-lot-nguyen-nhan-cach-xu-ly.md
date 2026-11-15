@@ -8,7 +8,7 @@ symptoms: mem-vo
 products: caphote, calcipho, kalimix, mix-79, rocaphos, miral-n8, premix-khoang-khoang-kich-lot, rimix
 photo: /images/posts/benh-mem-vo-rot-cuc-thit-cover.webp
 date: 2026-10-17
-updated: 2026-11-11
+updated: 2026-11-16
 ---
 
 Tôm thẻ lột xác khoảng 7 đến 15 ngày một lần tùy giai đoạn. Mỗi lần lột, tôm cần một lượng lớn khoáng như canxi, magie, kali để tạo vỏ mới. Khi thiếu khoáng hoặc môi trường không phù hợp, tôm sẽ **mềm vỏ kéo dài, chậm lột, lột không hết vỏ** và dễ bị con khác ăn thịt.
@@ -57,7 +57,7 @@ Trộn khoáng hữu cơ dạng nước như [CAPHOTE](/san-pham/caphote) hoặc
 Theo hướng dẫn trên nhãn sản phẩm Noben:
 
 - Tạt [KALIMIX](/san-pham/kalimix) 3 kg cho 2.000 m³ nước, dùng liên tục 2 ngày, tạt vào chiều tối; hoặc [MIX 79](/san-pham/mix-79) 3 kg cho 2.000 m³ nước, liên tục 2 ngày.
-- Trộn [CAPHOTE](/san-pham/caphote) 5 ml/kg thức ăn hoặc [ROCAPHOS](/san-pham/rocaphos) 20 ml/kg thức ăn để phòng cong thân, đục cơ và giúp tôm cứng vỏ nhanh.
+- Trộn [CAPHOTE](/san-pham/caphote) hoặc [ROCAPHOS](/san-pham/rocaphos) liều gấp đôi theo nhãn (6 đến 10 ml/kg thức ăn, 3 lần/ngày) để phòng cong thân, đục cơ và giúp tôm cứng vỏ nhanh; khi tôm ổn định thì về liều thường 3 đến 5 ml/kg.
 - Song song, cấy vi sinh xử lý đáy, giảm khí độc và tăng oxy tầng đáy để tôm lột trong môi trường sạch.
 
 ### Kích thích lột đều

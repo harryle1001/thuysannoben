@@ -7,6 +7,7 @@ keywords: vitamin c cho tôm, vitamin c tạt ao tôm, chống sốc cho tôm, t
 symptoms: oxy-stress, tieu-hoa
 products: aqua-c30, cmax-25, vita-c-tat, kia-c-tat, nb-c-sormin
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 Tôm không tự tổng hợp được vitamin C, trong khi nhu cầu tăng mạnh mỗi khi **thời tiết thay đổi, tôm lột xác, môi trường biến động hoặc đang bệnh**. Bổ sung vitamin C đúng lúc giúp tôm chống sốc, giảm stress, lành vết thương nhanh và tăng sức đề kháng, là khoản đầu tư nhỏ nhưng hiệu quả cao.
@@ -23,15 +24,15 @@ Tôm không tự tổng hợp được vitamin C, trong khi nhu cầu tăng mạ
 - Trước và sau mưa lớn, khi nhiệt độ, độ mặn thay đổi đột ngột.
 - Khi tôm lột xác rộ.
 - Trước và sau khi xử lý diệt khuẩn, diệt tảo, thay nước nhiều.
-- Khi tôm nổi đầu, sốc, bị đỏ thân. Xem [tôm bị đỏ thân](/bai-viet/tom-bi-do-than-nguyen-nhan-cach-xu-ly).
+- Khi tôm nổi đầu, sốc, bị đỏ thân (sau khi đã tăng quạt, sục khí và xử lý nguyên nhân). Xem [tôm bị đỏ thân](/bai-viet/tom-bi-do-than-nguyen-nhan-cach-xu-ly).
 - Khi thả giống, giúp tôm giống thích nghi nhanh.
 
 ## Trộn hay tạt: chọn thế nào?
 
 ### Vitamin C trộn thức ăn (dùng hằng ngày)
 
-- [AQUA C30%](/san-pham/aqua-c30) hoặc [CMAX 25%](/san-pham/cmax-25): trộn **5 g/kg thức ăn**, 2 đến 3 lần/ngày suốt vụ; khi thời tiết thay đổi trộn **10 g/kg**. Có thể tạt trực tiếp 1 kg cho 1.500 m³ nước.
-- [NB C SORMIN](/san-pham/nb-c-sormin) (vitamin + khoáng chống sốc): trộn 5 đến 10 g/kg thức ăn hằng ngày; khi có dấu hiệu dịch bệnh hoặc thời tiết thay đổi đột ngột trộn **20 g/kg**; có thể tạt 1 kg cho 1.000 m³ nước.
+- [AQUA C30%](/san-pham/aqua-c30) hoặc [CMAX 25%](/san-pham/cmax-25): trộn **3 đến 5 g/kg thức ăn**, 3 lần/ngày suốt vụ; khi môi trường, thời tiết thay đổi trộn **10 g/kg**, 2 đến 3 lần/ngày, liên tục 2 đến 3 ngày. Có thể tạt xuống ao 1 kg cho 1.000 m³ nước để giảm stress, khi sang tôm.
+- [NB C SORMIN](/san-pham/nb-c-sormin) (vitamin + khoáng chống sốc): trộn 5 đến 10 g/kg thức ăn, 2 đến 3 lần/ngày; khi có dấu hiệu dịch bệnh hoặc thời tiết thay đổi đột ngột trộn **20 g/kg**; có thể tạt 1 kg cho 1.000 m³ nước.
 
 ### Vitamin C tạt xuống ao (cấp cứu, tác dụng nhanh)
 
@@ -43,7 +44,7 @@ Tạt vào sáng sớm hoặc chiều mát. Ao nuôi dày nên **kết hợp c�
 ## Lưu ý khi dùng vitamin C
 
 - Vitamin C dễ bị phân hủy bởi nhiệt, ánh sáng và độ ẩm: **trộn xong cho ăn ngay**, bảo quản bao kín nơi khô mát.
-- Không trộn chung với chất oxy hóa mạnh, thuốc sát trùng.
+- Không trộn chung với chất oxy hóa mạnh, thuốc sát trùng; vitamin C tạt ao làm giảm tác dụng của chlorine, iodine, thuốc tím nên tạt cách các chất này ít nhất vài giờ, tốt nhất sau khi xử lý đã xong.
 - Nên áo thức ăn bằng chất kết dính để vitamin không tan vào nước.
 - Vitamin C hỗ trợ chứ không thay thế việc xử lý nguyên nhân gây sốc như thiếu oxy, khí độc. Xem [tôm nổi đầu do thiếu oxy](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly).
 
@@ -51,7 +52,7 @@ Tạt vào sáng sớm hoặc chiều mát. Ao nuôi dày nên **kết hợp c�
 
 ### Có nên cho tôm ăn vitamin C hằng ngày?
 
-Nên, ở liều duy trì theo nhãn (ví dụ 5 g/kg thức ăn). Tăng liều khi thời tiết thay đổi hoặc tôm lột xác rộ.
+Nên, ở liều duy trì theo nhãn (ví dụ AQUA C30% 3 đến 5 g/kg thức ăn). Tăng liều khi thời tiết thay đổi hoặc tôm lột xác rộ.
 
 ### Vitamin C tạt hay trộn tốt hơn?
 

@@ -1,5 +1,5 @@
 ---
-title: Cách ủ và sử dụng vi sinh cho ao tôm đúng kỹ thuật, tăng hiệu quả gấp nhiều lần
+title: Cách ủ và sử dụng vi sinh cho ao tôm đúng kỹ thuật để vi sinh phát huy hiệu quả
 seo_title: Cách ủ vi sinh cho ao tôm đúng kỹ thuật và liều dùng hiệu quả
 description: Vi sinh chỉ phát huy tác dụng khi dùng đúng cách. Hướng dẫn ủ vi sinh với mật đường, thời điểm tạt, những sai lầm khiến vi sinh mất tác dụng và lịch dùng vi sinh theo giai đoạn nuôi.
 category: ky-thuat
@@ -8,6 +8,7 @@ symptoms: khi-doc, tieu-hoa
 products: aqua-bac, amylac, proticbest, bacpower, biozyme, aqualac-fs
 photo: /images/posts/cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-s-cover.webp
 date: 2026-11-01
+updated: 2026-11-16
 ---
 
 Vi sinh (probiotic) là nhóm vi khuẩn có lợi giúp phân hủy chất thải, giảm khí độc, cạnh tranh với vi khuẩn gây bệnh và ổn định màu nước. Tuy nhiên nhiều bà con dùng vi sinh mà không thấy hiệu quả vì sai cách ủ hoặc sai thời điểm.
@@ -24,19 +25,19 @@ Vi sinh (probiotic) là nhóm vi khuẩn có lợi giúp phân hủy chất th�
 1. Chuẩn bị thùng sạch, nước sạch hoặc nước ao đã lọc.
 2. Hòa vi sinh với mật đường hoặc đường cát theo tỷ lệ ghi trên nhãn. Ví dụ với [AMYLAC](/san-pham/amylac): 1 gói vi sinh, 3 kg đường và 50 lít nước.
 3. **Sục khí liên tục 12 đến 24 giờ**. Thùng ủ phải có sục khí mạnh, không đậy kín.
-4. Tạt đều khắp ao vào lúc trời mát.
+4. Tạt đều khắp ao, mở quạt nước hoặc sục khí liên tục khi tạt; thời điểm theo nhãn từng sản phẩm (ví dụ AMYLAC dùng khi có nắng, không dùng khi trời mưa).
 
 ## Thời điểm tạt vi sinh
 
-- **Vi sinh xử lý đáy**: tạt vào buổi tối hoặc ban đêm khi có quạt nước chạy, giúp vi sinh phân tán và hoạt động trong điều kiện có oxy.
-- **Vi sinh gây màu, cắt tảo**: tạt buổi sáng khi trời nắng.
+- **Vi sinh xử lý đáy**: tạt vào buổi tối hoặc ban đêm khi có quạt nước chạy, giúp vi sinh phân tán và hoạt động trong điều kiện có oxy. Vi sinh phân hủy hữu cơ tiêu tốn oxy, nên ao hay thiếu oxy về đêm thì tạt buổi sáng (khoảng 8 đến 10 giờ) và luôn chạy đủ quạt.
+- **Vi sinh gây màu**: tạt buổi sáng khi trời nắng. **Vi sinh hỗ trợ giảm tảo, cắt tảo**: theo nhãn, ví dụ [AQUA BAC](/san-pham/aqua-bac) dùng lúc 22 đến 24 giờ.
 - Không tạt vi sinh trong vòng 2 đến 3 ngày sau khi dùng hóa chất diệt khuẩn.
 
 ## Những sai lầm thường gặp
 
 - Ủ vi sinh không sục khí, ủ quá lâu làm vi sinh tàn.
 - Tạt vi sinh khi pH quá thấp hoặc độ kiềm thấp.
-- Dùng vi sinh cùng lúc với thuốc diệt khuẩn, kháng sinh tạt ao.
+- Dùng vi sinh cùng lúc với hóa chất diệt khuẩn (chlorine, iodine, BKC...). Không tạt kháng sinh xuống ao.
 - Dùng liều quá thấp so với lượng chất thải khi tôm lớn.
 
 ## Lịch dùng vi sinh gợi ý theo giai đoạn

@@ -7,6 +7,7 @@ keywords: cách đánh khoáng cho tôm, khoáng tạt cho tôm, khoáng cho tô
 symptoms: mem-vo
 products: mix-79, miral-n8, kalimix, rimix, premix-khoang-khoang-kich-lot, calcipho, caphote
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Khoáng là "vật liệu xây vỏ" của tôm. Mỗi lần lột xác, tôm phải lấy một lượng lớn canxi, magie, kali từ nước và thức ăn để tạo vỏ mới. Ao thiếu khoáng hoặc khoáng mất cân đối sẽ làm tôm **mềm vỏ, lột không hết, cong thân, đục cơ, chậm lớn**. Đánh khoáng đúng cách giúp tôm lột đều, cứng vỏ nhanh và tăng trọng tốt, nhất là ở ao bạt mật độ cao và ao nước lợ độ mặn thấp.
@@ -43,8 +44,8 @@ Bổ sung khoáng hòa tan vào nước, tôm hấp thu qua mang và vỏ, đặ
 
 Khoáng dạng nước, dễ hấp thu, giúp tôm nhận khoáng trực tiếp qua đường ruột, hữu ích khi tôm còi, cong thân, đục cơ:
 
-- [CALCIPHO](/san-pham/calcipho): trộn **10 ml/kg thức ăn**, cho ăn 2 đến 3 lần/ngày suốt vụ.
-- [CAPHOTE](/san-pham/caphote): trộn **5 ml/kg thức ăn** hằng ngày để phòng cong thân, đục cơ.
+- [CALCIPHO](/san-pham/calcipho): trộn **3 đến 5 ml/kg thức ăn**, 3 lần/ngày suốt vụ; khi tôm mềm vỏ, chậm cứng vỏ, cong thân đục cơ trộn liều gấp đôi.
+- [CAPHOTE](/san-pham/caphote): trộn **3 đến 5 ml/kg thức ăn**, 3 lần/ngày để phòng cong thân, đục cơ; khi tôm đã có dấu hiệu thì trộn liều gấp đôi.
 
 Ao nuôi mật độ cao nên **kết hợp cả hai**: tạt để giữ khoáng nền trong nước, trộn để bổ sung trực tiếp.
 
@@ -78,7 +79,7 @@ Xem thêm: [tôm mềm vỏ, chậm lột](/bai-viet/tom-mem-vo-cham-lot-nguyen-
 
 ### Nên đánh khoáng cho tôm mấy ngày một lần?
 
-Với khoáng tạt, liều định kỳ thường là 2 ngày/lần theo nhãn các sản phẩm khoáng Noben. Khoáng trộn dùng hằng ngày, 2 đến 3 cử.
+Với khoáng tạt, liều định kỳ thường là 2 ngày/lần theo nhãn các sản phẩm khoáng Noben. Khoáng trộn dùng hằng ngày, 3 cử/ngày theo nhãn.
 
 ### Đánh khoáng ban ngày hay ban đêm?
 

@@ -7,6 +7,7 @@ keywords: how to apply minerals for shrimp, pond-applied minerals for shrimp, mi
 symptoms: mem-vo
 products: mix-79, miral-n8, kalimix, rimix, premix-khoang-khoang-kich-lot, calcipho, caphote
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Minerals are the shrimp's "shell-building material". At every moult, shrimp must take up large amounts of calcium, magnesium and potassium from the water and feed to form a new shell. Ponds that are short of minerals or have an unbalanced mineral profile will cause **soft shell, incomplete moulting, bent body, muscle necrosis (white muscle) and slow growth**. Applying minerals correctly helps shrimp moult evenly, harden their shells quickly and gain weight well, especially in high-density lined ponds and low-salinity brackish ponds.
@@ -43,8 +44,8 @@ These add dissolved minerals to the water, which shrimp absorb through the gills
 
 Liquid minerals that are easily absorbed, giving shrimp minerals directly through the gut; useful when shrimp are stunted or show bent body or muscle necrosis:
 
-- [CALCIPHO](/san-pham/calcipho): mix **10 ml/kg of feed**, feed 2–3 times/day throughout the crop.
-- [CAPHOTE](/san-pham/caphote): mix **5 ml/kg of feed** daily to prevent bent body and muscle necrosis.
+- [CALCIPHO](/san-pham/calcipho): mix **3–5 ml/kg of feed**, 3 times/day throughout the crop; double the dose when shrimp show soft shell, slow shell hardening, bent body or muscle necrosis.
+- [CAPHOTE](/san-pham/caphote): mix **3–5 ml/kg of feed**, 3 times/day to prevent bent body and muscle necrosis; double the dose once signs appear.
 
 High-density ponds should **combine both**: pond application to maintain the baseline minerals in the water, and feed mixing to supplement directly.
 
@@ -78,7 +79,7 @@ See also: [soft shell and slow moulting in shrimp](/bai-viet/tom-mem-vo-cham-lot
 
 ### How often should minerals be applied for shrimp?
 
-For pond-applied minerals, the routine dose is usually every 2 days according to the labels of Noben mineral products. Feed-mixed minerals are used daily, at 2–3 feedings.
+For pond-applied minerals, the routine dose is usually every 2 days according to the labels of Noben mineral products. Feed-mixed minerals are used daily, at 3 feedings/day according to the label.
 
 ### Should minerals be applied during the day or at night?
 
