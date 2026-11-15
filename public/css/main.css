@@ -2096,7 +2096,7 @@ html.has-sunrise body { background: transparent; }
   background: linear-gradient(90deg, #fff 0%, rgba(214, 228, 255, 0.6) 23.6%, transparent 100%);
   filter: drop-shadow(0 0 4px rgba(200, 220, 255, 0.9)); transform: rotate(-20.6deg);
 }
-.sky--intro .sky__shoot { animation: shoot 1.618s cubic-bezier(0.382, 0, 0.618, 1) 3s both; }
+.sky--intro .sky__shoot { animation: shoot 1.618s cubic-bezier(0.382, 0, 0.618, 1) 2s both; }
 @keyframes shoot {
   0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(-20.6deg) scaleX(0.382); }
   23.6% { opacity: 1; }

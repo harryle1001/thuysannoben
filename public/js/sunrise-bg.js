@@ -78,9 +78,9 @@
     return;
   }
 
-  // Home: 3 s of twinkling stars, a shooting star (CSS, 3 s → 4.618 s), then the sun rises on its
+  // Home: 2 s of twinkling stars, then a shooting star (CSS, 2 s → 3.618 s) while the sun starts rising on its
   // own over φ⁴ ≈ 6.854 s; scrolling runs ahead of it.
-  var AUTO = 6854, DELAY = 3618, t0 = performance.now(), done = false, raf = 0;
+  var AUTO = 6854, DELAY = 2000, t0 = performance.now(), done = false, raf = 0;
   function frame(now) {
     raf = 0;
     var auto = seg(now - t0 - DELAY, 0, AUTO);
