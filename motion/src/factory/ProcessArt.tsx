@@ -1,7 +1,8 @@
 // Line-art for ProcessFilm (generic drawings of the process, not pictures of the real plant):
 // sealing + labelling, final inspection gate, delivery to the pond, safety glyphs.
 import React from "react";
-import { Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { PACK_ORDER, PackIcon } from "./Vector";
 import { Shrimp } from "../components/Shrimp";
 import { rand, TAU, theme } from "../theme";
 import { Draw } from "./LineArt";
@@ -68,7 +69,7 @@ export const SealArt: React.FC<{ width: number; delay?: number }> = ({ width, de
 };
 
 // ---------- Final inspection: real products ride through a scanning gate, each gets a check ----------
-export const OutQCArt: React.FC<{ width: number; products: string[]; delay?: number }> = ({ width, products, delay = 0 }) => {
+export const OutQCArt: React.FC<{ width: number; delay?: number }> = ({ width, delay = 0 }) => {
   const f = useCurrentFrame() - delay;
   const { fps } = useVideoConfig();
   const t = f / fps;
@@ -96,10 +97,9 @@ export const OutQCArt: React.FC<{ width: number; products: string[]; delay?: num
         const passed = x > gateX + 60;
         const o = Math.min(1, k * 10, (1 - k) * 10) * ramp(f, fps * 0.6, fps * 1.4);
         const pop = passed ? spring({ frame: Math.round((x - gateX - 60) / (1280 * speed) * fps), fps, config: theme.spring.bouncy }) : 0;
-        const src = products[i % products.length];
         return (
-          <div key={i} style={{ position: "absolute", left: x * s, top: (beltY - 210) * s, height: 210 * s, transform: "translateX(-50%)", opacity: o }}>
-            <Img src={staticFile(src)} style={{ height: "100%", filter: "drop-shadow(0 14px 18px rgba(0,0,0,0.55))" }} />
+          <div key={i} style={{ position: "absolute", left: x * s, top: (beltY - 190) * s, height: 190 * s, transform: "translateX(-50%)", opacity: o }}>
+            <PackIcon kind={PACK_ORDER[i % PACK_ORDER.length]} h={190 * s} tone={i} />
             {passed && (
               <div style={{ position: "absolute", right: -18 * s, top: -14 * s, width: 56 * s, height: 56 * s, borderRadius: "50%", background: C.accent, transform: `scale(${pop})`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 0 20px ${C.accentSoft}` }}>
                 <svg width={34 * s} height={34 * s} viewBox="0 0 34 34"><path d="M8 17 L14 23 L26 11" fill="none" stroke={C.abyss} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" /></svg>
