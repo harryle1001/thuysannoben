@@ -8,10 +8,6 @@
     <p class="lp-foot__links"><a href="/">Trang chủ</a><a href="/san-pham">Sản phẩm</a><a href="/chinh-sach/chinh-sach-bao-mat">Bảo mật</a><a href="/chinh-sach/dieu-khoan-su-dung">Điều khoản</a></p>
   </div>
 </footer>
-<nav class="action-bar" aria-label="Liên hệ nhanh">
-  <a href="<%= tel(company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg>Gọi <%= company.hotline %></a>
-  <a href="#dang-ky"><svg class="ico"><use href="#i-mail"/></svg><%= locals.ctaShort || 'Để lại số' %></a>
-</nav>
 <div class="float-chat" role="group" aria-label="Nhắn tin với Noben">
   <a class="float-chat__btn float-chat__btn--zalo" href="<%= zaloUrl %>" target="_blank" rel="noopener" aria-label="Chat Zalo với Noben, số <%= company.hotline %>">
     <span class="float-chat__zalo" aria-hidden="true">Zalo</span>

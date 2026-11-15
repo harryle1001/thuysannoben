@@ -667,20 +667,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .contact-list .ico { margin-top: 3px; color: var(--sun); }
 .site-footer__legal { border-top: 1px solid rgba(169, 185, 214, 0.2); padding-block: var(--space-5); font-size: var(--step--1); }
 
-/* ---------- Mobile action bar ---------- */
-.action-bar { display: none; }
-@media (max-width: 760px) {
-  body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
-  .action-bar {
-    display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 45;
-    background: var(--surface); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom);
-    box-shadow: 0 -8px 24px -18px rgba(11, 35, 71, 0.5);
-  }
-  .action-bar a { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 64px; font-weight: 600; font-size: 0.9rem; color: var(--heading); text-decoration: none; }
-  .action-bar a:first-child { background: var(--sun); color: var(--sun-ink); }
-  .action-bar a + a { border-left: 1px solid var(--line); }
-}
-
 /* ---------- Lightbox ---------- */
 .lightbox { width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(6, 18, 38, 0.94); color: #fff; }
 .lightbox[open] { display: grid; grid-template-columns: 64px 1fr 64px; align-items: center; }
@@ -701,7 +687,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* ---------- On-page editor (admin only) ---------- */
 .editor { position: fixed; left: calc(16px + env(safe-area-inset-left, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 60; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
-@media (max-width: 760px) { .editor { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); } }
 .editor__fab { width: 56px; height: 56px; border-radius: 50%; border: 0; background: var(--sun); color: var(--sun-ink); display: grid; place-items: center; cursor: pointer; box-shadow: 0 8px 24px -8px rgba(11, 35, 71, 0.55); transition: background-color 157ms var(--ease), transform 157ms var(--ease); }
 .editor__fab:hover { background: var(--sun-600); }
 .editor__fab svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -745,7 +730,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* ---------- Floating Zalo / Messenger buttons (stay on screen while scrolling) ---------- */
 .float-chat { position: fixed; right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 35; display: flex; flex-direction: column; gap: 12px; }
-@media (max-width: 760px) { .float-chat { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); gap: 10px; } }
+@media (max-width: 760px) { .float-chat { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); gap: 10px; } }
 .float-chat__btn { position: relative; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; text-decoration: none; color: #fff; box-shadow: 0 10px 24px -10px rgba(5, 15, 34, 0.6); transition: transform 157ms var(--ease); animation: float-in 393ms var(--ease) both; }
 .float-chat__btn:hover, .float-chat__btn:focus-visible { transform: translateY(-2px) scale(1.04); color: #fff; }
 .float-chat__btn--zalo { background: #0068ff; }
@@ -1180,7 +1165,6 @@ body.menu-open .float-chat { display: none; }
 .chatbot__note a { color: var(--link); }
 @media (max-width: 760px) {
   .chatbot { inset: 0; width: auto; height: auto; border-radius: 0; border: 0; }
-  .chat-open .action-bar { display: none; }
   .chat-open body { overflow: hidden; }
 }
 @media (prefers-reduced-motion: reduce) { .chatbot, .chatbot__typing i { animation: none; } }
@@ -1368,7 +1352,7 @@ body { font-variant-numeric: lining-nums; }
 .quote-badge[hidden] { display: none; }
 .quote-badge .ico { width: 18px; height: 18px; }
 .quote-badge__n { min-width: 24px; height: 24px; display: inline-grid; place-items: center; border-radius: 999px; background: var(--sun); color: var(--sun-ink); font-size: 0.85rem; }
-@media (max-width: 760px) { .quote-badge { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); } }
+@media (max-width: 760px) { .quote-badge { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); } }
 .is-editing .quote-badge { display: none; }
 .mt-6 { margin-top: var(--space-6); }
 
@@ -2183,3 +2167,5 @@ html.has-sunrise body { background: transparent; }
 .brand__text { flex-direction: column-reverse; align-items: center; text-align: center; }
 .brand__text small { margin: 0 0 5px; font-size: 0.75rem; letter-spacing: 0.02em; }
 .brand__text strong { text-transform: uppercase; letter-spacing: 0.06em; font-size: 1.5rem; }
+/* Phones: the floating chat buttons sit at the very bottom, so the last footer lines scroll clear of them */
+@media (max-width: 760px) { .site-footer, .lp-foot { padding-bottom: calc(178px + env(safe-area-inset-bottom, 0px)); } }
