@@ -2158,3 +2158,9 @@ html.has-sunrise body { background: transparent; }
   .filters__radios .radio { gap: 6px; }
   .filters__chips { padding-right: 68px; } /* keep clear of the floating chat buttons */
 }
+@media (max-width: 760px) {
+  /* Home: problem chips and product-group tabs wrap instead of scrolling sideways */
+  .finder__chips, .prodtabs__tabs { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding-inline: 0; padding-bottom: 0; gap: 6px; scroll-snap-type: none; }
+  .finder__chips .chip, .prodtabs__tab { flex: 0 1 auto; min-height: 36px; padding: 4px 10px; font-size: 0.8125rem; }
+  .prodtabs__tab { gap: 6px; }
+}
