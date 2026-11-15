@@ -222,7 +222,7 @@
     });
     // A gentle sway on load shows that the package can be turned.
     if (!reduce) {
-      setTimeout(function () { if (!drag && !stage.classList.contains('is-touched')) { vr = 7; if (!raf) raf = requestAnimationFrame(settle); } }, 900);
+      setTimeout(function () { if (!drag && !stage.classList.contains('is-touched')) { vr = 7; if (!raf) raf = requestAnimationFrame(settle); } }, 942);
     }
     apply();
   });

@@ -5,7 +5,7 @@
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   var lenis = new window.Lenis({
     autoRaf: true,
-    lerp: 0.1,
+    lerp: 0.09 /* 1/φ⁵ */,
     // inner scroll areas (mobile menu, chat log, wide tables, chip rows) keep their own scrolling
     prevent: function (node) {
       return !!(node.closest && node.closest('.nav, .chatbot, .chatbot__log, .table-wrap, .prose table, [data-lenis-prevent]'));

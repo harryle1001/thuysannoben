@@ -107,7 +107,7 @@
       if (row && lab && row.scrollWidth > row.clientWidth) row.scrollLeft = lab.offsetLeft - row.offsetLeft - 16;
     });
     form.addEventListener('change', apply);
-    q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(apply, 140); });
+    q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(apply, 157); });
     form.addEventListener('submit', function (e) { e.preventDefault(); apply(); });
     var reset = $('[data-reset]', catalog);
     if (reset) reset.addEventListener('click', function (e) {
@@ -243,7 +243,7 @@
   $$('[data-copy-link]').forEach(function (b) {
     b.addEventListener('click', function () {
       var url = b.getAttribute('data-copy-link');
-      var done = function () { var old = b.textContent; b.textContent = 'Đã sao chép'; setTimeout(function () { b.textContent = old; }, 1600); };
+      var done = function () { var old = b.textContent; b.textContent = 'Đã sao chép'; setTimeout(function () { b.textContent = old; }, 1571); };
       if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { window.prompt('Sao chép liên kết:', url); });
       else window.prompt('Sao chép liên kết:', url);
     });
@@ -350,7 +350,7 @@
     var r = el.getBoundingClientRect();
     if (r.top < innerHeight && r.bottom > 0) return; // already on screen: never hide it
     var sibs = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
-    el.style.setProperty('--rv-delay', Math.min(sibs % 6, 5) * 70 + 'ms');
+    el.style.setProperty('--rv-delay', Math.min(sibs % 6, 5) * 79 + 'ms');
     el.classList.add('rv');
   });
   var io = new IntersectionObserver(function (entries) {
