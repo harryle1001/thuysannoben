@@ -40,7 +40,7 @@
   <% if (m.preloadImage) { %><link rel="preload" as="image" href="<%= m.preloadImage %>" fetchpriority="high"<% if (m.preloadImagePhone) { %> media="(min-width: 761px)"<% } %>><% } %>
   <% if (m.preloadImagePhone) { %><link rel="preload" as="image" href="<%= m.preloadImagePhone %>" fetchpriority="high" media="(max-width: 760px)"><% } %>
   <script src="/js/theme.js?v=1"></script>
-  <link rel="stylesheet" href="/css/main.css?v=59">
+  <link rel="stylesheet" href="/css/main.css?v=60">
   <% for (const block of (locals.jsonld || [])) { %>
   <script type="application/ld+json"><%- JSON.stringify(block).replace(/</g, '\\u003c') %></script>
   <% } %>

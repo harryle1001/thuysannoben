@@ -2178,3 +2178,8 @@ html.has-sunrise body { background: transparent; }
   .hsearch__btn { min-height: 38px; padding: 0 16px; }
 }
 @media (min-width: 961px) and (max-width: 1179px) { .nav__link { padding: 10px 6px; font-size: 0.9rem; } .site-header__call { padding-inline: 12px; } }
+
+/* ---------- Brand lockup: tagline above, NOBEN in capitals below, centred ---------- */
+.brand__text { flex-direction: column-reverse; align-items: center; text-align: center; }
+.brand__text small { margin: 0 0 5px; font-size: 0.75rem; letter-spacing: 0.02em; }
+.brand__text strong { text-transform: uppercase; letter-spacing: 0.06em; font-size: 1.5rem; }
