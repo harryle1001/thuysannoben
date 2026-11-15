@@ -8,6 +8,7 @@ symptoms: khi-doc, mem-vo
 products: amylac, clear-12h, kalimix, rimix, super-oxy-02, aqua-bac
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-07
+updated: 2026-11-16
 ---
 
 Nuôi tôm thẻ trong ao lót bạt mật độ cao đang là mô hình phổ biến vì dễ kiểm soát đáy, giảm mầm bệnh và rút ngắn thời gian nuôi. Tuy nhiên mật độ cao đồng nghĩa với lượng chất thải, nhu cầu oxy và khoáng rất lớn, đòi hỏi quản lý chặt chẽ hơn ao đất.
@@ -26,18 +27,18 @@ Mật độ phổ biến từ 100 đến 300 con/m² tùy khả năng cấp oxy,
 ## Quản lý đáy và nhớt bạt
 
 - **Xi phông đáy hằng ngày** hoặc cách ngày từ tuần thứ ba.
-- Nhớt bạt hình thành từ vi khuẩn và chất hữu cơ bám thành ao. Dùng vi sinh chuyên tẩy nhớt bạt như [AMYLAC](/san-pham/amylac) hoặc [CLEAR 12H](/san-pham/clear-12h) theo lịch 3 ngày một lần.
+- Nhớt bạt hình thành từ vi khuẩn và chất hữu cơ bám thành ao. Dùng vi sinh tẩy nhớt bạt như [AMYLAC](/san-pham/amylac) (ao bạt: định kỳ 3 ngày/lần theo nhãn) hoặc [CLEAR 12H](/san-pham/clear-12h) (hỗ trợ làm sạch nhớt bạt, định kỳ 5–7 ngày/lần theo nhãn). Không tạt vi sinh cùng ngày với thuốc diệt khuẩn; sau khi diệt khuẩn chờ 2–3 ngày mới cấy lại vi sinh.
 - Vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) giúp phân hủy phần chất thải còn lại.
 
 ## Bổ sung khoáng
 
-Ao bạt không có khoáng từ đất nên tôm dễ thiếu khoáng, mềm vỏ. Cần tạt khoáng chuyên dùng cho ao bạt như [KALIMIX](/san-pham/kalimix), [RIMIX](/san-pham/rimix) thường xuyên, nhất là khi tôm lột.
+Ao bạt không có khoáng từ đất nên tôm dễ thiếu khoáng, mềm vỏ. Cần tạt khoáng chuyên dùng cho ao bạt như [KALIMIX](/san-pham/kalimix), [RIMIX](/san-pham/rimix) thường xuyên, nhất là khi tôm lột; nên tạt vào chiều tối hoặc ban đêm, lúc tôm lột rộ. Theo dõi độ kiềm (ao bạt mật độ cao thường giữ 150–200 mg/L CaCO3) và tỷ lệ Ca:Mg:K.
 
 ## Oxy và điện dự phòng
 
-- Mật độ cao cần nhiều quạt và sục khí đáy; oxy hòa tan luôn trên 5 mg/L.
+- Mật độ cao cần nhiều quạt và sục khí đáy; giữ oxy hòa tan trên 5 mg/L (không để dưới 4 mg/L), đo vào lúc rạng sáng khi oxy thấp nhất.
 - Bắt buộc có **máy phát điện dự phòng**. Mất điện 30 đến 60 phút vào ban đêm có thể làm tôm chết hàng loạt.
-- Dự trữ oxy viên như [SUPER OXY 02](/san-pham/super-oxy-02) để cấp cứu khi cần.
+- Dự trữ oxy viên như [SUPER OXY 02](/san-pham/super-oxy-02) để cấp cứu khi cần; khi tôm nổi đầu phải bật toàn bộ quạt, ngưng cho ăn rồi mới rải oxy viên.
 
 ## Thay nước
 

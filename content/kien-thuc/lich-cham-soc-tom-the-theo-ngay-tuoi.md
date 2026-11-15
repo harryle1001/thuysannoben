@@ -8,13 +8,14 @@ symptoms: tieu-hoa, gan-ruot, mem-vo
 products: aqualac-fs, g7-phong-va-tri-benh-gan-chet-som, sorbest, caphote, aqua-bac, miral-n8
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-cover.webp
 date: 2026-11-05
+updated: 2026-11-16
 ---
 
 Mỗi giai đoạn phát triển của tôm thẻ chân trắng có nhu cầu dinh dưỡng và nguy cơ bệnh khác nhau. Bảng lịch dưới đây giúp bà con biết việc cần làm theo ngày tuổi, chủ động phòng bệnh thay vì chạy theo chữa bệnh.
 
 ## Việc cần làm hằng ngày
 
-- Đo pH sáng và chiều, oxy hòa tan lúc sáng sớm.
+- Đo pH sáng và chiều (chênh lệch trong ngày không quá 0,5), oxy hòa tan lúc rạng sáng khi oxy thấp nhất.
 - Kiểm tra nhá sau mỗi cữ ăn, quan sát đường ruột và gan tụy.
 - Quan sát màu nước, tôm dạt bờ, tôm nổi đầu.
 - Ghi chép lượng thức ăn, thuốc đã dùng, chỉ tiêu môi trường.
@@ -32,7 +33,7 @@ Mỗi giai đoạn phát triển của tôm thẻ chân trắng có nhu cầu di
 ## Giai đoạn 31 đến 60 ngày: phòng phân trắng, ký sinh trùng
 
 - Tăng số cữ ăn lên 4 cữ, điều chỉnh theo nhá.
-- Bổ gan, giải độc gan định kỳ bằng thảo dược như [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): trộn 3 đến 5 ml/kg thức ăn, 2 lần/ngày, liên tục 3 đến 5 ngày rồi nghỉ 5 ngày.
+- Hỗ trợ chức năng gan định kỳ bằng sản phẩm bổ sung sorbitol, methionine, lysine như [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): theo nhãn trộn 7 đến 10 ml/kg thức ăn, 3 đến 4 lần/ngày.
 - Bổ sung khoáng tạt vào ban đêm, giữ độ kiềm 120 đến 180 mg/L, có thể dùng [MIRAL N8](/san-pham/miral-n8).
 - Vi sinh xử lý đáy 3 đến 5 ngày một lần như [AQUA BAC](/san-pham/aqua-bac).
 - Kiểm tra khí độc NH₃, NO₂ 2 đến 3 lần mỗi tuần.
@@ -54,7 +55,7 @@ Mỗi giai đoạn phát triển của tôm thẻ chân trắng có nhu cầu di
 | Độ kiềm | 120 đến 180 mg/L |
 | Oxy hòa tan | trên 5 mg/L |
 | NH₃ | dưới 0,1 mg/L |
-| NO₂ | dưới 1 mg/L |
+| NO₂ | dưới 1 mg/L (độ mặn thấp: dưới 0,5 mg/L) |
 | Độ trong | 30 đến 40 cm |
 
 ## Câu hỏi thường gặp
@@ -65,8 +66,8 @@ Thông thường 75 đến 110 ngày tùy mật độ, mô hình và kích cỡ 
 
 ### Giai đoạn nào tôm dễ chết nhất?
 
-Giai đoạn 10 đến 45 ngày đầu là thời điểm tôm dễ mắc bệnh gan tụy cấp và chết sớm. Giai đoạn 30 đến 70 ngày dễ gặp phân trắng.
+Giai đoạn 10 đến 35 ngày đầu là thời điểm tôm dễ mắc bệnh hoại tử gan tụy cấp (AHPND) và chết sớm. Giai đoạn 30 đến 70 ngày dễ gặp phân trắng.
 
 ### Có cần dùng thuốc định kỳ khi tôm khỏe?
 
-Nên dùng các sản phẩm bổ trợ như men vi sinh, bổ gan, khoáng định kỳ để phòng bệnh. Thuốc điều trị chỉ dùng khi có bệnh và theo hướng dẫn của kỹ thuật viên.
+Nên dùng các sản phẩm bổ trợ như men vi sinh, bổ gan, khoáng định kỳ để phòng bệnh. Không dùng kháng sinh để phòng bệnh; thuốc điều trị chỉ dùng khi đã xác định đúng bệnh, theo hướng dẫn của kỹ thuật viên, thú y và đúng thời gian ngưng thuốc trước thu hoạch.

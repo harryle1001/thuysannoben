@@ -8,6 +8,7 @@ symptoms: gan-ruot, sat-trung
 products: super-vidal, aqua-bac, hepaliver-fs, biozyme
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-6.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 The EHP microsporidian (*Enterocytozoon hepatopenaei*) does not cause mass mortality, but it makes shrimp grow slowly, causes size variation and prolongs the culture cycle. The article [EHP microsporidian disease](/bai-viet/benh-vi-bao-tu-trung-ehp-tren-tom) covered the signs and general prevention. This article goes deeper into the two things farmers most often get wrong: **doing EHP PCR testing properly** and **preparing the pond to reduce EHP spores left over** from the previous crop.
@@ -96,7 +97,7 @@ Not necessarily. Some older PCR protocols can cross-react with other microsporid
 
 ### Can high-dose chlorine alone kill EHP spores?
 
-You should not rely on chlorine alone. EHP spores tolerate high chlorine concentrations, so it must be combined with sludge removal, bottom drying and quicklime (CaO) to raise the bottom pH to 11–12 or higher.
+You should not rely on chlorine alone. EHP spores tolerate high chlorine concentrations, so it must be combined with sludge removal, bottom drying and quicklime (CaO) to raise the bottom pH to 12 or higher.
 
 ### How long should I wait before restocking a pond infected with EHP in the previous crop?
 

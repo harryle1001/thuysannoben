@@ -8,6 +8,7 @@ symptoms: gan-ruot, sat-trung
 products: super-vidal, aqua-bac, hepaliver-fs, biozyme
 photo: /images/posts/mot-so-benh-thuong-gap-tren-tom-the-6.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Vi bào tử trùng EHP (*Enterocytozoon hepatopenaei*) không làm tôm chết hàng loạt nhưng khiến tôm chậm lớn, lệch cỡ và kéo dài vụ nuôi. Bài [bệnh vi bào tử trùng EHP](/bai-viet/benh-vi-bao-tu-trung-ehp-tren-tom) đã nói về dấu hiệu và cách phòng chung. Bài này đi sâu vào hai việc bà con hay làm sai nhất: **xét nghiệm PCR EHP sao cho đúng** và **cải tạo ao để giảm bào tử EHP còn sót lại** từ vụ trước.
@@ -96,7 +97,7 @@ Chưa chắc. Một số quy trình PCR cũ có thể phản ứng chéo với v
 
 ### Chỉ dùng chlorine liều cao có diệt được bào tử EHP không?
 
-Không nên trông cậy vào chlorine một mình. Bào tử EHP chịu được chlorine nồng độ cao, nên phải kết hợp nạo vét bùn, phơi đáy và vôi nung CaO nâng pH đáy lên 11 đến 12 trở lên.
+Không nên trông cậy vào chlorine một mình. Bào tử EHP chịu được chlorine nồng độ cao, nên phải kết hợp nạo vét bùn, phơi đáy và vôi nung CaO nâng pH đáy lên 12 trở lên.
 
 ### Ao vụ trước nhiễm EHP thì bao lâu mới thả lại?
 

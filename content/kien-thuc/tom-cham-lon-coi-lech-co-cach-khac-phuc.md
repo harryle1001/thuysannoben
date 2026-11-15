@@ -7,6 +7,7 @@ keywords: tôm chậm lớn, tôm bị còi, tôm lệch cỡ, tôm không lớn
 symptoms: mem-vo, tieu-hoa
 products: top-weigh, hi-weigh, nb-biobest, caphote, aqualac-fs, sorbest
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 Tôm chậm lớn và lệch cỡ là "kẻ trộm thầm lặng" trong nuôi tôm: tôm không chết nhiều nhưng thời gian nuôi kéo dài, hệ số thức ăn (FCR) tăng, giá bán giảm vì cỡ không đều. Muốn tôm lớn nhanh, đều cỡ, cần tìm đúng nguyên nhân thay vì chỉ tăng thức ăn.
@@ -26,7 +27,7 @@ Giống nhiễm bệnh, giống bị sốc khi vận chuyển hoặc thả khôn
 
 ### 2. Nhiễm vi bào tử trùng EHP
 
-Đây là nguyên nhân hàng đầu gây lệch cỡ nặng. Xem [bệnh EHP trên tôm](/bai-viet/benh-vi-bao-tu-trung-ehp-tren-tom).
+Đây là một trong những nguyên nhân hàng đầu gây lệch cỡ nặng; chỉ xét nghiệm PCR mới khẳng định được. Xem [bệnh EHP trên tôm](/bai-viet/benh-vi-bao-tu-trung-ehp-tren-tom).
 
 ### 3. Gan tụy và đường ruột yếu
 
@@ -47,10 +48,10 @@ Cho ăn thiếu hoặc dư, không chia đủ cữ, thức ăn kém chất lư�
 ## Cách giúp tôm tăng trọng nhanh, đều cỡ
 
 1. **Ổn định môi trường trước**: oxy trên 5 mg/L, kiềm 120 đến 180 mg/L, khí độc thấp.
-2. **Phục hồi gan ruột**: trộn men vi sinh như [AQUALAC FS](/san-pham/aqualac-fs) 3 g/kg và bổ gan [SORBEST](/san-pham/sorbest) 10 g/kg thức ăn.
-3. **Bổ sung dinh dưỡng tăng trọng**: các sản phẩm bổ sung acid amin, vitamin, khoáng như [TOP WEIGH](/san-pham/top-weigh) hoặc [HI WEIGH](/san-pham/hi-weigh), dùng theo liều trên nhãn; men nong ruột [NB BIOBEST](/san-pham/nb-biobest) trộn 10 g/kg thức ăn hằng ngày.
-4. **Bổ sung khoáng trộn và tạt**: [CAPHOTE](/san-pham/caphote) trộn 5 ml/kg thức ăn giúp chống còi, cứng vỏ nhanh, kết hợp khoáng tạt ban đêm.
-5. **San thưa hoặc thu tỉa** khi mật độ quá cao, giúp tôm còn lại lớn đều.
+2. **Phục hồi gan ruột**: trộn men vi sinh như [AQUALAC FS](/san-pham/aqualac-fs) 5 g/kg thức ăn, 2 lần/ngày và bổ gan [SORBEST](/san-pham/sorbest) 5 g/kg thức ăn (10 g/kg khi gan yếu, liên tục 3 đến 5 ngày).
+3. **Bổ sung dinh dưỡng tăng trọng**: các sản phẩm bổ sung acid amin, vitamin, khoáng như [TOP WEIGH](/san-pham/top-weigh) hoặc [HI WEIGH](/san-pham/hi-weigh), dùng theo liều trên nhãn; men nong ruột [NB BIOBEST](/san-pham/nb-biobest) trộn 5 g/kg thức ăn, 2 lần/ngày hằng ngày.
+4. **Bổ sung khoáng trộn và tạt**: [CAPHOTE](/san-pham/caphote) trộn 3 đến 5 ml/kg thức ăn, 3 lần/ngày, giúp chống còi, cứng vỏ nhanh, kết hợp khoáng tạt ban đêm.
+5. **San thưa hoặc thu tỉa** khi mật độ quá cao, giúp tôm còn lại lớn đều (không san tôm từ ao nghi nhiễm EHP sang ao khác).
 
 ## Câu hỏi thường gặp
 

@@ -7,6 +7,7 @@ keywords: zeolite cho ao tôm, yucca cho ao tôm, cách dùng zeolite, khoáng z
 symptoms: khi-doc, oxy-stress
 products: grand-zeolite-zeo-hat-nhap-khau, yucca-vs-zeo, aqua-yucca, super-yucca, yucca-99
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 Zeolite và Yucca là hai "trợ thủ" quen thuộc giúp ao tôm sạch đáy, giảm khí độc. Nhiều bà con dùng thay thế nhau, nhưng thực ra chúng hoạt động khác nhau và phát huy tốt nhất khi dùng đúng lúc. Hiểu rõ từng loại giúp tiết kiệm chi phí và xử lý ao hiệu quả hơn.
@@ -19,11 +20,13 @@ Zeolite là khoáng tự nhiên có cấu trúc nhiều lỗ xốp, có khả n�
 - Lắng tụ chất lơ lửng, làm nước trong hơn, đáy sạch hơn.
 - Cải thiện nền đáy, nhất là ao đất có đáy dơ.
 
+Lưu ý: trong nước lợ, mặn, các ion Na⁺, K⁺, Ca²⁺, Mg²⁺ chiếm chỗ trao đổi nên khả năng hấp phụ amoni của zeolite giảm mạnh; zeolite cũng không xử lý được H₂S hay NO₂. Vì vậy zeolite chỉ là biện pháp hỗ trợ, không thay được quạt khí, xi phông và cho ăn đúng.
+
 Zeolite **dạng hạt** chìm nhanh xuống đáy, tác động trực tiếp nơi tích tụ chất thải.
 
 ## Yucca là gì?
 
-Yucca là chiết xuất từ cây Yucca schidigera, chứa saponin có khả năng **liên kết nhanh với NH₃**, giảm nhanh khí độc trong nước. Yucca phát huy tác dụng nhanh, phù hợp khi cần **cấp cứu khí độc, tôm nổi đầu**.
+Yucca là chiết xuất từ cây Yucca schidigera, chứa saponin và các hợp chất có khả năng **liên kết một phần NH₃**, hỗ trợ giảm khí độc trong nước. Yucca tác dụng nhanh nhưng ngắn, phù hợp dùng hỗ trợ khi **khí độc cao, tôm nổi đầu**, song song với tăng quạt và giảm thức ăn.
 
 ## So sánh Zeolite và Yucca
 
@@ -38,7 +41,7 @@ Yucca là chiết xuất từ cây Yucca schidigera, chứa saponin có khả n�
 - [GRAND ZEOLITE hạt](/san-pham/grand-zeolite-zeo-hat-nhap-khau): định kỳ **20 kg cho 2.000 m² mặt nước**, 5 ngày/lần; khi khí độc cao, cấp cứu nổi đầu dùng 20 kg cho 1.000 m², 2 ngày liên tục. Rải khắp ao, tập trung nơi có nhiều chất thải.
 - [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) (kết hợp yucca và zeolite): định kỳ 10 kg cho 5.000 m³ nước, 7 ngày/lần; khi khí độc cao dùng 10 kg cho 3.000 m³.
 - [AQUA YUCCA](/san-pham/aqua-yucca) (bột): định kỳ 500 g cho 5.000 m³, 7 ngày/lần; khí độc cao 500 g cho 3.000 m³, dùng 2 đến 3 lần.
-- [SUPER YUCCA](/san-pham/super-yucca) (dạng nước): định kỳ 1 lít cho 5.000 m³, 7 ngày/lần; khí độc cao 1 lít cho 3.000 m³.
+- [SUPER YUCCA](/san-pham/super-yucca) (dạng nước): pha loãng với 20 lít nước rồi tạt; định kỳ 1 lít cho 4.000 đến 6.000 m³, 7 ngày/lần; khí độc cao 1 lít cho 3.000 đến 4.000 m³.
 
 Tạt yucca vào sáng sớm hoặc chiều mát và mở quạt để sản phẩm phân tán đều.
 

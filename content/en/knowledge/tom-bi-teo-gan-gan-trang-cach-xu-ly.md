@@ -7,6 +7,7 @@ keywords: atrophied hepatopancreas shrimp, white hepatopancreas shrimp, pale shr
 symptoms: gan-ruot
 products: sorbest, g7-phong-va-tri-benh-gan-chet-som, hepaliver-fs, liver-max, antiliv, aqualac-fs
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 The hepatopancreas is the shrimp's digestive and energy storage "factory". When it is healthy, shrimp feed vigorously, grow fast and tolerate environmental fluctuations. When the hepatopancreas becomes **atrophied, pale, white or swollen and waterlogged**, shrimp absorb feed poorly, grow slowly, are prone to gut diseases and may suffer prolonged scattered mortality. Checking the hepatopancreas regularly is something farmers should do every week.
@@ -26,7 +27,7 @@ Shrimp with a weak hepatopancreas often also show an empty gut, loose faeces or 
 
 ### Vibrio bacteria and hepatopancreatic necrosis
 
-Bacteria attack the hepatopancreas, causing swelling, atrophy and necrosis, commonly seen 10–45 days after stocking. See the article [acute hepatopancreatic necrosis disease (EMS)](/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom).
+Vibrio bacteria (especially *V. parahaemolyticus* strains carrying the pirA/pirB toxin genes that cause AHPND/EMS) attack the hepatopancreas, causing swelling, atrophy and necrosis; AHPND mostly occurs 10–35 days after stocking. See the article [acute hepatopancreatic necrosis disease (EMS)](/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom).
 
 ### EHP microsporidian
 
@@ -44,21 +45,21 @@ Excess feed both fouls the pond bottom and overloads the hepatopancreas. Ponds f
 
 ### Step 1: Reduce the load on the hepatopancreas
 
-- Reduce feed by 20–30% for 3–5 days, monitoring the feeding trays to adjust.
+- Reduce feed by 20–30% for 3–5 days, monitoring the feeding trays to adjust; increase aeration to keep dissolved oxygen ≥ 5 mg/L.
 - Treat the pond bottom, absorb toxic gases, and stabilise pH and alkalinity. See [treating toxic gases in shrimp ponds](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom).
 
 ### Step 2: Liver tonics and detoxification at label doses
 
-- [SORBEST](/san-pham/sorbest): mix **10 g/kg feed**, 2–3 times/day; can also be applied to the pond at 500 g per 2,000 m³ of water, every 5–7 days.
-- The herbal product [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): for prevention, mix 3–5 ml/kg feed; when the hepatopancreas is weak, mix **7–10 ml/kg**, 3–4 times/day for 5 consecutive days.
-- [HEPALIVER FS](/san-pham/hepaliver-fs) or [ANTILIV](/san-pham/antiliv): when the hepatopancreas is weak, mix **10 ml/kg feed**, 3–4 times/day for 5 consecutive days.
-- [LIVER MAX](/san-pham/liver-max): mix 10 ml/kg feed and can also be applied to the pond at 1 litre per 1,500 m³ of water, every 5 days.
+- [SORBEST](/san-pham/sorbest): mix **10 g/kg feed**, 2–3 times/day for 3–5 consecutive days; it can also be applied to the pond at 500 g per 1,000 m³ of water for 2–3 consecutive days (routine use: 500 g per 1,600 m³, every 5–7 days).
+- The herbal product [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): for routine use, mix 7–10 ml/kg feed, 3–4 times/day; when the hepatopancreas looks abnormal, mix **10 ml/kg**.
+- [HEPALIVER FS](/san-pham/hepaliver-fs) or [ANTILIV](/san-pham/antiliv): when the hepatopancreas is weak, mix **10 ml/kg feed**, 3–4 times/day (ANTILIV: for 5 consecutive days).
+- [LIVER MAX](/san-pham/liver-max): mix 7–10 ml/kg feed, 3–4 times/day; when the hepatopancreas looks abnormal, mix 10 ml/kg.
 
 Choose only one main liver tonic per course; do not mix several products at the same time.
 
 ### Step 3: Restore the gut
 
-The hepatopancreas and gut always go hand in hand. After the liver tonic course, mix a gut probiotic such as [AQUALAC FS](/san-pham/aqualac-fs) at 3 g/kg feed daily so shrimp digest well again. See also [probiotics for shrimp](/bai-viet/men-vi-sinh-cho-tom-cach-chon-va-su-dung).
+The hepatopancreas and gut always go hand in hand. After the liver tonic course, mix a gut probiotic such as [AQUALAC FS](/san-pham/aqualac-fs) at 5 g/kg feed, twice a day, so shrimp digest well again. See also [probiotics for shrimp](/bai-viet/men-vi-sinh-cho-tom-cach-chon-va-su-dung).
 
 ### Step 4: Monitor and contact a technician
 
@@ -66,7 +67,7 @@ Check the hepatopancreas after 3–5 days. If mortality is still rising or the h
 
 ## Preventing a weak hepatopancreas from the start of the crop
 
-- Choose disease-free postlarvae that have been tested for EHP and EMS.
+- Choose disease-free postlarvae that have tested PCR-negative for EHP and AHPND (EMS).
 - Give liver tonics periodically for 3–5 days per course, repeating after a 5-day break, especially during the period from day 10 to day 45.
 - Feed according to demand and store feed in a dry place.
 - Keep the pond bottom clean and toxic gases low with regular probiotic applications.

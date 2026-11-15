@@ -8,6 +8,7 @@ symptoms: khi-doc, oxy-stress, mau-nuoc
 products: super-oxy-02, aqua-yucca, nb-brown-gay-mau-nuoc-mau-tra, proticbest
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Measuring at the wrong time, sampling in the wrong place or misreading the result means the numbers are of no help. This article explains **how to measure shrimp pond water parameters**: when to measure, how to take samples, which thresholds to read against and how to keep a log so you can see trends.
@@ -47,11 +48,11 @@ Kubitza (2017) recommends that ponds fed more than 100 kg of feed/ha/day should 
 
 ### pH: look at the range, not just one number
 
-QCVN 02-19:2014/BNNPTNT sets pH at 7–9 with **daily fluctuation of no more than 0.5**. Kubitza (2017) states that shrimp grow best at pH 7.5–8.5. During the day, phytoplankton photosynthesis raises pH, and at night it falls; the denser the phytoplankton, the stronger the pH swing. A difference of 2 units or more between morning and afternoon pH means **alkalinity is too low** or **phytoplankton is too dense**, and alkalinity needs to be measured to find the cause. For treatment details, see the article on [managing pH and alkalinity](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
+QCVN 02-19:2014/BNNPTNT sets pH at 7–9 with **daily fluctuation of no more than 0.5**. Kubitza (2017) states that shrimp grow best at pH 7.5–8.5. During the day, phytoplankton photosynthesis raises pH, and at night it falls; the denser the phytoplankton, the stronger the pH swing. A morning–afternoon difference of more than 0.5 (especially 1 unit or more) usually means **alkalinity is too low** or **phytoplankton is too dense**, and alkalinity needs to be measured to find the cause. For treatment details, see the article on [managing pH and alkalinity](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
 
 ### Alkalinity
 
-The QCVN sets alkalinity at **60–180 mg/L**. Alkalinity keeps pH stable. Kubitza (2017) considers that below 30 mg/L liming is required, but that is a general minimum; shrimp ponds should be kept within the QCVN range.
+The QCVN sets alkalinity at **60–180 mg/L**. Alkalinity keeps pH stable. Kubitza (2017) considers that below 30 mg/L liming is required, but that is a general minimum; in practice whiteleg shrimp ponds should be kept at about 120–180 mg/L as CaCO₃ (high-density lined ponds often 150–200 mg/L).
 
 ### Salinity
 
@@ -59,7 +60,7 @@ The QCVN allows **5–35 ppt**. At the same NO₂ level, low-salinity ponds are 
 
 ### Dissolved oxygen (DO)
 
-The QCVN requires oxygen of **3.5 mg/L or more**. Only early-morning measurements show the lowest level; midday readings are usually high and can give a false sense of security. Ponds with transparency below 20 cm due to dense phytoplankton often run short of oxygen in the early morning (Boyd, 2004). See also [paddlewheel aerator layout and dissolved oxygen](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
+The QCVN requires oxygen of **3.5 mg/L or more**; in practice keep it at 4 mg/L or above, ideally ≥ 5 mg/L. Only early-morning measurements show the lowest level; midday readings are usually high and can give a false sense of security. Ponds with transparency below 20 cm due to dense phytoplankton often run short of oxygen in the early morning (Boyd, 2004). See also [paddlewheel aerator layout and dissolved oxygen](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
 
 ### Ammonia (TAN) and NH₃
 
@@ -78,7 +79,7 @@ Nitrite toxicity depends on salinity, because chloride ions reduce nitrite uptak
 | 3 ppt | 15.2 | 1.5 |
 | 15 ppt | 76.5 | 7.6 |
 
-Nitrite rarely causes problems at salinities above 20 ppt but is common in low-salinity ponds. Note whether the test kit reports NO₂ or N-NO₂; the two numbers are different.
+These are levels of concern, not safe long-term working limits: in the pond, keep NO₂ below 1 mg/L in brackish water and below 0.5 mg/L at low salinity. Nitrite rarely causes problems at salinities above 20 ppt but is common in low-salinity ponds. Note whether the test kit reports NO₂ or N-NO₂; the two numbers are different.
 
 ### H₂S
 
@@ -98,15 +99,15 @@ The QCVN sets transparency at 20–50 cm. Boyd considers 30–45 cm good if the 
 
 | Parameter | QCVN 02-19:2014/BNNPTNT | Additional notes |
 | --- | --- | --- |
-| Dissolved oxygen | ≥ 3.5 mg/L | Measure in the early morning |
+| Dissolved oxygen | ≥ 3.5 mg/L | Preferably ≥ 4, ideally ≥ 5 mg/L; measure in the early morning |
 | pH | 7–9, daily fluctuation ≤ 0.5 | Best 7.5–8.5 (Kubitza, 2017) |
-| Alkalinity | 60–180 mg/L | |
+| Alkalinity | 60–180 mg/L | Preferably 120–180 mg/L (lined ponds 150–200) |
 | Salinity | 5–35 ppt | Low salinity: keep NO₂ lower |
 | Transparency | 20–50 cm | 30–45 cm is good (Boyd, 2004) |
 | NH₃ | < 0.3 mg/L | Marine shrimp preferably < 0.1 mg/L (Kubitza, 2026) |
 | H₂S | < 0.05 mg/L | Preferably ≤ 0.005 mg/L (Boyd, 2014) |
-| Temperature | 18–33°C | |
-| NO₂ | Not specified in the table | Level of concern by salinity, see table above |
+| Temperature | 18–33°C | Best 28–32°C |
+| NO₂ | Not specified in the table | Preferably < 1 mg/L (brackish), < 0.5 mg/L (low salinity) |
 
 ## Keeping a pond environment log
 
@@ -118,7 +119,7 @@ One page per pond, one line per day: days of culture (DOC), time of measurement,
 
 When results exceed the thresholds, use according to the label:
 
-- [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly; emergency use when shrimp surface due to oxygen shortage. 3kg/3,000m³, spread evenly over the pond surface, together with running the aerators.
+- [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly; emergency use when shrimp surface due to oxygen shortage. 2–3 kg/1,000m³, spread evenly over the pond surface, together with running the aerators.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic compounds. Routine 500g/5,000m³ every 7 days; when toxic compounds are high 500g/3,000m³, applied 2–3 times in a row.
 - [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): quickly builds water colour when transparency is too high. Sudden loss of phytoplankton: 250g/1,000m³.
 - [PROTICBEST](/san-pham/proticbest): probiotic that cleans the pond bottom and breaks down organic waste and toxic compounds at the pond bottom. Apply directly 1 litre/3,000m³, routinely every 3–5 days.

@@ -7,6 +7,7 @@ keywords: diệt ốc đinh trong ao nuôi tôm, thuốc diệt ốc bươu vàn
 symptoms: sat-trung
 products: d-oc, xo-09, ben-iq, iodine-99
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Ốc đinh, ốc bươu vàng, hến, chem chép là những "vị khách không mời" quen thuộc của ao nuôi tôm, nhất là ao đất và ao lấy nước từ kênh rạch. Chúng sinh sản rất nhanh, **ăn thức ăn của tôm, tiêu tốn oxy, làm bẩn đáy** và có thể là vật chủ trung gian mang mầm bệnh. Diệt ốc triệt để ngay từ khâu cải tạo ao là cách rẻ và hiệu quả nhất.
@@ -55,7 +56,7 @@ Rửa ao, bón vôi theo quy trình cải tạo, sau đó lấy nước qua túi
 - **Lọc nước cấp** bằng túi lọc lưới mịn (nhiều lớp) ở cửa cống để chặn ốc non, trứng hến.
 - Có **ao lắng** và xử lý diệt ốc, sát trùng trong ao lắng trước khi cấp sang ao nuôi.
 - Phát quang bờ ao, dọn ổ trứng ốc bươu vàng định kỳ.
-- Sát trùng nguồn nước sau khi lấy vào bằng iodine như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99) 1 lít cho 2.000 m³ nước, 2 đến 3 ngày trước khi thả giống.
+- Sát trùng nguồn nước sau khi lấy vào bằng iodine như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99), liều chuẩn bị ao theo nhãn 1 lít cho 3.000 m³ nước; chờ 2 đến 3 ngày cho hết dư lượng rồi mới gây màu, cấy vi sinh và thả giống.
 
 ## Câu hỏi thường gặp
 

@@ -8,6 +8,7 @@ symptoms: gan-ruot, tieu-hoa
 products: hepaliver-fs, biozyme, prozyme, aqualac-fs
 photo: /images/posts/khoang-tang-trong-luong-khi-thu-hoach-cover.webp
 date: 2026-10-11
+updated: 2026-11-16
 ---
 
 The microsporidian EHP (Enterocytozoon hepatopenaei) parasitises the shrimp hepatopancreas and impairs nutrient absorption. The disease rarely causes mass mortality but makes shrimp **grow slowly with severe size variation**, raises the feed conversion ratio and lengthens the culture period, sharply reducing profit.
@@ -19,7 +20,7 @@ The microsporidian EHP (Enterocytozoon hepatopenaei) parasitises the shrimp hepa
 - Pale, small hepatopancreas; shrimp often have accompanying **white feces disease**.
 - Feed conversion ratio (FCR) higher than normal.
 
-Only PCR testing can confirm that a pond is infected with EHP. Farmers should send shrimp and faeces samples to a laboratory when they suspect it.
+Only PCR testing can confirm that a pond is infected with EHP. Farmers should send shrimp (preferably hepatopancreas) and faeces samples to a laboratory when they suspect it.
 
 ## Transmission routes
 
@@ -32,7 +33,7 @@ Only PCR testing can confirm that a pond is infected with EHP. Farmers should se
 ### Thorough pond preparation
 
 - Remove all bottom sludge; for lined ponds, scrub, wash and dry.
-- Apply quicklime (CaO) at high rates to raise bottom pH to a high level, helping to kill spores. The dose depends on soil type; farmers should consult a technician.
+- Apply quicklime (CaO) at high rates on a moist bottom to raise bottom pH to 12 or higher for several days, greatly reducing spores. The dose depends on soil type; farmers should consult a technician. Chlorine alone is not sufficient to kill EHP spores.
 - Dry the pond bottom thoroughly in the sun before taking in water.
 
 ### Select clean postlarvae
@@ -62,4 +63,4 @@ If shrimp eat steadily but still show wide size variation, a pale hepatopancreas
 
 ### Does quicklime kill EHP spores?
 
-Quicklime applied at the correct dose on a moist bottom raises pH to a very high level and is a recommended measure for reducing EHP spores during pond preparation. Take safety precautions when handling it, as quicklime gives off strong heat.
+Quicklime applied at the correct dose on a moist bottom raises bottom pH to 12 or higher and is a recommended measure for reducing EHP spores during pond preparation. Take safety precautions when handling it, as quicklime gives off strong heat.

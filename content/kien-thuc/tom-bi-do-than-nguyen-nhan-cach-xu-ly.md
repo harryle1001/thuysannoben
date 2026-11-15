@@ -7,6 +7,7 @@ keywords: tôm bị đỏ thân, tôm thẻ đỏ thân, tôm đỏ đuôi, tôm
 symptoms: oxy-stress, sat-trung
 products: kia-c-tat, aqua-c30, ben-iq, iodine-99, aqua-yucca, oxy-99
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Tôm khỏe có màu trong, hơi xám xanh. Khi tôm **chuyển màu đỏ ở thân, đuôi, râu hoặc chân bơi**, đó là dấu hiệu cơ thể tôm đang bị sốc hoặc bị bệnh. Sắc tố đỏ (astaxanthin) vốn nằm sẵn dưới vỏ tôm; khi tôm yếu, các tế bào sắc tố giãn ra nên màu đỏ lộ rõ. Vì vậy đỏ thân không phải một bệnh riêng, mà là "đèn báo" cho nhiều nguyên nhân khác nhau. Xử lý đúng nguyên nhân thì tôm hồi lại nhanh; xử lý sai dễ mất cả ao.
@@ -48,7 +49,7 @@ Tôm thiếu vitamin C, khoáng và chất đạm kéo dài sẽ yếu, dễ s�
 
 - Đo **pH, độ kiềm, độ mặn, nhiệt độ, oxy, NH₃, NO₂** để tìm nguyên nhân.
 - Chạy quạt nước, máy sục khí tối đa, nhất là từ nửa đêm đến sáng.
-- Khi tôm nổi đầu do ngộp, tạt oxy viên như [OXY 99](/san-pham/oxy-99) với liều 3 kg cho 2.000 m³ nước, rải đều mặt ao và mở quạt.
+- Khi tôm nổi đầu do ngộp, tạt oxy viên như [OXY 99](/san-pham/oxy-99) với liều 2 đến 3 kg cho 1.000 m³ nước theo nhãn, rải đều mặt ao và mở quạt.
 
 ### Bước 2: Giảm ăn, chống sốc
 
@@ -58,11 +59,11 @@ Tôm thiếu vitamin C, khoáng và chất đạm kéo dài sẽ yếu, dễ s�
 
 ### Bước 3: Xử lý khí độc và đáy ao
 
-Dùng sản phẩm yucca hấp thụ khí độc như [AQUA YUCCA](/san-pham/aqua-yucca) 500 g cho 3.000 m³ nước khi khí độc cao, kết hợp xi phông đáy (ao bạt) và cấy vi sinh xử lý đáy.
+Dùng sản phẩm yucca hấp thụ khí độc như [AQUA YUCCA](/san-pham/aqua-yucca) 500 g cho 3.000 m³ nước khi khí độc cao, kết hợp xi phông đáy (ao bạt) và cấy vi sinh xử lý đáy. Nếu phải diệt khuẩn ở bước 4 thì để 2 đến 3 ngày sau diệt khuẩn mới cấy vi sinh.
 
 ### Bước 4: Diệt khuẩn khi nghi nhiễm Vibrio
 
-Khi tôm đỏ thân kèm gan sưng, chết rải rác nhiều ngày, có thể diệt khuẩn nguồn nước bằng iodine như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99), liều 1 lít cho 3.000 m³ nước, dùng liên tục 2 ngày theo nhãn. Sau diệt khuẩn 2 ngày cần cấy lại vi sinh để ổn định nước.
+Khi tôm đỏ thân kèm gan sưng, chết rải rác nhiều ngày, có thể diệt khuẩn nguồn nước bằng iodine như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99), theo nhãn tăng gấp đôi liều định kỳ khi nước nhiễm khuẩn nặng (1 lít cho 3.000 đến 4.500 m³ nước), tạt lúc chiều mát và mở quạt. Không dùng kháng sinh để phòng bệnh; nếu cần điều trị, chỉ dùng thuốc được phép theo chỉ định của cán bộ thú y. Sau diệt khuẩn 2 đến 3 ngày cần cấy lại vi sinh để ổn định nước.
 
 ### Bước 5: Theo dõi và ổn định lại
 
@@ -80,7 +81,7 @@ Tôm đỏ do sốc, ngộp thường hồi lại màu sau 2 đến 3 ngày khi 
 
 ### Tôm bị đỏ thân có ăn được không?
 
-Tôm đỏ do sốc vẫn có thể thu hoạch nếu tôm còn sống và không dùng thuốc trong thời gian ngưng thuốc. Tôm chết đỏ, nghi do virus hoặc vi khuẩn thì không nên bán tươi; liên hệ cán bộ thú y để được hướng dẫn xử lý.
+Tôm đỏ do sốc vẫn có thể thu hoạch nếu tôm còn sống và đã qua thời gian ngưng sử dụng thuốc, hóa chất ghi trên nhãn. Tôm chết đỏ, nghi do virus hoặc vi khuẩn thì không nên bán tươi; liên hệ cán bộ thú y để được hướng dẫn xử lý.
 
 ### Tôm đỏ thân sau khi mưa thì làm gì trước tiên?
 

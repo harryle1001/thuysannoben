@@ -8,6 +8,7 @@ symptoms: khi-doc
 products: proticbest, clear-12h, aqua-yucca, super-oxy-02
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 High-density lined ponds (HDPE-lined ponds) receive a lot of feed and accumulate waste quickly, so ammonia (NH₃/NH₄⁺) and nitrite (NO₂) rise faster than in earthen ponds. The article on [treating toxic NH3, NO2 and H2S](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom) sets out the thresholds and quick fixes. This article helps farmers **understand why toxic compounds build up** and **read test results correctly**, so they can stay in control in lined ponds.
@@ -64,14 +65,14 @@ Nitrite passes through the gills and impairs the blood's ability to carry oxygen
 | 25 ppt | 178.3 | 15.2 |
 | 35 ppt | 321.7 | 25.7 |
 
-This means that at 15 ppt, shrimp are much more sensitive to nitrite than at 35 ppt. In ponds of even lower salinity, farmers must keep nitrite lower still. Boyd's summary table (2019) gives safe nitrite levels for marine shrimp across a very wide range, from 0.5 to 15 mg/L, depending on species, salinity and experimental conditions. In low-salinity ponds, farmers should keep nitrite low; the further below these thresholds, the safer.
+This means that at 15 ppt, shrimp are much more sensitive to nitrite than at 35 ppt. In ponds of even lower salinity, farmers must keep nitrite lower still. Boyd's summary table (2019) gives safe nitrite levels for marine shrimp across a very wide range, from 0.5 to 15 mg/L, depending on species, salinity and experimental conditions. These are short-term laboratory figures, not crop-long working limits. In practice, keep NO₂ below 1 mg/L in brackish ponds and below 0.5 mg/L in low-salinity ponds.
 
 For freshwater fish, chloride ions compete with nitrite at the gills, and a chloride : nitrite ratio of about 20 : 1 usually prevents nitrite poisoning (Boyd, 2007). This principle explains why saltier water helps reduce nitrite toxicity, but a specific ratio for shrimp has not been established.
 
 ## Managing NH3 and NO2 in high-density lined ponds
 
 - **Stock and feed within capacity**: Boyd recommends moderate stocking density and feed quantity as the most effective way to reduce ammonia.
-- **Aerate sufficiently, day and night**: oxygen for the shrimp and for the nitrifying bacteria. Keep oxygen above 3.5 mg/L in line with the QCVN.
+- **Aerate sufficiently, day and night**: oxygen for the shrimp and for the nitrifying bacteria. The QCVN sets only a 3.5 mg/L minimum; in high-density lined ponds keep DO at 4 mg/L or above at all times (ideally ≥ 5 mg/L), including at dawn.
 - **Keep alkalinity stable**, topping it up when feeding heavily, because nitrification continuously consumes alkalinity.
 - **Do not let afternoon pH get too high**: control phytoplankton density and avoid dense blooms.
 - **Siphon and collect waste** out of the lined pond regularly. See [farming techniques for high-density lined ponds](/bai-viet/ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao).
@@ -101,7 +102,7 @@ As feed quantity increases, more ammonia is produced, while the step converting 
 
 ### Do low-salinity ponds need lower NO2 than saltier ponds?
 
-Yes. Research shows that the estimated safe nitrite level for whiteleg shrimp at 15 ppt is only about 6.1 mg/L, much lower than the 25.7 mg/L at 35 ppt. The lower the salinity, the more caution is needed.
+Yes. Research shows that the estimated safe nitrite level for whiteleg shrimp at 15 ppt is only about 6.1 mg/L, much lower than the 25.7 mg/L at 35 ppt. Those are laboratory figures; in the pond, keep NO₂ below 1 mg/L in brackish water and below 0.5 mg/L at low salinity. The lower the salinity, the more caution is needed.
 
 ### Does nitrification reduce alkalinity?
 

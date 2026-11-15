@@ -7,6 +7,7 @@ keywords: tôm bị trống ruột, tôm bị đứt khúc ruột, tôm bị l�
 symptoms: gan-ruot, tieu-hoa
 products: ap-79, bio-mos, davi-cid-liquid, aqualac-fs, prozyme, sorbest
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 Đường ruột là nơi đầu tiên báo hiệu sức khỏe tôm. Tôm khỏe có **ruột đầy, liền một đường từ đầu đến đuôi**, màu nâu theo màu thức ăn. Khi thấy **ruột trống, đứt khúc, phân lỏng hoặc phân màu vàng nhạt**, bà con cần xử lý sớm vì đây thường là bước trước của bệnh phân trắng và bệnh gan.
@@ -34,20 +35,20 @@ Nếu trên 20% số tôm kiểm tra có dấu hiệu bất thường, cần x�
 
 ### Bước 1: Giảm ăn và làm sạch môi trường
 
-Giảm 20 đến 30% thức ăn, xi phông đáy (ao bạt), dùng vi sinh xử lý đáy và hấp thụ khí độc. Xem [xử lý khí độc trong ao tôm](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom).
+Kiểm tra oxy, pH, khí độc trước; giảm 20 đến 30% thức ăn, tăng quạt nước, xi phông đáy (ao bạt), dùng vi sinh xử lý đáy và hấp thụ khí độc. Xem [xử lý khí độc trong ao tôm](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom).
 
 ### Bước 2: Phục hồi đường ruột theo liều trên nhãn
 
-- Trộn men nong ruột như [AP 79](/san-pham/ap-79) hoặc [BIO MOS](/san-pham/bio-mos): khi có dấu hiệu phân lỏng, phân đứt khúc dùng **10 đến 15 g/kg thức ăn**, 2 đến 3 lần/ngày.
-- Bổ sung acid hữu cơ hỗ trợ đường ruột như [DAVI CID LIQUID](/san-pham/davi-cid-liquid): **7 đến 10 ml/kg thức ăn**, 3 đến 4 lần/ngày khi hỗ trợ điều trị. Không trộn chung acid hữu cơ với men vi sinh trong cùng một cữ; nên dùng xen kẽ các cữ ăn.
+- Trộn men nong ruột khi có dấu hiệu phân lỏng, phân đứt khúc: [AP 79](/san-pham/ap-79) liều gấp đôi **10 g/kg thức ăn**, 2 lần/ngày, hoặc [BIO MOS](/san-pham/bio-mos) **10 đến 15 g/kg thức ăn**, 2 đến 3 lần/ngày, đến khi ruột trở lại bình thường.
+- Bổ sung acid hữu cơ hỗ trợ đường ruột như [DAVI CID LIQUID](/san-pham/davi-cid-liquid): **7 đến 10 ml/kg thức ăn**, 3 lần/ngày khi hỗ trợ điều trị. Không trộn chung acid hữu cơ với men vi sinh trong cùng một cữ; nên dùng xen kẽ các cữ ăn.
 
 ### Bước 3: Bổ gan song song
 
-Ruột và gan liên quan chặt chẽ. Trộn [SORBEST](/san-pham/sorbest) 10 g/kg thức ăn, 2 đến 3 lần/ngày để hỗ trợ gan.
+Ruột và gan liên quan chặt chẽ. Trộn [SORBEST](/san-pham/sorbest) 10 g/kg thức ăn, 2 đến 3 lần/ngày, liên tục 3 đến 5 ngày để hỗ trợ gan.
 
 ### Bước 4: Duy trì sau khi hồi phục
 
-Khi ruột đầy trở lại, giảm về liều hằng ngày: [AQUALAC FS](/san-pham/aqualac-fs) 3 g/kg hoặc [PROZYME](/san-pham/prozyme) 5 g/kg thức ăn, suốt vụ nuôi. Xem [men vi sinh cho tôm](/bai-viet/men-vi-sinh-cho-tom-cach-chon-va-su-dung).
+Khi ruột đầy trở lại, giảm về liều hằng ngày: [AQUALAC FS](/san-pham/aqualac-fs) hoặc [PROZYME](/san-pham/prozyme) 5 g/kg thức ăn, 2 lần/ngày, suốt vụ nuôi. Xem [men vi sinh cho tôm](/bai-viet/men-vi-sinh-cho-tom-cach-chon-va-su-dung).
 
 Nếu sau 3 đến 5 ngày tôm vẫn trống ruột, xuất hiện phân trắng nổi trên mặt nước, xem bài [bệnh phân trắng trên tôm thẻ](/bai-viet/benh-phan-trang-tren-tom-the) và liên hệ kỹ thuật viên.
 

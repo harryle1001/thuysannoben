@@ -1,13 +1,13 @@
 ---
 title: Bệnh phân trắng trên tôm thẻ: nguyên nhân, dấu hiệu và cách điều trị hiệu quả
-seo_title: Bệnh phân trắng ở tôm thẻ: nguyên nhân và cách trị dứt điểm
+seo_title: Bệnh phân trắng ở tôm thẻ: nguyên nhân và cách xử lý
 description: Tôm thẻ đi phân trắng, phân nổi mặt ao, đường ruột đứt khúc? Cẩm nang nhận biết sớm, nguyên nhân (vi khuẩn, ký sinh trùng, EHP) và phác đồ xử lý bệnh phân trắng từ kỹ thuật viên Noben.
 category: benh-tom
 keywords: bệnh phân trắng tôm thẻ, tôm đi phân trắng, trị phân trắng tôm, thuốc trị phân trắng, phân trắng nổi mặt ao
 symptoms: gan-ruot
 products: g7-phong-va-tri-benh-gan-chet-som, mega-cid, davi-cid-liquid, aqualac-fs, sorbest, aqua-bac
 photo: /images/posts/benh-ruot-do-tren-tom-va-cach-phong-ngua-cover.webp
-updated: 2026-11-11
+updated: 2026-11-16
 date: 2026-10-02
 ---
 
@@ -27,7 +27,7 @@ Khi thấy từ hai dấu hiệu trở lên, bà con nên giảm ngay 30 đến 
 
 ### Bệnh phân trắng hay xuất hiện khi nào?
 
-Bệnh gặp trên cả tôm thẻ chân trắng lẫn tôm sú, nhiều nhất khi tôm nuôi được 40 đến 90 ngày và khi thời tiết bất thường: nắng nóng kéo dài, mưa nhiều hoặc chuyển mùa. Ở miền Bắc bệnh thường tập trung từ tháng 4 đến tháng 7, ở miền Nam từ tháng 8 đến tháng 10, khi nhiệt độ nước cao và ao nuôi mật độ dày. Vào những giai đoạn này bà con nên tăng cường kiểm tra nhá và đường ruột tôm mỗi ngày.
+Bệnh gặp trên cả tôm thẻ chân trắng lẫn tôm sú, nhiều nhất khi tôm nuôi được 30 đến 70 ngày (có thể kéo dài đến 90 ngày) và khi thời tiết bất thường: nắng nóng kéo dài, mưa nhiều hoặc chuyển mùa. Ở miền Bắc bệnh thường tập trung từ tháng 4 đến tháng 7, ở miền Nam từ tháng 8 đến tháng 10, khi nhiệt độ nước cao và ao nuôi mật độ dày. Vào những giai đoạn này bà con nên tăng cường kiểm tra nhá và đường ruột tôm mỗi ngày.
 
 ## Nguyên nhân gây bệnh phân trắng
 
@@ -53,25 +53,25 @@ Cho ăn dư, thức ăn kém chất lượng hoặc bị ẩm mốc, khí độc
 
 Bà con xử lý theo thứ tự: giảm thức ăn, làm sạch môi trường, sau đó mới trộn thuốc cho tôm ăn.
 
-1. **Giảm 30 đến 50% lượng thức ăn** và vớt bỏ phân trắng nổi mặt ao mỗi ngày.
-2. **Xử lý đáy và nước**: dùng vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải, giảm khí độc. Nếu mật độ vi khuẩn cao, diệt khuẩn nước trước rồi 2 đến 3 ngày sau cấy lại vi sinh.
+1. **Giảm 30 đến 50% lượng thức ăn**, tăng cường quạt nước giữ oxy ≥ 5 mg/L, kiểm tra pH, độ kiềm, khí độc và vớt bỏ phân trắng nổi mặt ao mỗi ngày.
+2. **Xử lý đáy và nước**: nếu mật độ Vibrio trong nước cao, diệt khuẩn nước trước, chờ 2 đến 3 ngày rồi mới cấy lại vi sinh (không dùng hóa chất diệt khuẩn và vi sinh cùng ngày). Dùng vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải, giảm khí độc; ao bạt kết hợp xi phông đáy.
 3. **Kiểm soát ký sinh trùng đường ruột** nếu soi thấy trùng hai tế bào hoặc ao có tiền sử ký sinh trùng: gửi mẫu tôm cho kỹ thuật viên hoặc cán bộ thú y để có phác đồ phù hợp.
-4. **Hỗ trợ đường ruột và gan tụy**: trộn sản phẩm hỗ trợ điều trị phân trắng như [MEGA CID](/san-pham/mega-cid) hoặc [DAVI CID LIQUID](/san-pham/davi-cid-liquid), kết hợp bổ gan [SORBEST](/san-pham/sorbest) để giải độc gan.
+4. **Hỗ trợ đường ruột và gan tụy**: trộn sản phẩm hỗ trợ điều trị phân trắng như [MEGA CID](/san-pham/mega-cid) hoặc [DAVI CID LIQUID](/san-pham/davi-cid-liquid), kết hợp bổ gan [SORBEST](/san-pham/sorbest) để hỗ trợ giải độc gan.
 5. **Phục hồi hệ vi sinh đường ruột** sau đợt trị bằng men vi sinh trộn thức ăn như [AQUALAC FS](/san-pham/aqualac-fs), giúp ruột to, phân dài trở lại.
 
-Chỉ dùng kháng sinh khi đã xác định nguyên nhân do vi khuẩn, đúng loại được phép sử dụng, đúng liều và ngừng thuốc trước khi thu hoạch theo thời gian ghi trên nhãn.
+Không dùng kháng sinh để phòng bệnh. Chỉ dùng kháng sinh khi đã xác định nguyên nhân do vi khuẩn (có kháng sinh đồ), theo chỉ định của cán bộ thú y, đúng loại được phép sử dụng (tuyệt đối không dùng chất cấm), đúng liều và ngừng thuốc trước khi thu hoạch theo thời gian ghi trên nhãn.
 
 ## Cách phòng bệnh phân trắng từ đầu vụ
 
 - Cải tạo ao kỹ, diệt ốc, hến và giáp xác trung gian mang ký sinh trùng trước khi thả giống.
 - Chọn tôm giống sạch bệnh, đã xét nghiệm PCR âm tính với EHP.
 - Cho ăn theo nhá, không cho ăn dư; bảo quản thức ăn nơi khô ráo.
-- Bổ sung men tiêu hóa vào thức ăn hằng ngày và xổ ký sinh trùng định kỳ 7 đến 10 ngày một lần trong giai đoạn 20 đến 60 ngày.
+- Bổ sung men tiêu hóa vào thức ăn hằng ngày; soi kiểm tra ký sinh trùng đường ruột định kỳ 7 đến 10 ngày một lần trong giai đoạn 20 đến 60 ngày và chỉ xổ khi phát hiện, theo hướng dẫn kỹ thuật.
 - Duy trì vi sinh xử lý đáy định kỳ, giữ khí độc ở ngưỡng an toàn.
 
 ### Xử lý nước thải khi ao có bệnh
 
-Nước thải từ ao bệnh cần đưa vào ao chứa, xử lý chlorine khoảng 30 ppm và giữ ít nhất 4 ngày rồi mới thải ra ngoài, tránh lây bệnh sang ao khác và ao của hộ lân cận. Tôm chết phải vớt ra khỏi ao ngay để tôm khỏe không ăn tôm bệnh.
+Nước thải từ ao bệnh cần đưa vào ao chứa, xử lý chlorine khoảng 30 ppm và giữ ít nhất 4 ngày (đến khi hết chlorine dư) rồi mới thải ra ngoài, tránh lây bệnh sang ao khác và ao của hộ lân cận. Tôm chết phải vớt ra khỏi ao ngay để tôm khỏe không ăn tôm bệnh.
 
 ## Câu hỏi thường gặp
 

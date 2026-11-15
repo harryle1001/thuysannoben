@@ -8,6 +8,7 @@ symptoms: mang-dom-den, khi-doc
 products: ben-iq, iodine-99, super-din-600, aqua-bac, super-yucca
 photo: /images/posts/benh-dong-rong-hay-mang-bam-cover.webp
 date: 2026-10-14
+updated: 2026-11-16
 ---
 
 Mang là cơ quan hô hấp của tôm. Khi mang bị đen, vàng hoặc bám bẩn, tôm khó lấy oxy, ăn kém, chậm lột và dễ chết khi môi trường xấu. Bệnh thường gặp ở ao nuôi lâu ngày, đáy dơ hoặc mật độ cao.
@@ -39,10 +40,10 @@ Ao vùng đất phèn có sắt, nhôm hòa tan cao làm mang tôm chuyển vàn
 
 ## Cách xử lý bệnh đen mang, vàng mang
 
-1. **Tăng quạt khí**, nhất là ban đêm và sáng sớm, để tôm đủ oxy.
-2. **Xử lý đáy và khí độc**: dùng vi sinh [AQUA BAC](/san-pham/aqua-bac) phân hủy chất thải, kết hợp yucca như [SUPER YUCCA](/san-pham/super-yucca) để hấp thụ nhanh khí độc.
-3. **Diệt khuẩn, nấm và nguyên sinh động vật bám mang**: dùng sản phẩm sát trùng iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600), liều khi có dấu hiệu bệnh là 1 lít cho 3.000 m³ nước, dùng liên tục 2 ngày theo nhãn.
-4. **Sau diệt khuẩn 2 đến 3 ngày**, cấy lại vi sinh để ổn định đáy và màu nước.
+1. **Đo oxy, pH, kiềm, khí độc và tăng quạt khí**, nhất là ban đêm và sáng sớm, để tôm đủ oxy; giảm 20 đến 30% thức ăn trong những ngày xử lý.
+2. **Xử lý đáy và khí độc**: xi phông đáy (ao bạt), dùng yucca như [SUPER YUCCA](/san-pham/super-yucca) để hấp thụ nhanh khí độc.
+3. **Diệt khuẩn, nấm và nguyên sinh động vật bám mang**: dùng sản phẩm sát trùng iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600), đúng liều trên nhãn: SUPER DIN 600 khi có dấu hiệu bệnh dùng 1 lít cho 3.000 m³ nước, liên tục 2 ngày; BEN IQ, IODINE 99 tăng gấp đôi liều định kỳ (1 lít cho 3.000 đến 4.500 m³ nước) khi nước nhiễm khuẩn nặng.
+4. **Sau diệt khuẩn 2 đến 3 ngày**, cấy lại vi sinh như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải, ổn định đáy và màu nước. Không tạt vi sinh cùng ngày với thuốc sát trùng.
 5. **Bổ sung khoáng và vitamin C** để tôm lột xác. Khi tôm lột, lớp mang và vỏ bẩn sẽ được thay mới.
 
 Ao vùng phèn nên giải độc phèn, kim loại nặng trước rồi mới xử lý các bước trên.
@@ -62,7 +63,7 @@ Bản thân màu mang đen không lây, nhưng vi khuẩn, nấm và ký sinh tr
 
 ### Bao lâu thì mang tôm sạch lại?
 
-Sau khi xử lý môi trường và tôm lột xác thành công, mang thường sạch trở lại sau một lần lột, khoảng 5 đến 10 ngày tùy cỡ tôm.
+Sau khi xử lý môi trường và tôm lột xác thành công, mang thường sạch trở lại sau một lần lột, khoảng 7 đến 15 ngày tùy cỡ tôm.
 
 ### Vì sao tôm nổi đầu vào sáng sớm?
 

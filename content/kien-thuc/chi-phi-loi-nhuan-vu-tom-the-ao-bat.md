@@ -8,6 +8,7 @@ symptoms: tieu-hoa
 products: biozyme, prozyme, proticbest, clear-12h
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 "Nuôi một ký tôm thẻ hết bao nhiêu tiền, bán bao nhiêu mới có lời?" là câu hỏi bà con hỏi nhiều nhất khi thức ăn tăng giá. Bài này tổng hợp **chi phí nuôi tôm thẻ ao bạt** từ các nghiên cứu đã công bố, rồi hướng dẫn tự tính **giá thành 1 kg tôm**, **điểm hòa vốn** và cách giảm chi phí.
@@ -98,7 +99,7 @@ Tiếp ví dụ giả định A, nếu giá bán giả định 90.000 đ/kg: s�
 
 **2. Giữ tỷ lệ sống cao.** Giống là khoản chi cố định, tôm hao hụt là mất luôn tiền giống, tiền thức ăn đã cho ăn. Chọn giống sạch bệnh ([cách chọn tôm giống thẻ tốt, kiểm tra PCR](/bai-viet/cach-chon-tom-giong-the-tot-kiem-tra-pcr)), cải tạo ao kỹ, theo dõi sức khỏe tôm theo [lịch chăm sóc theo ngày tuổi](/lich-cham-soc).
 
-**3. Dùng điện hợp lý.** Điện, nhiên liệu chiếm khoảng 7–9% tổng chi phí; chạy quạt tăng dần theo lượng thức ăn thay vì tối đa suốt vụ. Xem [bố trí quạt nước và oxy hòa tan ao tôm](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
+**3. Dùng điện hợp lý.** Điện, nhiên liệu chiếm khoảng 7–9% tổng chi phí; chạy quạt tăng dần theo lượng thức ăn thay vì tối đa suốt vụ, nhưng không cắt quạt ban đêm và rạng sáng; luôn giữ oxy hòa tan ≥ 4 mg/L (tốt nhất ≥ 5 mg/L). Xem [bố trí quạt nước và oxy hòa tan ao tôm](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
 
 **4. Dùng thuốc, vi sinh đúng liều, đúng lúc.** Thuốc và hóa chất chiếm khoảng 9% (Hiền và ctv., 2021) đến 16% chi phí biến đổi (Sĩ và ctv., 2024). Đo nước trước khi xử lý, tính liều theo thể tích thật bằng [công cụ tính liều](/tinh-lieu), tránh đổ dư "cho chắc".
 
@@ -110,10 +111,10 @@ Tiếp ví dụ giả định A, nếu giá bán giả định 90.000 đ/kg: s�
 
 Sản phẩm hỗ trợ đúng công dụng ghi trên nhãn, dùng theo liều trên nhãn:
 
-- [BIOZYME](/san-pham/biozyme): hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, nhãn ghi giúp tôm ăn nhiều, giảm FCR; trộn 3 ml/kg thức ăn hằng ngày.
-- [PROZYME](/san-pham/prozyme): hỗ trợ tiêu hóa và hấp thu thức ăn; trộn 5 g/kg thức ăn, cho ăn 2–3 lần/ngày.
+- [BIOZYME](/san-pham/biozyme): bổ sung lợi khuẩn, hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, nhãn ghi giảm hệ số FCR; trộn 5 ml/kg thức ăn, 2 lần/ngày.
+- [PROZYME](/san-pham/prozyme): hỗ trợ tiêu hóa và hấp thu thức ăn; trộn 5 g/kg thức ăn, 2 lần/ngày.
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải hữu cơ và thức ăn dư thừa.
-- [CLEAR 12H](/san-pham/clear-12h): vi sinh chuyên tẩy nhớt bạt, nhớt nước cho ao bạt và nuôi mật độ cao, giúp ít tốn công chùi bạt.
+- [CLEAR 12H](/san-pham/clear-12h): vi sinh phân hủy mùn bã hữu cơ, thức ăn thừa ở đáy ao, giảm khí độc và hỗ trợ làm sạch nhớt bạt, nhớt nước.
 
 ## Câu hỏi thường gặp
 

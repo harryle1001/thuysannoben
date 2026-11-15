@@ -8,6 +8,7 @@ symptoms: sat-trung, mau-nuoc
 products: d-oc, ben-bkc-80, edta-99, nb-brown-gay-mau-nuoc-mau-tra, proticbest, miral-n8
 photo: /images/posts/khoang-tang-trong-luong-khi-thu-hoach-cover.webp
 date: 2026-09-20
+updated: 2026-11-16
 ---
 
 Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội vàng: mầm bệnh còn tồn lưu từ vụ trước, nước chưa sạch, màu nước chưa ổn định đã thả giống. Dưới đây là quy trình 7 bước được kỹ thuật viên Noben áp dụng cho ao đất và ao bạt.
@@ -19,8 +20,8 @@ Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội v�
 
 ## Bước 2: Bón vôi và phơi đáy
 
-- Rải vôi đều mặt đáy và bờ ao. Ao từng bị EHP nên dùng vôi nung với liều cao để diệt bào tử.
-- Phơi đáy 5 đến 7 ngày đến khi đất nứt chân chim. Ao bạt phơi khô hoàn toàn.
+- Rải vôi đều mặt đáy và bờ ao. Ao từng bị EHP phải dùng vôi nung (CaO) liều cao, rải lên đáy còn ẩm và cày trộn vào lớp đất mặt, sao cho pH đáy đạt từ 12 trở lên trong vài ngày thì mới diệt được bào tử; vôi nông nghiệp (CaCO3) hay dolomite không có tác dụng này.
+- Phơi đáy 5 đến 7 ngày đến khi đất nứt chân chim. Ao bạt phơi khô hoàn toàn sau khi rửa, sát trùng bạt.
 
 ## Bước 3: Lấy nước và lắng lọc
 
@@ -29,9 +30,10 @@ Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội v�
 
 ## Bước 4: Diệt tạp và diệt khuẩn
 
-- Diệt ốc, hến, chem chép là ký chủ trung gian của ký sinh trùng bằng [D-OC](/san-pham/d-oc) theo liều trên nhãn.
+- Diệt ốc, hến, chem chép là ký chủ trung gian của ký sinh trùng bằng [D-OC](/san-pham/d-oc) theo liều trên nhãn (1 kg/300–500 m³, chỉ dùng trước khi thả giống).
+- Diệt cua, còng, tôm tép và cá tạp vì chúng là vật mang mầm bệnh đốm trắng (WSSV); rào lưới chắn cua quanh bờ.
 - Diệt khuẩn nguồn nước bằng [BEN BKC 80%](/san-pham/ben-bkc-80) hoặc các sản phẩm diệt khuẩn khác, quạt nước liên tục để phân tán đều.
-- Chờ 3 đến 5 ngày cho hết dư lượng hóa chất.
+- Chờ 3 đến 5 ngày cho hết dư lượng hóa chất rồi mới gây màu, cấy vi sinh; không tạt vi sinh, chế phẩm gây màu cùng lúc với thuốc diệt khuẩn.
 
 ## Bước 5: Xử lý kim loại nặng và ổn định khoáng
 
@@ -53,7 +55,7 @@ Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội v�
 | Oxy hòa tan | trên 5 mg/L |
 | Độ mặn | chênh không quá 5‰ so với nước trại giống |
 
-Chọn giống tốt theo hướng dẫn trong bài [kỹ thuật chọn tôm giống](/bai-viet/ky-thuat-chon-tom-giong-tot-ngay-tai-trai-tom-giong), thả vào sáng sớm hoặc chiều mát, ngâm bao giống 15 đến 20 phút cho cân bằng nhiệt độ trước khi thả.
+Chọn giống tốt theo hướng dẫn trong bài [kỹ thuật chọn tôm giống](/bai-viet/ky-thuat-chon-tom-giong-tot-ngay-tai-trai-tom-giong), chỉ thả lô giống đã xét nghiệm PCR âm tính (WSSV, EHP, AHPND), thả vào sáng sớm hoặc chiều mát, ngâm bao giống 15 đến 20 phút cho cân bằng nhiệt độ trước khi thả.
 
 ## Câu hỏi thường gặp
 

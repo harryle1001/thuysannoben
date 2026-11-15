@@ -8,6 +8,7 @@ symptoms: oxy-stress
 products: super-oxy-02, oxy-99, proticbest, nb-biopond
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 How many aerators does a shrimp pond need, where should they go and when should they run? A correct **shrimp pond aerator layout** keeps **dissolved oxygen (DO)** sufficient for the shrimp, gathers waste into the siphon pit and saves electricity. This article covers how to calculate and lay out paddlewheel aerators and aeration from the start of the crop. If your shrimp are already surfacing and gasping, see the article on [emergency treatment for shrimp surfacing due to low oxygen](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly).
@@ -43,7 +44,7 @@ That is why you need to **measure DO at dawn** (and also at night once shrimp ar
 
 Two ways to estimate:
 
-1. **From feed input (Boyd, 2014):** about **1 HP of aeration for every 10 kg of feed/ha/day** to keep night-time DO above 4 mg/L. Example: a pond fed 180 kg/ha/day at the end of the crop needs about 15 HP/ha, or 18 HP/ha with a safety factor.
+1. **From feed input (Boyd, 2014):** about **1 HP of aeration for every 10 kg of feed/ha/day** to keep night-time DO above 4 mg/L. Example: a pond fed 150 kg/ha/day at the end of the crop needs about 15 HP/ha, or about 18 HP/ha with a reserve.
 2. **From shrimp production:**
    - The Can Tho University super-intensive biofloc whiteleg shrimp culture protocol (Tran Ngoc Hai et al., 2020): both paddlewheel aerators and oxygen blowers are needed, with **a total capacity of about 1 HP per 400–600 kg of shrimp**.
    - Boyd (2004): each HP of aeration supports roughly 400 kg of additional production; for safety, install no less than 1.5 times the minimum.
@@ -105,8 +106,8 @@ Record the number of aerators running by shrimp age in the [care schedule by day
 
 Products cannot replace paddlewheel aerators; use them for their intended purpose at the label dose, converted to your pond volume with the [dose calculator](/tinh-lieu):
 
-- [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergencies when shrimp surface due to low oxygen; 3 kg/3,000 m³ of water, spread evenly over the pond surface, with aerators running.
-- [OXY 99](/san-pham/oxy-99): supplies oxygen quickly during sudden oxygen deficiency; 3 kg/2,000 m³ of water, with aerators running.
+- [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergencies when shrimp surface due to low oxygen; 2–3 kg/1,000 m³ of water, spread evenly over the pond surface, with aerators running.
+- [OXY 99](/san-pham/oxy-99): supplies oxygen quickly during sudden oxygen deficiency; 2–3 kg/1,000 m³ of water, spread evenly over the pond surface, with aerators running.
 - [PROTICBEST](/san-pham/proticbest): probiotic that cleans the bottom, cleans the water, removes liner slime, and breaks down organic waste and uneaten feed on the pond bottom.
 - [NB- BIOPOND](/san-pham/nb-biopond): breaks down waste, organic sludge, uneaten feed and dead algae; cleans the bottom and the water.
 

@@ -7,6 +7,7 @@ keywords: tôm bị teo gan, tôm bị gan trắng, gan tôm nhạt màu, tôm b
 symptoms: gan-ruot
 products: sorbest, g7-phong-va-tri-benh-gan-chet-som, hepaliver-fs, liver-max, antiliv, aqualac-fs
 date: 2026-11-13
+updated: 2026-11-16
 ---
 
 Gan tụy là "nhà máy" tiêu hóa và dự trữ năng lượng của tôm. Khi gan khỏe, tôm ăn mạnh, lớn nhanh, chịu được biến động môi trường. Khi gan **teo, nhạt màu, trắng hoặc sưng ứ nước**, tôm hấp thu thức ăn kém, chậm lớn, dễ mắc bệnh đường ruột và có thể chết rải rác kéo dài. Theo dõi gan định kỳ là việc bà con nên làm mỗi tuần.
@@ -26,7 +27,7 @@ Tôm gan yếu thường kèm theo ruột trống, phân lỏng, phân trắng, 
 
 ### Vi khuẩn Vibrio và bệnh hoại tử gan tụy
 
-Vi khuẩn tấn công gan tụy gây sưng, teo, hoại tử, thường gặp ở 10 đến 45 ngày sau thả. Xem bài [bệnh hoại tử gan tụy cấp EMS](/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom).
+Vi khuẩn Vibrio (đặc biệt chủng *V. parahaemolyticus* mang gen độc tố pirA/pirB gây bệnh AHPND/EMS) tấn công gan tụy gây sưng, teo, hoại tử; AHPND chủ yếu gặp trong 10 đến 35 ngày sau thả. Xem bài [bệnh hoại tử gan tụy cấp EMS](/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom).
 
 ### Vi bào tử trùng EHP
 
@@ -44,21 +45,21 @@ Thức ăn dư thừa vừa làm bẩn đáy vừa khiến gan quá tải. Ao ch
 
 ### Bước 1: Giảm tải cho gan
 
-- Giảm 20 đến 30% lượng thức ăn trong 3 đến 5 ngày, theo dõi nhá để điều chỉnh.
+- Giảm 20 đến 30% lượng thức ăn trong 3 đến 5 ngày, theo dõi nhá để điều chỉnh; tăng quạt nước giữ oxy ≥ 5 mg/L.
 - Xử lý đáy, hấp thụ khí độc, ổn định pH và độ kiềm. Xem [xử lý khí độc trong ao tôm](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom).
 
 ### Bước 2: Bổ gan, giải độc gan theo liều trên nhãn
 
-- [SORBEST](/san-pham/sorbest): trộn **10 g/kg thức ăn**, 2 đến 3 lần/ngày; có thể tạt xuống ao 500 g cho 2.000 m³ nước, định kỳ 5 đến 7 ngày/lần.
-- Thảo dược [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): phòng bệnh trộn 3 đến 5 ml/kg thức ăn; khi gan yếu trộn **7 đến 10 ml/kg**, 3 đến 4 lần/ngày, liên tục 5 ngày.
-- [HEPALIVER FS](/san-pham/hepaliver-fs) hoặc [ANTILIV](/san-pham/antiliv): khi gan yếu trộn **10 ml/kg thức ăn**, 3 đến 4 lần/ngày, liên tục 5 ngày.
-- [LIVER MAX](/san-pham/liver-max): vừa trộn 10 ml/kg thức ăn vừa có thể tạt 1 lít cho 1.500 m³ nước, định kỳ 5 ngày/lần.
+- [SORBEST](/san-pham/sorbest): trộn **10 g/kg thức ăn**, 2 đến 3 lần/ngày, liên tục 3 đến 5 ngày; có thể tạt xuống ao 500 g cho 1.000 m³ nước, liên tục 2 đến 3 hôm (định kỳ: 500 g cho 1.600 m³, 5 đến 7 ngày/lần).
+- Thảo dược [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): định kỳ trộn 7 đến 10 ml/kg thức ăn, 3 đến 4 lần/ngày; khi gan có dấu hiệu bất thường trộn **10 ml/kg**.
+- [HEPALIVER FS](/san-pham/hepaliver-fs) hoặc [ANTILIV](/san-pham/antiliv): khi gan yếu trộn **10 ml/kg thức ăn**, 3 đến 4 lần/ngày (ANTILIV: liên tục 5 ngày).
+- [LIVER MAX](/san-pham/liver-max): trộn 7 đến 10 ml/kg thức ăn, 3 đến 4 lần/ngày; khi gan có dấu hiệu bất thường trộn 10 ml/kg.
 
 Chỉ chọn một sản phẩm bổ gan chính cho mỗi đợt, không trộn nhiều loại cùng lúc.
 
 ### Bước 3: Phục hồi đường ruột
 
-Gan và ruột luôn đi đôi. Sau đợt bổ gan, trộn men vi sinh đường ruột như [AQUALAC FS](/san-pham/aqualac-fs) 3 g/kg thức ăn hằng ngày để tôm tiêu hóa tốt trở lại. Xem thêm [men vi sinh cho tôm](/bai-viet/men-vi-sinh-cho-tom-cach-chon-va-su-dung).
+Gan và ruột luôn đi đôi. Sau đợt bổ gan, trộn men vi sinh đường ruột như [AQUALAC FS](/san-pham/aqualac-fs) 5 g/kg thức ăn, 2 lần/ngày để tôm tiêu hóa tốt trở lại. Xem thêm [men vi sinh cho tôm](/bai-viet/men-vi-sinh-cho-tom-cach-chon-va-su-dung).
 
 ### Bước 4: Theo dõi và báo kỹ thuật viên
 
@@ -66,7 +67,7 @@ Kiểm tra gan sau 3 đến 5 ngày. Nếu tôm vẫn chết tăng, gan sưng m�
 
 ## Phòng gan yếu từ đầu vụ
 
-- Chọn tôm giống sạch bệnh, có xét nghiệm EHP, EMS.
+- Chọn tôm giống sạch bệnh, có kết quả PCR âm tính với EHP và AHPND (EMS).
 - Định kỳ bổ gan 3 đến 5 ngày mỗi đợt, cách 5 ngày nhắc lại, nhất là giai đoạn 10 đến 45 ngày.
 - Cho ăn đúng nhu cầu, bảo quản thức ăn nơi khô ráo.
 - Giữ đáy sạch, khí độc thấp bằng vi sinh định kỳ.

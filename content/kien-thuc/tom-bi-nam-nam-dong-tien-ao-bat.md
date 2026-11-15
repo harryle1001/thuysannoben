@@ -7,6 +7,7 @@ keywords: tôm bị nấm, nấm đồng tiền ao bạt, nấm chân chó ao t�
 symptoms: sat-trung, mang-dom-den
 products: ben-iq, iodine-99, super-din-600, ben-bkc-80, clear-12h, amylac
 date: 2026-11-11
+updated: 2026-11-16
 ---
 
 Trong nuôi tôm ao bạt mật độ cao, bà con hay gặp các mảng **"nấm đồng tiền", "nấm chân chó", "nấm nhớt"** bám trên bạt, cùng với tôm bị nấm mang, nấm vỏ. Nấm làm bẩn đáy, cạnh tranh oxy, tiết chất nhớt khiến tôm stress, giảm ăn và tạo điều kiện cho vi khuẩn tấn công. Bài này giúp nhận biết từng dạng và xử lý đúng cách.
@@ -44,7 +45,7 @@ Chà, xịt bạt ở những mảng nấm sát mặt nước; xi phông đáy �
 
 ### Bước 2: Diệt nấm, diệt khuẩn theo liều trên nhãn
 
-- Sản phẩm iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600) diệt khuẩn, nấm và nguyên sinh động vật mà không ảnh hưởng tảo: khi có dấu hiệu bệnh dùng **1 lít cho 3.000 m³ nước**, liên tục 2 ngày.
+- Sản phẩm iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600) diệt khuẩn, nấm và nguyên sinh động vật, ít ảnh hưởng tảo: SUPER DIN 600 khi có dấu hiệu bệnh dùng **1 lít cho 3.000 m³ nước**, liên tục 2 ngày; BEN IQ, IODINE 99 tăng gấp đôi liều định kỳ (1 lít cho 3.000 đến 4.500 m³ nước) khi nhiễm nặng.
 - Với ao bạt nhiều nhớt, có thể sát trùng bằng [BEN BKC 80%](/san-pham/ben-bkc-80) theo liều điều trị trên nhãn (1 lít cho 2.000 m³ nước, 2 ngày liên tục).
 
 Không dùng hai loại sát trùng cùng lúc. Hòa sản phẩm với nước ao rồi tạt đều khắp ao, tập trung hơn ở góc và mép bạt có nấm, mở quạt để thuốc phân tán. Nên xử lý vào ngày nắng, không xử lý khi trời mưa.
@@ -57,7 +58,7 @@ Không dùng hai loại sát trùng cùng lúc. Hòa sản phẩm với nước 
 
 ### Bước 4: Cấy lại vi sinh
 
-Sau khi diệt nấm 1 đến 2 ngày, cấy vi sinh tẩy nhớt bạt như [CLEAR 12H](/san-pham/clear-12h) (ủ 1 gói với 3 kg đường và 50 lít nước, sục khí 12 đến 24 giờ, dùng 15 đến 20 lít cho 1.000 m³ nước ao bạt) để lợi khuẩn chiếm chỗ, hạn chế nấm quay lại.
+Sau khi diệt nấm 2 đến 3 ngày, cấy vi sinh như [AMYLAC](/san-pham/amylac) (ủ 1 gói với 3 kg đường và 50 lít nước, sục khí 12 đến 24 giờ, dùng 15 đến 20 lít cho 1.000 m³ nước ao bạt) hoặc vi sinh tẩy nhớt bạt [CLEAR 12H](/san-pham/clear-12h) theo nhãn để lợi khuẩn chiếm chỗ, hạn chế nấm quay lại.
 
 ## Phòng nấm cho ao bạt
 
@@ -82,4 +83,4 @@ Thường do chất hữu cơ trong ao vẫn cao và không cấy lại vi sinh.
 
 ### Có dùng chung thuốc diệt nấm với vi sinh được không?
 
-Không nên. Diệt nấm trước, cách 1 đến 2 ngày mới cấy vi sinh, vì thuốc diệt nấm cũng làm chết vi sinh có lợi.
+Không nên. Diệt nấm trước, cách 2 đến 3 ngày mới cấy vi sinh, vì thuốc diệt nấm cũng làm chết vi sinh có lợi.

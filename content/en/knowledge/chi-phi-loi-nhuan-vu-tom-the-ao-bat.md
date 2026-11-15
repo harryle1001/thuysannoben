@@ -8,6 +8,7 @@ symptoms: tieu-hoa
 products: biozyme, prozyme, proticbest, clear-12h
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 "How much does it cost to raise one kilo of whiteleg shrimp, and what price do I need to sell at to make a profit?" is the question farmers ask most when feed prices rise. This article compiles the **costs of farming whiteleg shrimp in lined ponds** from published studies, then shows how to calculate the **cost per kg of shrimp**, the **break-even point** and ways to reduce costs yourself.
@@ -98,7 +99,7 @@ Continuing hypothetical example A, with an assumed selling price of VND 90,000/k
 
 **2. Keep survival high.** PL is a fixed cost; every shrimp lost means the money spent on PL and the feed already fed are lost too. Choose disease-free PL ([how to choose good whiteleg shrimp postlarvae and check PCR results](/bai-viet/cach-chon-tom-giong-the-tot-kiem-tra-pcr)), prepare the pond thoroughly, and monitor shrimp health following the [care schedule by days of culture](/lich-cham-soc).
 
-**3. Use electricity sensibly.** Electricity and fuel account for about 7–9% of total costs; increase aerator running time gradually in line with the amount of feed rather than running at maximum throughout the crop. See [paddlewheel aerator layout and dissolved oxygen in shrimp ponds](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
+**3. Use electricity sensibly.** Electricity and fuel account for about 7–9% of total costs; increase aerator running time gradually in line with the amount of feed rather than running at maximum throughout the crop, but never switch aerators off at night or before dawn; always keep dissolved oxygen ≥ 4 mg/L (ideally ≥ 5 mg/L). See [paddlewheel aerator layout and dissolved oxygen in shrimp ponds](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
 
 **4. Use drugs and probiotics at the right dose and the right time.** Drugs and chemicals account for about 9% (Hien et al., 2021) to 16% of variable costs (Si et al., 2024). Test the water before treating, calculate the dose from the actual volume with the [dose calculator](/tinh-lieu), and avoid adding extra "just to be safe".
 
@@ -110,10 +111,10 @@ Continuing hypothetical example A, with an assumed selling price of VND 90,000/k
 
 Products supporting the purposes stated on the label, used at the dose on the label:
 
-- [BIOZYME](/san-pham/biozyme): supports digestion and rapid feed absorption; the label states it helps shrimp eat more and reduces FCR; mix 3 ml/kg of feed daily.
-- [PROZYME](/san-pham/prozyme): supports digestion and absorption of feed; mix 5 g/kg of feed, fed 2–3 times/day.
+- [BIOZYME](/san-pham/biozyme): adds beneficial bacteria and supports digestion and rapid feed absorption; the label states it helps reduce FCR; mix 5 ml/kg of feed, 2 times/day.
+- [PROZYME](/san-pham/prozyme): supports digestion and absorption of feed; mix 5 g/kg of feed, 2 times/day.
 - [PROTICBEST](/san-pham/proticbest): probiotic that cleans the bottom, the water and liner slime, and decomposes organic waste and uneaten feed.
-- [CLEAR 12H](/san-pham/clear-12h): probiotic specialised in removing liner slime and water slime in lined ponds and high-density culture, reducing the labour of scrubbing liners.
+- [CLEAR 12H](/san-pham/clear-12h): probiotic that breaks down organic sludge and uneaten feed on the pond bottom, reduces toxic gases and helps clean liner slime and water slime.
 
 ## Frequently asked questions
 

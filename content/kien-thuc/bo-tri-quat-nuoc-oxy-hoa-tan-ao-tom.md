@@ -8,6 +8,7 @@ symptoms: oxy-stress
 products: super-oxy-02, oxy-99, proticbest, nb-biopond
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Ao tôm cần mấy quạt, đặt ở đâu, chạy lúc nào? **Bố trí quạt nước ao tôm** đúng giúp giữ **oxy hòa tan (DO)** đủ cho tôm, gom chất thải về hố xi phông và tiết kiệm điện. Bài này nói về cách tính và bố trí quạt, sục khí từ đầu vụ. Nếu tôm đang nổi đầu, xem bài [cấp cứu tôm nổi đầu do thiếu oxy](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly).
@@ -43,7 +44,7 @@ Vì vậy, **đo DO lúc rạng sáng** (và cả ban đêm khi tôm lớn) mớ
 
 Hai cách ước tính:
 
-1. **Theo lượng thức ăn (Boyd, 2014):** khoảng **1 HP sục khí cho mỗi 10 kg thức ăn/ha/ngày** để giữ DO ban đêm trên 4 mg/L. Ví dụ: ao cho ăn 180 kg/ha/ngày cuối vụ cần khoảng 15 HP/ha, có hệ số an toàn thì 18 HP/ha.
+1. **Theo lượng thức ăn (Boyd, 2014):** khoảng **1 HP sục khí cho mỗi 10 kg thức ăn/ha/ngày** để giữ DO ban đêm trên 4 mg/L. Ví dụ: ao cho ăn 150 kg/ha/ngày cuối vụ cần khoảng 15 HP/ha; cộng dự phòng thì khoảng 18 HP/ha.
 2. **Theo sản lượng tôm:**
    - Quy trình nuôi tôm thẻ siêu thâm canh biofloc của Đại học Cần Thơ (Trần Ngọc Hải và ctv., 2020): cần cả quạt nước và máy thổi oxy, **tổng công suất khoảng 1 HP cho 400–600 kg tôm nuôi**.
    - Boyd (2004): mỗi HP sục khí giúp tăng khoảng 400 kg sản lượng; nên lắp không dưới 1,5 lần mức tối thiểu cho an toàn.
@@ -105,8 +106,8 @@ Ghi số quạt chạy theo tuổi tôm vào [lịch chăm sóc theo ngày tuổ
 
 Sản phẩm không thay thế được quạt nước; dùng đúng công dụng, liều trên nhãn, quy đổi theo thể tích ao bằng [công cụ tính liều](/tinh-lieu):
 
-- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy; 3 kg/3.000 m³ nước, rải đều mặt ao, kết hợp mở quạt.
-- [OXY 99](/san-pham/oxy-99): cung cấp oxy nhanh khi thiếu oxy tức thời; 3 kg/2.000 m³ nước, kết hợp mở quạt.
+- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy; 2–3 kg/1.000 m³ nước, rải đều mặt ao, kết hợp mở quạt.
+- [OXY 99](/san-pham/oxy-99): cung cấp oxy nhanh khi thiếu oxy tức thời; 2–3 kg/1.000 m³ nước, rải đều mặt ao, kết hợp mở quạt.
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải hữu cơ, thức ăn dư thừa ở đáy ao.
 - [NB- BIOPOND](/san-pham/nb-biopond): phân hủy chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn; làm sạch đáy, sạch nước.
 

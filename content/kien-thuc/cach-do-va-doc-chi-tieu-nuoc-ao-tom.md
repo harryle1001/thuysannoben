@@ -8,6 +8,7 @@ symptoms: khi-doc, oxy-stress, mau-nuoc
 products: super-oxy-02, aqua-yucca, nb-brown-gay-mau-nuoc-mau-tra, proticbest
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Đo sai giờ, lấy mẫu sai chỗ hay đọc sai kết quả thì con số không giúp được gì. Bài này hướng dẫn **cách đo chỉ tiêu nước ao tôm**: đo lúc nào, lấy mẫu ra sao, đọc theo ngưỡng nào và ghi sổ để thấy xu hướng.
@@ -47,11 +48,11 @@ Kubitza (2017) khuyến cáo ao cho ăn trên 100 kg thức ăn/ha/ngày nên đ
 
 ### pH: nhìn cả biên độ, không chỉ một con số
 
-QCVN 02-19:2014/BNNPTNT quy định pH 7 đến 9 và **dao động trong ngày không quá 0,5**. Kubitza (2017) cho biết tôm lớn tốt nhất ở pH 7,5 đến 8,5. Ban ngày tảo quang hợp làm pH tăng, ban đêm giảm; tảo càng dày, pH dao động càng mạnh. pH sáng và chiều chênh từ 2 đơn vị trở lên nghĩa là **kiềm quá thấp** hoặc **tảo quá dày**, cần đo kiềm để biết nguyên nhân. Chi tiết xử lý xem bài [quản lý pH và độ kiềm](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
+QCVN 02-19:2014/BNNPTNT quy định pH 7 đến 9 và **dao động trong ngày không quá 0,5**. Kubitza (2017) cho biết tôm lớn tốt nhất ở pH 7,5 đến 8,5. Ban ngày tảo quang hợp làm pH tăng, ban đêm giảm; tảo càng dày, pH dao động càng mạnh. pH sáng và chiều chênh quá 0,5 (nhất là từ 1 đơn vị trở lên) thường do **kiềm quá thấp** hoặc **tảo quá dày**, cần đo kiềm để biết nguyên nhân. Chi tiết xử lý xem bài [quản lý pH và độ kiềm](/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom).
 
 ### Độ kiềm
 
-QCVN quy định độ kiềm **60 đến 180 mg/L**. Kiềm giữ pH ổn định. Kubitza (2017) coi dưới 30 mg/L là phải bón vôi, nhưng đó là mức tối thiểu chung; ao tôm nên giữ trong khoảng QCVN.
+QCVN quy định độ kiềm **60 đến 180 mg/L**. Kiềm giữ pH ổn định. Kubitza (2017) coi dưới 30 mg/L là phải bón vôi, nhưng đó là mức tối thiểu chung; thực tế ao tôm thẻ nên giữ khoảng 120 đến 180 mg/L CaCO₃ (ao bạt mật độ cao thường giữ 150 đến 200 mg/L).
 
 ### Độ mặn
 
@@ -59,7 +60,7 @@ QCVN cho phép **5 đến 35‰**. Cùng mức NO₂, ao độ mặn thấp nguy
 
 ### Oxy hòa tan (DO)
 
-QCVN yêu cầu oxy **từ 3,5 mg/L trở lên**. Đo sáng sớm mới thấy mức thấp nhất; đo trưa thường cho số cao, dễ chủ quan. Ao có độ trong dưới 20 cm do tảo dày thường thiếu oxy lúc sáng sớm (Boyd, 2004). Xem thêm [bố trí quạt nước, oxy hòa tan](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
+QCVN yêu cầu oxy **từ 3,5 mg/L trở lên**; thực tế nên giữ từ 4 mg/L trở lên, tốt nhất ≥ 5 mg/L. Đo sáng sớm mới thấy mức thấp nhất; đo trưa thường cho số cao, dễ chủ quan. Ao có độ trong dưới 20 cm do tảo dày thường thiếu oxy lúc sáng sớm (Boyd, 2004). Xem thêm [bố trí quạt nước, oxy hòa tan](/bai-viet/bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom).
 
 ### Amoni (TAN) và NH₃
 
@@ -78,7 +79,7 @@ Ngưỡng tham khảo: QCVN quy định NH₃ **dưới 0,3 mg/L**; Kubitza (202
 | 3‰ | 15,2 | 1,5 |
 | 15‰ | 76,5 | 7,6 |
 
-Nitrit hiếm khi gây vấn đề ở độ mặn trên 20‰ nhưng hay gặp ở ao độ mặn thấp. Lưu ý bộ test ghi đơn vị NO₂ hay N-NO₂, hai số này khác nhau.
+Đây là mức cần chú ý, không phải mức an toàn để nuôi lâu dài: ngoài ao nên giữ NO₂ dưới 1 mg/L ở ao nước lợ và dưới 0,5 mg/L ở ao độ mặn thấp. Nitrit hiếm khi gây vấn đề ở độ mặn trên 20‰ nhưng hay gặp ở ao độ mặn thấp. Lưu ý bộ test ghi đơn vị NO₂ hay N-NO₂, hai số này khác nhau.
 
 ### H₂S
 
@@ -98,15 +99,15 @@ QCVN quy định độ trong 20 đến 50 cm. Boyd đánh giá 30 đến 45 cm l
 
 | Chỉ tiêu | QCVN 02-19:2014/BNNPTNT | Ghi chú thêm |
 | --- | --- | --- |
-| Oxy hòa tan | ≥ 3,5 mg/L | Đo lúc sáng sớm |
+| Oxy hòa tan | ≥ 3,5 mg/L | Nên ≥ 4, tốt nhất ≥ 5 mg/L; đo lúc sáng sớm |
 | pH | 7 đến 9, dao động ngày ≤ 0,5 | Tốt nhất 7,5 đến 8,5 (Kubitza, 2017) |
-| Độ kiềm | 60 đến 180 mg/L | |
+| Độ kiềm | 60 đến 180 mg/L | Nên 120 đến 180 mg/L (ao bạt 150 đến 200) |
 | Độ mặn | 5 đến 35‰ | Độ mặn thấp: giữ NO₂ thấp hơn |
 | Độ trong | 20 đến 50 cm | 30 đến 45 cm là tốt (Boyd, 2004) |
 | NH₃ | < 0,3 mg/L | Tôm biển nên < 0,1 mg/L (Kubitza, 2026) |
 | H₂S | < 0,05 mg/L | Nên ≤ 0,005 mg/L (Boyd, 2014) |
-| Nhiệt độ | 18 đến 33°C | |
-| NO₂ | Không quy định trong bảng | Mức chú ý theo độ mặn, xem bảng trên |
+| Nhiệt độ | 18 đến 33°C | Tốt nhất 28 đến 32°C |
+| NO₂ | Không quy định trong bảng | Nên < 1 mg/L (nước lợ), < 0,5 mg/L (độ mặn thấp) |
 
 ## Ghi sổ nhật ký môi trường
 
@@ -118,7 +119,7 @@ Mỗi ao một trang sổ, mỗi ngày một dòng: ngày tuổi tôm, giờ đo
 
 Khi kết quả vượt ngưỡng, dùng theo đúng nhãn:
 
-- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 3kg/3.000m³, rải đều mặt ao, kết hợp mở quạt.
+- [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 2 đến 3 kg/1.000m³, rải đều mặt ao, kết hợp mở quạt.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc. Định kỳ 500g/5.000m³, 7 ngày/lần; khí độc cao 500g/3.000m³, dùng liên tục 2 đến 3 lần.
 - [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): gây màu nhanh khi độ trong quá cao. Mất tảo đột ngột: 250g/1.000m³.
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ và khí độc ở đáy ao. Tạt trực tiếp 1 lít/3.000m³, định kỳ 3 đến 5 ngày.

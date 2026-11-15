@@ -8,6 +8,7 @@ symptoms: khi-doc
 products: aqua-bac, bzt, nb-biopond, super-yucca, yucca-vs-zeo, grand-zeolite-zeo-hat-nhap-khau
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-10-24
+updated: 2026-11-16
 ---
 
 Khí độc trong ao tôm sinh ra từ thức ăn dư, phân tôm, xác tảo và bùn đáy phân hủy. Ngay cả khi tôm chưa chết, khí độc vẫn làm tôm giảm ăn, chậm lớn, đen mang và dễ mắc bệnh. Từ tháng thứ hai trở đi, lượng chất thải tăng nhanh nên bà con cần kiểm tra khí độc thường xuyên.
@@ -17,8 +18,8 @@ Khí độc trong ao tôm sinh ra từ thức ăn dư, phân tôm, xác tảo v�
 | Chỉ tiêu | Ngưỡng an toàn | Ghi chú |
 | --- | --- | --- |
 | NH₃ (amoniac tự do) | dưới 0,1 mg/L | Độc hơn khi pH và nhiệt độ cao |
-| NO₂ (nitrit) | dưới 1 mg/L | Độc hơn ở ao độ mặn thấp |
-| H₂S | gần như bằng 0 | Rất độc, sinh ra ở đáy yếm khí, mùi trứng thối |
+| NO₂ (nitrit) | dưới 1 mg/L (ao độ mặn thấp: dưới 0,5 mg/L) | Độc hơn ở ao độ mặn thấp |
+| H₂S | gần như bằng 0 (dưới 0,01 mg/L) | Rất độc, sinh ra ở đáy yếm khí, mùi trứng thối |
 
 Bà con nên dùng bộ test nhanh để kiểm tra 2 đến 3 lần mỗi tuần, nhiều hơn khi tôm trên 45 ngày.
 
@@ -34,12 +35,14 @@ Bà con nên dùng bộ test nhanh để kiểm tra 2 đến 3 lần mỗi tuầ
 
 - Giảm thức ăn 20 đến 30% trong 2 đến 3 ngày.
 - Hạ pH về mức 7,5 đến 8,0 nếu pH buổi chiều quá cao, vì pH cao làm NH₃ độc hơn.
-- Dùng yucca như [SUPER YUCCA](/san-pham/super-yucca) để hấp thụ nhanh NH₃.
+- Tăng quạt khí; nếu có nguồn nước sạch đã xử lý thì thay một phần nước.
+- Dùng yucca như [SUPER YUCCA](/san-pham/super-yucca) để hỗ trợ giảm NH₃, liều theo nhãn.
 - Cấy vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) hoặc [NB-BIOPOND](/san-pham/nb-biopond) để phân hủy chất thải từ gốc.
 
 ### Giảm NO₂
 
-- Tăng quạt khí để vi khuẩn nitrat hóa hoạt động tốt.
+- Giảm thức ăn 20 đến 30% cho đến khi NO₂ giảm.
+- Tăng quạt khí để vi khuẩn nitrat hóa hoạt động tốt; giữ độ kiềm ổn định.
 - Dùng vi sinh xử lý đáy, phân hủy khí độc định kỳ.
 - Ao độ mặn thấp có thể bổ sung muối để tăng clorua, giúp giảm độc tính NO₂.
 
@@ -47,7 +50,8 @@ Bà con nên dùng bộ test nhanh để kiểm tra 2 đến 3 lần mỗi tuầ
 
 - Tăng oxy tầng đáy bằng quạt nước, sục khí đáy.
 - Không để pH thấp hơn 7,5 vì pH thấp làm H₂S độc hơn.
-- Rải zeolite như [GRAND ZEOLITE](/san-pham/grand-zeolite-zeo-hat-nhap-khau) hoặc [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) để hấp phụ khí độc và làm sạch đáy.
+- Xi phông, hút bùn đen ra khỏi ao (ao bạt), giảm thức ăn để bớt chất hữu cơ ở đáy.
+- Có thể rải [GRAND ZEOLITE](/san-pham/grand-zeolite-zeo-hat-nhap-khau) hoặc [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) theo nhãn để hỗ trợ làm sạch đáy. Lưu ý zeolite chủ yếu hấp phụ amoni, hiệu quả giảm nhiều trong nước lợ, mặn và không thay được quạt khí, xi phông.
 - Vi sinh xử lý đáy như [BZT](/san-pham/bzt) giúp phân hủy bùn hữu cơ, giảm tạo H₂S.
 
 ## Quy trình phòng khí độc định kỳ
@@ -62,7 +66,7 @@ Bà con nên dùng bộ test nhanh để kiểm tra 2 đến 3 lần mỗi tuầ
 
 ### Dùng vi sinh hay hóa chất để xử lý khí độc?
 
-Vi sinh xử lý tận gốc chất thải, an toàn và bền vững nên dùng định kỳ. Yucca và zeolite giúp hạ khí độc nhanh trong tình huống cấp bách. Bà con nên kết hợp cả hai.
+Vi sinh xử lý tận gốc chất thải, an toàn và bền vững nên dùng định kỳ. Khi khí độc tăng cao, việc đầu tiên là giảm thức ăn, tăng quạt khí và kiểm tra pH; yucca, zeolite chỉ hỗ trợ giảm nhanh trong tình huống cấp bách. Bà con nên kết hợp các biện pháp này.
 
 ### Có nên tạt vi sinh ngay sau khi diệt khuẩn?
 

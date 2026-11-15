@@ -8,6 +8,7 @@ symptoms: mem-vo, khi-doc
 products: miral-n8, premix-10000, rimix, marimix, down-max-ha-phen, aqua-bac
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-10-26
+updated: 2026-11-16
 ---
 
 pH và độ kiềm là hai chỉ tiêu bà con cần đo hằng ngày. pH ổn định giúp tôm khỏe, ăn tốt; độ kiềm đủ giúp tôm lột xác và cứng vỏ nhanh, đồng thời giữ pH không dao động mạnh.
@@ -32,14 +33,14 @@ pH và độ kiềm là hai chỉ tiêu bà con cần đo hằng ngày. pH ổn 
 
 ## Cách nâng độ kiềm
 
-- Dùng vôi CaCO₃ hoặc dolomite tạt vào ban đêm, chia làm nhiều lần.
+- Dùng vôi CaCO₃ hoặc dolomite tạt vào ban đêm, chia làm nhiều lần. Khi pH đã từ 8 trở lên, CaCO₃ tan kém; cần nâng kiềm nhanh mà không đẩy pH thì dùng soda lạnh (NaHCO₃).
 - Dùng khoáng tăng kiềm như [MIRAL N8](/san-pham/miral-n8), [PREMIX 10000](/san-pham/premix-10000) hoặc [RIMIX](/san-pham/rimix) cho ao bạt để vừa tăng kiềm vừa bổ sung khoáng cứng vỏ.
 - Không nâng kiềm quá nhanh, mỗi ngày tăng khoảng 10 đến 20 mg/L là an toàn.
 
 ## Cách xử lý pH cao vào buổi chiều
 
 - Giảm mật độ tảo bằng vi sinh cắt tảo, thay một phần nước.
-- Tạt mật đường hoặc đường cát vào buổi sáng với liều phù hợp để vi khuẩn sử dụng, giúp hạ pH.
+- Tạt mật đường hoặc đường cát vào buổi sáng với liều phù hợp để vi khuẩn sử dụng, giúp hạ pH. Mật đường làm vi khuẩn tiêu thụ thêm oxy, nên phải chạy đủ quạt và theo dõi oxy đêm đó.
 - Không dùng vôi nung (CaO) khi pH đã cao.
 
 ## Cách xử lý pH thấp và phèn

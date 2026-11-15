@@ -8,6 +8,7 @@ symptoms: mem-vo, khi-doc
 products: miral-n8, premix-10000, rimix, marimix, down-max-ha-phen, aqua-bac
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-10-26
+updated: 2026-11-16
 ---
 
 pH and alkalinity are two parameters farmers need to measure every day. Stable pH keeps shrimp healthy and feeding well; sufficient alkalinity helps shrimp moult and harden their shells quickly, while keeping pH from fluctuating strongly.
@@ -32,14 +33,14 @@ Measure pH twice a day, at around 6:00 in the morning and 14:00 in the afternoon
 
 ## How to raise alkalinity
 
-- Apply lime (CaCO₃) or dolomite at night, split into several applications.
+- Apply lime (CaCO₃) or dolomite at night, split into several applications. At pH 8 or above CaCO₃ dissolves poorly; to raise alkalinity quickly without pushing pH up, use sodium bicarbonate (NaHCO₃).
 - Use alkalinity-raising minerals such as [MIRAL N8](/san-pham/miral-n8), [PREMIX 10000](/san-pham/premix-10000) or [RIMIX](/san-pham/rimix) for lined ponds, to raise alkalinity and supply shell-hardening minerals at the same time.
 - Do not raise alkalinity too quickly; an increase of about 10–20 mg/L per day is safe.
 
 ## How to deal with high afternoon pH
 
 - Reduce phytoplankton density with algae-controlling probiotics and partial water exchange.
-- Apply molasses or granulated sugar in the morning at a suitable dose for bacteria to use, which helps lower pH.
+- Apply molasses or granulated sugar in the morning at a suitable dose for bacteria to use, which helps lower pH. Molasses increases bacterial oxygen demand, so run enough aerators and monitor DO that night.
 - Do not use quicklime (CaO) when pH is already high.
 
 ## How to deal with low pH and acid sulphate

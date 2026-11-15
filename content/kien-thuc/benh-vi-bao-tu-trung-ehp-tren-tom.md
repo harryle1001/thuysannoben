@@ -8,6 +8,7 @@ symptoms: gan-ruot, tieu-hoa
 products: hepaliver-fs, biozyme, prozyme, aqualac-fs
 photo: /images/posts/khoang-tang-trong-luong-khi-thu-hoach-cover.webp
 date: 2026-10-11
+updated: 2026-11-16
 ---
 
 Vi bào tử trùng EHP (Enterocytozoon hepatopenaei) ký sinh trong gan tụy tôm, làm tôm hấp thu dinh dưỡng kém. Bệnh ít gây chết hàng loạt nhưng làm tôm **chậm lớn, lệch cỡ nghiêm trọng**, hệ số thức ăn cao và kéo dài thời gian nuôi, khiến lợi nhuận giảm mạnh.
@@ -19,7 +20,7 @@ Vi bào tử trùng EHP (Enterocytozoon hepatopenaei) ký sinh trong gan tụy t
 - Gan tụy nhạt màu, nhỏ; tôm hay bị **phân trắng** đi kèm.
 - Hệ số thức ăn (FCR) cao hơn bình thường.
 
-Chỉ xét nghiệm PCR mới khẳng định được ao nhiễm EHP. Bà con nên lấy mẫu tôm và phân gửi phòng xét nghiệm khi nghi ngờ.
+Chỉ xét nghiệm PCR mới khẳng định được ao nhiễm EHP. Bà con nên lấy mẫu tôm (ưu tiên gan tụy) và phân gửi phòng xét nghiệm khi nghi ngờ.
 
 ## Đường lây nhiễm
 
@@ -32,7 +33,7 @@ Chỉ xét nghiệm PCR mới khẳng định được ao nhiễm EHP. Bà con n
 ### Cải tạo ao kỹ
 
 - Nạo vét sạch bùn đáy; với ao bạt, chà rửa và phơi khô.
-- Rải vôi nung (CaO) với lượng lớn để nâng pH đáy lên cao, giúp tiêu diệt bào tử. Liều lượng tùy loại đất, bà con nên hỏi kỹ thuật viên.
+- Rải vôi nung (CaO) với lượng lớn trên đáy ẩm để nâng pH đáy lên 12 trở lên trong vài ngày, giúp giảm mạnh bào tử. Liều lượng tùy loại đất, bà con nên hỏi kỹ thuật viên. Chlorine đơn độc không đủ diệt bào tử EHP.
 - Phơi đáy ao nắng kỹ trước khi lấy nước.
 
 ### Chọn giống sạch
@@ -62,4 +63,4 @@ Nếu tôm ăn đều mà vẫn lệch cỡ nhiều, gan nhạt và hay phân tr
 
 ### Vôi nung có diệt được bào tử EHP không?
 
-Vôi nung rải đúng liều trên đáy ẩm giúp nâng pH rất cao, là biện pháp được khuyến cáo để giảm bào tử EHP khi cải tạo ao. Cần đảm bảo an toàn khi thao tác vì vôi nung tỏa nhiệt mạnh.
+Vôi nung rải đúng liều trên đáy ẩm giúp nâng pH đáy lên 12 trở lên, là biện pháp được khuyến cáo để giảm bào tử EHP khi cải tạo ao. Cần đảm bảo an toàn khi thao tác vì vôi nung tỏa nhiệt mạnh.

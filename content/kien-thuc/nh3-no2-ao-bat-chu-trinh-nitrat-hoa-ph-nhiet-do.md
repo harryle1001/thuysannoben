@@ -8,6 +8,7 @@ symptoms: khi-doc
 products: proticbest, clear-12h, aqua-yucca, super-oxy-02
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
+updated: 2026-11-16
 ---
 
 Ao lót bạt mật độ cao cho ăn nhiều, chất thải dồn nhanh, nên amoni (NH₃/NH₄⁺) và nitrit (NO₂) tăng nhanh hơn ao đất. Bài [xử lý khí độc NH3, NO2, H2S](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom) đã nêu ngưỡng và cách xử lý nhanh. Bài này giúp bà con **hiểu vì sao khí độc tăng** và **đọc kết quả test cho đúng**, để chủ động kiểm soát trong ao bạt.
@@ -64,14 +65,14 @@ Nitrit thấm qua mang và cản trở khả năng vận chuyển oxy của máu
 | 25‰ | 178,3 | 15,2 |
 | 35‰ | 321,7 | 25,7 |
 
-Nghĩa là ở 15‰, tôm nhạy cảm với nitrit hơn nhiều so với ở 35‰. Ở ao độ mặn thấp hơn nữa, bà con càng phải giữ nitrit thấp. Bảng tổng hợp của Boyd (2019) cho mức nitrit an toàn với tôm biển dao động rất rộng, từ 0,5 đến 15 mg/L, tùy loài, độ mặn và điều kiện thí nghiệm. Với ao độ mặn thấp, bà con nên giữ nitrit ở mức thấp, càng xa các ngưỡng trên càng an toàn.
+Nghĩa là ở 15‰, tôm nhạy cảm với nitrit hơn nhiều so với ở 35‰. Ở ao độ mặn thấp hơn nữa, bà con càng phải giữ nitrit thấp. Bảng tổng hợp của Boyd (2019) cho mức nitrit an toàn với tôm biển dao động rất rộng, từ 0,5 đến 15 mg/L, tùy loài, độ mặn và điều kiện thí nghiệm. Đây là số liệu thí nghiệm ngắn ngày, không phải mức để nuôi cả vụ. Ngoài ao, nên giữ NO₂ dưới 1 mg/L ở ao nước lợ và dưới 0,5 mg/L ở ao độ mặn thấp.
 
 Với cá nước ngọt, ion clorua cạnh tranh với nitrit ở mang, và tỷ lệ clorua : nitrit khoảng 20 : 1 thường ngăn được ngộ độc nitrit (Boyd, 2007). Nguyên lý này giải thích vì sao nước mặn hơn giúp giảm độc tính nitrit, nhưng tỷ lệ cụ thể cho tôm chưa được xác lập.
 
 ## Quản lý NH3, NO2 trong ao bạt mật độ cao
 
 - **Thả và cho ăn vừa sức**: Boyd khuyến cáo mật độ và lượng thức ăn vừa phải là cách giảm amoni hiệu quả nhất.
-- **Quạt khí đủ, cả ngày lẫn đêm**: oxy cho tôm và cho vi khuẩn nitrat hóa. Giữ oxy trên mức 3,5 mg/L theo QCVN.
+- **Quạt khí đủ, cả ngày lẫn đêm**: oxy cho tôm và cho vi khuẩn nitrat hóa. QCVN chỉ quy định mức tối thiểu 3,5 mg/L; trong ao bạt mật độ cao nên giữ oxy luôn từ 4 mg/L trở lên (tốt nhất ≥ 5 mg/L), kể cả lúc rạng sáng.
 - **Giữ độ kiềm ổn định**, bù kiềm khi cho ăn nhiều vì nitrat hóa liên tục tiêu hao kiềm.
 - **Không để pH chiều quá cao**: kiểm soát mật độ tảo, tránh tảo nở hoa dày.
 - **Xi phông, gom chất thải** ra khỏi ao bạt thường xuyên. Xem [kỹ thuật nuôi tôm ao lót bạt](/bai-viet/ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao).
@@ -101,7 +102,7 @@ Khi lượng thức ăn tăng, amoni sinh ra nhiều, trong khi bước chuyển
 
 ### Ao độ mặn thấp có cần giữ NO2 thấp hơn ao mặn không?
 
-Có. Nghiên cứu cho thấy mức nitrit an toàn ước tính cho tôm thẻ ở 15‰ chỉ khoảng 6,1 mg/L, thấp hơn nhiều so với 25,7 mg/L ở 35‰. Độ mặn càng thấp càng phải thận trọng.
+Có. Nghiên cứu cho thấy mức nitrit an toàn ước tính cho tôm thẻ ở 15‰ chỉ khoảng 6,1 mg/L, thấp hơn nhiều so với 25,7 mg/L ở 35‰. Đó là số liệu thí nghiệm; ngoài ao nên giữ NO₂ dưới 1 mg/L ở ao nước lợ và dưới 0,5 mg/L ở ao độ mặn thấp. Độ mặn càng thấp càng phải thận trọng.
 
 ### Nitrat hóa có làm giảm độ kiềm không?
 

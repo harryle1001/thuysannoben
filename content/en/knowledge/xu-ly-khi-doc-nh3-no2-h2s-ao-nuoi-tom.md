@@ -8,6 +8,7 @@ symptoms: khi-doc
 products: aqua-bac, bzt, nb-biopond, super-yucca, yucca-vs-zeo, grand-zeolite-zeo-hat-nhap-khau
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-10-24
+updated: 2026-11-16
 ---
 
 Toxic compounds in shrimp ponds come from the decomposition of uneaten feed, shrimp faeces, dead phytoplankton and bottom sludge. Even before shrimp die, toxic compounds reduce feeding, slow growth, cause black gill and make shrimp more prone to disease. From the second month onwards, waste increases quickly, so farmers need to check toxic compounds regularly.
@@ -17,8 +18,8 @@ Toxic compounds in shrimp ponds come from the decomposition of uneaten feed, shr
 | Parameter | Safe threshold | Notes |
 | --- | --- | --- |
 | NH₃ (free ammonia) | below 0.1 mg/L | More toxic at high pH and temperature |
-| NO₂ (nitrite) | below 1 mg/L | More toxic in low-salinity ponds |
-| H₂S | close to 0 | Very toxic, produced at an anaerobic bottom, rotten-egg smell |
+| NO₂ (nitrite) | below 1 mg/L (low-salinity ponds: below 0.5 mg/L) | More toxic in low-salinity ponds |
+| H₂S | close to 0 (below 0.01 mg/L) | Very toxic, produced at an anaerobic bottom, rotten-egg smell |
 
 Farmers should use rapid test kits to check 2–3 times a week, and more often once shrimp are over 45 days old.
 
@@ -34,12 +35,14 @@ Farmers should use rapid test kits to check 2–3 times a week, and more often o
 
 - Reduce feed by 20–30% for 2–3 days.
 - Bring pH down to 7.5–8.0 if the afternoon pH is too high, because high pH makes NH₃ more toxic.
-- Use yucca such as [SUPER YUCCA](/san-pham/super-yucca) to absorb NH₃ quickly.
+- Increase aeration; if treated clean water is available, exchange part of the water.
+- Use yucca such as [SUPER YUCCA](/san-pham/super-yucca) to help reduce NH₃, at the label dose.
 - Apply bottom-treatment probiotics such as [AQUA BAC](/san-pham/aqua-bac) or [NB-BIOPOND](/san-pham/nb-biopond) to break down waste at the source.
 
 ### Reducing NO₂
 
-- Increase aeration so the nitrifying bacteria work well.
+- Reduce feed by 20–30% until NO₂ comes down.
+- Increase aeration so the nitrifying bacteria work well; keep alkalinity stable.
 - Use bottom-treatment probiotics to break down toxic compounds routinely.
 - Low-salinity ponds can be supplemented with salt to increase chloride, which helps reduce NO₂ toxicity.
 
@@ -47,7 +50,8 @@ Farmers should use rapid test kits to check 2–3 times a week, and more often o
 
 - Increase bottom-layer oxygen with paddlewheel aerators and bottom aeration.
 - Do not let pH fall below 7.5, because low pH makes H₂S more toxic.
-- Spread zeolite such as [GRAND ZEOLITE](/san-pham/grand-zeolite-zeo-hat-nhap-khau) or [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) to adsorb toxic compounds and clean the bottom.
+- Siphon black sludge out of the pond (lined ponds) and reduce feed to cut organic load on the bottom.
+- [GRAND ZEOLITE](/san-pham/grand-zeolite-zeo-hat-nhap-khau) or [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) can be applied at the label dose to help clean the bottom. Note that zeolite mainly adsorbs ammonium, works much less well in brackish and seawater, and cannot replace aeration or siphoning.
 - Bottom-treatment probiotics such as [BZT](/san-pham/bzt) help break down organic sludge and reduce H₂S formation.
 
 ## Routine toxic-compound prevention
@@ -62,7 +66,7 @@ Farmers should use rapid test kits to check 2–3 times a week, and more often o
 
 ### Should probiotics or chemicals be used to treat toxic compounds?
 
-Probiotics deal with waste at the source and are safe and sustainable, so they should be used routinely. Yucca and zeolite help bring toxic compounds down quickly in urgent situations. Farmers should combine both.
+Probiotics deal with waste at the source and are safe and sustainable, so they should be used routinely. When toxic compounds rise sharply, the first steps are to cut feed, increase aeration and check pH; yucca and zeolite only help bring levels down quickly in urgent situations. Farmers should combine these measures.
 
 ### Should probiotics be applied right after disinfection?
 
