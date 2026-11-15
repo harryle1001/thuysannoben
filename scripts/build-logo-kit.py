@@ -147,16 +147,19 @@ def mark_flat():
 def mark_mono_path():
     svg = SVG.parse(SRC).topicosvg()
     paths = list(svg.shapes())
-    if len(paths) != 9:
-        raise SystemExit(f'logo-noben.svg có {len(paths)} hình, cần cập nhật mark_mono_path() (mong đợi 9)')
-    # thoi, viền thoi trong, nét gãy hai bên, vạch trắng, khung xanh, chấm tròn, viền chữ, ruột chữ, sóng
-    diamond, outline, chevrons, bars, panel, dot, word_stroke, word_fill, waves = paths
+    # Logo φ (scripts/build-logo-phi.py): thoi, viền thoi trong, nét gãy, 2 vạch trắng, khung xanh, chấm tròn,
+    # 5 viền chữ, 5 ruột chữ, sóng = 18 hình.
+    if len(paths) != 18:
+        raise SystemExit(f'{os.path.basename(SRC)} có {len(paths)} hình, cần cập nhật mark_mono_path() (mong đợi 18)')
+    diamond, outline, chevrons, bar1, bar2, panel, dot = paths[:7]
+    word_fill = paths[12:17]
+    waves = paths[17]
     seq = lambda p: p.as_cmd_seq()
     nz = lambda n: ['nonzero'] * n
     diff = lambda a, b: sp.difference([a, b], nz(2))
     # Khe mảnh quanh khung xanh để khung không dính vào hình thoi khi in một màu.
     gap = diff(list(sp.stroke(seq(panel), 'butt', 'miter', 9, 4, 0.1)), seq(panel))
-    parts = [seq(outline), seq(chevrons), seq(bars), seq(dot), gap, seq(word_fill), seq(waves)]
+    parts = [seq(outline), seq(chevrons), seq(bar1), seq(bar2), seq(dot), gap] + [seq(f) for f in word_fill] + [seq(waves)]
     ink = diff(seq(diamond), sp.union(parts, nz(len(parts))))
     return SVGPath.from_commands(ink).round_floats(2).d
 
