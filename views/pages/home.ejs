@@ -5,13 +5,18 @@
   const finderData = allProducts.map((p) => ({ n: p.name, u: p.url, i: p.shot && p.shot.src, c: Boolean(p.cutout), s: p.symptoms, r: p.symscore }));
 %>
 <section class="hero hero--video" aria-labelledby="hero-title">
-  <div class="hero__bg" aria-hidden="true">
-    <video class="hero__video" muted loop playsinline preload="none" poster="/media/noben-hero-poster.webp" data-hero-video>
-      <%# Phones (portrait): a crop of exactly the part that shows, same sharpness, fewer bytes %>
-      <source src="/media/noben-hero-m72.webm" type="video/webm" media="(max-width: 767px) and (orientation: portrait)">
-      <source src="/media/noben-hero-m72.mp4" type="video/mp4" media="(max-width: 767px) and (orientation: portrait)">
-      <source src="/media/noben-hero.webm" type="video/webm">
-      <source src="/media/noben-hero.mp4" type="video/mp4">
+  <div class="hero__bg hero__bg--sunrise" aria-hidden="true">
+    <picture class="hero__still">
+      <source media="(max-width: 760px)" srcset="/media/sunrise/sunrise-poster-9x16.webp" width="720" height="1280">
+      <img src="/media/sunrise/sunrise-poster.webp" alt="" width="1280" height="720" fetchpriority="high">
+    </picture>
+    <%# Logo sunrise: plays the rise once (4π s), then sunrise.js swaps in the seamless loop (data-loop).
+        The still behind it (<picture>, wide or 9:16) is the risen frame = loop frame 0, so the swap shows no seam. %>
+    <video class="hero__video hero__video--sunrise" muted playsinline preload="none" data-hero-video data-sunrise>
+      <source src="/media/sunrise/sunrise-rise-9x16.webm" data-loop="/media/sunrise/sunrise-loop-9x16.webm" type="video/webm" media="(max-width: 760px)">
+      <source src="/media/sunrise/sunrise-rise-9x16.mp4" data-loop="/media/sunrise/sunrise-loop-9x16.mp4" type="video/mp4" media="(max-width: 760px)">
+      <source src="/media/sunrise/sunrise-rise.webm" data-loop="/media/sunrise/sunrise-loop.webm" type="video/webm">
+      <source src="/media/sunrise/sunrise-rise.mp4" data-loop="/media/sunrise/sunrise-loop.mp4" type="video/mp4">
     </video>
     <span class="hero__shade"></span>
   </div>

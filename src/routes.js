@@ -200,7 +200,8 @@ router.get('/', (req, res) => {
   const knowledge = c.knowledge();
   res.render('pages/home', {
     meta: {
-      preloadImage: '/media/noben-hero-poster.webp',
+      preloadImage: '/media/sunrise/sunrise-poster.webp',
+      preloadImagePhone: '/media/sunrise/sunrise-poster-9x16.webp',
       title: 'Thuốc thủy sản Noben – Thuốc nuôi tôm, chế phẩm sinh học, khoáng chất',
       description:
         'Thuốc thủy sản Noben: thuốc trị bệnh tôm, vi sinh xử lý đáy, khoáng chất, men tiêu hóa cho ao tôm, cá. Nhà máy ISO 9001:2015 tại Củ Chi, hơn 22 năm kinh nghiệm, tư vấn kỹ thuật miễn phí.',

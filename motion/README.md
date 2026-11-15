@@ -59,3 +59,14 @@ Thiết bị và cài đặt chung:
 | 8 | `qc` | Kiểm tra thành phẩm trước khi xuất xưởng | Cận tay cầm sản phẩm, đọc nhãn, đóng dấu đạt |
 | 9 | `team` | Đội ngũ đứng trước nhà máy hoặc trong xưởng | Toàn cảnh, mọi người mỉm cười, máy đẩy chậm vào |
 | 10 | `reach` | Xếp hàng lên xe giao, xe rời cổng | Trung cảnh rồi toàn cảnh, chiều muộn ánh nắng vàng |
+
+## LogoSunrise: logo mọc như mặt trời (nền hero trang chủ)
+
+- Mã nguồn `src/scenes/LogoSunrise.tsx`; logo đề xuất `public/brand/noben-mark-golden.svg` (chỉ dùng trong video).
+- `LogoSunrise` (4π ≈ 12,6 giây, logo mọc) và `LogoSunriseLoop` (2π ≈ 6,3 giây, lặp liền mạch), kèm bản dọc
+  `…Vertical` 720×1280. Mọi chuyển động lặp đúng số chu kỳ nguyên trong 188 khung; bản mọc dài đúng 2 × 188 khung,
+  nên khung cuối nối thẳng vào khung đầu bản lặp.
+- Chân trời cách đáy H/φ; quầng sáng có bán kính tăng theo φ; 21 tia xoay đúng một bước mỗi vòng lặp.
+- `bash render-sunrise.sh` (hoặc `SKIP_RENDER=1` để chỉ nén lại) xuất vào `public/media/sunrise/`.
+- Web: `views/pages/home.ejs` phát bản mọc một lần, `public/js/sunrise.js` chuyển sang bản lặp. Ảnh tĩnh phía sau
+  (`<picture>`) là khung logo đã mọc, nên lúc chuyển không lộ vết nối.

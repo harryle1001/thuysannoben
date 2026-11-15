@@ -9,6 +9,7 @@ import { STORIES } from "./stories";
 import { PRODUCTS } from "./products";
 import { FactoryCompositions } from "./scenes/FactoryFilm";
 import { ProcessCompositions } from "./scenes/ProcessFilm";
+import { SunriseCompositions } from "./scenes/LogoSunrise";
 
 const FPS = 30;
 const withFonts = (C: React.FC) => () => (<><Fonts /><C /></>);
@@ -24,6 +25,7 @@ export const Root: React.FC = () => (
     {/* 17 s product ads: 9:16 for Reels/TikTok/Zalo, 16:9 for the website */}
     <FactoryCompositions />
     <ProcessCompositions />
+    <SunriseCompositions />
     {PRODUCTS.flatMap((p) => [
       <Composition key={`${p.id}V`} id={`Ad${p.id}Vertical`} component={withProduct(p)} durationInFrames={Math.round(beatsFor(p).end * FPS)} fps={FPS} width={1080} height={1920} />,
       <Composition key={`${p.id}H`} id={`Ad${p.id}Wide`} component={withProduct(p)} durationInFrames={Math.round(beatsFor(p).end * FPS)} fps={FPS} width={1920} height={1080} />,
