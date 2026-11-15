@@ -3,13 +3,13 @@
 <ul class="vgrid<%= locals.rail ? ' vgrid--rail' : '' %>" role="list">
   <% for (const v of items) { const dur = '0:' + String(v.duration).padStart(2, '0'); %>
   <li class="vcard">
-    <button class="vcard__btn" type="button" data-vplay data-title="<%= v.short %>" data-mp4="<%= v.mp4 %>" data-webm="<%= v.webm %>" data-vertical="<%= v.vertical || '' %>" aria-label="Phát video <%= v.short %> (<%= v.duration %> giây)">
+    <button class="vcard__btn" type="button" data-vplay data-title="<%= v.short %>" data-mp4="<%= v.mp4 %>" data-webm="<%= v.webm || v.mp4 %>" data-vertical="<%= v.vertical || '' %>" aria-label="Phát video <%= v.short %> (<%= v.duration %> giây)">
       <img src="<%= v.poster.replace('/ads/', '/ads/sm/') %>" srcset="<%= v.poster.replace('/ads/', '/ads/sm/') %> 640w, <%= v.poster %> 1280w" sizes="(min-width: 1000px) 300px, 260px" width="640" height="360" loading="lazy" decoding="async" alt="">
       <span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span>
       <span class="vcard__dur"><%= dur %></span>
     </button>
     <<%= H %> class="vcard__title"><a href="<%= v.url %>"><%= v.short %></a></<%= H %>>
-    <p class="vcard__kind"><%= v.kind === 'product' ? 'Phim sản phẩm' : v.kind === 'dealer' ? 'Hợp tác đại lý' : 'Phác đồ, dịch vụ' %></p>
+    <p class="vcard__kind"><%= v.kind === 'product' ? 'Phim sản phẩm' : v.kind === 'dealer' ? 'Hợp tác đại lý' : v.kind === 'company' ? 'Nhà máy, quy trình' : 'Phác đồ, dịch vụ' %></p>
   </li>
   <% } %>
 </ul>

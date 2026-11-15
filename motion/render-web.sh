@@ -18,4 +18,5 @@ enc "$V" "$BASE-9x16.mp4" 720:1280 560
 ffmpeg -v error -y -i "$H" -vf "scale=1280:720:flags=lanczos,hqdn3d=1:1:3:3" -c:v libvpx-vp9 -b:v 420k -crf 38 -row-mt 1 -deadline good -cpu-used 2 -r 30 -g 30 -an "$BASE.webm"
 if [ "$(stat -c%s "$BASE.webm")" -ge "$(stat -c%s "$BASE.mp4")" ]; then rm -f "$BASE.webm"; echo "webm not smaller: dropped"; fi
 q=60; while :; do ffmpeg -v error -y -ss "$POS" -i "$H" -frames:v 1 -vf scale=1280:720 -c:v libwebp -quality $q "$BASE-poster.webp"; [ "$(stat -c%s "$BASE-poster.webp")" -le 40000 ] || [ $q -le 20 ] && break; q=$((q-8)); done
+q=60; while :; do ffmpeg -v error -y -ss "$POS" -i "$V" -frames:v 1 -vf scale=720:1280 -c:v libwebp -quality $q "$BASE-9x16-poster.webp"; [ "$(stat -c%s "$BASE-9x16-poster.webp")" -le 40000 ] || [ $q -le 20 ] && break; q=$((q-8)); done
 ls -la "$BASE"*

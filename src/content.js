@@ -307,7 +307,7 @@ const ORDER = ['sorbest', 'proticbest', 'super-yucca', 'top-weigh', 'g7-phong-va
 const videos = [
   ...products.filter((p) => p.video).sort((a, b) => ORDER.indexOf(a.slug) - ORDER.indexOf(b.slug))
     .map((p) => ({ slug: p.slug, kind: 'product', name: `${p.name}: phim sản phẩm`, short: p.name, description: `${p.name}: ${p.tagline}. Sản xuất tại nhà máy Noben đạt ISO 9001:2015.`, url: p.url, ...p.video })),
-  ...Object.entries(landingVideos).map(([slug, v]) => ({ slug, kind: slug === 'dai-ly' ? 'dealer' : 'protocol', short: v.name, ...v })),
+  ...Object.entries(landingVideos).map(([slug, v]) => ({ slug, kind: v.kind || (slug === 'dai-ly' ? 'dealer' : 'protocol'), short: v.name, ...v })),
 ];
 
 function relatedProducts(product, n = 4) {
