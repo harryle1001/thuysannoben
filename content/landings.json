@@ -34,5 +34,95 @@
     "pains_title": "Tôm của bạn đang gặp tình trạng này?",
     "bundle_title": "Phác đồ khoáng khuyên dùng cùng CAPHOTE",
     "bundle": ["nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo", "calcipho", "premix-khoang-khoang-kich-lot", "aqua-c30"]
+  },
+  {
+    "slug": "aqualac-fs",
+    "product": "aqualac-fs",
+    "solution": "phan-trang-gan-tuy",
+    "seo_title": "AQUALAC FS – Nong to đường ruột, ngừa phân trắng | Noben",
+    "description": "AQUALAC FS của Noben: hỗ trợ tiêu hóa và hấp thu thức ăn, hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột, làm to đường ruột giúp tôm tăng trọng nhanh. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Giải pháp đường ruột cho tôm thẻ, tôm sú",
+    "title": "Đường ruột to khỏe, tôm lớn nhanh với AQUALAC FS",
+    "lead": "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh, giúp nong to đường ruột và hỗ trợ ngăn ngừa phân trắng, trống đường ruột. Trộn thức ăn hằng ngày suốt vụ nuôi, tăng liều khi tôm có dấu hiệu phân trắng, phân lỏng.",
+    "points": [
+      "Hỗ trợ tiêu hóa, hấp thu thức ăn nhanh chóng",
+      "Hỗ trợ ngăn ngừa phân trắng, trống đường ruột",
+      "Làm to đường ruột, hỗ trợ tôm tăng trọng nhanh"
+    ],
+    "pains_title": "Đường ruột tôm đang có những dấu hiệu này?",
+    "bundle_title": "Phác đồ đường ruột khuyên dùng cùng AQUALAC FS",
+    "bundle": ["davi-cid-liquid", "prozyme", "hepaliver-fs", "sorbest"]
+  },
+  {
+    "slug": "sorbest",
+    "product": "sorbest",
+    "solution": "phan-trang-gan-tuy",
+    "seo_title": "SORBEST – Phòng và trị bệnh gan, chết sớm cho tôm | Noben",
+    "description": "SORBEST của Noben: hỗn hợp thảo dược và acid amin giúp phòng và trị các bệnh gan cho tôm như teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Giải pháp gan tụy cho tôm thẻ, tôm sú",
+    "title": "Gan khỏe, tôm vượt giai đoạn chết sớm với SORBEST",
+    "lead": "Hỗn hợp thảo dược và acid amin giúp phòng và trị các bệnh gan: teo gan, sưng gan, trắng gan, gan ứ nước. Bổ gan, giải độc gan, phục hồi chức năng gan và ngăn ngừa bệnh tái phát. Dùng trộn thức ăn hoặc tạt xuống ao.",
+    "points": [
+      "Phòng và trị teo gan, sưng gan, trắng gan, gan ứ nước",
+      "Hạn chế chết rải rác, chết tấp mé do bệnh gan",
+      "Bổ gan, giải độc gan, ngăn ngừa bệnh gan tái phát"
+    ],
+    "pains_title": "Ao của bạn đang có những dấu hiệu này?",
+    "bundle_title": "Phác đồ gan tụy khuyên dùng cùng SORBEST",
+    "bundle": ["davi-cid-liquid", "hepaliver-fs", "g7-phong-va-tri-benh-gan-chet-som", "aqualac-fs"]
+  },
+  {
+    "slug": "proticbest",
+    "product": "proticbest",
+    "solution": "khi-doc-day-ao-nhot-bat",
+    "seo_title": "PROTICBEST – Vi sinh gốc làm sạch đáy, bạt, nước | Noben",
+    "description": "PROTICBEST của Noben: vi sinh gốc làm sạch đáy ao, sạch nhớt bạt, sạch nước; phân hủy nhanh chất thải hữu cơ, thức ăn dư, xác tảo và khí độc đáy ao; ổn định màu nước, pH. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Vi sinh gốc cho ao bạt, ao đất",
+    "title": "Đáy sạch, bạt sạch, nước trong với PROTICBEST",
+    "lead": "Vi sinh gốc chuyên làm sạch đáy, sạch nước, sạch nhớt bạt. Phân hủy nhanh chất thải hữu cơ, thức ăn dư thừa, xác tảo tàn và khí độc ở đáy ao. Dùng tạt trực tiếp hoặc ủ sục khí để tăng sinh khối, tiết kiệm chi phí.",
+    "points": [
+      "Làm sạch đáy ao, sạch nhớt bạt, sạch nước",
+      "Phân hủy chất thải hữu cơ, thức ăn dư, xác tảo tàn",
+      "Gia tăng oxy, ổn định màu nước và pH"
+    ],
+    "pains_title": "Ao của bạn đang gặp tình trạng này?",
+    "bundle_title": "Phác đồ xử lý đáy khuyên dùng cùng PROTICBEST",
+    "bundle": ["super-yucca", "grand-zeolite-zeo-hat-nhap-khau", "nb-biopond", "no-toxin"]
+  },
+  {
+    "slug": "super-yucca",
+    "product": "super-yucca",
+    "solution": "khi-doc-day-ao-nhot-bat",
+    "seo_title": "SUPER YUCCA – Hấp thụ khí độc, cấp cứu tôm nổi đầu | Noben",
+    "description": "SUPER YUCCA của Noben: hấp thụ nhanh các loại khí độc, cấp cứu khi tôm nổi đầu, phân hủy và đào thải khí độc ra khỏi ao nuôi, cải thiện nhanh tình trạng ô nhiễm môi trường. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Xử lý khí độc cho ao bạt, ao đất",
+    "title": "Khí độc được kiểm soát, tôm yên tâm với SUPER YUCCA",
+    "lead": "Hấp thụ nhanh các loại khí độc, hỗ trợ cấp cứu khi tôm nổi đầu. Phân hủy và đào thải khí độc ra khỏi môi trường ao nuôi, cải thiện nhanh tình trạng ô nhiễm. Dùng định kỳ hằng tuần hoặc tăng liều khi khí độc cao.",
+    "points": [
+      "Hấp thụ nhanh khí độc, cấp cứu khi tôm nổi đầu",
+      "Phân hủy và đào thải khí độc ra khỏi ao nuôi",
+      "Cải thiện nhanh tình trạng ô nhiễm môi trường"
+    ],
+    "pains_title": "Ao của bạn đang có những dấu hiệu này?",
+    "bundle_title": "Phác đồ xử lý khí độc khuyên dùng cùng SUPER YUCCA",
+    "bundle": ["oxy-99", "proticbest", "grand-zeolite-zeo-hat-nhap-khau", "no-toxin"]
+  },
+  {
+    "slug": "top-weigh",
+    "product": "top-weigh",
+    "solution": "men-tieu-hoa-tang-de-khang",
+    "seo_title": "TOP WEIGH – Tăng trọng nhanh, giảm thức ăn cho tôm | Noben",
+    "description": "TOP WEIGH của Noben: bổ sung acid amin, vitamin và khoáng chất giúp tôm tăng trọng nhanh, lột xác đúng chu kỳ, khắc phục ốp thân, mềm vỏ, vỏ xanh; giảm 10 – 15% lượng thức ăn. Giá nhà máy, tư vấn miễn phí.",
+    "kicker": "Tăng trọng cho tôm thẻ, tôm sú",
+    "title": "Tôm lớn nhanh, tiết kiệm thức ăn với TOP WEIGH",
+    "lead": "Bổ sung đầy đủ acid amin, vitamin và khoáng chất cần thiết cho sinh trưởng. Giúp tôm tăng trọng nhanh, lột xác đúng chu kỳ, khắc phục ốp thân, mềm vỏ, vỏ xanh da trời. Trộn thức ăn theo tuổi tôm.",
+    "points": [
+      "Tăng trọng nhanh, lột xác nhanh đúng chu kỳ",
+      "Khắc phục ốp thân, mềm vỏ, vỏ xanh da trời",
+      "Giảm 10 – 15% lượng thức ăn, giảm chi phí đầu tư"
+    ],
+    "pains_title": "Tôm của bạn đang gặp tình trạng này?",
+    "bundle_title": "Phác đồ tăng trọng khuyên dùng cùng TOP WEIGH",
+    "bundle": ["aqualac-fs", "prozyme", "hepaliver-fs", "aqua-c30"]
   }
 ]
