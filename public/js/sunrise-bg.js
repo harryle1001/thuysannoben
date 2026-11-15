@@ -3,7 +3,7 @@
    Everything is measured in φ = 1.61803:
    - horizon at H/φ from the top (sky 61.8 %, sea 38.2 %)
    - the sun climbs from below the horizon to H/φ² and is fully up after H/φ px of scroll
-   - glow radii S·φ, S·φ², S·φ³; 21 rays (Fibonacci); veil opacity 1 − 1/φ⁴ ≈ 0.854
+   - glow radii S·φ, S·φ², S·φ³; veil opacity 1 − 1/φ⁴ ≈ 0.854
    One fixed canvas, ≤ 30 fps (24 on phones), drawn only when something changed or light is moving;
    paused when the tab is hidden. Reduced motion: a still, fully risen scene. */
 (function () {
@@ -26,27 +26,34 @@
   root.classList.add('has-sunrise');
   var ctx = cv.getContext('2d');
 
-  var cue = document.querySelector('.hero__cue');
   var logo = new Image();
   logo.decoding = 'async';
   logo.src = '/images/brand/logo-noben.svg';
 
   var W = 0, H = 0, dpr = 1;
+  // Size once to the largest viewport; the phone's address bar sliding in and out must not
+  // resize (and so blank) the canvas, and must not change the sunrise timing.
   function size() {
+    var w = window.innerWidth, h = Math.max(window.innerHeight, document.documentElement.clientHeight);
+    if (w === W && h <= H) return false;
     dpr = Math.min(window.devicePixelRatio || 1, phone ? 1.25 : 1.5);
-    W = window.innerWidth; H = window.innerHeight;
+    H = w === W ? Math.max(h, H) : h; // rotation / new width: start over; same width: only ever grow
+    W = w;
     cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    cv.style.height = H + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    return true;
   }
   size();
 
   // colour helpers
   function mix(a, b, t) { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t]; }
   function rgb(c, a) { return 'rgba(' + (c[0] | 0) + ',' + (c[1] | 0) + ',' + (c[2] | 0) + ',' + (a == null ? 1 : a) + ')'; }
-  function ease(t) { return t < 0 ? 0 : t > 1 ? 1 : t * t * (3 - 2 * t); }
+  function ease(t) { return t < 0 ? 0 : t > 1 ? 1 : t * t * t * (t * (t * 6 - 15) + 10); } // smootherstep: no visible steps
   // sky stops (top → horizon): pre-dawn → golden morning
-  var SKY0 = [[4, 12, 32], [14, 24, 58], [42, 38, 86], [86, 58, 96]];
-  var SKY1 = [[22, 44, 94], [96, 82, 140], [226, 120, 104], [255, 196, 92]];
+  var STOPS = [0, 0.236, 0.382, 0.618, 0.854, 1];
+  var SKY0 = [[3, 8, 24], [6, 14, 36], [10, 20, 48], [22, 30, 66], [44, 40, 86], [70, 52, 96]];
+  var SKY1 = [[20, 40, 88], [44, 62, 120], [92, 84, 146], [178, 112, 132], [238, 150, 104], [255, 200, 110]];
   var SEA0 = [[10, 22, 52], [3, 10, 28]];
   var SEA1 = [[64, 54, 98], [6, 18, 46]];
   var GOLD = [255, 194, 14];
@@ -77,7 +84,11 @@
 
     // sky
     var g = ctx.createLinearGradient(0, 0, 0, hz);
-    for (var k = 0; k < 4; k++) g.addColorStop([0, 0.382, 0.764, 1][k], rgb(mix(SKY0[k], SKY1[k], light)));
+    for (var k = 0; k < STOPS.length; k++) {
+      // the horizon brightens first, the zenith last: dawn spreads upward
+      var lk = ease(light * (1 + STOPS[k] * 0.382) - STOPS[k] * 0.146);
+      g.addColorStop(STOPS[k], rgb(mix(SKY0[k], SKY1[k], lk)));
+    }
     ctx.fillStyle = g; ctx.fillRect(0, 0, W, hz + 1);
 
     // stars fade out as light comes
@@ -101,22 +112,6 @@
       ctx.fillStyle = rg;
       ctx.fillRect(0, 0, W, hz);
     });
-
-    // rays: 21 (Fibonacci), slowly turning, only above the horizon
-    ctx.save();
-    ctx.beginPath(); ctx.rect(0, 0, W, hz); ctx.clip();
-    ctx.translate(sunX, sunY);
-    ctx.rotate(t * 0.02);
-    var rayLen = S * Math.pow(PHI, 3.5);
-    for (var r = 0; r < 21; r++) {
-      var a = (r / 21) * 2 * PI;
-      var lg = ctx.createLinearGradient(0, 0, Math.cos(a) * rayLen, Math.sin(a) * rayLen);
-      lg.addColorStop(0, rgb([255, 236, 180], 0.32 * light));
-      lg.addColorStop(1, rgb([255, 236, 180], 0));
-      ctx.strokeStyle = lg; ctx.lineWidth = r % 2 ? 1 : 1.618;
-      ctx.beginPath(); ctx.moveTo(Math.cos(a) * S * 0.62, Math.sin(a) * S * 0.62); ctx.lineTo(Math.cos(a) * rayLen, Math.sin(a) * rayLen); ctx.stroke();
-    }
-    ctx.restore();
 
     // the sun = Noben logo, hidden below the horizon line
     if (logo.complete && logo.naturalWidth) {
@@ -165,16 +160,17 @@
     }
 
     veil.style.opacity = veilLevel().toFixed(3);
-    if (cue) cue.style.opacity = Math.max(0, 1 - p * PHI * PHI).toFixed(3);
   }
 
-  var last = 0, raf = 0;
+  var last = 0, raf = 0, lastY = -1;
   function loop(now) {
     raf = requestAnimationFrame(loop);
-    if (now - last < 1000 / (phone ? 24 : 30)) return;
-    last = now; draw(now);
+    var y = window.scrollY;
+    // scrolling: every frame, so the sun follows the finger exactly; idle: gentle 24–30 fps shimmer
+    if (y === lastY && now - last < 1000 / (phone ? 24 : 30)) return;
+    lastY = y; last = now; draw(now);
   }
-  window.addEventListener('resize', function () { size(); if (still) draw(0); }, { passive: true });
+  window.addEventListener('resize', function () { if (size()) draw(performance.now()); }, { passive: true });
   if (still) {
     draw(0);
     logo.addEventListener('load', function () { draw(0); });
