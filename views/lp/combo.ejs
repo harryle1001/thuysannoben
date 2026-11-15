@@ -1,0 +1,156 @@
+<%- include('_top') %>
+<%
+  const k = (x) => 'lp-' + lp.slug + '-' + x;
+  const oem = lp.form_fields === 'oem';
+  const form = (fid, title) => include('_form', {
+    fid, title,
+    sub: lp.form_sub || 'Kỹ thuật viên Noben gọi lại, hỏi tình trạng ao và tư vấn phác đồ, liều dùng cho đúng ao của bạn.',
+    need: lp.need, product: lp.product_label || '', fields: lp.form_fields || '',
+    button: lp.button || 'Nhận phác đồ và báo giá',
+    success: oem ? 'Đã nhận yêu cầu. Phòng kinh doanh Noben sẽ gọi lại cho bạn trong giờ làm việc.' : 'Đã nhận thông tin. Kỹ thuật viên Noben sẽ gọi lại cho bạn trong giờ làm việc.',
+  });
+%>
+<section class="lp-hero lp-hero--combo" aria-labelledby="lp-title">
+  <div class="wrap lp-hero__grid">
+    <div class="lp-hero__copy">
+      <p class="lp-kicker"><%- tx(k('kicker'), lp.kicker) %></p>
+      <h1 id="lp-title" class="lp-hero__title"><%- tx(k('title'), lp.title) %></h1>
+      <p class="lp-hero__lead"><%- tx(k('lead'), lp.lead) %></p>
+      <ul class="lp-checks">
+        <% lp.points.forEach((pt, i) => { %><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><%- tx(k('pt' + i), pt) %></li><% }) %>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--sun btn--lg" href="#dang-ky"><%= lp.button || 'Nhận phác đồ và báo giá' %></a>
+        <a class="btn btn--ghost btn--lg" href="<%= tel(oem ? (company.phones[1] || company.hotline) : company.hotline) %>"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Gọi <%= oem ? (company.phones[1] || company.hotline) : company.hotline %></a>
+      </div>
+      <div class="lp-proof">
+        <span><strong>ISO</strong> 9001:2015</span>
+        <span><strong><%= company.founded_years %>+</strong> năm sản xuất</span>
+        <span><strong><%= oem ? 'Củ Chi' : 'Miễn phí' %></strong> <%= oem ? 'nhà máy tại TP.HCM' : 'tư vấn tại ao' %></span>
+      </div>
+    </div>
+    <% if (lp.hero_image) { %>
+    <figure class="lp-combo__photo"><%- img(lp.hero_image, { alt: lp.hero_image.alt, loading: 'eager', fetchpriority: 'high' }) %></figure>
+    <% } else if (shots.length) { %>
+    <figure class="lp-combo__shots">
+      <span class="lp-pack__glow" aria-hidden="true"></span>
+      <span class="lp-combo__row"><% shots.forEach((p, i) => { %><%- img(p.shot, { alt: 'Bao bì ' + p.name, loading: 'eager', fetchpriority: i === 1 ? 'high' : 'auto', class: 'is-cutout' }) %><% }) %></span>
+      <figcaption><strong><%= stages.reduce((n, s) => n + s.items.length, 0) %> sản phẩm</strong><span><%= stages.length %> giai đoạn, liều theo nhãn</span></figcaption>
+    </figure>
+    <% } %>
+  </div>
+</section>
+
+<% if (lp.pains) { %>
+<section class="section" aria-labelledby="lp-pain">
+  <div class="wrap lp-two lp-two--wide">
+    <div>
+      <p class="lp-eyebrow">Nhận biết sớm</p>
+      <h2 id="lp-pain" class="h2"><%- tx(k('pains'), lp.pains_title) %></h2>
+      <p class="lead lp-muted"><%- tx(k('pains-lead'), lp.pains_lead) %></p>
+      <% if (lp.pains_link) { %><a class="text-link" href="<%= lp.pains_link[0] %>"><%= lp.pains_link[1] %></a><% } %>
+    </div>
+    <ul class="lp-signs">
+      <% lp.pains.forEach((x) => { %><li><span class="lp-signs__dot" aria-hidden="true"></span><%= x %></li><% }) %>
+    </ul>
+  </div>
+</section>
+<% } %>
+
+<% if (stages.length) { %>
+<section class="section section--tint" aria-labelledby="lp-stages">
+  <div class="wrap">
+    <header class="lp-head">
+      <p class="lp-eyebrow">Phác đồ của kỹ thuật Noben</p>
+      <h2 id="lp-stages" class="h2"><%- tx(k('stages'), lp.stages_title) %></h2>
+      <p class="lp-muted">Công dụng và liều lấy từ nhãn sản phẩm. Liều có thể điều chỉnh theo tình trạng ao, hãy gọi kỹ thuật viên trước khi dùng. Quy đổi liều theo thể tích ao bằng <a href="/tinh-lieu">công cụ tính liều</a>, xem tuổi tôm và việc cần làm trong tuần ở <a href="/lich-cham-soc">lịch chăm sóc</a>.</p>
+    </header>
+    <ol class="lp-stages">
+      <% stages.forEach((s, i) => { %>
+      <li class="lp-stage">
+        <header class="lp-stage__head">
+          <span class="lp-stage__n"><%= String(i + 1).padStart(2, '0') %></span>
+          <div><p class="lp-stage__when"><%= s.when %></p><h3><%- tx(k('st' + i), s.name) %></h3></div>
+        </header>
+        <p class="lp-stage__goal"><%- tx(k('st' + i + '-goal'), s.goal) %></p>
+        <ul class="lp-stage__items">
+          <% s.items.forEach((it) => { %>
+          <li>
+            <a class="lp-stage__pack cat-bg--<%= it.p.category %>" href="<%= it.p.url %>" aria-label="Xem <%= it.p.name %>"><%- img(it.p.shot, { alt: '', class: it.p.cutout ? 'is-cutout' : '' }) %></a>
+            <div><a class="lp-stage__name" href="<%= it.p.url %>"><%= it.p.name %></a><p><%= it.note %></p></div>
+          </li>
+          <% }) %>
+        </ul>
+      </li>
+      <% }) %>
+    </ol>
+  </div>
+</section>
+<% } %>
+
+<% if (lp.cards) { %>
+<section class="section" aria-labelledby="lp-cards">
+  <div class="wrap">
+    <header class="lp-head"><p class="lp-eyebrow">Dịch vụ</p><h2 id="lp-cards" class="h2"><%- tx(k('cards'), lp.cards_title) %></h2></header>
+    <div class="lp-cards lp-cards--4">
+      <% lp.cards.forEach(([ico, t, d], i) => { %><article class="lp-card"><span class="lp-card__ico"><svg class="ico" aria-hidden="true"><use href="#<%= ico %>"/></svg></span><h3><%- tx(k('c' + i), t) %></h3><p><%- tx(k('c' + i + '-d'), d) %></p></article><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (lp.lines) { %>
+<section class="section section--tint" aria-labelledby="lp-lines">
+  <div class="wrap">
+    <header class="lp-head"><p class="lp-eyebrow">Năng lực sản xuất</p><h2 id="lp-lines" class="h2"><%- tx(k('lines'), lp.lines_title) %></h2></header>
+    <ol class="lp-benefits lp-benefits--3">
+      <% lp.lines.forEach(([t, d], i) => { %><li><span class="lp-benefits__n"><%= String(i + 1).padStart(2, '0') %></span><p><strong><%- tx(k('l' + i), t) %></strong><br><%- tx(k('l' + i + '-d'), d) %></p></li><% }) %>
+    </ol>
+  </div>
+</section>
+<% } %>
+
+<% if (lp.steps) { %>
+<section class="section" aria-labelledby="lp-steps">
+  <div class="wrap">
+    <header class="lp-head"><p class="lp-eyebrow">Quy trình</p><h2 id="lp-steps" class="h2"><%- tx(k('steps'), lp.steps_title) %></h2></header>
+    <ol class="lp-steps">
+      <% lp.steps.forEach(([t, d], i) => { %><li><h3><%- tx(k('s' + i), t) %></h3><p><%- tx(k('s' + i + '-d'), d) %></p></li><% }) %>
+    </ol>
+  </div>
+</section>
+<% } %>
+
+<%- include('../partials/quality') %>
+
+<section class="section" aria-labelledby="lp-faq">
+  <div class="wrap lp-two">
+    <div class="lp-faqwrap">
+      <p class="lp-eyebrow">Hỏi đáp</p>
+      <h2 id="lp-faq" class="h2">Câu hỏi thường gặp</h2>
+      <div class="faq">
+        <% faq.forEach((f, i) => { %><details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details><% }) %>
+      </div>
+    </div>
+    <% if (lp.guide) { %>
+    <aside class="lp-guide" aria-labelledby="lp-guide">
+      <p class="lp-eyebrow">Đọc thêm</p>
+      <h2 id="lp-guide" class="h2"><%= oem ? 'Tìm hiểu về Noben' : 'Kiến thức liên quan' %></h2>
+      <ul class="lp-guide__list"><% lp.guide.forEach(([href, t]) => { %><li><a href="<%= href %>"><%= t %></a></li><% }) %></ul>
+    </aside>
+    <% } %>
+  </div>
+</section>
+
+<section class="lp-final" aria-labelledby="lp-final-title" id="dang-ky">
+  <div class="wrap lp-final__grid">
+    <div>
+      <h2 id="lp-final-title" class="h2"><%- tx(k('final'), lp.final_title) %></h2>
+      <p class="lead"><%- tx(k('final-lead'), lp.final_lead) %></p>
+      <a class="phone-big" href="<%= tel(oem ? (company.phones[1] || company.hotline) : company.hotline) %>"><svg class="ico"><use href="#i-phone"/></svg><%= oem ? (company.phones[1] || company.hotline) : company.hotline %></a>
+      <p class="lp-final__alt"><% if (oem) { %>Nhà máy ISO 9001:2015 tại Củ Chi · <a href="/gia-cong">Xem dịch vụ gia công</a><% } else { %>Giao hàng toàn quốc · Có giá riêng cho đại lý · <a href="/tuyen-dai-ly">Đăng ký làm đại lý</a><% } %></p>
+    </div>
+    <%- form('lpc', lp.form_title) %>
+  </div>
+</section>
+<%- include('_bottom', { ctaShort: oem ? 'Báo giá gia công' : 'Nhận phác đồ' }) %>

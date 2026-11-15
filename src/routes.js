@@ -273,6 +273,7 @@ router.get('/tuyen-dai-ly', (req, res) => {
 });
 router.get('/lp/:slug', (req, res, next) => {
   const lp = LANDINGS.find((x) => x.slug === req.params.slug);
+  if (lp && lp.type === 'combo') return renderCombo(lp, res);
   const p = lp && c.productBySlug[lp.product];
   if (!p) return next();
   const s = c.solutionBySlug[lp.solution] || null;
@@ -289,6 +290,22 @@ router.get('/lp/:slug', (req, res, next) => {
     faq,
   });
 });
+
+// Need-based landing (type "combo"): a stage-by-stage protocol across several products, or the OEM offer.
+// Protocol pages stay noindex (the knowledge articles rank instead); pages with "index": true go to the sitemap.
+function renderCombo(lp, res) {
+  const stages = (lp.stages || []).map((s) => ({ ...s, items: s.items.map((it) => ({ ...it, p: c.productBySlug[it.product] })).filter((it) => it.p) }));
+  const shots = stages.map((s) => s.items[0] && s.items[0].p).filter((p) => p && p.cutout).slice(0, 3);
+  const faq = (lp.faq || []).map((f) => ({ q: f.q, a: /^</.test(f.a) ? f.a : `<p>${f.a}</p>` }));
+  res.render('lp/combo', {
+    meta: { title: lp.seo_title, description: lp.description, image: (lp.hero_image && lp.hero_image.src) || (shots[0] && shots[0].image && shots[0].image.src), noindex: !lp.index },
+    lp,
+    stages,
+    shots,
+    faq,
+    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq)].filter(Boolean) : [],
+  });
+}
 
 function renderPostList(res, { title, intro, list, path, description }) {
   res.render('pages/posts', {
@@ -763,6 +780,7 @@ router.get('/sitemap.xml', (req, res) => {
     ...Object.keys(c.pages).map((s) => ({ loc: `/chinh-sach/${s}`, priority: '0.3', changefreq: 'yearly' })),
     { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
     { loc: '/tuyen-dai-ly', priority: '0.7', changefreq: 'monthly' },
+    ...LANDINGS.filter((x) => x.index).map((x) => ({ loc: `/lp/${x.slug}`, priority: '0.7', changefreq: 'monthly', images: x.hero_image ? [x.hero_image.src] : [] })),
     { loc: '/tinh-lieu', priority: '0.7', changefreq: 'monthly' },
     { loc: '/lich-cham-soc', priority: '0.7', changefreq: 'monthly' },
     { loc: '/danh-gia', priority: '0.6', changefreq: 'weekly' },

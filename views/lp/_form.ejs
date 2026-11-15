@@ -17,6 +17,16 @@
       <option>Khác</option>
     </select>
   </div>
+  <% } else if (locals.fields === 'oem') { %>
+  <div class="field"><label for="<%= fid %>-msg">Bạn cần <span class="opt">(không bắt buộc)</span></label>
+    <select id="<%= fid %>-msg" name="message">
+      <option>Gia công thành phẩm theo nhãn riêng</option>
+      <option>Gia công bán thành phẩm</option>
+      <option>Tư vấn hồ sơ lưu hành sản phẩm</option>
+      <option>Tư vấn thành lập công ty</option>
+      <option>Khác</option>
+    </select>
+  </div>
   <% } else { %>
   <div class="field"><label for="<%= fid %>-msg">Tình trạng ao <span class="opt">(không bắt buộc)</span></label><input id="<%= fid %>-msg" name="message" placeholder="Ví dụ: ao bạt 2.000 m², tôm 35 ngày"></div>
   <% } %>

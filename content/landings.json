@@ -124,5 +124,390 @@
     "pains_title": "Tôm của bạn đang gặp tình trạng này?",
     "bundle_title": "Phác đồ tăng trọng khuyên dùng cùng TOP WEIGH",
     "bundle": ["aqualac-fs", "prozyme", "hepaliver-fs", "aqua-c30"]
+  },
+  {
+    "slug": "ao-bat-mat-do-cao",
+    "type": "combo",
+    "seo_title": "Phác đồ trọn vụ ao bạt mật độ cao: nhớt bạt, khí độc, khoáng, gan ruột | Noben",
+    "description": "Phác đồ Noben cho ao lót bạt nuôi tôm thẻ mật độ cao theo từng giai đoạn: chuẩn bị nước, xây nền gan ruột, xử lý nhớt bạt, khí độc, bù khoáng và cứng vỏ trước thu. Kỹ thuật viên tư vấn miễn phí.",
+    "kicker": "Phác đồ trọn vụ cho ao lót bạt",
+    "title": "Ao bạt mật độ cao: sạch bạt, sạch khí độc, tôm khỏe đến ngày thu",
+    "lead": "Ao bạt cho ăn nhiều nên nhớt bạt, khí độc và tụt kiềm đến nhanh hơn ao đất. Noben gom sẵn phác đồ theo từng giai đoạn nuôi, mỗi bước dùng sản phẩm nào, liều theo nhãn, để bà con chủ động từ ngày thả đến ngày thu.",
+    "points": [
+      "Vi sinh tẩy nhớt bạt, làm sạch đáy định kỳ 3 ngày/lần cho ao bạt",
+      "Khoáng tăng kiềm, cứng vỏ cho tôm nuôi mật độ cao",
+      "Nền gan ruột khỏe ngay từ tháng đầu"
+    ],
+    "pains_title": "Ao bạt của bạn có những dấu hiệu này?",
+    "pains_lead": "Mật độ cao và lượng thức ăn lớn làm chất thải dồn nhanh trên bạt và ở hố xi phông. Nếu không xử lý đều đặn, các vấn đề nối tiếp nhau và tôm dễ bệnh giữa vụ.",
+    "pains": [
+      "Bạt nhớt, trơn, có mảng bám, nước có bọt khó tan",
+      "Test NH3, NO2 tăng dần sau mỗi tuần cho ăn tăng",
+      "Độ kiềm tụt nhanh, tôm mềm vỏ, lột không đều",
+      "Tôm giảm ăn, phân lỏng, gan nhạt màu giữa vụ"
+    ],
+    "pains_link": [
+      "/giai-phap/khi-doc-day-ao-nhot-bat",
+      "Xem cách xử lý khí độc, nhớt bạt"
+    ],
+    "stages_title": "Phác đồ theo từng giai đoạn nuôi",
+    "stages": [
+      {
+        "when": "Trước khi thả giống",
+        "name": "Chuẩn bị nước sạch, giảm sốc khi thả",
+        "goal": "Giải độc nguồn nước, làm mềm nước và giúp tôm giống chống sốc khi xuống ao.",
+        "items": [
+          {
+            "product": "bio-edta",
+            "note": "Giải độc phèn, kim loại nặng, làm mềm nước. Trước khi thả giống: 3 kg/1.000 m³ nước."
+          },
+          {
+            "product": "down-max-ha-phen",
+            "note": "Hạ phèn, giải độc phèn, ổn định pH. Dùng trước khi thả giống 2 đến 3 ngày: 500 g/1.000 m³ nước."
+          },
+          {
+            "product": "vita-c-tat",
+            "note": "Chống sốc, giảm stress. Trước khi thả tôm: 5 kg/2.000 m³ nước, tạt trước khi thả 30 phút."
+          }
+        ]
+      },
+      {
+        "when": "1 đến 30 ngày",
+        "name": "Xây nền gan ruột, giữ bạt sạch từ đầu",
+        "goal": "Gan ruột khỏe giai đoạn đầu và vi sinh có lợi bám bạt trước khi chất thải tích tụ.",
+        "items": [
+          {
+            "product": "aqualac-fs",
+            "note": "Hỗ trợ tiêu hóa, ngăn ngừa bệnh đường ruột. Trộn 3 g/kg thức ăn, cho ăn 2 đến 3 lần/ngày suốt vụ."
+          },
+          {
+            "product": "g7-phong-va-tri-benh-gan-chet-som",
+            "note": "Thảo dược bổ gan, giải độc gan. Trộn 3 đến 5 ml/kg thức ăn, 2 lần/ngày, liên tục 3 đến 5 ngày, ngưng 5 ngày rồi lặp lại."
+          },
+          {
+            "product": "clear-12h",
+            "note": "Tẩy nhớt bạt, nhớt nước. Ủ 1 gói + 3 kg đường + 50 lít nước, sục khí 12 đến 24 giờ; ao bạt dùng 15 đến 20 lít/1.000 m³, định kỳ 3 ngày/lần."
+          }
+        ]
+      },
+      {
+        "when": "31 đến 60 ngày",
+        "name": "Kiểm soát khí độc, giữ kiềm và khoáng",
+        "goal": "Lượng thức ăn tăng mạnh: phân hủy chất thải ở đáy, hấp thụ khí độc và bù kiềm đều đặn.",
+        "items": [
+          {
+            "product": "proticbest",
+            "note": "Làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải và khí độc. Tạt trực tiếp 1 lít/3.000 m³ nước, định kỳ 3 đến 5 ngày/lần."
+          },
+          {
+            "product": "aqua-yucca",
+            "note": "Hấp thụ nhanh khí độc. Định kỳ 500 g/5.000 m³ nước, 7 ngày/lần; khi khí độc cao 500 g/3.000 m³, dùng liên tục 2 đến 3 lần."
+          },
+          {
+            "product": "mix-79",
+            "note": "Tăng kiềm nhanh, cứng vỏ. Định kỳ 5 kg/3.000 m³ nước, 2 ngày/lần; khi cần tăng kiềm 5 kg/1.500 m³, dùng liên tục 2 ngày. Dùng lúc chiều tối."
+          }
+        ]
+      },
+      {
+        "when": "Trên 60 ngày đến thu hoạch",
+        "name": "Tăng trọng, cứng vỏ, giữ oxy",
+        "goal": "Sinh khối lớn nhất vụ: giữ gan khỏe, vỏ cứng, oxy đủ để tôm lên size và thu đúng kế hoạch.",
+        "items": [
+          {
+            "product": "hepaliver-fs",
+            "note": "Bổ gan, giải độc gan. Trộn 5 ml/kg thức ăn, 2 lần/ngày, liên tục suốt vụ."
+          },
+          {
+            "product": "caphote",
+            "note": "Siêu khoáng cứng vỏ. Định kỳ 1 lít/2.000 m³ nước; trộn 5 ml/kg thức ăn để phòng cong thân, đục cơ; trước thu 1 lít/1.200 m³ và thu tôm trong vòng 10 giờ."
+          },
+          {
+            "product": "super-oxy-02",
+            "note": "Cấp oxy nhanh khi tôm nổi đầu. 3 kg/3.000 m³ nước, rải đều mặt ao, mở quạt nước."
+          }
+        ]
+      }
+    ],
+    "guide": [
+      [
+        "/bai-viet/ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao",
+        "Kỹ thuật nuôi tôm thẻ ao lót bạt mật độ cao"
+      ],
+      [
+        "/bai-viet/nh3-no2-ao-bat-chu-trinh-nitrat-hoa-ph-nhiet-do",
+        "NH3, NO2 trong ao bạt: chu trình nitrat hóa"
+      ],
+      [
+        "/bai-viet/chi-phi-loi-nhuan-vu-tom-the-ao-bat",
+        "Chi phí và lợi nhuận một vụ tôm thẻ ao bạt"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "Ao bạt bao lâu dùng vi sinh tẩy nhớt bạt một lần?",
+        "a": "Theo nhãn CLEAR 12H, ao bạt dùng 15 đến 20 lít vi sinh đã ủ cho 1.000 m³ nước, định kỳ 3 ngày một lần, mở quạt hoặc sục khí liên tục khi dùng. Bạt nhớt nhiều thì gọi kỹ thuật viên để điều chỉnh."
+      },
+      {
+        "q": "Phác đồ này dùng cho ao đất được không?",
+        "a": "Được, nhưng liều và chu kỳ có thể khác. Ví dụ CLEAR 12H với ao đất dùng 10 đến 15 lít/1.000 m³, định kỳ 5 ngày một lần. Luôn làm theo phần hướng dẫn trên nhãn cho đúng loại ao."
+      },
+      {
+        "q": "Tính liều cho ao bạt của tôi thế nào?",
+        "a": "Nhập diện tích và độ sâu (hoặc số m³) vào <a href=\"/tinh-lieu\">công cụ tính liều</a>, công cụ đọc liều trên nhãn và quy đổi ra lượng cần dùng cho ao của bạn."
+      },
+      {
+        "q": "Làm sao biết tôm đang ở giai đoạn nào để dùng đúng bước?",
+        "a": "Nhập ngày thả giống vào <a href=\"/lich-cham-soc\">lịch chăm sóc tôm</a>, trang sẽ hiện tuổi tôm, giai đoạn và việc cần làm trong tuần."
+      }
+    ],
+    "form_title": "Nhận phác đồ cho ao bạt của bạn",
+    "need": "Tư vấn kỹ thuật",
+    "product_label": "Phác đồ ao bạt mật độ cao",
+    "final_title": "Nhận phác đồ ao bạt và báo giá trọn bộ",
+    "final_lead": "Để lại số hoặc gọi ngay. Kỹ thuật viên Noben hỏi diện tích, mật độ, ngày tuổi tôm rồi tư vấn liều cho đúng ao của bạn và báo giá nhà máy trong ngày."
+  },
+  {
+    "slug": "mua-mua",
+    "type": "combo",
+    "seo_title": "Phòng bệnh tôm mùa mưa: sốc pH, tụt kiềm, tảo tàn, khí độc | Noben",
+    "description": "Phác đồ Noben cho ao tôm mùa mưa: giữ kiềm trước mưa, chống sốc và hạ phèn trong mưa, xử lý xác tảo tàn và khí độc sau mưa. Liều theo nhãn, kỹ thuật viên tư vấn miễn phí.",
+    "kicker": "Phác đồ phòng bệnh mùa mưa",
+    "title": "Mùa mưa: giữ pH, giữ kiềm, tôm không sốc",
+    "lead": "Mưa lớn làm pH và độ kiềm giảm, nước phân tầng, tảo tàn rồi khí độc tăng ở đáy. Noben chia sẵn việc cần làm trước, trong và sau cơn mưa, kèm sản phẩm và liều theo nhãn để bà con xử lý kịp.",
+    "points": [
+      "Bù kiềm trước mưa, chống sốc ngay khi thời tiết thay đổi",
+      "Hạ phèn rửa trôi từ bờ ao, giải độc nguồn nước",
+      "Xử lý xác tảo tàn, khí độc đáy sau mưa"
+    ],
+    "pains_title": "Sau cơn mưa, ao của bạn thường gặp?",
+    "pains_lead": "Nước mưa nhạt, có tính axit và lạnh hơn nước ao, nên các chỉ tiêu thay đổi nhanh trong vài giờ. Tôm sốc thì giảm ăn, yếu và dễ nhiễm bệnh.",
+    "pains": [
+      "pH tụt, dao động mạnh giữa sáng và chiều",
+      "Độ kiềm giảm, tôm mềm vỏ, lột không đều",
+      "Nước đổi màu, tảo tàn, có váng bọt",
+      "Tôm giảm ăn, nổi đầu lúc rạng sáng"
+    ],
+    "pains_link": [
+      "/bai-viet/nuoi-tom-mua-mua-phong-soc-ph-do-kiem-tao-tan",
+      "Đọc hướng dẫn quản lý ao mùa mưa"
+    ],
+    "stages_title": "Việc cần làm trước, trong và sau mưa",
+    "stages": [
+      {
+        "when": "Trước mưa",
+        "name": "Giữ kiềm, chuẩn bị oxy",
+        "goal": "Khi dự báo mưa lớn, nâng độ kiềm để nước có sức đệm, hạn chế pH tụt sau mưa.",
+        "items": [
+          {
+            "product": "mix-79",
+            "note": "Khoáng tăng kiềm nhanh, ổn định độ kiềm. Khi cần tăng kiềm: 5 kg/1.500 m³ nước, dùng liên tục 2 ngày, lúc chiều tối."
+          },
+          {
+            "product": "super-oxy-02",
+            "note": "Để sẵn tại ao. Cấp oxy nhanh khi tôm nổi đầu: 3 kg/3.000 m³ nước, rải đều mặt ao, mở quạt nước."
+          }
+        ]
+      },
+      {
+        "when": "Trong và ngay sau mưa",
+        "name": "Chống sốc, hạ phèn",
+        "goal": "Giảm stress cho tôm khi thời tiết thay đổi và xử lý phèn bị nước mưa rửa trôi từ bờ ao xuống.",
+        "items": [
+          {
+            "product": "vita-c-tat",
+            "note": "Chống sốc tức thời khi thời tiết thay đổi. 5 kg/3.000 m³ nước, tạt ngay sau khi tôm bị stress."
+          },
+          {
+            "product": "marimix",
+            "note": "Khử phèn nhôm, phèn sắt, giải độc nguồn nước. Khi phèn cao: 1 kg/2.000 m³ nước, xử lý 2 ngày liên tục."
+          }
+        ]
+      },
+      {
+        "when": "1 đến 3 ngày sau mưa",
+        "name": "Xử lý tảo tàn, khí độc đáy",
+        "goal": "Tảo chết sau mưa chìm xuống đáy, phân hủy sinh khí độc. Gom và phân hủy nhanh để giữ đáy sạch.",
+        "items": [
+          {
+            "product": "toxic-algae",
+            "note": "Xử lý xác tảo tàn, váng bọt, nhớt nước. Khi có váng bọt, xác tảo tàn: 3 kg/3.000 m³ nước."
+          },
+          {
+            "product": "nb-biopond",
+            "note": "Phân hủy chất thải, xác tảo tàn và khí độc đáy ao. Đáy ao dơ: 227 g/2.000 m³ nước, tạt sáng sớm hoặc chiều mát."
+          },
+          {
+            "product": "aqua-yucca",
+            "note": "Hấp thụ nhanh khí độc. Khi khí độc cao: 500 g/3.000 m³ nước, dùng liên tục 2 đến 3 lần."
+          }
+        ]
+      },
+      {
+        "when": "Suốt mùa mưa",
+        "name": "Giữ đường ruột khỏe",
+        "goal": "Tôm hay giảm ăn khi thời tiết thất thường. Giữ tiêu hóa tốt để tôm phục hồi nhanh.",
+        "items": [
+          {
+            "product": "aqualac-fs",
+            "note": "Hỗ trợ tiêu hóa, ngăn ngừa bệnh đường ruột, phân trắng. Trộn 3 g/kg thức ăn, 2 đến 3 lần/ngày."
+          }
+        ]
+      }
+    ],
+    "guide": [
+      [
+        "/bai-viet/nuoi-tom-mua-mua-phong-soc-ph-do-kiem-tao-tan",
+        "Quản lý ao tôm mùa mưa"
+      ],
+      [
+        "/bai-viet/quan-ly-ph-do-kiem-ao-nuoi-tom",
+        "Quản lý pH và độ kiềm ao nuôi tôm"
+      ],
+      [
+        "/bai-viet/ao-tom-bi-sup-tao-rot-tao-cach-xu-ly",
+        "Ao tôm bị sụp tảo, rớt tảo: cách xử lý"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "Mưa lớn có nên tạt khoáng tăng kiềm ngay không?",
+        "a": "Nên đo pH và độ kiềm trước. Theo nhãn MIX 79, khi cần tăng kiềm dùng 5 kg/1.500 m³ nước, liên tục 2 ngày, tạt lúc chiều tối. Chủ động bù kiềm từ khi có dự báo mưa sẽ dễ giữ hơn là chờ pH tụt rồi mới xử lý."
+      },
+      {
+        "q": "Vì sao sau mưa ao hay bị tảo tàn?",
+        "a": "Mưa kéo dài làm thiếu nắng, nước nhạt và lạnh đột ngột nên tảo dễ chết hàng loạt. Xác tảo chìm xuống đáy, phân hủy tốn oxy và sinh khí độc. Xem thêm <a href=\"/bai-viet/ao-tom-bi-sup-tao-rot-tao-cach-xu-ly\">cách xử lý sụp tảo</a>."
+      },
+      {
+        "q": "Ao gần bờ đất phèn cần làm gì khi mưa?",
+        "a": "Mưa rửa phèn từ bờ xuống ao làm pH giảm. Theo nhãn MARIMIX, khi phèn cao dùng 1 kg/2.000 m³ nước, xử lý 2 ngày liên tục, và nên dùng 1 đến 2 giờ trước các sản phẩm xử lý khác."
+      },
+      {
+        "q": "Tính liều cho ao của tôi thế nào?",
+        "a": "Nhập diện tích và độ sâu ao vào <a href=\"/tinh-lieu\">công cụ tính liều</a> để quy đổi liều trên nhãn ra lượng cần dùng."
+      }
+    ],
+    "form_title": "Nhận phác đồ mùa mưa cho ao của bạn",
+    "need": "Tư vấn kỹ thuật",
+    "product_label": "Phác đồ mùa mưa",
+    "final_title": "Chuẩn bị trước mùa mưa, tránh thiệt hại giữa vụ",
+    "final_lead": "Để lại số hoặc gọi ngay. Kỹ thuật viên Noben tư vấn phác đồ theo loại ao, ngày tuổi tôm và tình hình thời tiết ở vùng của bạn, báo giá nhà máy trong ngày."
+  },
+  {
+    "slug": "gia-cong-oem",
+    "type": "combo",
+    "index": true,
+    "seo_title": "Gia công thuốc thủy sản OEM theo nhãn riêng – Nhà máy ISO | Noben",
+    "description": "Noben nhận gia công thuốc thủy sản OEM: thức ăn bổ sung, khoáng, vi sinh, sản phẩm xử lý môi trường theo nhãn riêng. Nhà máy ISO 9001:2015 tại Củ Chi, hỗ trợ hồ sơ lưu hành sản phẩm.",
+    "kicker": "Dành cho doanh nghiệp, nhà phân phối",
+    "title": "Gia công thuốc thủy sản theo nhãn riêng của bạn",
+    "lead": "Noben sản xuất thức ăn bổ sung, chế phẩm sinh học và sản phẩm xử lý môi trường nuôi trồng thủy sản cho công ty của bạn: từ công thức, mẫu thử, hồ sơ lưu hành đến sản xuất và giao hàng.",
+    "points": [
+      "Gia công thành phẩm và bán thành phẩm, đóng gói theo nhãn và quy cách riêng",
+      "Hướng dẫn hồ sơ đăng ký mã số, hợp chuẩn hợp quy, lưu hành sản phẩm",
+      "Nhà máy đạt ISO 9001:2015, kiểm tra chất lượng từng lô"
+    ],
+    "hero_image": {
+      "src": "/images/brand/banner-2.webp",
+      "w": 1200,
+      "h": 745,
+      "alt": "Nhà máy Noben tại Củ Chi, TP.HCM"
+    },
+    "cards_title": "Noben làm gì cho đơn hàng của bạn",
+    "cards": [
+      [
+        "i-factory",
+        "Gia công thành phẩm và bán thành phẩm",
+        "Sản xuất trên dây chuyền tự động hóa, đóng gói theo nhãn và quy cách của công ty bạn."
+      ],
+      [
+        "i-file",
+        "Hồ sơ lưu hành sản phẩm",
+        "Hướng dẫn đăng ký mã số, cấp giấy chứng nhận hợp chuẩn hợp quy và lập hồ sơ xin phép lưu hành sản phẩm."
+      ],
+      [
+        "i-shield",
+        "Thành lập công ty mới",
+        "Tư vấn thủ tục thành lập doanh nghiệp kinh doanh thuốc và chế phẩm thủy sản."
+      ],
+      [
+        "i-package",
+        "Tư vấn giá đầu vào, đầu ra",
+        "Tính giá thành và giá bán cho từng sản phẩm để cạnh tranh tốt với thị trường."
+      ]
+    ],
+    "lines_title": "Dòng sản phẩm đang nhận gia công",
+    "lines": [
+      [
+        "Vi sinh xử lý đáy ao",
+        "Làm sạch nền đáy, phân hủy NO₂, NH₃."
+      ],
+      [
+        "Đặc trị và cải thiện môi trường",
+        "Sản phẩm hỗ trợ gan, phân trắng; BKC, Yucca, Iodine; khoáng hỗ trợ cong thân, đục cơ, kích lột và khoáng cải thiện môi trường."
+      ],
+      [
+        "Men xử lý nước đậm đặc",
+        "Dòng Rhodobacter, Pseudomonas, Rhodococcus, Spirillum đậm đặc."
+      ]
+    ],
+    "steps_title": "Quy trình làm việc",
+    "steps": [
+      [
+        "Trao đổi nhu cầu",
+        "Bạn cho biết dòng sản phẩm, công dụng mong muốn, quy cách và số lượng dự kiến."
+      ],
+      [
+        "Báo giá và mẫu thử",
+        "Noben đề xuất công thức, báo giá gia công và gửi mẫu để bạn đánh giá."
+      ],
+      [
+        "Hoàn thiện hồ sơ",
+        "Chuẩn bị nhãn, hồ sơ công bố hợp quy và đăng ký lưu hành theo quy định."
+      ],
+      [
+        "Sản xuất và giao hàng",
+        "Sản xuất tại nhà máy đạt ISO 9001:2015, kiểm tra chất lượng từng lô trước khi giao."
+      ]
+    ],
+    "guide": [
+      [
+        "/gia-cong",
+        "Dịch vụ gia công của Noben"
+      ],
+      [
+        "/chung-nhan",
+        "Chứng nhận ISO và hợp quy sản phẩm"
+      ],
+      [
+        "/ve-chung-toi",
+        "Về nhà máy Noben"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "Noben gia công những loại sản phẩm nào?",
+        "a": "Thức ăn bổ sung, khoáng, chế phẩm sinh học (vi sinh xử lý đáy, men xử lý nước đậm đặc) và sản phẩm cải thiện môi trường nuôi trồng thủy sản, dạng thành phẩm hoặc bán thành phẩm."
+      },
+      {
+        "q": "Tôi chưa có công ty, có gia công được không?",
+        "a": "Được. Noben tư vấn thủ tục thành lập doanh nghiệp kinh doanh thuốc và chế phẩm thủy sản, sau đó hướng dẫn hồ sơ lưu hành cho sản phẩm của bạn."
+      },
+      {
+        "q": "Số lượng đặt tối thiểu và giá gia công là bao nhiêu?",
+        "a": "Tùy dòng sản phẩm, công thức và quy cách đóng gói. Bạn để lại thông tin, phòng kinh doanh gọi lại trao đổi và gửi báo giá cụ thể kèm mẫu thử."
+      },
+      {
+        "q": "Noben có hỗ trợ đăng ký lưu hành sản phẩm không?",
+        "a": "Có. Noben hướng dẫn đăng ký mã số, cấp giấy chứng nhận hợp chuẩn hợp quy và lập hồ sơ xin phép lưu hành sản phẩm theo quy định."
+      }
+    ],
+    "form_title": "Gửi yêu cầu báo giá gia công",
+    "form_sub": "Phòng kinh doanh Noben gọi lại trong giờ làm việc để trao đổi dòng sản phẩm, quy cách và báo giá.",
+    "form_fields": "oem",
+    "need": "Gia công sản phẩm",
+    "button": "Nhận báo giá gia công",
+    "final_title": "Trao đổi về đơn gia công của bạn",
+    "final_lead": "Cho Noben biết dòng sản phẩm, quy cách và số lượng dự kiến. Phòng kinh doanh gọi lại, đề xuất công thức và gửi báo giá kèm mẫu thử."
   }
 ]

@@ -9,6 +9,9 @@ const base = `http://127.0.0.1:${PORT}`;
 const checks = [
   ['/', 200],
   ['/san-pham', 200],
+  ['/lp/ao-bat-mat-do-cao', 200],
+  ['/lp/mua-mua', 200],
+  ['/lp/gia-cong-oem', 200],
   ['/san-pham?van-de=gan-ruot&q=phan', 200],
   ['/san-pham/nhom/khoang-chat', 200],
   ['/san-pham/kalimix', 200],
