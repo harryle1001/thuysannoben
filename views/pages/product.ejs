@@ -70,6 +70,7 @@
       <section class="spec__block">
         <h2 class="spec__title">Hướng dẫn sử dụng</h2>
         <ul class="dose-list"><% p.dose.forEach((u, i) => { %><li><%- ef(`products.${p.slug}.dose.${i}`, u) %></li><% }) %></ul>
+        <a class="btn btn--line dose-cta" href="/tinh-lieu?sp=<%= p.slug %>"><svg class="ico" aria-hidden="true"><use href="#i-file"/></svg>Tính liều cho ao của bạn</a>
       </section>
       <% } %>
       <% if (p.composition.length) { %>

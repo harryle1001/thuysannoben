@@ -382,6 +382,21 @@ router.get('/chung-nhan', (req, res) =>
 router.get('/bao-gia', (req, res) =>
   res.render('pages/quote', { meta: { title: 'Yêu cầu báo giá – Thủy sản Noben', description: 'Gửi yêu cầu báo giá nhiều sản phẩm Noben cùng lúc, nhận giá nhà máy và chính sách đại lý.', noindex: true } })
 );
+// Dose calculator: scales the label dose of each product to the visitor's pond (public/js/dose.js).
+router.get('/tinh-lieu', (req, res) => {
+  const list = c.products.filter((p) => p.dose && p.dose.length);
+  const pick = c.productBySlug[String(req.query.sp || '').toLowerCase()];
+  res.render('pages/dose', {
+    meta: {
+      title: 'Tính liều thuốc thủy sản theo diện tích ao – Noben',
+      description: 'Nhập diện tích, độ sâu ao hoặc thể tích nước, chọn sản phẩm Noben để tính ngay lượng thuốc, vi sinh, khoáng cần dùng theo nhãn. Có liều trộn thức ăn theo kg thức ăn mỗi ngày.',
+    },
+    pick: pick && pick.dose && pick.dose.length ? pick : null,
+    list,
+    data: list.map((p) => ({ s: p.slug, n: p.name, u: p.url, i: p.shot ? p.shot.src : '', d: p.dose })),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], ['Tính liều dùng', '/tinh-lieu']])],
+  });
+});
 router.get('/tuyen-dung', (req, res) =>
   res.render('pages/careers', {
     meta: { title: 'Tuyển dụng – Cơ hội nghề nghiệp tại Thủy sản Noben', description: 'Noben tuyển kỹ thuật viên thủy sản, nhân viên kinh doanh phát triển đại lý và nhân sự sản xuất tại nhà máy Củ Chi, TP.HCM. Gửi hồ sơ ứng tuyển trực tuyến.' },
@@ -546,6 +561,7 @@ router.get('/sitemap.xml', (req, res) => {
     ...Object.keys(c.pages).map((s) => ({ loc: `/chinh-sach/${s}`, priority: '0.3', changefreq: 'yearly' })),
     { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
     { loc: '/tuyen-dai-ly', priority: '0.7', changefreq: 'monthly' },
+    { loc: '/tinh-lieu', priority: '0.7', changefreq: 'monthly' },
     ...dealers.provinces().map((p) => ({ loc: `/dai-ly/tinh/${p.slug}`, priority: '0.6', changefreq: 'weekly' })),
     ...dealers.dealers.map((d) => ({ loc: d.url, priority: '0.4', changefreq: 'monthly' })),
     // English edition

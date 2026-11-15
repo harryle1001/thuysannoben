@@ -1,0 +1,69 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Sản phẩm', '/san-pham'], ['Tính liều dùng']] }) %>
+    <h1 class="khead__title">Tính liều thuốc theo ao của bạn</h1>
+    <p class="khead__lead">Chọn sản phẩm Noben, nhập diện tích và độ sâu ao (hoặc thể tích nước). Công cụ đọc liều trên nhãn và tính sẵn lượng cần dùng cho từng trường hợp.</p>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap dtool" data-dose-tool data-zalo="<%= zaloUrl %>" data-hotline="<%= company.hotline %>">
+    <form class="form form--card dtool__form" data-dose-form novalidate>
+      <h2 class="form__title">1. Chọn sản phẩm</h2>
+      <div class="field field--search dtool__pick">
+        <label for="dt-q">Tên sản phẩm</label>
+        <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="dt-q" type="search" autocomplete="off" placeholder="Ví dụ: Aqua Bac, Caphote, G7" value="<%= pick ? pick.name : '' %>" role="combobox" aria-expanded="false" aria-controls="dt-list" aria-autocomplete="list" data-dose-q>
+        <ul class="dtool__list" id="dt-list" role="listbox" aria-label="Sản phẩm" hidden data-dose-list></ul>
+      </div>
+      <noscript><p class="field__help">Cần bật JavaScript để tính liều. Bạn có thể gọi <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a>.</p></noscript>
+
+      <h2 class="form__title">2. Thông tin ao</h2>
+      <fieldset class="dtool__mode">
+        <legend class="sr-only">Cách nhập</legend>
+        <label class="chip chip--light"><input type="radio" name="mode" value="area" checked data-dose-mode>Diện tích và độ sâu</label>
+        <label class="chip chip--light"><input type="radio" name="mode" value="volume" data-dose-mode>Thể tích nước (m³)</label>
+      </fieldset>
+      <div class="form__row" data-dose-area>
+        <div class="field"><label for="dt-area">Diện tích ao (m²)</label><input id="dt-area" name="area" inputmode="decimal" placeholder="Ví dụ: 3000" autocomplete="off"></div>
+        <div class="field"><label for="dt-depth">Độ sâu mực nước (m)</label><input id="dt-depth" name="depth" inputmode="decimal" placeholder="Ví dụ: 1,2" autocomplete="off"></div>
+      </div>
+      <div class="field" data-dose-volume hidden><label for="dt-vol">Thể tích nước (m³)</label><input id="dt-vol" name="volume" inputmode="decimal" placeholder="Ví dụ: 3600" autocomplete="off"></div>
+      <div class="field" data-dose-feed-field hidden>
+        <label for="dt-feed">Thức ăn mỗi ngày (kg) <span class="opt">(cho liều trộn thức ăn)</span></label>
+        <input id="dt-feed" name="feed" inputmode="decimal" placeholder="Ví dụ: 25" autocomplete="off">
+      </div>
+      <p class="dtool__vol" aria-live="polite" data-dose-volout></p>
+    </form>
+
+    <div class="dtool__out">
+      <div class="dtool__result" aria-live="polite" data-dose-result>
+        <div class="dempty"><h2 class="h3">Chọn sản phẩm để bắt đầu</h2><p>Kết quả sẽ hiện ở đây, tính đúng theo liều in trên nhãn.</p></div>
+      </div>
+      <p class="dtool__warn"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><span>Kết quả tính theo nhãn sản phẩm, liều thực tế điều chỉnh theo tình trạng ao. Gọi kỹ thuật viên <a href="<%= tel(company.hotline) %>"><%= company.hotline %></a> trước khi dùng.</span></p>
+      <div class="dtool__send">
+        <a class="btn btn--blue btn--block" href="<%= zaloUrl %>" target="_blank" rel="noopener" data-dose-zalo><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Gửi kết quả cho kỹ thuật viên qua Zalo</a>
+        <p class="field__help" role="status" data-dose-zalo-status></p>
+      </div>
+      <form class="form form--card" action="/lien-he" method="post" data-lead-form data-success="Đã gửi. Kỹ thuật viên Noben sẽ gọi lại để tư vấn liều cho ao của bạn." novalidate>
+        <h2 class="form__title">Nhờ kỹ thuật viên kiểm tra liều</h2>
+        <div class="form__row">
+          <div class="field"><label for="dl-name">Họ tên</label><input id="dl-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+          <div class="field"><label for="dl-phone">Số điện thoại / Zalo</label><input id="dl-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="field__error" data-error-for="phone"></p></div>
+        </div>
+        <input type="hidden" name="need" value="Tư vấn kỹ thuật">
+        <input type="hidden" name="product" value="<%= pick ? pick.name : '' %>" data-dose-product>
+        <input type="hidden" name="message" value="" data-dose-message>
+        <input type="hidden" name="page" value="/tinh-lieu" data-page-field>
+        <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn--sun btn--block" type="submit">Gửi, kỹ thuật viên gọi lại</button>
+        <p class="form__status" role="status" data-form-status></p>
+      </form>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="dose-data"><%- JSON.stringify(data).replace(/</g, '\\u003c') %></script>
+<script src="/js/dose.js?v=1" defer></script>
+<script src="/js/dose-page.js?v=1" defer></script>
+<%- include('../partials/footer') %>

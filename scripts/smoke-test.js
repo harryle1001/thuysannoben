@@ -20,6 +20,8 @@ const checks = [
   ['/chung-nhan', 200],
   ['/gia-cong', 200],
   ['/lien-he', 200],
+  ['/tinh-lieu', 200],
+  ['/tinh-lieu?sp=aqua-bac', 200],
   ['/chinh-sach/chinh-sach-doi-tra', 200],
   ['/sitemap.xml', 200],
   ['/robots.txt', 200],

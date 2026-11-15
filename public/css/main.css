@@ -1503,3 +1503,38 @@ body { font-variant-numeric: lining-nums; }
 @media (min-width: 1000px) { .lp-benefits--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .lp-bundle { display: grid; gap: var(--space-4); grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (min-width: 900px) { .lp-bundle { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* ---------- Dose calculator (/tinh-lieu) ---------- */
+.dose-cta { margin-top: var(--space-4); }
+.dtool [hidden] { display: none !important; }
+.dtool { display: grid; gap: var(--space-5); align-items: start; }
+@media (min-width: 960px) { .dtool { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-6); } .dtool__form { position: sticky; top: 88px; } }
+.dtool__pick { position: relative; }
+.dtool__pick .ico { top: auto; bottom: 14px; transform: none; }
+.dtool__list { position: absolute; z-index: 20; top: 100%; left: 0; right: 0; margin-top: 4px; max-height: 320px; overflow-y: auto; list-style: none; padding: 6px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius-m); box-shadow: 0 12px 32px rgb(11 35 71 / 0.16); }
+.dtool__opt { padding: 10px 12px; border-radius: var(--radius-s); cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+.dtool__opt:hover, .dtool__opt[aria-selected='true'] { background: var(--selected-bg); color: var(--selected-fg); }
+.dtool__none { padding: 10px 12px; color: var(--muted); }
+.dtool__mode { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.dtool__vol { font-weight: 600; color: var(--heading); }
+.dtool__vol:empty { display: none; }
+.dtool__out { display: grid; gap: var(--space-4); min-width: 0; }
+.dtool__result { min-width: 0; }
+.dtool__head { display: flex; gap: var(--space-4); align-items: center; padding: var(--space-4); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-l); }
+.dtool__head img { width: 72px; height: 72px; object-fit: contain; flex: none; }
+.dtool__pond { color: var(--muted); margin-block: 4px; overflow-wrap: anywhere; }
+.dtool__rows { list-style: none; padding: 0; margin: var(--space-4) 0 0; display: grid; gap: var(--space-3); }
+.dtool__row { padding: var(--space-4); background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: var(--radius-m); min-width: 0; }
+.dtool__label { font-weight: 700; color: var(--heading); }
+.dtool__amt { margin-top: 6px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; }
+.dtool__amt strong { font-family: var(--font-display); font-size: var(--step-3); line-height: 1.1; color: var(--heading); }
+.dtool__amt span { color: var(--muted); }
+.dtool__need { font-style: italic; }
+.dtool__na { margin-top: 6px; font-weight: 600; color: var(--muted); }
+.dtool__src { margin-top: 8px; font-size: 0.9rem; color: var(--muted); overflow-wrap: anywhere; }
+.dtool__more { margin-top: var(--space-4); padding: var(--space-4); border: 1px dashed var(--line-strong); border-radius: var(--radius-m); }
+.dtool__more summary { cursor: pointer; font-weight: 600; min-height: 32px; }
+.dtool__notes { margin: var(--space-3) 0 0; padding-left: 1.2em; display: grid; gap: 6px; color: var(--muted); }
+.dtool__warn { display: flex; gap: var(--space-3); padding: var(--space-4); border-radius: var(--radius-m); background: color-mix(in srgb, var(--sun) 18%, var(--surface)); border: 1px solid color-mix(in srgb, var(--sun) 55%, var(--surface)); font-weight: 600; color: var(--heading); }
+.dtool__warn .ico { flex: none; width: 24px; height: 24px; }
+.dtool__send .field__help { margin-top: 8px; overflow-wrap: anywhere; }
