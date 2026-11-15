@@ -46,5 +46,44 @@
     "url": "/tuyen-dai-ly",
     "name": "Tuyển đại lý thuốc thủy sản Noben",
     "description": "Nhập hàng giá nhà máy, đủ 94 sản phẩm, kỹ thuật viên đồng hành và có tên trên bản đồ đại lý thuysannoben.com. Đăng ký làm đại lý Noben."
+  },
+  "quy-trinh-san-xuat": {
+    "kind": "company",
+    "mp4": "/media/factory/noben-quy-trinh.mp4",
+    "webm": "/media/factory/noben-quy-trinh.webm",
+    "poster": "/media/factory/noben-quy-trinh-poster.webp",
+    "vertical": "/media/factory/noben-quy-trinh-9x16.mp4",
+    "verticalPoster": "/media/factory/noben-quy-trinh-9x16-poster.webp",
+    "duration": 55,
+    "uploadDate": "2026-11-15",
+    "url": "/ve-chung-toi",
+    "name": "Quy trình sản xuất: một gói thuốc Noben được làm ra như thế nào",
+    "description": "Gửi bà con nuôi tôm, cá: nguyên liệu đầu vào kiểm tra chặt chẽ, sản xuất chuyên nghiệp và an toàn tại nhà máy đạt ISO 9001:2015, đóng gói khép kín với nhãn ghi đầy đủ, kiểm tra chất lượng đầu ra trước khi xuất xưởng, giao tận ao."
+  },
+  "nha-may-doi-ngu": {
+    "kind": "company",
+    "mp4": "/media/factory/noben-nha-may.mp4",
+    "webm": "/media/factory/noben-nha-may.webm",
+    "poster": "/media/factory/noben-nha-may-poster.webp",
+    "vertical": "/media/factory/noben-nha-may-9x16.mp4",
+    "verticalPoster": "/media/factory/noben-nha-may-9x16-poster.webp",
+    "duration": 57,
+    "uploadDate": "2026-11-15",
+    "url": "/ve-chung-toi",
+    "name": "Nhà máy và đội ngũ Noben",
+    "description": "Nhà máy thuốc thủy sản Noben tại Củ Chi từ năm 2002: kiểm tra nguyên liệu, kỹ thuật và kiểm nghiệm, dây chuyền cân trộn đóng gói, ISO 9001:2015, hợp quy VinaCert, đội ngũ, giao hàng toàn quốc, kỹ thuật viên đồng hành tại ao."
+  },
+  "ngay-thu-hoach": {
+    "kind": "company",
+    "mp4": "/media/factory/noben-thu-hoach.mp4",
+    "webm": "/media/factory/noben-thu-hoach.webm",
+    "poster": "/media/factory/noben-thu-hoach-poster.webp",
+    "vertical": "/media/factory/noben-thu-hoach-9x16.mp4",
+    "verticalPoster": "/media/factory/noben-thu-hoach-9x16-poster.webp",
+    "duration": 19,
+    "uploadDate": "2026-11-15",
+    "url": "/lien-he",
+    "name": "Niềm vui ngày thu hoạch",
+    "description": "Phim minh họa: kỹ thuật viên Noben giao hàng tận ao, người nuôi quăng chài lúc hoàng hôn và kéo lên mẻ tôm, cả nhà vui mừng. Noben đồng hành cùng người nuôi tôm Việt."
   }
 }
