@@ -298,7 +298,8 @@
         } else if (!e.isIntersecting) v.pause();
       });
     }, { threshold: 0.25 });
-    videos.forEach(function (v) { io.observe(v); });
+    var watch = function () { videos.forEach(function (v) { io.observe(v); }); };
+    if (document.readyState === 'complete') watch(); else window.addEventListener('load', watch);
   }
   document.querySelectorAll('[data-video-toggle]').forEach(function (btn) {
     var v = btn.parentNode.querySelector('video');

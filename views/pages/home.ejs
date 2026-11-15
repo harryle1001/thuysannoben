@@ -6,7 +6,7 @@
 %>
 <section class="hero hero--video" aria-labelledby="hero-title">
   <div class="hero__bg" aria-hidden="true">
-    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="/media/noben-hero-poster.webp" data-hero-video>
+    <video class="hero__video" muted loop playsinline preload="none" poster="/media/noben-hero-poster.webp" data-hero-video>
       <source src="/media/noben-hero.webm" type="video/webm">
       <source src="/media/noben-hero.mp4" type="video/mp4">
     </video>
@@ -34,7 +34,7 @@
         <div class="finder__result" aria-live="polite">
           <ul class="finder__list" data-finder-list>
             <% firstList.slice(0, 5).forEach((p) => { %>
-            <li><a href="<%= p.url %>"><span class="finder__shot"><%- img(p.shot, { alt: '', loading: 'eager' }) %></span><span><%= p.name %></span></a></li>
+            <li><a href="<%= p.url %>"><span class="finder__shot"><%- img(p.shot, { alt: '', sizes: '(min-width: 900px) 160px, 30vw' }) %></span><span><%= p.name %></span></a></li>
             <% }) %>
           </ul>
           <a class="finder__more" href="/san-pham?van-de=<%= firstSym.slug %>" data-finder-more>Xem cả <span data-finder-count><%= firstList.length %></span> sản phẩm cho vấn đề này</a>
@@ -139,7 +139,7 @@
         <p class="stage__goal"><%= s.goal %></p>
         <ul class="stage__products">
           <% s.items.map((x) => bySlug[x]).filter(Boolean).forEach((p) => { %>
-          <li><a href="<%= p.url %>"><span class="stage__shot"><%- img(p.shot, { alt: '' }) %></span><span><%= p.name %></span></a></li>
+          <li><a href="<%= p.url %>"><span class="stage__shot"><%- img(p.shot, { alt: '', sizes: '48px' }) %></span><span><%= p.name %></span></a></li>
           <% }) %>
         </ul>
       </li>

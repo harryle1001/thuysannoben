@@ -12,6 +12,13 @@ const en = require('./en');
 const router = express.Router();
 const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\/$/, '');
 
+const smallCache = new Map();
+const hasSmall = (src) => {
+  if (!/^\/images\/(products|products-cutout)\/[^/]+\.webp$/.test(src)) return false;
+  if (!smallCache.has(src)) smallCache.set(src, require('fs').existsSync(require('path').join(__dirname, '..', 'public', src.replace(/([^/]+)$/, 'sm/$1'))));
+  return smallCache.get(src);
+};
+
 // Values every template can use.
 router.use((req, res, next) => {
   res.locals.company = c.company;
@@ -28,6 +35,8 @@ router.use((req, res, next) => {
   res.locals.zaloUrl = 'https://zalo.me/' + c.company.zalo;
   res.locals.img = (i, opts = {}) => {
     if (!i) return '';
+    // Product photos have a 360px copy in sm/ (thumbnails); offer it when the caller says how wide the image shows.
+    if (opts.sizes && !opts.srcset && i.w > 400 && hasSmall(i.src)) opts = { ...opts, srcset: `${i.src.replace(/([^/]+)$/, 'sm/$1')} 360w, ${i.src} ${i.w}w` };
     const attrs = Object.entries({ loading: 'lazy', decoding: 'async', ...opts })
       .filter(([, v]) => v !== false && v != null)
       .map(([k, v]) => ` ${k}="${String(v).replace(/"/g, '&quot;')}"`)
@@ -117,6 +126,7 @@ router.get('/', (req, res) => {
   const knowledge = c.knowledge();
   res.render('pages/home', {
     meta: {
+      preloadImage: '/media/noben-hero-poster.webp',
       title: 'Thuốc thủy sản Noben – Thuốc nuôi tôm, chế phẩm sinh học, khoáng chất',
       description:
         'Thuốc thủy sản Noben: thuốc trị bệnh tôm, vi sinh xử lý đáy, khoáng chất, men tiêu hóa cho ao tôm, cá. Nhà máy ISO 9001:2015 tại Củ Chi, hơn 22 năm kinh nghiệm, tư vấn kỹ thuật miễn phí.',

@@ -1574,3 +1574,9 @@ body { font-variant-numeric: lining-nums; }
 html.lenis { scroll-behavior: auto; }
 .lenis.lenis-smooth iframe { pointer-events: auto; }
 .lenis.lenis-scrolling iframe { pointer-events: none; }
+
+/* ---------- Accessibility contrast fixes ---------- */
+.buy-box__quote { background: transparent; }
+.lp-eyebrow { color: #8a5a00; }
+:root[data-theme='dark'] .lp-eyebrow { color: var(--sun); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .lp-eyebrow { color: var(--sun); } }

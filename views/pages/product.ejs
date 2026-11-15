@@ -17,12 +17,12 @@
     <div class="product__views">
       <% if (p.cutout) { %>
       <a class="product__view" href="<%= p.image.src %>" data-lb="<%= p.image.src %>" data-caption="Nhãn đầy đủ của <%= p.name %>">
-        <%- img(p.image, { alt: '' }) %>
+        <%- img(p.image, { alt: '', sizes: '64px' }) %>
         <span><strong>Xem nhãn gốc</strong><small>Phóng to để đọc thông tin trên bao bì</small></span>
       </a>
       <% } %>
       <% p.images.slice(1).forEach((im, i) => { %>
-      <a class="product__view" href="<%= im.src %>" data-lb="<%= im.src %>" data-caption="<%= p.name %>"><%- img(im, { alt: '' }) %><span><strong>Ảnh <%= i + 2 %></strong></span></a>
+      <a class="product__view" href="<%= im.src %>" data-lb="<%= im.src %>" data-caption="<%= p.name %>"><%- img(im, { alt: '', sizes: '64px' }) %><span><strong>Ảnh <%= i + 2 %></strong></span></a>
       <% }) %>
     </div>
   </div>

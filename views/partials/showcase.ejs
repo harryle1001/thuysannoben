@@ -18,7 +18,7 @@
       <li class="showcase__item" data-sc-item
           data-name="<%= p.name %>" data-tagline="<%= p.tagline %>" data-cat="<%= p.categoryInfo.name %>" data-catslug="<%= p.category %>" data-url="<%= p.url %>">
         <a href="<%= p.url %>" draggable="false" tabindex="-1" aria-label="<%= p.name %>: <%= p.tagline %>">
-          <%- img(p.shot, { alt: p.name, draggable: 'false', loading: i < 5 ? 'eager' : 'lazy', class: p.cutout ? 'is-cutout' : '' }) %>
+          <%- img(p.shot, { alt: p.name, draggable: 'false', sizes: '(min-width: 900px) 220px, 40vw', class: p.cutout ? 'is-cutout' : '' }) %>
         </a>
       </li>
       <% }) %>

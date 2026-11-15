@@ -47,6 +47,7 @@
 
   <section class="catalog__results" aria-labelledby="result-count">
     <p class="catalog__count" id="result-count" aria-live="polite"><span data-count><%= list.length %></span> sản phẩm</p>
+    <h2 class="sr-only">Danh sách sản phẩm</h2>
     <div class="pgrid pgrid--catalog">
       <% for (const p of all) { if (lockedCategory && p.category !== filters.category) continue; %>
         <%- include('../partials/product-card', { p, hidden: !visible.has(p) }) %>
