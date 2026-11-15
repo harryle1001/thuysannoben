@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Bản ĐỀ XUẤT làm mới logo chính thức Noben theo tỷ lệ vàng φ = 1,61803 (chưa dùng trên web).
+"""Bản ĐỀ XUẤT tinh chỉnh logo chính thức Noben theo tỷ lệ vàng φ = 1,61803 (chưa dùng trên web).
 
     python3 scripts/build-logo-phi.py     # ghi brand/logo/de-xuat-phi/*.svg
 
-Giữ ý tưởng logo gốc (hình thoi vàng, khung xanh, chữ NOBEN, chấm tròn, sóng nước), dựng lại bằng φ:
-  - Hình thoi vàng: hai đường chéo theo tỷ lệ φ : 1 (góc nhọn 63,43°, góc tù 116,57°).
+GIỮ ĐÚNG FORM logo đang dùng (hình thoi vuông vàng, viền trong, hai nét gãy hai bên, khung xanh có khuyết
+và chấm tròn, hai vạch trắng trên dưới khung, chữ NOBEN tràn ngang khung có viền xanh, ba sóng nước).
+Chỉ tinh chỉnh bằng φ:
   - Khung xanh: hình chữ nhật vàng (rộng : cao = φ), diện tích = 38,2% hình thoi (vàng 61,8% / xanh 38,2%).
-  - Chữ NOBEN: Playfair Display, cao chữ hoa = cao khung / φ³, giãn chữ 1/φ⁴ em.
-  - Chấm tròn, viền, sóng, khoảng cách: mỗi bậc nhỏ hơn bậc trước φ lần.
-  - Màu chuyển theo điểm dừng 0 – 38,2% – 61,8% – 100%.
+  - Chữ NOBEN: Playfair Display đậm, cao chữ hoa = cao khung / φ², giãn chữ 1/φ⁵ em, viền = cao chữ / φ⁵.
+  - Chấm tròn, khuyết, vạch, nét gãy, sóng, khoảng cách: mỗi bậc nhỏ hơn bậc trước φ lần.
+  - Màu vàng kim và xanh sapphire, chuyển màu theo điểm dừng 0 – 38,2% – 61,8% – 100%.
 """
 import importlib.util
 import os
@@ -29,16 +30,16 @@ BLUE = ('#1d4fa3', '#123a82', '#0b2a63', '#071a40')
 IVORY = '#fffaf0'
 NAVY = '#0b2347'
 
-W, H = 1000.0, 1000.0 / PHI            # hình thoi: đường chéo φ : 1
+W, H = 1000.0, 1000.0                  # hình thoi vuông như logo gốc
 CX, CY = W / 2, H / 2
 A, B = W / 2, H / 2
-S = (1 / PHI ** 2 / 0.5) ** 0.5        # khung xanh = 38,2% diện tích hình thoi
-PW, PH = A * S, B * S                  # chữ nhật vàng, PW / PH = φ
+PW = (W * H / 2 / PHI ** 2 * PHI) ** 0.5   # chữ nhật vàng PW / PH = φ, diện tích 38,2% hình thoi
+PH = PW / PHI
 PX, PY = CX - PW / 2, CY - PH / 2
 
 SERIF = kit.Face(['playfair-display-latin-wght-normal.woff2', 'playfair-display-vietnamese-wght-normal.woff2'], wght=700)
 SANS = kit.BVP600
-LS_WORD = 1 / PHI ** 4                 # giãn chữ NOBEN (em)
+LS_WORD = 1 / PHI ** 5                 # giãn chữ NOBEN (em)
 LS_TAG = 1 / PHI ** 2                  # giãn chữ dòng phụ (em)
 
 
@@ -68,34 +69,41 @@ def defs(p='p'):
 def mark(flat=False, p='p'):
     gold = GOLD[2] if flat else f'url(#{p}-gold)'
     blue = BLUE[2] if flat else f'url(#{p}-blue)'
-    line = GOLD[0] if flat else f'url(#{p}-line)'
+    deep = BLUE[3]
     rh = lambda k: f'M{r2(CX)} {r2(CY - B * k)} L{r2(CX + A * k)} {r2(CY)} L{r2(CX)} {r2(CY + B * k)} L{r2(CX - A * k)} {r2(CY)} Z'
-    dot = PH / PHI ** 5                      # bán kính chấm tròn
+    dot = PH / PHI ** 4                      # bán kính chấm tròn
     notch = dot * PHI ** 0.5                 # bán kính khuyết trên khung
-    hair = dot / PHI ** 4                    # nét mảnh
-    cap = PH / PHI ** 3                      # cao chữ hoa NOBEN
+    bar = dot / PHI ** 2                     # dày vạch trắng
+    hair = bar / PHI ** 2                    # nét mảnh (viền trong, nét gãy)
+    gap = bar                                # khe giữa khung và vạch
+    cap = PH / PHI ** 2                      # cao chữ hoa NOBEN
     size = cap_size(SERIF, cap)
-    word, wb = text_path(SERIF, 'NOBEN', size, LS_WORD, CX, cy_mid=CY + dot / PHI, fill=IVORY)
-    rule_w = (wb[2] - wb[0]) / PHI
-    rule_y = wb[3] + cap / PHI ** 2
+    g, _ = SERIF.layout('NOBEN', size, LS_WORD)
+    _, b0 = SERIF.outline(g, size, 0, 0)
+    d, wb = SERIF.outline(g, size, CX - (b0[0] + b0[2]) / 2, CY - (b0[1] + b0[3]) / 2)
+    stroke = cap / PHI ** 5 * 2
+    bar_w = PW + 2 * dot / PHI
+    top, bot = PY - gap - bar / 2, PY + PH + gap + bar / 2
+    apex = A * (1 - 1 / PHI ** 5)            # đỉnh nét gãy cách tâm
+    cx_end = PW / 2 - hair
+    chev = lambda sgn: f'M{r2(CX + sgn * cx_end)} {r2(top)} L{r2(CX + sgn * apex)} {r2(CY)} L{r2(CX + sgn * cx_end)} {r2(bot)}'
     parts = [
         f'<path d="{rh(1)}" fill="{gold}"/>',
         f'<path d="{rh(1 - 1 / PHI ** 6)}" fill="none" stroke="{IVORY}" stroke-opacity=".618" stroke-width="{r2(hair)}"/>',
-        # khung xanh có khuyết tròn phía trên
+        f'<path d="{chev(1)} {chev(-1)}" fill="none" stroke="{BLUE[1]}" stroke-width="{r2(hair * PHI)}" stroke-linejoin="round" stroke-linecap="round"/>',
+        f'<path d="M{r2(CX - bar_w / 2)} {r2(top)} H{r2(CX + bar_w / 2)} M{r2(CX - bar_w / 2)} {r2(bot)} H{r2(CX + bar_w / 2)}" stroke="{IVORY}" stroke-width="{r2(bar)}"/>',
         f'<path d="M{r2(PX)} {r2(PY)} H{r2(CX - notch)} A{r2(notch)} {r2(notch)} 0 0 0 {r2(CX + notch)} {r2(PY)} H{r2(PX + PW)} V{r2(PY + PH)} H{r2(PX)} Z" fill="{blue}"/>',
-        f'<rect x="{r2(PX + hair * PHI ** 3)}" y="{r2(PY + hair * PHI ** 3)}" width="{r2(PW - 2 * hair * PHI ** 3)}" height="{r2(PH - 2 * hair * PHI ** 3)}" fill="none" stroke="{line}" stroke-width="{r2(hair)}" stroke-opacity=".618"/>',
-        f'<circle cx="{r2(CX)}" cy="{r2(PY)}" r="{r2(dot)}" fill="{IVORY}"/>',
-        word,
-        f'<rect x="{r2(CX - rule_w / 2)}" y="{r2(rule_y)}" width="{r2(rule_w)}" height="{r2(hair * PHI)}" fill="{line}"/>',
+        f'<circle cx="{r2(CX)}" cy="{r2(PY - gap)}" r="{r2(dot)}" fill="{IVORY}"/>',
+        f'<path d="{d}" fill="none" stroke="{deep}" stroke-width="{r2(stroke)}" stroke-linejoin="round"/>',
+        f'<path d="{d}" fill="{IVORY}"/>',
     ]
-    # ba sóng nước dưới khung: rộng, dày, cách nhau giảm dần theo φ
-    y, w, t, gap = PY + PH, PW / PHI, hair * PHI ** 3, dot
+    # ba sóng nước dưới khung: rộng và dày giảm dần theo φ
+    y, w, t, step = bot + bar / 2, PW / PHI, bar / PHI ** 0.5, dot * PHI ** 0.5
     for i in range(3):
-        y += gap
-        sag = t * PHI
-        parts.append(f'<path d="M{r2(CX - w / 2)} {r2(y)} Q{r2(CX)} {r2(y - sag)} {r2(CX + w / 2)} {r2(y)}" fill="none" stroke="{NAVY if flat else blue}" stroke-width="{r2(t)}" stroke-linecap="round"/>')
-        w, t, gap = w / PHI, t / PHI, gap / PHI ** 0.5
-    return '\n'.join(parts), dict(dot=dot, notch=notch, hair=hair, cap=cap, size=size, word=wb, rule_y=rule_y)
+        y += step
+        parts.append(f'<path d="M{r2(CX - w / 2)} {r2(y)} Q{r2(CX)} {r2(y - t * PHI)} {r2(CX + w / 2)} {r2(y)}" fill="none" stroke="{IVORY}" stroke-width="{r2(t)}" stroke-linecap="round"/>')
+        w, t, step = w / PHI ** 0.5, t / PHI ** 0.5, step / PHI ** 0.5
+    return '\n'.join(parts), dict(dot=dot, notch=notch, hair=hair, cap=cap, size=size, word=wb)
 
 
 def doc(w, h, body, title, bg=None):
@@ -107,11 +115,11 @@ def doc(w, h, body, title, bg=None):
 def lockup(kind, dark=False):
     m, info = mark()
     c1, c2 = (IVORY, GOLD[1]) if dark else (NAVY, GOLD[3])
-    tag_cap = info['cap'] / PHI                    # dòng phụ nhỏ hơn chữ NOBEN φ lần
+    tag_cap = info['cap'] / PHI ** 2               # dòng phụ nhỏ hơn chữ NOBEN φ² lần
     ts = cap_size(SANS, tag_cap)
     sub_cap = tag_cap / PHI
     ss = cap_size(SANS, sub_cap)
-    pad = H / PHI ** 3                             # khoảng trống quanh logo = H/φ³
+    pad = H / PHI ** 4                             # khoảng trống quanh logo = H/φ⁴
     if kind == 'doc':
         t1, b1 = text_path(SANS, 'THUỐC THỦY SẢN', ts, LS_TAG, CX + pad, base=pad + H + pad / PHI + tag_cap, fill=c1)
         t2, b2 = text_path(SANS, 'ISO 9001:2015 · TỪ 2002', ss, LS_TAG, CX + pad, base=b1[3] + tag_cap / PHI + sub_cap * PHI, fill=c2)
@@ -136,28 +144,6 @@ def lockup(kind, dark=False):
     return tx + tw + pad, H + 2 * pad, body
 
 
-def construction():
-    """Bản vẽ cấu trúc: các tỷ lệ φ chồng lên logo."""
-    m, info = mark()
-    pad = 150
-    g = '#b4232c'
-    t = lambda x, y, s, anchor='start': f'<text x="{r2(x)}" y="{r2(y)}" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="20" fill="{g}" text-anchor="{anchor}">{s}</text>'
-    ln = lambda x1, y1, x2, y2: f'<line x1="{r2(x1)}" y1="{r2(y1)}" x2="{r2(x2)}" y2="{r2(y2)}" stroke="{g}" stroke-width="1.5" stroke-dasharray="6 4"/>'
-    o = [f'<g transform="translate({pad} {pad})">', f'<g opacity=".9">{m}</g>',
-         ln(0, CY, W, CY), ln(CX, 0, CX, H),
-         f'<rect x="{r2(PX)}" y="{r2(PY)}" width="{r2(PW)}" height="{r2(PH)}" fill="none" stroke="{g}" stroke-width="1.5"/>',
-         ln(PX, PY + PH + 14, PX + PW, PY + PH + 14), ln(PX + PW + 14, PY, PX + PW + 14, PY + PH),
-         t(CX, -70, 'Đường chéo ngang a = 1000', 'middle'), ln(0, -50, W, -50),
-         t(W + 30, CY - 8, 'b = a / φ'), t(W + 30, CY + 18, '= 618'),
-         t(CX, H + 60, 'Góc nhọn 63,43° · góc tù 116,57° (hình thoi vàng)', 'middle'),
-         t(PX + PW + 24, PY + PH / 2, 'cao = rộng / φ'),
-         t(CX, PY + PH + 40, 'Khung xanh = 38,2% diện tích · vàng 61,8%', 'middle'),
-         t(PX + 12, info['word'][1] - 12, 'Cao chữ = cao khung / φ³ · giãn chữ 1/φ⁴ em'),
-         t(CX + info['notch'] + 12, PY - 14, 'r chấm = cao khung / φ⁵'),
-         '</g>']
-    return W + 2 * pad, H + 2 * pad, defs() + ''.join(o)
-
-
 def main():
     os.makedirs(OUT, exist_ok=True)
     files = {}
@@ -170,8 +156,6 @@ def main():
         files[f'noben-phi-lockup-{kind}.svg'] = doc(w, h, body, f'Noben – logo đề xuất, xếp {kind}')
         w, h, body = lockup(kind, dark=True)
         files[f'noben-phi-lockup-{kind}-nen-toi.svg'] = doc(w, h, body, f'Noben – logo đề xuất, xếp {kind}, nền tối', bg=NAVY)
-    w, h, body = construction()
-    files['noben-phi-cau-truc.svg'] = doc(w, h, body, 'Noben – bản vẽ cấu trúc tỷ lệ vàng', bg='#ffffff')
     for name, content in files.items():
         with open(os.path.join(OUT, name), 'w', encoding='utf8') as f:
             f.write(content)
