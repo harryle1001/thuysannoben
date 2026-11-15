@@ -1881,3 +1881,30 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   .pcard .pcard__media { perspective: none; }
   .pcard .pcard__img, .pcard .pcard__link:hover .pcard__media .pcard__img { transform: translateX(-50%); }
 }
+
+/* ---------- Home hero: the sunrise film first, unobstructed; the words follow below it ---------- */
+.hero--video { display: block; min-height: 0; padding: 0; background: #031027; }
+.hero--video .hero__bg {
+  position: relative; inset: auto; z-index: 0;
+  /* the whole first screen under the header, never taller than the 16:9 film itself */
+  height: min(calc(100svh - 178px), 56.25vw); min-height: 340px;
+}
+.hero--video .hero__shade { background: linear-gradient(180deg, transparent 72%, #031027 100%); }
+.hero--video .hero__still img, .hero--video .hero__video--sunrise { object-position: 50% 50%; }
+.hero--video .hero__grid { position: relative; padding-block: var(--space-6) var(--space-8); }
+.hero__cue {
+  position: absolute; left: 50%; z-index: 2; translate: -50% 0;
+  top: calc(min(calc(100svh - 178px), 56.25vw) - 60px);
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.45); color: #fff; background: rgba(3, 16, 39, 0.35);
+  animation: hero-cue 2.199s ease-in-out infinite; /* 0.7π s */
+}
+.hero__cue svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.hero--video { position: relative; }
+@keyframes hero-cue { 50% { translate: -50% 8px; } }
+@media (prefers-reduced-motion: reduce) { .hero__cue { animation: none; } }
+@media (max-width: 760px) {
+  /* phones: header + search ≈ 136px, call bar ≈ 56px at the bottom */
+  .hero--video .hero__bg { height: calc(100svh - 192px); min-height: 420px; }
+  .hero__cue { top: calc(max(100svh - 192px, 420px) - 60px); }
+}
