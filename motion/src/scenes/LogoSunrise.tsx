@@ -142,7 +142,7 @@ const Sunrise: React.FC<Props> = ({ mode }) => {
     return { r: r * (0.7 + 0.3 * p) * breath, o: p };
   });
 
-  const logo = staticFile("brand/noben-mark-golden.svg");
+  const logo = staticFile("brand/logo-noben.svg");
   const clipSky = `M0 0 H${W} V${horizon} H0 Z`;
 
   return (

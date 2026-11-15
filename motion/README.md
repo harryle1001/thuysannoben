@@ -62,7 +62,7 @@ Thiết bị và cài đặt chung:
 
 ## LogoSunrise: logo mọc như mặt trời (nền hero trang chủ)
 
-- Mã nguồn `src/scenes/LogoSunrise.tsx`; logo đề xuất `public/brand/noben-mark-golden.svg` (chỉ dùng trong video).
+- Mã nguồn `src/scenes/LogoSunrise.tsx`; logo chính thức `public/brand/logo-noben.svg`.
 - `LogoSunrise` (4π ≈ 12,6 giây, logo mọc) và `LogoSunriseLoop` (2π ≈ 6,3 giây, lặp liền mạch), kèm bản dọc
   `…Vertical` 720×1280. Mọi chuyển động lặp đúng số chu kỳ nguyên trong 188 khung; bản mọc dài đúng 2 × 188 khung,
   nên khung cuối nối thẳng vào khung đầu bản lặp.
