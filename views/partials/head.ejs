@@ -40,14 +40,14 @@
   <% if (m.preloadImage) { %><link rel="preload" as="image" href="<%= m.preloadImage %>" fetchpriority="high"<% if (m.preloadImagePhone) { %> media="(min-width: 761px)"<% } %>><% } %>
   <% if (m.preloadImagePhone) { %><link rel="preload" as="image" href="<%= m.preloadImagePhone %>" fetchpriority="high" media="(max-width: 760px)"><% } %>
   <script src="/js/theme.js?v=1"></script>
-  <link rel="stylesheet" href="/css/main.css?v=45">
+  <link rel="stylesheet" href="/css/main.css?v=47">
   <% for (const block of (locals.jsonld || [])) { %>
   <script type="application/ld+json"><%- JSON.stringify(block).replace(/</g, '\\u003c') %></script>
   <% } %>
   <script src="/js/smooth.js?v=3" defer></script>
-  <script src="/js/ambient.js?v=1" defer></script>
-  <script src="/js/scroll-motion.js?v=3" defer></script>
-  <script src="/js/main.js?v=18" defer></script>
+  <script src="/js/ambient.js?v=2" defer></script>
+  <script src="/js/scroll-motion.js?v=4" defer></script>
+  <script src="/js/main.js?v=19" defer></script>
   <script src="/js/sunrise.js?v=1" defer></script>
   <script src="/js/showcase.js?v=2" defer></script>
   <% if (!isEn) { %><script src="/js/chat.js?v=2" defer></script>

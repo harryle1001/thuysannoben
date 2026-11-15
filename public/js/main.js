@@ -9,13 +9,7 @@
     return String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
   }
 
-  /* ---------- Header: shadow on scroll, mobile menu ---------- */
-  var header = $('[data-header]');
-  if (header) {
-    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
+  /* ---------- Mobile menu (header shadow on scroll: see "Scroll motion" below) ---------- */
   var toggle = $('[data-menu-toggle]');
   var menu = $('#menu');
   if (toggle && menu) {
@@ -371,13 +365,19 @@
   bar.className = 'scroll-progress';
   bar.setAttribute('aria-hidden', 'true');
   document.body.appendChild(bar);
-  var lastY = window.scrollY, dirDown = true, ticking = false;
+  // Touch screens: blocks rise in once and stay, so a long list never re-animates under the finger.
+  var touch = window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  var lastY = window.scrollY, dirDown = true, ticking = false, scrolled = null, max = 0;
+  function measure() { max = root.scrollHeight - innerHeight; }
+  measure();
+  window.addEventListener('resize', measure, { passive: true });
+  window.addEventListener('load', measure);
   function onScroll() {
     var y = window.scrollY;
     dirDown = y >= lastY; lastY = y;
-    var max = root.scrollHeight - innerHeight;
     bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
-    if (header) header.classList.toggle('is-scrolled', y > 40);
+    var s = y > 40;
+    if (header && s !== scrolled) { scrolled = s; header.classList.toggle('is-scrolled', s); }
     ticking = false;
   }
   window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
@@ -401,6 +401,7 @@
       if (e.isIntersecting) {
         el.classList.toggle('rv--from-top', !dirDown);
         requestAnimationFrame(function () { el.classList.add('is-in'); });
+        if (touch) io.unobserve(el);
       } else {
         el.classList.remove('is-in');
       }

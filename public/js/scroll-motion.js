@@ -10,6 +10,9 @@
 
   var PHI = 1.618034;
   var phone = window.matchMedia('(max-width: 760px)').matches;
+  // Touch scrolling runs off the main thread, so per-frame JS motion always trails the finger and
+  // reads as jitter on long lists. On touch screens keep only the few large single objects.
+  var touch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
   var k = phone ? 1 / PHI : 1; // gentler on small screens
 
   // selector -> how the element reacts to its position p (-1 below the screen centre ... +1 above it)
@@ -18,8 +21,8 @@
     { sel: '.hero__video, .lp-hero__bg video, .page-head__photo video, .page-head__photo img', y: 34, s: 1.08 },
     { sel: '.oem-band__photo img, .qc__frame', y: 21, s: 1.04, zoom: 0.05 },
     // Product packs float up against the scroll and turn slightly, like a real object under light.
-    { sel: '.lp-pack__img', y: -42, r: -3.6 },
-    { sel: '.stage3d__obj img', y: -21, r: 2.4 },
+    { sel: '.lp-pack__img', y: -42, r: -3.6, touch: true },
+    { sel: '.stage3d__obj img', y: -21, r: 2.4, touch: true },
     { sel: '.pcard__img', y: -10 },
     { sel: '.lp-range__shots img', y: -21, stagger: true },
     { sel: '.stage__shot img, .finder__list img', y: -8 },
@@ -29,6 +32,7 @@
 
   var items = [];
   RULES.forEach(function (rule) {
+    if (touch && !rule.touch) return;
     Array.prototype.forEach.call(document.querySelectorAll(rule.sel), function (el, i) {
       if (el.closest('[data-no-scroll-motion]')) return;
       if (phone && (el.tagName === 'VIDEO' || el.classList.contains('qc__frame'))) return; // full-bleed on phones: never scale past the screen edge

@@ -97,9 +97,17 @@
     }
   }
 
+  // Touch screens: no redraw while the finger scrolls, so the GPU only moves the page; one fresh
+  // frame lands as soon as scrolling stops.
+  var touch = mq('(hover: none) and (pointer: coarse)'), moving = false, idle = 0;
+  if (touch) window.addEventListener('scroll', function () {
+    moving = true; clearTimeout(idle); idle = setTimeout(function () { moving = false; }, 160);
+  }, { passive: true });
+
   var last = 0, raf = 0;
   function loop(now) {
     raf = requestAnimationFrame(loop);
+    if (moving) return;
     if (now - last < 1000 / (phone ? 20 : 30)) return; // 20–30 fps is plenty for slow ambience
     last = now;
     draw(now);

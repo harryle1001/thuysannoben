@@ -1277,7 +1277,7 @@ body { font-variant-numeric: lining-nums; }
 .hero__title, .page-head__title, .article__title, .product__name { letter-spacing: -0.01em; }
 
 /* Scroll motion */
-.rv { opacity: 0; transform: translateY(34px) scale(0.985); transition: opacity 707ms var(--ease) var(--rv-delay, 0ms), transform 785ms cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms); will-change: opacity, transform; }
+.rv { opacity: 0; transform: translateY(34px) scale(0.985); transition: opacity 707ms var(--ease) var(--rv-delay, 0ms), transform 785ms cubic-bezier(0.16, 1, 0.3, 1) var(--rv-delay, 0ms); }
 .rv.rv--from-top { transform: translateY(-26px) scale(0.985); }
 .rv.is-in { opacity: 1; transform: none; }
 .scroll-progress { position: fixed; left: 0; top: 0; z-index: 70; height: 3px; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, var(--sun), #ffe08a); pointer-events: none; }
@@ -1863,4 +1863,21 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 @media (max-width: 760px) {
   .hero__still img, .hero__video--sunrise { object-position: 50% 40%; }
   .hero__bg--sunrise .hero__shade { background: linear-gradient(180deg, rgba(3, 16, 39, 0.58) 0%, rgba(3, 16, 39, 0.76) 45%, rgba(3, 16, 39, 0.93) 100%); }
+}
+
+/* Touch screens: smooth scrolling. Live backdrop blur re-renders on every scrolled frame, so it is
+   swapped for an equivalent solid tint; the grey tap flash gives way to a light press state. */
+@media (hover: none) and (pointer: coarse) {
+  .lp-bar { backdrop-filter: none; background: color-mix(in srgb, var(--surface) 97%, transparent); }
+  .qc__sound, .pv__toggle, .vcard__play { backdrop-filter: none; background: rgba(3, 16, 39, 0.72); }
+  a, button, summary, label, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+  .btn:active, .chip:active, .pcard__link:active { opacity: 0.86; }
+  /* product cards: the glare only follows a mouse, and a 2px blur on a soft radial shadow is invisible;
+     both cost a GPU pass per card on every scrolled frame */
+  .pcard__glare { display: none; }
+  .pcard__floor { filter: none; }
+  /* the tilt only follows a mouse (showcase.js), so the 3D setup is dropped: same picture,
+     but the cards paint with the page instead of each becoming its own 3D layer */
+  .pcard .pcard__media { perspective: none; }
+  .pcard .pcard__img, .pcard .pcard__link:hover .pcard__media .pcard__img { transform: translateX(-50%); }
 }
