@@ -144,7 +144,7 @@ export const Logo: React.FC<{ size: number; delay?: number }> = ({ size, delay =
         const r = ((frame / fps) * 0.45 + i / 3) % 1;
         return <div key={i} style={{ position: "absolute", left: "50%", top: "50%", width: size * (1 + r * 1.6), height: size * (1 + r * 1.6), marginLeft: -size * (1 + r * 1.6) / 2, marginTop: -size * (1 + r * 1.6) / 2, borderRadius: "50%", border: `2px solid ${C.accent}`, opacity: (1 - r) * 0.35 * pop }} />;
       })}
-      <Img src={staticFile("brand/noben-mark.svg")} style={{ position: "absolute", inset: 0, width: size, height: size, transform: `scale(${pop * breathe}) rotate(${interpolate(turn, [0, 1], [-90, 0])}deg)`, filter: `drop-shadow(0 0 ${size * 0.22}px ${C.glow})` }} />
+      <Img src={staticFile("brand/logo-noben.svg")} style={{ position: "absolute", inset: 0, width: size, height: size, transform: `scale(${pop * breathe}) rotate(${interpolate(turn, [0, 1], [-90, 0])}deg)`, filter: `drop-shadow(0 0 ${size * 0.22}px ${C.glow})` }} />
     </div>
   );
 };
