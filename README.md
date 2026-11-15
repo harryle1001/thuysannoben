@@ -25,6 +25,10 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
   - Toàn bộ link của website cũ được **chuyển hướng 301** sang link mới, nên không mất thứ hạng Google.
 - **Tốc độ và bảo mật:**
   - Ảnh đã chuyển sang WebP, font tự host, nén gzip, header bảo mật (Helmet/CSP).
+  - Ảnh sản phẩm và ảnh bìa bài viết có bản nhỏ trong `sm/` để điện thoại tải ảnh vừa đủ (`srcset`). Thêm ảnh mới thì chạy `python3 scripts/make-small.py`.
+  - Video nền chỉ tải sau khi trang đã hiện; video trang trí (`data-decor`) không phát trên điện thoại, video trang chủ trên điện thoại dọc là bản cắt đúng phần hiển thị (`noben-hero-m72`), máy bật tiết kiệm dữ liệu hoặc mạng 2G/3G chỉ thấy ảnh poster.
+  - Cuộn mượt (Lenis) chỉ bật cho chuột/trackpad; điện thoại cuộn gốc và không tải thư viện.
+  - `public/.htaccess`: trên Hostinger, LiteSpeed phục vụ thẳng file trong `public/`, nên header cache đặt ở đây (CSS/JS/phông 1 năm `immutable`, ảnh/video 30 ngày). Đổi CSS/JS thì tăng `?v=`.
   - Không dùng thư viện JavaScript bên ngoài.
 
 ## Chạy trên máy

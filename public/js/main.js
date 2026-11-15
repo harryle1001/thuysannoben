@@ -287,6 +287,7 @@
   // Decorative backgrounds stay as their poster on phones and slow or data-saver connections.
   var videos = Array.prototype.slice.call(document.querySelectorAll('[data-hero-video], [data-inview-play]'))
     .filter(function (v) { return !(v.hasAttribute('data-decor') && (phone || lean)); });
+  if (lean) reduce = true; // slow or data-saver: every video stays a poster (tap to play)
   if (!videos.length) return;
   var EN = document.documentElement.lang === 'en';
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }

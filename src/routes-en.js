@@ -29,6 +29,7 @@ router.get('/en', (req, res) => {
   const featured = c.showcase.map((p) => en.productBySlug[p.slug]).filter(Boolean);
   res.render('en/home', {
     meta: {
+      preloadImage: '/media/noben-hero-poster.webp',
       title: 'Noben Aquaculture – Shrimp health products, probiotics and minerals made in Vietnam',
       description: `NOBEN CO., LTD manufactures ${en.products.length} aquaculture products for shrimp and fish ponds: probiotics, pond conditioners, minerals and feed supplements. ISO 9001:2015 factory in Ho Chi Minh City, 22+ years of experience, OEM manufacturing available.`,
       image: '/images/brand/banner-1.webp',
@@ -88,7 +89,7 @@ router.get('/en/products/:slug', (req, res, next) => {
 
 router.get('/en/about', (req, res) =>
   res.render('en/about', {
-    meta: { title: 'About Noben – 22+ years manufacturing aquaculture products', description: 'NOBEN CO., LTD has manufactured aquaculture health products, probiotics and feed supplements in Vietnam since 2002. ISO 9001:2015 factory, VinaCert-certified feed supplements.' },
+    meta: { preloadImage: '/media/noben-hero-poster.webp', title: 'About Noben – 22+ years manufacturing aquaculture products', description: 'NOBEN CO., LTD has manufactured aquaculture health products, probiotics and feed supplements in Vietnam since 2002. ISO 9001:2015 factory, VinaCert-certified feed supplements.' },
     gallery: c.gallery,
     jsonld: [org(), crumbs([['About', '/en/about']])],
   })
