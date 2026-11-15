@@ -1,6 +1,6 @@
 # Bộ nhận diện in ấn Noben: nhãn sản phẩm và logo
 
-Thư mục `brand/` **không được phục vụ trên web**, chỉ dùng để làm việc với nhà in. Logo trong toàn bộ thư mục này là **logo chính thức đang dùng trên web** (`public/images/brand/logo-noben.svg`: hình thoi vàng, khung xanh, chữ NOBEN). Bản logo φ/π trong `public/images/brand/golden/` chỉ là đề xuất, chưa dùng ở đây.
+Thư mục `brand/` **không được phục vụ trên web**, chỉ dùng để làm việc với nhà in. Logo trong toàn bộ thư mục này là **logo chính thức đã nắn theo tỷ lệ vàng, phương án A đã duyệt** (`public/images/brand/logo-noben-phi.svg`, sinh bằng `python3 scripts/build-logo-phi.py`): giữ nguyên màu và nét chữ NOBEN của logo đang dùng trên web, chỉ đặt lại kích thước theo φ. Logo trên web (`logo-noben.svg`) chưa thay. Bản logo φ/π trong `public/images/brand/golden/` chỉ là đề xuất, chưa dùng ở đây.
 
 | Đường dẫn | Nội dung |
 |---|---|

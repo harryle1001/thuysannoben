@@ -175,7 +175,7 @@ async function main() {
   if (flag('--dung-ban-luu')) console.log(`Áp ${applySavedEdits(list)} nhãn đã lưu trên web`);
   const only = opt('--chi') ? new Set(opt('--chi').split(',')) : null;
   const labels = list.filter((l) => !only || only.has(l.slug));
-  const mark = fs.readFileSync(path.join(ROOT, 'public', 'images', 'brand', 'logo-noben.svg'), 'utf8');
+  const mark = fs.readFileSync(path.join(ROOT, 'public', 'images', 'brand', 'logo-noben-phi.svg'), 'utf8');
   const checkOnly = flag('--kiem-tra');
 
   let chromium;

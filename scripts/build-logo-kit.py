@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bộ logo Noben để in ấn, sinh từ LOGO CHÍNH THỨC public/images/brand/logo-noben.svg.
+"""Bộ logo Noben để in ấn, sinh từ logo chính thức đã nắn theo tỷ lệ vàng (phương án A): public/images/brand/logo-noben-phi.svg.
 
     pip install picosvg uharfbuzz fonttools brotli
     python3 scripts/build-logo-kit.py          # ghi các SVG vào brand/logo/
@@ -30,7 +30,7 @@ from picosvg.svg import SVG
 from picosvg.svg_types import SVGPath
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
-SRC = os.path.join(ROOT, 'public', 'images', 'brand', 'logo-noben.svg')
+SRC = os.path.join(ROOT, 'public', 'images', 'brand', 'logo-noben-phi.svg')  # bản A đã duyệt (logo chính thức nắn theo φ, scripts/build-logo-phi.py)
 FONTS = os.path.join(ROOT, 'public', 'fonts')
 OUT = os.path.join(ROOT, 'brand', 'logo')
 
@@ -140,7 +140,7 @@ def mark_flat():
     _, body = mark_parts()
     body = re.sub(r'\s*<defs>[\s\S]*?</defs>', '', body)
     body = body.replace('url(#g)', '#ffc20e').replace('url(#b)', '#1590dd')
-    body = body.replace('stroke="#fff" stroke-opacity=".6"', 'stroke="#ffe79f"')
+    body = re.sub(r'stroke="#fff" stroke-opacity="\.6\d*"', 'stroke="#ffe79f"', body)
     return body
 
 

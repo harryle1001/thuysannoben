@@ -16,7 +16,7 @@
 
   Promise.all([
     fetch('/quan-tri/nhan/du-lieu.json', { credentials: 'same-origin' }).then(function (r) { if (r.status === 401) { location.href = '/quan-tri/dang-nhap?next=/quan-tri/nhan'; throw new Error('401'); } return r.json(); }),
-    fetch('/images/brand/logo-noben.svg').then(function (r) { return r.text(); }),
+    fetch('/images/brand/logo-noben-phi.svg').then(function (r) { return r.text(); }),
     Promise.all(['400 20px "Be Vietnam Pro"', '600 20px "Be Vietnam Pro"', '800 20px "Playfair Display"'].map(function (f) { return document.fonts.load(f, 'Noben Ữ ắ 0123'); })),
   ]).then(function (res) {
     state.spec = res[0].spec; state.labels = res[0].labels; state.mark = res[1];
