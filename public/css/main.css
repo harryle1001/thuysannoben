@@ -1248,6 +1248,9 @@ body.menu-open .float-chat { display: none; }
 .qc__video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .qc__ctrl { position: absolute; right: 14px; bottom: 14px; display: flex; gap: 8px; }
 .qc__ctrl .qc__sound { position: static; }
+.ff__kicker { margin: 0 0 var(--space-2); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.ff__lead { max-width: 62ch; color: var(--muted, inherit); margin: var(--space-3) 0 0; }
+.ff__frame { max-width: 1100px; margin-top: var(--space-5); }
 @media (max-width: 560px) { .qc__ctrl { right: 10px; bottom: 10px; gap: 6px; } .qc__ctrl .qc__sound { min-height: 36px; min-width: 36px; padding: 6px; justify-content: center; } .qc__ctrl .qc__sound span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } }
 .qc__sound { position: absolute; right: 14px; bottom: 14px; display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(3, 16, 39, 0.6); color: #fff; font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer; backdrop-filter: blur(6px); }
 .qc__sound:hover { background: rgba(3, 16, 39, 0.85); }

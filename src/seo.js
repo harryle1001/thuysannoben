@@ -133,4 +133,20 @@ function factoryVideo() {
   };
 }
 
-module.exports = { SITE_URL, abs, organization, website, crumbs, article, faqPage, product, itemList, factoryVideo };
+// The production-process film for farmers (shown in the "Quy trình sản xuất khép kín" block).
+function processVideo() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Quy trình sản xuất thuốc thủy sản Noben: một gói thuốc được làm ra như thế nào',
+    description: 'Gửi bà con nuôi tôm, cá: nguyên liệu đầu vào được kiểm tra chặt chẽ, sản xuất chuyên nghiệp và an toàn tại nhà máy đạt ISO 9001:2015, đóng gói khép kín với nhãn ghi đầy đủ, kiểm tra chất lượng đầu ra trước khi xuất xưởng, giao hàng toàn quốc và kỹ thuật viên hỗ trợ tại ao.',
+    thumbnailUrl: [abs('/media/factory/noben-quy-trinh-poster.webp')],
+    contentUrl: abs('/media/factory/noben-quy-trinh.mp4'),
+    uploadDate: '2026-11-15T15:00:00+07:00',
+    duration: 'PT48S',
+    inLanguage: 'vi',
+    publisher: { '@id': ORG_ID, '@type': 'Organization', name: c.company.legal },
+  };
+}
+
+module.exports = { SITE_URL, abs, organization, website, crumbs, article, faqPage, product, itemList, factoryVideo, processVideo };
