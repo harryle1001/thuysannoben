@@ -7,15 +7,17 @@ import { AbsoluteFill, Audio, Composition, Img, interpolate, OffthreadVideo, Seq
 import { Fonts } from "../components/Fonts";
 import { Counter, Entrance, SceneExit, WordReveal } from "../components/Motion";
 import { Bubbles, DeepWater, Finish, GodRays, Plankton, Surface } from "../components/Ocean";
-import { Draw, FormulaArt, Glyph, IntakeArt, LineArt } from "../factory/LineArt";
-import { FACTORY_PRODUCTS, FactoryMedia, slot } from "../factory/media";
+import { Draw, IntakeArt, LineArt } from "../factory/LineArt";
+import { DeliverArt } from "../factory/ProcessArt";
+import { Badge, LabArt, PACK_ORDER, PackIcon, TeamArt, VietnamMap } from "../factory/Vector";
+import { FactoryMedia, slot } from "../factory/media";
 import timing from "../factory/timing.json";
 import { rand, TAU, theme } from "../theme";
 
 const C = theme.colors;
 const PHI = (1 + Math.sqrt(5)) / 2;
 type Cut = "full" | "short";
-type SceneKey = "intro" | "raw" | "formula" | "line" | "qc" | "team" | "reach" | "close";
+type SceneKey = "intro" | "raw" | "formula" | "line" | "qc" | "team" | "reach" | "pond" | "close";
 
 export const factoryScenes = (cut: Cut, fps: number) => {
   let from = 0;
@@ -143,7 +145,7 @@ export const Logo: React.FC<{ size: number; delay?: number }> = ({ size, delay =
         const r = ((frame / fps) * 0.45 + i / 3) % 1;
         return <div key={i} style={{ position: "absolute", left: "50%", top: "50%", width: size * (1 + r * 1.6), height: size * (1 + r * 1.6), marginLeft: -size * (1 + r * 1.6) / 2, marginTop: -size * (1 + r * 1.6) / 2, borderRadius: "50%", border: `2px solid ${C.accent}`, opacity: (1 - r) * 0.35 * pop }} />;
       })}
-      <Img src={staticFile("brand/logo-noben.svg")} style={{ position: "absolute", inset: 0, width: size, height: size, transform: `scale(${pop * breathe}) rotate(${interpolate(turn, [0, 1], [-90, 0])}deg)`, filter: `drop-shadow(0 0 ${size * 0.22}px ${C.glow})` }} />
+      <Img src={staticFile("brand/noben-mark.svg")} style={{ position: "absolute", inset: 0, width: size, height: size, transform: `scale(${pop * breathe}) rotate(${interpolate(turn, [0, 1], [-90, 0])}deg)`, filter: `drop-shadow(0 0 ${size * 0.22}px ${C.glow})` }} />
     </div>
   );
 };
@@ -216,17 +218,16 @@ const Raw: React.FC<{ dur: number }> = ({ dur }) => {
 };
 
 const Formula: React.FC<{ dur: number }> = ({ dur }) => {
-  const { W, H, fps, pick } = useL();
-  const [a, b] = slot("formula");
-  // photos are 550 px wide: show them at ~1x inside glass frames, never blown up full-bleed
-  const aw = pick(W * 0.6, 560), bw = pick(W * 0.52, 470);
+  const { W, H, pick } = useL();
+  const m = slot("formula")[0];
   return (
     <AbsoluteFill>
-      <Copy n="02" kicker="Công thức từ đội kỹ thuật" title="Xây dựng từ thực tế ao nuôi" hero={["ao", "nuôi"]} width={pick(W * 0.84, W * 0.34)} size={pick(96, 84)}
+      <Copy n="02" kicker="Kỹ thuật và kiểm nghiệm" title="Công thức từ thực tế ao nuôi" hero={["ao", "nuôi"]} width={pick(W * 0.84, W * 0.34)} size={pick(96, 84)}
         body="Công thức được xây dựng và điều chỉnh từ thực tế ao nuôi của bà con." style={{ left: pick(W * 0.08, W * 0.09), top: pick(H * 0.12, H * 0.2) }} />
-      <div style={{ position: "absolute", left: pick(W * 0.5, W * 0.79), top: pick(H * 0.36, H * 0.06), opacity: 0.9 }}><FormulaArt size={pick(440, 380)} delay={10} /></div>
-      {a && <Glass x={pick(W * 0.06, W * 0.45)} y={pick(H * 0.42, H * 0.17)} w={aw} h={aw * 0.747} delay={Math.round(fps * 0.35)} rotate={-2} caption={a.caption}><Media m={a} dur={dur} seed={1} zoom={0.05} /></Glass>}
-      {b && <Glass x={pick(W * 0.4, W * 0.66)} y={pick(H * 0.62, H * 0.56)} w={bw} h={bw * 0.747} delay={Math.round(fps * 0.6)} rotate={2.5} caption={b.caption}><Media m={b} dur={dur} seed={2} zoom={0.05} /></Glass>}
+      {m && <Glass x={pick(W * 0.08, W * 0.46)} y={pick(H * 0.44, H * 0.1)} w={pick(W * 0.84, W * 0.46)} h={pick(W * 0.84 * 0.5625, W * 0.46 * 0.5625)} delay={8} caption={m.caption}><Media m={m} dur={dur} /></Glass>}
+      <div style={{ position: "absolute", left: pick(W * 0.04, W * 0.42), top: pick(H * 0.5, m ? H * 0.5 : H * 0.28), opacity: m ? 0.85 : 1 }}>
+        <LabArt width={pick(W * 0.92, W * 0.54)} delay={6} />
+      </div>
     </AbsoluteFill>
   );
 };
@@ -246,146 +247,76 @@ const Line: React.FC<{ dur: number }> = ({ dur }) => {
         <Glass key={m.src} x={pick(W * 0.08 + i * W * 0.43, W * 0.06 + i * W * 0.3)} y={pick(H * 0.42, H * 0.36)} w={pick(W * 0.41, W * 0.28)} h={pick(W * 0.41 * 0.62, W * 0.28 * 0.56)} delay={10 + i * 5} caption={m.caption}><Media m={m} dur={dur} seed={i} /></Glass>
       ))}
       <div style={{ position: "absolute", left: (W - lw) / 2, top: pick(media.length ? H * 0.62 : H * 0.42, media.length ? H * 0.62 : H * 0.4) }}>
-        <LineArt width={lw} products={FACTORY_PRODUCTS} delay={6} />
+        <LineArt width={lw} delay={6} />
       </div>
     </AbsoluteFill>
   );
 };
 
-const Qc: React.FC<{ dur: number }> = ({ dur }) => {
-  const frame = useCurrentFrame();
+const Qc: React.FC<{ dur: number }> = () => {
   const { W, H, fps, v, pick } = useL();
-  const certs = slot("qc");
-  const ch = pick(H * 0.36, H * 0.6), cw = ch * 0.72;
-  const cx = pick(W * 0.5, W * 0.71), cy = pick(H * 0.62, H * 0.5);
-  const stamp = spring({ frame: frame - Math.round(fps * 1.6), fps, config: theme.spring.bouncy });
-  const sweep = interpolate(frame, [fps * 1.2, fps * 2.4], [0, 1], { ...theme.clamp, easing: theme.ease.inOut });
+  const bs = pick(400, 400);
   return (
     <AbsoluteFill>
       <Copy n="04" kicker="Kiểm tra xuất xưởng" title="Đạt chuẩn mới được rời nhà máy" hero={["Đạt", "chuẩn"]} width={pick(W * 0.84, W * 0.355)} size={pick(96, 76)}
         body="Kiểm tra chất lượng theo hệ thống quản lý ISO 9001:2015. Thức ăn bổ sung được chứng nhận hợp quy VinaCert." style={{ left: pick(W * 0.08, W * 0.09), top: pick(H * 0.1, H * 0.17) }} />
-      {certs.map((m, i) => {
-        const side = i - 1; // -1, 0, 1
-        const delay = Math.round(fps * 0.4) + [6, 0, 12][i];
-        const p = spring({ frame: frame - delay, fps, config: theme.spring.smooth });
-        const fan = spring({ frame: frame - delay - 10, fps, config: theme.spring.smooth });
-        const center = side === 0;
-        const w = center ? cw : cw * 0.86, h = center ? ch : ch * 0.86;
-        const x = cx - w / 2 + side * cw * 0.62 * fan, y = cy - h / 2 + (center ? 0 : ch * 0.05);
-        const bob = Math.sin((frame / fps) * (TAU / (PHI * 2.5)) + i) * 4;
-        return (
-          <div key={m.src} style={{
-            position: "absolute", left: x, top: y + bob, width: w, height: h, zIndex: center ? 2 : 1, opacity: p,
-            transform: `translateY(${(1 - p) * 80}px) rotate(${side * 7 * fan}deg)`, borderRadius: 14, overflow: "hidden",
-            background: "#f5f3ee", boxShadow: `0 50px 90px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.4)${center ? `, 0 0 60px -10px ${C.accentSoft}` : ""}`,
-          }}>
-            <Img src={staticFile(m.src)} style={{ width: "100%", height: "100%", objectFit: "contain", filter: center ? undefined : "brightness(0.82)" }} />
-            {center && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-60 + sweep * 180}%`, width: "40%", transform: "skewX(-16deg)", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.65), transparent)", opacity: Math.sin(Math.PI * sweep) }} />}
-          </div>
-        );
-      })}
-      <div style={{ position: "absolute", zIndex: 3, left: cx + cw * 0.28, top: cy + ch * 0.26, transform: `scale(${stamp}) rotate(${(1 - stamp) * -40}deg)`, opacity: Math.min(1, stamp * 2) }}>
-        <div style={{ width: 130, height: 130, borderRadius: "50%", background: C.bg, border: `3px solid ${C.accent}`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 0 40px ${C.accentSoft}` }}>
-          <Glyph kind="shield" size={78} p={interpolate(frame, [fps * 1.7, fps * 2.4], [0, 1], theme.clamp)} color={C.accent} />
-        </div>
+      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.47), top: pick(H * 0.46, H * 0.24), display: "flex", flexDirection: "row", gap: v ? 40 : 70 }}>
+        <Badge size={v ? 440 : bs} top="QUẢN LÝ CHẤT LƯỢNG · NHÀ MÁY NOBEN ·" big="ISO" sub="9001:2015" delay={Math.round(fps * 0.4)} />
+        {!v && <Badge size={bs} top="CHỨNG NHẬN · THỨC ĂN BỔ SUNG ·" big="HỢP QUY" sub="VinaCert" delay={Math.round(fps * 0.75)} color={C.primary} />}
       </div>
-      {!v && (
-        <div style={{ position: "absolute", left: W * 0.09, top: H * 0.74, display: "flex", gap: 16 }}>
-          {["ISO 9001:2015", "Hợp quy VinaCert"].map((t, i) => (
-            <Entrance key={t} delay={Math.round(fps * 1.4) + i * 5} y={20}>
-              <span style={{ display: "inline-block", padding: "12px 22px", borderRadius: 999, border: `1px solid ${C.accent}`, color: C.text, fontFamily: theme.fonts.body, fontWeight: 600, fontSize: 24 }}>{t}</span>
-            </Entrance>
-          ))}
-        </div>
-      )}
-      {void dur}
+      {v && <div style={{ position: "absolute", left: W * 0.42, top: H * 0.7 }}><Badge size={400} top="CHỨNG NHẬN · THỨC ĂN BỔ SUNG ·" big="HỢP QUY" sub="VinaCert" delay={Math.round(fps * 0.75)} color={C.primary} /></div>}
     </AbsoluteFill>
   );
 };
 
 const Team: React.FC<{ dur: number }> = ({ dur }) => {
-  const frame = useCurrentFrame();
   const { W, H, fps, v, pick } = useL();
-  const photos = slot("team");
-  const cols = pick(3, 4), rows = pick(4, 3);
-  const gx = pick(W * 0.06, W * 0.395), gy = pick(H * 0.36, H * 0.08);
-  const gw = pick(W * 0.88, W * 0.565), gh = pick(H * 0.52, H * 0.84);
-  const gap = 14;
-  const cw = (gw - gap * (cols - 1)) / cols, chh = (gh - gap * (rows - 1)) / rows;
-  const drift = interpolate(frame, [0, dur], [0, 1], { ...theme.clamp, easing: theme.ease.sine });
+  const m = slot("team")[0];
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left: gx, top: gy, width: gw, height: gh, transform: `scale(${1 + drift * 0.035})`, transformOrigin: "50% 50%" }}>
-        {photos.slice(0, cols * rows).map((m, i) => {
-          const c = i % cols, r = Math.floor(i / cols);
-          const order = (c + r) * 2 + (i % 2); // diagonal cascade
-          const p = spring({ frame: frame - 6 - order * 2, fps, config: theme.spring.smooth });
-          return (
-            <div key={m.src} style={{
-              position: "absolute", left: c * (cw + gap), top: r * (chh + gap), width: cw, height: chh, borderRadius: 18, overflow: "hidden",
-              opacity: p, transform: `translateY(${(1 - p) * 50}px) scale(${0.92 + 0.08 * p})`, boxShadow: "0 30px 60px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(169,205,255,0.16)",
-              clipPath: `inset(${(1 - p) * 100}% 0 0 0 round 18px)`,
-            }}>
-              <Media m={m} dur={dur} seed={i + 3} zoom={0.1} />
-              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, transparent 55%, rgba(2,10,26,0.45))" }} />
-            </div>
-          );
-        })}
+      <Copy n="05" kicker="Đội ngũ Noben" title="Những con người đứng sau từng sản phẩm" hero={["con", "người"]} width={pick(W * 0.84, W * 0.7)} size={pick(92, 80)}
+        body="Kỹ thuật, kiểm nghiệm, sản xuất, kinh doanh: cùng một nghề từ năm 2002." style={{ left: pick(W * 0.08, W * 0.09), top: pick(H * 0.1, H * 0.1) }} />
+      {m && <Glass x={pick(W * 0.08, W * 0.6)} y={pick(H * 0.38, H * 0.1)} w={pick(W * 0.84, W * 0.32)} h={pick(W * 0.84 * 0.5625, W * 0.32 * 0.5625)} delay={8} caption={m.caption}><Media m={m} dur={dur} /></Glass>}
+      <div style={{ position: "absolute", left: pick(W * 0.03, W * 0.1), top: pick(H * 0.58, H * 0.44) }}>
+        <TeamArt width={pick(W * 0.94, W * 0.8)} delay={Math.round(fps * 0.3)} count={v ? 5 : 9} />
       </div>
-      {/* glass text panel */}
-      <Entrance delay={Math.round(fps * 0.5)} y={30} style={{ position: "absolute", left: pick(W * 0.06, W * 0.06), top: pick(H * 0.08, H * 0.25), width: pick(W * 0.88, W * 0.31) }}>
-        <div style={{ padding: v ? "36px 40px" : "40px 44px", borderRadius: 30, background: "linear-gradient(160deg, rgba(11,35,71,0.82), rgba(2,10,26,0.86))", border: `1px solid ${C.line}`, boxShadow: "0 50px 90px -30px rgba(0,0,0,0.8)", backdropFilter: "blur(14px)" }}>
-          <div style={{ ...kickerStyle, fontSize: v ? 28 : 23 }}><span style={{ ...display, fontSize: v ? 34 : 28, letterSpacing: 0, color: C.accent, marginRight: 18 }}>05</span>Đội ngũ Noben</div>
-          <WordReveal delay={Math.round(fps * 0.7)} per={3} text="Những con người đứng sau từng sản phẩm" hero={["con", "người"]} style={{ ...display, fontSize: v ? 80 : 64, marginTop: 20, columnGap: 16 }} />
-          <Entrance delay={Math.round(fps * 1.4)} y={16}><p style={{ ...bodyStyle, fontSize: v ? 32 : 26, margin: "22px 0 0" }}>Kỹ thuật, sản xuất, kinh doanh: cùng một nghề từ năm 2002.</p></Entrance>
-        </div>
-      </Entrance>
     </AbsoluteFill>
   );
 };
 
-const Reach: React.FC<{ dur: number }> = ({ dur }) => {
+const Reach: React.FC<{ dur: number }> = () => {
   const frame = useCurrentFrame();
   const { W, H, fps, v, pick } = useL();
-  const clip = slot("reach")[0]; // optional real clip (e.g. loading the delivery truck) replaces the product row
-  const shown = clip ? [] : FACTORY_PRODUCTS.slice(0, pick(6, 8));
-  const pw = pick(W * 0.84, W * 0.52);
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.09), top: pick(H * 0.1, H * 0.16), width: pick(W * 0.84, W * 0.36) }}>
-        <Entrance delay={4} y={20}><div style={{ ...kickerStyle, fontSize: v ? 28 : 24 }}><span style={{ ...display, fontSize: v ? 34 : 30, letterSpacing: 0, color: C.accent, marginRight: 18 }}>06</span>Từ nhà máy đến ao nuôi</div></Entrance>
+      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.09), top: pick(H * 0.08, H * 0.16), width: pick(W * 0.84, W * 0.42) }}>
+        <Entrance delay={4} y={20}><div style={{ ...kickerStyle, fontSize: v ? 28 : 24 }}><span style={{ ...display, fontSize: v ? 34 : 30, letterSpacing: 0, color: C.accent, marginRight: 18 }}>06</span>Giao hàng toàn quốc</div></Entrance>
         <div style={{ display: "flex", alignItems: "baseline", gap: 24, marginTop: 10 }}>
-          <span style={{ ...display, fontSize: v ? 260 : 230, color: C.primary, textShadow: `0 0 70px ${C.glow}`, lineHeight: 1 }}><Counter to={94} delay={8} /></span>
-          <Entrance delay={14} y={20}><span style={{ ...display, fontSize: v ? 64 : 56 }}>sản phẩm</span></Entrance>
+          <span style={{ ...display, fontSize: v ? 220 : 210, color: C.primary, textShadow: `0 0 70px ${C.glow}`, lineHeight: 1 }}><Counter to={94} delay={8} /></span>
+          <Entrance delay={14} y={20}><span style={{ ...display, fontSize: v ? 60 : 54 }}>sản phẩm</span></Entrance>
         </div>
-        <Entrance delay={Math.round(fps * 0.6)} y={18}><p style={{ ...bodyStyle, fontSize: v ? 34 : 28, margin: "8px 0 0" }}>Chế phẩm sinh học, khoáng, thức ăn bổ sung và sản phẩm đặc trị cho ao tôm, cá.</p></Entrance>
+        <Entrance delay={Math.round(fps * 0.6)} y={18}><p style={{ ...bodyStyle, fontSize: v ? 32 : 28, margin: "8px 0 0" }}>Từ nhà máy Củ Chi đến các vùng nuôi tôm, cá trên cả nước.</p></Entrance>
+        <div style={{ display: "flex", gap: 16, alignItems: "flex-end", marginTop: v ? 28 : 36 }}>
+          {PACK_ORDER.slice(0, 5).map((k, i) => {
+            const p = spring({ frame: frame - Math.round(fps * 0.8) - i * 4, fps, config: theme.spring.smooth });
+            return <div key={i} style={{ opacity: p, transform: `translateY(${(1 - p) * 50}px)` }}><PackIcon kind={k} h={v ? 120 : 130} tone={i} /></div>;
+          })}
+        </div>
       </div>
-      {clip && <Glass x={pick(W * 0.08, W * 0.46)} y={pick(H * 0.42, H * 0.14)} w={pick(W * 0.84, W * 0.46)} h={pick(W * 0.84 * 0.5625, H * 0.5)} delay={10} caption={clip.caption}><Media m={clip} dur={dur} /></Glass>}
-      {/* products rise in a gentle arc */}
-      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.45), top: pick(H * 0.42, H * 0.14), width: pw, height: pick(H * 0.28, H * 0.5) }}>
-        {shown.map((src, i) => {
-          const n = shown.length;
-          const p = spring({ frame: frame - 8 - i * 4, fps, config: theme.spring.smooth });
-          const u = i / (n - 1);
-          const x = u * (pw - pw / n * 0.9);
-          const lift = Math.sin(u * Math.PI) * pick(70, 90);
-          const float = Math.sin((frame / fps) * (TAU / PHI / 2) + i) * 6;
-          return <Img key={src} src={staticFile(src)} style={{ position: "absolute", left: x, bottom: lift + float, height: pick(260, 280) * (0.88 + 0.12 * Math.sin(u * Math.PI)), opacity: p, transform: `translateY(${(1 - p) * 90}px)`, filter: "drop-shadow(0 22px 26px rgba(0,0,0,0.55))" }} />;
-        })}
-      </div>
-      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.46), top: pick(H * 0.74, H * 0.7), display: "flex", flexDirection: v ? "column" : "row", gap: 22 }}>
-        {([["truck", "Giao hàng toàn quốc"], ["pond", "Kỹ thuật viên đồng hành tại ao"]] as const).map(([g, t], i) => {
-          const d = Math.round(fps * 0.9) + i * 6;
-          return (
-            <Entrance key={t} delay={d} y={24}>
-              <div style={{ display: "flex", alignItems: "center", gap: 18, padding: "18px 28px 18px 20px", borderRadius: 22, background: "linear-gradient(160deg, rgba(29,90,143,0.4), rgba(4,20,46,0.72))", border: `1px solid ${C.line}` }}>
-                <Glyph kind={g} size={v ? 70 : 60} p={interpolate(frame, [d, d + fps * 0.8], [0, 1], theme.clamp)} color={C.accent} />
-                <span style={{ fontFamily: theme.fonts.body, fontWeight: 600, fontSize: v ? 34 : 28, color: C.text }}>{t}</span>
-              </div>
-            </Entrance>
-          );
-        })}
-      </div>
+      <div style={{ position: "absolute", left: pick(W * 0.14, W * 0.5), top: pick(H * 0.42, H * 0.08) }}><VietnamMap height={pick(H * 0.5, H * 0.84)} delay={6} /></div>
+    </AbsoluteFill>
+  );
+};
+
+const Pond: React.FC<{ dur: number }> = () => {
+  const { W, H, fps, v, pick } = useL();
+  return (
+    <AbsoluteFill>
+      <Copy n="07" kicker="Đồng hành tại ao" title="Kỹ thuật viên theo sát từng vụ nuôi" hero={["theo", "sát"]} width={pick(W * 0.84, W * 0.66)} size={pick(92, 80)} style={{ left: pick(W * 0.08, W * 0.06), top: pick(H * 0.1, H * 0.09) }} />
+      <Entrance delay={Math.round(fps * 0.9)} y={18} style={{ position: "absolute", left: pick(W * 0.08, W * 0.06), top: pick(H * 0.33, H * 0.33), width: pick(W * 0.84, W * 0.6) }}>
+        <p style={{ ...bodyStyle, fontSize: v ? 34 : 28, margin: 0 }}>Hỗ trợ kỹ thuật miễn phí suốt vụ nuôi, từ chuẩn bị ao đến ngày thu hoạch.</p>
+      </Entrance>
+      <div style={{ position: "absolute", left: pick(W * 0.02, W * 0.08), top: pick(H * 0.5, H * 0.43) }}><DeliverArt width={pick(W * 0.96, W * 0.84)} delay={6} /></div>
     </AbsoluteFill>
   );
 };
@@ -418,7 +349,7 @@ export const Close: React.FC<{ dur: number }> = () => {
   );
 };
 
-const SCENES: Record<SceneKey, React.FC<{ dur: number }>> = { intro: Intro, raw: Raw, formula: Formula, line: Line, qc: Qc, team: Team, reach: Reach, close: Close };
+const SCENES: Record<SceneKey, React.FC<{ dur: number }>> = { intro: Intro, raw: Raw, formula: Formula, line: Line, qc: Qc, team: Team, reach: Reach, pond: Pond, close: Close };
 
 export const FactoryFilm: React.FC<{ cut: Cut }> = ({ cut }) => {
   const frame = useCurrentFrame();

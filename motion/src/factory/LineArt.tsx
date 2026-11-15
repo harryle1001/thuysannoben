@@ -1,6 +1,7 @@
 // Hand-drawn line-art illustrations for FactoryFilm (generic process drawings, not pictures of a real plant).
 import React from "react";
-import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { PACK_ORDER, PackIcon } from "./Vector";
 import { rand, TAU, theme } from "../theme";
 
 const C = theme.colors;
@@ -94,7 +95,7 @@ export const FormulaArt: React.FC<{ size: number; delay?: number }> = ({ size, d
 };
 
 // ---------------- Automated line: weigh → mix → pack, products roll off the end ----------------
-export const LineArt: React.FC<{ width: number; products: string[]; delay?: number; labels?: boolean }> = ({ width, products, delay = 0, labels = true }) => {
+export const LineArt: React.FC<{ width: number; delay?: number; labels?: boolean }> = ({ width, delay = 0, labels = true }) => {
   const f = useCurrentFrame() - delay;
   const { fps } = useVideoConfig();
   const VBW = 1600, VBH = 560;
@@ -228,19 +229,16 @@ export const LineArt: React.FC<{ width: number; products: string[]; delay?: numb
           </g>
         )}
       </svg>
-      {/* real products roll off the end of the line */}
-      {products.slice(0, 6).map((src, i) => {
-        const k = ((t - 0.8) / 1.25 - i / 6 * 0) ;
+      {/* finished packs roll off the end of the line */}
+      {PACK_ORDER.map((kind, i) => {
         const slotT = (t * 0.55 + i / 6) % 1;
         const x = interpolate(slotT, [0, 1], [1300, 1620]);
         const o = Math.min(1, slotT * 6, (1 - slotT) * 5) * ramp(f, fps * 1.2, fps * 2);
         const s = width / VBW;
-        void k;
         return (
-          <Img key={src} src={staticFile(src)} style={{
-            position: "absolute", height: 150 * s, left: x * s, top: (beltY - 150) * s, opacity: o,
-            transform: "translateX(-50%)", filter: "drop-shadow(0 12px 18px rgba(0,0,0,0.5))",
-          }} />
+          <div key={i} style={{ position: "absolute", left: x * s, top: (beltY - 130) * s, opacity: o, transform: "translateX(-50%)" }}>
+            <PackIcon kind={kind} h={130 * s} tone={i} />
+          </div>
         );
       })}
     </div>

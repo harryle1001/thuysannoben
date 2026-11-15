@@ -8,7 +8,8 @@ import { Fonts } from "../components/Fonts";
 import { Entrance, SceneExit, WordReveal } from "../components/Motion";
 import { Bubbles, DeepWater, Finish, GodRays, Plankton, Surface } from "../components/Ocean";
 import { IntakeArt, LineArt } from "../factory/LineArt";
-import { FACTORY_PRODUCTS, slot } from "../factory/media";
+import { slot } from "../factory/media";
+import { Badge, PACK_ORDER, PackIcon } from "../factory/Vector";
 import { DeliverArt, OutQCArt, SafetyGlyph, SealArt } from "../factory/ProcessArt";
 import { HarvestStage } from "../factory/Harvest";
 import timing from "../factory/timing.json";
@@ -114,7 +115,7 @@ const Produce: React.FC<{ dur: number }> = ({ dur }) => {
         <Glass key={m.src} x={pick(W * 0.08 + i * W * 0.43, W * 0.62 + i * 0)} y={pick(H * 0.5, H * 0.08 + i * H * 0.0)} w={pick(W * 0.41, W * 0.32)} h={pick(W * 0.41 * 0.5625, W * 0.32 * 0.5625)} delay={10 + i * 5} caption={m.caption}><Media m={m} dur={dur} seed={i} /></Glass>
       ))}
       <div style={{ position: "absolute", left: pick(0, W * 0.06), top: pick(H * 0.56, H * 0.44) }}>
-        <LineArt width={pick(W, W * 0.88)} products={FACTORY_PRODUCTS} delay={6} />
+        <LineArt width={pick(W, W * 0.88)} delay={6} />
       </div>
     </AbsoluteFill>
   );
@@ -125,7 +126,6 @@ const LABEL = ["Thành phần", "Công dụng", "Liều dùng", "Ngày sản xu�
 const Pack: React.FC<{ dur: number }> = () => {
   const frame = useCurrentFrame();
   const { W, H, fps, v, pick } = useL();
-  const shown = FACTORY_PRODUCTS.slice(0, 3);
   return (
     <AbsoluteFill>
       <Copy n="03" kicker="Đóng gói" title="Đóng gói khép kín, nhãn ghi đầy đủ" hero={["khép", "kín,"]} width={pick(W * 0.84, W * 0.36)} size={pick(92, 80)}
@@ -152,9 +152,9 @@ const Pack: React.FC<{ dur: number }> = () => {
       </Entrance>
       {/* real packs land under the label */}
       <div style={{ position: "absolute", left: pick(W * 0.53, W * 0.09), top: pick(H * 0.79, H * 0.62), display: "flex", gap: 10, alignItems: "flex-end" }}>
-        {shown.map((src, i) => {
+        {PACK_ORDER.slice(0, 3).map((k, i) => {
           const p = spring({ frame: frame - Math.round(fps * 2.6) - i * 5, fps, config: theme.spring.smooth });
-          return <Img key={src} src={staticFile(src)} style={{ height: pick(200, 190), opacity: p, transform: `translateY(${(1 - p) * 60}px)`, filter: "drop-shadow(0 16px 20px rgba(0,0,0,0.55))" }} />;
+          return <div key={i} style={{ opacity: p, transform: `translateY(${(1 - p) * 60}px)` }}><PackIcon kind={k} h={pick(190, 180)} tone={i} /></div>;
         })}
       </div>
     </AbsoluteFill>
@@ -165,22 +165,15 @@ const Pack: React.FC<{ dur: number }> = () => {
 const OutQc: React.FC<{ dur: number }> = () => {
   const frame = useCurrentFrame();
   const { W, H, fps, v, pick } = useL();
-  const certs = slot("qc").slice(0, 2);
   return (
     <AbsoluteFill>
       <Copy n="04" kicker="Kiểm tra đầu ra" title="Đạt chuẩn mới được xuất xưởng" hero={["Đạt", "chuẩn"]} width={pick(W * 0.84, W * 0.5)} size={pick(92, 80)}
         body="Thành phẩm được kiểm tra chất lượng theo hệ thống quản lý ISO 9001:2015 trước khi giao đi." style={{ left: pick(W * 0.08, W * 0.06), top: pick(H * 0.08, H * 0.08) }} />
-      {certs.map((m, i) => {
-        const p = spring({ frame: frame - Math.round(fps * 0.6) - i * 6, fps, config: theme.spring.smooth });
-        const w = pick(200, 190), h = w * 1.3;
-        return (
-          <div key={m.src} style={{ position: "absolute", left: pick(W * 0.56 + i * (w + 24), W * 0.66 + i * (w + 30)), top: pick(H * 0.3, H * 0.07), width: w, height: h, borderRadius: 10, overflow: "hidden", background: "#f5f3ee", opacity: p, transform: `translateY(${(1 - p) * 50}px) rotate(${(i ? 4 : -4) * p}deg)`, boxShadow: "0 30px 60px -24px rgba(0,0,0,0.8)" }}>
-            <Img src={staticFile(m.src)} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-          </div>
-        );
-      })}
-      {!v && <Entrance delay={Math.round(fps * 1.2)} y={16} style={{ position: "absolute", left: W * 0.66, top: H * 0.07 + 190 * 1.3 + 24 }}><span style={{ ...bodyStyle, fontSize: 22 }}>ISO 9001:2015 · Hợp quy VinaCert</span></Entrance>}
-      <div style={{ position: "absolute", left: pick(0, W * 0.05), top: pick(H * 0.55, H * 0.46) }}><OutQCArt width={pick(W, W * 0.9)} products={FACTORY_PRODUCTS} delay={8} /></div>
+      <div style={{ position: "absolute", left: pick(W * 0.5, W * 0.62), top: pick(H * 0.3, H * 0.05), display: "flex", gap: 30 }}>
+        <Badge size={pick(220, 250)} top="QUẢN LÝ CHẤT LƯỢNG ·" big="ISO" sub="9001:2015" delay={Math.round(fps * 0.5)} />
+        {!v && <Badge size={250} top="THỨC ĂN BỔ SUNG ·" big="HỢP QUY" sub="VinaCert" delay={Math.round(fps * 0.8)} color={C.primary} />}
+      </div>
+      <div style={{ position: "absolute", left: pick(0, W * 0.05), top: pick(H * 0.55, H * 0.46) }}><OutQCArt width={pick(W, W * 0.9)} delay={8} /></div>
     </AbsoluteFill>
   );
 };
