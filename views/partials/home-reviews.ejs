@@ -1,0 +1,15 @@
+<%# Shown only when at least 3 approved reviews exist (routes.js passes an empty list otherwise). %>
+<% if (homeReviews.length >= 3) { %>
+<section class="section" aria-labelledby="home-rv-title">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="home-rv-title" class="h2">Bà con nói gì về Noben</h2>
+        <p class="section-head__lead">Đánh giá thật từ người nuôi và đại lý đã dùng sản phẩm, được Noben duyệt trước khi đăng.</p>
+      </div>
+      <a class="text-link" href="/danh-gia">Xem tất cả đánh giá</a>
+    </header>
+    <%- include('review-list', { list: homeReviews, showProduct: true }) %>
+  </div>
+</section>
+<% } %>

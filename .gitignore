@@ -11,3 +11,5 @@ motion/node_modules/
 motion/out/
 data/indexnow-sent.json
 data/lead-status.json
+data/reviews.json
+data/review-photos/

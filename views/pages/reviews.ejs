@@ -1,0 +1,110 @@
+<%- include('../partials/header') %>
+<%
+  const v = (k) => (values[k] == null ? '' : values[k]);
+  const sel = pick ? pick.slug : v('product');
+  const err = (k) => (errors[k] ? ' field--invalid' : '');
+%>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Đánh giá']] }) %>
+    <h1 class="khead__title">Đánh giá sản phẩm Noben</h1>
+    <p class="khead__lead">Bà con và đại lý đã dùng sản phẩm Noben, xin chia sẻ kết quả thật tại ao. Mỗi đánh giá được Noben đọc và duyệt trước khi đăng; số điện thoại chỉ để xác minh, không công khai.</p>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap rvpage">
+    <div class="rvpage__form">
+      <% if (sent) { %>
+      <div class="form form--card rvpage__thanks" role="status">
+        <h2 class="form__title">Cảm ơn bạn đã gửi đánh giá</h2>
+        <p>Noben đã nhận đánh giá và sẽ đăng sau khi duyệt. Kỹ thuật viên có thể gọi lại để hỏi thêm về ao của bạn.</p>
+        <p><a class="btn btn--line" href="/danh-gia">Gửi thêm đánh giá khác</a></p>
+      </div>
+      <% } else { %>
+      <form class="form form--card" action="/danh-gia" method="post" enctype="multipart/form-data" data-review-form novalidate>
+        <h2 class="form__title">Gửi đánh giá của bạn</h2>
+        <% if (pick) { %>
+        <p class="rvpage__pick"><%- img(pick.shot, { alt: '', sizes: '48px' }) %><span>Bạn đang đánh giá<br><strong><%= pick.name %></strong></span></p>
+        <% } %>
+        <div class="field<%= err('product') %>"<% if (pick) { %> hidden<% } %>>
+          <label for="rv-product">Sản phẩm đã dùng</label>
+          <select id="rv-product" name="product" required>
+            <option value="">Chọn sản phẩm</option>
+            <% groups.forEach((g) => { %><optgroup label="<%= g.name %>"><% g.items.forEach((p) => { %><option value="<%= p.slug %>"<%= sel === p.slug ? ' selected' : '' %>><%= p.name %></option><% }) %></optgroup><% }) %>
+            <option value="khac"<%= sel === 'khac' ? ' selected' : '' %>>Nhiều sản phẩm / sản phẩm khác</option>
+          </select>
+          <p class="field__error" data-error-for="product"><%= errors.product || '' %></p>
+        </div>
+
+        <fieldset class="field rv-stars<%= err('stars') %>">
+          <legend>Bạn chấm mấy sao?</legend>
+          <div class="rv-stars__row">
+            <% for (let i = 5; i >= 1; i--) { %><input type="radio" id="rv-s<%= i %>" name="stars" value="<%= i %>"<%= Number(v('stars')) === i ? ' checked' : '' %>><label for="rv-s<%= i %>" title="<%= i %> sao"><span aria-hidden="true">★</span><span class="sr-only"><%= i %> sao</span></label><% } %>
+          </div>
+          <p class="field__error" data-error-for="stars"><%= errors.stars || '' %></p>
+        </fieldset>
+
+        <div class="field<%= err('text') %>">
+          <label for="rv-text">Kết quả bạn thấy tại ao</label>
+          <textarea id="rv-text" name="text" rows="5" maxlength="1500" required placeholder="Ví dụ: Ao bạt 1.000 m², tôm 40 ngày bị phân trắng. Dùng theo hướng dẫn trên nhãn, sau mấy ngày thấy…"><%= v('text') %></textarea>
+          <p class="field__error" data-error-for="text"><%= errors.text || '' %></p>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="rv-salute">Xưng hô</label>
+            <select id="rv-salute" name="salute"><% salutes.forEach((s) => { %><option<%= v('salute') === s ? ' selected' : '' %>><%= s %></option><% }) %></select>
+          </div>
+          <div class="field<%= err('name') %>">
+            <label for="rv-name">Họ tên</label>
+            <input id="rv-name" name="name" autocomplete="name" required minlength="2" value="<%= v('name') %>">
+            <p class="field__help" data-review-preview>Hiển thị dạng "Anh Minh".</p>
+            <p class="field__error" data-error-for="name"><%= errors.name || '' %></p>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field<%= err('province') %>">
+            <label for="rv-province">Tỉnh, thành</label>
+            <input id="rv-province" name="province" autocomplete="address-level1" required value="<%= v('province') %>" placeholder="Ví dụ: Bạc Liêu">
+            <p class="field__error" data-error-for="province"><%= errors.province || '' %></p>
+          </div>
+          <div class="field">
+            <label for="rv-role">Bạn là</label>
+            <select id="rv-role" name="role"><% roles.forEach((r) => { %><option<%= v('role') === r ? ' selected' : '' %>><%= r %></option><% }) %></select>
+          </div>
+        </div>
+        <div class="field<%= err('phone') %>">
+          <label for="rv-phone">Số điện thoại <span class="opt">(không công khai, chỉ để xác minh)</span></label>
+          <input id="rv-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required value="<%= v('phone') %>">
+          <p class="field__error" data-error-for="phone"><%= errors.phone || '' %></p>
+        </div>
+        <div class="field">
+          <label for="rv-photos">Ảnh ao hoặc ảnh tôm <span class="opt">(không bắt buộc, tối đa <%= maxPhotos %> ảnh JPG, PNG, WebP, mỗi ảnh dưới 5 MB)</span></label>
+          <input id="rv-photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple data-review-photos>
+          <p class="field__help" data-review-photo-note>Ảnh được nén nhỏ trước khi gửi, thông tin vị trí trong ảnh bị xóa.</p>
+          <p class="field__error" data-error-for="photos"></p>
+        </div>
+        <label class="rv-consent<%= err('consent') %>"><input type="checkbox" name="consent" value="1"> Tôi đồng ý cho Noben đăng đánh giá này kèm tên gọi và tỉnh (không đăng số điện thoại).</label>
+        <p class="field__error" data-error-for="consent"><%= errors.consent || '' %></p>
+        <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" name="t" value="<%= Date.now() %>">
+        <button class="btn btn--sun btn--block" type="submit">Gửi đánh giá</button>
+        <p class="form__status" role="status" data-form-status></p>
+        <noscript><p class="field__help">Trình duyệt tắt JavaScript: ảnh được gửi nguyên bản, hãy chọn ảnh nhỏ.</p></noscript>
+      </form>
+      <% } %>
+    </div>
+
+    <div class="rvpage__list">
+      <h2 class="h3"><%= sum ? `${sum.count} đánh giá, trung bình ${String(sum.avg).replace('.', ',')}/5` : 'Chưa có đánh giá được đăng' %></h2>
+      <% if (list.length) { %>
+      <%- include('../partials/review-list', { list, showProduct: true }) %>
+      <% } else { %>
+      <p class="lead">Noben mới mở mục đánh giá. Đánh giá đầu tiên của bạn sẽ hiện ở đây sau khi được duyệt.</p>
+      <% } %>
+    </div>
+  </div>
+</section>
+<script src="/js/review.js?v=1" defer></script>
+<%- include('../partials/footer') %>

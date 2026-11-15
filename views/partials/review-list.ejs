@@ -1,0 +1,19 @@
+<%# Approved reviews only. Options: list, showProduct %>
+<ul class="rv-list">
+  <% list.forEach((r) => { %>
+  <li class="rv">
+    <p class="rv__stars" aria-label="<%= r.stars %> trên 5 sao"><% for (let i = 1; i <= 5; i++) { %><span class="<%= i <= r.stars ? 'is-on' : '' %>" aria-hidden="true">★</span><% } %></p>
+    <blockquote class="rv__text"><% r.text.split('\n').filter(Boolean).forEach((line) => { %><p><%= line %></p><% }) %></blockquote>
+    <% if (r.photoUrls.length) { %>
+    <div class="rv__photos" data-gallery>
+      <% r.photoUrls.forEach((u, i) => { %><a href="<%= u %>" data-lb="<%= u %>" data-caption="Ảnh ao của <%= r.display %>, <%= r.province %>"><img src="<%= u %>" alt="Ảnh ao nuôi do <%= r.display %> gửi" width="120" height="90" loading="lazy" decoding="async"></a><% }) %>
+    </div>
+    <% } %>
+    <footer class="rv__by">
+      <strong><%= r.display %></strong> · <%= r.role %>, <%= r.province %>
+      <% if (locals.showProduct && r.productInfo) { %><br>Đã dùng <a href="<%= r.productInfo.url %>"><%= r.productInfo.name %></a><% } %>
+      <time datetime="<%= (r.approvedAt || r.at).slice(0, 10) %>"><%= new Date(r.at).toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) %></time>
+    </footer>
+  </li>
+  <% }) %>
+</ul>

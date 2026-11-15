@@ -148,6 +148,8 @@
   </div>
 </section>
 
+<%- include('../partials/home-reviews', { homeReviews: locals.homeReviews || [] }) %>
+
 <%- include('../partials/showcase', { items: showcase, id: 'featured', title: 'Sản phẩm bà con tin dùng', lead: 'Kéo qua lại để ngắm từng sản phẩm, bấm vào sản phẩm ở giữa để xem công dụng và liều dùng.' }) %>
 
 <section class="section section--tint" aria-labelledby="kt-title">

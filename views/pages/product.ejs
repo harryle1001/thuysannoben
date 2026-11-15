@@ -119,6 +119,8 @@
 </section>
 <% } %>
 
+<%- include('../partials/product-reviews', { p, reviews: locals.reviews || [] }) %>
+
 <% if (articles.length) { %>
 <section class="section section--tint" aria-labelledby="art-title">
   <div class="wrap">

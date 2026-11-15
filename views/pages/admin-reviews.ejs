@@ -1,0 +1,50 @@
+<%- include('../partials/header') %>
+<section class="section section--top-tight">
+  <div class="wrap arv">
+    <h1 class="page-head__title">Duyệt đánh giá của khách</h1>
+    <p class="lead"><%= list.length %> đánh giá, <strong><%= pending %></strong> đang chờ duyệt. Nên gọi số điện thoại của khách để xác minh trước khi duyệt. Chỉ đánh giá đã duyệt mới hiện trên website. <a href="/quan-tri/lien-he">Khách liên hệ</a></p>
+    <% if (saved) { %><p class="form__status <%= saved === 'fail' ? 'is-error' : 'is-ok' %>" role="status"><%= ({ approve: 'Đã duyệt, đánh giá đã hiện trên website.', unapprove: 'Đã chuyển về chờ duyệt.', delete: 'Đã xóa đánh giá và ảnh.', fail: 'Không thực hiện được.' })[saved] || 'Đã lưu.' %></p><% } %>
+
+    <section class="aleads__box arv__link" data-review-link>
+      <h2 class="h3">Link xin đánh giá gửi khách qua Zalo</h2>
+      <div class="form__row">
+        <div class="field">
+          <label for="arv-sp">Sản phẩm khách đã mua</label>
+          <select id="arv-sp" data-review-link-sp><option value="">Không chọn (khách tự chọn)</option><% products.forEach((p) => { %><option value="<%= p.slug %>" data-name="<%= p.name %>"><%= p.name %></option><% }) %></select>
+        </div>
+        <div class="field">
+          <label for="arv-url">Link</label>
+          <input id="arv-url" readonly value="<%= siteUrl %>/danh-gia" data-review-link-url>
+        </div>
+      </div>
+      <div class="field">
+        <label for="arv-msg">Tin nhắn mẫu</label>
+        <textarea id="arv-msg" rows="4" readonly data-review-link-msg>Dạ, Noben cảm ơn anh/chị đã tin dùng sản phẩm. Sau khi dùng, anh/chị thấy ao và tôm thế nào, cho Noben xin vài dòng đánh giá thật tại đây nhé (khoảng 1 phút, số điện thoại không công khai): <%= siteUrl %>/danh-gia</textarea>
+      </div>
+      <button class="btn btn--blue" type="button" data-review-link-copy>Chép tin nhắn</button>
+      <span class="field__help" role="status" data-review-link-status></span>
+    </section>
+
+    <% if (!list.length) { %><p>Chưa có đánh giá nào.</p><% } %>
+    <ul class="arv__list">
+      <% list.forEach((r) => { %>
+      <li class="arv__item is-<%= r.status %>">
+        <p class="arv__head"><span class="arv__badge"><%= r.status === 'approved' ? 'Đã duyệt' : 'Chờ duyệt' %></span> <strong><%= r.stars %>★</strong> · <%= r.productInfo ? r.productInfo.name : 'Nhiều sản phẩm / khác' %> · <%= new Date(r.at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) %></p>
+        <p><strong><%= r.name %></strong> (hiển thị: <%= r.display %>) · <%= r.role %>, <%= r.province %> · <a href="<%= tel(r.phone) %>"><%= r.phone %></a></p>
+        <blockquote class="rv__text"><% r.text.split('\n').filter(Boolean).forEach((line) => { %><p><%= line %></p><% }) %></blockquote>
+        <% if (r.photoUrls.length) { %><div class="rv__photos" data-gallery><% r.photoUrls.forEach((u) => { %><a href="<%= u %>" data-lb="<%= u %>" data-caption="Ảnh của <%= r.display %>"><img src="<%= u %>" alt="" width="120" height="90" loading="lazy"></a><% }) %></div><% } %>
+        <div class="arv__actions">
+          <% if (r.status === 'pending') { %>
+          <form method="post" action="/quan-tri/danh-gia"><input type="hidden" name="id" value="<%= r.id %>"><input type="hidden" name="action" value="approve"><button class="btn btn--blue" type="submit">Duyệt và đăng</button></form>
+          <% } else { %>
+          <form method="post" action="/quan-tri/danh-gia"><input type="hidden" name="id" value="<%= r.id %>"><input type="hidden" name="action" value="unapprove"><button class="btn btn--line" type="submit">Gỡ xuống (chờ duyệt)</button></form>
+          <% } %>
+          <form method="post" action="/quan-tri/danh-gia" data-confirm="Xóa hẳn đánh giá này và ảnh kèm theo?"><input type="hidden" name="id" value="<%= r.id %>"><input type="hidden" name="action" value="delete"><button class="btn btn--line arv__del" type="submit">Xóa</button></form>
+        </div>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
+<script src="/js/admin-reviews.js?v=1" defer></script>
+<%- include('../partials/footer') %>

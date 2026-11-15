@@ -1595,3 +1595,97 @@ html.lenis { scroll-behavior: auto; }
 .pv__toggle:focus-visible { outline: 2px solid #ffc20e; outline-offset: 2px; }
 .pv__toggle .ico { width: 16px; height: 16px; }
 @media (min-width: 960px) { .pv__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 8fr); } }
+
+/* ---------- Đánh giá khách hàng (/danh-gia, trang sản phẩm, trang chủ) ---------- */
+.rv-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
+@media (min-width: 760px) { .section .rv-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .rvpage .rv-list { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 1100px) { .section > .wrap > .rv-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.rv { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-m); padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-3); min-width: 0; }
+.rv__stars { margin: 0; letter-spacing: 2px; font-size: 1.15rem; color: var(--line-strong); }
+.rv__stars .is-on { color: var(--sun-600); }
+.rv__text { margin: 0; color: var(--text); overflow-wrap: anywhere; }
+.rv__text p { margin: 0 0 0.5em; }
+.rv__photos { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.rv__photos a { display: block; border-radius: var(--radius-s); overflow: hidden; cursor: zoom-in; }
+.rv__photos img { width: 120px; height: 90px; object-fit: cover; display: block; }
+.rv__by { margin-top: auto; font-size: 0.9rem; color: var(--muted); }
+.rv__by strong { color: var(--heading); }
+.rv__by time { display: block; font-size: 0.8rem; }
+.rvpage { display: grid; gap: var(--space-7); }
+@media (min-width: 1000px) { .rvpage { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: start; } .rvpage__form { position: sticky; top: calc(var(--header-h) + 20px); } }
+.rvpage__list > .h3 { margin-bottom: var(--space-4); }
+.rvpage__pick { display: flex; align-items: center; gap: var(--space-3); margin: 0 0 var(--space-4); padding: var(--space-3); border-radius: var(--radius-s); background: var(--blue-050); color: var(--ink); }
+.rvpage__pick img { width: 48px; height: auto; }
+.rvpage__thanks p { margin-top: var(--space-3); }
+.rv-stars { border: 0; padding: 0; margin: 0; min-width: 0; }
+.rv-stars legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+.rv-stars__row { display: inline-flex; flex-direction: row-reverse; gap: 4px; justify-self: start; width: max-content; }
+.field[hidden] { display: none; }
+.rvpage .form__row { align-items: start; }
+.rv-stars__row input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.rv-stars__row label { font-size: 2.1rem; line-height: 1; color: var(--line-strong); cursor: pointer; padding: 2px; border-radius: var(--radius-s); }
+.rv-stars__row input:checked ~ label, .rv-stars__row label:hover, .rv-stars__row label:hover ~ label { color: var(--sun-600); }
+.rv-stars__row input:focus-visible + label { outline: 3px solid var(--sun); outline-offset: 2px; }
+.rv-consent { display: flex; gap: var(--space-2); align-items: flex-start; font-size: 0.92rem; }
+.rv-consent input { margin-top: 4px; width: 18px; height: 18px; flex: none; }
+.arv__list { list-style: none; padding: 0; margin: var(--space-6) 0 0; display: grid; gap: var(--space-4); }
+.arv__item { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--sun); border-radius: var(--radius-m); padding: var(--space-5); display: grid; gap: var(--space-3); }
+.arv__item.is-approved { border-left-color: var(--ok); }
+.arv__head { margin: 0; font-size: 0.9rem; color: var(--muted); }
+.arv__badge { display: inline-block; padding: 2px 8px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-weight: 600; color: var(--heading); }
+.arv__actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.arv__del { color: var(--danger); }
+.arv__link { margin-top: var(--space-5); display: grid; gap: var(--space-3); }
+.arv__link textarea, .arv__link input { width: 100%; }
+
+/* ---------- Lịch chăm sóc tôm (/lich-cham-soc) ---------- */
+.care { display: grid; gap: var(--space-6); }
+@media (min-width: 960px) { .care { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); align-items: start; } .care__form { position: sticky; top: calc(var(--header-h) + 20px); } }
+.care__pond { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.care__pond legend { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; width: 100%; }
+.care__opt { position: relative; flex: 1 1 120px; }
+.care__opt input { position: absolute; opacity: 0; }
+.care__opt span { display: block; text-align: center; padding: 12px 14px; border: 1.5px solid var(--line-strong); border-radius: var(--radius-s); font-weight: 600; cursor: pointer; background: var(--field-bg); color: var(--heading); }
+.care__opt input:checked + span { background: var(--selected-bg); border-color: var(--selected-bg); color: var(--selected-fg); }
+.care__opt input:focus-visible + span { outline: 3px solid var(--sun); outline-offset: 2px; }
+.care__out { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-l); padding: var(--space-6) var(--space-5); min-width: 0; }
+.care__out:focus { outline: none; }
+.care__empty p { color: var(--muted); margin-top: var(--space-2); }
+.care__age { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; color: var(--muted); font-weight: 600; }
+.care__age strong { font-family: var(--font-display); font-size: var(--step-5); line-height: 1; color: var(--heading); }
+.care__meta { color: var(--muted); font-size: 0.9rem; margin: var(--space-2) 0 0; }
+.care__stage { margin-top: var(--space-5); padding: var(--space-4); border-radius: var(--radius-m); background: var(--blue-050); color: var(--ink); }
+.care__stage .h3 { color: var(--ink); }
+.care__stage p { margin: var(--space-2) 0 0; }
+.care__stage progress { width: 100%; height: 10px; margin-top: var(--space-3); accent-color: var(--blue); }
+.care__label { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 4px !important; }
+.care__watch { margin: var(--space-4) 0 0; padding: var(--space-3) var(--space-4); border-left: 4px solid var(--sun); background: color-mix(in srgb, var(--sun) 14%, var(--surface)); border-radius: var(--radius-s); }
+.care__h { font-weight: 600; font-size: var(--step-1); color: var(--heading); margin: var(--space-6) 0 var(--space-3); }
+.care__tasks, .care__daily ul, .care-step__tasks { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.care__daily { margin-top: var(--space-4); }
+.care__daily summary { cursor: pointer; font-weight: 600; color: var(--link); }
+.care__daily ul { margin-top: var(--space-2); }
+.care__note { color: var(--muted); font-size: 0.9rem; margin: var(--space-5) 0 0; }
+.care-pick { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+@media (min-width: 600px) { .care-pick { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.care-pick li { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; min-width: 0; }
+.care-pick__card { display: flex; gap: var(--space-3); padding: var(--space-3); text-decoration: none; color: var(--text); flex: 1; }
+.care-pick__card:hover strong { color: var(--link); }
+.care-pick__card img { width: 48px; height: auto; flex: none; align-self: flex-start; border-radius: 4px; }
+.care-pick__card span { display: grid; gap: 2px; min-width: 0; }
+.care-pick__card strong { color: var(--heading); }
+.care-pick__card small { color: var(--muted); font-size: 0.85rem; }
+.care-pick__card em { font-style: normal; font-size: 0.85rem; color: var(--link); font-weight: 600; }
+.care-pick__dose { display: block; text-align: center; padding: 8px; border-top: 1px solid var(--line); font-weight: 600; font-size: 0.9rem; text-decoration: none; background: var(--paper); }
+.care__remind { display: grid; gap: var(--space-6); }
+@media (min-width: 900px) { .care__remind { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: center; } }
+.care-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); counter-reset: cs; }
+@media (min-width: 800px) { .care-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1200px) { .care-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.care-step { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: var(--radius-m); padding: var(--space-5); display: grid; gap: var(--space-3); align-content: start; min-width: 0; }
+.care-step__goal { color: var(--muted); margin: 0; }
+.care-step__products { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.care-step__products a { display: inline-block; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line-strong); font-size: 0.85rem; font-weight: 600; text-decoration: none; }
+.care-env { display: grid; gap: var(--space-5); margin-top: var(--space-7); }
+@media (min-width: 900px) { .care-env { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: start; } .care-env .table-wrap { margin-top: 0; } }
+.care-env__pond { margin: var(--space-3) 0 0; color: var(--text); }

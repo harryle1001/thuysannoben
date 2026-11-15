@@ -1,0 +1,112 @@
+{
+  "_note": "Nội dung lấy từ các bài /bai-viet/lich-cham-soc-tom-the-theo-ngay-tuoi, /bai-viet/quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong, /bai-viet/ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao và khối giai đoạn ở trang chủ. Không ghi liều: liều xem trên trang sản phẩm.",
+  "daily": [
+    "Đo pH sáng và chiều, đo oxy hòa tan lúc sáng sớm.",
+    "Kiểm tra nhá sau mỗi cữ ăn, quan sát đường ruột và gan tụy.",
+    "Quan sát màu nước, tôm dạt bờ, tôm nổi đầu.",
+    "Ghi chép lượng thức ăn, thuốc đã dùng và chỉ tiêu môi trường."
+  ],
+  "pond": {
+    "bat": {
+      "name": "Ao bạt",
+      "tasks": [
+        { "from": 15, "text": "Từ tuần thứ 3: xi phông đáy hằng ngày hoặc cách ngày; khi tôm lớn, cho ăn nhiều có thể xi phông 2 lần mỗi ngày." },
+        { "from": 1, "text": "Làm sạch nhớt bạt bằng vi sinh chuyên tẩy nhớt bạt như AMYLAC hoặc CLEAR 12H, theo lịch khoảng 3 ngày một lần." },
+        { "from": 1, "text": "Ao bạt không có khoáng từ đất: tạt khoáng chuyên dùng cho ao bạt như KALIMIX, RIMIX thường xuyên, nhất là khi tôm lột." },
+        { "from": 1, "text": "Giữ oxy hòa tan luôn trên 5 mg/L, có máy phát điện dự phòng và oxy viên để cấp cứu." }
+      ],
+      "products": ["amylac", "clear-12h", "kalimix", "rimix"]
+    },
+    "dat": {
+      "name": "Ao đất",
+      "tasks": [
+        { "from": 1, "text": "Duy trì vi sinh xử lý đáy định kỳ để phân hủy chất thải, giữ đáy sạch (ao đất không xi phông được như ao bạt)." },
+        { "from": 1, "text": "Quạt nước gom chất thải vào giữa ao, theo dõi đáy ao sau mưa và khi tảo tàn." }
+      ],
+      "products": ["aqua-bac", "nb-biopond", "bzt"]
+    }
+  },
+  "watch": [
+    { "from": 10, "to": 45, "text": "Tôm đang trong giai đoạn dễ mắc bệnh hoại tử gan tụy cấp và chết sớm (10 đến 45 ngày). Theo dõi kỹ gan tụy mỗi ngày.", "link": "/bai-viet/benh-hoai-tu-gan-tuy-cap-ems-tren-tom", "linkText": "Dấu hiệu bệnh gan tụy cấp" },
+    { "from": 30, "to": 70, "text": "Tôm đang trong giai đoạn dễ gặp phân trắng (30 đến 70 ngày). Kiểm tra máng ăn và phân nổi mặt nước.", "link": "/bai-viet/benh-phan-trang-tren-tom-the", "linkText": "Nhận biết bệnh phân trắng" }
+  ],
+  "stages": [
+    {
+      "id": "chuan-bi",
+      "from": -60,
+      "to": 0,
+      "name": "Chuẩn bị ao",
+      "goal": "Diệt tạp, diệt khuẩn nguồn nước, gây màu và cấy vi sinh trước khi thả giống.",
+      "tasks": [
+        "Thu dọn, nạo vét đáy (ao đất) hoặc xịt rửa, vá bạt và vệ sinh ống xi phông (ao bạt).",
+        "Bón vôi, phơi đáy đến khi đất nứt chân chim; ao bạt phơi khô hoàn toàn.",
+        "Lấy nước qua túi lọc mịn, để lắng ít nhất 2 đến 3 ngày.",
+        "Diệt ốc, hến và diệt khuẩn nguồn nước; chờ 3 đến 5 ngày cho hết dư lượng hóa chất.",
+        "Giải độc kim loại nặng, phèn; nâng độ kiềm lên 120 mg/L trở lên.",
+        "Gây màu nước, sau 1 đến 2 ngày cấy vi sinh; kiểm tra môi trường trước khi thả."
+      ],
+      "products": ["d-oc", "ben-bkc-80", "edta-99", "miral-n8", "nb-brown-gay-mau-nuoc-mau-tra", "proticbest"],
+      "article": "/bai-viet/quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong",
+      "articleText": "Quy trình cải tạo ao 7 bước"
+    },
+    {
+      "id": "g1",
+      "from": 1,
+      "to": 30,
+      "name": "1 đến 30 ngày: xây nền gan ruột khỏe",
+      "goal": "Xây nền gan ruột khỏe, phòng hoại tử gan tụy và chết sớm.",
+      "tasks": [
+        "Cho ăn thức ăn số nhỏ, 3 đến 4 cữ mỗi ngày.",
+        "Trộn men vi sinh đường ruột vào thức ăn hằng ngày.",
+        "Bổ sung bổ gan 3 đến 4 ngày mỗi tuần.",
+        "Vi sinh xử lý đáy 5 đến 7 ngày một lần."
+      ],
+      "products": ["aqualac-fs", "sorbest", "aqua-bac"],
+      "article": "/bai-viet/lich-cham-soc-tom-the-theo-ngay-tuoi",
+      "articleText": "Lịch chăm sóc chi tiết"
+    },
+    {
+      "id": "g2",
+      "from": 31,
+      "to": 60,
+      "name": "31 đến 60 ngày: phòng phân trắng, giữ khoáng",
+      "goal": "Phòng phân trắng, bổ gan, giữ khoáng và độ kiềm ổn định.",
+      "tasks": [
+        "Tăng số cữ ăn lên 4 cữ, điều chỉnh theo nhá.",
+        "Bổ gan, giải độc gan định kỳ bằng thảo dược.",
+        "Tạt khoáng vào ban đêm, giữ độ kiềm 120 đến 180 mg/L.",
+        "Vi sinh xử lý đáy 3 đến 5 ngày một lần.",
+        "Kiểm tra khí độc NH₃, NO₂ 2 đến 3 lần mỗi tuần."
+      ],
+      "products": ["g7-phong-va-tri-benh-gan-chet-som", "mega-cid", "miral-n8", "aqua-bac"],
+      "article": "/bai-viet/lich-cham-soc-tom-the-theo-ngay-tuoi",
+      "articleText": "Lịch chăm sóc chi tiết"
+    },
+    {
+      "id": "g3",
+      "from": 61,
+      "to": 9999,
+      "name": "Trên 60 ngày đến thu hoạch: tăng trọng, cứng vỏ",
+      "goal": "Tăng trọng, cứng vỏ, giữ đáy sạch và oxy đủ đến ngày thu hoạch.",
+      "tasks": [
+        "Cho ăn 4 đến 5 cữ, tăng cường quạt khí vì nhu cầu oxy cao.",
+        "Trộn khoáng giúp vỏ dày, chống cong thân, đục cơ.",
+        "Vi sinh xử lý đáy 2 đến 3 ngày một lần.",
+        "Trước thu hoạch, dùng khoáng giúp tôm cứng vỏ, sáng màu.",
+        "Ngưng các thuốc có thời gian ngừng thuốc theo hướng dẫn trên nhãn trước khi thu hoạch. Tôm thẻ thường thu sau 75 đến 110 ngày tùy mật độ và cỡ mong muốn."
+      ],
+      "products": ["caphote", "top-weigh", "super-yucca"],
+      "article": "/bai-viet/lich-cham-soc-tom-the-theo-ngay-tuoi",
+      "articleText": "Lịch chăm sóc chi tiết"
+    }
+  ],
+  "env": [
+    ["Nhiệt độ", "28 đến 32°C"],
+    ["pH", "7,5 đến 8,5"],
+    ["Độ kiềm", "120 đến 180 mg/L"],
+    ["Oxy hòa tan", "trên 5 mg/L"],
+    ["NH₃", "dưới 0,1 mg/L"],
+    ["NO₂", "dưới 1 mg/L"],
+    ["Độ trong", "30 đến 40 cm"]
+  ]
+}

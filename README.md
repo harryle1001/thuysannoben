@@ -18,6 +18,8 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
   - Lưu vào `data/leads.jsonl` và gửi email nếu đã cấu hình SMTP.
   - Xem khách liên hệ tại `/quan-tri/lien-he` (có đăng nhập): lọc theo nhu cầu, nguồn quảng cáo, trang gửi, ngày; thống kê 7/30 ngày; xuất CSV; đánh dấu trạng thái (lưu ở `data/lead-status.json`, không vào Git).
 - **Tính liều (`/tinh-lieu`):** nhập diện tích, độ sâu ao (hoặc m³) và kg thức ăn, công cụ đọc liều trên nhãn và tính lượng cần dùng. Kiểm thử bộ đọc liều: `node scripts/test-dose.js`.
+- **Đánh giá của khách (`/danh-gia`):** bà con, đại lý gửi đánh giá (sao, nội dung, tối đa 2 ảnh được nén sang WebP trên điện thoại). Đánh giá mới ở trạng thái chờ duyệt, lưu trong `data/reviews.json` và `data/review-photos/` (không vào Git). Duyệt, gỡ hoặc xóa tại `/quan-tri/danh-gia`; trang này cũng tạo link `/danh-gia?sp=<slug>` và tin nhắn mẫu gửi khách qua Zalo. Chỉ đánh giá đã duyệt mới hiện trên trang sản phẩm, `/danh-gia` và khối "Bà con nói gì về Noben" ở trang chủ (khối này chỉ hiện khi có từ 3 đánh giá đã duyệt). Dữ liệu cấu trúc AggregateRating chỉ có khi sản phẩm có đánh giá thật.
+- **Lịch chăm sóc (`/lich-cham-soc`):** nhập ngày thả giống và loại ao (bạt, đất), trang hiện tuổi tôm, giai đoạn, việc cần làm tuần này và sản phẩm gợi ý. Nội dung ở `content/lich-cham-soc.json`.
 - **SEO:**
   - Có `sitemap.xml`, `robots.txt`, thẻ canonical, Open Graph và dữ liệu cấu trúc (Organization, Product, Article, Breadcrumb).
   - Toàn bộ link của website cũ được **chuyển hướng 301** sang link mới, nên không mất thứ hạng Google.
@@ -108,7 +110,7 @@ Tiếp theo, cấu hình Nginx chuyển tiếp tên miền vào `http://127.0.0.
 
 ### Lưu ý về form liên hệ
 
-Trên gói Business/Cloud, file `data/leads.jsonl` có thể bị xóa mỗi lần deploy lại. Vì vậy hãy cấu hình SMTP để mọi lời nhắn đều được gửi về email.
+Trên gói Business/Cloud, file `data/leads.jsonl` (và đánh giá trong `data/reviews.json`) có thể bị xóa mỗi lần deploy lại. Vì vậy hãy cấu hình SMTP để mọi lời nhắn đều được gửi về email.
 
 ## Sửa nội dung
 

@@ -1,0 +1,17 @@
+<%# Product page: approved reviews for this product, plus a "Gửi đánh giá" link that is always shown. %>
+<section class="section section--top-tight" aria-labelledby="rv-title" id="danh-gia">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="rv-title" class="h2">Đánh giá từ bà con</h2>
+        <% if (reviews.length) { const avg = Math.round(reviews.reduce((s, r) => s + r.stars, 0) / reviews.length * 10) / 10; %>
+        <p class="section-head__lead"><strong><%= String(avg).replace('.', ',') %>/5</strong> từ <%= reviews.length %> đánh giá đã được Noben duyệt.</p>
+        <% } else { %>
+        <p class="section-head__lead">Chưa có đánh giá cho <%= p.name %>. Bạn đã dùng sản phẩm này? Chia sẻ kết quả để giúp bà con khác.</p>
+        <% } %>
+      </div>
+      <a class="btn btn--line" href="/danh-gia?sp=<%= p.slug %>">Gửi đánh giá</a>
+    </header>
+    <% if (reviews.length) { %><%- include('review-list', { list: reviews.slice(0, 6), showProduct: false }) %><% } %>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Kiến thức', '/ky-thuat-nuoi'], ['Lịch chăm sóc tôm']] }) %>
+    <h1 class="khead__title">Lịch chăm sóc tôm theo ngày tuổi</h1>
+    <p class="khead__lead">Nhập ngày thả giống và loại ao. Trang tính tuổi tôm hôm nay, cho biết giai đoạn nuôi, việc cần làm trong tuần và sản phẩm Noben phù hợp với giai đoạn đó.</p>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap care" data-care>
+    <form class="form form--card care__form" data-care-form>
+      <h2 class="form__title">Ao của bạn</h2>
+      <div class="field">
+        <label for="cs-date">Ngày thả giống</label>
+        <input id="cs-date" name="date" type="date" required data-care-date>
+        <p class="field__error" data-care-error></p>
+      </div>
+      <fieldset class="care__pond">
+        <legend>Loại ao</legend>
+        <label class="care__opt"><input type="radio" name="pond" value="bat" checked data-care-pond><span>Ao bạt</span></label>
+        <label class="care__opt"><input type="radio" name="pond" value="dat" data-care-pond><span>Ao đất</span></label>
+      </fieldset>
+      <button class="btn btn--blue btn--block" type="submit">Xem lịch hôm nay</button>
+      <p class="field__help">Ngày thả được lưu trên máy của bạn, lần sau mở lại trang là thấy ngay.</p>
+      <noscript><p class="field__help">Cần bật JavaScript để tính tuổi tôm. Lịch đầy đủ theo giai đoạn ở bên dưới.</p></noscript>
+    </form>
+
+    <div class="care__out" aria-live="polite" data-care-out>
+      <div class="care__empty">
+        <h2 class="h3">Chọn ngày thả giống để bắt đầu</h2>
+        <p>Ví dụ thả ngày 1 tháng này, hôm nay ngày 20 thì tôm được 20 ngày tuổi. Lịch bên dưới cho biết việc cần làm ở từng giai đoạn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="remind-title">
+  <div class="wrap care__remind">
+    <div>
+      <h2 id="remind-title" class="h2">Nhắc tôi qua Zalo</h2>
+      <p class="lead">Để lại số Zalo, Noben gửi tin nhắc việc theo giai đoạn nuôi, cảnh báo thời tiết và dịch bệnh theo mùa. Không gửi quảng cáo dồn dập.</p>
+    </div>
+    <form class="form form--card" action="/lien-he" method="post" data-lead-form data-success="Đã đăng ký. Noben sẽ nhắn lịch chăm sóc qua Zalo cho bạn." novalidate>
+      <div class="form__row">
+        <div class="field"><label for="cr-name">Họ tên</label><input id="cr-name" name="name" autocomplete="name" required minlength="2"><p class="field__error" data-error-for="name"></p></div>
+        <div class="field"><label for="cr-phone">Số Zalo</label><input id="cr-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><p class="field__error" data-error-for="phone"></p></div>
+      </div>
+      <input type="hidden" name="need" value="Đăng ký nhận tin">
+      <input type="hidden" name="message" value="Nhắc lịch chăm sóc tôm" data-care-message>
+      <input type="hidden" name="page" value="/lich-cham-soc" data-page-field>
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn--sun btn--block" type="submit">Nhắc tôi qua Zalo</button>
+      <p class="form__status" role="status" data-form-status></p>
+    </form>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="all-title">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="all-title" class="h2">Lịch theo từng giai đoạn</h2>
+        <p class="section-head__lead">Tóm tắt từ bài <a class="text-link" href="/bai-viet/lich-cham-soc-tom-the-theo-ngay-tuoi">lịch chăm sóc tôm thẻ theo ngày tuổi</a> của đội kỹ thuật Noben. Liều dùng xem trên nhãn từng sản phẩm.</p>
+      </div>
+    </header>
+    <ol class="care-steps">
+      <% stages.forEach((s) => { %>
+      <li class="care-step" id="gd-<%= s.id %>">
+        <h3 class="h3"><%= s.name %></h3>
+        <p class="care-step__goal"><%= s.goal %></p>
+        <ul class="care-step__tasks"><% s.tasks.forEach((t) => { %><li><%= t %></li><% }) %></ul>
+        <ul class="care-step__products">
+          <% s.products.forEach((p) => { %><li><a href="<%= p.url %>"><%= p.name %></a></li><% }) %>
+        </ul>
+      </li>
+      <% }) %>
+    </ol>
+    <div class="care-env">
+      <div>
+        <h3 class="h3">Ao bạt và ao đất khác nhau thế nào</h3>
+        <% Object.values(pond).forEach((pd) => { %>
+        <p class="care-env__pond"><strong><%= pd.name %>:</strong> <%= pd.tasks.map((t) => t.text).join(' ') %></p>
+        <% }) %>
+      </div>
+      <div class="table-wrap">
+        <table class="table">
+          <caption class="sr-only">Ngưỡng môi trường cần giữ</caption>
+          <thead><tr><th>Chỉ tiêu</th><th>Ngưỡng phù hợp</th></tr></thead>
+          <tbody><% care.env.forEach(([k, v]) => { %><tr><td><%= k %></td><td><%= v %></td></tr><% }) %></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="care-data"><%- JSON.stringify(data).replace(/</g, '\\u003c') %></script>
+<script src="/js/care.js?v=1" defer></script>
+<%- include('../partials/footer') %>

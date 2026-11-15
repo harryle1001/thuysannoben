@@ -141,6 +141,7 @@ router.get('/', (req, res) => {
     productCount: c.products.length,
     allProducts: c.products,
     certificates: c.gallery.certificates.slice(0, 4),
+    homeReviews: reviews.approved().length >= 3 ? reviews.approved().slice(0, 6).map(reviewView) : [], // only real, approved reviews
     jsonld: [org(), seo.website()],
   });
 });
@@ -228,6 +229,8 @@ router.get('/san-pham/:slug', (req, res, next) => {
   const related = c.relatedProducts(p, 10);
   const solutions = p.symptoms.map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean);
   const faq = productFaq(p, related, solutions);
+  const productReviews = reviews.approved(p.slug).map(reviewView);
+  const productLd = withRatings(seo.product(p), productReviews);
   res.render('pages/product', {
     meta: { title: productTitle(p), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
     p,
@@ -236,7 +239,8 @@ router.get('/san-pham/:slug', (req, res, next) => {
     articles: c.articlesForProduct(p, 3),
     solutions,
     faq,
-    jsonld: [seo.product(p), crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]]), seo.faqPage(faq)].filter(Boolean),
+    reviews: productReviews,
+    jsonld: [productLd, crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.categoryInfo.name, `/san-pham/nhom/${p.category}`], [p.name, p.url]]), seo.faqPage(faq)].filter(Boolean),
   });
 });
 
@@ -614,6 +618,127 @@ router.post('/quan-tri/lien-he/trang-thai', async (req, res, next) => {
   }
 });
 
+// ---------- Đánh giá của khách hàng (/danh-gia) và lịch chăm sóc tôm (/lich-cham-soc) ----------
+const reviews = require('./reviews');
+const reviewView = (r) => ({ ...r, productInfo: c.productBySlug[r.product] || null, photoUrls: (r.photos || []).map((n) => `/anh-danh-gia/${n}`) });
+// Product schema gets AggregateRating/Review only when real approved reviews exist.
+function withRatings(ld, list) {
+  const sum = reviews.summary(list);
+  if (!sum) return ld;
+  return {
+    ...ld,
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: sum.avg, reviewCount: sum.count, bestRating: 5, worstRating: 1 },
+    review: list.slice(0, 5).map((r) => ({ '@type': 'Review', author: { '@type': 'Person', name: r.display }, datePublished: (r.approvedAt || r.at).slice(0, 10), reviewRating: { '@type': 'Rating', ratingValue: r.stars, bestRating: 5, worstRating: 1 }, reviewBody: r.text })),
+  };
+}
+function renderReviewPage(req, res, extra = {}) {
+  const pick = c.productBySlug[String(req.query.sp || extra.values?.product || '').toLowerCase()] || null;
+  const list = reviews.approved().map(reviewView);
+  res.status(extra.status || 200).render('pages/reviews', {
+    meta: {
+      title: 'Đánh giá sản phẩm Noben từ bà con nuôi tôm và đại lý',
+      description: 'Bà con nuôi tôm và đại lý đã dùng sản phẩm Noben chia sẻ kết quả thực tế tại ao. Gửi đánh giá của bạn để giúp người nuôi khác chọn đúng sản phẩm.',
+      noindex: Boolean(req.query.sp || req.query.da_gui),
+    },
+    pick,
+    list,
+    sum: reviews.summary(list),
+    groups: c.categories.map((cat) => ({ name: cat.name, items: c.products.filter((p) => p.category === cat.slug) })),
+    salutes: reviews.SALUTES,
+    roles: reviews.ROLES,
+    maxPhotos: reviews.MAX_PHOTOS,
+    sent: req.query.da_gui === '1',
+    errors: extra.errors || {},
+    values: extra.values || {},
+    jsonld: [crumbs([['Trang chủ', '/'], ['Đánh giá', '/danh-gia']])],
+  });
+}
+router.get('/danh-gia', (req, res) => renderReviewPage(req, res));
+router.post('/danh-gia', express.raw({ type: 'multipart/form-data', limit: '12mb' }), async (req, res, next) => {
+  try {
+    const json = (req.get('accept') || '').includes('application/json');
+    const isMultipart = Buffer.isBuffer(req.body);
+    const { fields, files } = isMultipart ? reviews.parseMultipart(req.body, req.get('content-type')) : { fields: req.body || {}, files: [] };
+    const sp = c.productBySlug[fields.product] ? fields.product : '';
+    const done = `/danh-gia?da_gui=1${sp ? '&sp=' + sp : ''}`;
+    const quiet = () => (json ? res.json({ ok: true }) : res.redirect(303, done));
+    if (!auth.sameOrigin(req)) return res.status(403).json({ ok: false, message: 'Yêu cầu không hợp lệ.' });
+    if (fields.website) return quiet(); // honeypot
+    const t = Number(fields.t);
+    if (!t || Date.now() - t < 4000) return quiet(); // time trap: bots post within seconds or skip the page script
+    if (reviews.throttled(req.ip)) {
+      const msg = 'Bạn đã gửi nhiều đánh giá liên tiếp. Vui lòng thử lại sau một giờ hoặc nhắn Zalo cho Noben.';
+      return json ? res.status(429).json({ ok: false, message: msg }) : res.status(429).send(msg);
+    }
+    const { review, errors } = reviews.validate(fields, (s) => Boolean(c.productBySlug[s]));
+    if (Object.keys(errors).length) {
+      if (json) return res.status(422).json({ ok: false, errors });
+      return renderReviewPage(req, res, { status: 422, errors, values: review });
+    }
+    if (reviews.looksSpam(review)) return quiet();
+    const p = c.productBySlug[review.product];
+    await reviews.add(review, files.filter((f) => f.name === 'photos'), { ip: req.ip, productName: p ? p.name : 'Khác', adminUrl: `${SITE_URL}/quan-tri/danh-gia` });
+    return quiet();
+  } catch (err) {
+    if (err.type === 'entity.too.large') return res.status(413).send('Ảnh quá lớn. Mỗi ảnh tối đa 5 MB.');
+    next(err);
+  }
+});
+router.get('/anh-danh-gia/:file', (req, res, next) => {
+  const f = reviews.photoPath(req.params.file);
+  if (!f || !(reviews.isApprovedPhoto(req.params.file) || adminOk(req))) return next();
+  res.set('Cache-Control', reviews.isApprovedPhoto(req.params.file) ? 'public, max-age=2592000' : 'private, no-store');
+  res.sendFile(f, (err) => err && next());
+});
+router.get('/quan-tri/danh-gia', (req, res) => {
+  if (!adminOk(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/danh-gia');
+  const list = reviews.listAll().map(reviewView);
+  res.render('pages/admin-reviews', {
+    meta: { title: 'Duyệt đánh giá', noindex: true },
+    list,
+    pending: list.filter((r) => r.status === 'pending').length,
+    products: c.products.map((p) => ({ slug: p.slug, name: p.name })),
+    saved: String(req.query.saved || ''),
+  });
+});
+router.post('/quan-tri/danh-gia', async (req, res, next) => {
+  try {
+    if (!auth.isAdmin(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/danh-gia');
+    if (!auth.sameOrigin(req)) return res.status(403).send('Yêu cầu không hợp lệ.');
+    const id = String(req.body.id || '');
+    const act = String(req.body.action || '');
+    const ok = act === 'delete' ? await reviews.remove(id) : await reviews.setStatus(id, act === 'approve' ? 'approved' : 'pending');
+    res.redirect(303, `/quan-tri/danh-gia?saved=${ok ? act : 'fail'}`);
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Lịch chăm sóc: bà con nhập ngày thả giống, trang tính tuổi tôm và việc cần làm (public/js/care.js).
+const CARE = require('../content/lich-cham-soc.json');
+router.get('/lich-cham-soc', (req, res) => {
+  const pick = (list) => list.map((x) => c.productBySlug[x]).filter(Boolean);
+  const mini = (p) => ({ n: p.name, u: p.url, t: p.tagline, i: p.shot ? p.shot.src : '', d: Boolean(p.dose && p.dose.length), s: p.slug });
+  const stages = CARE.stages.map((s) => ({ ...s, products: pick(s.products) }));
+  const pond = Object.fromEntries(Object.entries(CARE.pond).map(([k, v]) => [k, { ...v, products: pick(v.products) }]));
+  res.render('pages/care', {
+    meta: {
+      title: 'Lịch chăm sóc tôm thẻ theo ngày tuổi – nhập ngày thả giống',
+      description: 'Nhập ngày thả giống và loại ao (bạt hoặc đất) để biết tuổi tôm hôm nay, giai đoạn nuôi, việc cần làm trong tuần và sản phẩm Noben gợi ý cho từng giai đoạn.',
+    },
+    care: CARE,
+    stages,
+    pond,
+    data: {
+      daily: CARE.daily,
+      watch: CARE.watch,
+      pond: Object.fromEntries(Object.entries(pond).map(([k, v]) => [k, { name: v.name, tasks: v.tasks, products: v.products.map(mini) }])),
+      stages: stages.map((s) => ({ id: s.id, from: s.from, to: s.to, name: s.name, goal: s.goal, tasks: s.tasks, article: s.article, articleText: s.articleText, products: s.products.map(mini) })),
+    },
+    jsonld: [crumbs([['Trang chủ', '/'], ['Kiến thức', '/ky-thuat-nuoi'], ['Lịch chăm sóc tôm', '/lich-cham-soc']])],
+  });
+});
+
 // ---------- SEO ----------
 // IndexNow key file (scripts/indexnow.js submits the sitemap to Bing and other engines).
 const INDEXNOW_KEY = (() => { try { return require('fs').readFileSync(require('path').join(__dirname, '..', 'content', 'indexnow-key.txt'), 'utf8').trim(); } catch { return ''; } })();
@@ -638,6 +763,8 @@ router.get('/sitemap.xml', (req, res) => {
     { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
     { loc: '/tuyen-dai-ly', priority: '0.7', changefreq: 'monthly' },
     { loc: '/tinh-lieu', priority: '0.7', changefreq: 'monthly' },
+    { loc: '/lich-cham-soc', priority: '0.7', changefreq: 'monthly' },
+    { loc: '/danh-gia', priority: '0.6', changefreq: 'weekly' },
     ...dealers.provinces().map((p) => ({ loc: `/dai-ly/tinh/${p.slug}`, priority: '0.6', changefreq: 'weekly' })),
     ...dealers.dealers.map((d) => ({ loc: d.url, priority: '0.4', changefreq: 'monthly' })),
     // English edition
