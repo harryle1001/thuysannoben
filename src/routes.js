@@ -23,6 +23,7 @@ const hasSmall = (src) => {
 router.use((req, res, next) => {
   res.locals.company = c.company;
   res.locals.categories = c.categories;
+  res.locals.productNames = c.products.map((p) => p.name);
   res.locals.symptoms = c.symptoms;
   res.locals.path = req.path;
   res.locals.siteUrl = SITE_URL;

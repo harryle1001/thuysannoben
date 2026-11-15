@@ -31,8 +31,8 @@
       <li class="arv__item is-<%= r.status %>">
         <p class="arv__head"><span class="arv__badge"><%= r.status === 'approved' ? 'Đã duyệt' : 'Chờ duyệt' %></span> <strong><%= r.stars %>★</strong> · <%= r.productInfo ? r.productInfo.name : 'Nhiều sản phẩm / khác' %> · <%= new Date(r.at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) %></p>
         <p><strong><%= r.name %></strong> (hiển thị: <%= r.display %>) · <%= r.role %>, <%= r.province %> · <a href="<%= tel(r.phone) %>"><%= r.phone %></a></p>
-        <blockquote class="rv__text"><% r.text.split('\n').filter(Boolean).forEach((line) => { %><p><%= line %></p><% }) %></blockquote>
-        <% if (r.photoUrls.length) { %><div class="rv__photos" data-gallery><% r.photoUrls.forEach((u) => { %><a href="<%= u %>" data-lb="<%= u %>" data-caption="Ảnh của <%= r.display %>"><img src="<%= u %>" alt="" width="120" height="90" loading="lazy"></a><% }) %></div><% } %>
+        <blockquote class="rvw__text"><% r.text.split('\n').filter(Boolean).forEach((line) => { %><p><%= line %></p><% }) %></blockquote>
+        <% if (r.photoUrls.length) { %><div class="rvw__photos" data-gallery><% r.photoUrls.forEach((u) => { %><a href="<%= u %>" data-lb="<%= u %>" data-caption="Ảnh của <%= r.display %>"><img src="<%= u %>" alt="" width="120" height="90" loading="lazy"></a><% }) %></div><% } %>
         <div class="arv__actions">
           <% if (r.status === 'pending') { %>
           <form method="post" action="/quan-tri/danh-gia"><input type="hidden" name="id" value="<%= r.id %>"><input type="hidden" name="action" value="approve"><button class="btn btn--blue" type="submit">Duyệt và đăng</button></form>
