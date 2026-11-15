@@ -1817,3 +1817,7 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   /* motion graphics fill the width */
   .qc__frame, .lp-video, .product-video { margin-inline: -16px; border-radius: 0; }
 }
+
+/* Ambient motion background (js/ambient.js): one faint fixed layer behind all content */
+.ambient-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+@media print { .ambient-bg { display: none; } }
