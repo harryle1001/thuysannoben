@@ -1570,3 +1570,7 @@ body { font-variant-numeric: lining-nums; }
 .aleads__table tr.is-lost { opacity: 0.6; }
 .aleads__msg { min-width: 220px; }
 .aleads > .lead { margin-top: var(--space-3); }
+/* Lenis smooth scrolling: keep map and video iframes clickable except while the page is moving */
+html.lenis { scroll-behavior: auto; }
+.lenis.lenis-smooth iframe { pointer-events: auto; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
