@@ -24,7 +24,6 @@ function getClient() {
 
 const strip = (s) => String(s || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const fold = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/gi, 'd').toLowerCase();
-const tel = (n) => String(n).replace(/\D/g, '');
 
 // The system prompt is rebuilt only when the content changes (admin edits), so the cached
 // prefix stays byte-identical between requests and prompt caching keeps working.

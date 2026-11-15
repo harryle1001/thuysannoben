@@ -21,6 +21,7 @@ router.use('/en', (req, res, next) => {
 
 const crumbs = (items) => seo.crumbs([['Home', '/en'], ...items]);
 const org = () => ({ ...seo.organization(), url: SITE_URL + '/en', description: 'NOBEN CO., LTD manufactures aquaculture health products, probiotics, minerals and feed supplements for shrimp and fish farms in Vietnam.' });
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
 const plain = (h) => String(h || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const cut = (s, n) => (s.length <= n ? s : s.slice(0, n).replace(/[\s,;:–-]+\S*$/, ''));
 
@@ -71,9 +72,9 @@ router.get('/en/products/:slug', (req, res, next) => {
   const title = p.name.length > 34 ? `${p.name} | Noben` : `${p.name} – ${cut(tag, 64 - p.name.length - 11)} | Noben`;
   const desc = `${p.name}: ${tag}. ${p.uses[0] ? plain(p.uses[0]) + ' ' : ''}Made by NOBEN CO., LTD in an ISO 9001:2015 factory in Vietnam.`;
   const faq = [];
-  if (p.uses.length) faq.push({ q: `What is ${p.name} used for?`, a: `<p>${p.name} is a ${kind} made by Noben. ${tag}.</p><ul>${p.uses.map((u) => `<li>${u}</li>`).join('')}</ul>` });
-  if (p.dose.length) faq.push({ q: `How do I use ${p.name}?`, a: `<p>According to the label:</p><ul>${p.dose.slice(0, 4).map((d) => `<li>${d}</li>`).join('')}</ul><p>Rates may be adjusted to pond conditions; contact our technical team for advice.</p>` });
-  faq.push({ q: `How can I buy or import ${p.name}?`, a: `<p>Noben sells directly from its factory in Ho Chi Minh City and through dealers across Vietnam. Distributors and importers can request a quotation, specifications and registration documents via the <a href="/en/contact">contact form</a>, email <a href="mailto:${c.company.email}">${c.company.email}</a> or WhatsApp/Zalo ${c.company.hotline}.</p>` });
+  if (p.uses.length) faq.push({ q: `What is ${p.name} used for?`, a: `<p>${esc(p.name)} is a ${esc(kind)} made by Noben. ${esc(tag)}.</p><ul>${p.uses.map((u) => `<li>${esc(plain(u))}</li>`).join('')}</ul>` });
+  if (p.dose.length) faq.push({ q: `How do I use ${p.name}?`, a: `<p>According to the label:</p><ul>${p.dose.slice(0, 4).map((d) => `<li>${esc(plain(d))}</li>`).join('')}</ul><p>Rates may be adjusted to pond conditions; contact our technical team for advice.</p>` });
+  faq.push({ q: `How can I buy or import ${p.name}?`, a: `<p>Noben sells directly from its factory in Ho Chi Minh City and through dealers across Vietnam. Distributors and importers can request a quotation, specifications and registration documents via the <a href="/en/contact">contact form</a>, email <a href="mailto:${esc(c.company.email)}">${esc(c.company.email)}</a> or WhatsApp/Zalo ${esc(c.company.hotline)}.</p>` });
   const seoProduct = seo.product(c.productBySlug[p.slug]);
   if (seoProduct) Object.assign(seoProduct, { name: p.name, url: SITE_URL + p.url, description: tag, category: p.categoryInfo.name });
   res.render('en/product', {

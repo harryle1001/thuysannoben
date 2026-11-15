@@ -70,6 +70,8 @@ app.use(express.json({ limit: '20kb' }));
 app.use(routes);
 
 app.use((req, res) => {
+  res.locals.lang = 'vi';
+  res.locals.alt = null;
   res.status(404).render('pages/not-found', { meta: { title: 'Không tìm thấy trang', noindex: true } });
 });
 

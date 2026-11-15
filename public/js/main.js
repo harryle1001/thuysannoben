@@ -281,8 +281,14 @@
 // Motion-graphic videos: play only while on screen, never for visitors who ask for reduced motion.
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var videos = Array.prototype.slice.call(document.querySelectorAll('[data-hero-video], [data-inview-play]'));
+  var conn = navigator.connection || {};
+  var lean = conn.saveData || /(^|-)2g$|3g/.test(conn.effectiveType || '');
+  var phone = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
+  // Decorative backgrounds stay as their poster on phones and slow or data-saver connections.
+  var videos = Array.prototype.slice.call(document.querySelectorAll('[data-hero-video], [data-inview-play]'))
+    .filter(function (v) { return !(v.hasAttribute('data-decor') && (phone || lean)); });
   if (!videos.length) return;
+  var EN = document.documentElement.lang === 'en';
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
   videos.forEach(function (v) {
     v.muted = true;
@@ -306,8 +312,8 @@
     if (!v) return;
     function label() {
       var paused = v.paused;
-      btn.querySelector('span').textContent = paused ? 'Phát video' : 'Tạm dừng';
-      btn.setAttribute('aria-label', paused ? 'Phát video' : 'Tạm dừng video');
+      btn.querySelector('span').textContent = paused ? (EN ? 'Play' : 'Phát video') : (EN ? 'Pause' : 'Tạm dừng');
+      btn.setAttribute('aria-label', paused ? (EN ? 'Play video' : 'Phát video') : (EN ? 'Pause video' : 'Tạm dừng video'));
       btn.querySelector('use').setAttribute('href', paused ? '#i-play' : '#i-pause');
     }
     v.addEventListener('play', label);

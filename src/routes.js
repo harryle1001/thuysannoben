@@ -842,7 +842,7 @@ router.get('/van-de/:sym', (req, res) => {
   const s = c.symptomBySlug[req.params.sym];
   res.redirect(301, s && s.solution ? s.solution.url : '/giai-phap');
 });
-router.get('/products/:slug', (req, res, next) => {
+router.get('/products/:slug', (req, res) => {
   const slug = req.params.slug.toLowerCase();
   const p = c.productBySlug[slug];
   if (p) return res.redirect(301, p.url);
