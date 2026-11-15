@@ -31,6 +31,7 @@
   RULES.forEach(function (rule) {
     Array.prototype.forEach.call(document.querySelectorAll(rule.sel), function (el, i) {
       if (el.closest('[data-no-scroll-motion]')) return;
+      if (phone && (el.tagName === 'VIDEO' || el.classList.contains('qc__frame'))) return; // full-bleed on phones: never scale past the screen edge
       var depth = rule.stagger ? 1 + (i % 3) * 0.382 : 1;
       items.push({ el: el, rule: rule, depth: depth, on: false });
       if (rule.s) el.style.scale = String(rule.s); // overscan so moving backgrounds never show an edge

@@ -284,29 +284,45 @@
   var conn = navigator.connection || {};
   var lean = conn.saveData || /(^|-)2g$|3g/.test(conn.effectiveType || '');
   var phone = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
-  // Decorative backgrounds stay as their poster on phones and slow or data-saver connections.
-  var videos = Array.prototype.slice.call(document.querySelectorAll('[data-hero-video], [data-inview-play]'))
-    .filter(function (v) { return !(v.hasAttribute('data-decor') && (phone || lean)); });
+  // Phones play the motion graphics too (vertical cuts where provided); only slow or data-saver
+  // connections fall back to posters.
+  var videos = Array.prototype.slice.call(document.querySelectorAll('[data-hero-video], [data-inview-play]'));
   if (lean) reduce = true; // slow or data-saver: every video stays a poster (tap to play)
   if (!videos.length) return;
   var EN = document.documentElement.lang === 'en';
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
   videos.forEach(function (v) {
     v.muted = true;
+    v.setAttribute('playsinline', '');
+    v.disablePictureInPicture = true;
     if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.dataset.userPaused = '1'; }
   });
   if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
+    // 1) Buffer early: start loading a screen ahead so playback begins without a stall.
+    var near = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        var v = e.target;
-        if (e.isIntersecting && !v.dataset.userPaused) {
-          if (v.preload === 'none') v.preload = 'auto';
-          play(v);
-        } else if (!e.isIntersecting) v.pause();
+        if (e.isIntersecting && !reduce && e.target.preload === 'none') e.target.preload = 'auto';
       });
-    }, { threshold: 0.25 });
-    var watch = function () { videos.forEach(function (v) { io.observe(v); }); };
+    }, { rootMargin: '100% 0px' });
+    // 2) Play only the single most visible video; everything else pauses. One decoder at a time
+    //    keeps scrolling smooth, especially on phones.
+    var ratio = new Map();
+    var pick = function () {
+      var best = null, bestR = 0.35;
+      ratio.forEach(function (r, v) { if (r > bestR && !v.dataset.userPaused) { best = v; bestR = r; } });
+      videos.forEach(function (v) { if (v !== best && !v.paused) v.pause(); });
+      if (best && best.paused && !document.hidden) play(best);
+    };
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { ratio.set(e.target, e.isIntersecting ? e.intersectionRatio : 0); });
+      pick();
+    }, { threshold: [0, 0.2, 0.35, 0.5, 0.65, 0.8, 1] });
+    var watch = function () { videos.forEach(function (v) { near.observe(v); io.observe(v); }); };
     if (document.readyState === 'complete') watch(); else window.addEventListener('load', watch);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) videos.forEach(function (v) { v.pause(); }); else pick();
+    });
+    videos.forEach(function (v) { v.addEventListener('ended', pick); });
   }
   var boxVideo = function (btn) { return btn.parentNode.querySelector('video') || btn.parentNode.parentNode.querySelector('video'); };
   // Sound: films with a sound bed start muted; this button turns the sound on (and starts playback).

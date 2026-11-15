@@ -1788,3 +1788,32 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 .brand-labels img { width: 100%; aspect-ratio: 1 / 1.272; object-fit: cover; border-radius: var(--radius-m); border: 1px solid var(--line); background: #fff; }
 .brand-dl { display: flex; flex-wrap: wrap; gap: var(--space-3); }
 @media (min-width: 1100px) { .brand-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* =====================================================================
+   Phones: a shorter, calmer page. Long lists become swipeable rows,
+   secondary detail folds away; nothing that matters for buying is hidden.
+   ===================================================================== */
+@media (max-width: 760px) {
+  .topbar { display: none; }
+  /* home: 4 products per range, the full list is one tap away */
+  .prodtabs .pgrid .pcard:nth-child(n + 5) { display: none; }
+  /* swipe rows instead of tall stacks */
+  .soltiles, .stage-list, .certs {
+    display: flex; gap: var(--space-3); overflow-x: auto; scroll-snap-type: x mandatory;
+    margin-inline: -16px; padding: 0 16px var(--space-3); scrollbar-width: none;
+  }
+  .soltiles::-webkit-scrollbar, .stage-list::-webkit-scrollbar, .certs::-webkit-scrollbar { display: none; }
+  .soltiles > *, .stage-list > *, .certs > * { flex: 0 0 82%; scroll-snap-align: start; }
+  .certs > * { flex-basis: 61.8%; }
+  /* quality process: step titles only */
+  .qc__step p { display: none; }
+  .qc__step { padding: 8px 0; }
+  /* knowledge: lead article plus one more */
+  .kfeature__side > :nth-child(n + 2) { display: none; }
+  /* footer: link columns side by side */
+  .site-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-5) var(--space-4); }
+  .site-footer__grid > :nth-child(-n + 2) { grid-column: 1 / -1; }
+  .site-footer__grid .link-list li { margin-bottom: 2px; }
+  /* motion graphics fill the width */
+  .qc__frame, .lp-video, .product-video { margin-inline: -16px; border-radius: 0; }
+}
