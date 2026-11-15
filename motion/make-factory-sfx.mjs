@@ -1,6 +1,6 @@
 // Synthesized sound bed for FactoryFilm (no samples, no licensed music): warm pad, a soft pulse,
 // whoosh + low hit on every scene cut (same pi-based timing as the film), light mechanical ticks
-// during the production-line scene, a chime on the close. Writes public/sfx/factory-{full,short}.wav.
+// during the production-line scene, a chime on the close. Writes public/sfx/factory-{full,short,process}.wav.
 import fs from "node:fs";
 const timing = JSON.parse(fs.readFileSync(new URL("./src/factory/timing.json", import.meta.url)));
 const SR = 44100, FPS = 30;
@@ -62,8 +62,8 @@ function render(cut) {
   scenes.forEach((s, k) => {
     if (k > 0) { whoosh(s.at, 0.9, 0.9); thump(s.at + 0.05, 0.4); }
     chime(s.at + 0.35, notes[k % notes.length], 0.045);
-    if (s.key === "line") for (let t = s.at + 0.6; t < s.at + s.dur - 0.4; t += 1.1 / 2) tick(t, 0.06);
-    if (s.key === "qc") chime(s.at + 1.65, 1318.5, 0.05, 0.9);
+    if (s.key === "line" || s.key === "produce" || s.key === "pack") for (let t = s.at + 0.6; t < s.at + s.dur - 0.4; t += 1.1 / 2) tick(t, 0.06);
+    if (s.key === "qc" || s.key === "outqc") chime(s.at + 1.65, 1318.5, 0.05, 0.9);
     if (s.key === "close") { chime(s.at + 0.2, 587.33, 0.06, 1.2); chime(s.at + 0.32, 880, 0.05, 1.2); chime(s.at + 0.44, 1174.66, 0.04, 1.4); }
   });
   let peak = 0; for (let i = 0; i < N; i++) peak = Math.max(peak, Math.abs(L[i]), Math.abs(R[i]));
@@ -75,4 +75,4 @@ function render(cut) {
   fs.mkdirSync("public/sfx", { recursive: true }); fs.writeFileSync(`public/sfx/factory-${cut}.wav`, buf);
   console.log(`wrote public/sfx/factory-${cut}.wav ${DUR.toFixed(2)} s`);
 }
-render("full"); render("short");
+render("full"); render("short"); render("process");

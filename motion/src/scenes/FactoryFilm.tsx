@@ -29,17 +29,17 @@ export const factoryScenes = (cut: Cut, fps: number) => {
 const totalFrames = (cut: Cut, fps: number) => factoryScenes(cut, fps).reduce((a, s) => a + s.dur, 0);
 
 // ---------- layout + type ----------
-const useL = () => {
+export const useL = () => {
   const { width: W, height: H, fps } = useVideoConfig();
   const v = H > W;
   return { W, H, fps, v, pick: <T,>(vert: T, land: T) => (v ? vert : land), sec: (s: number) => Math.round(s * fps) };
 };
-const display: React.CSSProperties = { fontFamily: theme.fonts.display, fontWeight: 800, fontStretch: "88%", letterSpacing: "-0.02em", lineHeight: 1.04, color: C.text };
-const bodyStyle: React.CSSProperties = { fontFamily: theme.fonts.body, fontWeight: 400, color: C.textDim, lineHeight: 1.45 };
-const kickerStyle: React.CSSProperties = { fontFamily: theme.fonts.body, fontWeight: 600, letterSpacing: "0.26em", textTransform: "uppercase", color: C.accent };
+export const display: React.CSSProperties = { fontFamily: theme.fonts.display, fontWeight: 800, fontStretch: "88%", letterSpacing: "-0.02em", lineHeight: 1.04, color: C.text };
+export const bodyStyle: React.CSSProperties = { fontFamily: theme.fonts.body, fontWeight: 400, color: C.textDim, lineHeight: 1.45 };
+export const kickerStyle: React.CSSProperties = { fontFamily: theme.fonts.body, fontWeight: 600, letterSpacing: "0.26em", textTransform: "uppercase", color: C.accent };
 
 // Text column: kicker (step number) → headline → body.
-const Copy: React.FC<{ n?: string; kicker: string; title: string; hero?: string[]; body?: string; width: number; size: number; style?: React.CSSProperties }> = ({ n, kicker, title, hero, body, width, size, style }) => {
+export const Copy: React.FC<{ n?: string; kicker: string; title: string; hero?: string[]; body?: string; width: number; size: number; style?: React.CSSProperties }> = ({ n, kicker, title, hero, body, width, size, style }) => {
   const { fps, v } = useL();
   return (
     <div style={{ position: "absolute", width, ...style }}>
@@ -61,7 +61,7 @@ const Copy: React.FC<{ n?: string; kicker: string; title: string; hero?: string[
 };
 
 // Ken Burns for photos, OffthreadVideo for clips — both crop to fill their box.
-const Media: React.FC<{ m: FactoryMedia; dur: number; seed?: number; zoom?: number }> = ({ m, dur, seed = 0, zoom = 0.08 }) => {
+export const Media: React.FC<{ m: FactoryMedia; dur: number; seed?: number; zoom?: number }> = ({ m, dur, seed = 0, zoom = 0.08 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const k = interpolate(frame, [0, dur], [0, 1], { ...theme.clamp, easing: theme.ease.sine });
@@ -76,7 +76,7 @@ const Media: React.FC<{ m: FactoryMedia; dur: number; seed?: number; zoom?: numb
 };
 
 // Glass frame: rounded, hairline border, brand tint, inner light — makes small photos look deliberate.
-const Glass: React.FC<{ x: number; y: number; w: number; h: number; delay?: number; rotate?: number; children: React.ReactNode; caption?: string; tint?: number }> = ({ x, y, w, h, delay = 0, rotate = 0, children, caption, tint = 0.18 }) => {
+export const Glass: React.FC<{ x: number; y: number; w: number; h: number; delay?: number; rotate?: number; children: React.ReactNode; caption?: string; tint?: number }> = ({ x, y, w, h, delay = 0, rotate = 0, children, caption, tint = 0.18 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const p = spring({ frame: frame - delay, fps, config: theme.spring.smooth });
@@ -99,7 +99,7 @@ const Glass: React.FC<{ x: number; y: number; w: number; h: number; delay?: numb
 };
 
 // Faint engineering grid (golden spacing) for the factory feel.
-const Blueprint: React.FC<{ opacity?: number }> = ({ opacity = 1 }) => {
+export const Blueprint: React.FC<{ opacity?: number }> = ({ opacity = 1 }) => {
   const frame = useCurrentFrame();
   const { width: W, height: H, fps } = useVideoConfig();
   const step = Math.round(W / (PHI * PHI * PHI * 4));
@@ -115,7 +115,7 @@ const Blueprint: React.FC<{ opacity?: number }> = ({ opacity = 1 }) => {
 };
 
 // Diagonal light sweep: the cut between scenes.
-const Sweep: React.FC<{ at: number }> = ({ at }) => {
+export const Sweep: React.FC<{ at: number }> = ({ at }) => {
   const frame = useCurrentFrame();
   const { width: W, height: H, fps } = useVideoConfig();
   const len = Math.round(fps * (Math.PI / 4));
@@ -131,7 +131,7 @@ const Sweep: React.FC<{ at: number }> = ({ at }) => {
   );
 };
 
-const Logo: React.FC<{ size: number; delay?: number }> = ({ size, delay = 0 }) => {
+export const Logo: React.FC<{ size: number; delay?: number }> = ({ size, delay = 0 }) => {
   const frame = useCurrentFrame() - delay;
   const { fps } = useVideoConfig();
   const pop = spring({ frame, fps, config: theme.spring.bouncy });
@@ -174,7 +174,7 @@ const Intro: React.FC<{ dur: number }> = ({ dur }) => {
   );
 };
 
-const Checklist: React.FC<{ items: string[]; delay: number; width: number; x: number; y: number }> = ({ items, delay, width, x, y }) => {
+export const Checklist: React.FC<{ items: string[]; delay: number; width: number; x: number; y: number }> = ({ items, delay, width, x, y }) => {
   const frame = useCurrentFrame();
   const { fps, v } = useL();
   return (
@@ -390,7 +390,7 @@ const Reach: React.FC<{ dur: number }> = ({ dur }) => {
   );
 };
 
-const Close: React.FC<{ dur: number }> = () => {
+export const Close: React.FC<{ dur: number }> = () => {
   const { fps, v } = useL();
   return (
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>

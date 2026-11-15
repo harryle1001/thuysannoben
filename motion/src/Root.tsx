@@ -6,6 +6,7 @@ import { HeroLoop } from "./scenes/HeroLoop";
 import { AD_SECONDS, ProductAd } from "./scenes/ProductAd";
 import { PRODUCTS } from "./products";
 import { FactoryCompositions } from "./scenes/FactoryFilm";
+import { ProcessCompositions } from "./scenes/ProcessFilm";
 
 const FPS = 30;
 const withFonts = (C: React.FC) => () => (<><Fonts /><C /></>);
@@ -20,6 +21,7 @@ export const Root: React.FC = () => (
     <Composition id="BrandFilm" component={withFonts(BrandFilm)} durationInFrames={FILM_SECONDS * FPS} fps={FPS} width={1920} height={1080} />
     {/* 17 s product ads: 9:16 for Reels/TikTok/Zalo, 16:9 for the website */}
     <FactoryCompositions />
+    <ProcessCompositions />
     {PRODUCTS.flatMap((p) => [
       <Composition key={`${p.id}V`} id={`Ad${p.id}Vertical`} component={withProduct(p)} durationInFrames={AD_SECONDS * FPS} fps={FPS} width={1080} height={1920} />,
       <Composition key={`${p.id}H`} id={`Ad${p.id}Wide`} component={withProduct(p)} durationInFrames={AD_SECONDS * FPS} fps={FPS} width={1920} height={1080} />,
