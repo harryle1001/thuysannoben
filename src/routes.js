@@ -242,7 +242,7 @@ router.get('/', (req, res) => {
     certificates: certSlides(),
     videos: c.videos,
     homeReviews: reviews.approved().length >= 3 ? reviews.approved().slice(0, 6).map(reviewView) : [], // only real, approved reviews
-    jsonld: [org(), seo.website()],
+    jsonld: [org(), seo.website(), seo.processVideo()],
   });
 });
 
@@ -369,7 +369,7 @@ router.get('/tuyen-dai-ly', (req, res) => {
     ranges,
     film: c.landingVideos['dai-ly'] || null,
     faq: DEALER_FAQ,
-    jsonld: [crumbs([['Trang chủ', '/'], ['Hệ thống đại lý', '/dai-ly'], ['Tuyển đại lý', '/tuyen-dai-ly']]), seo.faqPage(DEALER_FAQ), seo.factoryVideo()].filter(Boolean),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Hệ thống đại lý', '/dai-ly'], ['Tuyển đại lý', '/tuyen-dai-ly']]), seo.faqPage(DEALER_FAQ), seo.processVideo()].filter(Boolean),
   });
 });
 router.get('/lp/:slug', (req, res, next) => {
@@ -405,7 +405,7 @@ function renderCombo(lp, res) {
     shots,
     film: c.landingVideos[lp.slug] || null,
     faq,
-    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq), seo.factoryVideo()].filter(Boolean) : [],
+    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq), seo.processVideo()].filter(Boolean) : [],
   });
 }
 
@@ -503,7 +503,7 @@ router.get('/ve-chung-toi', (req, res) =>
     meta: { preloadImage: '/media/noben-hero-poster.webp', title: 'Về Noben – Hơn 22 năm sản xuất thuốc thủy sản', description: c.company.overview[0] },
     gallery: c.gallery,
     productCount: c.products.length,
-    jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']]), seo.factoryVideo()],
+    jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']]), seo.processVideo(), seo.factoryVideo()],
   })
 );
 // Brand identity proposal: golden-ratio logo and label system (noindex until the new logo is approved).
@@ -569,7 +569,7 @@ router.get('/tuyen-dung', (req, res) =>
 router.get('/gia-cong', (req, res) =>
   res.render('pages/oem', {
     meta: { title: 'Gia công thuốc thủy sản, chế phẩm sinh học – Noben', description: 'Noben nhận gia công thành phẩm, bán thành phẩm thuốc thủy sản, tư vấn thành lập công ty và đăng ký lưu hành sản phẩm.' },
-    jsonld: [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong']]), seo.factoryVideo()],
+    jsonld: [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong']]), seo.processVideo()],
   })
 );
 // Video gallery: every film with VideoObject data for Google Video.
