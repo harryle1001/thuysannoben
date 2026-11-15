@@ -2,7 +2,7 @@
    The scene is a stack of layers painted ONCE by CSS (night sky, dawn sky, morning sky, stars, clouds,
    glow, the Noben logo as the sun, the sea and its glint). While the visitor scrolls, only the
    compositor-friendly properties `opacity` and `transform` of these few layers change, so the GPU
-   does the work and nothing is repainted. The sun also rises on its own (φ³ ≈ 4.236 s) if nobody
+   does the work and nothing is repainted. Stars twinkle, clouds and water drift forever (CSS keyframes on transform/opacity). The sun rises on its own if nobody
    scrolls; scrolling simply runs ahead of it. Proportions in φ = 1.61803 (see the CSS block
    "Sunrise background"). Reduced motion: the risen scene, still. */
 (function () {
@@ -16,13 +16,17 @@
   var html =
     '<div class="sky" aria-hidden="true">' +
       '<div class="sky__l sky__night"></div>' +
+      '<div class="sky__stars"><i></i><i></i><i></i></div>' +
+      '<div class="sky__shoot"></div>' +
       '<div class="sky__l sky__dawn" data-k="dawn"></div>' +
       '<div class="sky__l sky__day" data-k="day"></div>' +
+      '<div class="sky__clouds" data-k="clouds"><i></i><i></i></div>' +
       '<div class="sky__clip">' +
         '<div class="sky__glow" data-k="glow"></div>' +
         '<img class="sky__sun" data-k="sun" src="/images/brand/logo-noben.svg" alt="" width="512" height="512" decoding="async">' +
       '</div>' +
       '<div class="sky__glint" data-k="glint"><i></i></div>' +
+      '<div class="sky__waves" data-k="waves"><i></i><i></i></div>' +
     '</div>' +
     '<div class="sunrise-veil" data-k="veil" aria-hidden="true"></div>';
   var wrap = document.createElement('div');
@@ -30,6 +34,8 @@
   while (wrap.lastChild) document.body.insertBefore(wrap.lastChild, document.body.firstChild);
   doc.classList.add('has-sunrise');
 
+  var sky = document.querySelector('.sky'), lit = null;
+  if (intro && !still) sky.classList.add('sky--intro'); // home: starry opening with a shooting star
   var el = {};
   Array.prototype.forEach.call(document.querySelectorAll('[data-k]'), function (n) { el[n.getAttribute('data-k')] = n; });
 
@@ -51,11 +57,14 @@
     var r = function (x) { return x.toFixed(3); };
     set('dawn', 'opacity', r(seg(p, 0, 0.5)));                  // indigo → violet, rose, peach (covers the stars)
     set('day', 'opacity', r(0.854 * seg(p, 0.382, 1)));         // morning blue keeps a warm horizon
-    set('glow', 'opacity', r(0.236 + 0.764 * seg(p, 0, 0.85)));
+    set('clouds', 'opacity', r(0.854 * seg(p, 0.1, 0.618)));   // drifting clouds catch the light
+    set('waves', 'opacity', r(0.382 + 0.618 * seg(p, 0, 0.618)));
+    if ((p >= 0.5) !== lit) { lit = p >= 0.5; sky.classList.toggle('sky--lit', lit); } // stars rest once hidden
+    set('glow', 'opacity', r(seg(p, 0, 0.85)));
     set('glow', 'transform', 'scale(' + r(0.618 + 0.382 * seg(p, 0, 1)) + ')');
-    // sun: starts with 38.2 % of its height above the horizon, rises 23.6 lvh + 11.8 % to its place at 38.2 lvh
-    set('sun', 'transform', 'translate3d(-50%, calc(' + r(1 - seg(p, 0, 1)) + ' * (23.6lvh + 11.8%)), 0)');
-    set('glint', 'opacity', r(0.146 + 0.854 * seg(p, 0.15, 0.9)));
+    // sun: starts fully below the horizon, rises 23.6 lvh + 50 % of itself to its place at 38.2 lvh
+    set('sun', 'transform', 'translate3d(-50%, calc(' + r(1 - seg(p, 0, 1)) + ' * (23.6lvh + 50%)), 0)');
+    set('glint', 'opacity', r(seg(p, 0.1, 0.9)));
     set('glint', 'transform', 'translateX(-50%) scaleX(' + r(0.382 + 0.618 * seg(p, 0, 1)) + ')');
     set('veil', 'opacity', r(veil));
   }
@@ -69,8 +78,9 @@
     return;
   }
 
-  // Home: auto rise over φ³ s after a φ⁻¹ s pause; scrolling runs ahead of it.
-  var AUTO = 4236, DELAY = 618, t0 = performance.now(), done = false, raf = 0;
+  // Home: 3 s of twinkling stars, a shooting star (CSS, 3 s → 4.618 s), then the sun rises on its
+  // own over φ⁴ ≈ 6.854 s; scrolling runs ahead of it.
+  var AUTO = 6854, DELAY = 3618, t0 = performance.now(), done = false, raf = 0;
   function frame(now) {
     raf = 0;
     var auto = seg(now - t0 - DELAY, 0, AUTO);

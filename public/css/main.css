@@ -1997,20 +1997,11 @@ html.has-sunrise body { background: transparent; }
 .sky__l { position: absolute; inset: 0; }
 .sky__night {
   background:
-    radial-gradient(1.6px 1.6px at 8% 12%, #fff 60%, transparent 62%), radial-gradient(1.2px 1.2px at 21% 31%, #dfe8ff 60%, transparent 62%),
-    radial-gradient(1.4px 1.4px at 34% 9%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 46% 24%, #cfdcff 60%, transparent 62%),
-    radial-gradient(1.8px 1.8px at 61.8% 14%, #fff 60%, transparent 62%), radial-gradient(1.2px 1.2px at 72% 36%, #e6ecff 60%, transparent 62%),
-    radial-gradient(1.4px 1.4px at 86% 8%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 93% 27%, #d8e2ff 60%, transparent 62%),
-    radial-gradient(1.2px 1.2px at 15% 46%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 54% 41%, #e0e8ff 60%, transparent 62%),
-    radial-gradient(1.3px 1.3px at 79% 48%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 38.2% 52%, #cfdcff 60%, transparent 62%),
     linear-gradient(180deg, #02060f 0%, #060f28 23.6%, #0d1a3c 50%, #1d2552 61.8%, #0c1636 61.8%, #050c22 76.4%, #02060f 100%);
 }
 .sky__dawn {
   opacity: 0; will-change: opacity;
   background:
-    radial-gradient(ellipse 30% 3.2% at 24% 27%, rgba(255, 196, 196, 0.5), transparent 72%),
-    radial-gradient(ellipse 23.6% 2.6% at 74% 19%, rgba(255, 176, 168, 0.42), transparent 72%),
-    radial-gradient(ellipse 38.2% 3.6% at 61.8% 44%, rgba(255, 206, 172, 0.55), transparent 72%),
     radial-gradient(ellipse 61.8% 16% at 50% 61.8%, rgba(255, 168, 98, 0.62), transparent 70%),
     linear-gradient(180deg, #1b1f4a 0%, #33296a 18%, #5e3d84 34%, #a35686 47%, #dc7a7c 55%, #f6a476 59%, #ffcb8e 61.8%,
       #8a5a7c 61.8%, #4a3466 66%, #26285a 74%, #131c40 85.4%, #070e26 100%);
@@ -2018,9 +2009,6 @@ html.has-sunrise body { background: transparent; }
 .sky__day {
   opacity: 0; will-change: opacity;
   background:
-    radial-gradient(ellipse 30% 3% at 22% 24%, rgba(255, 255, 255, 0.55), transparent 72%),
-    radial-gradient(ellipse 21% 2.4% at 77% 16%, rgba(255, 255, 255, 0.45), transparent 72%),
-    radial-gradient(ellipse 34% 3.2% at 64% 43%, rgba(255, 244, 228, 0.55), transparent 72%),
     radial-gradient(ellipse 61.8% 14% at 50% 61.8%, rgba(255, 226, 150, 0.66), transparent 70%),
     linear-gradient(180deg, #245aa3 0%, #3f7fc2 20%, #73a9d9 38.2%, #b6d3e9 50%, #ecdcbc 57%, #ffd27a 61.8%,
       #6aa6c8 61.8%, #3f86b0 66%, #22679a 74%, #154e7e 85.4%, #0b3460 100%);
@@ -2030,25 +2018,126 @@ html.has-sunrise body { background: transparent; }
   position: absolute; left: calc(50% - var(--S) * 2.118); top: calc(38.2lvh - var(--S) * 2.118);
   width: calc(var(--S) * 4.236); height: calc(var(--S) * 4.236); border-radius: 50%;
   background: radial-gradient(closest-side, rgba(255, 244, 214, 0.95) 0%, rgba(255, 214, 146, 0.66) 14.6%, rgba(255, 176, 98, 0.32) 38.2%, rgba(255, 134, 74, 0.1) 61.8%, transparent 100%);
-  opacity: 0.236; transform: scale(0.618); will-change: opacity, transform;
+  opacity: 0; transform: scale(0.618); will-change: opacity, transform;
 }
 .sky__sun {
   position: absolute; left: 50%; top: calc(38.2lvh - var(--S) / 2); width: var(--S); height: auto;
-  transform: translate3d(-50%, calc(23.6lvh + 11.8%), 0); will-change: transform;
+  transform: translate3d(-50%, calc(23.6lvh + 50%), 0); will-change: transform;
   filter: drop-shadow(0 0 calc(var(--S) * 0.146) rgba(255, 214, 120, 0.75));
 }
 .sky__glint {
   position: absolute; top: 61.8lvh; left: 50%; width: calc(var(--S) * 1.618); height: 38.2lvh; transform-origin: 50% 0;
-  transform: translateX(-50%) scaleX(0.382); opacity: 0.146; will-change: opacity, transform;
+  transform: translateX(-50%) scaleX(0.382); opacity: 0; will-change: opacity, transform;
   -webkit-mask-image: radial-gradient(ellipse 50% 100% at 50% 0%, #000 23.6%, transparent 76.4%);
   mask-image: radial-gradient(ellipse 50% 100% at 50% 0%, #000 23.6%, transparent 76.4%);
 }
 .sky__glint i {
   position: absolute; inset: 0;
   background: repeating-linear-gradient(180deg, rgba(255, 224, 150, 0.95) 0 2px, transparent 2px 10px);
-  animation: glint 2.618s ease-in-out infinite alternate; /* φ² s */
+  animation: glint 4.236s ease-in-out infinite alternate; /* φ³ s */
 }
 @keyframes glint { from { transform: scaleX(0.92); } to { transform: scaleX(1.08); } }
+/* --- Zen motion: twinkling stars, one shooting star, drifting clouds and water (transform/opacity only) --- */
+.sky__stars, .sky__stars i { position: absolute; inset: 0; }
+.sky__stars i { animation: twinkle 2.618s ease-in-out infinite alternate; will-change: opacity; }
+.sky__stars i:nth-child(1) { background:
+    radial-gradient(1.0px 1.0px at 31.0% 52.6%, #fff3d6 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 37.8% 5.9%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 18.5% 44.6%, #cfdcff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 23.3% 48.4%, #fff3d6 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 12.0% 22.0%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 68.3% 19.9%, #fff3d6 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 13.4% 40.5%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 72.7% 46.4%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 61.0% 39.6%, #fff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 37.1% 21.4%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 29.4% 38.6%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 3.5% 47.2%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 95.5% 27.1%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 80.8% 53.6%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 10.9% 7.2%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 81.6% 27.5%, #fff3d6 60%, transparent 62%); }
+.sky__stars i:nth-child(2) { animation-duration: 1.618s; animation-delay: -0.618s; background:
+    radial-gradient(1.2px 1.2px at 61.9% 28.7%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 38.2% 39.4%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 39.7% 31.2%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 41.9% 15.9%, #cfdcff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 38.2% 27.7%, #fff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 61.6% 18.5%, #fff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 52.9% 53.7%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 96.2% 35.9%, #cfdcff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 22.7% 13.5%, #cfdcff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 36.4% 3.5%, #fff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 57.5% 11.5%, #fff3d6 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 56.2% 9.3%, #fff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 67.1% 15.0%, #fff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 69.1% 42.0%, #fff3d6 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 34.2% 48.5%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 24.0% 32.1%, #dfe8ff 60%, transparent 62%); }
+.sky__stars i:nth-child(3) { animation-duration: 4.236s; animation-delay: -1.618s; background:
+    radial-gradient(2.2px 2.2px at 62.9% 4.9%, #fff3d6 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 70.3% 43.4%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 24.9% 37.7%, #fff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 13.6% 31.9%, #fff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 49.5% 16.8%, #fff 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 93.1% 39.6%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 17.4% 14.3%, #fff3d6 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 95.7% 47.2%, #fff3d6 60%, transparent 62%),
+    radial-gradient(2.2px 2.2px at 59.8% 18.2%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 69.2% 17.9%, #fff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 52.5% 5.0%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 73.3% 48.9%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.0px 1.0px at 42.0% 49.6%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 3.8% 18.6%, #cfdcff 60%, transparent 62%); }
+@keyframes twinkle { from { opacity: 0.236; } to { opacity: 1; } }
+.sky--lit .sky__stars i { animation-play-state: paused; }
+.sky__shoot {
+  position: absolute; left: 85.4%; top: 23.6lvh; width: 26vmin; height: 3px; border-radius: 3px; opacity: 0;
+  background: linear-gradient(90deg, #fff 0%, rgba(214, 228, 255, 0.6) 23.6%, transparent 100%);
+  filter: drop-shadow(0 0 4px rgba(200, 220, 255, 0.9)); transform: rotate(-20.6deg);
+}
+.sky--intro .sky__shoot { animation: shoot 1.618s cubic-bezier(0.382, 0, 0.618, 1) 3s both; }
+@keyframes shoot {
+  0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(-20.6deg) scaleX(0.382); }
+  23.6% { opacity: 1; }
+  61.8% { opacity: 1; }
+  100% { opacity: 0; transform: translate3d(-90vmin, 34vmin, 0) rotate(-20.6deg) scaleX(1); }
+}
+.sky__clouds { position: absolute; left: 0; top: 0; width: 100%; height: 61.8lvh; overflow: hidden; opacity: 0; will-change: opacity; }
+.sky__clouds i, .sky__waves i { position: absolute; left: 0; top: 0; width: 200%; height: 100%; background-size: 50% 100%; background-repeat: repeat-x; will-change: transform; }
+.sky__clouds i:nth-child(1) { animation: drift 110s linear infinite; background-image:
+    radial-gradient(ellipse 9.8% 3.1% at 36.5% 30.2%, rgba(255, 232, 220, 0.5), transparent 72%),
+    radial-gradient(ellipse 14.5% 3.2% at 76.7% 34.4%, rgba(255, 232, 220, 0.5), transparent 72%),
+    radial-gradient(ellipse 10.6% 3.1% at 60.2% 46.3%, rgba(255, 232, 220, 0.5), transparent 72%),
+    radial-gradient(ellipse 11.9% 2.4% at 61.1% 48.7%, rgba(255, 232, 220, 0.5), transparent 72%); }
+.sky__clouds i:nth-child(2) { animation: drift 178s linear infinite reverse; background-image:
+    radial-gradient(ellipse 12.3% 3.7% at 61.2% 29.4%, rgba(255, 244, 236, 0.36), transparent 72%),
+    radial-gradient(ellipse 18.9% 4.2% at 57.1% 45.1%, rgba(255, 244, 236, 0.36), transparent 72%),
+    radial-gradient(ellipse 17.9% 5.3% at 73.8% 16.3%, rgba(255, 244, 236, 0.36), transparent 72%); }
+.sky__waves { position: absolute; left: 0; top: 61.8lvh; width: 100%; height: 38.2lvh; overflow: hidden; opacity: 0.382; will-change: opacity; }
+.sky__waves i:nth-child(1) { animation: drift 42s linear infinite; background-image:
+    radial-gradient(ellipse 8.6% 1.0% at 56.7% 34.5%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 14.7% 1.6% at 47.1% 34.3%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 14.7% 1.8% at 65.0% 66.2%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 10.3% 1.5% at 75.0% 70.6%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 11.2% 2.2% at 31.9% 42.5%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 11.7% 1.7% at 24.6% 78.6%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 13.0% 0.9% at 38.5% 11.9%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 11.6% 1.0% at 51.8% 74.3%, rgba(255, 255, 255, 0.13), transparent 72%),
+    radial-gradient(ellipse 12.9% 1.0% at 18.1% 50.0%, rgba(255, 255, 255, 0.13), transparent 72%); }
+.sky__waves i:nth-child(2) { animation: drift 68s linear infinite reverse; background-image:
+    radial-gradient(ellipse 14.0% 1.5% at 76.7% 88.2%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 17.3% 2.1% at 68.0% 13.6%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 10.2% 2.0% at 67.9% 13.5%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 18.3% 2.1% at 38.9% 68.4%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 14.2% 2.7% at 53.8% 64.2%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 15.1% 1.4% at 48.0% 75.6%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 12.2% 1.4% at 23.1% 85.2%, rgba(255, 236, 190, 0.11), transparent 72%),
+    radial-gradient(ellipse 8.4% 1.6% at 45.1% 59.7%, rgba(255, 236, 190, 0.11), transparent 72%); }
+@keyframes drift { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+.sky__glow { animation: breathe 6.854s ease-in-out infinite alternate; }
+@keyframes breathe { from { scale: 1; } to { scale: 1.09; } }
+@media (prefers-reduced-motion: reduce) { .sky__stars i, .sky__clouds i, .sky__waves i, .sky__glow, .sky__shoot { animation: none !important; } }
 .sunrise-veil { position: fixed; left: 0; top: 0; width: 100%; height: 100lvh; z-index: -1; background: var(--paper); opacity: 0.854; pointer-events: none; will-change: opacity; }
 @media (prefers-reduced-motion: reduce) { .sky__glint i { animation: none; } }
 @media print { .sky, .sunrise-veil { display: none; } }
