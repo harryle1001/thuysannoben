@@ -5,12 +5,12 @@
     "h1": "Thuốc trị phân trắng, gan tụy và bệnh đường ruột cho tôm",
     "seo_title": "Thuốc trị phân trắng, gan tụy cho tôm thẻ – Noben",
     "description": "Bộ sản phẩm trị phân trắng, teo gan, sưng gan, trống đường ruột cho tôm thẻ, tôm sú: xổ ký sinh trùng, bổ gan, men đường ruột. Tư vấn phác đồ miễn phí.",
-    "intro": "Phân trắng, gan tụy teo hoặc sưng và đường ruột đứt khúc là nhóm bệnh gây thiệt hại nhiều nhất cho ao tôm thẻ từ 10 đến 70 ngày tuổi. Xử lý hiệu quả cần kết hợp ba hướng: làm sạch môi trường, loại bỏ tác nhân (vi khuẩn, ký sinh trùng) và phục hồi gan ruột.",
+    "intro": "Phân trắng, gan tụy teo hoặc sưng và đường ruột đứt khúc là nhóm bệnh gây thiệt hại nhiều nhất cho ao tôm thẻ từ 10 đến 70 ngày tuổi. Phân trắng là hội chứng do nhiều nguyên nhân (vi khuẩn Vibrio, trùng hai tế bào, vi bào tử trùng EHP, tảo độc), nên xử lý hiệu quả cần kết hợp ba hướng: làm sạch môi trường, kiểm soát tác nhân và phục hồi gan ruột. Riêng EHP chưa có thuốc đặc trị trong ao, phải phòng từ khâu chọn giống PCR âm tính và cải tạo ao.",
     "signs": ["Phân trắng nổi mặt ao, trong nhá có phân trắng", "Gan tụy nhạt màu, teo nhỏ hoặc sưng to", "Ruột đứt khúc, trống ruột, tôm giảm ăn", "Tôm chết sớm 10 đến 35 ngày sau thả"],
-    "steps": ["Giảm 30 đến 50% thức ăn, vớt phân trắng mỗi ngày", "Xử lý đáy bằng vi sinh, giảm mật độ vi khuẩn trong nước", "Xổ ký sinh trùng đường ruột nếu soi thấy trùng hai tế bào", "Trộn sản phẩm hỗ trợ trị phân trắng và bổ gan theo nhãn", "Phục hồi đường ruột bằng men vi sinh sau đợt trị"],
+    "steps": ["Kiểm tra oxy, pH, khí độc; giảm 30 đến 50% thức ăn, vớt phân trắng mỗi ngày", "Xử lý đáy bằng vi sinh, giảm mật độ vi khuẩn trong nước", "Xổ ký sinh trùng đường ruột nếu soi thấy trùng hai tế bào", "Trộn sản phẩm hỗ trợ trị phân trắng và bổ gan theo nhãn", "Phục hồi đường ruột bằng men vi sinh sau đợt trị"],
     "articles": ["tom-bi-teo-gan-gan-trang-cach-xu-ly", "tom-bi-trong-ruot-dut-khuc-ruot-cach-xu-ly", "benh-phan-trang-tren-tom-the", "benh-hoai-tu-gan-tuy-cap-ems-tren-tom", "benh-vi-bao-tu-trung-ehp-tren-tom"],
     "faq": [
-      { "q": "Thuốc nào trị phân trắng cho tôm hiệu quả?", "a": "Không có một loại thuốc dùng cho mọi ao. Nếu do ký sinh trùng, cần xổ ký sinh trùng; nếu do vi khuẩn, cần sản phẩm hỗ trợ điều trị nhiễm khuẩn đường ruột; luôn kết hợp bổ gan và xử lý đáy. Gọi kỹ thuật viên Noben để được tư vấn đúng nguyên nhân." },
+      { "q": "Thuốc nào trị phân trắng cho tôm hiệu quả?", "a": "Không có một loại thuốc dùng cho mọi ao. Nếu do ký sinh trùng, cần xổ ký sinh trùng; nếu do vi khuẩn, cần sản phẩm hỗ trợ điều trị nhiễm khuẩn đường ruột (kháng sinh chỉ dùng khi có chẩn đoán của thú y, đúng loại được phép và thời gian ngưng thuốc); nếu do EHP thì không có thuốc đặc trị, chỉ quản lý môi trường và thức ăn. Luôn kết hợp bổ gan và xử lý đáy. Gọi kỹ thuật viên Noben để được tư vấn đúng nguyên nhân." },
       { "q": "Bao lâu thì tôm hết phân trắng?", "a": "Phát hiện sớm và xử lý đúng, tôm thường ăn lại sau 3 đến 5 ngày, phân trở lại bình thường sau khoảng 7 ngày." }
     ]
   },
@@ -37,7 +37,7 @@
     "description": "Khoáng tạt, khoáng trộn và sản phẩm tăng trọng giúp tôm cứng vỏ nhanh, lột đều, phòng cong thân, đục cơ, chậm lớn. Dùng cho ao đất, ao bạt và ao độ mặn thấp.",
     "intro": "Tôm thẻ lột xác 7 đến 15 ngày một lần và cần nhiều canxi, magie, kali để tạo vỏ mới. Thiếu khoáng hoặc độ kiềm thấp khiến tôm mềm vỏ kéo dài, cong thân, đục cơ và chậm lớn. Kết hợp khoáng tạt ban đêm với khoáng trộn thức ăn là cách bổ sung hiệu quả nhất.",
     "signs": ["Tôm lột xong lâu cứng vỏ, vỏ mỏng, nhăn", "Thân cong, thịt đục trắng ở đuôi", "Tôm lột không đều, kẹt vỏ", "Tôm chậm lớn, lệch cỡ"],
-    "steps": ["Đo và nâng độ kiềm lên 120 đến 180 mg/L", "Tạt khoáng vào khoảng 21 đến 22 giờ khi tôm lột", "Trộn khoáng hữu cơ vào thức ăn hằng ngày", "Bổ sung vitamin C khi trời nắng nóng"],
+    "steps": ["Đo và nâng độ kiềm lên 120 đến 180 mg/L (ao bạt mật độ cao 150 đến 200 mg/L), giữ tỷ lệ Ca:Mg khoảng 1:3, Ca:K khoảng 1:1", "Tạt khoáng vào khoảng 21 đến 22 giờ khi tôm lột", "Trộn khoáng hữu cơ vào thức ăn hằng ngày", "Bổ sung vitamin C khi trời nắng nóng"],
     "articles": ["tom-cham-lon-coi-lech-co-cach-khac-phuc", "cach-danh-khoang-cho-tom-dung-thoi-diem-lieu-luong", "tom-bi-xanh-vo-xanh-da-troi-nguyen-nhan", "tom-mem-vo-cham-lot-nguyen-nhan-cach-xu-ly", "benh-cong-than-duc-co-tren-tom", "quan-ly-ph-do-kiem-ao-nuoi-tom"],
     "faq": [
       { "q": "Nên dùng khoáng tạt hay khoáng trộn?", "a": "Nên dùng cả hai. Khoáng tạt bổ sung khoáng cho nước, khoáng trộn giúp tôm hấp thu trực tiếp qua đường ruột." },
@@ -66,12 +66,12 @@
     "seo_title": "Vi sinh xử lý đáy ao, khí độc NH3 NO2 H2S – Noben",
     "description": "Vi sinh xử lý đáy, yucca, zeolite hấp thụ khí độc NH3, NO2, H2S, tẩy nhớt bạt cho ao tôm đất và ao bạt mật độ cao. Giải độc phèn, kim loại nặng.",
     "intro": "Khí độc sinh ra từ thức ăn dư, phân tôm và bùn đáy là nguyên nhân âm thầm khiến tôm chậm lớn, đen mang và dễ bệnh. Vi sinh xử lý tận gốc chất thải; yucca và zeolite hạ khí độc nhanh trong tình huống cấp bách.",
-    "signs": ["NH₃ trên 0,1 mg/L hoặc NO₂ trên 1 mg/L", "Bùn đáy đen, mùi trứng thối", "Nhớt bạt, nước nhiều bọt, váng", "Tôm giảm ăn, tấp mé, mang đen"],
-    "steps": ["Giảm thức ăn 20 đến 30% trong 2 đến 3 ngày", "Hấp thụ nhanh khí độc bằng yucca hoặc zeolite", "Vi sinh xử lý đáy 2 đến 5 ngày một lần tùy giai đoạn", "Ao bạt xi phông và tẩy nhớt bạt định kỳ"],
+    "signs": ["NH₃ trên 0,1 mg/L hoặc NO₂ trên 1 mg/L (độ mặn thấp: trên 0,5 mg/L)", "Bùn đáy đen, mùi trứng thối", "Nhớt bạt, nước nhiều bọt, váng", "Tôm giảm ăn, tấp mé, mang đen"],
+    "steps": ["Đo pH và oxy (pH cao làm NH₃ độc hơn, pH thấp làm H₂S độc hơn); giảm thức ăn 20 đến 30% trong 2 đến 3 ngày, tăng quạt khí", "Hấp thụ nhanh khí độc bằng yucca hoặc zeolite", "Vi sinh xử lý đáy 2 đến 5 ngày một lần tùy giai đoạn", "Ao bạt xi phông và tẩy nhớt bạt định kỳ"],
     "articles": ["zeolite-va-yucca-cho-ao-tom-cach-dung", "ao-tom-nhieu-bot-bot-kho-tan-cach-xu-ly", "ao-tom-bi-phen-dau-hieu-cach-xu-ly", "xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom", "cach-u-va-su-dung-vi-sinh-cho-ao-tom", "ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao"],
     "faq": [
       { "q": "Bao lâu tạt vi sinh xử lý đáy một lần?", "a": "Tôm dưới 30 ngày khoảng 5 đến 7 ngày một lần, 31 đến 60 ngày khoảng 3 đến 5 ngày, trên 60 ngày khoảng 2 đến 3 ngày một lần." },
-      { "q": "Yucca và zeolite khác nhau thế nào?", "a": "Yucca hấp thụ nhanh NH₃ trong nước; zeolite hấp phụ khí độc và chất bẩn ở đáy. Hai loại có thể dùng kết hợp." }
+      { "q": "Yucca và zeolite khác nhau thế nào?", "a": "Yucca hỗ trợ giảm nhanh NH₃ trong nước; zeolite hấp phụ amoni tốt ở nước ngọt, độ mặn thấp nhưng kém ở nước lợ mặn, chủ yếu giúp lắng chất lơ lửng ở đáy. Hai loại có thể dùng kết hợp; riêng NO₂ cần vi sinh, thay nước và giữ độ mặn, khoáng phù hợp." }
     ]
   },
   {
@@ -82,10 +82,10 @@
     "description": "Oxy viên, oxy hạt cấp cứu tôm nổi đầu do thiếu oxy; vitamin C tạt và trộn chống sốc, giảm stress khi thời tiết thay đổi, sau mưa hoặc sau xử lý ao.",
     "intro": "Thiếu oxy có thể làm tôm chết hàng loạt chỉ trong vài giờ vào nửa đêm về sáng. Bên cạnh quạt khí và máy phát dự phòng, bà con nên luôn có sẵn oxy cấp cứu và vitamin C chống sốc cho những ngày thời tiết xấu.",
     "signs": ["Tôm nổi đầu, tấp mé từ 2 đến 6 giờ sáng", "Oxy hòa tan dưới 3 mg/L", "Tôm yếu sau mưa, sau thay nước hoặc xử lý hóa chất", "Nhiệt độ nước thay đổi đột ngột"],
-    "steps": ["Bật toàn bộ quạt nước, sục khí", "Rải oxy hạt nơi tôm nổi nhiều", "Ngưng cữ ăn kế tiếp", "Hấp thụ khí độc và bổ sung vitamin C giảm stress"],
+    "steps": ["Bật toàn bộ quạt nước, sục khí", "Ngưng cữ ăn kế tiếp, không tạt hóa chất diệt khuẩn, diệt tảo khi tôm đang nổi đầu", "Rải oxy hạt nơi tôm nổi nhiều", "Hấp thụ khí độc và bổ sung vitamin C giảm stress"],
     "articles": ["vitamin-c-cho-tom-chong-soc-tang-de-khang", "tom-bi-do-than-nguyen-nhan-cach-xu-ly", "ao-tom-bi-sup-tao-rot-tao-cach-xu-ly", "tom-noi-dau-thieu-oxy-cach-xu-ly", "nuoi-tom-mua-mua-va-cach-khac-phuc"],
     "faq": [
-      { "q": "Oxy hòa tan bao nhiêu là an toàn?", "a": "Nên duy trì trên 5 mg/L. Dưới 3 mg/L tôm bắt đầu nổi đầu và cần cấp cứu ngay." },
+      { "q": "Oxy hòa tan bao nhiêu là an toàn?", "a": "Nên duy trì trên 5 mg/L, không để dưới 4 mg/L (đo lúc rạng sáng). Dưới 3 mg/L tôm bắt đầu nổi đầu và cần cấp cứu ngay." },
       { "q": "Khi nào nên dùng vitamin C tạt?", "a": "Khi trời mưa kéo dài, nắng nóng, sau thay nước, sau xử lý hóa chất hoặc khi tôm lột rộ." }
     ]
   },
@@ -100,7 +100,7 @@
     "steps": ["Diệt ốc, hến 7 ngày trước khi thả giống", "Diệt khuẩn nguồn nước, chờ hết dư lượng 3 đến 5 ngày", "Diệt khuẩn định kỳ khi ao nhiều chất hữu cơ", "Sau diệt khuẩn 2 đến 3 ngày cấy lại vi sinh"],
     "articles": ["diet-oc-dinh-oc-buou-vang-hen-trong-ao-nuoi-tom", "tom-bi-nam-nam-dong-tien-ao-bat", "quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong", "benh-dom-trang-wssv-tren-tom"],
     "faq": [
-      { "q": "BKC và Iodine khác nhau thế nào?", "a": "Cả hai đều diệt khuẩn. BKC còn giúp quản lý tảo; Iodine diệt khuẩn, virus và nấm, ít ảnh hưởng tảo khi dùng đúng liều. Chọn theo tình trạng ao và hướng dẫn kỹ thuật." },
+      { "q": "BKC và Iodine khác nhau thế nào?", "a": "Cả hai đều diệt khuẩn trong nước. BKC còn giúp quản lý tảo; Iodine phổ diệt rộng (vi khuẩn, nấm, nguyên sinh động vật), ít ảnh hưởng tảo khi dùng đúng liều. Không chất sát trùng nào chữa được bệnh virus trên tôm. Không dùng hai loại cùng lúc; chọn theo tình trạng ao và hướng dẫn kỹ thuật." },
       { "q": "Diệt ốc xong bao lâu thì thả tôm?", "a": "Thường sau khoảng 7 ngày, khi sản phẩm đã phân hủy hết. Xem hướng dẫn trên nhãn từng sản phẩm." }
     ]
   },
@@ -116,7 +116,7 @@
     "articles": ["men-vi-sinh-cho-tom-cach-chon-va-su-dung", "vitamin-c-cho-tom-chong-soc-tang-de-khang", "tom-cham-lon-coi-lech-co-cach-khac-phuc", "quan-ly-thuc-an-cho-tom-an-dung-cach", "lich-cham-soc-tom-the-theo-ngay-tuoi", "cach-u-va-su-dung-vi-sinh-cho-ao-tom"],
     "faq": [
       { "q": "Có nên trộn men vi sinh mỗi ngày?", "a": "Nên. Trộn men vi sinh đường ruột 1 đến 2 cữ mỗi ngày giúp duy trì hệ vi sinh có lợi, nhất là giai đoạn 1 đến 60 ngày." },
-      { "q": "Men tiêu hóa có dùng chung với kháng sinh được không?", "a": "Không nên dùng cùng lúc. Sau khi kết thúc đợt kháng sinh, bổ sung men vi sinh để phục hồi đường ruột." }
+      { "q": "Men tiêu hóa có dùng chung với kháng sinh được không?", "a": "Không nên dùng cùng lúc. Kháng sinh chỉ dùng khi có chẩn đoán và chỉ định của thú y, không dùng để phòng bệnh; sau khi kết thúc đợt điều trị, bổ sung men vi sinh để phục hồi đường ruột." }
     ]
   }
 ]

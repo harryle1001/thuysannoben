@@ -5,12 +5,12 @@
     "h1": "Shrimp white feces disease, hepatopancreas and gut problems: treatment and prevention",
     "seo_title": "Shrimp white feces & hepatopancreas treatment – Noben",
     "description": "Products for white feces disease, atrophied or swollen hepatopancreas and empty gut in whiteleg and black tiger shrimp: deworming, liver and gut support.",
-    "intro": "White feces, an atrophied or swollen hepatopancreas and a discontinuous gut are the group of diseases causing the greatest losses in whiteleg shrimp ponds from 10 to 70 days of culture. Effective treatment combines three approaches: cleaning up the pond environment, removing the causative agents (bacteria, parasites) and restoring the hepatopancreas and gut.",
+    "intro": "White feces, an atrophied or swollen hepatopancreas and a discontinuous gut are the group of diseases causing the greatest losses in whiteleg shrimp ponds from 10 to 70 days of culture. White feces is a multifactorial syndrome (Vibrio bacteria, gregarines, the microsporidian EHP, toxic algae), so effective management combines three approaches: cleaning up the pond environment, controlling the causative agents and restoring the hepatopancreas and gut. EHP has no in-pond cure and must be prevented with PCR-negative postlarvae and thorough pond preparation.",
     "signs": ["White feces floating on the pond surface, white feces on the feeding trays", "Pale, atrophied or swollen hepatopancreas", "Discontinuous gut, empty gut, shrimp eating less", "Early mortality 10–35 days after stocking"],
-    "steps": ["Cut feed by 30–50% and skim off white feces every day", "Treat the bottom with probiotics and reduce bacterial density in the water", "Deworm the gut if microscopy shows gregarines", "Mix products supporting white feces treatment and liver support into the feed as per label", "Restore the gut with probiotics after the treatment course"],
+    "steps": ["Check DO, pH and toxic gases; cut feed by 30–50% and skim off white feces every day", "Treat the bottom with probiotics and reduce bacterial density in the water", "Deworm the gut if microscopy shows gregarines", "Mix products supporting white feces treatment and liver support into the feed as per label", "Restore the gut with probiotics after the treatment course"],
     "articles": ["tom-bi-teo-gan-gan-trang-cach-xu-ly", "tom-bi-trong-ruot-dut-khuc-ruot-cach-xu-ly", "benh-phan-trang-tren-tom-the", "benh-hoai-tu-gan-tuy-cap-ems-tren-tom", "benh-vi-bao-tu-trung-ehp-tren-tom"],
     "faq": [
-      { "q": "Which product treats white feces disease in shrimp effectively?", "a": "No single product works for every pond. If the cause is parasites, the shrimp need deworming; if it is bacterial, they need a product supporting treatment of intestinal bacterial infection; always combine this with liver support and bottom treatment. Contact a Noben technician for advice matched to the actual cause." },
+      { "q": "Which product treats white feces disease in shrimp effectively?", "a": "No single product works for every pond. If the cause is parasites, the shrimp need deworming; if it is bacterial, they need a product supporting treatment of intestinal bacterial infection (antibiotics only on a veterinary diagnosis, using permitted compounds and observing withdrawal periods); if it is EHP, there is no specific treatment, only environmental and feed management. Always combine this with liver support and bottom treatment. Contact a Noben technician for advice matched to the actual cause." },
       { "q": "How long does it take for shrimp to recover from white feces?", "a": "With early detection and correct treatment, shrimp usually resume feeding after 3–5 days, and feces return to normal after about 7 days." }
     ]
   },
@@ -37,7 +37,7 @@
     "description": "Pond-applied and feed-mixed minerals and growth products help shrimp harden shells fast, moult evenly and avoid bent body, white muscle and slow growth in all ponds.",
     "intro": "Whiteleg shrimp moult every 7–15 days and need plenty of calcium, magnesium and potassium to form a new shell. Mineral deficiency or low alkalinity causes prolonged soft shell, bent body, muscle necrosis and slow growth. Combining night-time pond-applied minerals with feed-mixed minerals is the most effective way to supplement them.",
     "signs": ["Shells take long to harden after moulting, thin and wrinkled shells", "Bent body, opaque white muscle in the tail", "Uneven moulting, shrimp stuck in old shells", "Slow growth, size variation"],
-    "steps": ["Measure alkalinity and raise it to 120–180 mg/L", "Apply minerals at around 9–10 pm when shrimp moult", "Mix organic minerals into the feed daily", "Add vitamin C in hot weather"],
+    "steps": ["Measure alkalinity and raise it to 120–180 mg/L (150–200 mg/L in high-density lined ponds), keeping Ca:Mg at about 1:3 and Ca:K at about 1:1", "Apply minerals at around 9–10 pm when shrimp moult", "Mix organic minerals into the feed daily", "Add vitamin C in hot weather"],
     "articles": ["tom-cham-lon-coi-lech-co-cach-khac-phuc", "cach-danh-khoang-cho-tom-dung-thoi-diem-lieu-luong", "tom-bi-xanh-vo-xanh-da-troi-nguyen-nhan", "tom-mem-vo-cham-lot-nguyen-nhan-cach-xu-ly", "benh-cong-than-duc-co-tren-tom", "quan-ly-ph-do-kiem-ao-nuoi-tom"],
     "faq": [
       { "q": "Should I use pond-applied or feed-mixed minerals?", "a": "Use both. Pond-applied minerals replenish minerals in the water, while feed-mixed minerals let shrimp absorb them directly through the gut." },
@@ -66,12 +66,12 @@
     "seo_title": "Shrimp pond bottom probiotics, NH3 NO2 H2S control – Noben",
     "description": "Bottom probiotics, yucca and zeolite to absorb toxic NH3, NO2, H2S and remove liner slime in earthen and high-density lined ponds. Detoxify alum and heavy metals.",
     "intro": "Toxic gases produced from uneaten feed, shrimp faeces and bottom sludge are a silent cause of slow growth, black gill and disease susceptibility. Probiotics treat the waste at its source; yucca and zeolite lower toxic gases quickly in urgent situations.",
-    "signs": ["NH₃ above 0.1 mg/L or NO₂ above 1 mg/L", "Black bottom sludge smelling of rotten eggs", "Slimy liner, water with a lot of foam and scum", "Shrimp eating less, gathering at the pond edge, black gills"],
-    "steps": ["Cut feed by 20–30% for 2–3 days", "Absorb toxic gases quickly with yucca or zeolite", "Apply bottom probiotics every 2–5 days depending on the stage", "Siphon lined ponds and remove liner slime periodically"],
+    "signs": ["NH₃ above 0.1 mg/L or NO₂ above 1 mg/L (above 0.5 mg/L at low salinity)", "Black bottom sludge smelling of rotten eggs", "Slimy liner, water with a lot of foam and scum", "Shrimp eating less, gathering at the pond edge, black gills"],
+    "steps": ["Measure pH and DO (high pH makes NH₃ more toxic, low pH makes H₂S more toxic); cut feed by 20–30% for 2–3 days and increase aeration", "Absorb toxic gases quickly with yucca or zeolite", "Apply bottom probiotics every 2–5 days depending on the stage", "Siphon lined ponds and remove liner slime periodically"],
     "articles": ["zeolite-va-yucca-cho-ao-tom-cach-dung", "ao-tom-nhieu-bot-bot-kho-tan-cach-xu-ly", "ao-tom-bi-phen-dau-hieu-cach-xu-ly", "xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom", "cach-u-va-su-dung-vi-sinh-cho-ao-tom", "ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao"],
     "faq": [
       { "q": "How often should bottom probiotics be applied?", "a": "For shrimp under 30 days, about once every 5–7 days; 31–60 days, about every 3–5 days; over 60 days, about once every 2–3 days." },
-      { "q": "What is the difference between yucca and zeolite?", "a": "Yucca rapidly absorbs NH₃ in the water; zeolite adsorbs toxic gases and dirt on the bottom. The two can be used together." }
+      { "q": "What is the difference between yucca and zeolite?", "a": "Yucca helps reduce NH₃ in the water quickly; zeolite adsorbs ammonium well in fresh and low-salinity water but poorly in brackish or saline water, and mainly helps settle suspended matter on the bottom. The two can be used together; nitrite needs probiotics, water exchange and adequate salinity and minerals instead." }
     ]
   },
   {
@@ -82,10 +82,10 @@
     "description": "Oxygen tablets and granules for shrimp surfacing from low oxygen; pond-applied and feed-mixed vitamin C against shock and stress after weather changes or rain.",
     "intro": "Low oxygen can kill shrimp en masse within a few hours between midnight and dawn. Besides aerators and a backup generator, farmers should always keep emergency oxygen and anti-shock vitamin C on hand for days of bad weather.",
     "signs": ["Shrimp surfacing and gathering at the pond edge from 2–6 am", "Dissolved oxygen below 3 mg/L", "Weak shrimp after rain, water exchange or chemical treatment", "Sudden changes in water temperature"],
-    "steps": ["Switch on all paddlewheel aerators and aeration", "Spread oxygen granules where most shrimp are surfacing", "Skip the next meal", "Absorb toxic gases and add vitamin C to reduce stress"],
+    "steps": ["Switch on all paddlewheel aerators and aeration", "Skip the next meal and do not apply disinfectants or algicides while shrimp are surfacing", "Spread oxygen granules where most shrimp are surfacing", "Absorb toxic gases and add vitamin C to reduce stress"],
     "articles": ["vitamin-c-cho-tom-chong-soc-tang-de-khang", "tom-bi-do-than-nguyen-nhan-cach-xu-ly", "ao-tom-bi-sup-tao-rot-tao-cach-xu-ly", "tom-noi-dau-thieu-oxy-cach-xu-ly", "nuoi-tom-mua-mua-va-cach-khac-phuc"],
     "faq": [
-      { "q": "What level of dissolved oxygen is safe?", "a": "Keep it above 5 mg/L. Below 3 mg/L shrimp start surfacing and need emergency treatment immediately." },
+      { "q": "What level of dissolved oxygen is safe?", "a": "Keep it above 5 mg/L and never below 4 mg/L (measured at dawn). Below 3 mg/L shrimp start surfacing and need emergency treatment immediately." },
       { "q": "When should pond-applied vitamin C be used?", "a": "During prolonged rain or hot weather, after water exchange, after chemical treatment, or during mass moulting." }
     ]
   },
@@ -100,7 +100,7 @@
     "steps": ["Kill snails and clams 7 days before stocking", "Disinfect the water source and wait 3–5 days for residues to clear", "Disinfect periodically when the pond is high in organic matter", "Re-inoculate probiotics 2–3 days after disinfection"],
     "articles": ["diet-oc-dinh-oc-buou-vang-hen-trong-ao-nuoi-tom", "tom-bi-nam-nam-dong-tien-ao-bat", "quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong", "benh-dom-trang-wssv-tren-tom"],
     "faq": [
-      { "q": "What is the difference between BKC and iodine?", "a": "Both are disinfectants. BKC also helps manage algae; iodine kills bacteria, viruses and fungi and has little effect on algae when used at the correct dose. Choose according to pond conditions and technical guidance." },
+      { "q": "What is the difference between BKC and iodine?", "a": "Both are water disinfectants. BKC also helps manage algae; iodine has a broad spectrum (bacteria, fungi, protozoa) and little effect on algae when used at the correct dose. No disinfectant cures viral disease in shrimp. Do not use the two at the same time; choose according to pond conditions and technical guidance." },
       { "q": "How long after killing snails can shrimp be stocked?", "a": "Usually after about 7 days, once the product has fully broken down. Check the label instructions for each product." }
     ]
   },
@@ -116,7 +116,7 @@
     "articles": ["men-vi-sinh-cho-tom-cach-chon-va-su-dung", "vitamin-c-cho-tom-chong-soc-tang-de-khang", "tom-cham-lon-coi-lech-co-cach-khac-phuc", "quan-ly-thuc-an-cho-tom-an-dung-cach", "lich-cham-soc-tom-the-theo-ngay-tuoi", "cach-u-va-su-dung-vi-sinh-cho-ao-tom"],
     "faq": [
       { "q": "Should gut probiotics be mixed into feed every day?", "a": "Yes. Mixing gut probiotics into 1–2 meals a day helps maintain beneficial gut bacteria, especially from day 1 to day 60." },
-      { "q": "Can digestive enzymes be used together with antibiotics?", "a": "They should not be used at the same time. After finishing a course of antibiotics, add probiotics to restore the gut." }
+      { "q": "Can digestive enzymes be used together with antibiotics?", "a": "They should not be used at the same time. Antibiotics should only be used on a veterinary diagnosis and prescription, never for prevention; after the treatment course ends, add probiotics to restore the gut." }
     ]
   }
 ]
