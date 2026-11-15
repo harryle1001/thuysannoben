@@ -8,12 +8,12 @@ GIỮ NGUYÊN vẻ logo đang dùng: hình thoi vuông vàng tươi, khung xanh 
 vị trí và độ dày theo φ. Đơn vị: khung 512 như logo gốc; a = 250 là nửa đường chéo hình thoi.
 
   Viền trong        lùi vào a/φ⁶
-  Khung xanh        bốn góc nằm đúng trên cạnh hình thoi (rộng + cao = 2a);
+  Khung xanh        nằm gọn trong viền trong; hai vạch trắng dài bằng khung, đầu vạch chạm viền trong;
                     phương án A: rộng : cao = √φ (sát bản gốc) · phương án B: rộng : cao = φ (chữ nhật vàng)
   Chấm tròn         bán kính a/φ⁵; khuyết = chấm × √φ
   Vạch trắng        dày = chấm/φ²; dài = khung + 2 × độ dày
   Nét mảnh          = vạch/φ² (viền trong), × √φ cho nét gãy; đỉnh nét gãy cách tâm a(1 − 1/φ⁵)
-  Chữ NOBEN         rộng = 2a/√φ, viền = độ dày vạch, tâm chữ trùng tâm hình thoi
+  Chữ NOBEN         rộng = khung × √φ, viền = độ dày vạch, tâm chữ trùng tâm hình thoi
   Sóng nước         rộng = khung/φ rồi giảm √φ mỗi sóng; dày = vạch/φ; cách nhau = chấm/√φ
   Màu chuyển        điểm dừng ở 61,8%
 """
@@ -44,21 +44,25 @@ def word():
 
 
 def mark(ratio):
-    w = 2 * A * ratio / (1 + ratio)          # rộng + cao = 2a, rộng / cao = ratio
-    h = 2 * A - w
-    px, py = C - w / 2, C - h / 2
     dot = A / PHI ** 5
     notch = dot * RT
     bar = dot / PHI ** 2
     hair = bar / PHI ** 2
+    k_in = 1 - 1 / PHI ** 6
+    ai = A * k_in                            # nửa đường chéo của viền trong
+    # Khung xanh và hai vạch trắng nằm GỌN trong viền trong: đầu ngoài của vạch chạm đúng viền trong
+    # (trừ nửa nét viền), vạch dài bằng khung. w/2 + h/2 + 1,5·vạch = ai − nét mảnh.
+    s_half = ai - hair - 1.5 * bar
+    w = 2 * s_half * ratio / (1 + ratio)
+    h = 2 * s_half - w
+    px, py = C - w / 2, C - h / 2
     top, bot = py - bar, py + h + bar        # tâm hai vạch trắng (cách khung nửa độ dày)
-    bar_w = w + 2 * bar
+    bar_w = w
     apex = A * (1 - 1 / PHI ** 5)
     ex = w / 2 - bar
     chev = lambda sg: f'M{r2(C + sg * ex)} {r2(top)} L{r2(C + sg * apex)} {r2(C)} L{r2(C + sg * ex)} {r2(bot)}'
-    k_in = 1 - 1 / PHI ** 6
     d, b = word()
-    ww = 2 * A / RT
+    ww = w * RT                              # chữ rộng = khung × √φ (gần tỷ lệ chữ/khung của logo gốc)
     k = ww / b.w
     tx = C - (b.x + b.w / 2) * k
     ty = C - (b.y + b.h / 2) * k
