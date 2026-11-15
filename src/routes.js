@@ -478,6 +478,14 @@ router.get('/ve-chung-toi', (req, res) =>
     jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']]), seo.factoryVideo()],
   })
 );
+// Brand identity proposal: golden-ratio logo and label system (noindex until the new logo is approved).
+router.get('/thuong-hieu', (req, res) =>
+  res.render('pages/brand', {
+    meta: { title: 'Nhận diện thương hiệu Noben – Logo và nhãn mác theo tỷ lệ vàng', description: 'Logo Noben dựng theo đường xoắn vàng và số π, cùng hệ thống nhãn mác chia theo đoạn vàng.', image: '/images/brand/golden/noben-construction.webp', noindex: true },
+    labels: ['g7-phong-va-tri-benh-gan-chet-som', 'caphote', 'aqualac-fs', 'sorbest', 'proticbest', 'super-yucca', 'top-weigh', 'amylac'].map((s) => c.productBySlug[s]).filter(Boolean),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Nhận diện thương hiệu', '/thuong-hieu']])],
+  })
+);
 router.get('/chung-nhan', (req, res) =>
   res.render('pages/certificates', {
     meta: { title: 'Chứng nhận ISO 9001:2015 và hợp quy – Noben', description: 'Công ty TNHH Noben đạt chứng nhận ISO 9001:2015 và chứng nhận hợp quy sản phẩm thức ăn thủy sản, thức ăn bổ sung do VinaCert cấp.' },

@@ -1761,3 +1761,30 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 /* Scroll motion (js/scroll-motion.js): frames clip the images that drift inside them. */
 .page-head__photo, .oem-band__photo { overflow: hidden; border-radius: var(--radius-l); }
 .cert { overflow: hidden; }
+
+/* Brand identity page (/thuong-hieu): golden-ratio logo and labels */
+.brand-hero { display: grid; gap: var(--space-7); align-items: center; }
+@media (min-width: 960px) { .brand-hero { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); } }
+.brand-hero__mark { margin: 0; justify-self: center; width: min(100%, 380px); }
+.brand-hero__mark img { width: 100%; height: auto; filter: drop-shadow(0 34px 55px rgba(0, 0, 0, 0.45)); }
+.brand-ico { font-family: var(--font-display); font-size: var(--step-3); font-weight: 800; color: var(--sun); }
+.brand-sheet { display: block; border-radius: var(--radius-l); overflow: hidden; border: 1px solid var(--line); background: #f6f8fc; cursor: zoom-in; }
+.brand-sheet img { width: 100%; height: auto; display: block; }
+.brand-lockups { display: grid; gap: var(--space-4); }
+@media (min-width: 900px) { .brand-lockups { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.brand-lockup { margin: 0; padding: var(--space-7) var(--space-6); border-radius: var(--radius-l); background: #fff; border: 1px solid var(--line); display: grid; place-items: center; }
+.brand-lockup--dark { background: #0b2347; border-color: #0b2347; }
+.brand-lockup img { width: 100%; max-width: 520px; height: auto; }
+.brand-type { display: grid; gap: var(--space-5); margin-top: var(--space-6); }
+@media (min-width: 700px) { .brand-type { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); } }
+.brand-type__name { font-size: var(--step-3); font-weight: 600; color: var(--heading); }
+.brand-type__name--display { font-family: var(--font-display); font-weight: 800; }
+.brand-label { display: block; justify-self: center; width: min(100%, 420px); border-radius: var(--radius-m); overflow: hidden; box-shadow: 0 34px 55px -21px rgba(11, 35, 71, 0.45); cursor: zoom-in; }
+.brand-label img { width: 100%; height: auto; display: block; }
+.brand-sub { margin: var(--space-7) 0 var(--space-4); color: var(--heading); }
+.brand-labels { display: grid; gap: var(--space-3); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 700px) { .brand-labels { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.brand-labels a { display: grid; gap: var(--space-2); text-decoration: none; color: var(--heading); font-weight: 600; font-size: var(--step--1); cursor: zoom-in; }
+.brand-labels img { width: 100%; aspect-ratio: 1 / 1.272; object-fit: cover; border-radius: var(--radius-m); border: 1px solid var(--line); background: #fff; }
+.brand-dl { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+@media (min-width: 1100px) { .brand-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
