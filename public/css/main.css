@@ -1245,7 +1245,9 @@ body.menu-open .float-chat { display: none; }
 @media (min-width: 1000px) { .qc__grid { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--space-8); } }
 .qc__grid > * { min-width: 0; }
 .qc__frame { position: relative; border-radius: var(--radius-l); overflow: hidden; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(169, 205, 255, 0.14); background: #031027; }
-.qc__video { display: block; width: 100%; aspect-ratio: 1.618 / 1; object-fit: cover; }
+.qc__video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.qc__ctrl { position: absolute; right: 14px; bottom: 14px; display: flex; gap: 8px; }
+.qc__ctrl .qc__sound { position: static; }
 .qc__sound { position: absolute; right: 14px; bottom: 14px; display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(3, 16, 39, 0.6); color: #fff; font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer; backdrop-filter: blur(6px); }
 .qc__sound:hover { background: rgba(3, 16, 39, 0.85); }
 .qc__sound .ico { width: 16px; height: 16px; }

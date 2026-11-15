@@ -13,11 +13,14 @@
   <div class="wrap qc__grid">
     <div class="qc__film">
       <div class="qc__frame">
-        <video class="qc__video" muted playsinline loop preload="none" poster="/media/noben-film-poster.webp" data-inview-play aria-label="Phim giới thiệu Thủy sản Noben: quy trình sản xuất khép kín và chứng nhận chất lượng">
-          <source src="/media/noben-film.webm" type="video/webm">
-          <source src="/media/noben-film.mp4" type="video/mp4">
+        <video class="qc__video" muted playsinline loop preload="none" width="1920" height="1080" poster="/media/factory/noben-nha-may-poster.webp" data-inview-play aria-label="Phim nhà máy và đội ngũ Noben: nguyên liệu, công thức, dây chuyền cân trộn đóng gói, kiểm tra chất lượng ISO 9001:2015, chứng nhận hợp quy VinaCert">
+          <source src="/media/factory/noben-nha-may.webm" type="video/webm">
+          <source src="/media/factory/noben-nha-may.mp4" type="video/mp4">
         </video>
-        <button class="qc__sound" type="button" data-video-toggle aria-label="Tạm dừng video"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span>Tạm dừng</span></button>
+        <div class="qc__ctrl">
+          <button class="qc__sound" type="button" data-video-sound aria-pressed="false" aria-label="Bật tiếng"><svg class="ico" aria-hidden="true"><use href="#i-sound-off"/></svg><span>Bật tiếng</span></button>
+          <button class="qc__sound" type="button" data-video-toggle aria-label="Tạm dừng video"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span>Tạm dừng</span></button>
+        </div>
       </div>
       <ul class="qc__certs" aria-label="Chứng nhận">
         <li><strong>ISO 9001:2015</strong><span>Hệ thống quản lý chất lượng nhà máy</span></li>

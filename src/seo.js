@@ -117,4 +117,20 @@ function itemList(name, items) {
   };
 }
 
-module.exports = { SITE_URL, abs, organization, website, crumbs, article, faqPage, product, itemList };
+// The factory and team film (motion graphics from Noben's own photos and certificates).
+function factoryVideo() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Nhà máy và đội ngũ Noben: quy trình sản xuất thuốc thủy sản khép kín',
+    description: 'Phim giới thiệu Công ty TNHH Noben: kiểm tra nguyên liệu đầu vào, công thức từ đội kỹ thuật, dây chuyền cân, trộn, đóng gói tự động, kiểm tra chất lượng theo ISO 9001:2015, chứng nhận hợp quy VinaCert, đội ngũ Noben, 94 sản phẩm giao hàng toàn quốc.',
+    thumbnailUrl: [abs('/media/factory/noben-nha-may-poster.webp')],
+    contentUrl: abs('/media/factory/noben-nha-may.mp4'),
+    uploadDate: '2026-11-15T08:00:00+07:00',
+    duration: 'PT54S',
+    inLanguage: 'vi',
+    publisher: { '@id': ORG_ID, '@type': 'Organization', name: c.company.legal },
+  };
+}
+
+module.exports = { SITE_URL, abs, organization, website, crumbs, article, faqPage, product, itemList, factoryVideo };

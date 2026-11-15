@@ -308,8 +308,27 @@
     var watch = function () { videos.forEach(function (v) { io.observe(v); }); };
     if (document.readyState === 'complete') watch(); else window.addEventListener('load', watch);
   }
+  var boxVideo = function (btn) { return btn.parentNode.querySelector('video') || btn.parentNode.parentNode.querySelector('video'); };
+  // Sound: films with a sound bed start muted; this button turns the sound on (and starts playback).
+  document.querySelectorAll('[data-video-sound]').forEach(function (btn) {
+    var v = boxVideo(btn);
+    if (!v) return;
+    function label() {
+      var on = !v.muted;
+      btn.querySelector('span').textContent = on ? (EN ? 'Mute' : 'Tắt tiếng') : (EN ? 'Sound on' : 'Bật tiếng');
+      btn.setAttribute('aria-label', on ? (EN ? 'Mute' : 'Tắt tiếng') : (EN ? 'Turn sound on' : 'Bật tiếng'));
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.querySelector('use').setAttribute('href', on ? '#i-sound-on' : '#i-sound-off');
+    }
+    v.addEventListener('volumechange', label);
+    btn.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted && v.paused) { delete v.dataset.userPaused; if (v.preload === 'none') v.preload = 'auto'; play(v); }
+    });
+    label();
+  });
   document.querySelectorAll('[data-video-toggle]').forEach(function (btn) {
-    var v = btn.parentNode.querySelector('video');
+    var v = boxVideo(btn);
     if (!v) return;
     function label() {
       var paused = v.paused;

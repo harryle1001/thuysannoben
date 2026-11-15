@@ -342,7 +342,7 @@ router.get('/tuyen-dai-ly', (req, res) => {
     productCount: c.products.length,
     ranges,
     faq: DEALER_FAQ,
-    jsonld: [crumbs([['Trang chủ', '/'], ['Hệ thống đại lý', '/dai-ly'], ['Tuyển đại lý', '/tuyen-dai-ly']]), seo.faqPage(DEALER_FAQ)].filter(Boolean),
+    jsonld: [crumbs([['Trang chủ', '/'], ['Hệ thống đại lý', '/dai-ly'], ['Tuyển đại lý', '/tuyen-dai-ly']]), seo.faqPage(DEALER_FAQ), seo.factoryVideo()].filter(Boolean),
   });
 });
 router.get('/lp/:slug', (req, res, next) => {
@@ -377,7 +377,7 @@ function renderCombo(lp, res) {
     stages,
     shots,
     faq,
-    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq)].filter(Boolean) : [],
+    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq), seo.factoryVideo()].filter(Boolean) : [],
   });
 }
 
@@ -475,7 +475,7 @@ router.get('/ve-chung-toi', (req, res) =>
     meta: { preloadImage: '/media/noben-hero-poster.webp', title: 'Về Noben – Hơn 22 năm sản xuất thuốc thủy sản', description: c.company.overview[0] },
     gallery: c.gallery,
     productCount: c.products.length,
-    jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']])],
+    jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']]), seo.factoryVideo()],
   })
 );
 router.get('/chung-nhan', (req, res) =>
@@ -512,7 +512,7 @@ router.get('/tuyen-dung', (req, res) =>
 router.get('/gia-cong', (req, res) =>
   res.render('pages/oem', {
     meta: { title: 'Gia công thuốc thủy sản, chế phẩm sinh học – Noben', description: 'Noben nhận gia công thành phẩm, bán thành phẩm thuốc thủy sản, tư vấn thành lập công ty và đăng ký lưu hành sản phẩm.' },
-    jsonld: [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong']])],
+    jsonld: [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong']]), seo.factoryVideo()],
   })
 );
 router.get('/lien-he', (req, res) => {
