@@ -1,0 +1,107 @@
+<%- include('_header') %>
+<%
+  const dateFmt = (d) => new Date(d + 'T00:00:00+07:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh' });
+  const shareUrl = encodeURIComponent(canonical);
+%>
+<article class="article">
+  <header class="ahero<%= a.cover ? ' ahero--cover' : '' %>">
+    <div class="wrap ahero__grid">
+      <div class="ahero__text">
+        <%- include('_crumbs', { items: [['Knowledge', '/en/knowledge'], [a.topicInfo.name, '/en/knowledge/topic/' + a.topic], [a.title]] }) %>
+        <a class="ahero__topic" href="/en/knowledge/topic/<%= a.topic %>"><%= a.topicInfo.name %></a>
+        <h1 class="article__title"><%= a.title %></h1>
+        <% if (a.description) { %><p class="ahero__lead"><%= a.description %></p><% } %>
+        <p class="article__meta">
+          <span>Noben technical team</span>
+          <span>Updated <time datetime="<%= a.updated %>"><%= dateFmt(a.updated) %></time></span>
+          <span><%= a.readingMinutes %> min read</span>
+        </p>
+      </div>
+      <% if (a.cover) { %>
+      <figure class="ahero__cover"><%- img(a.cover, { alt: a.title, loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 1000px) 560px, 100vw' }) %></figure>
+      <% } %>
+    </div>
+  </header>
+
+  <div class="wrap article__layout">
+    <div class="article__main">
+      <% if (a.toc.length > 2) { %>
+      <details class="toc" open>
+        <summary>In this article</summary>
+        <ol>
+          <% a.toc.forEach((t) => { %><li><a href="#<%= t.id %>"><%= t.text %></a></li><% }) %>
+          <% if (a.faq.length) { %><li><a href="#faq">Frequently asked questions</a></li><% } %>
+        </ol>
+      </details>
+      <% } %>
+
+      <div class="prose prose--article"><%- a.body %></div>
+
+      <% if (a.faq.length) { %>
+      <section class="faq-block" aria-labelledby="faq">
+        <h2 id="faq" class="faq-block__title">Frequently asked questions</h2>
+        <div class="faq">
+          <% a.faq.forEach((f, i) => { %>
+          <details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><%- f.a %></div></details>
+          <% }) %>
+        </div>
+      </section>
+      <% } %>
+
+      <aside class="author-box" aria-label="About the author">
+        <img src="/images/brand/logo-noben.svg" width="56" height="56" alt="" loading="lazy">
+        <div>
+          <p class="author-box__name">Noben technical team</p>
+          <p>Written by the technical team of NOBEN CO., LTD, a Vietnamese manufacturer of aquaculture health products since <%= company.founded_year %> with an ISO 9001:2015 factory. For reference only; product rates follow the label and pond conditions. Translated from the <a href="<%= a.viUrl %>" hreflang="vi" lang="vi">Vietnamese original</a>.</p>
+        </div>
+      </aside>
+
+      <p class="share">
+        <span>Share:</span>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<%= shareUrl %>" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=<%= shareUrl %>" target="_blank" rel="noopener">LinkedIn</a>
+        <button type="button" class="share__copy" data-copy-link="<%= canonical %>">Copy link</button>
+      </p>
+    </div>
+
+    <aside class="article__aside">
+      <% if (solutions.length) { %>
+      <section class="aside-box">
+        <h2 class="aside-box__title">Related solutions</h2>
+        <ul class="aside-links">
+          <% solutions.forEach((s) => { %><li><a href="<%= s.url %>"><%= s.h1 %></a></li><% }) %>
+        </ul>
+      </section>
+      <% } %>
+      <% if (mentioned.length) { %>
+      <section class="aside-box">
+        <h2 class="aside-box__title">Products mentioned</h2>
+        <ul class="mini-products">
+          <% mentioned.forEach((p) => { %>
+          <li><a href="<%= p.url %>"><span class="mini-products__shot"><%- img(p.shot, { alt: '' }) %></span><span><strong><%= p.name %></strong><small><%= p.tagline %></small></span></a></li>
+          <% }) %>
+        </ul>
+      </section>
+      <% } %>
+      <section class="aside-box aside-box--ink">
+        <h2 class="aside-box__title">Distributor or farm abroad?</h2>
+        <p>Ask for specifications, prices and documents for the products in this guide. We reply within one working day.</p>
+        <a class="btn btn--sun btn--block" href="/en/contact"><svg class="ico"><use href="#i-mail"/></svg>Request a quote</a>
+        <a class="btn btn--ghost btn--block" href="https://wa.me/84<%= company.zalo.replace(/^0/, '') %>" target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>WhatsApp</a>
+      </section>
+    </aside>
+  </div>
+</article>
+
+<% if (more.length) { %>
+<section class="section section--tint" aria-labelledby="more-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="more-title" class="h2">Related guides</h2>
+      <a class="text-link" href="/en/knowledge">All shrimp farming knowledge</a>
+    </header>
+    <div class="agrid"><% more.forEach((p) => { %><%- include('_article-card', { post: p }) %><% }) %></div>
+  </div>
+</section>
+<% } %>
+<%- include('_footer') %>

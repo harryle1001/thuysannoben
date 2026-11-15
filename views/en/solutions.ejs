@@ -1,0 +1,15 @@
+<%- include('_header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('_crumbs', { items: [['Solutions']] }) %>
+    <h1 class="khead__title">Shrimp pond health solutions by problem</h1>
+    <p class="khead__lead">Choose the problem your pond is facing to see the typical signs, the treatment steps recommended by Noben technicians and the products that fit.</p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap">
+    <%- include('_solution-tiles', { solutions }) %>
+  </div>
+</section>
+<%- include('_contact-band', { title: 'Need a product line for these pond problems?' }) %>
+<%- include('_footer') %>

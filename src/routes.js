@@ -795,6 +795,14 @@ router.get('/sitemap.xml', (req, res) => {
     ...en.categories.map((x) => ({ loc: x.url, priority: '0.5', changefreq: 'monthly' })),
     ...en.products.map((p) => ({ loc: p.url, priority: '0.5', changefreq: 'monthly', images: [p.images[0].src], imageTitle: p.name })),
     ...['/en/about', '/en/oem-manufacturing', '/en/contact'].map((loc) => ({ loc, priority: '0.5', changefreq: 'monthly' })),
+    ...(() => {
+      const k = require('./en-knowledge');
+      return [
+        ...(k.solutions.length ? [{ loc: '/en/solutions', priority: '0.6', changefreq: 'monthly' }, ...k.solutions.map((s) => ({ loc: s.url, priority: '0.6', changefreq: 'monthly' }))] : []),
+        ...(k.articles.length ? [{ loc: '/en/knowledge', priority: '0.6', changefreq: 'weekly' }, ...k.TOPICS.map((t) => ({ loc: `/en/knowledge/topic/${t.slug}`, priority: '0.4', changefreq: 'weekly' }))] : []),
+        ...k.articles.map((a) => ({ loc: a.url, priority: '0.6', changefreq: 'monthly', lastmod: a.updated, images: [a.ogImage || (a.cover && a.cover.src)].filter(Boolean), imageTitle: a.title })),
+      ];
+    })(),
   ];
   const body = entries
     .map((e) => {

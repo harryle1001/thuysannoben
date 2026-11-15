@@ -1,0 +1,79 @@
+<%- include('_header') %>
+<section class="sol-hero">
+  <div class="wrap sol-hero__grid">
+    <div>
+      <%- include('_crumbs', { items: [['Solutions', '/en/solutions'], [s.label]] }) %>
+      <h1 class="sol-hero__title"><%= s.h1 %></h1>
+      <p class="sol-hero__lead"><%= s.intro %></p>
+      <div class="btn-row">
+        <a class="btn btn--sun" href="/en/contact"><svg class="ico"><use href="#i-mail"/></svg>Ask our technical team</a>
+        <a class="btn btn--ghost" href="#products">See <%= s.products.length %> matching products</a>
+      </div>
+    </div>
+    <div class="sol-card">
+      <h2 class="sol-card__title">Typical signs</h2>
+      <ul class="checks">
+        <% s.signs.forEach((x) => { %><li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span><%= x %></span></li><% }) %>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="steps-title">
+  <div class="wrap">
+    <h2 id="steps-title" class="h2">Treatment steps</h2>
+    <ol class="steps steps--solution">
+      <% s.steps.forEach((x) => { %><li><p><%= x %></p></li><% }) %>
+    </ol>
+    <p class="spec__note sol-note">Exact rates follow each product label and the condition of the pond. Contact <a href="mailto:<%= company.email %>"><%= company.email %></a> or WhatsApp +84 <%= company.hotline.replace(/^0/, '') %> for technical advice.</p>
+  </div>
+</section>
+
+<section class="section section--tint" id="products" aria-labelledby="sp-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="sp-title" class="h2">Matching Noben products</h2>
+      <a class="text-link" href="/en/products?issue=<%= s.symptom %>">Filter in the product catalogue</a>
+    </header>
+    <div class="pgrid">
+      <% s.products.slice(0, 12).forEach((p) => { %><%- include('_card', { p }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<% if (s.articleList.length) { %>
+<section class="section" aria-labelledby="art-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="art-title" class="h2">In-depth guides</h2>
+      <a class="text-link" href="/en/knowledge">Shrimp farming knowledge</a>
+    </header>
+    <div class="agrid">
+      <% s.articleList.forEach((p) => { %><%- include('_article-card', { post: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (faq.length) { %>
+<section class="section section--tint" aria-labelledby="faq-title">
+  <div class="wrap faq-wrap">
+    <h2 id="faq-title" class="h2">Frequently asked questions</h2>
+    <div class="faq">
+      <% faq.forEach((f, i) => { %>
+      <details class="faq__item"<% if (i === 0) { %> open<% } %>><summary><%= f.q %></summary><div class="faq__a"><p><%= f.a %></p></div></details>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<section class="section" aria-labelledby="other-title">
+  <div class="wrap">
+    <h2 id="other-title" class="h2">Other pond problems</h2>
+    <%- include('_solution-tiles', { solutions: others }) %>
+  </div>
+</section>
+
+<%- include('_contact-band', { title: 'Distribute these products in your market' }) %>
+<%- include('_footer') %>

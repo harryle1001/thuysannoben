@@ -1,0 +1,48 @@
+<%- include('_header') %>
+<% const [lead, ...rest] = list; %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('_crumbs', { items: topic ? [['Knowledge', '/en/knowledge'], [topic.name]] : [['Knowledge']] }) %>
+    <h1 class="khead__title"><%= topic ? topic.name : 'Shrimp farming knowledge' %></h1>
+    <p class="khead__lead"><%= topic ? topic.blurb : 'Technical guides from the Noben team, based on field work with Vietnamese shrimp farms and international references: disease recognition, water quality, minerals, lined ponds and farm economics.' %></p>
+    <nav class="topic-nav" aria-label="Topics">
+      <a class="topic-chip" href="/en/knowledge"<% if (!topic) { %> aria-current="page"<% } %>>All <span><%= total %></span></a>
+      <% for (const t of topics) { %>
+      <a class="topic-chip" href="/en/knowledge/topic/<%= t.slug %>"<% if (topic && topic.slug === t.slug) { %> aria-current="page"<% } %>><%= t.name %> <span><%= t.count %></span></a>
+      <% } %>
+    </nav>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap">
+    <% if (lead) { %>
+    <div class="kfeature">
+      <%- include('_article-card', { post: lead, big: true, eager: true }) %>
+      <div class="kfeature__side">
+        <% rest.slice(0, 3).forEach((p) => { %><%- include('_article-card', { post: p, compact: true }) %><% }) %>
+      </div>
+    </div>
+    <% } %>
+    <% if (rest.length > 3) { %>
+    <div class="agrid">
+      <% rest.slice(3).forEach((p) => { %><%- include('_article-card', { post: p }) %><% }) %>
+    </div>
+    <% } %>
+  </div>
+</section>
+
+<% if (solutions.length) { %>
+<section class="section section--tint" aria-labelledby="sol-title">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 id="sol-title" class="h2">Pond health solutions</h2>
+      <a class="text-link" href="/en/solutions">All solutions</a>
+    </header>
+    <%- include('_solution-tiles', { solutions }) %>
+  </div>
+</section>
+<% } %>
+
+<%- include('_contact-band') %>
+<%- include('_footer') %>

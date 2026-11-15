@@ -123,7 +123,8 @@ function enFor(viPath) {
   if (m && catByVi[m[1]]) return catByVi[m[1]].url;
   m = pth.match(/^\/san-pham\/([^/]+)$/);
   if (m && productBySlug[m[1]]) return productBySlug[m[1]].url;
-  return '';
+  const k = require('./en-knowledge');
+  return 'enPath' in k ? k.enPath(pth) : '';
 }
 function viFor(enPath) {
   const pth = enPath.replace(/\/$/, '');
@@ -132,7 +133,8 @@ function viFor(enPath) {
   if (m && catBySlug[m[1]]) return `/san-pham/nhom/${catBySlug[m[1]].vi}`;
   m = pth.match(/^\/en\/products\/([^/]+)$/);
   if (m && productBySlug[m[1]]) return productBySlug[m[1]].viUrl;
-  return '/';
+  const k = require('./en-knowledge');
+  return ('viPath' in k && k.viPath(pth)) || '/';
 }
 
 module.exports = { tr, categories, catBySlug, catByVi, symptoms, products, productBySlug, filterProducts, related, enFor, viFor };

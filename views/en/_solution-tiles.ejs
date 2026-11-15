@@ -1,0 +1,11 @@
+<ul class="soltiles">
+  <% solutions.forEach((s) => { %>
+  <li class="soltile">
+    <a href="<%= s.url %>">
+      <span class="soltile__label"><%= s.label %></span>
+      <span class="soltile__title"><%= s.h1 %></span>
+      <span class="soltile__more">See treatment steps<% if (s.count) { %> and <%= s.count %> products<% } %></span>
+    </a>
+  </li>
+  <% }) %>
+</ul>

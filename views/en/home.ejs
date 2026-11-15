@@ -60,6 +60,21 @@
   </div>
 </section>
 
+<% if (solutions.length) { %>
+<section class="section section--tint" aria-labelledby="sol-title">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="sol-title" class="h2">Pond health solutions</h2>
+        <p class="section-head__lead">Signs, treatment steps and matching products for the most common problems in shrimp ponds.</p>
+      </div>
+      <a class="text-link" href="/en/solutions">All solutions</a>
+    </header>
+    <%- include('_solution-tiles', { solutions }) %>
+  </div>
+</section>
+<% } %>
+
 <%- include('_quality') %>
 
 <% if (certificates.length) { %>
@@ -82,6 +97,21 @@
 
 <% if (featured.length) { %>
 <%- include('_showcase', { items: featured, id: 'featured', title: 'Farmers’ favourites', lead: 'Drag to browse, then open the product in the centre for its uses and directions.' }) %>
+<% } %>
+
+<% if (latest.length) { %>
+<section class="section" aria-labelledby="kn-title">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="kn-title" class="h2">Latest knowledge</h2>
+        <p class="section-head__lead">Technical guides on AHPND, EHP, white spot, water quality and minerals, with international references.</p>
+      </div>
+      <a class="text-link" href="/en/knowledge">All guides</a>
+    </header>
+    <div class="agrid"><% latest.forEach((p) => { %><%- include('_article-card', { post: p }) %><% }) %></div>
+  </div>
+</section>
 <% } %>
 
 <section class="oem-band" aria-labelledby="oem-title">

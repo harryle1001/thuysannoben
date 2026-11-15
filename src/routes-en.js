@@ -37,6 +37,8 @@ router.get('/en', (req, res) => {
     all: en.products,
     featured,
     certificates: c.gallery.certificates.slice(0, 4),
+    solutions: require('./en-knowledge').solutions,
+    latest: require('./en-knowledge').articles.slice(0, 3),
     jsonld: [org(), { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Noben Aquaculture', url: SITE_URL + '/en', inLanguage: 'en' }],
   });
 });
@@ -108,5 +110,7 @@ router.get('/en/contact', (req, res) =>
     jsonld: [crumbs([['Contact', '/en/contact']])],
   })
 );
+
+router.use(require('./routes-en-knowledge'));
 
 module.exports = router;
