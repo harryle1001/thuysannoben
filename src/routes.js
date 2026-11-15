@@ -3,6 +3,8 @@ const express = require('express');
 const c = require('./content');
 const leads = require('./leads');
 const auth = require('./auth');
+const totp = require('./totp');
+const backup = require('./backup');
 const seo = require('./seo');
 const policies = require('./policies');
 const chat = require('./chat');
@@ -70,32 +72,101 @@ router.use((req, res, next) => {
 
 router.use(require('./routes-en'));
 
-// ---------- Admin: sign in, sign out, save on-page edits ----------
+// ---------- Admin: sign in (password, then a 6-digit code when 2FA is on), sign out, save on-page edits ----------
 const loginAttempts = new Map();
+const codeAttempts = new Map();
+let codeFailsAll = [];
+const recentOf = (map, key, ms) => (map.get(key) || []).filter((t) => Date.now() - t < ms);
+const loginView = (extra) => ({ meta: { title: 'Đăng nhập quản trị', noindex: true }, error: '', configured: Boolean(process.env.ADMIN_PASS), ...extra });
 router.get('/quan-tri/dang-nhap', (req, res) => {
   if (auth.isAdmin(req)) return res.redirect(303, '/');
-  res.render('pages/admin-login', { meta: { title: 'Đăng nhập quản trị', noindex: true }, error: '', next: safeNext(req.query.next), configured: Boolean(process.env.ADMIN_PASS) });
+  res.set('Cache-Control', 'no-store');
+  res.render('pages/admin-login', loginView({ next: safeNext(req.query.next) }));
 });
 router.post('/quan-tri/dang-nhap', (req, res) => {
-  const now = Date.now();
-  const recent = (loginAttempts.get(req.ip) || []).filter((t) => now - t < 15 * 60 * 1000);
+  const recent = recentOf(loginAttempts, req.ip, 15 * 60 * 1000);
   const next = safeNext(req.body.next);
-  const fail = (msg, code = 401) =>
-    res.status(code).render('pages/admin-login', { meta: { title: 'Đăng nhập quản trị', noindex: true }, error: msg, next, configured: Boolean(process.env.ADMIN_PASS) });
+  const fail = (msg, code = 401) => res.status(code).render('pages/admin-login', loginView({ error: msg, next }));
   if (recent.length >= 8) return fail('Đăng nhập sai nhiều lần. Thử lại sau 15 phút.', 429);
   if (!auth.sameOrigin(req)) return fail('Yêu cầu không hợp lệ.', 403);
   if (!auth.checkPassword(String(req.body.user || ''), String(req.body.pass || ''))) {
-    recent.push(now);
+    recent.push(Date.now());
     loginAttempts.set(req.ip, recent);
     return fail('Tên đăng nhập hoặc mật khẩu chưa đúng.');
   }
   loginAttempts.delete(req.ip);
+  if (auth.totpEnabled()) {
+    auth.setPending(req, res);
+    return res.redirect(303, '/quan-tri/xac-thuc?next=' + encodeURIComponent(next));
+  }
+  auth.setSession(req, res);
+  res.redirect(303, next);
+});
+// Step 2: the code from the authenticator app. 5 tries per IP and 30 for everyone per 15 minutes.
+const codeView = (extra) => ({ meta: { title: 'Nhập mã xác thực', noindex: true }, error: '', ...extra });
+router.get('/quan-tri/xac-thuc', (req, res) => {
+  if (!auth.hasPending(req)) return res.redirect(303, '/quan-tri/dang-nhap');
+  res.set('Cache-Control', 'no-store');
+  res.render('pages/admin-2fa-code', codeView({ next: safeNext(req.query.next) }));
+});
+router.post('/quan-tri/xac-thuc', (req, res) => {
+  const next = safeNext(req.body.next);
+  res.set('Cache-Control', 'no-store');
+  const fail = (msg, code = 401) => res.status(code).render('pages/admin-2fa-code', codeView({ error: msg, next }));
+  if (!auth.sameOrigin(req)) return fail('Yêu cầu không hợp lệ.', 403);
+  if (!auth.hasPending(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=' + encodeURIComponent(next));
+  const WINDOW = 15 * 60 * 1000;
+  const recent = recentOf(codeAttempts, req.ip, WINDOW);
+  codeFailsAll = codeFailsAll.filter((t) => Date.now() - t < WINDOW);
+  if (recent.length >= 5 || codeFailsAll.length >= 30) {
+    auth.clearSession(res, req);
+    return fail('Nhập sai mã nhiều lần. Đợi 15 phút rồi đăng nhập lại.', 429);
+  }
+  if (!auth.checkCode(String(req.body.code || ''))) {
+    recent.push(Date.now());
+    codeAttempts.set(req.ip, recent);
+    codeFailsAll.push(Date.now());
+    return fail('Mã chưa đúng hoặc đã dùng. Xem mã mới trên ứng dụng xác thực.');
+  }
+  codeAttempts.delete(req.ip);
   auth.setSession(req, res);
   res.redirect(303, next);
 });
 router.get('/quan-tri/dang-xuat', (req, res) => {
-  auth.clearSession(res);
+  auth.clearSession(res, req);
   res.redirect(303, '/');
+});
+// Set up 2FA: a fresh secret and its QR code. The site never stores it; the admin pastes it into
+// ADMIN_TOTP_SECRET on hPanel. A test box checks the phone app shows matching codes first.
+router.get('/quan-tri/2fa', (req, res) => {
+  if (!auth.isAdmin(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/2fa');
+  res.set('Cache-Control', 'private, no-store');
+  const secret = totp.newSecret();
+  res.render('pages/admin-2fa', { meta: { title: 'Bảo mật 2 lớp', noindex: true }, enabled: auth.totpEnabled(), secret, qr: totp.qrSvg(totp.otpauthUrl(secret, { account: process.env.ADMIN_USER || 'admin' })), test: null });
+});
+router.post('/quan-tri/2fa', (req, res) => {
+  if (!auth.isAdmin(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/2fa');
+  if (!auth.sameOrigin(req)) return res.status(403).send('Yêu cầu không hợp lệ.');
+  res.set('Cache-Control', 'private, no-store');
+  const recent = recentOf(codeAttempts, 'setup:' + req.ip, 15 * 60 * 1000);
+  const secret = String(req.body.secret || '').replace(/[^A-Z2-7]/gi, '').toUpperCase().slice(0, 64);
+  if (!totp.base32Decode(secret) || secret.length < 16) return res.redirect(303, '/quan-tri/2fa');
+  let ok = false;
+  if (recent.length < 10) {
+    ok = totp.verify(secret, String(req.body.code || '')) >= 0;
+    if (!ok) { recent.push(Date.now()); codeAttempts.set('setup:' + req.ip, recent); }
+  }
+  res.render('pages/admin-2fa', { meta: { title: 'Bảo mật 2 lớp', noindex: true }, enabled: auth.totpEnabled(), secret, qr: totp.qrSvg(totp.otpauthUrl(secret, { account: process.env.ADMIN_USER || 'admin' })), test: ok ? 'ok' : recent.length >= 10 ? 'limit' : 'fail' });
+});
+// Download a backup of customer data (leads, status, reviews, photos, on-page edits; no passwords).
+router.post('/quan-tri/sao-luu', (req, res) => {
+  if (!auth.isAdmin(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he');
+  if (!auth.sameOrigin(req)) return res.status(403).send('Yêu cầu không hợp lệ.');
+  res
+    .set('Content-Type', 'application/gzip')
+    .set('Content-Disposition', `attachment; filename="noben-sao-luu-${backup.vnDay()}.tar.gz"`)
+    .set('Cache-Control', 'no-store')
+    .send(backup.build());
 });
 router.post('/quan-tri/noi-dung', async (req, res, next) => {
   try {
@@ -502,6 +573,8 @@ router.post('/lien-he', async (req, res, next) => {
         values: lead,
       });
     }
+    // Uptime monitor (scripts/monitor.js): full validation, nothing saved, mailed or forwarded.
+    if (req.get('x-noben-dry-run') === '1') return res.json({ ok: true, dryRun: true });
     await leads.save(lead, { page: String(req.body.page || req.get('referer') || '').slice(0, 200), ip: req.ip });
     return wantsJson ? res.json({ ok: true }) : res.redirect(303, done);
   } catch (err) {

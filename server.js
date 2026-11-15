@@ -68,6 +68,30 @@ app.use(
 app.use(express.urlencoded({ extended: false, limit: '20kb' }));
 app.use(express.json({ limit: '20kb' }));
 
+// Health check for uptime monitors: short JSON, nothing private (no paths, no counts, no keys).
+const dataDir = require('./src/datadir');
+const COMMIT = (() => {
+  if (process.env.COMMIT_SHA) return String(process.env.COMMIT_SHA).slice(0, 7);
+  try {
+    const git = path.join(__dirname, '.git');
+    const head = fs.readFileSync(path.join(git, 'HEAD'), 'utf8').trim();
+    if (!head.startsWith('ref: ')) return head.slice(0, 7);
+    const ref = head.slice(5);
+    const loose = path.join(git, ref);
+    if (fs.existsSync(loose)) return fs.readFileSync(loose, 'utf8').trim().slice(0, 7);
+    const packed = fs.readFileSync(path.join(git, 'packed-refs'), 'utf8').split('\n').find((l) => l.endsWith(' ' + ref));
+    return packed ? packed.slice(0, 7) : null;
+  } catch {
+    return null;
+  }
+})();
+let writableCache = { at: 0, ok: false };
+app.get('/healthz', (req, res) => {
+  if (Date.now() - writableCache.at > 60 * 1000) writableCache = { at: Date.now(), ok: dataDir.isWritable() };
+  res.set('Cache-Control', 'no-store').set('X-Robots-Tag', 'noindex');
+  res.json({ ok: writableCache.ok, uptime: Math.round(process.uptime()), dataWritable: writableCache.ok, dataLocation: dataDir.SOURCE, migratedFiles: dataDir.migratedCount, commit: COMMIT });
+});
+
 app.use(routes);
 
 app.use((req, res) => {
@@ -87,4 +111,5 @@ app.use((err, req, res, _next) => {
 app.listen(PORT, () => {
   console.log(`Noben website đang chạy tại http://localhost:${PORT}`);
   require('./src/indexnow').schedule({ port: PORT, siteUrl: SITE_URL });
+  require('./src/backup').schedule();
 });

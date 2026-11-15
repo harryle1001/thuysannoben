@@ -1,9 +1,11 @@
 'use strict';
-// Contact-form submissions: validated, appended to data/leads.jsonl, and emailed when SMTP is configured.
+// Contact-form submissions: validated, appended to leads.jsonl in the data folder (src/datadir.js),
+// emailed when SMTP is configured and POSTed to LEADS_WEBHOOK_URL (e.g. a Google Sheet) when set.
 const fs = require('fs');
-const path = require('path');
+const data = require('./datadir');
+const webhook = require('./webhook');
 
-const file = path.join(__dirname, '..', 'data', 'leads.jsonl');
+const file = data.file('leads.jsonl');
 const NEEDS = ['Mua sản phẩm', 'Yêu cầu báo giá', 'Làm đại lý', 'Gia công sản phẩm', 'Tư vấn kỹ thuật', 'Đăng ký nhận tin', 'Ứng tuyển', 'Khác'];
 
 let transporter = null;
@@ -51,8 +53,8 @@ function throttled(ip) {
 
 async function save(lead, meta) {
   const record = { ...lead, ...meta, at: new Date().toISOString() };
-  await fs.promises.mkdir(path.dirname(file), { recursive: true });
-  await fs.promises.appendFile(file, JSON.stringify(record) + '\n', 'utf8');
+  await data.appendLine(file, JSON.stringify(record));
+  webhook.send(record); // fire and forget: a slow or broken webhook never blocks the form
   if (transporter) {
     const lines = [
       `Họ tên: ${lead.name}`,
@@ -90,7 +92,7 @@ async function list() {
 
 // ---------- Admin: lead source, landing page and follow-up status ----------
 const crypto = require('crypto');
-const statusFile = path.join(__dirname, '..', 'data', 'lead-status.json');
+const statusFile = data.file('lead-status.json');
 const STATUSES = ['Mới', 'Đã gọi', 'Đã chốt', 'Không tiềm năng'];
 
 // The form's "page" field holds the page path, plus "utm_source=...&utm_campaign=..." on ad visits (public/js/main.js).
@@ -118,10 +120,7 @@ async function setStatus(id, status) {
   const all = await statuses();
   if (status === 'Mới') delete all[id];
   else all[id] = status;
-  await fs.promises.mkdir(path.dirname(statusFile), { recursive: true });
-  const tmp = statusFile + '.tmp';
-  await fs.promises.writeFile(tmp, JSON.stringify(all, null, 1), 'utf8');
-  await fs.promises.rename(tmp, statusFile);
+  await data.writeJson(statusFile, all);
   return true;
 }
 

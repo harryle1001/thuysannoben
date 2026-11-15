@@ -5,6 +5,11 @@
     <h1 class="page-head__title">Khách liên hệ qua website</h1>
     <p class="lead"><%= total %> lời nhắn, đang xem <%= leads.length %>. <%= mailEnabled ? 'Mỗi lời nhắn mới cũng được gửi về email.' : 'Chưa cấu hình SMTP nên lời nhắn chỉ lưu tại đây.' %></p>
     <% if (saved) { %><p class="form__status is-ok" role="status">Đã lưu trạng thái.</p><% } %>
+    <form class="aleads__actions" method="post" action="/quan-tri/sao-luu">
+      <button class="btn btn--line" type="submit">Tải bản sao lưu</button>
+      <small>Khách liên hệ, trạng thái, đánh giá và ảnh (file .tar.gz, mở bằng 7-Zip/WinRAR). Website cũng tự sao lưu mỗi ngày, giữ 30 bản.</small>
+      <a href="/quan-tri/2fa">Bảo mật 2 lớp</a>
+    </form>
 
     <form class="aleads__filters" method="get" action="/quan-tri/lien-he">
       <div class="field"><label for="f-need">Nhu cầu</label><select id="f-need" name="need"><option value="">Tất cả</option><% options.need.forEach((o) => { %><option<%= sel(o, f.need) %>><%= o %></option><% }) %></select></div>

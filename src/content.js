@@ -1,6 +1,6 @@
 'use strict';
 // Loads the JSON content once at startup and builds lookup indexes.
-// Edits made with the on-page editor are stored in data/overrides.json and applied on top of /content.
+// Edits made with the on-page editor are stored in overrides.json in the data folder and applied on top of /content.
 const fs = require('fs');
 const path = require('path');
 const { sanitizeHtml, sanitizeText } = require('./sanitize');
@@ -8,7 +8,8 @@ const articles = require('./articles');
 
 const dir = path.join(__dirname, '..', 'content');
 const read = (name) => JSON.parse(fs.readFileSync(path.join(dir, `${name}.json`), 'utf8'));
-const overridesFile = path.join(__dirname, '..', 'data', 'overrides.json');
+const dataDir = require('./datadir');
+const overridesFile = dataDir.file('overrides.json');
 
 const company = read('company');
 const categories = read('categories');
@@ -234,10 +235,7 @@ async function saveEdits(changes) {
   }
   if (Object.keys(applied).length) {
     Object.assign(overrides, applied);
-    await fs.promises.mkdir(path.dirname(overridesFile), { recursive: true });
-    const tmp = overridesFile + '.tmp';
-    await fs.promises.writeFile(tmp, JSON.stringify(overrides, null, 2), 'utf8');
-    await fs.promises.rename(tmp, overridesFile);
+    await dataDir.writeJson(overridesFile, overrides, 2);
   }
   return { applied, rejected };
 }

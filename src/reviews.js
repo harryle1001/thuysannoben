@@ -1,13 +1,13 @@
 'use strict';
 // Customer reviews: submitted at /danh-gia, held as "pending" until an admin approves them.
-// Stored in data/reviews.json (git-ignored); photos in data/review-photos/ and served only once approved.
+// Stored in reviews.json in the data folder (src/datadir.js); photos in review-photos/, served only once approved.
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const dir = path.join(__dirname, '..', 'data');
-const file = path.join(dir, 'reviews.json');
-const photoDir = path.join(dir, 'review-photos');
+const store = require('./datadir');
+const file = store.file('reviews.json');
+const photoDir = store.file('review-photos');
 const SALUTES = ['Anh', 'Chị', 'Cô', 'Chú', 'Bác', 'Em'];
 const ROLES = ['Người nuôi', 'Đại lý'];
 const MAX_PHOTOS = 2;
@@ -16,12 +16,7 @@ const MAX_PHOTO_BYTES = 5 * 1024 * 1024;
 let all = [];
 try { all = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { all = []; }
 
-async function persist() {
-  await fs.promises.mkdir(dir, { recursive: true });
-  const tmp = file + '.tmp';
-  await fs.promises.writeFile(tmp, JSON.stringify(all, null, 1), 'utf8');
-  await fs.promises.rename(tmp, file);
-}
+const persist = () => store.writeJson(file, all);
 
 const clean = (v, max) => String(v == null ? '' : v).replace(/\s+/g, ' ').trim().slice(0, max);
 const cap = (s) => s.charAt(0).toLocaleUpperCase('vi') + s.slice(1);

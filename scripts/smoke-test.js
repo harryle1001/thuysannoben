@@ -1,8 +1,14 @@
 'use strict';
 // Starts the server on a spare port and checks that every important URL answers as expected.
 // Run with: npm run check
-const { spawn } = require('child_process');
+const { spawn, execFileSync } = require('child_process');
+const fs = require('fs');
+const os = require('os');
 const path = require('path');
+
+// Unit tests first (TOTP, data folder, backups, webhook).
+execFileSync(process.execPath, [path.join(__dirname, 'test-security.js')], { stdio: 'inherit' });
+const DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'noben-smoke-'));
 
 const PORT = 3999;
 const base = `http://127.0.0.1:${PORT}`;
@@ -47,14 +53,20 @@ const checks = [
   ['/trang-khong-ton-tai', 404],
   ['/quan-tri/dang-nhap', 200],
   ['/quan-tri/lien-he', 303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he'],
+  ['/quan-tri/2fa', 303, '/quan-tri/dang-nhap?next=/quan-tri/2fa'],
+  ['/quan-tri/xac-thuc', 303, '/quan-tri/dang-nhap'],
+  ['/healthz', 200],
 ];
 
 const server = spawn(process.execPath, [path.join(__dirname, '..', 'server.js')], {
-  env: { ...process.env, PORT: String(PORT) },
+  env: { ...process.env, PORT: String(PORT), DATA_DIR, INDEXNOW_AUTO: '0' },
   stdio: ['ignore', 'pipe', 'inherit'],
 });
 
-server.stdout.once('data', async () => {
+let started = false;
+server.stdout.on('data', async (chunk) => {
+  if (started || !/đang chạy/.test(String(chunk))) return;
+  started = true;
   let failed = 0;
   for (const [url, status, location] of checks) {
     try {
@@ -68,7 +80,17 @@ server.stdout.once('data', async () => {
       console.log(`FAIL ${url}: ${err.message}`);
     }
   }
+  // Health check JSON, dry-run form (nothing saved) and a real form post (saved).
+  const extra = async (name, fn) => {
+    try { const ok = await fn(); if (!ok) failed++; console.log(`${ok ? 'OK  ' : 'FAIL'} ${name}`); } catch (err) { failed++; console.log(`FAIL ${name}: ${err.message}`); }
+  };
+  const form = (dry) => fetch(base + '/lien-he', { method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded', ...(dry ? { 'X-Noben-Dry-Run': '1' } : {}) }, body: new URLSearchParams({ name: 'Kiểm thử', phone: '0900000000', need: 'Khác' }) }).then((r) => r.json());
+  const leadCount = () => { try { return fs.readFileSync(path.join(DATA_DIR, 'leads.jsonl'), 'utf8').split('\n').filter(Boolean).length; } catch { return 0; } };
+  await extra('/healthz báo ghi được dữ liệu', async () => (await (await fetch(base + '/healthz')).json()).dataWritable === true);
+  await extra('form dry-run không lưu', async () => (await form(true)).dryRun === true && leadCount() === 0);
+  await extra('form thật lưu vào DATA_DIR', async () => (await form(false)).ok === true && leadCount() === 1);
   server.kill();
+  fs.rmSync(DATA_DIR, { recursive: true, force: true });
   console.log(failed ? `\n${failed} kiểm tra thất bại` : '\nTất cả kiểm tra đều đạt');
   process.exit(failed ? 1 : 0);
 });

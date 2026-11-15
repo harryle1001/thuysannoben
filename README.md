@@ -15,10 +15,10 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
 - **Sửa nội dung bằng cây bút:** quản trị viên đăng nhập rồi sửa chữ ngay trên trang (xem phần bên dưới).
 - **Form liên hệ:**
   - Kiểm tra lỗi ngay khi nhập, chống spam.
-  - Lưu vào `data/leads.jsonl` và gửi email nếu đã cấu hình SMTP.
-  - Xem khách liên hệ tại `/quan-tri/lien-he` (có đăng nhập): lọc theo nhu cầu, nguồn quảng cáo, trang gửi, ngày; thống kê 7/30 ngày; xuất CSV; đánh dấu trạng thái (lưu ở `data/lead-status.json`, không vào Git).
+  - Lưu vào `leads.jsonl` trong thư mục dữ liệu (xem "Dữ liệu khách và sao lưu") và gửi email nếu đã cấu hình SMTP.
+  - Xem khách liên hệ tại `/quan-tri/lien-he` (có đăng nhập): lọc theo nhu cầu, nguồn quảng cáo, trang gửi, ngày; thống kê 7/30 ngày; xuất CSV; đánh dấu trạng thái (lưu ở `lead-status.json` trong thư mục dữ liệu, không vào Git).
 - **Tính liều (`/tinh-lieu`):** nhập diện tích, độ sâu ao (hoặc m³) và kg thức ăn, công cụ đọc liều trên nhãn và tính lượng cần dùng. Kiểm thử bộ đọc liều: `node scripts/test-dose.js`.
-- **Đánh giá của khách (`/danh-gia`):** bà con, đại lý gửi đánh giá (sao, nội dung, tối đa 2 ảnh được nén sang WebP trên điện thoại). Đánh giá mới ở trạng thái chờ duyệt, lưu trong `data/reviews.json` và `data/review-photos/` (không vào Git). Duyệt, gỡ hoặc xóa tại `/quan-tri/danh-gia`; trang này cũng tạo link `/danh-gia?sp=<slug>` và tin nhắn mẫu gửi khách qua Zalo. Chỉ đánh giá đã duyệt mới hiện trên trang sản phẩm, `/danh-gia` và khối "Bà con nói gì về Noben" ở trang chủ (khối này chỉ hiện khi có từ 3 đánh giá đã duyệt). Dữ liệu cấu trúc AggregateRating chỉ có khi sản phẩm có đánh giá thật.
+- **Đánh giá của khách (`/danh-gia`):** bà con, đại lý gửi đánh giá (sao, nội dung, tối đa 2 ảnh được nén sang WebP trên điện thoại). Đánh giá mới ở trạng thái chờ duyệt, lưu trong `reviews.json` và `review-photos/` của thư mục dữ liệu (không vào Git). Duyệt, gỡ hoặc xóa tại `/quan-tri/danh-gia`; trang này cũng tạo link `/danh-gia?sp=<slug>` và tin nhắn mẫu gửi khách qua Zalo. Chỉ đánh giá đã duyệt mới hiện trên trang sản phẩm, `/danh-gia` và khối "Bà con nói gì về Noben" ở trang chủ (khối này chỉ hiện khi có từ 3 đánh giá đã duyệt). Dữ liệu cấu trúc AggregateRating chỉ có khi sản phẩm có đánh giá thật.
 - **Lịch chăm sóc (`/lich-cham-soc`):** nhập ngày thả giống và loại ao (bạt, đất), trang hiện tuổi tôm, giai đoạn, việc cần làm tuần này và sản phẩm gợi ý. Nội dung ở `content/lich-cham-soc.json`.
 - **SEO:**
   - Có `sitemap.xml`, `robots.txt`, thẻ canonical, Open Graph và dữ liệu cấu trúc (Organization, Product, Article, Breadcrumb).
@@ -64,6 +64,9 @@ Sao chép `.env.example` thành `.env` rồi điền thông tin. Trên Hostinger
 | `ANTHROPIC_API_KEY` | Khóa Claude API cho Trợ lý Noben (chatbot). Để trống thì trợ lý trả lời bằng cách tìm trong nội dung website |
 | `CHAT_DAILY_LIMIT` | (Không bắt buộc) số câu trả lời AI tối đa mỗi ngày, mặc định 800. Vượt mức thì trợ lý chuyển sang chế độ tìm kiếm |
 | `GA_MEASUREMENT_ID` | (Không bắt buộc) mã Google Analytics 4 dạng `G-XXXXXXXXXX`. Có thể điền thay vào trường `ga_id` trong `content/company.json` |
+| `ADMIN_TOTP_SECRET` | (Không bắt buộc) bật đăng nhập 2 lớp: khóa base32 lấy ở `/quan-tri/2fa`. Để trống thì chỉ cần mật khẩu |
+| `DATA_DIR` | (Không bắt buộc) thư mục lưu dữ liệu khách. Mặc định `~/noben-data` (hoặc `../noben-data` cạnh thư mục ứng dụng) |
+| `LEADS_WEBHOOK_URL`, `LEADS_WEBHOOK_SECRET` | (Không bắt buộc) gửi mỗi khách mới sang Google Sheets, xem mục bên dưới |
 | `INDEXNOW_AUTO` | (Không bắt buộc) đặt `0` để tắt việc tự báo trang mới cho Bing qua IndexNow sau mỗi lần triển khai |
 
 ## Triển khai lên Hostinger
@@ -112,9 +115,55 @@ npm install -g pm2 && pm2 start server.js --name noben && pm2 save && pm2 startu
 
 Tiếp theo, cấu hình Nginx chuyển tiếp tên miền vào `http://127.0.0.1:3000`, rồi cấp SSL bằng Certbot.
 
-### Lưu ý về form liên hệ
+### Dữ liệu khách và sao lưu
 
-Trên gói Business/Cloud, file `data/leads.jsonl` (và đánh giá trong `data/reviews.json`) có thể bị xóa mỗi lần deploy lại. Vì vậy hãy cấu hình SMTP để mọi lời nhắn đều được gửi về email.
+- Khách liên hệ (`leads.jsonl`), trạng thái (`lead-status.json`), đánh giá (`reviews.json`, `review-photos/`), chữ sửa bằng cây bút (`overrides.json`) lưu trong **thư mục dữ liệu ngoài thư mục ứng dụng**, nên deploy lại không xóa. Mặc định là `~/noben-data` (thư mục nhà của tài khoản hosting, deploy không đụng tới), hoặc `../noben-data` cạnh thư mục code; đặt `DATA_DIR` để chọn chỗ khác. Không ghi được thì website dùng lại `data/` trong ứng dụng.
+- Lần khởi động đầu, file trong `data/` cũ được **chép** sang thư mục mới (không xóa, không ghi đè), log ghi `[data] đã chép N file...`. Toàn bộ đường dẫn nằm ở `src/datadir.js`.
+- File JSON ghi ra file tạm rồi đổi tên (không bao giờ hỏng nửa chừng), `leads.jsonl` chỉ ghi nối thêm.
+- **Sao lưu tự động:** mỗi ngày một file `backups/noben-YYYY-MM-DD.tar.gz` trong thư mục dữ liệu, giữ 30 bản.
+- **Tải bản sao lưu:** đăng nhập → `/quan-tri/lien-he` → nút **Tải bản sao lưu** (file `.tar.gz`, mở bằng 7-Zip/WinRAR). Có khách, trạng thái, đánh giá, ảnh, chữ đã sửa; không có mật khẩu.
+- Nên cấu hình thêm SMTP (email) và/hoặc Google Sheets để có bản thứ hai ngoài máy chủ.
+
+### Gửi khách mới sang Google Sheets (tùy chọn)
+
+Mỗi khách mới được POST JSON tới `LEADS_WEBHOOK_URL` (chờ tối đa 5 giây, thử lại 2 lần; lỗi không ảnh hưởng form, không gửi IP của khách).
+
+1. Tạo Google Sheet mới, hàng 1 ghi: `Thời gian | Họ tên | Điện thoại | Tỉnh | Nhu cầu | Sản phẩm | Lời nhắn | Trang gửi`.
+2. Menu **Tiện ích mở rộng → Apps Script**, xóa code mẫu, dán đoạn dưới. Thay `DOI_KHOA_NAY` bằng một chuỗi bí mật bạn tự đặt (hoặc để trống nếu không dùng khóa).
+
+```js
+const SECRET = 'DOI_KHOA_NAY';
+function doPost(e) {
+  const d = JSON.parse(e.postData.contents);
+  // Apps Script không đọc được header, nên website gửi khóa cả trong trường "secret".
+  if (SECRET && d.secret !== SECRET) return ContentService.createTextOutput('forbidden');
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    SpreadsheetApp.getActiveSpreadsheet().getSheets()[0].appendRow([
+      new Date(d.at), d.name, "'" + d.phone, d.province, d.need, d.product, d.message, d.page,
+    ]);
+  } finally {
+    lock.releaseLock();
+  }
+  return ContentService.createTextOutput('ok');
+}
+```
+
+3. Bấm **Triển khai → Tùy chọn triển khai mới → Ứng dụng web**: *Thực thi với tư cách*: **Tôi**; *Ai có quyền truy cập*: **Bất kỳ ai**. Cấp quyền, chép URL kết thúc bằng `/exec`.
+4. Trên hPanel đặt `LEADS_WEBHOOK_URL` = URL đó, `LEADS_WEBHOOK_SECRET` = chuỗi bí mật ở bước 2, rồi khởi động lại ứng dụng. Không đưa khóa vào code hay Git.
+
+### Đăng nhập 2 lớp (mã 6 số)
+
+1. Đăng nhập quản trị, mở `/quan-tri/2fa`, quét mã QR bằng Google Authenticator, nhập thử mã 6 số.
+2. Trên hPanel đặt `ADMIN_TOTP_SECRET` = khóa hiện trên trang, rồi khởi động lại. Mọi phiên cũ bị đăng xuất.
+3. Từ đó đăng nhập cần mật khẩu + mã 6 số (sai 5 lần thì khóa 15 phút; mỗi mã chỉ dùng một lần; đăng nhập kiểu Basic auth bị tắt). Mất điện thoại: xóa biến `ADMIN_TOTP_SECRET` trên hPanel để quay lại chỉ dùng mật khẩu.
+
+### Giám sát
+
+- `/healthz` trả JSON ngắn: `uptime`, `dataWritable` (ghi được dữ liệu không), `dataLocation` (`home`, `app-parent`, `DATA_DIR` hoặc `fallback`), `migratedFiles` (số file chép từ `data/` cũ ở lần khởi động này), `commit`.
+- `node scripts/monitor.js --base https://thuysannoben.com` kiểm tra 10 trang quan trọng (mã trả về, thời gian, nội dung) và gửi thử form ở chế độ dry-run (header `X-Noben-Dry-Run: 1`, không lưu).
+- GitHub Actions `.github/workflows/monitor.yml` chạy mỗi giờ. Khi lỗi, mở (hoặc thêm bình luận vào) Issue **"🚨 Website thuysannoben.com đang lỗi"**, GitHub gửi email cho chủ repo; website ổn lại thì Issue tự đóng.
 
 ## Sửa nội dung
 
@@ -260,9 +309,9 @@ Lệnh ghi đè `content/dai-ly.json`. Đẩy lên GitHub là web tự cập nh�
 
 Người xem bình thường không thấy cây bút. Nội dung sửa được làm sạch trước khi lưu (chỉ giữ in đậm, nghiêng, danh sách, chỉ số trên/dưới).
 
-Thay đổi được lưu trong `data/overrides.json` trên máy chủ, đè lên nội dung gốc trong `content/`. File này không nằm trong Git, nên:
-- Trên **VPS**, file được giữ nguyên khi cập nhật code bằng `git pull`.
-- Trên gói **Business/Cloud**, một lần deploy lại có thể xóa file này. Trước khi deploy lại, vào menu cây bút → **Tải nội dung đã sửa** để tải bản sao, rồi gửi cho người phát triển đưa vào `content/` hoặc đặt lại file vào `data/overrides.json`.
+Thay đổi được lưu trong `overrides.json` ở thư mục dữ liệu (ngoài thư mục ứng dụng, deploy lại không mất), đè lên nội dung gốc trong `content/`. File này không nằm trong Git, nên:
+
+- Muốn giữ lâu dài, vào menu cây bút → **Tải nội dung đã sửa** rồi gửi cho người phát triển đưa vào `content/`. File này cũng có trong bản sao lưu hằng ngày.
 
 ## Cấu trúc thư mục
 

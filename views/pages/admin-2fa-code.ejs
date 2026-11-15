@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+<section class="section">
+  <div class="wrap admin-login">
+    <h1 class="page-head__title">Nhập mã xác thực</h1>
+    <p class="lead">Mở ứng dụng xác thực (Google Authenticator…) trên điện thoại và nhập mã 6 số của mục <strong>Noben</strong>.</p>
+    <form class="form form--card" action="/quan-tri/xac-thuc" method="post">
+      <% if (error) { %><p class="field__error" role="alert"><%= error %></p><% } %>
+      <div class="field">
+        <label for="a-code">Mã 6 số</label>
+        <input id="a-code" name="code" inputmode="numeric" pattern="[0-9 ]{6,7}" maxlength="7" autocomplete="one-time-code" required autofocus>
+      </div>
+      <input type="hidden" name="next" value="<%= next %>">
+      <button class="btn btn--blue" type="submit">Xác nhận</button>
+    </form>
+    <p><a href="/quan-tri/dang-nhap">Đăng nhập lại</a></p>
+  </div>
+</section>
+<%- include('../partials/footer') %>

@@ -7,7 +7,8 @@ const fs = require('fs');
 const path = require('path');
 
 const KEY_FILE = path.join(__dirname, '..', 'content', 'indexnow-key.txt');
-const STATE_FILE = path.join(__dirname, '..', 'data', 'indexnow-sent.json');
+const data = require('./datadir');
+const STATE_FILE = data.file('indexnow-sent.json');
 
 function readState() {
   try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); } catch { return {}; }
@@ -38,8 +39,7 @@ async function submit({ port, siteUrl, log = console.log }) {
   log(`[indexnow] gửi ${changed.length} trang, phản hồi ${res.status}`);
   if (res.status === 200 || res.status === 202) {
     for (const [loc, mod] of entries) sent[loc] = mod;
-    fs.mkdirSync(path.dirname(STATE_FILE), { recursive: true });
-    fs.writeFileSync(STATE_FILE, JSON.stringify(sent));
+    await data.writeJson(STATE_FILE, sent, 0);
   }
   return changed.length;
 }

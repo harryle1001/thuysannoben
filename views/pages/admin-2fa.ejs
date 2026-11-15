@@ -1,0 +1,34 @@
+<%- include('../partials/header') %>
+<section class="section section--top-tight">
+  <div class="wrap admin-login admin-2fa">
+    <h1 class="page-head__title">Bảo mật 2 lớp (mã 6 số)</h1>
+    <% if (enabled) { %>
+    <p class="notice notice--ok" role="status">Đang bật: đăng nhập cần mật khẩu và mã 6 số. Muốn đổi điện thoại, làm lại các bước dưới với mã mới.</p>
+    <% } else { %>
+    <p class="notice notice--warn" role="status">Chưa bật. Hiện chỉ cần mật khẩu để đăng nhập.</p>
+    <% } %>
+    <ol class="admin-2fa__steps">
+      <li>Cài <strong>Google Authenticator</strong> (hoặc Microsoft Authenticator) trên điện thoại.</li>
+      <li>Trong ứng dụng, bấm <strong>+</strong> → <strong>Quét mã QR</strong> và quét mã dưới đây. Không quét được thì chọn <strong>Nhập khóa thiết lập</strong> và gõ khóa bên dưới.</li>
+      <li>Nhập mã 6 số đang hiện trên điện thoại vào ô <strong>Thử mã</strong> để chắc chắn khớp.</li>
+      <li>Vào hPanel → Websites → thuysannoben.com → Node.js → <strong>Environment variables</strong>, thêm biến <code>ADMIN_TOTP_SECRET</code> với giá trị là khóa bên dưới, lưu rồi bấm <strong>Restart</strong> (hoặc Deploy lại).</li>
+      <li>Website sẽ đăng xuất mọi phiên. Đăng nhập lại: nhập mật khẩu rồi nhập mã 6 số.</li>
+    </ol>
+    <div class="admin-2fa__qr"><%- qr %></div>
+    <p>Khóa thiết lập: <code class="admin-2fa__secret"><%= secret.match(/.{1,4}/g).join(' ') %></code></p>
+    <p><small>Mỗi lần mở trang này là một khóa mới; khóa chỉ hiện ở đây, website không lưu. Không gửi khóa này qua Zalo hay email.</small></p>
+    <form class="form form--card" action="/quan-tri/2fa" method="post">
+      <% if (test === 'ok') { %><p class="form__status is-ok" role="status">Mã đúng. Giờ dán khóa trên vào <code>ADMIN_TOTP_SECRET</code> trên hPanel.</p><% } %>
+      <% if (test === 'fail') { %><p class="field__error" role="alert">Mã chưa khớp. Kiểm tra giờ trên điện thoại đặt tự động, rồi thử mã mới.</p><% } %>
+      <% if (test === 'limit') { %><p class="field__error" role="alert">Thử sai nhiều lần. Đợi 15 phút.</p><% } %>
+      <input type="hidden" name="secret" value="<%= secret %>">
+      <div class="field">
+        <label for="t-code">Thử mã</label>
+        <input id="t-code" name="code" inputmode="numeric" pattern="[0-9 ]{6,7}" maxlength="7" autocomplete="one-time-code" required>
+      </div>
+      <button class="btn btn--blue" type="submit">Kiểm tra mã</button>
+    </form>
+    <p><a href="/quan-tri/lien-he">← Về trang khách liên hệ</a></p>
+  </div>
+</section>
+<%- include('../partials/footer') %>
