@@ -8,8 +8,7 @@ import { Fonts } from "../components/Fonts";
 import { Counter, Entrance, SceneExit, WordReveal } from "../components/Motion";
 import { Bubbles, DeepWater, Finish, GodRays, Plankton, Surface } from "../components/Ocean";
 import { Draw, IntakeArt, LineArt } from "../factory/LineArt";
-import { DeliverArt } from "../factory/ProcessArt";
-import { Badge, LabArt, PACK_ORDER, PackIcon, TeamArt, VietnamMap } from "../factory/Vector";
+import { Badge, LabArt, PACK_ORDER, PackIcon, VietnamMap } from "../factory/Vector";
 import { FactoryMedia, slot } from "../factory/media";
 import timing from "../factory/timing.json";
 import { rand, TAU, theme } from "../theme";
@@ -17,7 +16,7 @@ import { rand, TAU, theme } from "../theme";
 const C = theme.colors;
 const PHI = (1 + Math.sqrt(5)) / 2;
 type Cut = "full" | "short";
-type SceneKey = "intro" | "raw" | "formula" | "line" | "qc" | "team" | "reach" | "pond" | "close";
+type SceneKey = "intro" | "raw" | "formula" | "line" | "qc" | "reach" | "close";
 
 export const factoryScenes = (cut: Cut, fps: number) => {
   let from = 0;
@@ -269,20 +268,6 @@ const Qc: React.FC<{ dur: number }> = () => {
   );
 };
 
-const Team: React.FC<{ dur: number }> = ({ dur }) => {
-  const { W, H, fps, v, pick } = useL();
-  const m = slot("team")[0];
-  return (
-    <AbsoluteFill>
-      <Copy n="05" kicker="Đội ngũ Noben" title="Những con người đứng sau từng sản phẩm" hero={["con", "người"]} width={pick(W * 0.84, W * 0.7)} size={pick(92, 80)}
-        body="Kỹ thuật, kiểm nghiệm, sản xuất, kinh doanh: cùng một nghề từ năm 2002." style={{ left: pick(W * 0.08, W * 0.09), top: pick(H * 0.1, H * 0.1) }} />
-      {m && <Glass x={pick(W * 0.08, W * 0.6)} y={pick(H * 0.38, H * 0.1)} w={pick(W * 0.84, W * 0.32)} h={pick(W * 0.84 * 0.5625, W * 0.32 * 0.5625)} delay={8} caption={m.caption}><Media m={m} dur={dur} /></Glass>}
-      <div style={{ position: "absolute", left: pick(W * 0.03, W * 0.1), top: pick(H * 0.58, H * 0.44) }}>
-        <TeamArt width={pick(W * 0.94, W * 0.8)} delay={Math.round(fps * 0.3)} count={v ? 5 : 9} />
-      </div>
-    </AbsoluteFill>
-  );
-};
 
 const Reach: React.FC<{ dur: number }> = () => {
   const frame = useCurrentFrame();
@@ -290,7 +275,7 @@ const Reach: React.FC<{ dur: number }> = () => {
   return (
     <AbsoluteFill>
       <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.09), top: pick(H * 0.08, H * 0.16), width: pick(W * 0.84, W * 0.42) }}>
-        <Entrance delay={4} y={20}><div style={{ ...kickerStyle, fontSize: v ? 28 : 24 }}><span style={{ ...display, fontSize: v ? 34 : 30, letterSpacing: 0, color: C.accent, marginRight: 18 }}>06</span>Giao hàng toàn quốc</div></Entrance>
+        <Entrance delay={4} y={20}><div style={{ ...kickerStyle, fontSize: v ? 28 : 24 }}><span style={{ ...display, fontSize: v ? 34 : 30, letterSpacing: 0, color: C.accent, marginRight: 18 }}>05</span>Giao hàng toàn quốc</div></Entrance>
         <div style={{ display: "flex", alignItems: "baseline", gap: 24, marginTop: 10 }}>
           <span style={{ ...display, fontSize: v ? 220 : 210, color: C.primary, textShadow: `0 0 70px ${C.glow}`, lineHeight: 1 }}><Counter to={94} delay={8} /></span>
           <Entrance delay={14} y={20}><span style={{ ...display, fontSize: v ? 60 : 54 }}>sản phẩm</span></Entrance>
@@ -308,18 +293,6 @@ const Reach: React.FC<{ dur: number }> = () => {
   );
 };
 
-const Pond: React.FC<{ dur: number }> = () => {
-  const { W, H, fps, v, pick } = useL();
-  return (
-    <AbsoluteFill>
-      <Copy n="07" kicker="Đồng hành tại ao" title="Kỹ thuật viên theo sát từng vụ nuôi" hero={["theo", "sát"]} width={pick(W * 0.84, W * 0.66)} size={pick(92, 80)} style={{ left: pick(W * 0.08, W * 0.06), top: pick(H * 0.1, H * 0.09) }} />
-      <Entrance delay={Math.round(fps * 0.9)} y={18} style={{ position: "absolute", left: pick(W * 0.08, W * 0.06), top: pick(H * 0.33, H * 0.33), width: pick(W * 0.84, W * 0.6) }}>
-        <p style={{ ...bodyStyle, fontSize: v ? 34 : 28, margin: 0 }}>Hỗ trợ kỹ thuật miễn phí suốt vụ nuôi, từ chuẩn bị ao đến ngày thu hoạch.</p>
-      </Entrance>
-      <div style={{ position: "absolute", left: pick(W * 0.02, W * 0.08), top: pick(H * 0.5, H * 0.43) }}><DeliverArt width={pick(W * 0.96, W * 0.84)} delay={6} /></div>
-    </AbsoluteFill>
-  );
-};
 
 export const Close: React.FC<{ dur: number }> = () => {
   const { fps, v } = useL();
@@ -349,7 +322,7 @@ export const Close: React.FC<{ dur: number }> = () => {
   );
 };
 
-const SCENES: Record<SceneKey, React.FC<{ dur: number }>> = { intro: Intro, raw: Raw, formula: Formula, line: Line, qc: Qc, team: Team, reach: Reach, pond: Pond, close: Close };
+const SCENES: Record<SceneKey, React.FC<{ dur: number }>> = { intro: Intro, raw: Raw, formula: Formula, line: Line, qc: Qc, reach: Reach, close: Close };
 
 export const FactoryFilm: React.FC<{ cut: Cut }> = ({ cut }) => {
   const frame = useCurrentFrame();
@@ -386,7 +359,7 @@ const withFonts = (cut: Cut) => () => (<><Fonts /><FactoryFilm cut={cut} /></>);
 // Registered from Root.tsx with a single line.
 export const FactoryCompositions: React.FC = () => (
   <>
-    {/* 54 s factory + team film (16:9 web/YouTube, 9:16 Reels/TikTok) and a 20 s cut */}
+    {/* ≈46 s factory film (16:9 web/YouTube, 9:16 Reels/TikTok) and a 20 s cut */}
     <Composition id="FactoryFilm" component={withFonts("full")} durationInFrames={totalFrames("full", 30)} fps={30} width={1920} height={1080} />
     <Composition id="FactoryFilmVertical" component={withFonts("full")} durationInFrames={totalFrames("full", 30)} fps={30} width={1080} height={1920} />
     <Composition id="FactoryFilm20" component={withFonts("short")} durationInFrames={totalFrames("short", 30)} fps={30} width={1920} height={1080} />

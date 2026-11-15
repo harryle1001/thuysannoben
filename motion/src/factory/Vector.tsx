@@ -65,7 +65,7 @@ export const LinePerson: React.FC<{ x: number; y: number; s?: number; p: number;
   );
 };
 
-// ---------- the lab: flasks, a rack of test tubes, a microscope, a technician ----------
+// ---------- the lab: flasks, a rack of test tubes, a microscope ----------
 export const LabArt: React.FC<{ width: number; delay?: number }> = ({ width, delay = 0 }) => {
   const f = useCurrentFrame() - delay;
   const { fps } = useVideoConfig();
@@ -119,8 +119,6 @@ export const LabArt: React.FC<{ width: number; delay?: number }> = ({ width, del
         {/* light cone from the stage */}
         <path d="M120 330 L100 380 H180 L160 330 Z" fill={C.accentSoft} opacity={d(5)} />
       </g>
-      {/* lab technician in a coat */}
-      <LinePerson x={1010} y={470} s={1.15} p={d(6)} coat />
       {/* rising molecule */}
       {[0, 1, 2].map((i) => {
         const k = (t * 0.25 + i / 3) % 1;
