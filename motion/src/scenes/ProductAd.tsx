@@ -4,11 +4,17 @@ import { Entrance, WordReveal } from "../components/Motion";
 import { Bubbles, DeepWater, Finish, GodRays, Plankton, Surface } from "../components/Ocean";
 import { Shrimp } from "../components/Shrimp";
 import type { AdProduct } from "../products";
-import { rand, TAU, theme } from "../theme";
+import { PI, rand, TAU, theme } from "../theme";
+import { PondSection } from "../components/Pond";
 
 export const AD_SECONDS = 17;
 // Four beats (seconds): hook → product reveal → three benefits → brand close.
-const S = { hook: 0, reveal: 3.2, benefits: 7.6, close: 13.6, end: AD_SECONDS } as const;
+// Classic cut (first three ads): 17 s. π cut (newer ads): beats on multiples of π/2, 6π ≈ 18.85 s in all.
+type Beats = { hook: number; reveal: number; benefits: number; close: number; end: number };
+const CLASSIC: Beats = { hook: 0, reveal: 3.2, benefits: 7.6, close: 13.6, end: AD_SECONDS };
+const PI_CUT: Beats = { hook: 0, reveal: PI, benefits: 2.5 * PI, close: 4.5 * PI, end: 6 * PI };
+export const beatsFor = (p: AdProduct): Beats => (p.piCut ? PI_CUT : CLASSIC);
+const BeatCtx = React.createContext<Beats>(CLASSIC);
 
 const C = theme.colors;
 const serif: React.CSSProperties = { fontFamily: theme.fonts.serif, fontWeight: 700, letterSpacing: "-0.01em", lineHeight: 1.06, color: C.text };
@@ -87,6 +93,7 @@ const Hook: React.FC<{ p: AdProduct }> = ({ p }) => {
   const mk = spring({ frame: frame - Math.round(fps * 0.9), fps, config: theme.spring.bouncy });
   const pulse = (frame / (fps * 1.1)) % 1;
   const textW = pick(900, 1500);
+  if (p.hookArt === "pond") return <PondHook p={p} />;
   return (
     <AbsoluteFill>
       <Shrimp x={sx} y={sy} scale={sc} rotate={rot} swim={(frame / (fps * 1.8)) % 1} draw={draw} color={C.textDim} glow={false} strokeWidth={2.2} opacity={0.55} />
@@ -108,11 +115,30 @@ const Hook: React.FC<{ p: AdProduct }> = ({ p }) => {
   );
 };
 
+// Hook variant for water/bottom products: a line-art pond section with sludge and rising gas.
+const PondHook: React.FC<{ p: AdProduct }> = ({ p }) => {
+  const { W, H, fps, v, pick } = useLayout();
+  const textW = pick(900, 1500);
+  return (
+    <AbsoluteFill>
+      <PondSection x={pick(W * 0.06, W * 0.2)} y={pick(H * 0.08, H * 0.05)} w={pick(W * 0.88, W * 0.6)} h={pick(H * 0.36, H * 0.42)} accent={p.accent} />
+      <div style={{ position: "absolute", left: (W - textW) / 2, top: pick(H * 0.5, H * 0.53), width: textW, textAlign: v ? "left" : "center" }}>
+        <Entrance delay={4} y={20}><div style={kickerStyle(C.textDim, pick(30, 28))}>{p.hookKicker}</div></Entrance>
+        <WordReveal delay={10} per={4} text={p.hook} style={{ ...serif, fontSize: pick(118, 116), marginTop: 26, justifyContent: v ? "flex-start" : "center", columnGap: 26 }} />
+        <Entrance delay={Math.round(fps * 1.25)} y={22}>
+          <div style={{ ...sans, fontWeight: 500, fontSize: pick(44, 40), color: C.textDim, marginTop: 30, textWrap: "balance" } as React.CSSProperties}>{p.hookSub}</div>
+        </Entrance>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 // ---------- Persistent product layer (moves across beats 2–3) ----------
 type Pose = { x: number; y: number; h: number };
 const Product: React.FC<{ p: AdProduct }> = ({ p }) => {
   const frame = useCurrentFrame();
   const { W, H, fps, pick, sec } = useLayout();
+  const S = React.useContext(BeatCtx);
   const reveal: Pose = pick({ x: W / 2, y: H * 0.43, h: 930 }, { x: W * 0.33, y: H * 0.5, h: 780 });
   const bene: Pose = pick({ x: W / 2, y: H * 0.255, h: 600 }, { x: W * 0.25, y: H * 0.49, h: 700 });
 
@@ -186,6 +212,7 @@ const Product: React.FC<{ p: AdProduct }> = ({ p }) => {
 const Sparks: React.FC<{ p: AdProduct }> = ({ p }) => {
   const frame = useCurrentFrame();
   const { W, H, fps, pick, sec } = useLayout();
+  const S = React.useContext(BeatCtx);
   const on = interpolate(frame, [sec(S.reveal) + 6, sec(S.reveal) + fps], [0, 1], { ...theme.clamp, easing: theme.ease.out })
     * interpolate(frame, [sec(S.close) - 4, sec(S.close) + 8], [1, 0], theme.clamp);
   if (on <= 0) return null;
@@ -314,13 +341,15 @@ const Close: React.FC<{ p: AdProduct }> = ({ p }) => {
 
 export const ProductAd: React.FC<{ product: AdProduct; audio?: boolean }> = ({ product: p, audio = true }) => {
   const { sec, fps } = useLayout();
-  const L = sec(AD_SECONDS);
+  const S = beatsFor(p);
+  const L = sec(S.end);
   const beat = (a: number, b: number, el: React.ReactNode) => (
     <Sequence from={sec(a)} durationInFrames={sec(b) - sec(a)}>
       <Exit dur={sec(b) - sec(a)}>{el}</Exit>
     </Sequence>
   );
   return (
+    <BeatCtx.Provider value={S}>
     <AbsoluteFill style={{ background: C.abyss, overflow: "hidden" }}>
       {/* 1 background */}
       <DeepWater loop={L} />
@@ -340,7 +369,8 @@ export const ProductAd: React.FC<{ product: AdProduct; audio?: boolean }> = ({ p
       <Bubbles loop={L} count={22} region={[0.02, 0.98]} />
       {/* 4 + 5 grade, grain, vignette */}
       <Finish />
-      {audio && <Audio src={staticFile("sfx/ad-bed.wav")} />}
+      {audio && <Audio src={staticFile(p.piCut ? `sfx/${p.slug}.wav` : "sfx/ad-bed.wav")} />}
     </AbsoluteFill>
+    </BeatCtx.Provider>
   );
 };

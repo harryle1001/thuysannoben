@@ -1,0 +1,50 @@
+{
+  "ao-bat-mat-do-cao": {
+    "mp4": "/media/ads/ao-bat-mat-do-cao-16x9.mp4",
+    "webm": "/media/ads/ao-bat-mat-do-cao-16x9.webm",
+    "poster": "/media/ads/ao-bat-mat-do-cao-16x9.webp",
+    "vertical": "/media/ads/ao-bat-mat-do-cao-9x16.mp4",
+    "verticalPoster": "/media/ads/ao-bat-mat-do-cao-9x16.webp",
+    "duration": 22,
+    "uploadDate": "2026-11-15",
+    "url": "/lp/ao-bat-mat-do-cao",
+    "name": "Phác đồ trọn vụ ao bạt mật độ cao",
+    "description": "Phác đồ Noben cho ao lót bạt theo 4 giai đoạn nuôi: chuẩn bị nước, nền gan ruột, kiểm soát khí độc, cứng vỏ trước thu. Mỗi giai đoạn 2 sản phẩm, liều theo nhãn."
+  },
+  "mua-mua": {
+    "mp4": "/media/ads/mua-mua-16x9.mp4",
+    "webm": "/media/ads/mua-mua-16x9.webm",
+    "poster": "/media/ads/mua-mua-16x9.webp",
+    "vertical": "/media/ads/mua-mua-9x16.mp4",
+    "verticalPoster": "/media/ads/mua-mua-9x16.webp",
+    "duration": 22,
+    "uploadDate": "2026-11-15",
+    "url": "/lp/mua-mua",
+    "name": "Phác đồ phòng bệnh tôm mùa mưa",
+    "description": "Mưa lớn làm pH, độ kiềm giảm, tảo tàn sinh khí độc. Việc cần làm trước, trong và sau cơn mưa cùng bộ sản phẩm phòng bệnh mùa mưa của Noben."
+  },
+  "gia-cong-oem": {
+    "mp4": "/media/ads/gia-cong-oem-16x9.mp4",
+    "webm": "/media/ads/gia-cong-oem-16x9.webm",
+    "poster": "/media/ads/gia-cong-oem-16x9.webp",
+    "vertical": "/media/ads/gia-cong-oem-9x16.mp4",
+    "verticalPoster": "/media/ads/gia-cong-oem-9x16.webp",
+    "duration": 22,
+    "uploadDate": "2026-11-15",
+    "url": "/lp/gia-cong-oem",
+    "name": "Gia công thuốc thủy sản OEM theo nhãn riêng",
+    "description": "Nhà máy Noben đạt ISO 9001:2015, hơn 22 năm kinh nghiệm: gia công thành phẩm, bán thành phẩm theo thương hiệu của bạn, từ công thức, mẫu thử, hồ sơ đến sản xuất và giao hàng."
+  },
+  "dai-ly": {
+    "mp4": "/media/ads/dai-ly-16x9.mp4",
+    "webm": "/media/ads/dai-ly-16x9.webm",
+    "poster": "/media/ads/dai-ly-16x9.webp",
+    "vertical": "/media/ads/dai-ly-9x16.mp4",
+    "verticalPoster": "/media/ads/dai-ly-9x16.webp",
+    "duration": 20,
+    "uploadDate": "2026-11-15",
+    "url": "/tuyen-dai-ly",
+    "name": "Tuyển đại lý thuốc thủy sản Noben",
+    "description": "Nhập hàng giá nhà máy, đủ 94 sản phẩm, kỹ thuật viên đồng hành và có tên trên bản đồ đại lý thuysannoben.com. Đăng ký làm đại lý Noben."
+  }
+}

@@ -1,0 +1,8 @@
+<%# Shared video lightbox, filled by main.js from a [data-vplay] button. %>
+<dialog class="vbox" id="vbox" aria-label="Xem video">
+  <button class="vbox__close" type="button" data-vbox-close aria-label="Đóng video"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <figure class="vbox__fig">
+    <video class="vbox__video" controls playsinline preload="none"></video>
+    <figcaption class="vbox__cap"></figcaption>
+  </figure>
+</dialog>

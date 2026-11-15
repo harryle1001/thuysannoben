@@ -1,18 +1,27 @@
-<%# Product motion-graphic ad (16:9, muted loop). Needs `p` with p.video; `id` for the heading. %>
+<%# Motion-graphic film right after a hero (muted loop, plays only on screen). Needs `v` (video entry) or `p` (product with p.video), and `id`.
+    16:9 on wide screens; phones get the 9:16 cut through <source media>. main.js sets the poster (data-poster / data-poster-m) only when the film nears the viewport. %>
+<%
+  const vid = locals.v || p.video;
+  const name = locals.name || p.name;
+  const kick = locals.kicker || 'Phim sản phẩm';
+  const head = locals.title || (name + ' trong ' + (vid.duration || 17) + ' giây');
+  const lead = locals.lead || (p.tagline + '. Sản xuất tại nhà máy đạt ISO 9001:2015.');
+%>
 <section class="pv section" aria-labelledby="<%= id %>">
   <div class="wrap pv__grid">
     <div class="pv__copy">
-      <p class="pv__kicker">Phim sản phẩm</p>
-      <h2 id="<%= id %>" class="pv__title"><%= p.name %> trong 17 giây</h2>
-      <p class="pv__lead"><%= p.tagline %>. Sản xuất tại nhà máy đạt ISO 9001:2015.</p>
-      <% if (p.video.vertical) { %><a class="pv__link" href="<%= p.video.vertical %>" download>Tải bản dọc 9:16 cho Zalo, Facebook</a><% } %>
+      <p class="pv__kicker"><%= kick %></p>
+      <h2 id="<%= id %>" class="pv__title"><%= head %></h2>
+      <p class="pv__lead"><%= lead %></p>
+      <p class="pv__links"><% if (vid.vertical) { %><a class="pv__link" href="<%= vid.vertical %>" download>Tải bản dọc 9:16 cho Zalo, Facebook</a><% } %><a class="pv__link pv__link--muted" href="/video">Xem tất cả video</a></p>
     </div>
     <div class="pv__frame">
-      <video class="pv__video" muted playsinline loop preload="none" poster="<%= p.video.poster %>" width="1920" height="1080" data-inview-play aria-label="Video giới thiệu <%= p.name %>: <%= p.tagline %>">
-        <source src="<%= p.video.webm %>" type="video/webm">
-        <source src="<%= p.video.mp4 %>" type="video/mp4">
+      <video class="pv__video" muted playsinline loop preload="none" data-poster="<%= vid.poster %>" data-poster-m="<%= vid.verticalPoster || vid.poster %>" width="1920" height="1080" data-inview-play aria-label="Video: <%= name %>">
+        <% if (vid.vertical) { %><source src="<%= vid.vertical %>" type="video/mp4" media="(max-width: 760px)"><% } %>
+        <source src="<%= vid.webm %>" type="video/webm">
+        <source src="<%= vid.mp4 %>" type="video/mp4">
       </video>
-      <button class="pv__toggle" type="button" data-video-toggle aria-label="Tạm dừng video"><svg class="ico" aria-hidden="true"><use href="#i-pause"/></svg><span>Tạm dừng</span></button>
+      <button class="pv__toggle" type="button" data-video-toggle aria-label="Phát video"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span>Phát video</span></button>
     </div>
   </div>
 </section>

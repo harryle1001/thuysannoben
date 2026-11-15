@@ -215,6 +215,7 @@ router.get('/', (req, res) => {
     productCount: c.products.length,
     allProducts: c.products,
     certificates: c.gallery.certificates.slice(0, 4),
+    videos: c.videos,
     homeReviews: reviews.approved().length >= 3 ? reviews.approved().slice(0, 6).map(reviewView) : [], // only real, approved reviews
     jsonld: [org(), seo.website()],
   });
@@ -341,6 +342,7 @@ router.get('/tuyen-dai-ly', (req, res) => {
     },
     productCount: c.products.length,
     ranges,
+    film: c.landingVideos['dai-ly'] || null,
     faq: DEALER_FAQ,
     jsonld: [crumbs([['Trang chủ', '/'], ['Hệ thống đại lý', '/dai-ly'], ['Tuyển đại lý', '/tuyen-dai-ly']]), seo.faqPage(DEALER_FAQ), seo.factoryVideo()].filter(Boolean),
   });
@@ -376,6 +378,7 @@ function renderCombo(lp, res) {
     lp,
     stages,
     shots,
+    film: c.landingVideos[lp.slug] || null,
     faq,
     jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq), seo.factoryVideo()].filter(Boolean) : [],
   });
@@ -523,6 +526,32 @@ router.get('/gia-cong', (req, res) =>
     jsonld: [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong']]), seo.factoryVideo()],
   })
 );
+// Video gallery: every film with VideoObject data for Google Video.
+const isoDur = (sec) => `PT${Math.round(sec)}S`;
+const videoObject = (v) => ({
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: v.name,
+  description: v.description,
+  thumbnailUrl: [seo.abs(v.poster), seo.abs(v.verticalPoster || v.poster)],
+  contentUrl: seo.abs(v.mp4),
+  uploadDate: `${v.uploadDate}T08:00:00+07:00`,
+  duration: isoDur(v.duration),
+  inLanguage: 'vi',
+  publisher: { '@type': 'Organization', name: c.company.legal, logo: { '@type': 'ImageObject', url: seo.abs('/images/brand/logo-noben.png') } },
+});
+router.get('/video', (req, res) =>
+  res.render('pages/videos', {
+    meta: {
+      title: 'Video sản phẩm, phác đồ nuôi tôm – Thủy sản Noben',
+      description: `${c.videos.length} video ngắn về sản phẩm Noben, phác đồ ao bạt mật độ cao, phòng bệnh mùa mưa, gia công OEM và tuyển đại lý. Xem trực tuyến hoặc tải bản dọc 9:16.`,
+      image: c.videos[0] && c.videos[0].poster,
+    },
+    videos: c.videos,
+    jsonld: [crumbs([['Trang chủ', '/'], ['Video', '/video']]), ...c.videos.map(videoObject)].filter(Boolean),
+  })
+);
+
 router.get('/lien-he', (req, res) => {
   const product = c.productBySlug[req.query['san-pham']];
   res.render('pages/contact', {
@@ -865,6 +894,7 @@ router.get('/sitemap.xml', (req, res) => {
     { loc: '/dai-ly', priority: '0.7', changefreq: 'weekly' },
     { loc: '/tuyen-dai-ly', priority: '0.7', changefreq: 'monthly' },
     ...LANDINGS.filter((x) => x.index).map((x) => ({ loc: `/lp/${x.slug}`, priority: '0.7', changefreq: 'monthly', images: x.hero_image ? [x.hero_image.src] : [] })),
+    { loc: '/video', priority: '0.7', changefreq: 'monthly', videos: c.videos },
     { loc: '/tinh-lieu', priority: '0.7', changefreq: 'monthly' },
     { loc: '/lich-cham-soc', priority: '0.7', changefreq: 'monthly' },
     { loc: '/danh-gia', priority: '0.6', changefreq: 'weekly' },
@@ -890,12 +920,15 @@ router.get('/sitemap.xml', (req, res) => {
       const imgs = (e.images || [])
         .map((i) => `    <image:image><image:loc>${xmlEsc(seo.abs(i))}</image:loc>${e.imageTitle ? `<image:title>${xmlEsc(e.imageTitle)}</image:title>` : ''}</image:image>`)
         .join('\n');
-      return `  <url>\n    <loc>${xmlEsc(SITE_URL + e.loc)}</loc>\n    <lastmod>${e.lastmod || today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>${imgs ? '\n' + imgs : ''}\n  </url>`;
+      const vids = (e.videos || [])
+        .map((v) => `    <video:video><video:thumbnail_loc>${xmlEsc(seo.abs(v.poster))}</video:thumbnail_loc><video:title>${xmlEsc(v.name)}</video:title><video:description>${xmlEsc(v.description)}</video:description><video:content_loc>${xmlEsc(seo.abs(v.mp4))}</video:content_loc><video:duration>${Math.round(v.duration)}</video:duration><video:publication_date>${v.uploadDate}T08:00:00+07:00</video:publication_date><video:family_friendly>yes</video:family_friendly></video:video>`)
+        .join('\n');
+      return `  <url>\n    <loc>${xmlEsc(SITE_URL + e.loc)}</loc>\n    <lastmod>${e.lastmod || today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>${imgs ? '\n' + imgs : ''}${vids ? '\n' + vids : ''}\n  </url>`;
     })
     .join('\n');
   res
     .type('application/xml')
-    .send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${body}\n</urlset>\n`);
+    .send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n${body}\n</urlset>\n`);
 });
 router.get('/rss.xml', (req, res) => {
   const items = c

@@ -12,6 +12,8 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
 - **Kiến thức nuôi tôm:** bài chuẩn SEO có nguồn tham khảo và bài từ website cũ, chia 4 chuyên mục, có mục lục, hỏi đáp và sản phẩm liên quan.
 - **Giải pháp theo vấn đề ao nuôi:** 8 trang như "Thuốc trị phân trắng, gan tụy cho tôm", mỗi trang có dấu hiệu, các bước xử lý và sản phẩm phù hợp.
 - **Các trang khác:** Về Noben, Chứng nhận, Gia công, Liên hệ (có bản đồ), các trang chính sách.
+- **Video (`/video`):** 11 phim motion graphic (7 sản phẩm, 3 phác đồ, 1 tuyển đại lý) dựng bằng Remotion trong `motion/`. Khai báo ở `content/product-videos.json` (theo sản phẩm) và `content/landing-videos.json` (theo landing, `dai-ly` = `/tuyen-dai-ly`). Video hiện ngay sau hero ở `/lp/:slug`, `/tuyen-dai-ly`, `/san-pham/:slug`; trang chủ có băng chuyền "Video sản phẩm" mở lightbox; `/video` có schema `VideoObject` và sitemap có `video:video`. Máy tính xem bản 16:9, điện thoại xem bản dọc 9:16 (`<source media>`); poster chỉ tải khi video gần vào màn hình.
+  - Dựng lại: `cd motion && npm ci && bash render-all.sh [slug...]` (bản 9:16 chất lượng cao có tiếng nằm ở `motion/out/`, không đưa vào Git), rồi `bash compress.sh <slug> <giây-poster>` tạo bản web: 16:9 mp4/webm ≤ 3 MB, poster ≤ 60 KB, 9:16 ≤ 4 MB.
 - **Sửa nội dung bằng cây bút:** quản trị viên đăng nhập rồi sửa chữ ngay trên trang (xem phần bên dưới).
 - **Form liên hệ:**
   - Kiểm tra lỗi ngay khi nhập, chống spam.

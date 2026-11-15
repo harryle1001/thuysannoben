@@ -41,6 +41,8 @@
   </div>
 </section>
 
+<% if (locals.film) { %><%- include('../partials/product-video', { v: film, id: 'lp-video', name: film.name, kicker: lp.slug === 'gia-cong-oem' ? 'Phim giới thiệu' : 'Phác đồ trong ' + film.duration + ' giây', title: film.name, lead: film.description }) %><% } %>
+
 <% if (lp.pains) { %>
 <section class="section" aria-labelledby="lp-pain">
   <div class="wrap lp-two lp-two--wide">

@@ -43,6 +43,8 @@ const pages = { ...read('pages'), ...policies.load() };
 const symptoms = read('symptoms');
 // Motion-graphic ads per product (motion/ → public/media/ads), shown on the product and landing pages.
 const productVideos = read('product-videos');
+// Protocol (phác đồ) and dealer films, keyed by landing slug ("dai-ly" = /tuyen-dai-ly).
+const landingVideos = read('landing-videos');
 const texts = {};
 
 const categoryBySlug = Object.fromEntries(categories.map((c) => [c.slug, c]));
@@ -300,6 +302,14 @@ function filterProducts({ category, symptom, q } = {}) {
   );
 }
 
+// Every motion-graphic film in one list (home carousel, /video gallery, VideoObject schema, video sitemap).
+const ORDER = ['sorbest', 'proticbest', 'super-yucca', 'top-weigh', 'g7-phong-va-tri-benh-gan-chet-som', 'caphote', 'aqualac-fs'];
+const videos = [
+  ...products.filter((p) => p.video).sort((a, b) => ORDER.indexOf(a.slug) - ORDER.indexOf(b.slug))
+    .map((p) => ({ slug: p.slug, kind: 'product', name: `${p.name}: phim sản phẩm`, short: p.name, description: `${p.name}: ${p.tagline}. Sản xuất tại nhà máy Noben đạt ISO 9001:2015.`, url: p.url, ...p.video })),
+  ...Object.entries(landingVideos).map(([slug, v]) => ({ slug, kind: slug === 'dai-ly' ? 'dealer' : 'protocol', short: v.name, ...v })),
+];
+
 function relatedProducts(product, n = 4) {
   const score = (p) => p.symptoms.filter((s) => product.symptoms.includes(s)).length + (p.category === product.category ? 0.5 : 0);
   return products
@@ -336,6 +346,8 @@ module.exports = {
   filterProducts,
   relatedProducts,
   productsMentioned,
+  landingVideos,
+  videos,
   fold,
   saveEdits,
   getOverrides,

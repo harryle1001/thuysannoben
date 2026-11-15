@@ -3,18 +3,63 @@
     "mp4": "/media/ads/g7-phong-va-tri-benh-gan-chet-som-16x9.mp4",
     "webm": "/media/ads/g7-phong-va-tri-benh-gan-chet-som-16x9.webm",
     "poster": "/media/ads/g7-phong-va-tri-benh-gan-chet-som-16x9.webp",
-    "vertical": "/media/ads/g7-phong-va-tri-benh-gan-chet-som-9x16.mp4"
+    "vertical": "/media/ads/g7-phong-va-tri-benh-gan-chet-som-9x16.mp4",
+    "verticalPoster": "/media/ads/g7-phong-va-tri-benh-gan-chet-som-9x16.webp",
+    "duration": 17,
+    "uploadDate": "2026-11-15"
   },
   "caphote": {
     "mp4": "/media/ads/caphote-16x9.mp4",
     "webm": "/media/ads/caphote-16x9.webm",
     "poster": "/media/ads/caphote-16x9.webp",
-    "vertical": "/media/ads/caphote-9x16.mp4"
+    "vertical": "/media/ads/caphote-9x16.mp4",
+    "verticalPoster": "/media/ads/caphote-9x16.webp",
+    "duration": 17,
+    "uploadDate": "2026-11-15"
   },
   "aqualac-fs": {
     "mp4": "/media/ads/aqualac-fs-16x9.mp4",
     "webm": "/media/ads/aqualac-fs-16x9.webm",
     "poster": "/media/ads/aqualac-fs-16x9.webp",
-    "vertical": "/media/ads/aqualac-fs-9x16.mp4"
+    "vertical": "/media/ads/aqualac-fs-9x16.mp4",
+    "verticalPoster": "/media/ads/aqualac-fs-9x16.webp",
+    "duration": 17,
+    "uploadDate": "2026-11-15"
+  },
+  "sorbest": {
+    "mp4": "/media/ads/sorbest-16x9.mp4",
+    "webm": "/media/ads/sorbest-16x9.webm",
+    "poster": "/media/ads/sorbest-16x9.webp",
+    "vertical": "/media/ads/sorbest-9x16.mp4",
+    "verticalPoster": "/media/ads/sorbest-9x16.webp",
+    "duration": 19,
+    "uploadDate": "2026-11-15"
+  },
+  "proticbest": {
+    "mp4": "/media/ads/proticbest-16x9.mp4",
+    "webm": "/media/ads/proticbest-16x9.webm",
+    "poster": "/media/ads/proticbest-16x9.webp",
+    "vertical": "/media/ads/proticbest-9x16.mp4",
+    "verticalPoster": "/media/ads/proticbest-9x16.webp",
+    "duration": 19,
+    "uploadDate": "2026-11-15"
+  },
+  "super-yucca": {
+    "mp4": "/media/ads/super-yucca-16x9.mp4",
+    "webm": "/media/ads/super-yucca-16x9.webm",
+    "poster": "/media/ads/super-yucca-16x9.webp",
+    "vertical": "/media/ads/super-yucca-9x16.mp4",
+    "verticalPoster": "/media/ads/super-yucca-9x16.webp",
+    "duration": 19,
+    "uploadDate": "2026-11-15"
+  },
+  "top-weigh": {
+    "mp4": "/media/ads/top-weigh-16x9.mp4",
+    "webm": "/media/ads/top-weigh-16x9.webm",
+    "poster": "/media/ads/top-weigh-16x9.webp",
+    "vertical": "/media/ads/top-weigh-9x16.mp4",
+    "verticalPoster": "/media/ads/top-weigh-9x16.webp",
+    "duration": 19,
+    "uploadDate": "2026-11-15"
   }
 }

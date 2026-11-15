@@ -408,3 +408,49 @@
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
   els.forEach(function (el) { if (el.classList.contains('rv')) io.observe(el); });
 })();
+
+// Film posters: set only when the film nears the viewport, so pages never download them up front.
+// Phones get the 9:16 poster to match the 9:16 cut chosen by <source media>.
+(function () {
+  var vids = document.querySelectorAll('video[data-poster]');
+  if (!vids.length) return;
+  var phone = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
+  function set(v) {
+    var p = (phone && v.getAttribute('data-poster-m')) || v.getAttribute('data-poster');
+    if (p && !v.getAttribute('poster')) v.setAttribute('poster', p);
+  }
+  if (!('IntersectionObserver' in window)) { Array.prototype.forEach.call(vids, set); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { set(e.target); io.unobserve(e.target); } });
+  }, { rootMargin: '600px 0px' });
+  Array.prototype.forEach.call(vids, function (v) { io.observe(v); });
+})();
+
+// Video lightbox (home "Video sản phẩm", /video): loads a film only when the visitor taps it.
+(function () {
+  var box = document.getElementById('vbox');
+  var btns = document.querySelectorAll('[data-vplay]');
+  if (!box || !btns.length || typeof box.showModal !== 'function') return;
+  var video = box.querySelector('video');
+  var cap = box.querySelector('.vbox__cap');
+  var phone = window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
+  var last = null;
+  function stop() { video.pause(); video.removeAttribute('src'); video.removeAttribute('poster'); video.load(); }
+  Array.prototype.forEach.call(btns, function (btn) {
+    btn.addEventListener('click', function () {
+      last = btn;
+      var tall = phone && btn.getAttribute('data-vertical');
+      var webm = video.canPlayType('video/webm; codecs="vp9"');
+      box.classList.toggle('is-tall', Boolean(tall));
+      video.src = tall || (webm ? btn.getAttribute('data-webm') : btn.getAttribute('data-mp4'));
+      var img = btn.querySelector('img');
+      if (img && !tall) video.poster = img.currentSrc || img.src;
+      cap.textContent = btn.getAttribute('data-title') || '';
+      box.showModal();
+      var p = video.play(); if (p && p.catch) p.catch(function () {});
+    });
+  });
+  box.querySelector('[data-vbox-close]').addEventListener('click', function () { box.close(); });
+  box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+  box.addEventListener('close', function () { stop(); if (last) last.focus(); });
+})();

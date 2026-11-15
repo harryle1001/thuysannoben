@@ -1,0 +1,23 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Video']] }) %>
+    <h1 class="khead__title"><%- tx('videos-title', 'Video sản phẩm và phác đồ Noben') %></h1>
+    <p class="khead__lead"><%- tx('videos-lead', 'Phim ngắn giới thiệu sản phẩm, phác đồ theo giai đoạn nuôi và chương trình hợp tác của Noben. Nội dung bám đúng nhãn sản phẩm. Bấm vào video để xem, tải bản dọc 9:16 để gửi qua Zalo, Facebook.') %></p>
+  </div>
+</section>
+<section class="section section--top-tight" aria-labelledby="vid-prod">
+  <div class="wrap">
+    <h2 id="vid-prod" class="h2 vsec__title">Phim sản phẩm</h2>
+    <%- include('../partials/video-cards', { items: videos.filter((v) => v.kind === 'product'), heading: 'h3' }) %>
+  </div>
+</section>
+<section class="section section--tint" aria-labelledby="vid-plan">
+  <div class="wrap">
+    <h2 id="vid-plan" class="h2 vsec__title">Phác đồ, gia công và đại lý</h2>
+    <%- include('../partials/video-cards', { items: videos.filter((v) => v.kind !== 'product'), heading: 'h3' }) %>
+  </div>
+</section>
+<%- include('../partials/video-box') %>
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

@@ -84,6 +84,22 @@
   </div>
 </section>
 
+<% if (videos.length) { %>
+<section class="section vhome" aria-labelledby="vid-title">
+  <div class="wrap">
+    <header class="section-head">
+      <div>
+        <h2 id="vid-title" class="h2"><%- tx('home-videos', 'Video sản phẩm') %></h2>
+        <p class="section-head__lead"><%- tx('home-videos-lead', 'Phim ngắn về từng sản phẩm và phác đồ theo giai đoạn nuôi. Bấm để xem, kéo ngang để xem thêm.') %></p>
+      </div>
+      <a class="text-link" href="/video">Xem tất cả <%= videos.length %> video</a>
+    </header>
+    <%- include('../partials/video-cards', { items: videos, heading: 'h3', rail: true }) %>
+  </div>
+</section>
+<%- include('../partials/video-box') %>
+<% } %>
+
 <%- include('../partials/quality') %>
 
 <% if (certificates.length) { %>

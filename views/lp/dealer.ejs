@@ -43,6 +43,8 @@
   </div>
 </section>
 
+<% if (locals.film) { %><%- include('../partials/product-video', { v: film, id: 'lp-video', name: film.name, kicker: 'Phim ' + film.duration + ' giây', title: 'Làm đại lý Noben: nhìn nhanh trong ' + film.duration + ' giây', lead: film.description }) %><% } %>
+
 <section class="section" aria-labelledby="lp-why">
   <div class="wrap">
     <header class="lp-head">

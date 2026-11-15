@@ -38,6 +38,10 @@ export const theme = {
 } as const;
 
 export const TAU = Math.PI * 2;
+// Same constants as the website tokens (public/css/main.css): timing in multiples of π, layout split by φ.
+export const PI = Math.PI;
+export const PHI = 1.618034;
+export const PHI_INV = 0.618034;
 
 // Deterministic pseudo-random in [0,1) from an integer seed.
 export const rand = (seed: number) => {
