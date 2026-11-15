@@ -1915,9 +1915,6 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
    ===================================================================== */
 html.has-sunrise { background: #06152f; }
 html.has-sunrise body { background: transparent; }
-.sunrise-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none; }
-.sunrise-veil { position: fixed; inset: 0; z-index: -1; background: var(--paper); opacity: 0.854; pointer-events: none; }
-@media print { .sunrise-bg, .sunrise-veil { display: none; } }
 
 /* Home: the first screen is a clear window onto the rising sun; words follow on a deep translucent sea */
 .hero--sunrise { position: relative; background: transparent; padding: 0; min-height: 0; display: block; }
@@ -1988,3 +1985,70 @@ html.has-sunrise body { background: transparent; }
 .certflow__info span { font-size: var(--step--1); color: var(--on-ink-muted); }
 .certflow__more { margin-top: var(--space-4); text-align: center; }
 @media (prefers-reduced-motion: reduce) { .certflow__item { transition: none; } }
+
+/* =====================================================================
+   Sunrise background (js/sunrise-bg.js) — layers painted once, only
+   opacity/transform change while scrolling (GPU compositing, no repaint).
+   φ = 1.61803: horizon at 61.8 lvh, sun S = 38.2 vmin (= vmin/φ²), sun's
+   resting centre at 38.2 lvh, glow S·φ³, glint width S·φ, veil 1 − 1/φ⁴.
+   ===================================================================== */
+
+.sky { --S: 38.2vmin; position: fixed; left: 0; top: 0; width: 100%; height: 100lvh; z-index: -2; pointer-events: none; overflow: hidden; contain: strict; background: #02060f; }
+.sky__l { position: absolute; inset: 0; }
+.sky__night {
+  background:
+    radial-gradient(1.6px 1.6px at 8% 12%, #fff 60%, transparent 62%), radial-gradient(1.2px 1.2px at 21% 31%, #dfe8ff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 34% 9%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 46% 24%, #cfdcff 60%, transparent 62%),
+    radial-gradient(1.8px 1.8px at 61.8% 14%, #fff 60%, transparent 62%), radial-gradient(1.2px 1.2px at 72% 36%, #e6ecff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 86% 8%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 93% 27%, #d8e2ff 60%, transparent 62%),
+    radial-gradient(1.2px 1.2px at 15% 46%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 54% 41%, #e0e8ff 60%, transparent 62%),
+    radial-gradient(1.3px 1.3px at 79% 48%, #fff 60%, transparent 62%), radial-gradient(1px 1px at 38.2% 52%, #cfdcff 60%, transparent 62%),
+    linear-gradient(180deg, #02060f 0%, #060f28 23.6%, #0d1a3c 50%, #1d2552 61.8%, #0c1636 61.8%, #050c22 76.4%, #02060f 100%);
+}
+.sky__dawn {
+  opacity: 0; will-change: opacity;
+  background:
+    radial-gradient(ellipse 30% 3.2% at 24% 27%, rgba(255, 196, 196, 0.5), transparent 72%),
+    radial-gradient(ellipse 23.6% 2.6% at 74% 19%, rgba(255, 176, 168, 0.42), transparent 72%),
+    radial-gradient(ellipse 38.2% 3.6% at 61.8% 44%, rgba(255, 206, 172, 0.55), transparent 72%),
+    radial-gradient(ellipse 61.8% 16% at 50% 61.8%, rgba(255, 168, 98, 0.62), transparent 70%),
+    linear-gradient(180deg, #1b1f4a 0%, #33296a 18%, #5e3d84 34%, #a35686 47%, #dc7a7c 55%, #f6a476 59%, #ffcb8e 61.8%,
+      #8a5a7c 61.8%, #4a3466 66%, #26285a 74%, #131c40 85.4%, #070e26 100%);
+}
+.sky__day {
+  opacity: 0; will-change: opacity;
+  background:
+    radial-gradient(ellipse 30% 3% at 22% 24%, rgba(255, 255, 255, 0.55), transparent 72%),
+    radial-gradient(ellipse 21% 2.4% at 77% 16%, rgba(255, 255, 255, 0.45), transparent 72%),
+    radial-gradient(ellipse 34% 3.2% at 64% 43%, rgba(255, 244, 228, 0.55), transparent 72%),
+    radial-gradient(ellipse 61.8% 14% at 50% 61.8%, rgba(255, 226, 150, 0.66), transparent 70%),
+    linear-gradient(180deg, #245aa3 0%, #3f7fc2 20%, #73a9d9 38.2%, #b6d3e9 50%, #ecdcbc 57%, #ffd27a 61.8%,
+      #6aa6c8 61.8%, #3f86b0 66%, #22679a 74%, #154e7e 85.4%, #0b3460 100%);
+}
+.sky__clip { position: absolute; left: 0; right: 0; top: 0; height: 61.8lvh; overflow: hidden; }
+.sky__glow {
+  position: absolute; left: calc(50% - var(--S) * 2.118); top: calc(38.2lvh - var(--S) * 2.118);
+  width: calc(var(--S) * 4.236); height: calc(var(--S) * 4.236); border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 244, 214, 0.95) 0%, rgba(255, 214, 146, 0.66) 14.6%, rgba(255, 176, 98, 0.32) 38.2%, rgba(255, 134, 74, 0.1) 61.8%, transparent 100%);
+  opacity: 0.236; transform: scale(0.618); will-change: opacity, transform;
+}
+.sky__sun {
+  position: absolute; left: 50%; top: calc(38.2lvh - var(--S) / 2); width: var(--S); height: auto;
+  transform: translate3d(-50%, calc(23.6lvh + 11.8%), 0); will-change: transform;
+  filter: drop-shadow(0 0 calc(var(--S) * 0.146) rgba(255, 214, 120, 0.75));
+}
+.sky__glint {
+  position: absolute; top: 61.8lvh; left: 50%; width: calc(var(--S) * 1.618); height: 38.2lvh; transform-origin: 50% 0;
+  transform: translateX(-50%) scaleX(0.382); opacity: 0.146; will-change: opacity, transform;
+  -webkit-mask-image: radial-gradient(ellipse 50% 100% at 50% 0%, #000 23.6%, transparent 76.4%);
+  mask-image: radial-gradient(ellipse 50% 100% at 50% 0%, #000 23.6%, transparent 76.4%);
+}
+.sky__glint i {
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(180deg, rgba(255, 224, 150, 0.95) 0 2px, transparent 2px 10px);
+  animation: glint 2.618s ease-in-out infinite alternate; /* φ² s */
+}
+@keyframes glint { from { transform: scaleX(0.92); } to { transform: scaleX(1.08); } }
+.sunrise-veil { position: fixed; left: 0; top: 0; width: 100%; height: 100lvh; z-index: -1; background: var(--paper); opacity: 0.854; pointer-events: none; will-change: opacity; }
+@media (prefers-reduced-motion: reduce) { .sky__glint i { animation: none; } }
+@media print { .sky, .sunrise-veil { display: none; } }
