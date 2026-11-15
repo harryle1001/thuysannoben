@@ -78,12 +78,22 @@
       2.25
     ],
     [
-      "deliver",
-      2
+      "harvest",
+      4.5
     ],
     [
       "close",
-      2.25
+      2
+    ]
+  ],
+  "harvest": [
+    [
+      "harvest",
+      4.5
+    ],
+    [
+      "close",
+      1.5
     ]
   ]
 }

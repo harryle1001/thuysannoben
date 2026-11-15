@@ -10,23 +10,25 @@ import { Bubbles, DeepWater, Finish, GodRays, Plankton, Surface } from "../compo
 import { IntakeArt, LineArt } from "../factory/LineArt";
 import { FACTORY_PRODUCTS, slot } from "../factory/media";
 import { DeliverArt, OutQCArt, SafetyGlyph, SealArt } from "../factory/ProcessArt";
+import { HarvestStage } from "../factory/Harvest";
 import timing from "../factory/timing.json";
 import { theme } from "../theme";
 import { Blueprint, bodyStyle, Checklist, Close, Copy, display, Glass, kickerStyle, Logo, Media, Sweep, useL } from "./FactoryFilm";
 
 const C = theme.colors;
-type Key = "hook" | "intake" | "produce" | "pack" | "outqc" | "deliver" | "close";
+type Key = "hook" | "intake" | "produce" | "pack" | "outqc" | "deliver" | "harvest" | "close";
+type Cut = "process" | "harvest";
 
-const scenesFor = (fps: number) => {
+const scenesFor = (fps: number, cut: Cut = "process") => {
   let from = 0;
-  return (timing.process as Array<[Key, number]>).map(([key, u]) => {
+  return (timing[cut] as Array<[Key, number]>).map(([key, u]) => {
     const dur = Math.round(u * Math.PI * fps);
     const s = { key, from, dur };
     from += dur;
     return s;
   });
 };
-const total = (fps: number) => scenesFor(fps).reduce((a, s) => a + s.dur, 0);
+const total = (fps: number, cut: Cut = "process") => scenesFor(fps, cut).reduce((a, s) => a + s.dur, 0);
 
 const STEPS = ["Nguyên liệu kiểm tra chặt chẽ", "Sản xuất chuyên nghiệp, an toàn", "Đóng gói khép kín", "Kiểm tra đầu ra nghiêm ngặt"];
 
@@ -198,14 +200,41 @@ const Deliver: React.FC<{ dur: number }> = () => {
   );
 };
 
-const SCENES: Record<Key, React.FC<{ dur: number }>> = { hook: Hook, intake: Intake, produce: Produce, pack: Pack, outqc: OutQc, deliver: Deliver, close: Close };
 
-export const ProcessFilm: React.FC = () => {
+// ---------- 5 · Harvest: the illustrated, hopeful ending ----------
+const Harvest: React.FC<{ dur: number }> = () => {
+  const frame = useCurrentFrame();
+  const { W, H, fps, v, pick } = useL();
+  const sec = frame / fps;
+  const shadow = "0 2px 24px rgba(20,8,30,0.55)";
+  const a = interpolate(sec, [0.4, 1.0, 4.0, 4.5], [0, 1, 1, 0], theme.clamp);
+  return (
+    <AbsoluteFill>
+      <HarvestStage />
+      <div style={{ position: "absolute", left: pick(W * 0.08, W * 0.06), top: pick(H * 0.07, H * 0.08), width: pick(W * 0.84, W * 0.5), opacity: a, transform: `translateY(${(1 - a) * 16}px)` }}>
+        <div style={{ ...kickerStyle, color: "#ffe3a0", fontSize: v ? 28 : 24, textShadow: shadow }}>Đến tay bà con</div>
+        <div style={{ ...display, fontSize: v ? 84 : 70, marginTop: 14, textShadow: shadow }}>Giao tận ao, đồng hành suốt vụ nuôi</div>
+      </div>
+      <Sequence from={Math.round(fps * 10.8)} layout="none">
+        <div style={{ position: "absolute", left: 0, right: 0, top: pick(H * 0.08, H * 0.09), display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", padding: "0 60px" }}>
+          <WordReveal per={4} text="Niềm vui ngày thu hoạch" hero={["thu", "hoạch"]} style={{ ...display, fontSize: v ? 104 : 96, justifyContent: "center", columnGap: 24, textShadow: shadow }} />
+          <Entrance delay={Math.round(fps * 0.6)} y={16}><p style={{ ...bodyStyle, color: "#fff3dc", fontSize: v ? 34 : 30, margin: "18px 0 0", textShadow: shadow }}>Kỹ thuật viên Noben hỗ trợ miễn phí suốt vụ nuôi.</p></Entrance>
+        </div>
+      </Sequence>
+    </AbsoluteFill>
+  );
+};
+
+const SCENES: Record<Key, React.FC<{ dur: number }>> = { hook: Hook, intake: Intake, produce: Produce, pack: Pack, outqc: OutQc, deliver: Deliver, harvest: Harvest, close: Close };
+
+export const ProcessFilm: React.FC<{ cut?: Cut }> = ({ cut = "process" }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames: D } = useVideoConfig();
-  const scenes = scenesFor(fps);
+  const scenes = scenesFor(fps, cut);
   const last = scenes[scenes.length - 1];
-  const gridO = interpolate(frame, [scenes[1].from - 10, scenes[1].from + 20, last.from - 10, last.from + 10], [0, 1, 1, 0], theme.clamp);
+  const hv = scenes.find((s) => s.key === "harvest");
+  const gridEnd = hv ? hv.from : last.from;
+  const gridO = cut === "harvest" ? 0 : interpolate(frame, [scenes[1].from - 10, scenes[1].from + 20, gridEnd - 10, gridEnd + 10], [0, 1, 1, 0], theme.clamp);
   return (
     <AbsoluteFill style={{ background: C.abyss, overflow: "hidden" }}>
       <DeepWater loop={D} />
@@ -223,18 +252,22 @@ export const ProcessFilm: React.FC = () => {
       })}
       {scenes.slice(1).map((s) => <Sweep key={s.key} at={s.from} />)}
       <Bubbles loop={D} count={14} region={[0.02, 0.98]} />
-      <Audio src={staticFile("sfx/factory-process.wav")} />
+      <Audio src={staticFile(`sfx/factory-${cut}.wav`)} />
       <Finish />
     </AbsoluteFill>
   );
 };
 
 const withFonts = () => (<><Fonts /><ProcessFilm /></>);
+const withFontsHarvest = () => (<><Fonts /><ProcessFilm cut="harvest" /></>);
 
 export const ProcessCompositions: React.FC = () => (
   <>
-    {/* ≈49 s production-process film for farmers: 16:9 web/YouTube + 9:16 */}
+    {/* ≈55 s production-process film for farmers: 16:9 web/YouTube + 9:16 */}
     <Composition id="ProcessFilm" component={withFonts} durationInFrames={total(30)} fps={30} width={1920} height={1080} />
     <Composition id="ProcessFilmVertical" component={withFonts} durationInFrames={total(30)} fps={30} width={1080} height={1920} />
+    {/* ≈19 s illustrated harvest ending as a stand-alone clip */}
+    <Composition id="HarvestFilm" component={withFontsHarvest} durationInFrames={total(30, "harvest")} fps={30} width={1920} height={1080} />
+    <Composition id="HarvestFilmVertical" component={withFontsHarvest} durationInFrames={total(30, "harvest")} fps={30} width={1080} height={1920} />
   </>
 );
