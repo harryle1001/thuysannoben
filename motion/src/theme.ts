@@ -20,6 +20,7 @@ export const theme = {
   fonts: {
     display: "Archivo",
     body: "Be Vietnam Pro",
+    serif: "Playfair Display",
   },
   ease: {
     out: Easing.bezier(0.16, 1, 0.3, 1),

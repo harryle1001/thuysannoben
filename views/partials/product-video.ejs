@@ -1,0 +1,18 @@
+<%# Product motion-graphic ad (16:9, muted loop). Needs `p` with p.video; `id` for the heading. %>
+<section class="pv section" aria-labelledby="<%= id %>">
+  <div class="wrap pv__grid">
+    <div class="pv__copy">
+      <p class="pv__kicker">Phim sản phẩm</p>
+      <h2 id="<%= id %>" class="pv__title"><%= p.name %> trong 17 giây</h2>
+      <p class="pv__lead"><%= p.tagline %>. Sản xuất tại nhà máy đạt ISO 9001:2015.</p>
+      <% if (p.video.vertical) { %><a class="pv__link" href="<%= p.video.vertical %>" download>Tải bản dọc 9:16 cho Zalo, Facebook</a><% } %>
+    </div>
+    <div class="pv__frame">
+      <video class="pv__video" muted playsinline loop preload="none" poster="<%= p.video.poster %>" width="1920" height="1080" data-inview-play aria-label="Video giới thiệu <%= p.name %>: <%= p.tagline %>">
+        <source src="<%= p.video.webm %>" type="video/webm">
+        <source src="<%= p.video.mp4 %>" type="video/mp4">
+      </video>
+      <button class="pv__toggle" type="button" data-video-toggle aria-label="Tạm dừng video"><svg class="ico" aria-hidden="true"><use href="#i-pause"/></svg><span>Tạm dừng</span></button>
+    </div>
+  </div>
+</section>

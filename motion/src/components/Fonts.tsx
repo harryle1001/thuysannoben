@@ -12,6 +12,11 @@ const faces: Array<[string, string, string]> = [
   ["Be Vietnam Pro", "fonts/be-vietnam-pro-latin-600-normal.woff2", "600"],
   ["Be Vietnam Pro", "fonts/be-vietnam-pro-latin-ext-600-normal.woff2", "600"],
   ["Be Vietnam Pro", "fonts/be-vietnam-pro-vietnamese-600-normal.woff2", "600"],
+  ...(["500", "700"] as const).flatMap((w) =>
+    (["latin", "latin-ext", "vietnamese"] as const).map((sub): [string, string, string] => ["Be Vietnam Pro", `fonts/be-vietnam-pro-${sub}-${w}-normal.woff2`, w]),
+  ),
+  ["Playfair Display", "fonts/playfair-display-latin-wght-normal.woff2", "400 900"],
+  ["Playfair Display", "fonts/playfair-display-vietnamese-wght-normal.woff2", "400 900"],
 ];
 
 export const Fonts: React.FC = () => {

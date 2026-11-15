@@ -38,6 +38,8 @@ const policies = require('./policies');
 // Policy pages: Markdown in content/chinh-sach/ (falls back to the old content/pages.json entries).
 const pages = { ...read('pages'), ...policies.load() };
 const symptoms = read('symptoms');
+// Motion-graphic ads per product (motion/ → public/media/ads), shown on the product and landing pages.
+const productVideos = read('product-videos');
 const texts = {};
 
 const categoryBySlug = Object.fromEntries(categories.map((c) => [c.slug, c]));
@@ -86,6 +88,7 @@ function refreshProduct(p) {
     p.cutout = size ? { src: `/images/products-cutout/${p.slug}.webp`, ...size } : null;
   }
   p.shot = p.cutout || p.image;
+  p.video = productVideos[p.slug] || null;
   p.search = fold([p.name, p.tagline, ...p.uses].join(' ').replace(/<[^>]+>/g, ' '));
 }
 

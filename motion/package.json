@@ -5,7 +5,9 @@
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render:hero": "remotion render src/index.ts HeroLoop out/hero.mp4 --codec h264 --crf 17",
-    "render:film": "remotion render src/index.ts BrandFilm out/film.mp4 --codec h264 --crf 17"
+    "render:film": "remotion render src/index.ts BrandFilm out/film.mp4 --codec h264 --crf 17",
+    "render:ads": "bash render-ads.sh",
+    "stills": "node stills.mjs"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.542",

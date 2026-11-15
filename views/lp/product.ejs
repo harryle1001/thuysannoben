@@ -30,6 +30,8 @@
   </div>
 </section>
 
+<% if (p.video) { %><%- include('../partials/product-video', { p, id: 'lp-video' }) %><% } %>
+
 <% if (s) { %>
 <section class="section" aria-labelledby="lp-pain">
   <div class="wrap lp-two lp-two--wide">
