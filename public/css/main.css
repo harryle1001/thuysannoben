@@ -2164,3 +2164,17 @@ html.has-sunrise body { background: transparent; }
   .finder__chips .chip, .prodtabs__tab { flex: 0 1 auto; min-height: 36px; padding: 4px 10px; font-size: 0.8125rem; }
   .prodtabs__tab { gap: 6px; }
 }
+
+/* ---------- Header controls: one snug 40px frame for VI/EN, theme and menu; slimmer search bar ---------- */
+.lang-switch, .theme-toggle, .menu-toggle { height: 40px; border-radius: var(--radius-s); }
+.theme-toggle, .menu-toggle { width: 40px; }
+.lang-switch { padding: 3px; gap: 2px; align-items: stretch; }
+.lang-switch span { display: inline-flex; align-items: center; padding: 0 9px; border-radius: 5px; }
+@media (min-width: 761px) and (max-width: 1439px) { .lang-switch { padding: 3px; } .lang-switch .lang-switch__on { display: none; } }
+.site-header__actions { gap: 8px; }
+@media (max-width: 760px) {
+  .hsearch__form { padding-block: 6px; }
+  .hsearch__field input { height: 38px; }
+  .hsearch__btn { min-height: 38px; padding: 0 16px; }
+}
+@media (min-width: 961px) and (max-width: 1179px) { .nav__link { padding: 10px 6px; font-size: 0.9rem; } .site-header__call { padding-inline: 12px; } }
