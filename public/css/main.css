@@ -2141,3 +2141,20 @@ html.has-sunrise body { background: transparent; }
 .sunrise-veil { position: fixed; left: 0; top: 0; width: 100%; height: 100lvh; z-index: -1; background: var(--paper); opacity: 0.854; pointer-events: none; will-change: opacity; }
 @media (prefers-reduced-motion: reduce) { .sky__glint i { animation: none; } }
 @media print { .sky, .sunrise-veil { display: none; } }
+
+/* ---------- Phones: compact menu, one search box, filters wrap into one screen ---------- */
+@media (max-width: 960px) {
+  body.menu-open .hsearch { display: none; } /* the search bar must not cover the open menu */
+  .nav { padding-top: var(--space-3); }
+  .nav__link { font-size: 1.125rem; padding: 10px 4px; }
+  .nav__mobile-extra { margin-top: var(--space-4); }
+}
+@media (max-width: 760px) {
+  .filters .field--search { display: none; } /* the header search already does this */
+  .filters { gap: var(--space-3); }
+  .filters__group legend { font-size: 1rem; margin-bottom: 6px; }
+  .filters__radios, .filters__chips { flex-wrap: wrap; overflow: visible; gap: 6px; padding-bottom: 0; }
+  .filters__radios .radio, .filters__chips .chip { flex: 0 1 auto; min-height: 36px; padding: 4px 10px; font-size: 0.8125rem; }
+  .filters__radios .radio { gap: 6px; }
+  .filters__chips { padding-right: 68px; } /* keep clear of the floating chat buttons */
+}
