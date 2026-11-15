@@ -45,9 +45,15 @@
     form.querySelectorAll('[data-legal]').forEach(function (inp) { inp.value = (l.phap_ly || {})[inp.dataset.legal] || '[ĐIỀN]'; });
     state.colorSet = Boolean(l.mau_nhan);
     form.elements.mau_nhan.value = l.mau_nhan || themeColor(l);
-    var o = l.so_dang_ky_doc_tu_anh;
+    var o = l.so_dang_ky_tham_khao || l.so_dang_ky_doc_tu_anh;
     ocrMsg.hidden = !o;
-    if (o) ocrMsg.textContent = 'Đọc từ ảnh nhãn gốc: ' + o.gia_tri + ' (' + o.ghi_chu + ')';
+    ocrMsg.textContent = '';
+    if (o) {
+      ocrMsg.append('Số tham khảo: ', Object.assign(document.createElement('strong'), { textContent: o.gia_tri }), ' · ' + o.ghi_chu + (o.nguon ? ' Nguồn: ' + o.nguon + '.' : '') + ' ');
+      var use = Object.assign(document.createElement('button'), { type: 'button', className: 'btn btn--line lbl__small', textContent: 'Chép vào ô số đăng ký' });
+      use.addEventListener('click', function () { form.querySelector('[data-legal="so_dang_ky"]').value = o.gia_tri; render(); });
+      ocrMsg.append(use);
+    }
     saveMsg.textContent = l._sua ? 'Bản đã sửa lúc ' + new Date(l._sua).toLocaleString('vi-VN') : '';
     render();
   }

@@ -4,7 +4,8 @@
     "bao_bi: tên khổ trong brand/label-spec.json (tui, chai, xo). Được đoán từ quy cách, kiểm tra lại.",
     "phap_ly: số đăng ký/mã số lưu hành, NSX, HSD, khối lượng tịnh, mã vạch EAN-13. Để [ĐIỀN] cho tới khi có số liệu từ giấy tờ. KHÔNG đoán số đăng ký.",
     "so_dang_ky_doc_tu_anh: chỉ có khi đọc được số trên ảnh nhãn gốc; luôn cần kiểm tra lại với giấy tờ.",
-    "quy_cach: đọc tự động từ dòng \"Qui cách\" ở ảnh sản phẩm (OCR), cần soát lại. mau_nhan: mã màu #rrggbb để thay màu nhóm, null = theo nhóm."
+    "quy_cach: đọc tự động từ dòng \"Qui cách\" ở ảnh sản phẩm (OCR), cần soát lại. mau_nhan: mã màu #rrggbb để thay màu nhóm, null = theo nhóm.",
+    "so_dang_ky_tham_khao: số đăng ký tìm thấy trong danh mục công khai (Thông tư 10/2016), chỉ để đối chiếu; chép sang phap_ly.so_dang_ky sau khi đã kiểm tra với giấy tờ."
   ],
   "san_pham": [
     {
@@ -312,7 +313,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-18",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "ben-gold-rv",
@@ -347,7 +353,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-17",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "ben-iq",
@@ -430,7 +441,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-20",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "bio-edta",
@@ -765,7 +781,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-19",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "oxy-99",
@@ -949,7 +970,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-24",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "rovabio-ap",
@@ -984,7 +1010,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-23",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "rovazyme",
@@ -1019,7 +1050,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-21",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "super-aqua-80",
@@ -1056,7 +1092,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-10",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "super-bioca",
@@ -1170,7 +1211,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-13",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "super-oxy-02",
@@ -1238,7 +1284,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-6",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "super-yucca",
@@ -1274,7 +1325,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-22",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "toxic-algae",
@@ -2241,7 +2297,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-12",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "bio-aq",
@@ -2391,7 +2452,12 @@
         "ma_vach": "[ĐIỀN]"
       },
       "so_dang_ky_doc_tu_anh": null,
-      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại",
+      "so_dang_ky_tham_khao": {
+        "gia_tri": "HCM.TS19-3",
+        "nguon": "Phụ lục danh mục thuốc thú y thủy sản được phép lưu hành, Thông tư 10/2016/TT-BNNPTNT (datafiles.chinhphu.vn/cpp/files/vbpq/2016/09/10-bnnptnt-pl-1c.pdf)",
+        "ghi_chu": "Số đăng ký cũ năm 2016, cần kiểm tra lại với giấy tờ: có thể đã hết hiệu lực hoặc đã thay bằng mã số tiếp nhận theo Luật Thủy sản 2017. Chưa in lên nhãn."
+      }
     },
     {
       "slug": "bz-99",
