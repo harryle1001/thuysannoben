@@ -14,7 +14,7 @@ const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\
 
 const smallCache = new Map();
 const hasSmall = (src) => {
-  if (!/^\/images\/(products|products-cutout)\/[^/]+\.webp$/.test(src)) return false;
+  if (!/^\/images\/(products|products-cutout|posts|kien-thuc)\/[^/]+\.webp$/.test(src)) return false;
   if (!smallCache.has(src)) smallCache.set(src, require('fs').existsSync(require('path').join(__dirname, '..', 'public', src.replace(/([^/]+)$/, 'sm/$1'))));
   return smallCache.get(src);
 };
@@ -36,8 +36,10 @@ router.use((req, res, next) => {
   res.locals.zaloUrl = 'https://zalo.me/' + c.company.zalo;
   res.locals.img = (i, opts = {}) => {
     if (!i) return '';
-    // Product photos have a 360px copy in sm/ (thumbnails); offer it when the caller says how wide the image shows.
-    if (opts.sizes && !opts.srcset && i.w > 400 && hasSmall(i.src)) opts = { ...opts, srcset: `${i.src.replace(/([^/]+)$/, 'sm/$1')} 360w, ${i.src} ${i.w}w` };
+    // Product photos have a 360px copy in sm/, article covers a 768px one (scripts/make-small.py);
+    // offer it when the caller says how wide the image shows.
+    const smW = /^\/images\/(posts|kien-thuc)\//.test(i.src) ? 768 : 360;
+    if (opts.sizes && !opts.srcset && i.w > smW * 1.1 && hasSmall(i.src)) opts = { ...opts, srcset: `${i.src.replace(/([^/]+)$/, 'sm/$1')} ${smW}w, ${i.src} ${i.w}w` };
     const attrs = Object.entries({ loading: 'lazy', decoding: 'async', ...opts })
       .filter(([, v]) => v !== false && v != null)
       .map(([k, v]) => ` ${k}="${String(v).replace(/"/g, '&quot;')}"`)
@@ -261,6 +263,7 @@ router.get('/tuyen-dai-ly', (req, res) => {
   });
   res.render('lp/dealer', {
     meta: {
+      preloadImage: '/media/noben-hero-poster.webp',
       title: 'Tuyển đại lý thuốc thủy sản toàn quốc – Giá nhà máy | Noben',
       description: `Noben tuyển đại lý thuốc thủy sản tại các vùng nuôi tôm, cá: nhập hàng giá nhà máy, đủ ${c.products.length} sản phẩm, chiết khấu theo sản lượng, kỹ thuật viên hỗ trợ tại ao, giao hàng toàn quốc.`,
       image: '/images/brand/banner-1.webp',
@@ -398,7 +401,7 @@ router.get('/bai-viet/:slug', (req, res, next) => {
 
 router.get('/ve-chung-toi', (req, res) =>
   res.render('pages/about', {
-    meta: { title: 'Về Noben – Hơn 22 năm sản xuất thuốc thủy sản', description: c.company.overview[0] },
+    meta: { preloadImage: '/media/noben-hero-poster.webp', title: 'Về Noben – Hơn 22 năm sản xuất thuốc thủy sản', description: c.company.overview[0] },
     gallery: c.gallery,
     productCount: c.products.length,
     jsonld: [org(), crumbs([['Trang chủ', '/'], ['Về chúng tôi', '/ve-chung-toi']])],
