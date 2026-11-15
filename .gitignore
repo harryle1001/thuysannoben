@@ -13,3 +13,8 @@ data/indexnow-sent.json
 data/lead-status.json
 data/reviews.json
 data/review-photos/
+
+# Bản in thử nhãn: sinh lại bằng node scripts/build-labels.js (nặng, không đưa vào Git)
+brand/nhan-pdf/
+brand/nhan-png/
+brand/nhan-tong-hop.pdf

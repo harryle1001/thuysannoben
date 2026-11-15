@@ -8,6 +8,10 @@ const path = require('path');
 
 // Unit tests first (TOTP, data folder, backups, webhook).
 execFileSync(process.execPath, [path.join(__dirname, 'test-security.js')], { stdio: 'inherit' });
+// Nhãn sản phẩm (brand/): cần Playwright + Chromium; máy không có thì bỏ qua và báo.
+let hasPlaywright = false;
+try { require.resolve('playwright'); hasPlaywright = true; } catch { console.log('BỎ QUA kiểm thử nhãn (chưa cài Playwright)'); }
+if (hasPlaywright) execFileSync(process.execPath, [path.join(__dirname, 'test-labels.js')], { stdio: 'inherit' });
 const DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'noben-smoke-'));
 
 const PORT = 3999;
@@ -57,6 +61,8 @@ const checks = [
   ['/quan-tri/lien-he', 303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he'],
   ['/quan-tri/2fa', 303, '/quan-tri/dang-nhap?next=/quan-tri/2fa'],
   ['/quan-tri/xac-thuc', 303, '/quan-tri/dang-nhap'],
+  ['/quan-tri/nhan', 303, '/quan-tri/dang-nhap?next=/quan-tri/nhan'],
+  ['/quan-tri/nhan/du-lieu.json', 401],
   ['/healthz', 200],
 ];
 

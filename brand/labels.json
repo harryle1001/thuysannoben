@@ -1,0 +1,3454 @@
+{
+  "_ghi_chu": [
+    "Nội dung nhãn từng sản phẩm, lấy từ content/products.json (94 sản phẩm hiển thị trên web). Sửa ở đây rồi chạy: node scripts/build-labels.js",
+    "bao_bi: tên khổ trong brand/label-spec.json (tui, chai, xo). Được đoán từ quy cách, kiểm tra lại.",
+    "phap_ly: số đăng ký/mã số lưu hành, NSX, HSD, khối lượng tịnh, mã vạch EAN-13. Để [ĐIỀN] cho tới khi có số liệu từ giấy tờ. KHÔNG đoán số đăng ký.",
+    "so_dang_ky_doc_tu_anh: chỉ có khi đọc được số trên ảnh nhãn gốc; luôn cần kiểm tra lại với giấy tờ.",
+    "quy_cach: đọc tự động từ dòng \"Qui cách\" ở ảnh sản phẩm (OCR), cần soát lại. mau_nhan: mã màu #rrggbb để thay màu nhóm, null = theo nhóm."
+  ],
+  "san_pham": [
+    {
+      "slug": "amylac",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "AMYLAC",
+      "phu_de": "Chuyên gia tẩy nhớt bạt, nhớt nước cho ao nuôi bạt và nuôi mật độ cao",
+      "nhan_phu": [
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Chuyên tẩy nhớt BẠT, nhớt nước cho ao nuôi Bạt và nuôi mật độ cao",
+        "Làm sạch Bạt, sạch đáy ao, giải phóng các khí độc ở đáy ao",
+        "Tạo thức ăn( Bổ sung vi sinh vật có lợi) cho tôm trong suốt quá trình nuôi",
+        "Hiệu quả kinh tế, ít tốn công sức để chùi Bạt trong qúa trình nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Lấy 1 gói vi sinh AMYLAC + 3 Kg đường cát( Đường cát vàng hoặc cát trắng) + 50 lít nước. Sục khí từ 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Đối với ao nuôi BẠT: Dùng 15 - 20 lít/1.000m³ nước, định kỳ 3 ngày sử dụng 1 lần",
+        "Đối với ao Đất: Dùng 10-15 lít/1.000m³ nước, định kỳ 5 ngày sử dụng 1 lần.",
+        "Mở máy quạt nước hoặc máy sục khí liên tục khi sử dụng sản phẩm.",
+        "Sử dụng sản phẩm khi có nắng, không sử dụng khi trời mưa."
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ xô",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqua-bac",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "AQUA BAC",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy khí độc",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Phân hủy nhanh các chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn, xác động thực vật.",
+        "Phân hủy nhanh các loại khí độc tích tụ ở đáy ao",
+        "Làm sạch đáy, sạch nước, tăng oxy hòa tan, ổn định các yếu tố môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ hoặc ngâm ủ sục khí rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát theo liều lượng như sau.",
+        "Nếu tạt trực tiếp:",
+        "Dùng 227g/5.000m³ nước, định kỳ 3 ngày/lần.",
+        "Trường hợp đáy ao dơ: Dùng 227g/2.000m³nước",
+        "Nếu ngâm ủ vi sinh: Tiến hành ủ theo cách sau để tăng sinh khối.",
+        "Lấy 1 gói AQUA BAC + 2kg đường cát( hoặc mật mía) + 50 lít nước sạch ngâm ủ sục khí 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Tháng nuôi thứ nhất và thứ 2: Dùng 10 - 15 lít/1.000m³ nước, định kỳ 5 ngày/lần",
+        "Tháng nuôi thứ 3 trở đi: Dùng 15-20 lít/1.000m³ nước, định kỳ 3 ngày/lần.",
+        "Trường hợp dùng để cắt giảm tảo: Nên dùng vào lúc 22 giờ đêm với liều Dùng 10 lít/1.000m³, sử dụng liên tục 2 đêm",
+        "Xin đọc thêm hướng dẫn sử dụng ghi trên bao bì của nhà sản xuất"
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ xô",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqua-bz",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "AQUA BZ",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy khí độc",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Phân hủy nhanh các chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn, xác động thực vật.",
+        "Phân hủy nhanh các loại khí độc tích tụ ở đáy ao",
+        "Làm sạch đáy, sạch nước, tăng oxy hòa tan, ổn định các yếu tố môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ hoặc ngâm ủ sục khí rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát theo liều lượng như sau.",
+        "Nếu tạt trực tiếp:",
+        "Dùng 500g/5.000m³ nước, định kỳ 3 ngày/lần.",
+        "Trường hợp đáy ao dơ: Dùng 500g/2.000m³nước",
+        "Nếu ngâm ủ vi sinh: Tiến hành ủ theo cách sau để tăng sinh khối.",
+        "Lấy 1 gói AQUA BZ 500g + 2kg đường cát( hoặc mật mía) + 50 lít nước sạch ngâm ủ sục khí 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Tháng nuôi thứ nhất và thứ 2: Dùng 10 - 15 lít/1.000m³ nước, định kỳ 5 ngày/lần",
+        "Tháng nuôi thứ 3 trở đi: Dùng 15-20 lít/1.000m³ nước, định kỳ 3 ngày/lần.",
+        "Trường hợp dùng để cắt giảm tảo: Nên dùng vào lúc 22 giờ đêm với liều Dùng 10 lít/1.000m³, sử dụng liên tục 2 đêm",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì của sản phẩm./."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqua-squick",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "AQUA SQUICK",
+      "phu_de": "Siêu diệt khuẩn, quản lý tảo",
+      "nhan_phu": [
+        "Màu nước",
+        "Sát trùng",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Sát trùng nguồn nước ao nuôi tôm, khử mùi hôi ở đáy ao.",
+        "Hỗ trợ quản lý mật độ tảo, cắt tảo ao nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 1 lít/2.000m³ nước, trước khi thả giống 3- 5 ngày.",
+        "Trong quá trình nuôi: Dùng 1 lít/ 3.000 - 5.000m³ nước, định kỳ 7 - 10 ngày/ lần.",
+        "Trong điều trị bệnh: Dùng 1 lít/2.000m³ nước, sử dụng 2 ngày liên tục.",
+        "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp, không dùng sản phẩm khi trời ít nắng và mưa."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqua-yucca",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "AQUA YUCCA",
+      "phu_de": "Hấp thụ khí độc, cấp cứu khi tôm nổi đầu, làm sạch môi trường",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Hấp thụ nhanh các loại khí đôc, cấp cứu khi tôm nổi đầu.",
+        "Phân hủy và đào thải nhanh các khí độc ra khỏi môi trường ao nuôi.",
+        "Cải thiện nhanh tình trạng ô nhiễm môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 500g/ 5.000m³ nước, định kỳ 7 ngày/lần",
+        "Sử dụng khi trường hợp khí độc cao: Dùng 500g/ 3.000m³ nước, sử dụng liên tục 2 - 3 lần.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát, mở quạt nước để AQUA YUCCA phân tán đều khắp ao.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác."
+      ],
+      "quy_cach": "",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null
+    },
+    {
+      "slug": "bacpower",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "BACPOWER",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy khí độc",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Phân hủy nhanh các chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn, xác động thực vật.",
+        "Phân hủy nhanh các loại khí độc tích tụ ở đáy ao",
+        "Làm sạch đáy, sạch nước, tăng oxy hòa tan, ổn định các yếu tố môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ hoặc ngâm ủ sục khí rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát theo liều lượng như sau.",
+        "Nếu tạt trực tiếp:",
+        "Dùng 227g/5.000m³ nước, định kỳ 3 ngày/lần.",
+        "Trường hợp đáy ao dơ: Dùng 227g/2.000m³nước",
+        "Nếu ngâm ủ vi sinh: Tiến hành ủ theo cách sau để tăng sinh khối.",
+        "Lấy 1 gói BACPOWER + 2kg đường cát( hoặc mật mía) + 50 lít nước sạch ngâm ủ sục khí 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Tháng nuôi thứ nhất và thứ 2: Dùng 10 - 15 lít/1.000m³ nước, định kỳ 5 ngày/lần",
+        "Tháng nuôi thứ 3 trở đi: Dùng 15-20 lít/1.000m³ nước, định kỳ 3 ngày/lần.",
+        "Trường hợp dùng để cắt giảm tảo: Nên dùng vào lúc 22 giờ đêm với liều Dùng 10 lít/1.000m³, sử dụng liên tục 2 đêm",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì của sản phẩm./."
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ xô",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "ben-bkc-80",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "BEN BKC 80%",
+      "phu_de": "Siêu diệt khuẩn, quản lý tảo",
+      "nhan_phu": [
+        "Màu nước",
+        "Sát trùng",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Sát trùng nguồn nước ao nuôi tôm, khử mùi hôi ở đáy ao.",
+        "Hỗ trợ quản lý mật độ tảo, cắt tảo ao nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 1 lít/2.000m³ nước, trước khi thả giống 3- 5 ngày.",
+        "Trong quá trình nuôi: Dùng 1 lít/ 3.000 - 5.000m³ nước, định kỳ 7 - 10 ngày/ lần.",
+        "Trong điều trị bệnh: Dùng 1 lít/2.000m³ nước, sử dụng 2 ngày liên tục.",
+        "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp, không dùng sản phẩm khi trời ít nắng và mưa."
+      ],
+      "quy_cach": "Can 2 lít, 8 can/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "ben-copper-500",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "BEN COPPER 500",
+      "phu_de": "Diệt nhanh các loại tảo độc trong ao nuôi tôm-cá",
+      "nhan_phu": [
+        "Màu nước",
+        "Sát trùng"
+      ],
+      "cong_dung": [
+        "Tiêu diệt nhanh các loại tảo độc, tảo lam, tảo sợi, rong rêu.",
+        "Ổn định mật độ tảo, ngăn ngừa các loại tảo độc phát triển",
+        "An toàn và hiệu quả cho đối tượng nuôi và người sử dụng."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng diệt tảo trong ao có tôm, cá: Dùng 500ml/2.000m³ nước, dùng vào lúc 10 - 11 giờ trưa, lúc có nắng gắt và không có mưa.",
+        "Dùng diệt rong rêu, rong nhớt, rong đuôi chồn... khi trong ao không có tôm, cá: Dùng 500ml/ 1.000m³ nước, dùng vào lúc nắng gắt, không có mưa.",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giàm liều lượng cho thích hợp"
+      ],
+      "quy_cach": "Chai 500ml, 30 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "ben-gold-rv",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "BEN GOLD RV",
+      "phu_de": "Diệt nhanh các loại tảo độc trong ao nuôi tôm-cá",
+      "nhan_phu": [
+        "Màu nước",
+        "Sát trùng"
+      ],
+      "cong_dung": [
+        "Tiêu diệt nhanh các loại tảo độc, tảo lam, tảo sợi, rong rêu.",
+        "Ổn định mật độ tảo, ngăn ngừa các loại tảo độc phát triển",
+        "An toàn và hiệu quả cho đối tượng nuôi và người sử dụng."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng diệt tảo trong ao có tôm, cá: Dùng 500ml/2.000m³ nước, dùng vào lúc 10 - 11 giờ trưa, lúc có nắng gắt và không có mưa.",
+        "Dùng diệt rong rêu, rong nhớt, rong đuôi chồn... khi trong ao không có tôm, cá: Dùng 500ml/ 1.000m³ nước, dùng vào lúc nắng gắt, không có mưa.",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giàm liều lượng cho thích hợp."
+      ],
+      "quy_cach": "Chai 500ml, 30 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "ben-iq",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "BEN IQ",
+      "phu_de": "Tiêu diệt ngay các loại vi khuẩn, khuẩn xanh, nấm, nguyên sinh động vật",
+      "nhan_phu": [
+        "Sát trùng",
+        "Mang, đốm đen",
+        "Gan ruột"
+      ],
+      "cong_dung": [
+        "Diệt khuẩn, nấm, nguyên sinh động vật... gây hại cho tôm.",
+        "Tiêu diệt ngay các loại khuẩn xanh, nấm mốc... gây bệnh gan tụy, phân trắng trên tôm.",
+        "Diệt khuẩn mạnh mẽ, an toàn, hiệu quả, không gây ảnh hưởng đến tảo, môi trường, đối tượng nuôi và người sử dụng."
+      ],
+      "thanh_phan": [
+        "Iodin complex 27%"
+      ],
+      "huong_dan": [
+        ":",
+        "TRƯỚC KHI THẢ GIỐNG:",
+        "Dùng trước khi thả giống 2 - 3 ngày: Dùng 1 lít/2.000m³ nước.",
+        "DÙNG TRONG QUÁ TRÌNH NUÔI:",
+        "Sử dụng diệt khuẩn định kỳ: Dùng 1 lít/ 5.000m³ nước, định kỳ 5 - 7 ngày/lần.",
+        "Sử dụng khi có dấu hiệu dịch bệnh xảy ra: Dùng 1 lít/3.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước hoặc sục khí để tăng hiệu quả của sản phẩm.",
+        "Vì sản phẩm dễ bị mất hoạt lực khi chịu tác dụng của ánh nắng mặt trời, nên lưu ý sử dụng sản phẩm vào lúc chiều mát là tốt nhất.",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp"
+      ],
+      "quy_cach": "Chai 1 lít, 15 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bio-book",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "BIO BOOK",
+      "phu_de": "Làm sạch nguồn nước ao nuôi, sạch đáy, sạch nước",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Chuyên gia xử lý đáy ao, phân hủy và loại thải các chất thải hữu cơ, thức ăn tồn dư, xác tảo tàn, các loại khí độc ở đáy ao.",
+        "Làm sạch môi trường nước ao nuôi, sạch nhớt, sạch váng bọt.",
+        "Ổn định hệ vi sinh, ổn định các yếu tố môi trường, pH...."
+      ],
+      "thanh_phan": [
+        "Bao gồm các thành phần vi sinh kỵ khí bắt buộc và các enzym."
+      ],
+      "huong_dan": [
+        "Sử dụng trực tiếp: Hòa 1 gói vi sinh BIO BOOK 454g với 20 lít nước sạch, sau đó tạt đều khắp ao với liều 454g/5.000m³ nước, định kỳ 3 - 5 ngày/ lần. Nên sử dụng vi sinh vào lúc 8 - 9 giờ sáng, không sử dụng sản phẩm khi trời mưa.",
+        "Sử dụng ủ sục khí: Lấy 1 gói vi sinh BIO BOOK 454g + 2 kg đường cát vàng + 50 lít nước đem ủ bịt kín từ 24 - 48 tiếng rồi đem ra sử dụng với liều lượng như sau:",
+        "Đối với ao nuôi Bạt: Dùng 15 - 20 lít/1.000m³ nước, định kỳ 3 ngày/lần",
+        "Đối với ao đáy đất: Dùng 15 lít/ 1.000m³ nước, định kỳ 3 - 5 ngày/lần.",
+        "Nên mở quạt nước để tăng hiệu quả sử dụng của vi sinh."
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bio-edta",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "BIO EDTA",
+      "phu_de": "Giải độc nước, giải độc kim loại nặng phèn đáy, thuốc trừ sâu, kim loại nặng",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Giải độc phèn, giải độc kim loại nặng, thuốc trừ sâu tồn dư ở đáy ao",
+        "Làm mềm nước tăng cường trao đổi ion trong môi trường.|",
+        "Gia tăng oxy hòa tan, ổn định pH nước."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 3kg/1.000m³ nước",
+        "Trong quá trình nuôi: Dùng 3Kg/3.000m³ nước, sử dụng vào lúc sáng sớm hoặc chiều mát.",
+        "Hòa với nước ao nuôi một lượng vừa đủ vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều.",
+        "Xem thêm hướng dẫn sử dụng trên bao bì của sản phẩm./."
+      ],
+      "quy_cach": "Gói 3kg, 10 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bzt",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "BZT",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy nhanh chất thải hữu cơ, đào thải khí độc",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Chuyên gia xử lý đáy ao, phân hủy và loại thải các chất thải hữu cơ, thức ăn tồn dư, xác tảo tàn, các loại khí độc ở đáy ao.",
+        "Làm sạch môi trường nước ao nuôi, sạch nhớt, sạch váng bọt.",
+        "Ổn định hệ vi sinh, ổn định các yếu tố môi trường, pH...."
+      ],
+      "thanh_phan": [
+        "Bao gồm các thành phần vi sinh kỵ ký bắt buộc và các enzym."
+      ],
+      "huong_dan": [
+        "Sử dụng trực tiếp: Hòa 1 gói vi sinh BZT 227g với 20 lít nước sạch, sau đó tạt đều khắp ao với liều 227g/3.000m³ nước, định kỳ 3 - 5 ngày/ lần. Nên sử dụng vi sinh vào lúc 8 - 9 giờ sáng, không sử dụng sản phẩm khi trời mưa.",
+        "Sử dụng ủ sục khí: Lấy 1 gói vi sinh BZT 227g + 2 kg đường cát vàng + 50 lít nước đem ủ bịt kín từ 24 - 48 tiếng rồi đem ra sử dụng với liều lượng như sau:",
+        "Đối với ao nuôi Bạt: Dùng 15 - 20 lít/1.000m³ nước, định kỳ 3 ngày/lần",
+        "Đối với ao đáy đất: Dùng 15 lít/ 1.000m³ nước, định kỳ 3 - 5 ngày/lần.",
+        "Nên mở quạt nước để tăng hiệu quả sử dụng của vi sinh."
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ xô",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "edta-99",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "EDTA 99",
+      "phu_de": "Giải độc nước, giải độc kim loại nặng phèn đáy, thuốc trừ sâu, kim loại nặng",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Giải độc phèn, giải độc kim loại nặng, thuốc trừ sâu tồn dư ở đáy ao",
+        "Làm mềm nước tăng cường trao đổi ion trong môi trường.|",
+        "Gia tăng oxy hòa tan, ổn định pH nước."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 3kg/1.000m³ nước",
+        "Trong quá trình nuôi: Dùng 3Kg/3.000m³ nước, sử dụng vào lúc sáng sớm hoặc chiều mát.",
+        "Hòa với nước ao nuôi một lượng vừa đủ vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều.",
+        "Xem thêm hướng dẫn sử dụng trên bao bì của sản phẩm./."
+      ],
+      "quy_cach": "Gói 3kg, 10 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "grand-zeolite-zeo-hat-nhap-khau",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "GRAND ZEOLITE",
+      "phu_de": "Làm sạch đáy ao và nguồn nước ao nuôi, hấp thụ nhanh khí độc, cải tạo môi trường ao nuôi",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Hấp thụ nhanh các loại khí đôc, cấp cứu khi tôm nổi đầu.",
+        "Phân hủy và đào thải nhanh các khí độc ra khỏi môi trường ao nuôi.",
+        "Cải tạo môi trường nước ao nuôi, làm sạch đáy ao."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 20 kg/ 2.000m²nước, định kỳ 5 ngày/lần",
+        "Sử dụng khi trường hợp khí độc cao, cấp cứu nổi đầu: Dùng 20kg/ 1.000m² nước, sử dụng 2 ngày liên tục.",
+        "Rải khắp ao, đặc biệt nơi có nhiều chất thải hữu cơ.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác của sản phẩm./."
+      ],
+      "quy_cach": "Bao 20kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "iodine-99",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "IODINE 99",
+      "phu_de": "Siêu diệt khuản, diệt ngay khuẩn xanh, nấm mốc, nsđv",
+      "nhan_phu": [
+        "Sát trùng",
+        "Mang, đốm đen",
+        "Gan ruột"
+      ],
+      "cong_dung": [
+        "Diệt khuẩn, nấm, nguyên sinh động vật... gây hại cho tôm.",
+        "Tiêu diệt ngay các loại khuẩn xanh, nấm mốc... gây bệnh gan tụy, phân trắng trên tôm.",
+        "Diệt khuẩn mạnh mẽ, an toàn, hiệu quả, không gây ảnh hưởng đến tảo, môi trường, đối tượng nuôi và người sử dụng."
+      ],
+      "thanh_phan": [
+        "Iodin complex 27%"
+      ],
+      "huong_dan": [
+        ":",
+        "TRƯỚC KHI THẢ GIỐNG:",
+        "Dùng trước khi thả giống 2 - 3 ngày: Dùng 1 lít/2.000m³nước.",
+        "DÙNG TRONG QUÁ TRÌNH NUÔI:",
+        "Sử dụng diệt khuẩn định kỳ: Dùng 1 lít/ 5.000m³ nước, định kỳ 5 - 7 ngày/lần.",
+        "Sử dụng khi có dấu hiệu dịch bệnh xảy ra: Dùng 1 lít/3.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước hoặc sục khí để tăng hiệu quả của sản phẩm.",
+        "Vì sản phẩm dễ bị mất hoạt lực khi chịu tác dụng của ánh nắng mặt trời, nên lưu ý sử dụng sản phẩm vào lúc chiều mát là tốt nhất.",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp"
+      ],
+      "quy_cach": "Chai 1 lít, 15 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "kia-c-tat",
+      "nhom": "sinh-hoc",
+      "bao_bi": "xo",
+      "ten": "KIA C TAT",
+      "phu_de": "Vitaminc tạt xuống ao, chống sốc giảm stress cho tôm, cá",
+      "nhan_phu": [
+        "Oxy, sốc",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Vitamin C dùng tạt trực tiếp xuống ao, giúp tăng sức đề kháng, chống sốc, giảm stress cho tôm.",
+        "Chống sốc tức thời khi tôm bị sốc do thay đổi thới tiết, tôm mới lột vỏ, tôm bị nổi đầu."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 5kg/3.000m³ nước, tạt ngay sau khi tôm bị stress, thời tiết thay đổi.",
+        "Hòa với nước một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát."
+      ],
+      "quy_cach": "Xô 5kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-algae",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "NB ALGAE",
+      "phu_de": "Chuyên gia cắt tảo ao nuôi - vi sinh cắt tảo đêm",
+      "nhan_phu": [
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Vi sinh kết hợp Enzym cắt nhanh các loại tảo trong ao nuôi.",
+        "An toàn và hiệu quả, không gây ảnh hưởng đến sức khỏe vật nuôi.",
+        "Ổn định màu nước và tạo màu nước đẹp, ổn định pH và các yếu tố môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng cắt tảo, giảm độ trong của nước: Dùng 454g NB ALGAE/ 5.000m³ nước, dùng vào lúc 22 - 23 giờ đêm.",
+        "Dùng để cắt bớt tảo và giảm keo nước: Dùng 454g NB ALGAE/ 3.000m³ nước, dùng vào lúc 22 - 23 giờ đêm, dùng liên tục 2 đêm.",
+        "Hòa tan với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để tăng hiệu quả sản phẩm.",
+        "Xin xem hướng dẫn sử dụng trên nhãn mác và bao bì của sản phẩm./."
+      ],
+      "quy_cach": "",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null
+    },
+    {
+      "slug": "nb-biopond",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "NB- BIOPOND",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy khí độc, loại thải khí độc ra khỏi ao nuôi",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Phân hủy nhanh các chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn, xác động thực vật.",
+        "Phân hủy nhanh các loại khí độc tích tụ ở đáy ao",
+        "Làm sạch đáy, sạch nước, tăng oxy hòa tan, ổn định các yếu tố môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ hoặc ngâm ủ sục khí rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát theo liều lượng như sau.",
+        "Nếu tạt trực tiếp:",
+        "Dùng 227g/5.000m³ nước, định kỳ 5 ngày/lần.",
+        "Trường hợp đáy ao dơ: Dùng 227g/2.000m³nước",
+        "Nếu ngâm ủ vi sinh: Tiến hành ủ theo cách sau để tăng sinh khối.",
+        "Lấy 1 gói NB-BIOPOND + 2kg đường cát( hoặc mật mía) + 1 kg thức ăn số 0( nuôi tôm) + 50 lít nước sạch ngâm ủ sục khí 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Tháng nuôi thứ nhất và thứ 2: Dùng 10 - 15 lít/1.000m³ nước, định kỳ 5 ngày/lần",
+        "Tháng nuôi thứ 3 trở đi: Dùng 15-20 lít/1.000m³ nước, định kỳ 3 ngày/lần.",
+        "Xin đọc thêm hướng dẫn sử dụng ghi trên bao bì của nhà sản xuất"
+      ],
+      "quy_cach": "",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null
+    },
+    {
+      "slug": "no-toxin",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "NO TOXIN",
+      "phu_de": "Giải độc nước, giải độc kim loại nặng phèn đáy, thuốc trừ sâu, kim loại nặng",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Giải độc phèn, giải độc kim loại nặng, thuốc trừ sâu tồn dư ở đáy ao",
+        "Làm mềm nước tăng cường trao đổi ion trong môi trường.|",
+        "Gia tăng oxy hòa tan, ổn định pH nước."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 5 lít/3.000m³nước",
+        "Trong quá trình nuôi: Dùng 5 lít/2.000m³ nước, sử dụng vào lúc sáng sớm hoặc chiều mát.",
+        "Hòa với nước ao nuôi một lượng vừa đủ vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều.",
+        "Xem thêm hướng dẫn sử dụng trên ghi bao bì của sản phẩm./."
+      ],
+      "quy_cach": "Can 5L, 4 can/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "oxy-99",
+      "nhom": "sinh-hoc",
+      "bao_bi": "xo",
+      "ten": "OXY 99",
+      "phu_de": "Cung cấp oxy nhanh cho tôm, cấp cứu nổi đầu do thiếu oxy",
+      "nhan_phu": [
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Cung cấp oxy nhanh cho tôm, cấp cứu khi tôm nổi đầu do thiếu oxy.",
+        "Khắc phục tình trạng thiếu oxy tức thời ngay lập tức."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 3kg/2.000m³ nước, rải đều trên bề mặt nước ao nuôi, kết hợp mở quạt nước để tăng hiệu quả sản phẩm."
+      ],
+      "quy_cach": "Xô 5kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "prawnzyme",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "PRAWNZYME",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy khí độc",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Phân hủy nhanh các chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn, xác động thực vật.",
+        "Phân hủy nhanh các loại khí độc tích tụ ở đáy ao",
+        "Làm sạch đáy, sạch nước, tăng oxy hòa tan, ổn định các yếu tố môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ hoặc ngâm ủ sục khí rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát theo liều lượng như sau.",
+        "Nếu tạt trực tiếp:",
+        "Dùng 227g/5.000m³ nước, định kỳ 5 ngày/lần.",
+        "Trường hợp đáy ao dơ: Dùng 227g/2.000m³nước",
+        "Nếu ngâm ủ vi sinh: Tiến hành ủ theo cách sau để tăng sinh khối.",
+        "Lấy 1 gói PRAWNZYME + 2kg đường cát( hoặc mật mía) + 1 kg thức ăn số 0( nuôi tôm) + 50 lít nước sạch ngâm ủ sục khí 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Tháng nuôi thứ nhất và thứ 2: Dùng 10 - 15 lít/1.000m³ nước, định kỳ 5 ngày/lần",
+        "Tháng nuôi thứ 3 trở đi: Dùng 15-20 lít/1.000m³ nước, định kỳ 3 ngày/lần."
+      ],
+      "quy_cach": "Gói 454g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "pro-algae",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "PRO ALGAE",
+      "phu_de": "Chuyên gia cắt tảo đỏ, tảo xanh bằng vi sinh",
+      "nhan_phu": [
+        "Màu nước",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Chuyên cắt tảo xanh, tảo đỏ, tảo độc ao nuôi bằng vi sinh và enzyme",
+        "Làm sạch nước, sạch đáy, ổn định màu nước, ổn định pH",
+        "An toàn và hiệu quả, không gây ảnh hưởng đến sức khỏe tôm nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 227g/2.000m³ nước, sử dụng vào lúc 22- 23 giờ đêm, định kỳ 5 ngày/ lần.",
+        "Trường hợp tảo dày nên dùng liên tục 2 đêm.",
+        "Hòa với nước một lượng vừa đủ rồi tạt đều khắp ao, mở máy sục khí để tăng hiệu quả sản phầm."
+      ],
+      "quy_cach": "Gói 227G, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "proticbest",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "PROTICBEST",
+      "phu_de": "Vi sinh gốc, làm sạch đáy ao, sạch bạt, sạch đáy, sạch nước",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Chuyên gia làm sạch đáy, sạch nước, sạch nhớt bạt.",
+        "Phân hủy nhanh các chất thải hữu cơ, thức ăn dư thừa, xác tảo tàn và các loại khí độc ở đáy ao.",
+        "Gia tăng hàm lượng oxy, ổn định màu nước, ổn định pH."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng trực tiếp:",
+        "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều 1 lít/ 3.000m³ nước, định kỳ 3 - 5 ngày/lần.",
+        "Dùng ủ sục khí để tăng sinh khối:",
+        "Ngâm 1 lít Proticbest(EM gốc) + 2 kg đường cát vàng hoặc 3 lít mật mía + 50 lít nước sạch( nước uống) và 0.5kg thức ăn tôm số 0(N.0) đem ngâm sục khí từ 12 - 24 tiếng rồi đem ra sử dụng với liều:",
+        "Đối với ao nuôi BẠT: Dùng 15 - 20 lít/1.000m³ nước, định kỳ 3- 5 ngày/lần.",
+        "Đối với ao nuôi Đất: Dùng 10 - 15 lít/1.000m³ nước, định kỳ 5 - 7 ngày/lần.",
+        "Nên sử dụng thường xuyên sử dụng sản phẩm này để duy trì lượng vi sinh vật có lợi trong ao nhằm ngăn ngừa và kìm hãm vi khuẩn gây bệnh phát triển."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "rova-otic",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "ROVA OTIC",
+      "phu_de": "Chuyên gia xử lý đáy ao, phân hủy nhanh chất thải hữu cơ, đào thải khí độc",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Chuyên gia xử lý đáy ao, phân hủy và loại thải các chất thải hữu cơ, thức ăn tồn dư, xác tảo tàn, các loại khí độc ở đáy ao.",
+        "Làm sạch môi trường nước ao nuôi, sạch nhớt, sạch váng bọt.",
+        "Ổn định hệ vi sinh, ổn định các yếu tố môi trường, pH...."
+      ],
+      "thanh_phan": [
+        "Bao gồm các thành phần vi sinh kỵ ký bắt buộc và các enzym."
+      ],
+      "huong_dan": [
+        "Sử dụng trực tiếp: Hòa 1 gói vi sinh ROVA OTIC g với 20 lít nước sạch, sau đó tạt đều khắp ao với liều 227g/3.000m³ nước, định kỳ 3 - 5 ngày/ lần. Nên sử dụng vi sinh vào lúc 8 - 9 giờ sáng, không sử dụng sản phẩm khi trời mưa.",
+        "Sử dụng ủ sục khí: Lấy 1 gói vi sinh ROVA OTIC 227g + 2 kg đường cát vàng + 50 lít nước đem ủ bịt kín từ 24 - 48 tiếng rồi đem ra sử dụng với liều lượng như sau:",
+        "Đối với ao nuôi Bạt: Dùng 15 - 20 lít/1.000m³ nước, định kỳ 3 ngày/lần",
+        "Đối với ao đáy đất: Dùng 15 lít/ 1.000m³ nước, định kỳ 3 - 5 ngày/lần.",
+        "Nên mở quạt nước để tăng hiệu quả sử dụng của vi sinh."
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "rovabio-ap",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "ROVABIO AP",
+      "phu_de": "Chuyên gia cắt tảo đỏ, tảo xanh bằng vi sinh",
+      "nhan_phu": [
+        "Màu nước",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Chuyên cắt tảo xanh, tảo đỏ, tảo độc ao nuôi bằng vi sinh và enzyme",
+        "Làm sạch nước, sạch đáy, ổn định màu nước, ổn định pH",
+        "An toàn và hiệu quả, không gây ảnh hưởng đến sức khỏe tôm nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 227g/2.000m³ nước, sử dụng vào lúc 22- 23 giờ đêm, định kỳ 5 ngày/ lần.",
+        "Trường hợp tảo dày nên dùng liên tục 2 đêm.",
+        "Hòa với nước một lượng vừa đủ rồi tạt đều khắp ao, mở máy sục khí để tăng hiệu quả sản phầm."
+      ],
+      "quy_cach": "Gói 227g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "rovazyme",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "ROVAZYME",
+      "phu_de": "Vi sinh chuyên cắt tảo nước xanh",
+      "nhan_phu": [
+        "Màu nước",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Chuyên cắt tảo xanh, tảo đỏ, tảo độc ao nuôi bằng vi sinh và enzyme",
+        "Làm sạch nước, sạch đáy, ổn định màu nước, ổn định pH",
+        "An toàn và hiệu quả, không gây ảnh hưởng đến sức khỏe tôm nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 454g/3.000m³ nước, sử dụng vào lúc sáng sớm hoặc chiều mát, định kỳ 5 ngày/ lần.",
+        "Trường hợp tảo dày nên dùng liên tục 2 ngày",
+        "Hòa với nước một lượng vừa đủ rồi tạt đều khắp ao, mở máy sục khí để tăng hiệu quả sản phầm."
+      ],
+      "quy_cach": "Gói 454g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-aqua-80",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "SUPER AQUA 80",
+      "phu_de": "Siêu diệt khuẩn, quản lý tảo",
+      "nhan_phu": [
+        "Màu nước",
+        "Sát trùng",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Sát trùng nguồn nước ao nuôi tôm, khử mùi hôi ở đáy ao.",
+        "Hỗ trợ quản lý mật độ tảo, cắt tảo ao nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 1 lít/2.000m³ nước, trước khi thả giống 3- 5 ngày.",
+        "Trong quá trình nuôi: Dùng 1 lít/ 3.000 - 5.000m³ nước, định kỳ 7 - 10 ngày/ lần.",
+        "Trong điều trị bệnh: Dùng 1 lít/2.000m³ nước, sử dụng 2 ngày liên tục.",
+        "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp, không dùng sản phẩm khi trời ít nắng và mưa."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-bioca",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "SUPER BIOCA",
+      "phu_de": "Hấp thụ khí độc, cấp cứu khi tôm nổi đầu, làm sạch môi trường",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Hấp thụ nhanh các loại khí đôc, cấp cứu khi tôm nổi đầu.",
+        "Phân hủy và đào thải nhanh các khí độc ra khỏi môi trường ao nuôi.",
+        "Cải thiện nhanh tình trạng ô nhiễm môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 1 lít/ 5.000m³ nước, định kỳ 7 ngày/lần",
+        "Sử dụng khi trường hợp khí độc cao: Dùng 1 lít/ 3.000m³ nước.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát, mở quạt nước để Super BIOCA phân tán đều khắp ao.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-cut-algae",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "SUPER CUT ALGAE",
+      "phu_de": "Diệt nhanh các loại tảo độc trong ao nuôi tôm-cá",
+      "nhan_phu": [
+        "Màu nước",
+        "Sát trùng"
+      ],
+      "cong_dung": [
+        "Tiêu diệt nhanh các loại tảo độc, tảo lam, tảo sợi, rong rêu.",
+        "Ổn định mật độ tảo, ngăn ngừa các loại tảo độc phát triển",
+        "An toàn và hiệu quả cho đối tượng nuôi và người sử dụng."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng diệt tảo trong ao có tôm, cá: Dùng 100g/1.000m³ nước, dùng vào lúc 10 - 11 giờ trưa, lúc có nắng gắt và không có mưa.",
+        "Dùng diệt rong rêu, rong nhớt, rong đuôi chồn... khi trong ao không có tôm, cá: Dùng 200g/ 1.000m³ nước, dùng vào lúc nắng gắt, không có mưa."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-din-600",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "SUPER DIN 600",
+      "phu_de": "Siêu diệt khuẩn, diệt ngay vi khuẩn, khuẩn xanh, nấm, nsđv",
+      "nhan_phu": [
+        "Sát trùng",
+        "Mang, đốm đen",
+        "Gan ruột"
+      ],
+      "cong_dung": [
+        "Diệt khuẩn, nấm, nguyên sinh động vật... gây hại cho tôm.",
+        "Tiêu diệt ngay các loại khuẩn xanh, nấm mốc... gây bệnh gan tụy, phân trắng trên tôm.",
+        "Diệt khuẩn mạnh mẽ, an toàn, hiệu quả, không gây ảnh hưởng đến tảo, môi trường, đối tượng nuôi và người sử dụng."
+      ],
+      "thanh_phan": [
+        "Iodin complex 27%"
+      ],
+      "huong_dan": [
+        ":",
+        "TRƯỚC KHI THẢ GIỐNG:",
+        "Dùng trước khi thả giống 2 - 3 ngày: Dùng 1 lít/2.000m³ nước.",
+        "DÙNG TRONG QUÁ TRÌNH NUÔI:",
+        "Sử dụng diệt khuẩn định kỳ: Dùng 1 lít/ 5.000m³ nước, định kỳ 5 - 7 ngày/lần.",
+        "Sử dụng khi có dấu hiệu dịch bệnh xảy ra: Dùng 1 lít/3.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước hoặc sục khí để tăng hiệu quả của sản phẩm.",
+        "Vì sản phẩm dễ bị mất hoạt lực khi chịu tác dụng của ánh nắng mặt trời, nên lưu ý sử dụng sản phẩm vào lúc chiều mát là tốt nhất.",
+        "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp"
+      ],
+      "quy_cach": "Chai 1 lít, 15 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-oxy-02",
+      "nhom": "sinh-hoc",
+      "bao_bi": "xo",
+      "ten": "SUPER OXY 02",
+      "phu_de": "Cung cấp oxy nhanh cho tôm, cấp cứu nổi đầu do thiếu oxy",
+      "nhan_phu": [
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Cung cấp oxy nhanh cho tôm, cấp cứu khi tôm nổi đầu do thiếu oxy.",
+        "Khắc phục tình trạng thiếu oxy tức thời ngay lập tức."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 3kg/3.000m³ nước, rải đều trên bề mặt nước ao nuôi, kết hợp mở quạt nước để tăng hiệu quả sản phẩm."
+      ],
+      "quy_cach": "Xô 5kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-vidal",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "SUPER VIDAL",
+      "phu_de": "Tiêu diệt nhanh các loại vi khuẩn, vi rus, nấm, nguyên sinh động vật trong ao nuôi",
+      "nhan_phu": [
+        "Mang, đốm đen",
+        "Sát trùng"
+      ],
+      "cong_dung": [
+        "Tiêu diệt nhanh các loại virus, vi khuẩn, nấm, nguyên sinh động vật.... gây ra các bệnh cho tôm như: Đen mang, vàng mang, cụt râu, sâu đuôi, hoại tử phụ bộ.",
+        "Sát trùng nguồn nước ao nuôi và ao lắng, phòng ngừa tối đa các bệnh nhiễm khuẩn cho tôm."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng trước khi thả nuôi: Dùng 1kg/1.000m³ nước, sử dụng trước khi thả tôm 7 - 10 ngày.",
+        "Sử dụng cho tôm nhỏ: Dùng 1kg/3.000m³ nước",
+        "Sử dụng cho tôm lớn: Dùng 1kg/2.000m³ nước",
+        "Hòa tan với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao vào lúc 8 - 9 giờ sáng và lúc có nắng.",
+        "Lưu ý: Không sử dụng sản phẩm khi trời mưa và không có nắng.",
+        "Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp"
+      ],
+      "quy_cach": "Hủ 1kg, 20 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "super-yucca",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "SUPER YUCCA",
+      "phu_de": "Hấp thụ khí độc, cấp cứu khi tôm nổi đầu, làm sạch môi trường",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Hấp thụ nhanh các loại khí đôc, cấp cứu khi tôm nổi đầu.",
+        "Phân hủy và đào thải nhanh các khí độc ra khỏi môi trường ao nuôi.",
+        "Cải thiện nhanh tình trạng ô nhiễm môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 1 lít/ 5.000m³ nước, định kỳ 7 ngày/lần",
+        "Sử dụng khi trường hợp khí độc cao: Dùng 1 lít/ 3.000m³ nước.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát, mở quạt nước để Super Yucca phân tán đều khắp ao.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác."
+      ],
+      "quy_cach": "Chai 500ml, 30 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "toxic-algae",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "TOXIC ALGAE",
+      "phu_de": "Chuyên gia xử lý nhớt nước, xác tảo tàn, váng bọt",
+      "nhan_phu": [
+        "Khí độc",
+        "Màu nước",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Chuyên xử lý xác tảo tàn, váng bọt, nhớt nước.",
+        "Trung hòa và giải độc nguồn nước, giải độc phèn, giải độc kim loại năng.",
+        "Làm mềm nước, ổn định pH, sạch môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Xử lý trước khi thả nuôi: Dùng 3kg/3.000m³ nước",
+        "Xử lý trong quá trình nuôi: Dùng 3kg/5.000m³ nước, định kỳ 5 ngày/lần.",
+        "Xử lý khi có váng bọt, xác tảo tàn: Dùng 3kg/3.000m³ nước",
+        "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao. Mở máy quạt nước để sản phẩm phân tán đều khắp ao."
+      ],
+      "quy_cach": "Bao 3kg, 10 bao/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "vi-sinh-3-trong-1-chuyen-lam-sach-day-nuoc-cat-tao-sach-nhot-bat",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "VI SINH 3 TRONG 1: CHUYÊN LÀM SẠCH ĐÁY, NƯỚC- CẮT TẢO- SẠCH NHỚT BẠT",
+      "phu_de": "Chuyên làm sạch đáy nước- cắt tảo- sạch nhớt bạt",
+      "nhan_phu": [
+        "Màu nước",
+        "Khí độc"
+      ],
+      "cong_dung": [],
+      "thanh_phan": [],
+      "huong_dan": [],
+      "quy_cach": "Gói 227G",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "yucca-99",
+      "nhom": "sinh-hoc",
+      "bao_bi": "chai",
+      "ten": "YUCCA 99",
+      "phu_de": "Hấp thụ khí độc, cấp cứu khi tôm nổi đầu, làm sạch môi trường",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Hấp thụ nhanh các loại khí đôc, cấp cứu khi tôm nổi đầu.",
+        "Phân hủy và đào thải nhanh các khí độc ra khỏi môi trường ao nuôi.",
+        "Cải thiện nhanh tình trạng ô nhiễm môi trường."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 1 lít/ 5.000m³ nước, định kỳ 7 ngày/lần",
+        "Sử dụng khi trường hợp khí độc cao: Dùng 1 lít/ 3.000m³ nước.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát, mở quạt nước để Yucca 99 phân tán đều khắp ao.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "yucca-vs-zeo",
+      "nhom": "sinh-hoc",
+      "bao_bi": "xo",
+      "ten": "YUCCA VS ZEO",
+      "phu_de": "Làm sạch đáy ao và nguồn nước ao nuôi, hấp thụ nhanh khí độc, cải tạo môi trường ao nuôi",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Hấp thụ nhanh các loại khí đôc, cấp cứu khi tôm nổi đầu.",
+        "Phân hủy và đào thải nhanh các khí độc ra khỏi môi trường ao nuôi.",
+        "Cải tạo môi trường nước ao nuôi nhanh chóng."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 10 kg/ 5.000m³ nước, định kỳ 7 ngày/lần",
+        "Sử dụng khi trường hợp khí độc cao: Dùng 10kg/ 3.000m³ nước.",
+        "Hòa với nước sạch ao nuôi một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát, mở quạt nước để YUCCA VS ZEO phân tán đều khắp ao.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác."
+      ],
+      "quy_cach": "Xô 15kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "clear-12h",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "CLEAR 12H",
+      "phu_de": "Vi sinh tẩy nhớt bạt, nhớt nước cho ao nuôi bạt và nuôi mật độ cao",
+      "nhan_phu": [
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Chuyên tẩy nhớt Bạt, nhớt nước cho ao nuôi Bạt và nuôi mật độ cao",
+        "Làm sạch Bạt, sạch đáy ao, giải phóng các khí độc ở đáy ao",
+        "Tạo thức ăn ( Bổ sung vi sinh vật có lợi) cho tôm trong suốt quá trình nuôi",
+        "Hiệu quả kinh tế, ít tốn công sức để chùi Bạt trong qúa trình nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Lấy 1 gói vi sinh CLEAR 12H + 3 Kg đường cát( Đường cát vàng hoặc cát trắng) + 50 lít nước. Sục khí từ 12 - 24 giờ rồi đem ra sử dụng với liều lượng như sau",
+        "Đối với ao nuôi BẠT: Dùng 15 - 20 lít/1.000m³ nước, định kỳ 3 ngày sử dụng 1 lần",
+        "Đối với ao Đất: Dùng 10-15 lít/1.000m³ nước, định kỳ 5 ngày sử dụng 1 lần.",
+        "Mở máy quạt nước hoặc máy sục khí liên tục khi sử dụng sản phẩm.",
+        "Sử dụng sản phẩm khi có nắng, không sử dụng khi trời mưa."
+      ],
+      "quy_cach": "Gói 250g, 60 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bio-max",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "BIO MAX",
+      "phu_de": "Khoáng cứng vỏ dày, chuyên dùng cho ao nuôi bạt và ao nuôi truyền thống",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao",
+        "Giúp ổn định độ kiềm, độ cứng và pH trong suốt quá trình nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 3kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao. Nên dùng sản phẩm vào lúc chiều tối là tốt nhất."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ Thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bio-premix",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "BIO PREMIX",
+      "phu_de": "Khoáng cứng vỏ dày, chuyên dùng cho ao nuôi bạt và ao nuôi truyền thống",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao.",
+        "Kích thích lột vỏ nhanh, lột vỏ hoàn toàn."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 3kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao. Nên dùng sản phẩm vào lúc chiều tối là tốt nhất."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ Thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "down-max-ha-phen",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "DOWN MAX",
+      "phu_de": "Giải pháp hạ phèn, giả độc phèn, giải độc kim loại nặng",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Giải pháp hạ phèn, giải độc phèn, giải độc kim loại nặng, thuốc trừ sâu...",
+        "Tẩy nhanh phèn đáy, phèn nước, phèn dính chân và mang tôm.",
+        "Ổn định các yếu tố môi trường, pH..."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng trước khi thả giống 2 - 3 ngày: Dùng 500g/1.000m³ nước",
+        "Trong quá trình nuôi: Dùng 500g/2.000m³ nước, định kỳ 3 ngày/lần và suốt quá trình nuôi.",
+        "Hòa tan với nước ao nuôi 1 lượng vừa đủ rồi tạt đều khắp ao, Sử dụng tốt nhất là lúc sáng sớm hoặc chiều mát."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "kalimix",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "KALIMIX",
+      "phu_de": "Khoáng cứng vỏ dày, chuyên dùng cho ao nuôi bạt",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 3kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao. Nên dùng sản phẩm vào lúc chiều tối."
+      ],
+      "quy_cach": "Gói 3kg, 5kg, 5 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "marimix",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "MARIMIX",
+      "phu_de": "Chuyên gia xử lý phèn nhôm- phèn sắt, giải độc phèn, giải độc nguồn nước",
+      "nhan_phu": [
+        "Khí độc",
+        "Oxy, sốc"
+      ],
+      "cong_dung": [
+        "Chuyên gia khử phèn, giải độc phèn, giải độc nguồn nước ao nuôi.",
+        "Khử nhanh các loại phèn Nhôm, Phèn Sắt.",
+        "Đặc trị phèn dính chân và mang tôm.",
+        "Ổn định các yếu tố môi trường trong suốt quá trình nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 1kg/2.000m³ nước",
+        "Trong quá trình nuôi:",
+        "Xử lý định kỳ: Dùng 1kg/ 5.000m³ nước, định kỳ 3 -5 ngày/lần.",
+        "Xử lý khi phèn cao: Dùng 1kg/2.000m³ nước, xử lý 2 ngày liên tục",
+        "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao. Mở máy quạt nước để sản phẩm phân tán đều.",
+        "Nên dùng sản phẩm MARIMIX - (HẠ PHÈN NHÔM - PHÈN SẮT) 1 - 2 giờ trước khi sử dụng các sản phẩm( Hóa chất xử lý, chế phẩm sinh học...) khác.",
+        "Nên sử dụng MARIMIX - (HẠ PHÈN NHÔM - PHÈN SẮT) vào lúc trời mát."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "miral-n8",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "MIRAL N8",
+      "phu_de": "Khoáng tăng kiềm, cứng vỏ. chuyên dùng cho ao nuôi bạt và ao nuôi truyền thống",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Khoáng tăng kiềm nhanh chóng, ổn định độ kiềm trong suốt quá trình nuôi",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp làm tăng độ kiềm: Dùng 5kg/1.500m³ nước, dùng liên tục 2 ngày.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao, nên dùng vào lúc chiều tối."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ Thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "mix-79",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "MIX 79",
+      "phu_de": "Tạo vỏ dày, lột vỏ nhanh, hỗ trợ phòng cong thân, đục cơ",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Khoáng tăng kiềm nhanh chóng, ổn định độ kiềm trong suốt quá trình nuôi",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp làm tăng độ kiềm: Dùng 5kg/1.500m³ nước, dùng liên tục 2 ngày.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao, nên dùng vào lúc chiều tối."
+      ],
+      "quy_cach": "Gói 5Kg, 5 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "NB MIX 5000",
+      "phu_de": "Khoáng hỗ trợ phòng cong thân, co cơ, đục cơ, trắng lưng, mềm vỏ, khó lột - chuyên dùng cho ao nuôi bạt",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ khoáng chất cần thiết cho quá trình tạo vỏ và lột vỏ cho tôm.",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao, nên dùng vào lúc chiều tối.",
+        "Xem hướng dẫn sử dụng trên bao bì nhãn mác của sản phẩm./."
+      ],
+      "quy_cach": "Bao 10kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "premix-10000",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "PREMIX 10000",
+      "phu_de": "Khoáng tăng kiềm, cứng vỏ. chuyên dùng cho ao nuôi bạt và ao nuôi truyền thống",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Khoáng tăng kiềm nhanh chóng, ổn định độ kiềm trong suốt quá trình nuôi",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp làm tăng độ kiềm: Dùng 5kg/1.500m³ nước, dùng liên tục 2 ngày.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao. Nên dùng vào lúc chiều tối.",
+        "Xem hướng dẫn sử dụng trên bao bì nhãn mác của sản phẩm./."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "premix-9999",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "PREMIX 9999",
+      "phu_de": "Khoáng chuyên dùng cho ao nuôi bạt và ao nuôi truyền thống",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Khoáng tăng kiềm nhanh chóng, ổn định độ kiềm trong suốt quá trình nuôi",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp làm tăng độ kiềm: Dùng 5kg/1.500m³ nước, dùng liên tục 2 ngày.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 5kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao, nên dùng vào lúc chiều tối."
+      ],
+      "quy_cach": "Gói 10Kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "premix-khoang-khoang-kich-lot",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "PREMIX KHOÁNG",
+      "phu_de": "Khoáng kích thích lột vỏ và cứng vỏ nhanh",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ khoáng chất cần thiết cho quá trình tạo vỏ và lột vỏ cho tôm.",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 3kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao, nên dùng vào lúc chiều tối.",
+        "Xem hướng dẫn sử dụng trên bao bì nhãn mác của sản phẩm./."
+      ],
+      "quy_cach": "Bao 10kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "rimix",
+      "nhom": "khoang-chat",
+      "bao_bi": "tui",
+      "ten": "RIMIX",
+      "phu_de": "Khoáng tăng kiềm, cứng vỏ - chuyên dùng cho ao nuôi bạt",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Khoáng tăng kiềm nhanh chóng, ổn định độ kiềm trong suốt quá trình nuôi",
+        "Khoáng cứng vỏ nhanh, tạo vỏ dày, giải quyết nhanh tình trạng lột vỏ không đều, mềm vỏ kéo dài.",
+        "Hỗ trợ phòng ngừa cong thân, đục cơ, trắng lưng trên tôm nuôi mật độ cao"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ: Dùng 5kg/3.000m³ nước, định kỳ 2 ngày/lần.",
+        "Sử dụng trong trường hợp làm tăng độ kiềm: Dùng 5kg/1.500m³ nước, dùng liên tục 2 ngày.",
+        "Sử dụng trong trường hợp tôm cứng vỏ nhanh: Dùng 5kg/2.000m³ nước, dùng liên tục 2 ngày.",
+        "Hòa với nước 1 lượng vừa đủ rồi tạt đều khắp ao, nên dùng vào lúc chiều tối."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ Thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "vita-c-tat",
+      "nhom": "khoang-chat",
+      "bao_bi": "xo",
+      "ten": "VITA C TẠT",
+      "phu_de": "Vitaminc tạt xuống ao, chống sốc giảm stress cho tôm, cá",
+      "nhan_phu": [
+        "Oxy, sốc",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Vitamin C dùng tạt trực tiếp xuống ao, giúp tăng sức đề kháng, chống sốc, giảm stress cho tôm.",
+        "Chống sốc tức thời khi tôm bị sốc do thay đổi thời tiết, tôm mới lột vỏ, tôm bị nổi đầu."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 5kg/3.000m³ nước, tạt ngay sau khi tôm bị stress, thời tiết thay đổi.",
+        "Trước khi thả tôm: Dùng 5kg/2.000m³ nước, tạt trước khi thả tôm 30 phút.",
+        "Hòa với nước một lượng vừa đủ rồi tạt đều khắp ao vào lúc sáng sớm hoặc chiều mát."
+      ],
+      "quy_cach": "Xô 5kg",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "amin-care",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "AMIN CARE",
+      "phu_de": "Tăng trọng nhanh, giảm lượng thức ăn hằng ngày",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại acid amin, vitamin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm.",
+        "Giúp tăng trọng nhanh, lột xác nhanh đúng chu kỳ, nhanh lớn.",
+        "Khắc phục nhanh tình trạng ốp thân, mềm vỏ, vỏ xanh da trời.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước ấm rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 5g/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 10g/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aminovit",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "AMINOVIT",
+      "phu_de": "Tăng trọng nhanh, giảm lượng thức ăn hằng ngày",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại acid amin, vitamin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm.",
+        "Giúp tăng trọng nhanh, lột xác nhanh đúng chu kỳ, nhanh lớn.",
+        "Khắc phục nhanh tình trạng ốp thân, mềm vỏ, vỏ xanh da trời.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước ấm rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 5g/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 10g/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "ap-79",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "AP 79",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thức ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 - 15g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqua-biotic",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "AQUA BIOTIC",
+      "phu_de": "Hỗ trợ tiêu hóa, hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh",
+        "Kích thích tiêu hóa, nong to đường ruột sau 3 ngày.",
+        "Phòng và trị bệnh đường ruột, phân trắng, phân đứt khúc, phân lỏng, trống đường ruột trên tôm",
+        "Giúp tôm ăn nhiều, nhanh lớn, giảm FCR."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hằng ngày: Dùng 3ml/kg thức ăn, trộn 3 - 4 lần/ ngày và liên tục suốt vụ nuôi",
+        "Khi có dấu hiệu bệnh đường ruột: Trộn 5 - 10ml/kg thức ăn, trộn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Không dùng chung với Acid Hữu cơ và Kháng sinh.",
+        "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqua-c30",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "AQUA C30%",
+      "phu_de": "Bổ sung vitamin hằng ngày cho tôm, phòng ngừa cong thân, chống sốc, giảm stress",
+      "nhan_phu": [
+        "Oxy, sốc",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung VitaminC, methionine vào thức ăn hằng ngày cho tôm giúp tăng sức đề kháng, chống sốc, giảm stress cho tôm.",
+        "Chống sốc tức thời khi tôm bị sốc do thay đổi thời tiết, tôm mới lột vỏ, tôm bị nổi đầu.",
+        "Hỗ trợ phòng ngừa các bệnh cong thân, co cơ do thời tiết thay đổi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn 5g/kg thức ăn, trộn 2 - 3 lần/ngày và suốt vụ nuôi",
+        "Khi thời tiết thay đổi, môi trường ao nuôi bị biến động: Trộn 10g/kg thức ăn.",
+        "Hòa tan với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15 phút cho ráo rồi cho tôm ăn.",
+        "Lưu ý: Có thể tạt trực tiếp xuống ao với liều 1kg/1.500m³ nước."
+      ],
+      "quy_cach": "Hủ 1kg, 20 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqualac-fs",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "AQUALAC FS",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 3g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Hủ 500g, 24 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "aqualacto-q",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "AQUALACTO Q",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Hủ 500g, 24 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "ben-com",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "BEN COM",
+      "phu_de": "Tăng trọng nhanh, giảm lượng thức ăn hằng ngày",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại Acid amin, Vitamin và khoáng chất có trong dịch cá thủy phân vào thức ăn hằng ngày cho tôm.",
+        "Giúp tăng trong nhanh, lột xác nhanh, lớn nhanh.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước ấm rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 15g/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 20g/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này"
+      ],
+      "thanh_phan": [
+        "Đạm dịch cá thủy phân",
+        "Hỗn hợp Acid amin, Vitamin và khoáng chất."
+      ],
+      "huong_dan": [],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "beta-13-16-glucan",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "BETA 1.3",
+      "phu_de": "Tăng sức đề kháng, tăng khẳ năng miễn dịch",
+      "nhan_phu": [
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Tăng khẳ năng đề kháng, tăng khẳ năng miễn dịch, tăng khẳ năng chống chịu bệnh tật cho tôm.",
+        "Tăng tỉ lệ sống, hỗ trợ phòng và trị bệnh cho tôm.",
+        "Dùng làm thức ăn cho tôm ương ao nuôi BẠT để rút ngắn thời gian ương."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn hằng ngày cho tôm: Trộn 5 - 10g/kg thức ăn, cho ăn 2 -3 lần/ngày và liên tục suốt vụ nuôi.",
+        "Trường hợp tôm bị sốc, khi thời tiết thay đổi đột ngột tăng liều trộn và kết hợp tạt xuống ao với liều 1kg/.2000m³nước.",
+        "Trong ao uông tôm: Tạt 1kg/1.000m³ nước.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15p cho ráo rồi cho tôm ăn."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bio-aq",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "BIO AQ",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 - 15g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Hủ 500g, 24 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "biotic-99",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "BIOTIC 99",
+      "phu_de": "Hỗ trợ tiêu hóa, hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh",
+        "Kích thích tiêu hóa, nong to đường ruột sau 3 ngày.",
+        "Phòng và trị bệnh đường ruột, phân trắng, phân đứt khúc, phân lỏng, trống đường ruột trên tôm",
+        "Giúp tôm ăn nhiều, nhanh lớn, giảm FCR."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hằng ngày: Dùng 3ml/kg thức ăn, trộn 3- 4 lần/ ngày và liên tục suốt vụ nuôi",
+        "Khi có dấu hiệu bệnh đường ruột: Trộn 5- 10ml/kg thức ăn, trộn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Không dùng chung với Acid Hữu cơ và Kháng sinh.",
+        "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "biozyme",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "BIOZYME",
+      "phu_de": "Men sống hỗ trợ tiêu hóa, làm to đường ruột, hỗ trợ phòng các bệnh đường ruột",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh",
+        "Kích thích tiêu hóa, nong to đường ruột sau 3 ngày.",
+        "Phòng và trị bệnh đường ruột, phân trắng, phân đứt khúc, phân lỏng, trống đường ruột trên tôm",
+        "Giúp tôm ăn nhiều, nhanh lớn, giảm FCR."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hằng ngày: Dùng 3ml/kg thức ăn, trộn 3- 4 lần/ ngày và liên tục suốt vụ nuôi",
+        "Khi có dấu hiệu bệnh đường ruột: Trộn 5- 10ml/kg thức ăn, trộn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Không dùng chung với Acid Hữu cơ và Kháng sinh.",
+        "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Chai 250ml, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "butypho",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "BUTYPHO",
+      "phu_de": "Tăng trọng nhanh, phòng ngừa ốp thân, mềm vỏ, vỏ xanh da trời",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại Acid amin, Vitamin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm.",
+        "Giúp tăng trọng nhanh, lột xác nhanh đúng chu kỳ, nhanh lớn.",
+        "Khắc phục nhanh tình trạng tôm còi, chậm lớn, ốp thân, mềm vỏ, vỏ xanh da trời.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 3ml/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 5-10ml/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chống còi: Trộn 20ml/kg thức ăn, cho ăn 2 lần/ngày và liên tục 5 ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [],
+      "quy_cach": "Chai 500 ml, 30 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bz-99",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "BZ 99",
+      "phu_de": "Men sống hỗ trợ tiêu hóa, hỗ trợ phòng và trị bệnh đường ruột, phân trắng",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh",
+        "Kích thích tiêu hóa, nong to đường ruột sau 3 ngày.",
+        "Phòng và trị bệnh đường ruột, phân trắng, phân đứt khúc, phân lỏng, trống đường ruột trên tôm",
+        "Giúp tôm ăn nhiều, nhanh lớn, giảm FCR."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hằng ngày: Dùng 3ml/kg thức ăn, trộn 3- 4 lần/ ngày và liên tục suốt vụ nuôi",
+        "Khi có dấu hiệu bệnh đường ruột: Trộn 5- 10ml/kg thức ăn, trộn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Không dùng chung với Acid Hữu cơ và Kháng sinh.",
+        "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Chai 500 ml, 30 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "calcipho",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "CALCIPHO",
+      "phu_de": "Cứng vỏ nhanh, tạo vỏ dày, phòng và trị cong thân, đục cơ",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Cung cấp đầy đủ các khoáng vi lượng và đa lượng dễ hấp thụ cho tôm, giúp tôm hấp thụ trực tiếp qua vỏ.",
+        "Giúp cứng vỏ siêu nhanh, vỏ siêu dày, cứng vỏ nhanh để thu tôm.",
+        "Phòng ngừa cong thân, đục cơ, trắng lưng, vỏ xanh da trời, mềm vỏ, khó lột...",
+        "Giải quyết nhanh tình trạng mềm vỏ kéo dài, rớt cục thịt khó lột"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn hằng ngày: Trộn 10ml/kg thức ăn, cho ăn 2 - 3 lần/ngày và suốt vụ nuôi.",
+        "Tạt xuống ao:",
+        "Sử dụng định kỳ để kích thích lột vỏ và cứng vỏ nhanh: Dùng 1 lít/ 1.000m³ nước",
+        "Sử dụng để thu hoạch: Dùng 1 lít/ 500m³nước, sử dụng trong vòng từ dưới 10 giờ kể từ khi tạt ROCAPHOS xuống ao là phải thu hoạch.",
+        "Trộn vào thức ăn hằng ngày để phòng ngừa cong thân, đục cơ: Trộn 20ml/kg thức ăn, cho ăn liện tục trong suốt quá trình nuôi."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "caphote",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "CAPHOTE",
+      "phu_de": "Cứng vỏ nhanh, tạo vỏ dày, phòng và trị cong thân, đục cơ, chống còi",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "CAPHOTE(SIÊU KHOÁNG) là sản phẩm cung cấp đầy đủ các khoáng vi lượng và đa lượng dễ hấp thụ cho tôm, giúp tôm hấp thụ trực tiếp",
+        "Giúp cứng vỏ siêu nhanh, vỏ siêu dày, cứng vỏ nhanh để thu tôm.",
+        "Phòng ngừa cong thân, đục cơ, trắng lưng, vỏ xanh da trời, mềm vỏ, khó lột...",
+        "Giải quyết nhanh tình trạng mềm vỏ kéo dài, rớt cục thịt khó lột"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Sử dụng định kỳ để kích thích lột vỏ và cứng vỏ nhanh: Dùng 1 lít/ 2.000m³ nước",
+        "Sử dụng để thu hoạch: Dùng 1 lít/ 1.200m³nước, sử dụng trong vòng từ dưới 10 giờ kể từ khi tạt CAPHOTE xuống ao là phải thu tôm.",
+        "Trộn vào thức ăn hằng ngày để phòng ngừa cong thân, đục cơ: Trộn 5ml/kg thức ăn, cho ăn liện tục trong suốt quá trình nuôi."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "cmax-25",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "CMAX 25%",
+      "phu_de": "Bổ sung vitamin hằng ngày cho tôm, phòng ngừa cong thân, chống sốc, giảm stress",
+      "nhan_phu": [
+        "Oxy, sốc",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung VitaminC, methionine vào thức ăn hằng ngày cho tôm giúp tăng sức đề kháng, chống sốc, giảm stress cho tôm.",
+        "Chống sốc tức thời khi tôm bị sốc do thay đổi thời tiết, tôm mới lột vỏ, tôm bị nổi đầu.",
+        "Hỗ trợ phòng ngừa các bệnh cong thân, co cơ do thời tiết thay đổi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn 5g/kg thức ăn, trộn 2 - 3 lần/ngày và suốt vụ nuôi",
+        "Khi thời tiết thay đổi, môi trường ao nuôi bị biến động: Trộn 10g/kg thức ăn.",
+        "Hòa tan với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15 phút cho ráo rồi cho tôm ăn.",
+        "Lưu ý: Có thể tạt trực tiếp xuống ao với liều 1kg/1.500m³ nước."
+      ],
+      "quy_cach": "Hủ 1kg, 20 hủ / thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "davi-cid-liquid",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "DAVI CID LIQUID",
+      "phu_de": "Hỗ trợ điều trị bệnh phân trắng, gan tụy, trống đường ruột",
+      "nhan_phu": [
+        "Gan ruột"
+      ],
+      "cong_dung": [
+        "Hỗ trợ điều trị bệnh phân trắng, gan tụy, trống đường ruột trên tôm.",
+        "Hạ và ổn định pH đường ruột tôm, tăng hiệu quả sử dụng sản phẩm để điều trị bệnh.",
+        "Sử dụng an toàn cho tôm nuôi tất cả các giai đoạn."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung hằng ngày vào thức ăn cho tôm: Trộn 3ml/kg thức ăn, trộn 1 - 2 lần/ngày",
+        "Hỗ trợ điều trị bệnh: Trộn 7-10ml/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục đến khi hết bệnh.",
+        "Hòa chung với nước sạch 1 lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn."
+      ],
+      "quy_cach": "Chai 500 ml, 30 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "hepaliver-fs",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "HEPALIVER FS",
+      "phu_de": "Bổ gan, giải độc gan, tăng cường chức năng gan",
+      "nhan_phu": [
+        "Gan ruột",
+        "Oxy, sốc",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược và acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 5ml/kg thức ăn, cho ăn 2 lần/ngày và liên tục trong suốt vụ nuôi",
+        "Hỗ trợ trị bệnh: Trộn 10ml/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Hòa chung với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn.",
+        "Có thể kết hợp với ACID hữu cơ DAVICID LIQUID trộn chung vào thức ăn để tăng hiệu quả và rút ngắn thời gian trị bệnh."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "hepatic",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "HEPATIC",
+      "phu_de": "Bổ gan, giải độc gan, tăng cường chức năng gan",
+      "nhan_phu": [
+        "Gan ruột",
+        "Oxy, sốc",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược và acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 5ml/kg thức ăn, cho ăn 2 lần/ngày và liên tục trong suốt vụ nuôi",
+        "Hỗ trợ trị bệnh: Trộn 10ml/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Hòa chung với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn.",
+        "Có thể kết hợp với ACID hữu cơ DAVICID LIQUID trộn chung vào thức ăn để tăng hiệu quả và rút ngắn thời gian trị bệnh."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "hi-weigh",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "HI WEIGH",
+      "phu_de": "Tăng trọng nhanh, giảm lượng thức ăn hằng ngày",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại acid amin, Vitamin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm.",
+        "Giúp tăng trọng nhanh, lột xác nhanh đúng chu kỳ, nhanh lớn.",
+        "Khắc phục nhanh tình trạng ốp thân, mềm vỏ, vỏ xanh da trời.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước ấm 300C rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 5g/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 10g/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [],
+      "quy_cach": "Lon 500g, 24 lon/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "hufa",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "HUFA",
+      "phu_de": "Tăng trọng nhanh, phòng chống ốp thân, mềm vỏ, vỏ xanh da trời",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại acid amin, vitamin và khoáng chất có trong dịch cá thủy phân.",
+        "Giúp tăng trọng nhanh, lột xác nhanh đúng chu kỳ, nhanh lớn.",
+        "Khắc phục nhanh tình trạng ốp thân, mềm vỏ, vỏ xanh da trời.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước ấm rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 5g/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 10g/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này"
+      ],
+      "thanh_phan": [
+        "Đạm dịch cá thủy phân",
+        "Hỗn hợp acid amin, vitamin và khoáng chất."
+      ],
+      "huong_dan": [],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "liver-max",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "LIVER MAX",
+      "phu_de": "Gan tạt trực tiếp và cho ăn, phòng ngừa các bệnh gan, chết rớt đáy, chết tấp mé",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Gan tạt trực tiếp và cho ăn. Giúp bổ gan, phục hồi chức năng gan, tái tạo tế bào gan.",
+        "Phòng ngừa các bệnh gan, chết sớm, chết tấp mé, chết rải rác trên tôm giai đoạn dưới 2 tháng.",
+        "Giúp tôm ăn nhiều nhanh lớn, hạn chế dịch bệnh trong quá trình nuôi."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Tạt xuống ao định kỳ: Dùng 1 lít/1.500m³ nước, định kỳ 5 ngày/lần.",
+        "Trộn vào thức ăn 10ml/kg thức ăn, trộn cho ăn 3- 4 lần/ngày và liên tục trong suốt vụ nuôi.",
+        "Trường hợp gan yếu, có dấu hiệu dịch bệnh:",
+        "Tạt xuống ao: Dùng 1 lít/1.000m³ nước, tạt liên tục 2 ngày.",
+        "Trộn vào thức ăn: Trộn 20ml/kg thức ăn, cho ăn 2 - 3 lần/ ngày.",
+        "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn. để yên 15 phút rồi cho tôm ăn.",
+        "Nên tạt sản phẩm vào lúc trời mát."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "mega-cid",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "MEGA CID",
+      "phu_de": "Hỗ trợ điều trị bệnh phân trắng, gan tụy, trống đường ruột",
+      "nhan_phu": [
+        "Gan ruột"
+      ],
+      "cong_dung": [
+        "Hỗ trợ điều trị bệnh phân trắng, gan tụy, trống đường ruột trên tôm.",
+        "Hạ và ổn định pH đường ruột tôm, tăng hiệu quả sử dụng sản phẩm để điều trị bệnh.",
+        "Sử dụng an toàn cho tôm nuôi tất cả các giai đoạn."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung hằng ngày vào thức ăn cho tôm: Trộn 5mg/kg thức ăn, trộn 1 - 2 lần/ngày",
+        "Hỗ trợ điều trị bệnh: Trộn 10mg/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục đến khi hết bệnh.",
+        "Hòa chung với nước sạch 1 lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-biobest",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "NB BIOBEST",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 10g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 15g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Hộp 1 kg, 20 hộp/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-c-sormin",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "NB C SORMIN",
+      "phu_de": "Chống sốc, giảm stress, tăng sức đề kháng",
+      "nhan_phu": [
+        "Oxy, sốc",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung các loại Vitamin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm.",
+        "Hỗ trợ chống sốc, giảm stress, giảm căng thẳng cho tôm khi môi trường ao nuôi bị thay đổi.",
+        "Giúp tôm nhanh khỏe, lớn nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hằng ngày: Trộn 5 - 10g/kg thức ăn, cho ăn ngày 2 - 3 lần/ngày.",
+        "Khi có dấu hiệu dịch bệnh và thời tiết thay đổi đột ngột: Trộn 20g/kg thức ăn.",
+        "Có thể tạt trực tiếp xuống ao với liều: 1kg/1.000m³ nước",
+        "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p cho ráo rồi cho tôm ăn.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì của sản phẩm./."
+      ],
+      "quy_cach": "Gói 1kg, 20 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-helvirol-b12",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "NB HELVIROL B12",
+      "phu_de": "Bổ gan, giải độc gan, tăng cường chức năng gan",
+      "nhan_phu": [
+        "Gan ruột",
+        "Oxy, sốc",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược và acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 10ml/kg thức ăn, cho ăn 2 lần/ngày và liên tục trong suốt vụ nuôi",
+        "Hỗ trợ trị bệnh: Trộn 20ml/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Hòa chung với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn.",
+        "Có thể kết hợp với ACID hữu cơ DAVICID LIQUID trộn chung vào thức ăn để tăng hiệu quả và rút ngắn thời gian trị bệnh."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-sorbitol-b12",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "NB SORBITOL B12",
+      "phu_de": "Bổ gan, giải độc gan, tăng cường chức năng gan",
+      "nhan_phu": [
+        "Gan ruột",
+        "Oxy, sốc",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược vá acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 5g/kg thức ăn, cho ăn 2 lần/ngày và liên tục suốt vụ nuôi",
+        "Hỗ trợ trị bệnh: Trộn 20g/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 ngày và kết hợp tạt xuống ao với liều 1kg/2.000m³nước để phòng các bệnh gan cho tôm.",
+        "Hòa chung với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn.",
+        "Có thể kết hợp với ACID hữu cơ DAVICID LIQUID trộn chung vào thức ăn để tăng hiệu quả và rút ngắn thời gian trị bệnh."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "pro-aq",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "PRO AQ",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 - 15g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Hủ 500g, 24 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "prolac",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "PROLAC",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thức ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Gói 500g, 30 gói / thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "prozyme",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "PROZYME",
+      "phu_de": "Hỗn hợp enzyme và vi sinh hỗ trợ tiêu hóa, nong to đường ruột, hỗ trợ ngăn ngừa phân trắng",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Hủ 500g, 24 hủ/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "rocaphos",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "chai",
+      "ten": "ROCAPHOS",
+      "phu_de": "Cứng vỏ nhanh, tạo vỏ dày, phòng và trị cong thân, đục cơ",
+      "nhan_phu": [
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Cung cấp đầy đủ các khoáng vi lượng và đa lượng dễ hấp thụ cho tôm, giúp tôm hấp thụ trực tiếp",
+        "Giúp cứng vỏ siêu nhanh, vỏ siêu dày, cứng vỏ nhanh để thu tôm.",
+        "Phòng ngừa cong thân, đục cơ, trắng lưng, vỏ xanh da trời, mềm vỏ, khó lột...",
+        "Giải quyết nhanh tình trạng mềm vỏ kéo dài, rớt cục thịt khó lột"
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn hằng ngày: Trộn 10ml/kg thức ăn, cho ăn 2 - 3 lần/ngày và suốt vụ nuôi.",
+        "Tạt xuống ao:",
+        "Sử dụng định kỳ để kích thích lột vỏ và cứng vỏ nhanh: Dùng 1 lít/ 1.000m³ nước",
+        "Sử dụng để thu hoạch: Dùng 1 lít/ 500m³nước, sử dụng trong vòng từ dưới 10 giờ kể từ khi tạt ROCAPHOS xuống ao.",
+        "Trộn vào thức ăn hằng ngày để phòng ngừa cong thân, đục cơ: Trộn 20ml/kg thức ăn, cho ăn liện tục trong suốt quá trình nuôi."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "top-weigh",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "TOP WEIGH",
+      "phu_de": "Tăng trọng nhanh, giảm lượng thức ăn hằng ngày",
+      "nhan_phu": [
+        "Cứng vỏ",
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Bổ sung đầy đủ các loại Acid amin, Vitamin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm.",
+        "Giúp tăng trọng nhanh, lột xác nhanh đúng chu kỳ, nhanh lớn.",
+        "Khắc phục nhanh tình trạng ốp thân, mềm vỏ, vỏ xanh da trời.",
+        "Giảm 10 -15% lượng thức ăn, giảm chi phí đầu tư, tăng lợi nhuận.",
+        "Hòa với nước ấm 300C rồi trộn đều lên thức ăn và cho ăn với liều như sau:",
+        "Đối với tôm dưới 45 ngày: Trộn 5g/ kg thức ăn, cho ăn ngày 2 lần.",
+        "Đối với tôm trên 45 ngày: Trộn 10g/kg thức ăn, cho ăn 1 - 2 lần/ ngày.",
+        "Chú ý: Tôm bị đường ruột nên hạn chế cho ăn sản phẩm này mà định kỳ hoặc xen kẻ trộn vào thức ăn để tránh nguy cơ bị bệnh đường ruột cho tôm."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "us-lacto",
+      "nhom": "thuc-an-bo-sung",
+      "bao_bi": "tui",
+      "ten": "US LACTO",
+      "phu_de": "Nong to đường ruột, hỗ trợ ngừa phân trắng, tăng trọng nhanh",
+      "nhan_phu": [
+        "Gan ruột",
+        "Cứng vỏ",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 - 15g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "antiliv",
+      "nhom": "tri-benh",
+      "bao_bi": "chai",
+      "ten": "ANTILIV",
+      "phu_de": "Phòng và trị các bệnh gan cho tôm như teo gan, sưng gan, hoại tử gan, chết sớm",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược và acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 5ml/kg thức ăn, cho ăn 2 lần/ngày và liên tục 3- 5 ngày, ngưng 5 ngày rồi tiếp tục cho ăn với liều tương tự.",
+        "Trị bệnh: Trộn 10ml/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Hòa chung với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn, để yên 15p rồi cho tôm ăn.",
+        "Có thể kết hợp với ACID hữu cơ DAVICID LIQUID trộn chung vào thức ăn để tăng hiệu quả và rút ngắn thời gian trị bệnh."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "bio-mos",
+      "nhom": "tri-benh",
+      "bao_bi": "tui",
+      "ten": "BIO MOS",
+      "phu_de": "Hỗ trợ tiêu hóa, hỗ trợ phòng ngừa các bệnh đường ruột, trống đường ruột cho tôm",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa",
+        "Cứng vỏ"
+      ],
+      "cong_dung": [
+        "Hỗ trợ tiêu hóa và hấp thu thức ăn nhanh chóng.",
+        "Hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột",
+        "Hỗ trợ làm to đường ruột, tăng trọng nhanh."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Bổ sung vào thức ăn hàng ngày: Trộn 5g/kg thưc ăn, cho ăn 2- 3 lần/ngày và suốt vụ nuôi.",
+        "Khi có dấu hiệu bệnh phân trắng, phân lỏng, phân đứt khúc: Trộn 10 - 15g/kg thức ăn, cho ăn 2- 3 lần/ngày.",
+        "Hòa tan với nước sạch rồi trộn đều lên thức ăn, để yên 15 phút rồi cho tôm ăn."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "d-oc",
+      "nhom": "tri-benh",
+      "bao_bi": "tui",
+      "ten": "D-OC",
+      "phu_de": "Diệt nhanh các loại ốc, hến, chem chép",
+      "nhan_phu": [
+        "Sát trùng"
+      ],
+      "cong_dung": [
+        "Tiêu diệt nhanh các loại ốc đinh, hến, chem chép, hai mảnh vỏ, hàu chỉ....",
+        "An toàn, hiệu quả nhanh chóng, không tồn dư gây độc cho tôm."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 1kg/300 - 500m³ nước, dùng trước khi thả giống, không dùng trong ao có tôm",
+        "Tháo nước cạn, dùng D-ỐC rãi ở những chổ nước còn đọng có Ốc.",
+        "Nên sử dụng vào lúc chiều tối là hiệu quả nhất.",
+        "Xin đọc thêm hướng dẫn sử dụng trên nhãn mác bao bì của sản phẩm./."
+      ],
+      "quy_cach": "",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null
+    },
+    {
+      "slug": "g7-phong-va-tri-benh-gan-chet-som",
+      "nhom": "tri-benh",
+      "bao_bi": "chai",
+      "ten": "G7",
+      "phu_de": "Thảo dược tự nhiên phòng và trị các bệnh gan cho tôm",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược và acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 3- 5ml/kg thức ăn, cho ăn 2 lần/ngày và liên tục 3- 5 ngày, ngưng 5 ngày rồi tiếp tục cho ăn với liều tương tự.",
+        "Trị bệnh: Trộn 7 - 10ml/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 ngày.",
+        "Hòa chung với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn.",
+        "Tạt xuống ao:",
+        "Dùng 1 lít/3.000m³ nước khi có dịch bệnh xảy ra, định kỳ 7 ngày/ tạt 1 lần."
+      ],
+      "quy_cach": "Chai 1 lít, 20 chai/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "nb-brown-gay-mau-nuoc-mau-tra",
+      "nhom": "tri-benh",
+      "bao_bi": "tui",
+      "ten": "NB BROWN",
+      "phu_de": "Gây màu nước nhanh chóng màu trà",
+      "nhan_phu": [
+        "Màu nước",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Giải pháp gây màu nước nhanh chóng, tạo màu bã trà.",
+        "Giải quyết nhanh cho những ao nuôi khó gây màu, gây màu nước lên chậm.",
+        "Duy trì màu nước trên 15 ngày, che các tia cực tím chiếu thẳng xuống đáy ao."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Gây màu cho ao trước khi thả nuôi: Dùng 1 gói NB - BROWN 250g/ 1.500m³ nước, tạt vào lúc 8 - 9 giờ sáng.",
+        "Sử dụng khi mất tảo đột ngột: Dùng 250g/ 1.000m³ nước",
+        "Không sử dụng chung với các loại hóa chất khác như Thuốc tím, clorin, BKC...."
+      ],
+      "quy_cach": "",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null
+    },
+    {
+      "slug": "sorbest",
+      "nhom": "tri-benh",
+      "bao_bi": "tui",
+      "ten": "SORBEST",
+      "phu_de": "Phòng và trị các bệnh gan cho tôm như teo gan, sưng gan, hoại tử gan, chết sớm, chết tấp mé",
+      "nhan_phu": [
+        "Gan ruột",
+        "Tiêu hóa"
+      ],
+      "cong_dung": [
+        "Hỗn hợp các loại thảo dược và acid amin giúp phòng và trị hiệu quả các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan, gan ứ nước, chết rải rác, chết tấp mé.",
+        "Bổ gan, gải độc gan, phục hồi chức năng gan, ngăn ngừa bệnh gan tái phát.",
+        "Tăng đề kháng, khống chế các vi khuẩn, vi rus gây bệnh gan tụy."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trộn vào thức ăn:",
+        "Trộn vào thức ăn 10g/kg thức ăn, cho ăn 2 - 3 lần/ngày và liên tục trong suốt quá trình nuôi.",
+        "Tạt xuống ao với liều: 500g/2.000m³ nước, định kỳ 5 - 7 ngày tạt 1 lần.",
+        "Có thể kết hợp với ACID hữu cơ DAVICID LIQUID trộn chung vào thức ăn để tăng hiệu quả và rút ngắn thời gian trị bệnh.",
+        "Ngâm sản phẩm với nước ấm 30 - 400C khoảng 15 phút sau đó đem trộn cho tôm ăn hoặc tạt xuống ao."
+      ],
+      "quy_cach": "Gói 500g, 30 gói/ thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "sun-blue",
+      "nhom": "tri-benh",
+      "bao_bi": "tui",
+      "ten": "SUN BLUE",
+      "phu_de": "Hoạt chất gây màu xanh cấp tốc cho ao nuôi",
+      "nhan_phu": [
+        "Màu nước"
+      ],
+      "cong_dung": [
+        "Hoạt chất gây màu nhanh chóng bằng màu xanh.",
+        "Giúp gây màu nhanh chóng khắc phục nhanh hiện tượng tảo lab lab, rong đáy, tảo độc phát triển.",
+        "Giải pháp cho những ao khó gây màu."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Trước khi thả giống: Dùng 250g/1.500m³ nước, tạt vào lúc sáng sớm.",
+        "Trong quá trình nuôi khi ao bị mất màu đột ngột: Dùng 250g/1.000m³ nước",
+        "Hòa với nước ao nuôi 1 lượng vừa đủ rồi tạt đều khắp ao. Lưu ý không dùng chung với hóa chất.",
+        "Xin xem thêm hướng dẫn sử dụng ghi trên bao bì nhãn mác của sản phẩm./."
+      ],
+      "quy_cach": "Gói 250g, 30 gói/ Thùng",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null,
+      "quy_cach_nguon": "đọc tự động từ ảnh sản phẩm, cần soát lại"
+    },
+    {
+      "slug": "xo-09",
+      "nhom": "tri-benh",
+      "bao_bi": "tui",
+      "ten": "XO 09",
+      "phu_de": "Diệt nhanh các loại ốc, hến, chem chép",
+      "nhan_phu": [
+        "Sát trùng"
+      ],
+      "cong_dung": [
+        "Tiêu diệt nhanh các loại ốc đinh, hến, chem chép, hai mảnh vỏ, hàu chỉ....",
+        "An toàn, hiệu quả nhanh chóng, không tồn dư gây độc cho tôm."
+      ],
+      "thanh_phan": [],
+      "huong_dan": [
+        "Dùng 1kg/300 - 500m³ nước, dùng trước khi thả giống, không dùng trong ao có tôm",
+        "Tháo nước cạn, dùng XO-09 rãi ở những chổ nước còn đọng có ốc.",
+        "Nên sử dụng vào lúc chiều tối là hiệu quả nhất.",
+        "Xin đọc thêm hướng dẫn sử dụng trên nhãn mác bao bì của sản phẩm./."
+      ],
+      "quy_cach": "",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "[ĐIỀN]",
+        "nsx": "[ĐIỀN]",
+        "hsd": "[ĐIỀN]",
+        "khoi_luong_tinh": "[ĐIỀN]",
+        "ma_vach": "[ĐIỀN]"
+      },
+      "so_dang_ky_doc_tu_anh": null
+    }
+  ]
+}

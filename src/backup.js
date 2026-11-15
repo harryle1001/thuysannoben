@@ -8,7 +8,7 @@ const path = require('path');
 const zlib = require('zlib');
 const data = require('./datadir');
 
-const INCLUDE = ['leads.jsonl', 'lead-status.json', 'reviews.json', 'overrides.json', 'review-photos'];
+const INCLUDE = ['leads.jsonl', 'lead-status.json', 'reviews.json', 'overrides.json', 'review-photos', 'label-edits.json'];
 const KEEP = 30;
 const backupDir = () => data.file('backups');
 

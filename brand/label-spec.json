@@ -1,0 +1,30 @@
+{
+  "_ghi_chu": [
+    "Khổ nhãn theo loại bao bì, đơn vị mm. Khổ mặc định là hình chữ nhật vàng (rộng : cao = 1 : 1,618).",
+    "QUAN TRỌNG: đây chỉ là khổ đề xuất. Hãy đo hoặc xin nhà in KÍCH THƯỚC KHUÔN BẾ THẬT của từng bao bì (túi, chai, xô) rồi sửa w, h bên dưới, sau đó chạy lại: node scripts/build-labels.js",
+    "w, h: kích thước sau khi xén. tran_le: phần nền in tràn ra ngoài đường xén mỗi cạnh (3 mm). le_an_toan: khoảng cách tối thiểu từ mép xén tới chữ (thực tế lấy max(le_an_toan, 4,38% chiều rộng)).",
+    "Có thể thêm khổ mới (ví dụ \"can\" hoặc \"hop\"), rồi ghi tên khổ vào trường bao_bi của sản phẩm trong brand/labels.json."
+  ],
+  "kho": {
+    "tui": { "ten": "Túi / gói / hũ", "w": 110, "h": 177.98, "tran_le": 3, "le_an_toan": 4, "khuon_be_that": false },
+    "chai": { "ten": "Chai / can", "w": 90, "h": 145.62, "tran_le": 3, "le_an_toan": 4, "khuon_be_that": false },
+    "xo": { "ten": "Xô / thùng", "w": 130, "h": 210.34, "tran_le": 3, "le_an_toan": 4, "khuon_be_that": false }
+  },
+  "co_chu_toi_thieu_mm": 1.6,
+  "_co_chu_toi_thieu": "1,6 mm ≈ 4,5 pt: cỡ chữ nhỏ nhất bộ dàn trang được phép dùng khi nội dung dài. Nhãn nào phải xuống cỡ này nên cân nhắc khổ lớn hơn hoặc rút gọn chữ.",
+  "nha_san_xuat": {
+    "ten": "CÔNG TY TNHH NOBEN",
+    "dia_chi": "228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi A, Xã Củ Chi, TP.HCM",
+    "hotline": "0934 246 420",
+    "web": "thuysannoben.com"
+  },
+  "mau_nhom": {
+    "_ghi_chu": "Màu nhóm lấy đúng màu nhóm sản phẩm trên website (--c-* trong public/css/main.css).",
+    "sinh-hoc": { "accent": "#1f7a4d", "tint": "#dcefe4", "ten": "Chế phẩm sinh học" },
+    "khoang-chat": { "accent": "#0e6c8a", "tint": "#d8ecf2", "ten": "Khoáng chất" },
+    "thuc-an-bo-sung": { "accent": "#9a5a00", "tint": "#ffe6a0", "ten": "Thức ăn bổ sung" },
+    "tri-benh": { "accent": "#b4232c", "tint": "#f6dcdc", "ten": "Trị bệnh · xử lý ao" }
+  },
+  "logo": "public/images/brand/logo-noben.svg (logo chính thức đang dùng trên web)",
+  "mau_thuong_hieu": { "navy": "#0b2347", "xanh": "#1b4db1", "vang": "#ffc20e", "chu": "#13213a" }
+}

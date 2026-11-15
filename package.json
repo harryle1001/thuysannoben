@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "check": "node scripts/smoke-test.js"
+    "check": "node scripts/smoke-test.js",
+    "labels": "node scripts/build-labels.js",
+    "test:labels": "node scripts/test-labels.js"
   },
   "engines": {
     "node": ">=20"

@@ -186,6 +186,30 @@ router.get('/quan-tri/noi-dung.json', (req, res) => {
   res.set('Content-Disposition', 'attachment; filename="noben-noi-dung-da-sua.json"');
   res.json(c.getOverrides());
 });
+
+// ---------- Admin: trình chỉnh nhãn sản phẩm (brand/labels.json + DATA_DIR/label-edits.json) ----------
+const labels = require('./labels');
+router.get('/quan-tri/nhan', (req, res) => {
+  if (!auth.isAdmin(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/nhan');
+  res.set('Cache-Control', 'private, no-store');
+  res.render('pages/admin-labels', { meta: { title: 'Chỉnh nhãn sản phẩm', noindex: true } });
+});
+router.get('/quan-tri/nhan/du-lieu.json', (req, res) => {
+  if (!auth.isAdmin(req)) return res.status(401).json({ ok: false, message: 'Phiên đăng nhập đã hết.' });
+  res.set('Cache-Control', 'private, no-store');
+  res.json(labels.all());
+});
+router.post('/quan-tri/nhan', async (req, res, next) => {
+  try {
+    if (!auth.isAdmin(req)) return res.status(401).json({ ok: false, message: 'Phiên đăng nhập đã hết. Đăng nhập lại để lưu.' });
+    if (!auth.sameOrigin(req)) return res.status(403).json({ ok: false, message: 'Yêu cầu không hợp lệ.' });
+    const slug = String((req.body && req.body.slug) || '');
+    const r = req.body && req.body.reset ? await labels.reset(slug) : await labels.save(slug, req.body && req.body.label);
+    res.status(r.ok ? 200 : 400).json(r);
+  } catch (err) {
+    next(err);
+  }
+});
 function safeNext(v) {
   const s = String(v || '/');
   return /^\/(?!\/)[\w\-./?=&%]*$/.test(s) ? s : '/';

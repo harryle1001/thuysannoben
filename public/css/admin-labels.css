@@ -1,0 +1,17 @@
+/* Trình chỉnh nhãn /quan-tri/nhan */
+.lbl { display: grid; gap: var(--space-5, 1.5rem); align-items: start; margin-top: var(--space-4, 1rem); }
+@media (min-width: 1000px) { .lbl { grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); } }
+.lbl__form { display: grid; gap: var(--space-4, 1rem); }
+.lbl__form textarea { resize: vertical; font-size: 0.92rem; line-height: 1.45; }
+.lbl__legal { border: 1px dashed var(--line-strong, #b8c5d9); border-radius: 10px; padding: var(--space-4, 1rem); margin: 0; display: grid; gap: var(--space-3, .75rem); }
+.lbl__legal legend { font-weight: 600; padding: 0 6px; }
+.lbl__color { display: flex; gap: 8px; align-items: center; }
+.lbl__color input[type="color"] { width: 52px; height: 40px; padding: 2px; }
+.lbl__small { padding: 6px 12px; font-size: 0.85rem; min-height: 0; }
+.lbl__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.lbl__preview { position: sticky; top: 90px; display: grid; gap: 8px; }
+.lbl__canvas { background: repeating-conic-gradient(#eef2f7 0 25%, #f8fafc 0 50%) 0 0 / 16px 16px; border: 1px solid var(--line, #d6deea); border-radius: 12px; padding: 16px; display: grid; place-items: center; }
+.lbl__canvas svg { display: block; width: 100%; height: auto; max-height: 78vh; box-shadow: 0 6px 24px rgba(11, 35, 71, 0.16); background: #fff; }
+.is-warn { color: var(--danger, #b4232c); }
+@media (max-width: 999px) { .lbl__preview { position: static; order: -1; } }
+.lbl[hidden] { display: none; }

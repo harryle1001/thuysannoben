@@ -1,0 +1,57 @@
+<%- include('../partials/header') %>
+<link rel="stylesheet" href="/css/admin-labels.css?v=1">
+<section class="section section--top-tight">
+  <div class="wrap">
+    <h1 class="page-head__title">Chỉnh nhãn sản phẩm</h1>
+    <p class="lead">Sửa chữ, khổ nhãn và màu nhấn, xem trước ngay. Bấm <strong>Lưu</strong> để giữ thay đổi trên máy chủ (không ghi vào mã nguồn). Tải SVG để mở bằng Illustrator, Inkscape, Figma hoặc Canva. Logo trên nhãn là logo chính thức đang dùng trên web.</p>
+    <p class="field__help" data-lbl-status role="status">Đang tải dữ liệu nhãn…</p>
+    <div class="lbl" data-lbl hidden>
+      <form class="lbl__form aleads__box" data-lbl-form>
+        <div class="form__row">
+          <div class="field"><label for="lbl-sp">Sản phẩm</label><select id="lbl-sp" data-lbl-product></select></div>
+          <div class="field"><label for="lbl-kho">Khổ nhãn</label><select id="lbl-kho" name="bao_bi"></select></div>
+        </div>
+        <div class="field"><label for="lbl-ten">Tên sản phẩm</label><input id="lbl-ten" name="ten" maxlength="300"></div>
+        <div class="field"><label for="lbl-phu">Phụ đề</label><input id="lbl-phu" name="phu_de" maxlength="300"></div>
+        <div class="form__row">
+          <div class="field"><label for="lbl-nhom">Dòng nhóm (trên tên)</label><input id="lbl-nhom" name="nhom_hien_thi" maxlength="300" placeholder="Để trống: theo nhóm sản phẩm"></div>
+          <div class="field"><label for="lbl-mau">Màu nhấn</label><span class="lbl__color"><input id="lbl-mau" type="color" name="mau_nhan"><button class="btn btn--line lbl__small" type="button" data-lbl-color-reset>Màu theo nhóm</button></span></div>
+        </div>
+        <div class="field"><label for="lbl-chip">Nhãn phụ (mỗi dòng một nhãn, tối đa 3)</label><textarea id="lbl-chip" name="nhan_phu" rows="2"></textarea></div>
+        <div class="field"><label for="lbl-cd">Công dụng (mỗi dòng một ý)</label><textarea id="lbl-cd" name="cong_dung" rows="5"></textarea></div>
+        <div class="field"><label for="lbl-tp">Thành phần (mỗi dòng một ý)</label><textarea id="lbl-tp" name="thanh_phan" rows="3"></textarea></div>
+        <div class="field"><label for="lbl-hd">Hướng dẫn sử dụng (mỗi dòng một ý)</label><textarea id="lbl-hd" name="huong_dan" rows="6"></textarea></div>
+        <div class="form__row">
+          <div class="field"><label for="lbl-qc">Quy cách</label><input id="lbl-qc" name="quy_cach" maxlength="300"></div>
+          <div class="field"><label for="lbl-bq">Bảo quản</label><input id="lbl-bq" name="bao_quan" maxlength="300"></div>
+        </div>
+        <fieldset class="lbl__legal">
+          <legend>Thông tin pháp lý (lấy từ giấy tờ, không đoán)</legend>
+          <p class="field__help" data-lbl-ocr hidden></p>
+          <div class="form__row">
+            <div class="field"><label for="lbl-sdk">Số đăng ký / mã số lưu hành</label><input id="lbl-sdk" data-legal="so_dang_ky" maxlength="120"></div>
+            <div class="field"><label for="lbl-kl">Khối lượng tịnh</label><input id="lbl-kl" data-legal="khoi_luong_tinh" maxlength="120"></div>
+            <div class="field"><label for="lbl-nsx">NSX</label><input id="lbl-nsx" data-legal="nsx" maxlength="120"></div>
+            <div class="field"><label for="lbl-hsd">HSD</label><input id="lbl-hsd" data-legal="hsd" maxlength="120"></div>
+          </div>
+          <div class="field"><label for="lbl-ean">Mã vạch EAN-13 (13 số; đúng số kiểm tra thì nhãn vẽ mã vạch thật)</label><input id="lbl-ean" data-legal="ma_vach" maxlength="120" inputmode="numeric"></div>
+        </fieldset>
+        <div class="field"><label for="lbl-ly">Lưu ý (chữ đỏ)</label><input id="lbl-ly" name="luu_y" maxlength="300"></div>
+        <div class="lbl__actions">
+          <button class="btn btn--blue" type="submit">Lưu thay đổi</button>
+          <button class="btn btn--line" type="button" data-lbl-svg>Tải SVG</button>
+          <button class="btn btn--line" type="button" data-lbl-png>Tải PNG</button>
+          <button class="btn btn--line" type="button" data-lbl-reset>Về bản gốc</button>
+        </div>
+        <p class="field__help" data-lbl-save role="status"></p>
+      </form>
+      <div class="lbl__preview">
+        <div class="lbl__canvas" data-lbl-canvas></div>
+        <p class="field__help" data-lbl-fit></p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="/js/label-engine.js?v=1" defer></script>
+<script src="/js/admin-labels.js?v=1" defer></script>
+<%- include('../partials/footer') %>
