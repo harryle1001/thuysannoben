@@ -16,7 +16,8 @@ Website của Công ty TNHH Noben, xây dựng bằng Node.js (Express + EJS). W
 - **Form liên hệ:**
   - Kiểm tra lỗi ngay khi nhập, chống spam.
   - Lưu vào `data/leads.jsonl` và gửi email nếu đã cấu hình SMTP.
-  - Xem danh sách khách liên hệ tại `/quan-tri/lien-he`, có đăng nhập.
+  - Xem khách liên hệ tại `/quan-tri/lien-he` (có đăng nhập): lọc theo nhu cầu, nguồn quảng cáo, trang gửi, ngày; thống kê 7/30 ngày; xuất CSV; đánh dấu trạng thái (lưu ở `data/lead-status.json`, không vào Git).
+- **Tính liều (`/tinh-lieu`):** nhập diện tích, độ sâu ao (hoặc m³) và kg thức ăn, công cụ đọc liều trên nhãn và tính lượng cần dùng. Kiểm thử bộ đọc liều: `node scripts/test-dose.js`.
 - **SEO:**
   - Có `sitemap.xml`, `robots.txt`, thẻ canonical, Open Graph và dữ liệu cấu trúc (Organization, Product, Article, Breadcrumb).
   - Toàn bộ link của website cũ được **chuyển hướng 301** sang link mới, nên không mất thứ hạng Google.
