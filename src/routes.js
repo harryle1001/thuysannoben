@@ -532,10 +532,76 @@ router.get('/dai-ly/:slug', (req, res, next) => {
   });
 });
 
-// Read-only list of form submissions for the signed-in admin (basic auth also accepted).
+// Form submissions for the signed-in admin (basic auth also accepted): filters, quick stats, CSV, follow-up status.
+const vnDay = (iso) => new Date(new Date(iso).getTime() + 7 * 3600 * 1000).toISOString().slice(0, 10);
+async function filteredLeads(req) {
+  const st = await leads.statuses();
+  const all = (await leads.list()).map((l) => ({ ...l, status: st[l.id] || 'Mới', day: vnDay(l.at) }));
+  const f = {};
+  for (const k of ['need', 'source', 'landing', 'status', 'from', 'to']) f[k] = String(req.query[k] || '').slice(0, 120);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(f.from)) f.from = '';
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(f.to)) f.to = '';
+  const rows = all.filter((l) => (!f.need || l.need === f.need) && (!f.source || l.source === f.source) && (!f.landing || l.landing === f.landing) && (!f.status || l.status === f.status) && (!f.from || l.day >= f.from) && (!f.to || l.day <= f.to));
+  return { all, rows, f };
+}
+const countBy = (rows, key) => Object.entries(rows.reduce((m, r) => ((m[r[key]] = (m[r[key]] || 0) + 1), m), {})).sort((a, b) => b[1] - a[1]);
+const adminOk = (req) => auth.isAdmin(req) || auth.basicAuthOk(req);
 router.get('/quan-tri/lien-he', async (req, res) => {
-  if (!auth.isAdmin(req) && !auth.basicAuthOk(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he');
-  res.render('pages/admin-leads', { meta: { title: 'Khách liên hệ', noindex: true }, leads: await leads.list(), mailEnabled: leads.mailEnabled() });
+  if (!adminOk(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he');
+  const { all, rows, f } = await filteredLeads(req);
+  const today = vnDay(new Date().toISOString());
+  const days = [];
+  for (let i = 29; i >= 0; i--) days.push(new Date(Date.parse(today + 'T00:00:00Z') - i * 864e5).toISOString().slice(0, 10));
+  const perDay = Object.fromEntries(countBy(rows, 'day'));
+  const daily = days.map((d) => ({ d, n: perDay[d] || 0 })).reverse();
+  res.render('pages/admin-leads', {
+    meta: { title: 'Khách liên hệ', noindex: true },
+    leads: rows,
+    total: all.length,
+    f,
+    query: new URLSearchParams(Object.entries(f).filter(([, v]) => v)).toString(),
+    options: { need: leads.NEEDS, source: countBy(all, 'source').map((x) => x[0]), landing: countBy(all, 'landing').map((x) => x[0]), status: leads.STATUSES },
+    stats: {
+      d7: daily.slice(0, 7).reduce((a, x) => a + x.n, 0),
+      d30: daily.reduce((a, x) => a + x.n, 0),
+      daily,
+      max: Math.max(1, ...daily.map((x) => x.n)),
+      bySource: countBy(rows, 'source'),
+      byLanding: countBy(rows, 'landing').slice(0, 12),
+      byStatus: countBy(rows, 'status'),
+    },
+    saved: req.query.saved === '1',
+    mailEnabled: leads.mailEnabled(),
+  });
+});
+router.get('/quan-tri/lien-he.csv', async (req, res) => {
+  if (!adminOk(req)) return res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he');
+  const { rows } = await filteredLeads(req);
+  const cell = (v) => {
+    let t = String(v == null ? '' : v);
+    if (/^[=+\-@\t\r]/.test(t)) t = "'" + t; // stop Excel from running formulas
+    return '"' + t.replace(/"/g, '""') + '"';
+  };
+  const head = ['Thời gian', 'Họ tên', 'Điện thoại', 'Tỉnh/thành', 'Nhu cầu', 'Sản phẩm', 'Lời nhắn', 'Trạng thái', 'Nguồn', 'Chiến dịch', 'Trang gửi'];
+  const lines = rows.map((l) => [new Date(l.at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }), l.name, l.phone, l.province, l.need, l.product, l.message, l.status, l.source, l.campaign, l.landing].map(cell).join(','));
+  res
+    .set('Content-Type', 'text/csv; charset=utf-8')
+    .set('Content-Disposition', `attachment; filename="khach-lien-he-${vnDay(new Date().toISOString())}.csv"`)
+    .set('Cache-Control', 'private, no-store')
+    .send('\uFEFF' + [head.map(cell).join(','), ...lines].join('\r\n'));
+});
+router.post('/quan-tri/lien-he/trang-thai', async (req, res, next) => {
+  try {
+    const json = /json/.test(req.get('accept') || '');
+    if (!auth.isAdmin(req)) return json ? res.status(401).json({ ok: false, message: 'Phiên đăng nhập đã hết.' }) : res.redirect(303, '/quan-tri/dang-nhap?next=/quan-tri/lien-he');
+    if (!auth.sameOrigin(req)) return res.status(403).json({ ok: false, message: 'Yêu cầu không hợp lệ.' });
+    const ok = await leads.setStatus(req.body.id, req.body.status);
+    if (json) return res.status(ok ? 200 : 400).json({ ok });
+    const back = String(req.body.back || '').replace(/[^\w=&%.+-]/g, '');
+    res.redirect(303, '/quan-tri/lien-he?' + (back ? back + '&' : '') + 'saved=1');
+  } catch (err) {
+    next(err);
+  }
 });
 
 // ---------- SEO ----------

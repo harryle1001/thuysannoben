@@ -78,16 +78,51 @@ async function save(lead, meta) {
 }
 
 async function list() {
-  try {
-    const raw = await fs.promises.readFile(file, 'utf8');
-    return raw
-      .split('\n')
-      .filter(Boolean)
-      .map((l) => JSON.parse(l))
-      .reverse();
-  } catch {
-    return [];
+  let raw = '';
+  try { raw = await fs.promises.readFile(file, 'utf8'); } catch { return []; }
+  const out = [];
+  for (const line of raw.split('\n')) {
+    if (!line) continue;
+    try { out.push(withMeta(JSON.parse(line))); } catch { /* skip a broken line */ }
   }
+  return out.reverse();
 }
 
-module.exports = { NEEDS, validate, throttled, save, list, mailEnabled: () => Boolean(transporter) };
+// ---------- Admin: lead source, landing page and follow-up status ----------
+const crypto = require('crypto');
+const statusFile = path.join(__dirname, '..', 'data', 'lead-status.json');
+const STATUSES = ['Mới', 'Đã gọi', 'Đã chốt', 'Không tiềm năng'];
+
+// The form's "page" field holds the page path, plus "utm_source=...&utm_campaign=..." on ad visits (public/js/main.js).
+function withMeta(l) {
+  const page = String(l.page || '').trim();
+  const sp = page.indexOf(' ');
+  let landing = sp > -1 ? page.slice(0, sp) : page;
+  const q = new URLSearchParams(sp > -1 ? page.slice(sp + 1) : '');
+  try { if (/^https?:/.test(landing)) landing = new URL(landing).pathname; } catch { /* keep as is */ }
+  const source = q.get('utm_source') || (q.get('gclid') ? 'google-ads' : q.get('fbclid') ? 'facebook-ads' : '');
+  return {
+    ...l,
+    id: crypto.createHash('sha1').update(`${l.at}|${l.phone}|${l.name}`).digest('hex').slice(0, 12),
+    landing: landing || '(không rõ)',
+    source: source || 'Tự nhiên',
+    campaign: q.get('utm_campaign') || '',
+  };
+}
+
+async function statuses() {
+  try { return JSON.parse(await fs.promises.readFile(statusFile, 'utf8')); } catch { return {}; }
+}
+async function setStatus(id, status) {
+  if (!/^[a-f0-9]{12}$/.test(String(id)) || !STATUSES.includes(status)) return false;
+  const all = await statuses();
+  if (status === 'Mới') delete all[id];
+  else all[id] = status;
+  await fs.promises.mkdir(path.dirname(statusFile), { recursive: true });
+  const tmp = statusFile + '.tmp';
+  await fs.promises.writeFile(tmp, JSON.stringify(all, null, 1), 'utf8');
+  await fs.promises.rename(tmp, statusFile);
+  return true;
+}
+
+module.exports = { NEEDS, STATUSES, validate, throttled, save, list, statuses, setStatus, mailEnabled: () => Boolean(transporter) };

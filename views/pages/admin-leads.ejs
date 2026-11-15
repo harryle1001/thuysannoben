@@ -1,24 +1,79 @@
 <%- include('../partials/header') %>
-<section class="section">
-  <div class="wrap">
+<% const sel = (a, b) => (a === b ? ' selected' : ''); %>
+<section class="section section--top-tight">
+  <div class="wrap aleads">
     <h1 class="page-head__title">Khách liên hệ qua website</h1>
-    <p class="lead"><%= leads.length %> lời nhắn. <%= mailEnabled ? 'Mỗi lời nhắn mới cũng được gửi về email.' : 'Chưa cấu hình SMTP nên lời nhắn chỉ lưu tại đây.' %></p>
+    <p class="lead"><%= total %> lời nhắn, đang xem <%= leads.length %>. <%= mailEnabled ? 'Mỗi lời nhắn mới cũng được gửi về email.' : 'Chưa cấu hình SMTP nên lời nhắn chỉ lưu tại đây.' %></p>
+    <% if (saved) { %><p class="form__status is-ok" role="status">Đã lưu trạng thái.</p><% } %>
+
+    <form class="aleads__filters" method="get" action="/quan-tri/lien-he">
+      <div class="field"><label for="f-need">Nhu cầu</label><select id="f-need" name="need"><option value="">Tất cả</option><% options.need.forEach((o) => { %><option<%= sel(o, f.need) %>><%= o %></option><% }) %></select></div>
+      <div class="field"><label for="f-source">Nguồn</label><select id="f-source" name="source"><option value="">Tất cả</option><% options.source.forEach((o) => { %><option<%= sel(o, f.source) %>><%= o %></option><% }) %></select></div>
+      <div class="field"><label for="f-landing">Trang gửi</label><select id="f-landing" name="landing"><option value="">Tất cả</option><% options.landing.forEach((o) => { %><option<%= sel(o, f.landing) %>><%= o %></option><% }) %></select></div>
+      <div class="field"><label for="f-status">Trạng thái</label><select id="f-status" name="status"><option value="">Tất cả</option><% options.status.forEach((o) => { %><option<%= sel(o, f.status) %>><%= o %></option><% }) %></select></div>
+      <div class="field"><label for="f-from">Từ ngày</label><input id="f-from" type="date" name="from" value="<%= f.from %>"></div>
+      <div class="field"><label for="f-to">Đến ngày</label><input id="f-to" type="date" name="to" value="<%= f.to %>"></div>
+      <div class="aleads__actions">
+        <button class="btn btn--blue" type="submit">Lọc</button>
+        <a class="btn btn--line" href="/quan-tri/lien-he">Bỏ lọc</a>
+        <a class="btn btn--sun" href="/quan-tri/lien-he.csv<%= query ? '?' + query : '' %>">Xuất CSV (Excel)</a>
+      </div>
+    </form>
+
+    <div class="aleads__stats">
+      <div class="aleads__kpi"><strong><%= stats.d7 %></strong><span>khách 7 ngày qua</span></div>
+      <div class="aleads__kpi"><strong><%= stats.d30 %></strong><span>khách 30 ngày qua</span></div>
+      <% stats.byStatus.forEach(([k, n]) => { %><div class="aleads__kpi"><strong><%= n %></strong><span><%= k %></span></div><% }) %>
+    </div>
+
+    <div class="aleads__grid">
+      <section class="aleads__box">
+        <h2 class="h3">Theo ngày (30 ngày)</h2>
+        <ul class="aleads__bars">
+          <% stats.daily.forEach((x, i) => { %>
+          <li<%- i === 7 ? ' class="is-sep"' : '' %>><span><%= x.d.slice(8, 10) %>/<%= x.d.slice(5, 7) %></span><progress max="<%= stats.max %>" value="<%= x.n %>"><%= x.n %></progress><b><%= x.n %></b></li>
+          <% }) %>
+        </ul>
+      </section>
+      <section class="aleads__box">
+        <h2 class="h3">Theo nguồn quảng cáo</h2>
+        <% if (!stats.bySource.length) { %><p>Chưa có dữ liệu.</p><% } %>
+        <ul class="aleads__bars aleads__bars--wide">
+          <% stats.bySource.forEach(([k, n]) => { %><li><a href="?source=<%= encodeURIComponent(k) %>"><%= k %></a><progress max="<%= leads.length %>" value="<%= n %>"><%= n %></progress><b><%= n %></b></li><% }) %>
+        </ul>
+        <h2 class="h3 aleads__sub">Theo trang gửi (landing page)</h2>
+        <ul class="aleads__bars aleads__bars--wide">
+          <% stats.byLanding.forEach(([k, n]) => { %><li><a href="?landing=<%= encodeURIComponent(k) %>"><%= k %></a><progress max="<%= leads.length %>" value="<%= n %>"><%= n %></progress><b><%= n %></b></li><% }) %>
+        </ul>
+      </section>
+    </div>
+
     <% if (!leads.length) { %>
-    <p>Chưa có lời nhắn nào.</p>
+    <p>Không có lời nhắn nào khớp bộ lọc.</p>
     <% } else { %>
     <div class="table-wrap">
-      <table class="table">
-        <thead><tr><th>Thời gian</th><th>Họ tên</th><th>Điện thoại</th><th>Nhu cầu</th><th>Tỉnh</th><th>Sản phẩm</th><th>Lời nhắn</th></tr></thead>
+      <table class="table aleads__table">
+        <thead><tr><th>Thời gian</th><th>Trạng thái</th><th>Họ tên</th><th>Điện thoại</th><th>Nhu cầu</th><th>Nguồn</th><th>Tỉnh</th><th>Sản phẩm</th><th>Lời nhắn</th></tr></thead>
         <tbody>
           <% leads.forEach((l) => { %>
-          <tr>
+          <tr class="is-<%= ({ 'Mới': 'new', 'Đã gọi': 'called', 'Đã chốt': 'won', 'Không tiềm năng': 'lost' })[l.status] %>">
             <td><%= new Date(l.at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) %></td>
+            <td>
+              <form class="aleads__status" method="post" action="/quan-tri/lien-he/trang-thai" data-lead-status>
+                <input type="hidden" name="id" value="<%= l.id %>">
+                <input type="hidden" name="back" value="<%= query %>">
+                <label class="sr-only" for="st-<%= l.id %>">Trạng thái của <%= l.name %></label>
+                <select id="st-<%= l.id %>" name="status"><% options.status.forEach((o) => { %><option<%= sel(o, l.status) %>><%= o %></option><% }) %></select>
+                <button class="btn btn--line aleads__save" type="submit">Lưu</button>
+              </form>
+            </td>
             <td><%= l.name %></td>
             <td><a href="<%= tel(l.phone) %>"><%= l.phone %></a></td>
             <td><%= l.need %></td>
+            <td><%= l.source %><% if (l.campaign) { %><br><small><%= l.campaign %></small><% } %><br><small><%= l.landing %></small></td>
             <td><%= l.province %></td>
             <td><%= l.product %></td>
-            <td><%= l.message %></td>
+            <td class="aleads__msg"><%= l.message %></td>
           </tr>
           <% }) %>
         </tbody>
@@ -27,4 +82,5 @@
     <% } %>
   </div>
 </section>
+<script src="/js/admin-leads.js?v=1" defer></script>
 <%- include('../partials/footer') %>
