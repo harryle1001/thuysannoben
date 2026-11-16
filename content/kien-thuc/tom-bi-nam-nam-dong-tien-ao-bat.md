@@ -3,9 +3,9 @@ title: Tôm bị nấm, nấm đồng tiền, nấm chân chó trong ao bạt: n
 seo_title: Tôm bị nấm, nấm đồng tiền ao bạt: cách xử lý hiệu quả
 description: Ao bạt xuất hiện nấm đồng tiền, nấm chân chó, nấm nhớt; tôm bị nấm mang, nấm vỏ? Cách nhận biết từng loại, nguyên nhân và quy trình diệt nấm an toàn cho tôm.
 category: benh-tom
-keywords: tôm bị nấm, nấm đồng tiền ao bạt, nấm chân chó ao tôm, tôm bị nấm mang, trị nấm cho tôm, diệt nấm ao bạt
+keywords: tôm bị nấm, nấm đồng tiền ao bạt, nấm chân chó ao tôm, tôm bị nấm mang, hỗ trợ xử lý nấm cho tôm, diệt nấm ao bạt
 symptoms: sat-trung, mang-dom-den
-products: ben-iq, iodine-99, super-din-600, ben-bkc-80, clear-12h, amylac
+products: ben-iq, iodine-99, clear-12h, amylac
 date: 2026-11-11
 updated: 2026-11-16
 ---
@@ -45,8 +45,7 @@ Chà, xịt bạt ở những mảng nấm sát mặt nước; xi phông đáy �
 
 ### Bước 2: Diệt nấm, diệt khuẩn theo liều trên nhãn
 
-- Sản phẩm iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600) diệt khuẩn, nấm và nguyên sinh động vật, ít ảnh hưởng tảo: SUPER DIN 600 khi có dấu hiệu bệnh dùng **1 lít cho 3.000 m³ nước**, liên tục 2 ngày; BEN IQ, IODINE 99 tăng gấp đôi liều định kỳ (1 lít cho 3.000 đến 4.500 m³ nước) khi nhiễm nặng.
-- Với ao bạt nhiều nhớt, có thể sát trùng bằng [BEN BKC 80%](/san-pham/ben-bkc-80) theo liều điều trị trên nhãn (1 lít cho 2.000 m³ nước, 2 ngày liên tục).
+- Sản phẩm iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) diệt khuẩn, nấm và nguyên sinh động vật, ít ảnh hưởng tảo: BEN IQ, IODINE 99 tăng gấp đôi liều định kỳ (1 lít cho 3.000 đến 4.500 m³ nước) khi nhiễm nặng.
 
 Không dùng hai loại sát trùng cùng lúc. Hòa sản phẩm với nước ao rồi tạt đều khắp ao, tập trung hơn ở góc và mép bạt có nấm, mở quạt để thuốc phân tán. Nên xử lý vào ngày nắng, không xử lý khi trời mưa.
 
@@ -63,7 +62,7 @@ Sau khi diệt nấm 2 đến 3 ngày, cấy vi sinh như [AMYLAC](/san-pham/amy
 ## Phòng nấm cho ao bạt
 
 - Giữa hai vụ: rửa bạt, phơi nắng, sát trùng kỹ cả mối hàn, nếp gấp. Xem [quy trình cải tạo ao](/bai-viet/quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong).
-- Sát trùng nguồn nước trước khi thả giống bằng iodine như [SUPER DIN 600](/san-pham/super-din-600) hoặc [IODINE 99](/san-pham/iodine-99) theo nhãn.
+- Sát trùng nguồn nước trước khi thả giống bằng iodine như [IODINE 99](/san-pham/iodine-99) theo nhãn.
 - Định kỳ dùng vi sinh tẩy nhớt bạt, cho ăn vừa đủ, xi phông đều.
 - Bố trí quạt để nước không có "góc chết".
 

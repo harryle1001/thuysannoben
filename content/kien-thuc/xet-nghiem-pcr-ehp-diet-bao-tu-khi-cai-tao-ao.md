@@ -78,7 +78,7 @@ Bà con có thể ghi các mốc cải tạo, xét nghiệm và thả giống v�
 
 ## Sản phẩm Noben hỗ trợ
 
-Hiện chưa có thuốc đặc trị EHP và không có sản phẩm nào diệt được bào tử EHP đã nằm trong gan tụy tôm. Các sản phẩm dưới đây chỉ hỗ trợ đúng công dụng ghi trên nhãn, liều theo nhãn:
+Hiện chưa có thuốc hỗ trợ xử lý EHP và không có sản phẩm nào diệt được bào tử EHP đã nằm trong gan tụy tôm. Các sản phẩm dưới đây chỉ hỗ trợ đúng công dụng ghi trên nhãn, liều theo nhãn:
 
 - [SUPER VIDAL](/san-pham/super-vidal): sát trùng nguồn nước ao nuôi và ao lắng trước khi cấp vào ao.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy chất thải, mùn bã hữu cơ, làm sạch đáy trong vụ nuôi, giảm chỗ tích tụ bùn.

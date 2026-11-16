@@ -43,7 +43,7 @@ Hòa men với một ít nước sạch, trộn đều lên thức ăn, để y�
 ## Cách dùng men vi sinh đúng
 
 - **Dùng liên tục từ tuần đầu**, không đợi tôm bệnh mới dùng. Men vi sinh phòng bệnh tốt hơn chữa bệnh.
-- **Không trộn chung với thuốc đặc trị, acid hữu cơ, chất sát trùng** trong cùng một cữ ăn, vì chúng diệt luôn vi sinh có lợi.
+- **Không trộn chung với thuốc hỗ trợ xử lý, acid hữu cơ, chất sát trùng** trong cùng một cữ ăn, vì chúng diệt luôn vi sinh có lợi.
 - **Sau mỗi đợt diệt khuẩn hoặc dùng thuốc** (kháng sinh chỉ dùng khi có chẩn đoán và chỉ định của cán bộ thú y, đúng danh mục cho phép), tăng liều men vi sinh 3 đến 5 ngày để phục hồi đường ruột.
 - **Bảo quản nơi khô mát**, tránh nắng; men dạng bột đã mở bao nên dùng hết sớm.
 - Kết hợp **bổ gan định kỳ** vì gan và ruột hỗ trợ nhau. Xem [tôm bị teo gan, gan trắng](/bai-viet/tom-bi-teo-gan-gan-trang-cach-xu-ly).

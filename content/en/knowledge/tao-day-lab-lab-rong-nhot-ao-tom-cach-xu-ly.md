@@ -104,7 +104,6 @@ This is when treatment can be most thorough: remove aquatic plants and filamento
 Use for the stated purpose and at the dose on the label:
 
 - [SUPER CUT ALGAE](/san-pham/super-cut-algae): supports algae cutting and thinning (copper-based). Algae cutting: 100g/1,500m³ of water; algae thinning: 100g/3,000m³. Very dense blue-green, filamentous or green algae: 500g/2,000m³, two doses 2 days apart. Apply in strong sunshine at 9–10 a.m., not in rain or overcast weather; stop 15 days before harvest.
-- [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): colours the water quickly to a tea-brown colour, blocking direct sunlight from reaching the pond bottom. Before stocking: 250g/1,500m³; on sudden loss of algae: 250g/1,000m³.
 - [PROTICBEST](/san-pham/proticbest): bottom-cleaning probiotic that decomposes organic waste, dead algae and toxic gases on the pond bottom. Apply directly at 1 litre/3,000m³, every 3–5 days.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic gases. When toxic gases are high: 500g/3,000m³, applied 2–3 times in succession.
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergencies when shrimp surface due to oxygen shortage. 2–3kg/1,000m³, broadcast evenly over the pond surface.

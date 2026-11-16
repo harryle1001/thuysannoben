@@ -5,7 +5,7 @@ description: Lab lab, tảo đáy, rong nhớt mọc khi nước ao tôm quá tr
 category: moi-truong
 keywords: lab lab trong ao tôm, tảo đáy ao tôm, rong nhớt ao tôm, ao tôm nổi lab lab, diệt rong rêu ao tôm, tảo sợi ao tôm, xử lý rong đáy khi mới thả tôm
 symptoms: mau-nuoc, khi-doc
-products: super-cut-algae, nb-brown-gay-mau-nuoc-mau-tra, proticbest, aqua-yucca, super-oxy-02
+products: super-cut-algae, proticbest, aqua-yucca, super-oxy-02
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
 updated: 2026-11-16
@@ -104,7 +104,6 @@ Quy chuẩn QCVN 02-19:2014/BNNPTNT quy định độ trong ao nuôi tôm nướ
 Dùng đúng công dụng và liều trên nhãn:
 
 - [SUPER CUT ALGAE](/san-pham/super-cut-algae): hỗ trợ cắt tảo, giảm tảo (gốc đồng). Hỗ trợ cắt tảo: 100g/1.500m³ nước; giảm tảo: 100g/3.000m³. Tảo lam, tảo sợi, tảo xanh quá dày: 500g/2.000m³, dùng 2 liều cách nhau 2 ngày. Tạt lúc nắng gắt 9 đến 10 giờ, không dùng khi mưa hoặc ít nắng; ngưng dùng trước thu hoạch 15 ngày.
-- [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): gây màu nước nhanh, màu bã trà, che tia nắng chiếu thẳng xuống đáy ao. Trước khi thả: 250g/1.500m³; khi mất tảo đột ngột: 250g/1.000m³.
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ, xác tảo tàn và khí độc ở đáy ao. Tạt trực tiếp 1 lít/3.000m³, định kỳ 3 đến 5 ngày.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc. Khi khí độc cao: 500g/3.000m³, dùng liên tục 2 đến 3 lần.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 2 đến 3kg/1.000m³, rải đều trên mặt ao.
@@ -131,7 +130,7 @@ Không. Vượt liều nhãn làm tăng nguy cơ sốc tôm, ngộ độc đồn
 
 ## Nguồn tham khảo
 
-- [Lab lab trong ao tôm và cách phòng trị hiệu quả – Tép Bạc, 2024](https://tepbac.com/tin-tuc/full/lab-lab-trong-ao-tom-va-cach-phong-tri-hieu-qua-36448.html)
+- [Lab lab trong ao tôm và cách hỗ trợ phòng ngừa hiệu quả – Tép Bạc, 2024](https://tepbac.com/tin-tuc/full/lab-lab-trong-ao-tom-va-cach-phong-tri-hieu-qua-36448.html)
 - [Phytoplankton dynamics in aquaculture ponds – Global Seafood Alliance (C. E. Boyd), 2006](https://www.globalseafood.org/advocate/phytoplankton-dynamics-in-aquaculture-ponds/)
 - [Secchi disk visibility: Correct measurement, interpretation – Global Seafood Alliance (C. E. Boyd), 2004](https://www.globalseafood.org/advocate/secchi-disk-visibility-correct-measurement-interpretation/)
 - [Hydrogen sulfide toxic, but manageable – Global Seafood Alliance (C. E. Boyd), 2014](https://www.globalseafood.org/advocate/hydrogen-sulfide-toxic-but-manageable/)

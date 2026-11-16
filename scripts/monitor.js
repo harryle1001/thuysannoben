@@ -13,7 +13,7 @@ const SLOW_MS = Number(process.env.MONITOR_SLOW_MS || 8000);
 const CHECKS = [
   ['/', /Noben/i],
   ['/san-pham', /Noben/i],
-  ['/san-pham/kalimix', /kalimix/i],
+  ['/san-pham/rimix', /rimix/i],
   ['/lien-he', /<form[^>]+lien-he/i],
   ['/tuyen-dai-ly', /đại lý/i],
   ['/lp/mua-mua', /Noben/i],

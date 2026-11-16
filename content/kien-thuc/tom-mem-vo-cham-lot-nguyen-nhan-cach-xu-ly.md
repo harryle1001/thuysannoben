@@ -5,7 +5,7 @@ description: Tôm lột xong lâu cứng vỏ, vỏ mỏng, nhăn hoặc mềm k
 category: dinh-duong
 keywords: tôm mềm vỏ, tôm chậm lột, tôm rớt cục thịt, tôm lột không hết vỏ, khoáng cho tôm, tôm khó cứng vỏ, khoáng tạt ao tôm, bổ sung khoáng tôm thẻ
 symptoms: mem-vo
-products: caphote, calcipho, kalimix, mix-79, rocaphos, miral-n8, premix-khoang-khoang-kich-lot, rimix
+products: caphote, calcipho, mix-79, rocaphos, miral-n8, premix-khoang-khoang-kich-lot, rimix
 photo: /images/posts/benh-mem-vo-rot-cuc-thit-cover.webp
 date: 2026-10-17
 updated: 2026-11-16
@@ -46,7 +46,7 @@ Tảo dày làm pH buổi chiều tăng cao, kết tủa khoáng, tôm không h�
 
 ### Khoáng tạt xuống ao
 
-Tạt khoáng vào ban đêm, khoảng 21 đến 22 giờ, vì đây là lúc tôm lột xác nhiều nhất và hấp thu tốt. Có thể dùng các dòng khoáng tăng kiềm, cứng vỏ như [MIRAL N8](/san-pham/miral-n8), [KALIMIX](/san-pham/kalimix) hoặc [RIMIX](/san-pham/rimix) cho ao bạt.
+Tạt khoáng vào ban đêm, khoảng 21 đến 22 giờ, vì đây là lúc tôm lột xác nhiều nhất và hấp thu tốt. Có thể dùng các dòng khoáng tăng kiềm, cứng vỏ như [MIRAL N8](/san-pham/miral-n8) hoặc [RIMIX](/san-pham/rimix) cho ao bạt.
 
 ### Khoáng trộn vào thức ăn
 
@@ -56,7 +56,7 @@ Trộn khoáng hữu cơ dạng nước như [CAPHOTE](/san-pham/caphote) hoặc
 
 Theo hướng dẫn trên nhãn sản phẩm Noben:
 
-- Tạt [KALIMIX](/san-pham/kalimix) 3 kg cho 2.000 m³ nước, dùng liên tục 2 ngày, tạt vào chiều tối; hoặc [MIX 79](/san-pham/mix-79) 3 kg cho 2.000 m³ nước, liên tục 2 ngày.
+- Tạt [MIX 79](/san-pham/mix-79) 3 kg cho 2.000 m³ nước, liên tục 2 ngày.
 - Trộn [CAPHOTE](/san-pham/caphote) hoặc [ROCAPHOS](/san-pham/rocaphos) liều gấp đôi theo nhãn (6 đến 10 ml/kg thức ăn, 3 lần/ngày) để phòng cong thân, đục cơ và giúp tôm cứng vỏ nhanh; khi tôm ổn định thì về liều thường 3 đến 5 ml/kg.
 - Song song, cấy vi sinh xử lý đáy, giảm khí độc và tăng oxy tầng đáy để tôm lột trong môi trường sạch.
 

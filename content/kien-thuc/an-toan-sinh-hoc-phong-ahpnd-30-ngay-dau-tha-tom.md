@@ -21,7 +21,7 @@ Tác nhân là những chủng vi khuẩn *Vibrio parahaemolyticus* mang một p
 
 Tại Việt Nam, hướng dẫn của Sở Nông nghiệp và Môi trường Quảng Nam (2025) ghi nhận bệnh xảy ra gần như quanh năm nhưng tập trung từ **tháng 3 đến tháng 8**, trùng mùa thả nuôi chính; tỷ lệ chết có thể tới 90% sau 3 đến 5 ngày phát hiện bệnh.
 
-WOAH cũng ghi nhận hiện **chưa có vắc xin, chưa có thuốc điều trị** và chưa có chất kích thích miễn dịch nào được chứng minh hiệu quả với AHPND. Phòng bệnh bằng an toàn sinh học là cách chủ động nhất.
+WOAH cũng ghi nhận hiện **chưa có vắc xin, chưa có thuốc hỗ trợ xử lý** và chưa có chất kích thích miễn dịch nào được chứng minh hiệu quả với AHPND. Phòng bệnh bằng an toàn sinh học là cách chủ động nhất.
 
 ## Mầm bệnh vào ao theo đường nào?
 
@@ -74,7 +74,7 @@ Hướng dẫn của Quảng Nam (2025) yêu cầu cơ sở nuôi thâm canh, b�
 ### Khi phát hiện vi khuẩn mang gen AHPND
 
 - **Tôm chưa chết**: áp dụng biện pháp phòng bệnh tổng hợp, ổn định môi trường, ngăn lây sang ao khác.
-- **Tôm đã chết**: không tự chữa trị, không xả nước thải chưa xử lý, khai báo với cơ quan thú y và thông báo cho các hộ xung quanh. AHPND nằm trong danh mục bệnh phải công bố dịch.
+- **Tôm đã chết**: không tự xử lý, không xả nước thải chưa xử lý, khai báo với cơ quan thú y và thông báo cho các hộ xung quanh. AHPND nằm trong danh mục bệnh phải công bố dịch.
 
 ## Sản phẩm Noben hỗ trợ
 

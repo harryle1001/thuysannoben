@@ -67,7 +67,7 @@ Bà con nên lấy tôm còn sống, đang có biểu hiện, cả con khỏe v�
 | Kết quả xét nghiệm | Hướng xử lý chính |
 | --- | --- |
 | Vibrio cao, EHP âm tính | Giảm thức ăn, cải thiện đáy và nước, giảm chất hữu cơ, kiểm soát Vibrio theo hướng dẫn kỹ thuật |
-| EHP dương tính | Không có thuốc đặc trị; giữ tôm ăn khỏe, môi trường ổn định, giảm áp lực Vibrio, tính thời điểm thu hoạch; cải tạo ao kỹ cho vụ sau |
+| EHP dương tính | Không có thuốc hỗ trợ xử lý; giữ tôm ăn khỏe, môi trường ổn định, giảm áp lực Vibrio, tính thời điểm thu hoạch; cải tạo ao kỹ cho vụ sau |
 | Gregarine thật nhiều | Xử lý theo hướng dẫn của cán bộ thú y, kết hợp cải thiện đáy và nước |
 | Chỉ thấy ATM, môi trường xấu | Tập trung cải thiện môi trường, thức ăn, giảm các yếu tố gây tổn thương gan tụy |
 
@@ -77,7 +77,7 @@ Theo tài liệu tỉnh Cà Mau, phòng ngừa chung gồm: cho ăn theo nhu c�
 
 Các sản phẩm sau hỗ trợ đúng công dụng trên nhãn, liều theo nhãn. Không sản phẩm nào chữa được EHP:
 
-- [MEGA CID](/san-pham/mega-cid): hỗ trợ điều trị bệnh phân trắng, gan tụy, trống đường ruột; hạ và ổn định pH đường ruột tôm.
+- [MEGA CID](/san-pham/mega-cid): hỗ trợ xử lý bệnh phân trắng, gan tụy, trống đường ruột; hạ và ổn định pH đường ruột tôm.
 - [BIOZYME](/san-pham/biozyme): men sống hỗ trợ tiêu hóa, hỗ trợ phòng các bệnh đường ruột.
 - [HEPALIVER FS](/san-pham/hepaliver-fs): bổ gan, giải độc gan, tăng cường chức năng gan.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy chất thải hữu cơ, làm sạch đáy, giảm nguồn dinh dưỡng cho Vibrio.
@@ -98,7 +98,7 @@ Gửi tôm còn sống đang có biểu hiện, kèm mẫu nước và bùn đá
 
 ### Tôm hết phân trắng rồi có tái lại không?
 
-Có thể tái lại nếu nguyên nhân gốc còn đó, như ao nhiễm EHP hay đáy bẩn, Vibrio cao. Vì vậy cần xét nghiệm để xử lý đúng gốc thay vì chỉ trị triệu chứng.
+Có thể tái lại nếu nguyên nhân gốc còn đó, như ao nhiễm EHP hay đáy bẩn, Vibrio cao. Vì vậy cần xét nghiệm để xử lý đúng gốc thay vì chỉ hỗ trợ xử lý triệu chứng.
 
 ## Nguồn tham khảo
 

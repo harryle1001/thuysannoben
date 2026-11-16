@@ -5,7 +5,7 @@ description: Cách đo chỉ tiêu nước ao tôm đúng giờ, lấy mẫu đ�
 category: moi-truong
 keywords: cách đo chỉ tiêu nước ao tôm, cách đo pH ao tôm, cách đo độ kiềm ao tôm, đo oxy hòa tan ao tôm, test NH3 NO2 ao tôm, đo độ trong đĩa Secchi, chỉ tiêu môi trường nước nuôi tôm QCVN
 symptoms: khi-doc, oxy-stress, mau-nuoc
-products: super-oxy-02, aqua-yucca, nb-brown-gay-mau-nuoc-mau-tra, proticbest
+products: super-oxy-02, aqua-yucca, proticbest
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-15
 updated: 2026-11-16
@@ -121,7 +121,6 @@ Khi kết quả vượt ngưỡng, dùng theo đúng nhãn:
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 2 đến 3 kg/1.000m³, rải đều mặt ao, kết hợp mở quạt.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc. Định kỳ 500g/5.000m³, 7 ngày/lần; khí độc cao 500g/3.000m³, dùng liên tục 2 đến 3 lần.
-- [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra): gây màu nhanh khi độ trong quá cao. Mất tảo đột ngột: 250g/1.000m³.
 - [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ và khí độc ở đáy ao. Tạt trực tiếp 1 lít/3.000m³, định kỳ 3 đến 5 ngày.
 
 Dùng [công cụ tính liều](/tinh-lieu) để quy đổi liều theo thể tích ao. Xem thêm giải pháp [thiếu oxy, sốc stress](/giai-phap/thieu-oxy-soc-stress) và [khí độc đáy ao, nhớt bạt](/giai-phap/khi-doc-day-ao-nhot-bat).

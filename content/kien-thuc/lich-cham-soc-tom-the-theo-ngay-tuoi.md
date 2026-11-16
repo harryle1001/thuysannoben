@@ -70,4 +70,4 @@ Giai đoạn 10 đến 35 ngày đầu là thời điểm tôm dễ mắc bệnh
 
 ### Có cần dùng thuốc định kỳ khi tôm khỏe?
 
-Nên dùng các sản phẩm bổ trợ như men vi sinh, bổ gan, khoáng định kỳ để phòng bệnh. Không dùng kháng sinh để phòng bệnh; thuốc điều trị chỉ dùng khi đã xác định đúng bệnh, theo hướng dẫn của kỹ thuật viên, thú y và đúng thời gian ngưng thuốc trước thu hoạch.
+Nên dùng các sản phẩm bổ trợ như men vi sinh, bổ gan, khoáng định kỳ để phòng bệnh. Không dùng kháng sinh để phòng bệnh; thuốc hỗ trợ xử lý chỉ dùng khi đã xác định đúng bệnh, theo hướng dẫn của kỹ thuật viên, thú y và đúng thời gian ngưng thuốc trước thu hoạch.

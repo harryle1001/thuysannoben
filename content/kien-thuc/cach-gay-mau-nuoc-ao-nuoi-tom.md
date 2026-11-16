@@ -5,7 +5,7 @@ description: Gây màu nước đúng cách giúp ổn định pH, hạn chế t
 category: moi-truong
 keywords: gây màu nước ao tôm, cách gây màu nước, màu nước ao tôm đẹp, gây màu trà, nước ao tôm bị trong
 symptoms: mau-nuoc
-products: nb-brown-gay-mau-nuoc-mau-tra, sun-blue, proticbest, bio-book, miral-n8
+products: sun-blue, proticbest, bio-book, miral-n8
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-10-28
 ---
@@ -25,7 +25,7 @@ Màu nước ao tôm phản ánh mật độ tảo và chất lượng môi trư
 
 1. **Lấy nước và xử lý**: lắng, diệt khuẩn, diệt tạp nguồn nước. Chờ hết dư lượng hóa chất, thường 3 đến 5 ngày.
 2. **Ổn định pH và độ kiềm**: tạt vôi hoặc khoáng như [MIRAL N8](/san-pham/miral-n8) để độ kiềm đạt từ 120 mg/L trở lên.
-3. **Gây màu**: dùng sản phẩm gây màu trà nhanh như [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra) tạt vào buổi sáng khi trời nắng. Ao cần màu xanh nhanh có thể dùng [SUN BLUE](/san-pham/sun-blue).
+3. **Gây màu**: dùng sản phẩm gây màu trà nhanh, tạt vào buổi sáng khi trời nắng. Ao cần màu xanh nhanh có thể dùng [SUN BLUE](/san-pham/sun-blue).
 4. **Cấy vi sinh**: sau 1 đến 2 ngày, cấy vi sinh như [PROTICBEST](/san-pham/proticbest) hoặc [BIO BOOK](/san-pham/bio-book) để ổn định hệ vi sinh có lợi, giúp màu nước bền.
 5. **Thả giống khi màu nước ổn định** từ 3 đến 5 ngày, độ trong 35 đến 45 cm.
 

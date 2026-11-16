@@ -5,7 +5,7 @@ description: Ao lót bạt giúp kiểm soát đáy và dịch bệnh tốt hơn
 category: ky-thuat
 keywords: nuôi tôm ao bạt, ao lót bạt, nuôi tôm thẻ mật độ cao, nhớt bạt ao tôm, xi phông ao tôm, nuôi tôm công nghệ cao
 symptoms: khi-doc, mem-vo
-products: amylac, clear-12h, kalimix, rimix, super-oxy-02, aqua-bac
+products: amylac, clear-12h, rimix, super-oxy-02, aqua-bac
 photo: /images/posts/nuoi-tom-mua-mua-va-cach-khac-phuc-cover.webp
 date: 2026-11-07
 updated: 2026-11-16
@@ -32,7 +32,7 @@ Mật độ phổ biến từ 100 đến 300 con/m² tùy khả năng cấp oxy,
 
 ## Bổ sung khoáng
 
-Ao bạt không có khoáng từ đất nên tôm dễ thiếu khoáng, mềm vỏ. Cần tạt khoáng chuyên dùng cho ao bạt như [KALIMIX](/san-pham/kalimix), [RIMIX](/san-pham/rimix) thường xuyên, nhất là khi tôm lột; nên tạt vào chiều tối hoặc ban đêm, lúc tôm lột rộ. Theo dõi độ kiềm (ao bạt mật độ cao thường giữ 150–200 mg/L CaCO3) và tỷ lệ Ca:Mg:K.
+Ao bạt không có khoáng từ đất nên tôm dễ thiếu khoáng, mềm vỏ. Cần tạt khoáng chuyên dùng cho ao bạt như [RIMIX](/san-pham/rimix) thường xuyên, nhất là khi tôm lột; nên tạt vào chiều tối hoặc ban đêm, lúc tôm lột rộ. Theo dõi độ kiềm (ao bạt mật độ cao thường giữ 150–200 mg/L CaCO3) và tỷ lệ Ca:Mg:K.
 
 ## Oxy và điện dự phòng
 

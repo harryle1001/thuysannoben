@@ -18,6 +18,9 @@ const categories = read('categories');
 const HIDDEN = new Set([
   'flophen', 'flophenicol-40', 'zicotrim', // kháng sinh
   'prazi-s', 'de-zoo', 'bronopol', 'ben-xid-3000', 'ben-mkc-4000', 'aqua-tech', 'super-gold', // ký sinh trùng
+  // Không có trong danh mục công bố/lưu hành (116 sản phẩm) nên không bán.
+  'ben-bkc-80', 'super-din-600', 'vi-sinh-3-trong-1-chuyen-lam-sach-day-nuoc-cat-tao-sach-nhot-bat',
+  'kalimix', 'butypho', 'd-oc', 'nb-brown-gay-mau-nuoc-mau-tra', 'xo-09',
 ]);
 
 const productData = read('products');
@@ -33,6 +36,7 @@ const MERGED = {
   'nuoi-tom-mua-mua-va-cach-khac-phuc': 'nuoi-tom-mua-mua-phong-soc-ph-do-kiem-tao-tan',
   // Posts promoting products no longer listed on the site.
   'su-dung-prazi-s-de-phong-va-tri-benh-teo-gan-tuy-phan-trang-trong-duong-ruot-tren-tom': 'benh-phan-trang-tren-tom-the',
+  'diet-oc-dinh-oc-buou-vang-hen-trong-ao-nuoi-tom': 'quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong',
   'cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-sinh-trung-hen-trong-ao-nuoi-tom': 'tom-bi-nam-nam-dong-tien-ao-bat',
 };
 const posts = [...read('posts').filter((p) => !MERGED[p.slug]), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -279,10 +283,10 @@ const articlesForProduct = (product, n = 3) =>
     .slice(0, n);
 
 // Hand-picked products for the home page, one per common pond problem.
-const FEATURED = ['g7-phong-va-tri-benh-gan-chet-som', 'ben-iq', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'nb-brown-gay-mau-nuoc-mau-tra', 'aqualac-fs'];
+const FEATURED = ['g7-phong-va-tri-benh-gan-chet-som', 'ben-iq', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'hepatic', 'aqualac-fs'];
 const featured = FEATURED.map((s) => productBySlug[s]).filter(Boolean);
 // Products shown in the 3D carousel on the home page: the featured ones plus one or two from every group.
-const SHOWCASE = [...FEATURED, 'kalimix', 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30', 'top-weigh', 'super-din-600'];
+const SHOWCASE = [...FEATURED, 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30', 'top-weigh'];
 const showcase = SHOWCASE.map((s) => productBySlug[s]).filter(Boolean);
 
 // Images that show the company itself (factory, team, certificates), taken from the old site's posts.

@@ -5,7 +5,7 @@ description: Ao chuẩn bị kỹ là một nửa thành công của vụ nuôi.
 category: ky-thuat
 keywords: cải tạo ao nuôi tôm, chuẩn bị ao nuôi tôm, xử lý nước trước khi thả tôm, diệt tạp ao tôm, chuẩn bị ao bạt
 symptoms: sat-trung, mau-nuoc
-products: d-oc, ben-bkc-80, edta-99, nb-brown-gay-mau-nuoc-mau-tra, proticbest, miral-n8
+products: edta-99, proticbest, miral-n8
 photo: /images/posts/khoang-tang-trong-luong-khi-thu-hoach-cover.webp
 date: 2026-09-20
 updated: 2026-11-16
@@ -30,9 +30,8 @@ Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội v�
 
 ## Bước 4: Diệt tạp và diệt khuẩn
 
-- Diệt ốc, hến, chem chép là ký chủ trung gian của ký sinh trùng bằng [D-OC](/san-pham/d-oc) theo liều trên nhãn (1 kg/300–500 m³, chỉ dùng trước khi thả giống).
 - Diệt cua, còng, tôm tép và cá tạp vì chúng là vật mang mầm bệnh đốm trắng (WSSV); rào lưới chắn cua quanh bờ.
-- Diệt khuẩn nguồn nước bằng [BEN BKC 80%](/san-pham/ben-bkc-80) hoặc các sản phẩm diệt khuẩn khác, quạt nước liên tục để phân tán đều.
+- Sát trùng nguồn nước bằng sản phẩm iodine như [IODINE 99](/san-pham/iodine-99) theo liều trên nhãn, quạt nước liên tục để phân tán đều.
 - Chờ 3 đến 5 ngày cho hết dư lượng hóa chất rồi mới gây màu, cấy vi sinh; không tạt vi sinh, chế phẩm gây màu cùng lúc với thuốc diệt khuẩn.
 
 ## Bước 5: Xử lý kim loại nặng và ổn định khoáng
@@ -42,7 +41,7 @@ Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội v�
 
 ## Bước 6: Gây màu và cấy vi sinh
 
-- Gây màu nước bằng [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra), sau 1 đến 2 ngày cấy vi sinh [PROTICBEST](/san-pham/proticbest).
+- Gây màu nước, sau 1 đến 2 ngày cấy vi sinh [PROTICBEST](/san-pham/proticbest).
 - Chi tiết xem bài [cách gây màu nước ao nuôi tôm](/bai-viet/cach-gay-mau-nuoc-ao-nuoi-tom).
 
 ## Bước 7: Kiểm tra môi trường trước khi thả

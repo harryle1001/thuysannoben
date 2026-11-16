@@ -32,7 +32,7 @@ Common densities range from 100–300 shrimp/m², depending on oxygen supply cap
 
 ## Mineral supplementation
 
-Lined ponds receive no minerals from the soil, so shrimp easily become mineral-deficient and develop soft shell. Regularly apply minerals designed for lined ponds, such as [KALIMIX](/san-pham/kalimix) and [RIMIX](/san-pham/rimix), especially when shrimp are moulting; apply in the late afternoon or at night, when moulting peaks. Monitor alkalinity (high-density lined ponds are often kept at 150–200 mg/L CaCO3) and the Ca:Mg:K ratio.
+Lined ponds receive no minerals from the soil, so shrimp easily become mineral-deficient and develop soft shell. Regularly apply minerals designed for lined ponds, such as [RIMIX](/san-pham/rimix), especially when shrimp are moulting; apply in the late afternoon or at night, when moulting peaks. Monitor alkalinity (high-density lined ponds are often kept at 150–200 mg/L CaCO3) and the Ca:Mg:K ratio.
 
 ## Oxygen and backup power
 

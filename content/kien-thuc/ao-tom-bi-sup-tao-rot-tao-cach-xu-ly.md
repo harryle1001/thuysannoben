@@ -5,7 +5,7 @@ description: Nước ao đổi màu đột ngột, xác tảo nổi, bọt nhi�
 category: moi-truong
 keywords: ao tôm bị sụp tảo, rớt tảo ao tôm, tảo tàn ao nuôi tôm, xử lý xác tảo, mất màu nước ao tôm
 symptoms: mau-nuoc, khi-doc, oxy-stress
-products: toxic-algae, aqua-yucca, oxy-99, super-oxy-02, nb-brown-gay-mau-nuoc-mau-tra, kia-c-tat
+products: toxic-algae, aqua-yucca, oxy-99, super-oxy-02, kia-c-tat
 date: 2026-11-11
 updated: 2026-11-16
 ---
@@ -52,7 +52,7 @@ Tạt vitamin C như [KIA C TẠT](/san-pham/kia-c-tat) 5 kg cho 3.000 m³ nư�
 
 ### Bước 5: Gây màu nước lại
 
-Khi oxy và khí độc đã ổn (thường sau 1 đến 2 ngày), thay một phần nước nếu có nguồn nước sạch, sau đó gây màu lại. Với ao mất tảo đột ngột, dùng [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra) **250 g cho 1.000 m³ nước**, tạt lúc 8 đến 9 giờ sáng; không dùng chung với thuốc tím, chlorine, BKC. Xem thêm [cách gây màu nước](/bai-viet/cach-gay-mau-nuoc-ao-nuoi-tom).
+Khi oxy và khí độc đã ổn (thường sau 1 đến 2 ngày), thay một phần nước nếu có nguồn nước sạch, sau đó gây màu lại. Với ao mất tảo đột ngột, gây màu lại bằng sản phẩm gây màu nước theo liều trên nhãn, tạt lúc 8 đến 9 giờ sáng; không dùng chung với thuốc tím, chlorine, BKC. Xem thêm [cách gây màu nước](/bai-viet/cach-gay-mau-nuoc-ao-nuoi-tom).
 
 ## Phòng sụp tảo
 

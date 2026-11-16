@@ -82,7 +82,6 @@ Besides minerals in the water, minerals mixed into feed also play a role. A tria
 
 When choosing minerals for a low-salinity pond, farmers should check the Ca, Mg and K contents stated on the label carefully and compare them with the water analysis results. Noben mineral products, dosed according to the label:
 
-- [KALIMIX](/san-pham/kalimix): shell-hardening mineral that builds a thick shell, designed for lined ponds.
 - [MIRAL N8](/san-pham/miral-n8): alkalinity-raising mineral that stabilises alkalinity and hardens the shell.
 - [MIX 79](/san-pham/mix-79): alkalinity-raising mineral that builds a thick shell and helps prevent bent body and muscle necrosis (white muscle).
 - [CAPHOTE](/san-pham/caphote): feed-mixed trace and macro mineral that helps harden the shell and build a thick shell.

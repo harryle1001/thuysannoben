@@ -74,7 +74,7 @@ Hướng dẫn Quảng Nam nêu các việc cần làm:
 5. Bùn đáy, bờ ao, dụng cụ, phương tiện chứa tôm bệnh phải được xử lý, tiêu độc khử trùng.
 6. Có biện pháp ngăn chim và động vật trung gian mang mầm bệnh từ ao bệnh sang ao khác.
 
-Bệnh đốm trắng **không có thuốc điều trị**. Mọi lời quảng cáo chữa khỏi đốm trắng đều cần được bà con cân nhắc kỹ.
+Bệnh đốm trắng **không có thuốc hỗ trợ xử lý**. Mọi lời quảng cáo chữa khỏi đốm trắng đều cần được bà con cân nhắc kỹ.
 
 Sau vụ bệnh, theo khuyến cáo được Trung tâm Khuyến nông Quốc gia đăng tải (2015), nên phơi đầm, cải tạo ao khoảng 1,5 đến 2 tháng để cắt nguồn bệnh, không vội thả lại ngay.
 

@@ -5,7 +5,7 @@ description: Tôm thẻ có màu xanh da trời, vỏ xanh nhạt, luộc lên k
 category: dinh-duong
 keywords: tôm bị xanh da trời, tôm bị xanh vỏ, tôm thẻ xanh vỏ, tôm lên màu kém, tôm bị xanh
 symptoms: mem-vo, tieu-hoa
-products: butypho, calcipho, aqua-c30, mix-79, nb-brown-gay-mau-nuoc-mau-tra
+products: calcipho, aqua-c30, mix-79
 date: 2026-11-11
 updated: 2026-11-16
 ---
@@ -41,14 +41,14 @@ pH dao động lớn, độ kiềm thấp, khí độc cao khiến tôm stress k
 
 ### 1. Bổ sung dinh dưỡng vào thức ăn
 
-- Dùng sản phẩm bổ sung acid amin, vitamin, khoáng như [BUTYPHO](/san-pham/butypho), giúp khắc phục tình trạng tôm còi, ốp thân, mềm vỏ, vỏ xanh da trời; liều theo nhãn sản phẩm.
+- Dùng sản phẩm bổ sung acid amin, vitamin, khoáng, giúp khắc phục tình trạng tôm còi, ốp thân, mềm vỏ, vỏ xanh da trời; liều theo nhãn sản phẩm.
 - Trộn khoáng dạng nước [CALCIPHO](/san-pham/calcipho) 3 đến 5 ml/kg thức ăn, 3 lần/ngày; tôm mềm vỏ, chậm cứng vỏ thì trộn liều gấp đôi.
 - Bổ sung vitamin C như [AQUA C30%](/san-pham/aqua-c30) 3 đến 5 g/kg thức ăn, 3 lần/ngày để giảm stress.
 - Chọn thức ăn có nguồn gốc rõ ràng, có bổ sung sắc tố (astaxanthin) ở giai đoạn cuối vụ.
 
 ### 2. Giữ màu nước ổn định
 
-Gây và duy trì màu nước, độ trong 30 đến 40 cm. Ao mất màu có thể dùng chế phẩm gây màu như [NB BROWN](/san-pham/nb-brown-gay-mau-nuoc-mau-tra) 250 g cho 1.500 m³ nước, tạt lúc 8 đến 9 giờ sáng. Ao bạt có thể che lưới một phần để giảm nắng gắt. Xem [cách gây màu nước ao nuôi tôm](/bai-viet/cach-gay-mau-nuoc-ao-nuoi-tom).
+Gây và duy trì màu nước, độ trong 30 đến 40 cm. Ao mất màu có thể dùng chế phẩm gây màu theo liều trên nhãn, tạt lúc 8 đến 9 giờ sáng. Ao bạt có thể che lưới một phần để giảm nắng gắt. Xem [cách gây màu nước ao nuôi tôm](/bai-viet/cach-gay-mau-nuoc-ao-nuoi-tom).
 
 ### 3. Bổ sung khoáng tạt, ổn định kiềm
 

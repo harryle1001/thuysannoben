@@ -3,9 +3,9 @@ title: Bệnh đen mang, vàng mang trên tôm: nguyên nhân và cách xử lý
 seo_title: Tôm bị đen mang, vàng mang: nguyên nhân và cách xử lý
 description: Mang tôm chuyển màu đen, vàng hoặc nâu, tôm nổi đầu vào sáng sớm? Hướng dẫn tìm đúng nguyên nhân bệnh đen mang, vàng mang và các bước xử lý nước, đáy ao hiệu quả.
 category: benh-tom
-keywords: tôm bị đen mang, vàng mang tôm, trị đen mang tôm, bệnh mang tôm thẻ, tôm đóng rong mang
+keywords: tôm bị đen mang, vàng mang tôm, hỗ trợ xử lý đen mang tôm, bệnh mang tôm thẻ, tôm đóng rong mang
 symptoms: mang-dom-den, khi-doc
-products: ben-iq, iodine-99, super-din-600, aqua-bac, super-yucca
+products: ben-iq, iodine-99, aqua-bac, super-yucca
 photo: /images/posts/benh-dong-rong-hay-mang-bam-cover.webp
 date: 2026-10-14
 updated: 2026-11-16
@@ -42,7 +42,7 @@ Ao vùng đất phèn có sắt, nhôm hòa tan cao làm mang tôm chuyển vàn
 
 1. **Đo oxy, pH, kiềm, khí độc và tăng quạt khí**, nhất là ban đêm và sáng sớm, để tôm đủ oxy; giảm 20 đến 30% thức ăn trong những ngày xử lý.
 2. **Xử lý đáy và khí độc**: xi phông đáy (ao bạt), dùng yucca như [SUPER YUCCA](/san-pham/super-yucca) để hấp thụ nhanh khí độc.
-3. **Diệt khuẩn, nấm và nguyên sinh động vật bám mang**: dùng sản phẩm sát trùng iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99) hoặc [SUPER DIN 600](/san-pham/super-din-600), đúng liều trên nhãn: SUPER DIN 600 khi có dấu hiệu bệnh dùng 1 lít cho 3.000 m³ nước, liên tục 2 ngày; BEN IQ, IODINE 99 tăng gấp đôi liều định kỳ (1 lít cho 3.000 đến 4.500 m³ nước) khi nước nhiễm khuẩn nặng.
+3. **Diệt khuẩn, nấm và nguyên sinh động vật bám mang**: dùng sản phẩm sát trùng iodine như [BEN IQ](/san-pham/ben-iq), [IODINE 99](/san-pham/iodine-99), đúng liều trên nhãn: BEN IQ, IODINE 99 tăng gấp đôi liều định kỳ (1 lít cho 3.000 đến 4.500 m³ nước) khi nước nhiễm khuẩn nặng.
 4. **Sau diệt khuẩn 2 đến 3 ngày**, cấy lại vi sinh như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải, ổn định đáy và màu nước. Không tạt vi sinh cùng ngày với thuốc sát trùng.
 5. **Bổ sung khoáng và vitamin C** để tôm lột xác. Khi tôm lột, lớp mang và vỏ bẩn sẽ được thay mới.
 

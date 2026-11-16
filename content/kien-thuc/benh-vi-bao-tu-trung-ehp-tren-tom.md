@@ -49,7 +49,7 @@ Chỉ thả tôm giống có kết quả PCR âm tính với EHP từ trại uy 
 
 ## Khi ao đã nhiễm EHP
 
-Hiện chưa có thuốc đặc trị EHP. Bà con nên tập trung giữ tôm ăn khỏe, môi trường ổn định, tối ưu thức ăn để giảm thiệt hại và thu hoạch khi tôm đạt cỡ có lời. Sau vụ, cần cải tạo ao thật kỹ để cắt đứt nguồn bào tử cho vụ sau.
+Hiện chưa có thuốc hỗ trợ xử lý EHP. Bà con nên tập trung giữ tôm ăn khỏe, môi trường ổn định, tối ưu thức ăn để giảm thiệt hại và thu hoạch khi tôm đạt cỡ có lời. Sau vụ, cần cải tạo ao thật kỹ để cắt đứt nguồn bào tử cho vụ sau.
 
 ## Câu hỏi thường gặp
 

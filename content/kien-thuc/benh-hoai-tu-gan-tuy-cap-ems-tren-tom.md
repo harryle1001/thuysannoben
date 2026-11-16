@@ -35,7 +35,7 @@ Bà con có thể gửi mẫu tôm đến phòng xét nghiệm để làm PCR x�
 
 ## Cách phòng bệnh hoại tử gan tụy cấp
 
-Đến nay chưa có thuốc đặc trị khi tôm đã bị nặng, vì vậy phòng bệnh là then chốt.
+Đến nay chưa có thuốc hỗ trợ xử lý khi tôm đã bị nặng, vì vậy phòng bệnh là then chốt.
 
 ### Trước khi thả giống
 

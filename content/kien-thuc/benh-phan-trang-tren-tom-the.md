@@ -1,9 +1,9 @@
 ---
-title: Bệnh phân trắng trên tôm thẻ: nguyên nhân, dấu hiệu và cách điều trị hiệu quả
+title: Bệnh phân trắng trên tôm thẻ: nguyên nhân, dấu hiệu và cách hỗ trợ xử lý
 seo_title: Bệnh phân trắng ở tôm thẻ: nguyên nhân và cách xử lý
 description: Tôm thẻ đi phân trắng, phân nổi mặt ao, đường ruột đứt khúc? Cẩm nang nhận biết sớm, nguyên nhân (vi khuẩn, ký sinh trùng, EHP) và phác đồ xử lý bệnh phân trắng từ kỹ thuật viên Noben.
 category: benh-tom
-keywords: bệnh phân trắng tôm thẻ, tôm đi phân trắng, trị phân trắng tôm, thuốc trị phân trắng, phân trắng nổi mặt ao
+keywords: bệnh phân trắng tôm thẻ, tôm đi phân trắng, hỗ trợ xử lý phân trắng tôm, thuốc hỗ trợ xử lý phân trắng, phân trắng nổi mặt ao
 symptoms: gan-ruot
 products: g7-phong-va-tri-benh-gan-chet-som, mega-cid, davi-cid-liquid, aqualac-fs, sorbest, aqua-bac
 photo: /images/posts/benh-ruot-do-tren-tom-va-cach-phong-ngua-cover.webp
@@ -56,8 +56,8 @@ Bà con xử lý theo thứ tự: giảm thức ăn, làm sạch môi trường,
 1. **Giảm 30 đến 50% lượng thức ăn**, tăng cường quạt nước giữ oxy ≥ 5 mg/L, kiểm tra pH, độ kiềm, khí độc và vớt bỏ phân trắng nổi mặt ao mỗi ngày.
 2. **Xử lý đáy và nước**: nếu mật độ Vibrio trong nước cao, diệt khuẩn nước trước, chờ 2 đến 3 ngày rồi mới cấy lại vi sinh (không dùng hóa chất diệt khuẩn và vi sinh cùng ngày). Dùng vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải, giảm khí độc; ao bạt kết hợp xi phông đáy.
 3. **Kiểm soát ký sinh trùng đường ruột** nếu soi thấy trùng hai tế bào hoặc ao có tiền sử ký sinh trùng: gửi mẫu tôm cho kỹ thuật viên hoặc cán bộ thú y để có phác đồ phù hợp.
-4. **Hỗ trợ đường ruột và gan tụy**: trộn sản phẩm hỗ trợ điều trị phân trắng như [MEGA CID](/san-pham/mega-cid) hoặc [DAVI CID LIQUID](/san-pham/davi-cid-liquid), kết hợp bổ gan [SORBEST](/san-pham/sorbest) để hỗ trợ giải độc gan.
-5. **Phục hồi hệ vi sinh đường ruột** sau đợt trị bằng men vi sinh trộn thức ăn như [AQUALAC FS](/san-pham/aqualac-fs), giúp ruột to, phân dài trở lại.
+4. **Hỗ trợ đường ruột và gan tụy**: trộn sản phẩm hỗ trợ xử lý phân trắng như [MEGA CID](/san-pham/mega-cid) hoặc [DAVI CID LIQUID](/san-pham/davi-cid-liquid), kết hợp bổ gan [SORBEST](/san-pham/sorbest) để hỗ trợ giải độc gan.
+5. **Phục hồi hệ vi sinh đường ruột** sau đợt hỗ trợ xử lý bằng men vi sinh trộn thức ăn như [AQUALAC FS](/san-pham/aqualac-fs), giúp ruột to, phân dài trở lại.
 
 Không dùng kháng sinh để phòng bệnh. Chỉ dùng kháng sinh khi đã xác định nguyên nhân do vi khuẩn (có kháng sinh đồ), theo chỉ định của cán bộ thú y, đúng loại được phép sử dụng (tuyệt đối không dùng chất cấm), đúng liều và ngừng thuốc trước khi thu hoạch theo thời gian ghi trên nhãn.
 

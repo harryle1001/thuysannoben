@@ -5,7 +5,7 @@ description: Hướng dẫn đánh khoáng cho tôm thẻ, tôm sú: vì sao tô
 category: dinh-duong
 keywords: cách đánh khoáng cho tôm, khoáng tạt cho tôm, khoáng cho tôm thẻ, công thức đánh khoáng ao tôm, bổ sung khoáng cho tôm, khoáng đa vi lượng cho tôm
 symptoms: mem-vo
-products: mix-79, miral-n8, kalimix, rimix, premix-khoang-khoang-kich-lot, calcipho, caphote
+products: mix-79, miral-n8, rimix, premix-khoang-khoang-kich-lot, calcipho, caphote
 date: 2026-11-11
 updated: 2026-11-16
 ---
@@ -36,7 +36,6 @@ Trong nước biển tự nhiên, **magie gấp khoảng 3 lần canxi** và can
 Bổ sung khoáng hòa tan vào nước, tôm hấp thu qua mang và vỏ, đặc biệt lúc lột xác. Phù hợp để duy trì độ kiềm, bù khoáng sau mưa và kích thích tôm lột đều. Ví dụ:
 
 - [MIX 79](/san-pham/mix-79), [MIRAL N8](/san-pham/miral-n8): khoáng tăng kiềm, cứng vỏ; định kỳ **5 kg cho 3.000 m³ nước, 2 ngày/lần**; khi cần tăng kiềm dùng 5 kg cho 1.500 m³, liên tục 2 ngày.
-- [KALIMIX](/san-pham/kalimix): khoáng cứng vỏ cho ao bạt; định kỳ **3 kg cho 3.000 m³, 2 ngày/lần**.
 - [RIMIX](/san-pham/rimix): khoáng tăng kiềm, cứng vỏ cho ao bạt; định kỳ 5 kg cho 3.000 m³, 2 ngày/lần.
 - [PREMIX KHOÁNG](/san-pham/premix-khoang-khoang-kich-lot): khoáng kích lột và cứng vỏ nhanh.
 

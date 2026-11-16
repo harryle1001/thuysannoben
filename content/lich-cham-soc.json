@@ -12,10 +12,10 @@
       "tasks": [
         { "from": 15, "text": "Từ tuần thứ 3: xi phông đáy hằng ngày hoặc cách ngày; khi tôm lớn, cho ăn nhiều có thể xi phông 2 lần mỗi ngày." },
         { "from": 1, "text": "Làm sạch nhớt bạt bằng vi sinh như AMYLAC (ao bạt định kỳ 3 ngày/lần) hoặc CLEAR 12H (định kỳ 5 đến 7 ngày/lần) theo nhãn; không tạt vi sinh cùng ngày với thuốc diệt khuẩn." },
-        { "from": 1, "text": "Ao bạt không có khoáng từ đất: tạt khoáng chuyên dùng cho ao bạt như KALIMIX, RIMIX thường xuyên, tạt vào chiều tối hoặc ban đêm, nhất là khi tôm lột rộ." },
+        { "from": 1, "text": "Ao bạt không có khoáng từ đất: tạt khoáng chuyên dùng cho ao bạt như RIMIX thường xuyên, tạt vào chiều tối hoặc ban đêm, nhất là khi tôm lột rộ." },
         { "from": 1, "text": "Giữ oxy hòa tan trên 5 mg/L (không để dưới 4 mg/L), có máy phát điện dự phòng và oxy viên để cấp cứu." }
       ],
-      "products": ["amylac", "clear-12h", "kalimix", "rimix"]
+      "products": ["amylac", "clear-12h", "rimix"]
     },
     "dat": {
       "name": "Ao đất",
@@ -45,7 +45,7 @@
         "Giải độc kim loại nặng, phèn; nâng độ kiềm lên 120 mg/L trở lên.",
         "Gây màu nước, sau 1 đến 2 ngày cấy vi sinh; kiểm tra môi trường và chỉ thả giống đã xét nghiệm PCR âm tính."
       ],
-      "products": ["d-oc", "ben-bkc-80", "edta-99", "miral-n8", "nb-brown-gay-mau-nuoc-mau-tra", "proticbest"],
+      "products": ["edta-99", "miral-n8", "proticbest"],
       "article": "/bai-viet/quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong",
       "articleText": "Quy trình cải tạo ao 7 bước"
     },

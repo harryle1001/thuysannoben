@@ -63,7 +63,7 @@ Dùng sản phẩm yucca hấp thụ khí độc như [AQUA YUCCA](/san-pham/aqu
 
 ### Bước 4: Diệt khuẩn khi nghi nhiễm Vibrio
 
-Khi tôm đỏ thân kèm gan sưng, chết rải rác nhiều ngày, có thể diệt khuẩn nguồn nước bằng iodine như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99), theo nhãn tăng gấp đôi liều định kỳ khi nước nhiễm khuẩn nặng (1 lít cho 3.000 đến 4.500 m³ nước), tạt lúc chiều mát và mở quạt. Không dùng kháng sinh để phòng bệnh; nếu cần điều trị, chỉ dùng thuốc được phép theo chỉ định của cán bộ thú y. Sau diệt khuẩn 2 đến 3 ngày cần cấy lại vi sinh để ổn định nước.
+Khi tôm đỏ thân kèm gan sưng, chết rải rác nhiều ngày, có thể diệt khuẩn nguồn nước bằng iodine như [BEN IQ](/san-pham/ben-iq) hoặc [IODINE 99](/san-pham/iodine-99), theo nhãn tăng gấp đôi liều định kỳ khi nước nhiễm khuẩn nặng (1 lít cho 3.000 đến 4.500 m³ nước), tạt lúc chiều mát và mở quạt. Không dùng kháng sinh để phòng bệnh; nếu cần hỗ trợ xử lý, chỉ dùng thuốc được phép theo chỉ định của cán bộ thú y. Sau diệt khuẩn 2 đến 3 ngày cần cấy lại vi sinh để ổn định nước.
 
 ### Bước 5: Theo dõi và ổn định lại
 

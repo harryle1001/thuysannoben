@@ -5,7 +5,7 @@ description: Ao tôm độ mặn thấp hay thiếu kali, magie dù độ kiềm
 category: moi-truong
 keywords: khoáng cho tôm độ mặn thấp, tỷ lệ Mg Ca ao tôm, bổ sung kali ao tôm, mất cân bằng ion ao tôm, nuôi tôm nước lợ nhạt, tính khoáng theo độ mặn
 symptoms: mem-vo
-products: kalimix, miral-n8, mix-79, caphote
+products: miral-n8, mix-79, caphote
 photo: /images/posts/benh-mem-vo-rot-cuc-thit-cover.webp
 date: 2026-11-15
 updated: 2026-11-16
@@ -82,7 +82,6 @@ Ngoài khoáng trong nước, khoáng trộn vào thức ăn cũng có vai trò.
 
 Khi chọn khoáng cho ao độ mặn thấp, bà con nên xem kỹ hàm lượng Ca, Mg, K ghi trên nhãn và đối chiếu với kết quả phân tích nước. Các sản phẩm khoáng của Noben, liều theo nhãn:
 
-- [KALIMIX](/san-pham/kalimix): khoáng cứng vỏ, tạo vỏ dày, chuyên dùng cho ao nuôi bạt.
 - [MIRAL N8](/san-pham/miral-n8): khoáng tăng kiềm, ổn định độ kiềm, cứng vỏ.
 - [MIX 79](/san-pham/mix-79): khoáng tăng kiềm, tạo vỏ dày, hỗ trợ phòng cong thân, đục cơ.
 - [CAPHOTE](/san-pham/caphote): khoáng vi lượng và đa lượng trộn thức ăn, giúp cứng vỏ, tạo vỏ dày.
