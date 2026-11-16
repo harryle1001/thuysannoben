@@ -2173,3 +2173,23 @@ html.has-sunrise body { background: transparent; }
 .brand__text strong { text-transform: uppercase; letter-spacing: 0.06em; font-size: 1.5rem; }
 /* Phones: the floating chat buttons sit at the very bottom, so the last footer lines scroll clear of them */
 @media (max-width: 760px) { .site-footer, .lp-foot { padding-bottom: calc(178px + env(safe-area-inset-bottom, 0px)); } }
+
+/* ---------- Phones: compact header (logo, controls and search take less of the screen) ---------- */
+@media (max-width: 760px) {
+  :root { --header-h: 56px; }
+  .site-header__bar { min-height: 56px; padding-block: 6px; }
+  .brand { gap: 8px; }
+  .brand img { width: 36px; height: 36px; }
+  .brand__text strong { font-size: 1.125rem; letter-spacing: 0.05em; }
+  .brand__text small { font-size: 0.625rem; margin-bottom: 3px; }
+  .lang-switch, .theme-toggle, .menu-toggle { height: 36px; }
+  .theme-toggle, .menu-toggle { width: 36px; }
+  .lang-switch { font-size: 0.75rem; }
+  .lang-switch span { padding: 0 7px; }
+  .theme-toggle .ico, .menu-toggle .ico { width: 18px; height: 18px; }
+  .site-header__actions { gap: 6px; }
+  .hsearch__form { padding-block: 5px; }
+  .hsearch__field input { height: 36px; font-size: 16px; padding-left: 38px; }
+  .hsearch__field .ico { left: 13px; width: 16px; height: 16px; margin-top: -8px; }
+  .hsearch__btn { min-height: 36px; padding: 0 14px; font-size: 0.875rem; }
+}

@@ -285,6 +285,18 @@
   if (!videos.length) return;
   var EN = document.documentElement.lang === 'en';
   function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  // Vertical cuts: some browsers (in-app webviews of Zalo/Facebook, older Safari) ignore <source media>,
+  // and the 16:9 poster would be cropped in the 9:16 frame. Pick the right file and poster here.
+  videos.forEach(function (v) {
+    var alt = v.querySelector('source[media]');
+    if (!alt || !window.matchMedia) return;
+    var fits = window.matchMedia(alt.getAttribute('media')).matches;
+    Array.prototype.slice.call(v.querySelectorAll('source')).forEach(function (s) {
+      if (fits ? s !== alt : s.hasAttribute('media')) s.remove();
+    });
+    if (fits) v.poster = alt.getAttribute('src').replace(/\.mp4$/, '-poster.webp');
+    if (v.preload !== 'none' || v.currentSrc) v.load();
+  });
   videos.forEach(function (v) {
     v.muted = true;
     v.setAttribute('playsinline', '');
