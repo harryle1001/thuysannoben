@@ -29,7 +29,8 @@ router.use((req, res, next) => {
   res.locals.symptoms = c.symptoms;
   res.locals.path = req.path;
   res.locals.siteUrl = SITE_URL;
-  res.locals.googleVerify = String(process.env.GOOGLE_SITE_VERIFICATION || '').trim();
+  // Google Search Console token (public by design: it sits in every page's HTML)
+  res.locals.googleVerify = String(process.env.GOOGLE_SITE_VERIFICATION || 'Ff0uoPvenKeVuAvuw4Bwcg0ZTesN2tfeE3V-ydQnruk').trim();
   // Google Analytics 4 measurement ID (G-XXXXXXXXXX), from the env or content/company.json.
   const ga = String(process.env.GA_MEASUREMENT_ID || c.company.ga_id || '').trim();
   res.locals.gaId = /^G-[A-Z0-9]{4,20}$/.test(ga) ? ga : '';
