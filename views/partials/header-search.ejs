@@ -7,7 +7,7 @@
     <label class="sr-only" for="hsearch-q"><%= en ? 'Search products' : 'Tìm sản phẩm' %></label>
     <span class="hsearch__field">
       <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
-      <input id="hsearch-q" name="q" type="search" enterkeyhint="search" autocomplete="off" list="hsearch-list" maxlength="60" value="<%= (locals.filters && filters.q) || '' %>" placeholder="<%= en ? 'Search products, diseases…' : 'Tìm sản phẩm, bệnh tôm…' %>">
+      <input id="hsearch-q" name="q" type="search" enterkeyhint="search" autocomplete="off" list="hsearch-list" maxlength="60" value="<%= (locals.filters && filters.q) || '' %>" placeholder="<%= en ? 'Search products…' : 'Tìm thuốc, bệnh tôm…' %>">
     </span>
     <button class="btn btn--sun hsearch__btn" type="submit"><%= en ? 'Search' : 'Tìm' %></button>
     <% if (names.length) { %><datalist id="hsearch-list"><% names.forEach((n) => { %><option value="<%= n %>"><% }) %></datalist><% } %>

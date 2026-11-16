@@ -2193,3 +2193,26 @@ html.has-sunrise body { background: transparent; }
   .hsearch__field .ico { left: 13px; width: 16px; height: 16px; margin-top: -8px; }
   .hsearch__btn { min-height: 36px; padding: 0 14px; font-size: 0.875rem; }
 }
+
+/* ---------- Phones (φ): brand row 68px with the usual logo size; menu button moves to the left of
+   the search bar; every control in the search row is 42px (26·φ) tall ---------- */
+@media (max-width: 760px) {
+  :root { --header-h: 122px; } /* 68 brand row + 54 search row: the open menu starts below both */
+  body.menu-open .hsearch { display: block; }
+  .site-header__bar { min-height: 68px; padding-block: 0; }
+  .brand { gap: 10px; }
+  .brand img { width: 42px; height: 42px; }
+  .brand__text strong { font-size: 1.625rem; letter-spacing: 0.06em; } /* 26px */
+  .brand__text small { font-size: 0.75rem; margin-bottom: 4px; }
+  .lang-switch, .theme-toggle { height: 42px; }
+  .theme-toggle { width: 42px; }
+  .lang-switch { font-size: 0.8125rem; }
+  .lang-switch span { padding: 0 10px; }
+  .site-header__actions { gap: 10px; }
+  .menu-toggle { position: absolute; left: 16px; top: 74px; width: 42px; height: 42px; z-index: 2; }
+  .menu-toggle .ico { width: 20px; height: 20px; }
+  .hsearch__form { padding-block: 6px; padding-left: 68px; } /* 16 gutter + 42 button + 10 gap */
+  .hsearch__field input { height: 42px; padding-left: 16px; padding-right: 8px; }
+  .hsearch__field .ico { display: none; } /* the yellow button already says Tìm */
+  .hsearch__btn { min-height: 42px; padding: 0 16px; font-size: 0.9375rem; }
+}
