@@ -194,6 +194,9 @@ PALETTES = {
     'goc': {'ten': 'Màu gốc (vàng tươi, xanh da trời)', 'g': ('#ffdb57', '#ffc20e', '#f2a900'), 'b': ('#22a8ec', '#1289d8', '#0878cc'), 'viền_chữ': '#0a5fb8', 'trắng': '#ffffff'},
     'kim-hoang-gia': {'ten': 'Vàng kim · xanh hoàng gia', 'g': ('#f5d36b', '#d9a21b', '#a8770a'), 'b': ('#2563b8', '#164a96', '#0c2f6b'), 'viền_chữ': '#0b2a5e', 'trắng': '#fffdf6'},
     'nghe-dai-duong': {'ten': 'Vàng nghệ · xanh đại dương', 'g': ('#f7cf5a', '#e8a817', '#c27f00'), 'b': ('#1f7bbf', '#0f5a96', '#093d6b'), 'viền_chữ': '#08365f', 'trắng': '#ffffff'},
+    'tuoi-xanh-dam': {'ten': 'Vàng tươi · xanh đậm', 'g': ('#ffdb57', '#ffc20e', '#f2a900'), 'b': ('#1f5fbf', '#14479a', '#0c3478'), 'viền_chữ': '#0a2a63', 'trắng': '#ffffff'},
+    'tuoi-navy': {'ten': 'Vàng tươi · xanh navy', 'g': ('#ffdb57', '#ffc20e', '#f2a900'), 'b': ('#1c3f7a', '#122d5c', '#0b1f42'), 'viền_chữ': '#081a38', 'trắng': '#ffffff'},
+    'tuoi-xam-dam': {'ten': 'Vàng tươi · xám đậm', 'g': ('#ffdb57', '#ffc20e', '#f2a900'), 'b': ('#4a525c', '#353b43', '#22272d'), 'viền_chữ': '#1b1f24', 'trắng': '#ffffff'},
     'champagne-navy': {'ten': 'Vàng champagne · navy', 'g': ('#f4e2a6', '#dcb85a', '#b48a2c'), 'b': ('#2a4f8f', '#17336a', '#0b1f45'), 'viền_chữ': '#0b1f45', 'trắng': '#fffaf0'},
 }
 
