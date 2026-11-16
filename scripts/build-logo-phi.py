@@ -115,7 +115,8 @@ def rounded(points, radii, closed=True):
     return ' '.join(out)
 
 
-def mark(ratio, lines=True, eye=False):
+def mark(ratio, lines=True, eye=False, pal=None):
+    pal = pal or PALETTES['goc']
     dot = A / PHI ** 5
     notch = dot * RT
     bar = dot / PHI ** 2
@@ -165,17 +166,17 @@ def mark(ratio, lines=True, eye=False):
     # và đỉnh viền trong (cách khung 38,2%, cách đỉnh 61,8%).
     eye_y = py - (py - (C - ai)) / PHI ** 2
     parts = [
-        '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffdb57"/><stop offset=".618" stop-color="#ffc20e"/><stop offset="1" stop-color="#f2a900"/></linearGradient>'
-        '<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22a8ec"/><stop offset=".618" stop-color="#1289d8"/><stop offset="1" stop-color="#0878cc"/></linearGradient></defs>',
+        f'<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{pal['g'][0]}"/><stop offset=".618" stop-color="{pal['g'][1]}"/><stop offset="1" stop-color="{pal['g'][2]}"/></linearGradient>'
+        f'<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{pal['b'][0]}"/><stop offset=".618" stop-color="{pal['b'][1]}"/><stop offset="1" stop-color="{pal['b'][2]}"/></linearGradient></defs>',
         f'<path d="{rounded(dia(A), [R] * 4)}" fill="url(#g)"/>',
-        f'<path d="{rounded(dia(ai), [r_in] * 4)}" fill="none" stroke="#fff" stroke-opacity=".618" stroke-width="{r2(hair)}"/>',
+        f'<path d="{rounded(dia(ai), [r_in] * 4)}" fill="none" stroke="{pal['trắng']}" stroke-opacity=".618" stroke-width="{r2(hair)}"/>',
         # nét gãy xanh và hai vạch trắng: bỏ ở bản gọn (lines=False)
         *([f'<path d="{chev(1)} {chev(-1)}" fill="none" stroke="#0878cc" stroke-width="{r2(hair * RT)}" stroke-linejoin="round" stroke-linecap="round"/>',
            f'<rect x="{r2(C - bar_w / 2)}" y="{r2(top - bar / 2)}" width="{r2(bar_w)}" height="{r2(bar)}" rx="{r2(bar / 2)}" fill="#fff"/>',
            f'<rect x="{r2(C - bar_w / 2)}" y="{r2(bot - bar / 2)}" width="{r2(bar_w)}" height="{r2(bar)}" rx="{r2(bar / 2)}" fill="#fff"/>'] if lines else []),
         f'<path d="M{r2(px + rb)} {r2(py)} {'' if eye else f'H{r2(C - notch)} A{r2(notch)} {r2(notch)} 0 0 0 {r2(C + notch)} {r2(py)} '}H{r2(px + w - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w)} {r2(py + rb)} V{r2(py + h - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w - rb)} {r2(py + h)} H{r2(px + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px)} {r2(py + h - rb)} V{r2(py + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + rb)} {r2(py)} Z" fill="url(#b)"/>',
-        f'<circle cx="{r2(C)}" cy="{r2(eye_y if eye else py - bar)}" r="{r2(dot)}" fill="#fff"/>',
-        f'<g transform="translate({r2(tx)} {r2(ty)}) scale({k:.5f})"><g fill="none" stroke="#0a5fb8" stroke-width="{r2(sw)}" stroke-linejoin="round">{letters_svg}</g><g fill="#fff">{letters_svg}</g></g>',
+        f'<circle cx="{r2(C)}" cy="{r2(eye_y if eye else py - bar)}" r="{r2(dot)}" fill="{pal['trắng']}"/>',
+        f'<g transform="translate({r2(tx)} {r2(ty)}) scale({k:.5f})"><g fill="none" stroke="{pal['viền_chữ']}" stroke-width="{r2(sw)}" stroke-linejoin="round">{letters_svg}</g><g fill="{pal['trắng']}">{letters_svg}</g></g>',
     ]
     y, ws = bot + bar / 2 + dot / RT, w / PHI
     waves = []
@@ -183,9 +184,18 @@ def mark(ratio, lines=True, eye=False):
         waves.append(f'M{r2(C - ws / 2)} {r2(y)} Q{r2(C)} {r2(y - bar)} {r2(C + ws / 2)} {r2(y)}')
         y += dot / RT
         ws /= RT
-    parts.append(f'<path d="{" ".join(waves)}" fill="none" stroke="#fff" stroke-width="{r2(bar / PHI)}" stroke-linecap="round"/>')
+    parts.append(f'<path d="{" ".join(waves)}" fill="none" stroke="{pal['trắng']}" stroke-width="{r2(bar / PHI)}" stroke-linecap="round"/>')
     info = dict(w=w, h=h, dot=dot, notch=notch, bar=bar, hair=hair, word_w=ww, word_cap=cap0 * k, gap=gap0 * k, R=R, slant=tsl)
     return '\n'.join(parts), info
+
+
+# Bảng màu: vàng (sáng → chính ở 61,8% → đậm), xanh (sáng → chính → đậm), viền chữ, trắng.
+PALETTES = {
+    'goc': {'ten': 'Màu gốc (vàng tươi, xanh da trời)', 'g': ('#ffdb57', '#ffc20e', '#f2a900'), 'b': ('#22a8ec', '#1289d8', '#0878cc'), 'viền_chữ': '#0a5fb8', 'trắng': '#ffffff'},
+    'kim-hoang-gia': {'ten': 'Vàng kim · xanh hoàng gia', 'g': ('#f5d36b', '#d9a21b', '#a8770a'), 'b': ('#2563b8', '#164a96', '#0c2f6b'), 'viền_chữ': '#0b2a5e', 'trắng': '#fffdf6'},
+    'nghe-dai-duong': {'ten': 'Vàng nghệ · xanh đại dương', 'g': ('#f7cf5a', '#e8a817', '#c27f00'), 'b': ('#1f7bbf', '#0f5a96', '#093d6b'), 'viền_chữ': '#08365f', 'trắng': '#ffffff'},
+    'champagne-navy': {'ten': 'Vàng champagne · navy', 'g': ('#f4e2a6', '#dcb85a', '#b48a2c'), 'b': ('#2a4f8f', '#17336a', '#0b1f45'), 'viền_chữ': '#0b1f45', 'trắng': '#fffaf0'},
+}
 
 
 def main():
@@ -197,6 +207,13 @@ def main():
                f'<title>Noben – logo nắn theo tỷ lệ vàng, phương án {name} ({label})</title>\n{body}\n</svg>\n')
         with open(os.path.join(OUT, f'noben-phi-{name}.svg'), 'w', encoding='utf8') as f:
             f.write(svg)
+        if name == 'A-mat':
+            for key, pal in PALETTES.items():
+                if key == 'goc':
+                    continue
+                b2, _ = mark(ratio, False, eye=True, pal=pal)
+                with open(os.path.join(OUT, f'noben-phi-A-mat-{key}.svg'), 'w', encoding='utf8') as f:
+                    f.write(svg.replace(body, b2).replace(f'phương án {name} (', f'phương án {name}, {pal["ten"].lower()} ('))
         print(f'{name}: khung {i["w"]:.1f}×{i["h"]:.1f}, bo góc {i["R"]:.1f}, chữ rộng {i["word_w"]:.1f} cao {i["word_cap"]:.1f}, cách chữ {i["gap"]:.1f}, nghiêng {i["slant"]:.3f}')
 
 
