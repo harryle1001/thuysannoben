@@ -115,7 +115,7 @@ def rounded(points, radii, closed=True):
     return ' '.join(out)
 
 
-def mark(ratio):
+def mark(ratio, lines=True):
     dot = A / PHI ** 5
     notch = dot * RT
     bar = dot / PHI ** 2
@@ -165,8 +165,8 @@ def mark(ratio):
         '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffdb57"/><stop offset=".618" stop-color="#ffc20e"/><stop offset="1" stop-color="#f2a900"/></linearGradient>'
         '<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22a8ec"/><stop offset=".618" stop-color="#1289d8"/><stop offset="1" stop-color="#0878cc"/></linearGradient></defs>',
         f'<path d="{rounded(dia(A), [R] * 4)}" fill="url(#g)"/>',
-        f'<path d="{rounded(dia(ai), [r_in] * 4)}" fill="none" stroke="#fff" stroke-opacity=".618" stroke-width="{r2(hair)}"/>',
-        f'<path d="{chev(1)} {chev(-1)}" fill="none" stroke="#0878cc" stroke-width="{r2(hair * RT)}" stroke-linejoin="round" stroke-linecap="round"/>',
+        *([f'<path d="{rounded(dia(ai), [r_in] * 4)}" fill="none" stroke="#fff" stroke-opacity=".618" stroke-width="{r2(hair)}"/>',
+           f'<path d="{chev(1)} {chev(-1)}" fill="none" stroke="#0878cc" stroke-width="{r2(hair * RT)}" stroke-linejoin="round" stroke-linecap="round"/>'] if lines else []),
         f'<rect x="{r2(C - bar_w / 2)}" y="{r2(top - bar / 2)}" width="{r2(bar_w)}" height="{r2(bar)}" rx="{r2(bar / 2)}" fill="#fff"/>',
         f'<rect x="{r2(C - bar_w / 2)}" y="{r2(bot - bar / 2)}" width="{r2(bar_w)}" height="{r2(bar)}" rx="{r2(bar / 2)}" fill="#fff"/>',
         f'<path d="M{r2(px + rb)} {r2(py)} H{r2(C - notch)} A{r2(notch)} {r2(notch)} 0 0 0 {r2(C + notch)} {r2(py)} H{r2(px + w - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w)} {r2(py + rb)} V{r2(py + h - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w - rb)} {r2(py + h)} H{r2(px + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px)} {r2(py + h - rb)} V{r2(py + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + rb)} {r2(py)} Z" fill="url(#b)"/>',
@@ -186,8 +186,8 @@ def mark(ratio):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    for name, ratio, label in (('A', RT, 'khung √φ'), ('B', PHI, 'khung chữ nhật vàng φ')):
-        body, i = mark(ratio)
+    for name, ratio, label, lines in (('A', RT, 'khung √φ', True), ('B', PHI, 'khung chữ nhật vàng φ', True), ('A-gon', RT, 'khung √φ, bỏ viền trong và nét gãy', False)):
+        body, i = mark(ratio, lines)
         svg = (f'<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Noben">\n'
                f'<title>Noben – logo nắn theo tỷ lệ vàng, phương án {name} ({label})</title>\n{body}\n</svg>\n')
         with open(os.path.join(OUT, f'noben-phi-{name}.svg'), 'w', encoding='utf8') as f:
