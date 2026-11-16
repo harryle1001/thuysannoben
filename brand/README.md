@@ -1,6 +1,6 @@
 # Bộ nhận diện in ấn Noben: nhãn sản phẩm và logo
 
-Thư mục `brand/` **không được phục vụ trên web**, chỉ dùng để làm việc với nhà in. Logo trong toàn bộ thư mục này là **logo đã chốt**: logo chính thức nắn theo tỷ lệ vàng (`public/images/brand/logo-noben-phi.svg`, sinh bằng `python3 scripts/build-logo-phi.py`, mẫu `A-mat` bảng màu `tuoi-xanh-dam`). Hình thoi vàng tươi bo góc a/φ⁴, viền trong mảnh, khung xanh đậm `#14479a` tỷ lệ √φ, chữ NOBEN nghiêng gốc cách đều cao chữ/φ⁴, chấm trắng (mặt trời) đặt ở điểm vàng phía trên khung, ba sóng nước giảm dần theo √φ. Logo trên web (`logo-noben.svg`) chưa thay.
+Thư mục `brand/` **không được phục vụ trên web**, chỉ dùng để làm việc với nhà in. Logo trong toàn bộ thư mục này là **logo đã chốt**: logo chính thức nắn theo tỷ lệ vàng (`public/images/brand/logo-noben-phi.svg`, sinh bằng `python3 scripts/build-logo-phi.py`, mẫu `A-mat` bảng màu `tuoi-xanh-dam`). Hình thoi vàng tươi bo góc a/φ⁴, viền trong mảnh, khung xanh đậm `#14479a` tỷ lệ √φ, chữ NOBEN nghiêng gốc cách đều cao chữ/φ⁴, chấm trắng (mặt trời) đặt ở điểm vàng phía trên khung, ba sóng nước giảm dần theo √φ. Logo này đã thay lên web (`public/images/brand/logo-noben.svg`, favicon, ảnh chia sẻ); logo cũ lưu ở `logo-noben-cu.svg`.
 
 | Đường dẫn | Nội dung |
 |---|---|
@@ -67,7 +67,7 @@ Sinh lại: `python3 scripts/build-logo-kit.py` (cần `pip install picosvg uhar
 | `…-chu.svg` | Chữ là `<text>` sửa được (Playfair Display 800 + Be Vietnam Pro 600) |
 | `…-net.svg` | Chữ đã chuyển nét: gửi nhà in, không cần phông |
 | `…-nen-toi-…` | Chữ trắng cho nền tối; `…-phang-`, `…-den-`, `…-trang-`, `…-navy-` như bản biểu tượng |
-| `icons/` | `favicon.svg`, `favicon.ico`, `favicon-16/32.png`, `apple-touch-icon-180.png`, `icon-192/512.png`, `icon-maskable-512.png`, `site.webmanifest`. **Chỉ sinh sẵn, chưa thay trên web** |
+| `icons/` | `favicon.svg`, `favicon.ico`, `favicon-16/32.png`, `apple-touch-icon-180.png`, `icon-192/512.png`, `icon-maskable-512.png`, `site.webmanifest`. Favicon trên web đã thay bằng logo này |
 
 ### Quy tắc dùng logo
 

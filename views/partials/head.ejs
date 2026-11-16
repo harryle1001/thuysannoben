@@ -32,9 +32,9 @@
   <link rel="alternate" hreflang="x-default" href="<%= siteUrl + (alt.vi === '/' ? '/' : alt.vi) %>"><% } else { %><link rel="alternate" hreflang="vi" href="<%= canonical %>"><% } %>
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#0b2347">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png?v=2" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
   <link rel="preload" href="/fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/be-vietnam-pro-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <% if (m.preloadImage) { %><link rel="preload" as="image" href="<%= m.preloadImage %>" fetchpriority="high"<% if (m.preloadImagePhone) { %> media="(min-width: 761px)"<% } %>><% } %>
@@ -45,7 +45,7 @@
   <script type="application/ld+json"><%- JSON.stringify(block).replace(/</g, '\\u003c') %></script>
   <% } %>
   <script src="/js/smooth.js?v=3" defer></script>
-  <script src="/js/sunrise-bg.js?v=6" defer></script>
+  <script src="/js/sunrise-bg.js?v=7" defer></script>
   <script src="/js/scroll-motion.js?v=4" defer></script>
   <script src="/js/main.js?v=19" defer></script>
   <script src="/js/certflow.js?v=3" defer></script>

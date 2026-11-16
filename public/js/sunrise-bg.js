@@ -23,7 +23,7 @@
       '<div class="sky__clouds" data-k="clouds"><i></i><i></i></div>' +
       '<div class="sky__clip">' +
         '<div class="sky__glow" data-k="glow"></div>' +
-        '<img class="sky__sun" data-k="sun" src="/images/brand/logo-noben.svg" alt="" width="512" height="512" decoding="async">' +
+        '<img class="sky__sun" data-k="sun" src="/images/brand/logo-noben.svg?v=2" alt="" width="512" height="512" decoding="async">' +
       '</div>' +
       '<div class="sky__glint" data-k="glint"><i></i></div>' +
       '<div class="sky__waves" data-k="waves"><i></i><i></i></div>' +
