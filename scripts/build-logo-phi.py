@@ -115,7 +115,7 @@ def rounded(points, radii, closed=True):
     return ' '.join(out)
 
 
-def mark(ratio, lines=True):
+def mark(ratio, lines=True, eye=False):
     dot = A / PHI ** 5
     notch = dot * RT
     bar = dot / PHI ** 2
@@ -161,6 +161,9 @@ def mark(ratio, lines=True):
     tx += mid_y * tsl * k
     sw = bar / k
     letters_svg = ''.join(f'<path transform="translate({r2(sh)} 0)" d="{g["d"]}"/>' for g, sh in zip(gs, shifts))
+    # "Con mắt thứ ba": chấm trắng tách khỏi khung, tâm đặt ở điểm vàng của khoảng trống giữa mép trên khung
+    # và đỉnh viền trong (cách khung 38,2%, cách đỉnh 61,8%).
+    eye_y = py - (py - (C - ai)) / PHI ** 2
     parts = [
         '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffdb57"/><stop offset=".618" stop-color="#ffc20e"/><stop offset="1" stop-color="#f2a900"/></linearGradient>'
         '<linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22a8ec"/><stop offset=".618" stop-color="#1289d8"/><stop offset="1" stop-color="#0878cc"/></linearGradient></defs>',
@@ -170,8 +173,8 @@ def mark(ratio, lines=True):
         *([f'<path d="{chev(1)} {chev(-1)}" fill="none" stroke="#0878cc" stroke-width="{r2(hair * RT)}" stroke-linejoin="round" stroke-linecap="round"/>',
            f'<rect x="{r2(C - bar_w / 2)}" y="{r2(top - bar / 2)}" width="{r2(bar_w)}" height="{r2(bar)}" rx="{r2(bar / 2)}" fill="#fff"/>',
            f'<rect x="{r2(C - bar_w / 2)}" y="{r2(bot - bar / 2)}" width="{r2(bar_w)}" height="{r2(bar)}" rx="{r2(bar / 2)}" fill="#fff"/>'] if lines else []),
-        f'<path d="M{r2(px + rb)} {r2(py)} H{r2(C - notch)} A{r2(notch)} {r2(notch)} 0 0 0 {r2(C + notch)} {r2(py)} H{r2(px + w - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w)} {r2(py + rb)} V{r2(py + h - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w - rb)} {r2(py + h)} H{r2(px + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px)} {r2(py + h - rb)} V{r2(py + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + rb)} {r2(py)} Z" fill="url(#b)"/>',
-        f'<circle cx="{r2(C)}" cy="{r2(py - bar)}" r="{r2(dot)}" fill="#fff"/>',
+        f'<path d="M{r2(px + rb)} {r2(py)} {'' if eye else f'H{r2(C - notch)} A{r2(notch)} {r2(notch)} 0 0 0 {r2(C + notch)} {r2(py)} '}H{r2(px + w - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w)} {r2(py + rb)} V{r2(py + h - rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + w - rb)} {r2(py + h)} H{r2(px + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px)} {r2(py + h - rb)} V{r2(py + rb)} A{r2(rb)} {r2(rb)} 0 0 1 {r2(px + rb)} {r2(py)} Z" fill="url(#b)"/>',
+        f'<circle cx="{r2(C)}" cy="{r2(eye_y if eye else py - bar)}" r="{r2(dot)}" fill="#fff"/>',
         f'<g transform="translate({r2(tx)} {r2(ty)}) scale({k:.5f})"><g fill="none" stroke="#0a5fb8" stroke-width="{r2(sw)}" stroke-linejoin="round">{letters_svg}</g><g fill="#fff">{letters_svg}</g></g>',
     ]
     y, ws = bot + bar / 2 + dot / RT, w / PHI
@@ -187,8 +190,9 @@ def mark(ratio, lines=True):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    for name, ratio, label, lines in (('A', RT, 'khung √φ', True), ('B', PHI, 'khung chữ nhật vàng φ', True), ('A-gon', RT, 'khung √φ, bỏ nét gãy xanh và hai vạch trắng', False)):
-        body, i = mark(ratio, lines)
+    for name, ratio, label, lines in (('A', RT, 'khung √φ', True), ('B', PHI, 'khung chữ nhật vàng φ', True), ('A-gon', RT, 'khung √φ, bỏ nét gãy xanh và hai vạch trắng', False),
+                                      ('A-mat', RT, 'bản gọn, khung không khuyết, chấm trắng dời lên như con mắt thứ ba', 'eye')):
+        body, i = mark(ratio, lines is True, eye=lines == 'eye')
         svg = (f'<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Noben">\n'
                f'<title>Noben – logo nắn theo tỷ lệ vàng, phương án {name} ({label})</title>\n{body}\n</svg>\n')
         with open(os.path.join(OUT, f'noben-phi-{name}.svg'), 'w', encoding='utf8') as f:
