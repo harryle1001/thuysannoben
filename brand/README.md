@@ -1,6 +1,6 @@
 # Bộ nhận diện in ấn Noben: nhãn sản phẩm và logo
 
-Thư mục `brand/` **không được phục vụ trên web**, chỉ dùng để làm việc với nhà in. Logo trong toàn bộ thư mục này là **logo chính thức đã nắn theo tỷ lệ vàng, phương án A đã duyệt** (`public/images/brand/logo-noben-phi.svg`, sinh bằng `python3 scripts/build-logo-phi.py`): giữ nguyên màu và nét chữ NOBEN của logo đang dùng trên web, chỉ đặt lại kích thước theo φ. Logo trên web (`logo-noben.svg`) chưa thay. Bản logo φ/π trong `public/images/brand/golden/` chỉ là đề xuất, chưa dùng ở đây.
+Thư mục `brand/` **không được phục vụ trên web**, chỉ dùng để làm việc với nhà in. Logo trong toàn bộ thư mục này là **logo đã chốt**: logo chính thức nắn theo tỷ lệ vàng (`public/images/brand/logo-noben-phi.svg`, sinh bằng `python3 scripts/build-logo-phi.py`, mẫu `A-mat` bảng màu `tuoi-xanh-dam`). Hình thoi vàng tươi bo góc a/φ⁴, viền trong mảnh, khung xanh đậm `#14479a` tỷ lệ √φ, chữ NOBEN nghiêng gốc cách đều cao chữ/φ⁴, chấm trắng (mặt trời) đặt ở điểm vàng phía trên khung, ba sóng nước giảm dần theo √φ. Logo trên web (`logo-noben.svg`) chưa thay.
 
 | Đường dẫn | Nội dung |
 |---|---|
@@ -60,7 +60,7 @@ Sinh lại: `python3 scripts/build-logo-kit.py` (cần `pip install picosvg uhar
 | File | Dùng khi |
 |---|---|
 | `noben-logo.svg` | Logo chính thức, có gradient: web, màn hình, in kỹ thuật số |
-| `noben-logo-phang.svg` | Màu phẳng, không gradient, không trong suốt (vàng `#ffc20e`, xanh `#1590dd`, viền chữ `#0a5fb8`): in offset, in lụa nhiều màu |
+| `noben-logo-phang.svg` | Màu phẳng, không gradient, không trong suốt (vàng `#ffc20e`, xanh đậm `#14479a`, viền chữ `#0a2a63`): in offset, in lụa nhiều màu |
 | `noben-logo-den.svg`, `-trang.svg`, `-navy.svg` | **Một màu**: một path ghép duy nhất, phần trắng của logo là phần khoét (lộ nền). In lụa một màu, khắc, dập nổi, in trên bao tải |
 | `noben-lockup-ngang-*.svg` | Logo + chữ "Noben / THUỐC THỦY SẢN" xếp ngang (giống đầu trang web) |
 | `noben-lockup-doc-*.svg` | Xếp dọc: biểu tượng ở trên, chữ ở dưới |
@@ -73,5 +73,5 @@ Sinh lại: `python3 scripts/build-logo-kit.py` (cần `pip install picosvg uhar
 
 - **Khoảng trống quanh logo:** tối thiểu H/φ³ ≈ 0,236 × chiều cao biểu tượng (H) ở mọi phía; không đặt chữ, hình hay mép giấy vào vùng này.
 - **Kích thước tối thiểu:** biểu tượng cao 10 mm khi in (chữ NOBEN trong khung xanh còn đọc được), 24 px trên màn hình. Logo ngang rộng tối thiểu 30 mm; dưới 10 mm dùng bản một màu.
-- **Màu:** vàng `#ffc20e`, xanh logo `#0878cc` → `#22a8ec`, navy chữ `#0b2347`, xanh chữ "Noben" `#1b4db1`. Màu Pantone tương đương cần nhà in thử bài (gợi ý tham khảo: vàng ≈ Pantone 7549 C, xanh ≈ Pantone 2196 C, navy ≈ Pantone 2767 C).
+- **Màu:** vàng `#ffc20e`, xanh đậm logo `#1f5fbf` → `#14479a` → `#0c3478`, navy chữ `#0b2347`, xanh chữ "Noben" `#1b4db1`. Màu Pantone tương đương cần nhà in thử bài (gợi ý tham khảo: vàng ≈ Pantone 7549 C, xanh ≈ Pantone 2196 C, navy ≈ Pantone 2767 C).
 - **Không:** kéo méo, xoay, đổi màu ngoài các bản có sẵn, thêm bóng đổ/viền, đặt bản màu lên nền rối hoặc nền vàng (dùng bản một màu thay thế).

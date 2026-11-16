@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bộ logo Noben để in ấn, sinh từ logo chính thức đã nắn theo tỷ lệ vàng (phương án A): public/images/brand/logo-noben-phi.svg.
+"""Bộ logo Noben để in ấn, sinh từ logo đã chốt (logo chính thức nắn theo tỷ lệ vàng, mặt trời dời lên, vàng tươi · xanh đậm): public/images/brand/logo-noben-phi.svg.
 
     pip install picosvg uharfbuzz fonttools brotli
     python3 scripts/build-logo-kit.py          # ghi các SVG vào brand/logo/
@@ -30,7 +30,7 @@ from picosvg.svg import SVG
 from picosvg.svg_types import SVGPath
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
-SRC = os.path.join(ROOT, 'public', 'images', 'brand', 'logo-noben-phi.svg')  # bản A đã duyệt (logo chính thức nắn theo φ, scripts/build-logo-phi.py)
+SRC = os.path.join(ROOT, 'public', 'images', 'brand', 'logo-noben-phi.svg')  # logo đã chốt: mẫu A-mat, vàng tươi · xanh đậm (scripts/build-logo-phi.py)
 FONTS = os.path.join(ROOT, 'public', 'fonts')
 OUT = os.path.join(ROOT, 'brand', 'logo')
 
@@ -139,27 +139,27 @@ def mark_flat():
     """Màu phẳng, bỏ gradient và độ trong suốt (pha sẵn màu tương đương)."""
     _, body = mark_parts()
     body = re.sub(r'\s*<defs>[\s\S]*?</defs>', '', body)
-    body = body.replace('url(#g)', '#ffc20e').replace('url(#b)', '#1590dd')
-    body = re.sub(r'stroke="#fff" stroke-opacity="\.6\d*"', 'stroke="#ffe79f"', body)
+    body = body.replace('url(#g)', '#ffc20e').replace('url(#b)', '#14479a')  # vàng tươi · xanh đậm (đã chốt)
+    body = re.sub(r'stroke="#fff(?:fff)?" stroke-opacity="\.6\d*"', 'stroke="#ffe79f"', body)
     return body
 
 
 def mark_mono_path():
     svg = SVG.parse(SRC).topicosvg()
     paths = list(svg.shapes())
-    # Logo φ (scripts/build-logo-phi.py): thoi, viền thoi trong, nét gãy, 2 vạch trắng, khung xanh, chấm tròn,
-    # 5 viền chữ, 5 ruột chữ, sóng = 18 hình.
-    if len(paths) != 18:
-        raise SystemExit(f'{os.path.basename(SRC)} có {len(paths)} hình, cần cập nhật mark_mono_path() (mong đợi 18)')
-    diamond, outline, chevrons, bar1, bar2, panel, dot = paths[:7]
-    word_fill = paths[12:17]
-    waves = paths[17]
+    # Logo φ đã chốt (scripts/build-logo-phi.py, mẫu A-mat): thoi, viền thoi trong, khung xanh, chấm trắng,
+    # 5 viền chữ, 5 ruột chữ, sóng = 15 hình.
+    if len(paths) != 15:
+        raise SystemExit(f'{os.path.basename(SRC)} có {len(paths)} hình, cần cập nhật mark_mono_path() (mong đợi 15)')
+    diamond, outline, panel, dot = paths[:4]
+    word_fill = paths[9:14]
+    waves = paths[14]
     seq = lambda p: p.as_cmd_seq()
     nz = lambda n: ['nonzero'] * n
     diff = lambda a, b: sp.difference([a, b], nz(2))
     # Khe mảnh quanh khung xanh để khung không dính vào hình thoi khi in một màu.
     gap = diff(list(sp.stroke(seq(panel), 'butt', 'miter', 9, 4, 0.1)), seq(panel))
-    parts = [seq(outline), seq(chevrons), seq(bar1), seq(bar2), seq(dot), gap] + [seq(f) for f in word_fill] + [seq(waves)]
+    parts = [seq(outline), seq(dot), gap] + [seq(f) for f in word_fill] + [seq(waves)]
     ink = diff(seq(diamond), sp.union(parts, nz(len(parts))))
     return SVGPath.from_commands(ink).round_floats(2).d
 
@@ -243,7 +243,7 @@ def main():
         written.append(name)
 
     write('noben-logo.svg', raw if raw.endswith('\n') else raw + '\n')
-    write('noben-logo-phang.svg', svg_doc(512, 512, mark_flat(), 'Noben – màu phẳng', 'Không gradient, không trong suốt. Vàng #ffc20e, xanh #1590dd, viền chữ #0a5fb8.'))
+    write('noben-logo-phang.svg', svg_doc(512, 512, mark_flat(), 'Noben – màu phẳng', 'Không gradient, không trong suốt. Vàng #ffc20e, xanh đậm #14479a, viền chữ #0a2a63.'))
     for name, col in (('den', '#000000'), ('trang', '#ffffff'), ('navy', NAVY)):
         write(f'noben-logo-{name}.svg', svg_doc(512, 512, mark_mono(col), f'Noben – một màu {name}', 'Một path ghép duy nhất, phần trắng là khoét để in lụa một màu.'))
 
