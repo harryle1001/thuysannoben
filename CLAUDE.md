@@ -8,3 +8,5 @@
 - Game: kích thước UI, tỉ lệ màn chơi, đường cong độ khó/XP nhân φ mỗi cấp.
 - Nội dung: cấu trúc ý chính ~61.8%, phần phụ ~38.2%.
 Khai báo biến --phi: 1.61803 trong CSS/code để dùng thống nhất.
+
+**Advisor rule:** consult the `advisor` subagent (1) before locking a plan, (2) after the same error appears twice, and (3) before declaring a task done.
