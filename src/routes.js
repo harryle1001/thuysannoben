@@ -383,8 +383,9 @@ router.get('/lp/:slug', (req, res, next) => {
   const solutions = s ? [s] : [];
   const faq = [...productFaq(p, related, solutions).slice(0, 4), ...((s && s.faq) || []).slice(0, 2).map((f) => ({ q: f.q, a: /^</.test(f.a) ? f.a : `<p>${f.a}</p>` }))];
   res.render('lp/product', {
-    // Campaign page: indexing stays with the product page, so Google does not see two copies.
-    meta: { title: lp.seo_title, description: lp.description, image: p.image && p.image.src, noindex: true },
+    // Campaign page with its own title and copy; "index": true in landings.json lets Google list it.
+    meta: { title: lp.seo_title, description: lp.description, image: p.image && p.image.src, noindex: !lp.index },
+    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], [p.name, `/lp/${lp.slug}`]]), seo.faqPage(faq)].filter(Boolean) : [],
     lp,
     p,
     s,
@@ -394,7 +395,7 @@ router.get('/lp/:slug', (req, res, next) => {
 });
 
 // Need-based landing (type "combo"): a stage-by-stage protocol across several products, or the OEM offer.
-// Protocol pages stay noindex (the knowledge articles rank instead); pages with "index": true go to the sitemap.
+// Pages with "index": true in landings.json are indexable and go to the sitemap.
 function renderCombo(lp, res) {
   const stages = (lp.stages || []).map((s) => ({ ...s, items: s.items.map((it) => ({ ...it, p: c.productBySlug[it.product] })).filter((it) => it.p) }));
   const shots = stages.map((s) => s.items[0] && s.items[0].p).filter((p) => p && p.cutout).slice(0, 3);
@@ -406,7 +407,7 @@ function renderCombo(lp, res) {
     shots,
     film: c.landingVideos[lp.slug] || null,
     faq,
-    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], ['Gia công', '/gia-cong'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq), seo.processVideo()].filter(Boolean) : [],
+    jsonld: lp.index ? [crumbs([['Trang chủ', '/'], lp.slug === 'gia-cong-oem' ? ['Gia công', '/gia-cong'] : ['Giải pháp', '/giai-phap'], [lp.title, `/lp/${lp.slug}`]]), seo.faqPage(faq), lp.slug === 'gia-cong-oem' ? seo.processVideo() : null].filter(Boolean) : [],
   });
 }
 

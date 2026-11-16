@@ -1,6 +1,7 @@
 [
   {
     "slug": "g7",
+    "index": true,
     "product": "g7-phong-va-tri-benh-gan-chet-som",
     "solution": "phan-trang-gan-tuy",
     "seo_title": "G7 – Thảo dược bổ gan, hỗ trợ phòng ngừa bệnh gan cho tôm | Noben",
@@ -19,6 +20,7 @@
   },
   {
     "slug": "caphote",
+    "index": true,
     "product": "caphote",
     "solution": "mem-vo-cong-than-cham-lon",
     "seo_title": "CAPHOTE siêu khoáng – Cứng vỏ nhanh, vỏ dày cho tôm | Noben",
@@ -37,6 +39,7 @@
   },
   {
     "slug": "aqualac-fs",
+    "index": true,
     "product": "aqualac-fs",
     "solution": "phan-trang-gan-tuy",
     "seo_title": "AQUALAC FS – Nong to đường ruột, ngừa phân trắng | Noben",
@@ -55,6 +58,7 @@
   },
   {
     "slug": "sorbest",
+    "index": true,
     "product": "sorbest",
     "solution": "phan-trang-gan-tuy",
     "seo_title": "SORBEST – Hỗ trợ phòng ngừa bệnh gan, chết sớm cho tôm | Noben",
@@ -73,6 +77,7 @@
   },
   {
     "slug": "proticbest",
+    "index": true,
     "product": "proticbest",
     "solution": "khi-doc-day-ao-nhot-bat",
     "seo_title": "PROTICBEST – Vi sinh gốc làm sạch đáy, bạt, nước | Noben",
@@ -91,6 +96,7 @@
   },
   {
     "slug": "super-yucca",
+    "index": true,
     "product": "super-yucca",
     "solution": "khi-doc-day-ao-nhot-bat",
     "seo_title": "SUPER YUCCA – Hấp thụ khí độc, cấp cứu tôm nổi đầu | Noben",
@@ -109,6 +115,7 @@
   },
   {
     "slug": "top-weigh",
+    "index": true,
     "product": "top-weigh",
     "solution": "men-tieu-hoa-tang-de-khang",
     "seo_title": "TOP WEIGH – Tăng trọng nhanh, giảm thức ăn cho tôm | Noben",
@@ -127,6 +134,7 @@
   },
   {
     "slug": "ao-bat-mat-do-cao",
+    "index": true,
     "type": "combo",
     "seo_title": "Phác đồ trọn vụ ao bạt mật độ cao: nhớt bạt, khí độc, khoáng, gan ruột | Noben",
     "description": "Phác đồ Noben cho ao lót bạt nuôi tôm thẻ mật độ cao theo từng giai đoạn: chuẩn bị nước, xây nền gan ruột, xử lý nhớt bạt, khí độc, bù khoáng và cứng vỏ trước thu. Kỹ thuật viên tư vấn miễn phí.",
@@ -269,6 +277,7 @@
   },
   {
     "slug": "mua-mua",
+    "index": true,
     "type": "combo",
     "seo_title": "Phòng bệnh tôm mùa mưa: sốc pH, tụt kiềm, tảo tàn, khí độc | Noben",
     "description": "Phác đồ Noben cho ao tôm mùa mưa: giữ kiềm trước mưa, chống sốc và hạ phèn trong mưa, xử lý xác tảo tàn và khí độc sau mưa. Liều theo nhãn, kỹ thuật viên tư vấn miễn phí.",
