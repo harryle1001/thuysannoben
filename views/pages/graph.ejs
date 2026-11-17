@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Giải pháp', '/giai-phap'], ['Bản đồ giải pháp']] }) %>
+    <h1 class="khead__title">Bản đồ giải pháp ao nuôi</h1>
+    <p class="khead__lead">Mỗi chấm vàng là một vấn đề ao tôm hay gặp, chấm xanh là sản phẩm Noben xử lý vấn đề đó. Chạm vào một vấn đề để xem ngay các sản phẩm phù hợp.</p>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap kmap" data-kmap>
+    <div class="kmap__stage">
+      <canvas class="kmap__canvas" data-kmap-canvas role="img" aria-label="Bản đồ nối vấn đề ao nuôi với sản phẩm Noben"></canvas>
+      <ul class="kmap__legend" aria-hidden="true">
+        <li><i class="kmap__dot kmap__dot--sym"></i>Vấn đề ao</li>
+        <li><i class="kmap__dot kmap__dot--cat"></i>Nhóm sản phẩm</li>
+        <li><i class="kmap__dot kmap__dot--prod"></i>Sản phẩm</li>
+      </ul>
+    </div>
+    <aside class="kmap__panel" aria-live="polite" data-kmap-panel>
+      <p class="kmap__kicker">Chọn vấn đề ao của bạn</p>
+      <ul class="kmap__chips">
+        <% data.s.forEach((s) => { %><li><button class="chip chip--light" type="button" data-kmap-pick="<%= s.id %>"><%= s.n %></button></li><% }) %>
+      </ul>
+      <div class="kmap__info" data-kmap-info hidden></div>
+    </aside>
+  </div>
+</section>
+<script type="application/json" id="kmap-data"><%- JSON.stringify(data).replace(/</g, '\\u003c') %></script>
+<script src="/js/kmap.js?v=1" defer></script>
+<%- include('../partials/footer') %>

@@ -2216,3 +2216,31 @@ html.has-sunrise body { background: transparent; }
   .hsearch__field .ico { display: none; } /* the yellow button already says Tìm */
   .hsearch__btn { min-height: 42px; padding: 0 16px; font-size: 0.9375rem; }
 }
+
+/* ===== Bản đồ giải pháp (/ban-do-giai-phap): đồ thị lực, khung 1.618:1, chia cột 61.8/38.2 ===== */
+.kmap { display: grid; gap: var(--space-6); }
+.kmap__stage { position: relative; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 1 / 1.272;
+  background: radial-gradient(ellipse at 50% 38.2%, #13315f 0%, #0b2347 61.8%, #050f22 100%); box-shadow: 0 16px 42px rgb(5 15 34 / .26); }
+.kmap__canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.kmap__legend { position: absolute; left: var(--space-3); bottom: var(--space-3); display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4);
+  margin: 0; padding: var(--space-1) var(--space-3); list-style: none; font-size: var(--step--1); color: var(--on-ink-muted);
+  background: rgb(5 15 34 / .618); border-radius: var(--radius-l); pointer-events: none; }
+.kmap__legend li { display: flex; align-items: center; gap: 6px; }
+.kmap__dot { width: 10px; height: 10px; border-radius: 50%; }
+.kmap__dot--sym { background: #ffc20e; box-shadow: 0 0 10px #ffc20e; }
+.kmap__dot--cat { background: #4cc28a; }
+.kmap__dot--prod { background: #6f9bff; }
+.kmap__kicker, .kmap__type, .kmap__sub { margin: 0 0 var(--space-2); font-size: var(--step--1); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.kmap__chips { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0 0 var(--space-6); padding: 0; list-style: none; }
+.kmap__chips .chip[aria-pressed='true'] { background: var(--selected-bg); color: var(--selected-fg); border-color: var(--selected-bg); }
+.kmap__info { padding: var(--space-5); border: 1px solid var(--line); border-radius: var(--radius-l); background: var(--surface); animation: kmap-in 262ms var(--ease); }
+.kmap__name { margin: 0 0 var(--space-3); font-family: var(--font-display); font-size: var(--step-3); line-height: 1.272; color: var(--heading); }
+.kmap__tag { margin: 0 0 var(--space-4); color: var(--muted); }
+.kmap__list { margin: 0 0 var(--space-5); padding-left: 1.1em; line-height: 1.618; columns: 2 10rem; column-gap: var(--space-5); }
+@keyframes kmap-in { from { opacity: 0; transform: translateY(10px); } }
+@media (min-width: 900px) {
+  .kmap { grid-template-columns: 61.8fr 38.2fr; align-items: start; }
+  .kmap__stage { aspect-ratio: 1.618 / 1; }
+  .kmap__panel { position: sticky; top: calc(var(--header-h) + var(--space-5)); }
+}
+@media (prefers-reduced-motion: reduce) { .kmap__info { animation: none; } }

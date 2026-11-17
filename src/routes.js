@@ -460,6 +460,23 @@ router.get('/giai-phap', (req, res) =>
     jsonld: [crumbs([['Trang chủ', '/'], ['Giải pháp', '/giai-phap']]), seo.itemList('Giải pháp cho ao nuôi tôm', c.solutions.map((s) => ({ url: s.url, name: s.h1 })))],
   })
 );
+// Bản đồ giải pháp: đồ thị động Vấn đề ao ↔ Sản phẩm ↔ Nhóm sản phẩm (vẽ bằng canvas, không thư viện ngoài).
+router.get('/ban-do-giai-phap', (req, res) => {
+  const solBySym = Object.fromEntries(c.solutions.map((s) => [s.symptom, s.url]));
+  const data = {
+    s: c.symptoms.map((s) => ({ id: s.slug, n: s.label, u: solBySym[s.slug] || `/san-pham?van-de=${s.slug}` })),
+    c: c.categories.map((x) => ({ id: x.slug, n: x.name, u: `/san-pham/nhom/${x.slug}` })),
+    p: c.products.map((p) => ({ id: p.slug, n: p.name, t: p.tagline || '', u: p.url, c: p.category, s: p.symptoms, w: Object.values(p.symscore || {}).reduce((a, b) => a + b, 0) })),
+  };
+  res.render('pages/graph', {
+    meta: {
+      title: 'Bản đồ giải pháp ao nuôi tôm – Noben',
+      description: 'Bản đồ trực quan nối các vấn đề ao nuôi tôm (phân trắng, đen mang, mềm vỏ, khí độc, tảo, thiếu oxy) với sản phẩm Noben phù hợp. Chạm vào vấn đề để xem ngay sản phẩm nên dùng.',
+    },
+    data,
+    jsonld: [crumbs([['Trang chủ', '/'], ['Giải pháp', '/giai-phap'], ['Bản đồ giải pháp', '/ban-do-giai-phap']])],
+  });
+});
 router.get('/giai-phap/:slug', (req, res, next) => {
   const s = c.solutionBySlug[req.params.slug];
   if (!s) return next();
@@ -944,6 +961,7 @@ router.get('/sitemap.xml', (req, res) => {
     ...LANDINGS.filter((x) => x.index).map((x) => ({ loc: `/lp/${x.slug}`, priority: '0.7', changefreq: 'monthly', images: x.hero_image ? [x.hero_image.src] : [] })),
     { loc: '/video', priority: '0.7', changefreq: 'monthly', videos: c.videos },
     { loc: '/tinh-lieu', priority: '0.7', changefreq: 'monthly' },
+    { loc: '/ban-do-giai-phap', priority: '0.6', changefreq: 'monthly' },
     { loc: '/lich-cham-soc', priority: '0.7', changefreq: 'monthly' },
     { loc: '/danh-gia', priority: '0.6', changefreq: 'weekly' },
     ...dealers.provinces().map((p) => ({ loc: `/dai-ly/tinh/${p.slug}`, priority: '0.6', changefreq: 'weekly' })),

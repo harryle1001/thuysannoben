@@ -34,6 +34,7 @@ const checks = [
   ['/gia-cong', 200],
   ['/lien-he', 200],
   ['/tinh-lieu', 200],
+  ['/ban-do-giai-phap', 200],
   ['/video', 200],
   ['/tuyen-dai-ly', 200],
   ['/tinh-lieu?sp=aqua-bac', 200],
