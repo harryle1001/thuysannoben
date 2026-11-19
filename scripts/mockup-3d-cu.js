@@ -2,7 +2,7 @@
 'use strict';
 // Đặt nhãn (PNG 4K từ scripts/mockup-nhan-moi.js, hoặc nhãn cũ từ scripts/mockup-nhan-cu.py) lên bao bì dựng 3D thật:
 // chai HDPE 1 lít, hũ nhựa 500 g, túi đứng nhôm bạc có zip 250 g, bao gối 5 kg.
-//   node scripts/mockup-3d-cu.js --dir <thư mục nhãn> --out anh.png --shot chai|hu|tui|bao|bo [--kieu cu|moi] [--goc 0|34] [--w 3072 --h 3840]
+//   node scripts/mockup-3d-cu.js --dir <thư mục nhãn> --out anh.png --shot chai|hu|tui|bao|bo [--kieu cu|moi] | --spec <slug>.json [--goc 0|34] [--w 3072 --h 3840]
 // Cần: npm i three@0.149.0 --no-save (Chromium + Playwright có sẵn).
 const fs = require('fs');
 const path = require('path');
@@ -13,6 +13,7 @@ const OUT = opt('--out', 'mockup.png');
 const SHOT = opt('--shot', 'chai');
 const GOC = +opt('--goc', 0);
 const KIEU = opt('--kieu', 'cu');
+const SPEC = opt('--spec', '');   // thông số tự đo (scripts/mockup-tu-dong.py): chai/hũ/xô bất kỳ, túi, bao
 const W = +opt('--w', 3072), H = +opt('--h', 3840);
 const SLUG = { chai: 'super-yucca', hu: 'bio-aq', tui: 'clear-12h', bao: 'mix-79' };
 const THREE_JS = process.env.THREE_JS || [path.join(process.cwd(), 'node_modules', 'three', 'build', 'three.min.js'), path.join(__dirname, '..', 'node_modules', 'three', 'build', 'three.min.js')].find((f) => fs.existsSync(f)) || '';
@@ -114,6 +115,44 @@ function scene() {
     return g;
   }
 
+  // ---- Bao bì tròn bất kỳ (chai, hũ, xô, lon) từ biên dạng đo trên ảnh cũ: màu thân/nắp theo hàng, nhãn cũ quấn theo thân
+  function tronSpec(img, P) {
+    const g = new THREE.Group();
+    const pts = [[0, 0], ...P.profile, [0, P.profile[P.profile.length - 1][1]]];
+    const geo = new THREE.LatheGeometry(pts.map(([x, y]) => new THREE.Vector2(Math.max(x, 0.001), y)), 200);
+    const n = pts.length, cols = [P.colors[0], ...P.colors, P.colors[P.colors.length - 1]];
+    const ca = new Float32Array(geo.attributes.position.count * 3);
+    for (let i = 0; i < geo.attributes.position.count; i++) { const c = cols[i % n]; ca.set(c, i * 3); }
+    geo.setAttribute('color', new THREE.BufferAttribute(ca, 3));
+    const mat = P.glass ? new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.08, clearcoat: 1, clearcoatRoughness: 0.05, envMapIntensity: 1.4 })
+      : new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.46, clearcoat: 0.16, clearcoatRoughness: 0.5, sheen: 0.2, sheenRoughness: 0.8, envMapIntensity: 0.9 });
+    const body = new THREE.Mesh(geo, mat); body.castShadow = true; body.receiveShadow = true; g.add(body);
+    if (P.cap) {   // khía nắp vặn
+      const c = P.cap, hh = (c.y1 - c.y0) * 0.78, N = Math.round(2 * Math.PI * c.r / 0.16);
+      const rg = new THREE.CylinderGeometry(0.045, 0.045, hh, 6);
+      const cm = new THREE.MeshPhysicalMaterial({ color: new THREE.Color().fromArray(P.colors[P.colors.length - 3]), roughness: 0.42, envMapIntensity: 0.9 });
+      for (let i = 0; i < N; i++) { const a = (i / N) * Math.PI * 2; const m = new THREE.Mesh(rg, cm); m.position.set(Math.sin(a) * c.r, (c.y0 + c.y1) / 2 - 0.06 * (c.y1 - c.y0), Math.cos(a) * c.r); g.add(m); }
+    }
+    if (P.label) {
+      const L = P.label, lp = P.profile.filter(([, y]) => y >= L.y0 && y <= L.y1).map(([x, y]) => new THREE.Vector2(x + 0.014, y));
+      const lm = (t) => new THREE.MeshPhysicalMaterial({ map: t, roughness: P.glass ? 0.4 : 0.5, clearcoat: 0.25, clearcoatRoughness: 0.4, envMapIntensity: 0.65, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+      const a = new THREE.Mesh(new THREE.LatheGeometry(lp, 220, L.u0, L.u1 - L.u0), lm(tex(img))); a.receiveShadow = true; g.add(a);
+      if (L.wrap) { const b = new THREE.Mesh(new THREE.LatheGeometry(lp, 140, L.u1, 2 * Math.PI - (L.u1 - L.u0)), lm(edgeTex(img))); b.receiveShadow = true; g.add(b); }
+    }
+    if (P.xo) {    // quai xô bằng thép bọc nhựa + tai quai
+      const R = P.w / 2, top = P.profile[P.profile.length - 1][1];
+      const wire = new THREE.MeshPhysicalMaterial({ color: 0xb9bcc0, metalness: 0.85, roughness: 0.3 });
+      const ay = top - P.h * 0.13;
+      const hd = new THREE.Mesh(new THREE.TorusGeometry(R + 0.25, 0.14, 12, 120, Math.PI), wire);
+      hd.position.y = ay; hd.rotation.x = -1.15; hd.castShadow = true; g.add(hd);              // quai nằm ngả ra sau
+      const grip = new THREE.Mesh(new THREE.CylinderGeometry(0.42, 0.42, R * 0.6, 20), new THREE.MeshPhysicalMaterial({ color: 0x3a3a3a, roughness: 0.6 }));
+      grip.rotation.z = Math.PI / 2; grip.position.set(0, ay + (R + 0.25) * Math.cos(1.15), -(R + 0.25) * Math.sin(1.15)); grip.castShadow = true; g.add(grip);
+      for (const sx of [-1, 1]) { const e = new THREE.Mesh(new THREE.BoxGeometry(0.45, 1.6, 1.3), mat); e.position.set(sx * (R + 0.12), ay, 0); e.castShadow = true; g.add(e); }
+    }
+    contact(g, P.w * 1.7, P.w * 1.3); g.userData = { h: P.h, w: P.w };
+    return g;
+  }
+
   // ---- Hũ nhựa 500 g: Ø100 × cao 150 mm, nắp vặn rộng bằng thân, có khía mịn (đo theo ảnh hũ Bio AQ cũ)
   function hu(img) {
     const g = new THREE.Group(); const R = 4.96;
@@ -149,8 +188,8 @@ function scene() {
   const film = (ge, mat) => { const m = new THREE.Mesh(ge, mat); m.castShadow = true; m.receiveShadow = true; return m; };
 
   // ---- Túi đứng nhôm bạc có zip 250 g: 160 × 248 mm, hàn biên 7 mm, đáy xếp (đo theo ảnh túi Clear 12H cũ)
-  function tui(img) {
-    const g = new THREE.Group(); const Wd = 16, Ht = 24.8, uS = 1 - 0.7 / 8, zipV = 1 - 2.9 / Ht;
+  function tui(img, P) {
+    const g = new THREE.Group(); const Wd = P ? P.w : 16, Ht = P ? P.h : 24.8, uS = 1 - 0.7 / 8, zipV = 1 - 2.9 / Ht;
     const depth = (u, v) => {
       const au = Math.abs(u), sU = au < uS ? Math.pow(1 - Math.pow(au / uS, 2.0), 0.7) : 0;
       const t = cl((v - 0.10) / 0.74), gV = v < 0.10 ? 0.9 + 0.1 * (v / 0.10) : Math.pow(1 - Math.pow(t, 1.5), 0.9);
@@ -167,19 +206,20 @@ function scene() {
     g.add(film(sheet((u, v) => { const [d] = depth(u, 0); return [u * Wd / 2 * (1 - 0.0225), 0.02 + 0.5 * (1 - Math.pow(2 * v - 1, 2)) * Math.min(1, d), (2 * v - 1) * (d + 0.02)]; }, -1, 1, 0.0001, 0.9999, 120, 24, true), foil));
     // nhãn decal 110 × 178 mm, mép trên cách miệng túi 43 mm
     const lm = new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.42, clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.6, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-    const l = CU ? film(sheet(f(1, 0.012), -0.756, 0.758, 0.161, 0.738, 200, 240, false), lm) : film(sheet(f(1, 0.012), -0.706, 0.706, 0.109, 0.827, 200, 280, false), lm); l.castShadow = false; g.add(l);
-    contact(g, 24, 11); g.userData = { h: Ht, w: Wd };
+    if (P) Object.assign(lm, { transparent: true, alphaTest: 0.5 });
+    const l = P ? film(sheet(f(1, 0.012), -1, 1, 0, 1, 220, 340, false), lm) : CU ? film(sheet(f(1, 0.012), -0.756, 0.758, 0.161, 0.738, 200, 240, false), lm) : film(sheet(f(1, 0.012), -0.706, 0.706, 0.109, 0.827, 200, 280, false), lm); l.castShadow = false; g.add(l);
+    contact(g, Wd * 1.5, Wd * 0.7); g.userData = { h: Ht, w: Wd };
     return g;
   }
 
   // ---- Bao gối 5 kg: 280 × 510 mm, hai đầu hàn răng cưa 16 mm (đo theo ảnh bao Mix 79 cũ)
-  function bao(img) {
-    const g = new THREE.Group(); const Wd = 28, Ht = 51, sV = 1.6 / Ht;
+  function bao(img, P) {
+    const g = new THREE.Group(); const Wd = P ? P.w : 28, Ht = P ? P.h : 51, sV = 1.6 / Ht;
     const depth = (u, v) => {
       const a = sm(cl((v - sV) / 0.22)), b = sm(cl((1 - sV - v) / 0.22)), gV = Math.pow(a * b, 0.55);
       const sU = Math.pow(1 - Math.pow(Math.abs(u), 2.6), 0.5);
       const tr = 4 * a * b < 1 ? 1 - a * b : 0;                         // vùng chuyển gần mối hàn → nếp gấp
-      let d = 4.4 * gV * sU;
+      let d = 4.4 * (Wd / 28) * gV * sU;
       d += (0.22 * Math.sin(u * 21 + 5 * fbm(u * 2, v * 3)) * tr * Math.sqrt(gV) + 0.2 * fbm(u * 2.2 + 11, v * 3.6) * gV) * Math.pow(sU, 0.4);
       const inSeal = v < sV || v > 1 - sV; if (inSeal) d += 0.018 * Math.sin(v * Ht * 2 * Math.PI / 0.22);
       return [d, gV];
@@ -189,15 +229,17 @@ function scene() {
       const zig = edge ? edge * 0.13 * (2 * Math.abs(((x / 0.34) % 1 + 1) % 1 - 0.5)) : 0;   // mép răng cưa
       return [x, v * Ht + zig, sg * (d + 0.02 + eps)];
     };
-    const yel = CU ? new THREE.MeshPhysicalMaterial({ color: 0xe9d31c, metalness: 0.25, roughness: 0.3, clearcoat: 0.5, clearcoatRoughness: 0.3, envMapIntensity: 0.85, side: THREE.DoubleSide })   // bao cũ: màng vàng in trực tiếp
+    const yel = P ? (P.foil ? new THREE.MeshPhysicalMaterial({ color: 0xdfe2e6, metalness: 0.9, roughness: 0.32, envMapIntensity: 1.1, side: THREE.DoubleSide })
+        : new THREE.MeshPhysicalMaterial({ color: new THREE.Color().fromArray(P.base), metalness: 0.05, roughness: 0.32, clearcoat: 0.5, clearcoatRoughness: 0.3, envMapIntensity: 0.8, side: THREE.DoubleSide })) : CU ? new THREE.MeshPhysicalMaterial({ color: 0xe9d31c, metalness: 0.25, roughness: 0.3, clearcoat: 0.5, clearcoatRoughness: 0.3, envMapIntensity: 0.85, side: THREE.DoubleSide })   // bao cũ: màng vàng in trực tiếp
       : new THREE.MeshPhysicalMaterial({ color: 0xdfe2e6, metalness: 0.9, roughness: 0.32, envMapIntensity: 1.1, side: THREE.DoubleSide });
     g.add(film(sheet(f(1, 0), -1, 1, 0, 1, 330, 700, false), yel));
     g.add(film(sheet(f(-1, 0), -1, 1, 0, 1, 330, 700, true), yel));
     // nhãn decal khổ túi phóng φ lần: 178 × 288 mm, giữa thân bao
     const pmat = new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.42, clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.6, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-    const l = CU ? film(sheet(f(1, 0.012), -1, 1, 0.097, 0.846, 300, 520, false), pmat) : film(sheet(f(1, 0.012), -0.715, 0.715, 0.218, 0.782, 300, 520, false), pmat); l.castShadow = false; g.add(l);
+    if (P) Object.assign(pmat, { transparent: true, alphaTest: 0.5, roughness: 0.34 });
+    const l = P ? film(sheet(f(1, 0.012), -1, 1, 0, 1, 330, 700, false), pmat) : CU ? film(sheet(f(1, 0.012), -1, 1, 0.097, 0.846, 300, 520, false), pmat) : film(sheet(f(1, 0.012), -0.715, 0.715, 0.218, 0.782, 300, 520, false), pmat); l.castShadow = false; g.add(l);
     const wrapG = new THREE.Group(); g.rotation.x = -0.075; g.position.y = 0.05; wrapG.add(g);
-    contact(wrapG, 40, 16); wrapG.userData = { h: Ht, w: Wd };
+    contact(wrapG, Wd * 1.43, Wd * 0.57); wrapG.userData = { h: Ht, w: Wd };
     return wrapG;
   }
 
@@ -222,8 +264,9 @@ function scene() {
     cam = new THREE.PerspectiveCamera(22, CFG.W / CFG.H, 1, 4000);
     cam.position.set(4, 34, 205); cam.lookAt(-1.5, 20.5, 0); setFog(205);
   } else {
-    const o = make[CFG.shot](TEX[CFG.shot]); const { h, w } = o.userData;
-    o.rotation.y = -CFG.goc * Math.PI / 180 * (CU && (CFG.shot === 'chai' || CFG.shot === 'hu') ? 0.62 : 1); s.add(o);   // nhãn cũ chỉ có nửa mặt trước nên chai, hũ xoay ~21°
+    const P = CFG.spec;
+    const o = P ? (P.kind === 'tron' ? tronSpec : P.kind === 'tui' ? tui : bao)(TEX.spec, P) : make[CFG.shot](TEX[CFG.shot]); const { h, w } = o.userData;
+    o.rotation.y = -CFG.goc * Math.PI / 180 * (CU && (CFG.shot === 'chai' || CFG.shot === 'hu' || (P && P.label && P.label.wrap)) ? 0.62 : 1); s.add(o);   // nhãn cũ chỉ có nửa mặt trước nên chai, hũ xoay ~21°
     lights(Math.max(h, w * 1.3));
     const fov = 21; cam = new THREE.PerspectiveCamera(fov, CFG.W / CFG.H, 1, 4000);
     const frameH = Math.max(h * PHI, w * 1.5 * PHI * CFG.H / CFG.W);          // bao bì chiếm 61,8% chiều cao khung
@@ -243,14 +286,15 @@ function scene() {
   page.on('pageerror', (e) => console.error('pageerror:', e.message));
   await page.setContent('<!doctype html><html><body style="margin:0"></body></html>');
   await page.addScriptTag({ path: THREE_JS });
-  const need = SHOT === 'bo' ? Object.keys(SLUG) : [SHOT];
+  const need = SPEC ? [] : SHOT === 'bo' ? Object.keys(SLUG) : [SHOT];
   const data = {};
+  if (SPEC) data.spec = 'data:image/png;base64,' + fs.readFileSync(SPEC.replace(/\.json$/, '-nhan-4k.png')).toString('base64');
   for (const k of need) data[k] = 'data:image/png;base64,' + fs.readFileSync(path.join(DIR, SLUG[k] + '-nhan-4k.png')).toString('base64');
   await page.evaluate(async (T) => {
     window.TEX = {};
     for (const k of Object.keys(T)) window.TEX[k] = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = T[k]; });
   }, data);
-  const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, shot: SHOT, goc: GOC, kieu: KIEU })}; return (${scene.toString()})(); })()`);
+  const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, shot: SPEC ? 'spec' : SHOT, goc: GOC, kieu: KIEU, spec: SPEC ? JSON.parse(fs.readFileSync(SPEC, 'utf8')) : null })}; return (${scene.toString()})(); })()`);
   fs.writeFileSync(OUT, Buffer.from(url.split(',')[1], 'base64'));
   console.log('saved', OUT, W + '×' + H);
   await browser.close();
