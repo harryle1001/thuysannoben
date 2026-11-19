@@ -210,7 +210,11 @@ def det(sess, slug, out):
         for i in range(1, n + 1):
             if sizes[i] > 0.015 * a.sum(): keep |= lab == i
         keep = ndi.binary_fill_holes(ndi.binary_closing(keep, iterations=6))
-        if keep.sum() < 0.25 * a.sum() and keep.any():   # nhãn nền trắng bị nhận nhầm là nhôm: lấy khung chữ nhật bao quanh
+        if keep.any():
+            ky, kx = np.where(keep); bb = (ky.max() - ky.min() + 1) * (kx.max() - kx.min() + 1)
+            sparse = bb > 0.5 * a.sum() and keep.sum() < 0.7 * bb       # vùng in rời rạc trên túi trắng: gộp thành một khung
+        else: sparse = False
+        if (keep.sum() < 0.25 * a.sum() or sparse) and keep.any():   # nhãn nền trắng bị nhận nhầm là nhôm: lấy khung chữ nhật bao quanh
             ky, kx = np.where(keep); keep[ky.min():ky.max() + 1, kx.min():kx.max() + 1] = True
         alpha = (ndi.binary_dilation(keep, iterations=1) & a).astype(np.float32)
         alpha = cv2.GaussianBlur(alpha, (0, 0), 0.8)
