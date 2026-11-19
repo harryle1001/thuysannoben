@@ -288,7 +288,10 @@ function scene() {
   await page.addScriptTag({ path: THREE_JS });
   const need = SPEC ? [] : SHOT === 'bo' ? Object.keys(SLUG) : [SHOT];
   const data = {};
-  if (SPEC) data.spec = 'data:image/png;base64,' + fs.readFileSync(SPEC.replace(/\.json$/, '-nhan-4k.png')).toString('base64');
+  if (SPEC) {   // nhãn: <slug>-nhan-4k.png (bản làm việc) hoặc .webp (bản lưu trong repo)
+    const f = ['png', 'webp'].map((e) => SPEC.replace(/\.json$/, '-nhan-4k.' + e)).find((x) => fs.existsSync(x));
+    data.spec = 'data:image/' + f.split('.').pop() + ';base64,' + fs.readFileSync(f).toString('base64');
+  }
   for (const k of need) data[k] = 'data:image/png;base64,' + fs.readFileSync(path.join(DIR, SLUG[k] + '-nhan-4k.png')).toString('base64');
   await page.evaluate(async (T) => {
     window.TEX = {};
