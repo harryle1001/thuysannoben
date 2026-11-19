@@ -92,9 +92,9 @@ def tron(sess, slug, out):
     if top > 6 and r[:max(3, top // 3)].mean() < 0.62 * rmax:
         rc = np.percentile(r[:max(3, top // 2)], 90)
         st = int(np.argmax(r[:top] >= 0.95 * rc))                      # hết phần bo mép trên nắp
-        ce = st + np.where(r[st:top] < 0.86 * rc)[0]
+        ce = st + np.where(np.abs(r[st:top] - rc) > 0.1 * rc)[0]           # cổ to hơn hoặc nhỏ hơn nắp đều được
         cy1 = int(ce[0]) if len(ce) else 0
-    has_cap = top > 6 and cy1 > 0.025 * len(r)
+    has_cap = top > 6 and 0.025 * len(r) < cy1 < 0.3 * len(r)   # nắp không thể chiếm quá 30 % chiều cao
     # bỏ phần elip phối cảnh ở đáy và mặt trên (ảnh chụp hơi từ trên xuống): đó không phải thân bao bì
     rm0 = float(np.median(r[len(r) // 3: 2 * len(r) // 3]))
     ye = max(np.where(A[:, int(cx + sg * 0.85 * rm0)])[0][-1] for sg in (-1, 1))
@@ -137,9 +137,10 @@ def tron(sess, slug, out):
     rowl[:ystart] = False
     lb, nr = ndi.label(rowl)
     label = None
-    if nr:
-        k = np.argmax(np.bincount(lb)[1:]) + 1; yy = np.where(lb == k)[0]
-        if len(yy) < 0.12 * nb: nr = 0
+    if nr:   # từ hàng nhãn đầu tới hàng nhãn cuối (nhãn nền trắng có khoảng trống giữa các khối chữ)
+        big = [i for i in range(1, nr + 1) if (lb == i).sum() >= 0.04 * nb]
+        yy = np.arange(np.where(np.isin(lb, big))[0][0], np.where(np.isin(lb, big))[0][-1] + 1) if big else np.array([], int)
+        if len(yy) < 0.3 * nb: nr = 0     # quá ngắn: nhãn nền trắng, lấy cả thân
     if not nr:   # nhãn in thưa (chữ trên nền trắng): lấy cả thân dưới nắp
         yy = np.arange(ystart + 4, y0 + int(nb * 0.95))
         mask[yy[0]:yy[-1] + 1, int(cx - rm):int(cx + rm)] |= A[yy[0]:yy[-1] + 1, int(cx - rm):int(cx + rm)]
@@ -152,6 +153,7 @@ def tron(sess, slug, out):
         # bề ngang nhãn: cột có ≥ 30 % điểm nhãn trong dải
         cov = np.array([mask[int(ta + tb):int(ba + bb), x].mean() for x in range(int(cx - 0.97 * rm), int(cx + 0.97 * rm) + 1)])
         xx = np.arange(int(cx - 0.97 * rm), int(cx + 0.97 * rm) + 1)[cov > 0.3]
+        if len(xx) < 0.5 * rm: xx = np.array([int(cx - 0.97 * rm), int(cx + 0.97 * rm)])
         u0 = float(np.arcsin(np.clip((xx[0] - cx) / rm, -1, 1))); u1 = float(np.arcsin(np.clip((xx[-1] - cx) / rm, -1, 1)))
         wrap = u0 < -1.15 and u1 > 1.15
         u0, u1 = (max(u0, -1.2566), min(u1, 1.2566)) if wrap else (u0, u1)
@@ -208,6 +210,8 @@ def det(sess, slug, out):
         for i in range(1, n + 1):
             if sizes[i] > 0.015 * a.sum(): keep |= lab == i
         keep = ndi.binary_fill_holes(ndi.binary_closing(keep, iterations=6))
+        if keep.sum() < 0.25 * a.sum() and keep.any():   # nhãn nền trắng bị nhận nhầm là nhôm: lấy khung chữ nhật bao quanh
+            ky, kx = np.where(keep); keep[ky.min():ky.max() + 1, kx.min():kx.max() + 1] = True
         alpha = (ndi.binary_dilation(keep, iterations=1) & a).astype(np.float32)
         alpha = cv2.GaussianBlur(alpha, (0, 0), 0.8)
         basecol = [223, 226, 230]
