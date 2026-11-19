@@ -3,6 +3,7 @@
 // Sinh nhãn chỉnh sửa được cho mọi sản phẩm đang hiển thị trên web.
 //   node scripts/build-labels.js                 SVG + PNG xem trước + PDF in thử + tờ tổng hợp
 //   node scripts/build-labels.js --chi g7,kalimix   chỉ vài sản phẩm (theo slug)
+//   node scripts/build-labels.js --nguon brand/nhuong-15/labels.json --out brand/nhuong-15   bộ nhãn riêng
 //   node scripts/build-labels.js --khong-pdf     bỏ PDF (nhanh hơn)
 //   node scripts/build-labels.js --kiem-tra      chỉ dàn trang + kiểm tra chữ tràn ở MỌI khổ, không ghi file
 //   node scripts/build-labels.js --dung-ban-luu  áp thêm các thay đổi đã lưu ở /quan-tri/nhan (DATA_DIR/label-edits.json)
@@ -59,6 +60,8 @@ function defaultLabel(p) {
 
 // labels.json luôn có đủ sản phẩm đang hiển thị: thêm sản phẩm mới, giữ nguyên nội dung đã sửa.
 function loadLabels({ write = true } = {}) {
+  // --nguon <file>: dùng nguyên danh sách nhãn trong file đó (bộ nhãn riêng, không gộp với sản phẩm trên web).
+  if (opt('--nguon')) { const doc = readJson(path.resolve(opt('--nguon'))); return { doc, list: doc.san_pham, added: 0 }; }
   const file = path.join(BRAND, 'labels.json');
   const products = readJson(path.join(ROOT, 'content', 'products.json')).filter((p) => !HIDDEN.has(p.slug));
   const doc = fs.existsSync(file) ? readJson(file) : { _ghi_chu: [], san_pham: [] };

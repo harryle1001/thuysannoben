@@ -1,0 +1,97 @@
+{
+ "tao_luc": "2026-11-19T00:54:02.289Z",
+ "so_nhan": 15,
+ "loi": 0,
+ "nhan": [
+  {
+   "nhan": "clear-12h@tui",
+   "co_chu_pt": 6.1,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "rovazyme@tui",
+   "co_chu_pt": 6.8,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "ben-bkc@chai",
+   "co_chu_pt": 6.1,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "vh-glubenco-pro@chai",
+   "co_chu_pt": 5.1,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "super-yucca@chai",
+   "co_chu_pt": 5.8,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "mix-79@tui",
+   "co_chu_pt": 6.8,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "ben-copper-500@chai",
+   "co_chu_pt": 6.1,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "super-cut-alga@tui",
+   "co_chu_pt": 7.5,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "vh-dio-99@chai",
+   "co_chu_pt": 5.8,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "us-lacto@tui",
+   "co_chu_pt": 6.6,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "biotic-99@chai",
+   "co_chu_pt": 5.6,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "amin-care@chai",
+   "co_chu_pt": 5.9,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "hepaliver-fs@chai",
+   "co_chu_pt": 5,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "liver-max@chai",
+   "co_chu_pt": 4.7,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "premix-ora@chai",
+   "co_chu_pt": 6.1,
+   "duoi_toi_thieu": false,
+   "loi": []
+  }
+ ]
+}
