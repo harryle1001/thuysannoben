@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
-// Đặt NHÃN CŨ (đã nắn phẳng, nâng 4K bằng scripts/mockup-nhan-cu.py) lên bao bì dựng 3D thật:
-// chai HDPE 500 ml, hũ nhựa 500 g, túi đứng nhôm bạc có zip 250 g, bao gối 5 kg.
+// Đặt nhãn (PNG 4K từ scripts/mockup-nhan-moi.js, hoặc nhãn cũ từ scripts/mockup-nhan-cu.py) lên bao bì dựng 3D thật:
+// chai HDPE 1 lít, hũ nhựa 500 g, túi đứng nhôm bạc có zip 250 g, bao gối 5 kg.
 //   node scripts/mockup-3d-cu.js --dir <thư mục nhãn> --out anh.png --shot chai|hu|tui|bao|bo [--goc 0|34] [--w 3072 --h 3840]
 // Cần: npm i three@0.149.0 --no-save (Chromium + Playwright có sẵn).
 const fs = require('fs');
@@ -57,32 +57,31 @@ function scene() {
   const arc = (a0, a1, cx, cy, rr, n, out) => { for (let i = 1; i <= n; i++) { const t = a0 + (a1 - a0) * i / n; out.push([cx + rr * Math.cos(t), cy + rr * Math.sin(t)]); } };
 
   // Nhãn quấn trụ: cung trước 144° mang ảnh nhãn, cung sau 216° chỉ là màu nền nối hai mép
-  function wrap(g, img, R, y0, y1, gloss) {
-    const half = 72 * Math.PI / 180;
-    const mk = (t, a0, len) => {
-      const m = new THREE.Mesh(new THREE.CylinderGeometry(R, R, y1 - y0, 200, 1, true, a0, len), new THREE.MeshPhysicalMaterial({ map: t, roughness: gloss ? 0.36 : 0.55, clearcoat: gloss ? 0.35 : 0.1, clearcoatRoughness: 0.35, envMapIntensity: 0.7 }));
-      m.position.y = (y0 + y1) / 2; m.receiveShadow = true; g.add(m);
-    };
-    mk(tex(img), -half, 2 * half); mk(edgeTex(img), half, 2 * Math.PI - 2 * half);
+  // Nhãn decal dán mặt trước thân trụ: rộng wd, cao ht (cm), tâm ở độ cao yc
+  function front(g, img, R, yc, wd, ht) {
+    const len = wd / R;
+    const m = new THREE.Mesh(new THREE.CylinderGeometry(R, R, ht, 220, 1, true, -len / 2, len),
+      new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.5, clearcoat: 0.22, clearcoatRoughness: 0.42, envMapIntensity: 0.62 }));
+    m.position.y = yc; m.receiveShadow = true; g.add(m);
   }
 
   const hdpe = new THREE.MeshPhysicalMaterial({ color: 0xf2f2ef, roughness: 0.46, clearcoat: 0.16, clearcoatRoughness: 0.5, sheen: 0.2, sheenRoughness: 0.8, envMapIntensity: 0.9 });
   const capMat = new THREE.MeshPhysicalMaterial({ color: 0xfafaf8, roughness: 0.4, clearcoat: 0.25, clearcoatRoughness: 0.4, envMapIntensity: 0.9 });
 
-  // ---- Chai HDPE 500 ml: Ø73 × cao 187 mm, vai tròn, cổ có gờ, nắp vặn Ø39 có khía (đo theo ảnh chai Super Yucca cũ)
+  // ---- Chai HDPE 1 lít: Ø92 × cao 247 mm, thân trụ cao 150 mm (vừa nhãn 90 × 145,6 mm), vai cong, cổ có gờ, nắp vặn có khía
   function chai(img) {
-    const g = new THREE.Group(); const R = 3.65;
-    const p = [[0, 0.12], [2.3, 0.12], [2.75, 0]]; arc(-Math.PI / 2, 0, R - 0.85, 0.85, 0.85, 12, p);
-    p.push([R, 14.1]); arc(0, Math.PI / 2, R - 1.75, 14.1, 1.75, 16, p);        // vai bo tròn
-    p.push([2.45, 15.95], [2.28, 16.25], [2.28, 16.75], [2.02, 16.82], [1.9, 17.0], [1.9, 17.4]);
-    g.add(lathe(p, 192, hdpe));
-    const cp = [[0, 1.5], [1.72, 1.5], [1.88, 1.45], [1.96, 1.32], [1.98, 1.15], [1.98, 0.05], [1.92, 0], [1.8, 0]];
-    const cap = lathe(cp, 128, capMat); cap.position.y = 17.2; g.add(cap);
-    const ring = lathe([[1.9, 0], [2.14, 0.02], [2.16, 0.26], [2.1, 0.3], [1.9, 0.3]], 128, capMat); ring.position.y = 16.86; g.add(ring);
-    const rib = new THREE.CylinderGeometry(0.075, 0.075, 1.12, 10);
-    for (let i = 0; i < 44; i++) { const a = (i / 44) * Math.PI * 2; const m = new THREE.Mesh(rib, capMat); m.position.set(Math.sin(a) * 1.985, 17.2 + 0.62, Math.cos(a) * 1.985); g.add(m); }
-    wrap(g, img, R + 0.012, 2.45, 13.55, true);                                  // màng co in kín thân
-    contact(g, 13, 10); g.userData = { h: 18.7, w: 7.3 };
+    const g = new THREE.Group(); const R = 4.6;
+    const p = [[0, 0.12], [3.0, 0.12], [3.55, 0]]; arc(-Math.PI / 2, 0, R - 0.95, 0.95, 0.95, 12, p);
+    p.push([R, 15.75]); arc(0, Math.PI / 2, R - 2.4, 15.75, 2.4, 20, p);
+    p.push([2.2, 18.3], [2.2, 18.55], [2.52, 18.65], [2.52, 18.95], [2.12, 19.05], [2.12, 20.85]);
+    g.add(lathe(p, 200, hdpe));
+    const ring = lathe([[2.12, 0], [2.5, 0.03], [2.52, 0.34], [2.44, 0.4], [2.12, 0.4]], 128, capMat); ring.position.y = 19.12; g.add(ring);
+    const cp = [[0, 2.62], [2.05, 2.62], [2.26, 2.56], [2.38, 2.42], [2.42, 2.22], [2.42, 0.06], [2.36, 0], [2.12, 0]];
+    const cap = lathe(cp, 128, capMat); cap.position.y = 19.6; g.add(cap);
+    const rib = new THREE.CylinderGeometry(0.06, 0.06, 2.0, 8);
+    for (let i = 0; i < 80; i++) { const a = (i / 80) * Math.PI * 2; const m = new THREE.Mesh(rib, capMat); m.position.set(Math.sin(a) * 2.425, 19.6 + 1.12, Math.cos(a) * 2.425); g.add(m); }
+    front(g, img, R + 0.012, 8.4, 9.0, 14.562);
+    contact(g, 15, 11); g.userData = { h: 22.2, w: 9.2 };
     return g;
   }
 
@@ -96,7 +95,7 @@ function scene() {
     const lid = lathe(lp, 192, capMat); lid.position.y = 12.72; g.add(lid);
     const rib = new THREE.CylinderGeometry(0.05, 0.05, 1.55, 8);
     for (let i = 0; i < 150; i++) { const a = (i / 150) * Math.PI * 2; const m = new THREE.Mesh(rib, capMat); m.position.set(Math.sin(a) * 5.035, 12.72 + 0.95, Math.cos(a) * 5.035); g.add(m); }
-    wrap(g, img, R + 0.012, 2.0, 11.85, false);
+    front(g, img, R + 0.012, 6.95, 9.4 * 0.618, 9.4);                        // nhãn khổ túi thu nhỏ 61,8 × 100 mm cho vừa thân hũ
     contact(g, 18, 13); g.userData = { h: 15, w: 10 };
     return g;
   }
@@ -137,9 +136,9 @@ function scene() {
     g.add(film(sheet(f(-1, 0), -1, 1, 0, 1, 220, 340, true), foil));
     // đáy xếp
     g.add(film(sheet((u, v) => { const [d] = depth(u, 0); return [u * Wd / 2 * (1 - 0.0225), 0.02 + 0.5 * (1 - Math.pow(2 * v - 1, 2)) * Math.min(1, d), (2 * v - 1) * (d + 0.02)]; }, -1, 1, 0.0001, 0.9999, 120, 24, true), foil));
-    // nhãn in: 121 × 143 mm, mép trên cách miệng túi 65 mm
+    // nhãn decal 110 × 178 mm, mép trên cách miệng túi 43 mm
     const lm = new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.42, clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.6, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-    const l = film(sheet(f(1, 0.012), -0.756, 0.758, 0.161, 0.738, 200, 240, false), lm); l.castShadow = false; g.add(l);
+    const l = film(sheet(f(1, 0.012), -0.706, 0.706, 0.109, 0.827, 200, 280, false), lm); l.castShadow = false; g.add(l);
     contact(g, 24, 11); g.userData = { h: Ht, w: Wd };
     return g;
   }
@@ -161,12 +160,12 @@ function scene() {
       const zig = edge ? edge * 0.13 * (2 * Math.abs(((x / 0.34) % 1 + 1) % 1 - 0.5)) : 0;   // mép răng cưa
       return [x, v * Ht + zig, sg * (d + 0.02 + eps)];
     };
-    const yel = new THREE.MeshPhysicalMaterial({ color: 0xe9d31c, metalness: 0.25, roughness: 0.3, clearcoat: 0.5, clearcoatRoughness: 0.3, envMapIntensity: 0.85, side: THREE.DoubleSide });
+    const yel = new THREE.MeshPhysicalMaterial({ color: 0xdfe2e6, metalness: 0.9, roughness: 0.32, envMapIntensity: 1.1, side: THREE.DoubleSide });
     g.add(film(sheet(f(1, 0), -1, 1, 0, 1, 330, 700, false), yel));
     g.add(film(sheet(f(-1, 0), -1, 1, 0, 1, 330, 700, true), yel));
-    // phần in mặt trước: cao 382 mm, tràn hết bề ngang, cách mép trên 78 mm
-    const pmat = new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.32, metalness: 0.08, clearcoat: 0.5, clearcoatRoughness: 0.3, envMapIntensity: 0.7, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-    const l = film(sheet(f(1, 0.012), -1, 1, 0.097, 0.846, 300, 520, false), pmat); l.castShadow = false; g.add(l);
+    // nhãn decal khổ túi phóng φ lần: 178 × 288 mm, giữa thân bao
+    const pmat = new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.42, clearcoat: 0.3, clearcoatRoughness: 0.4, envMapIntensity: 0.6, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+    const l = film(sheet(f(1, 0.012), -0.715, 0.715, 0.218, 0.782, 300, 520, false), pmat); l.castShadow = false; g.add(l);
     const wrapG = new THREE.Group(); g.rotation.x = -0.075; g.position.y = 0.05; wrapG.add(g);
     contact(wrapG, 40, 16); wrapG.userData = { h: Ht, w: Wd };
     return wrapG;
@@ -194,7 +193,7 @@ function scene() {
     cam.position.set(4, 34, 205); cam.lookAt(-1.5, 20.5, 0); setFog(205);
   } else {
     const o = make[CFG.shot](TEX[CFG.shot]); const { h, w } = o.userData;
-    o.rotation.y = -CFG.goc * Math.PI / 180 * (CFG.shot === 'chai' || CFG.shot === 'hu' ? 0.62 : 1); s.add(o);   // chai, hũ chỉ xoay ~21° vì nhãn gốc chỉ có nửa mặt trước
+    o.rotation.y = -CFG.goc * Math.PI / 180; s.add(o);
     lights(Math.max(h, w * 1.3));
     const fov = 21; cam = new THREE.PerspectiveCamera(fov, CFG.W / CFG.H, 1, 4000);
     const frameH = Math.max(h * PHI, w * 1.5 * PHI * CFG.H / CFG.W);          // bao bì chiếm 61,8% chiều cao khung
