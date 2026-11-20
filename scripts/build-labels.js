@@ -259,4 +259,4 @@ figcaption{font-size:6pt;margin-top:1mm;text-align:center;color:#4a5b78}
 }
 
 if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
-module.exports = { loadLabels, defaultLabel, guessPack, LAYERS, main };
+module.exports = { loadLabels, defaultLabel, guessPack, LAYERS, main, fontCss };
