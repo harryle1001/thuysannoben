@@ -46,3 +46,7 @@ Mọi ảnh đều đã được chỉnh sửa so với bản gốc: cắt theo 
 | vi-khuan-vibrio-trong-ao-tom | Chainwit. | [TCBS agar plate of Vibrio Cholerae and vibrio parahaemolyticus.jpg](https://commons.wikimedia.org/wiki/File:TCBS_agar_plate_of_Vibrio_Cholerae_and_vibrio_parahaemolyticus.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 3355×2516 |
 | virus-div1-anh-sang-tren-tom | Louisiana Sea Grant | [Mike the Tiger Prawn 08.20.2013 043.jpg](https://commons.wikimedia.org/wiki/File:Mike_the_Tiger_Prawn_08.20.2013_043.jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | 4928×3264 |
 | vong-doi-sinh-hoc-tom-the-chan-trang | Judgefloro | [2884Whiteleg shrimp in the Philippines textures 14.jpg](https://commons.wikimedia.org/wiki/File:2884Whiteleg_shrimp_in_the_Philippines_textures_14.jpg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | 4608×3456 |
+
+## Chuyên mục Đại lý & gia công (20/11/2026)
+
+10 ảnh bìa bài đại lý do Noben tự dựng: logo Noben, ảnh nhà máy Noben (`/images/brand/banner-2.webp`) và ảnh sản phẩm Noben đã tách nền. Không dùng ảnh bên ngoài.
