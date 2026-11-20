@@ -16,14 +16,15 @@ const esc = (s) => String(s);
 
 // Logo NOBEN cũ (hình thoi vàng, ô xanh, chữ trắng nghiêng) dựng lại bằng vector, hộp 100 × 100.
 const LOGO = `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-<defs><linearGradient id="lv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd92a"/><stop offset="1" stop-color="#ffc70a"/></linearGradient>
-<linearGradient id="lx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4d8be0"/><stop offset="1" stop-color="#2f6cc2"/></linearGradient></defs>
-<path d="M50 1 L99 50 L50 99 L1 50 Z" fill="url(#lv)" stroke="#9c9a52" stroke-width="0.9"/>
-<path d="M50 5.5 L94.5 50 L50 94.5 L5.5 50 Z" fill="none" stroke="#e1b006" stroke-width="0.6"/>
-<rect x="24" y="27" width="52" height="46" fill="url(#lx)"/>
-<circle cx="50" cy="27.5" r="5.2" fill="#ffffff"/>
-<text x="50" y="56.5" text-anchor="middle" font-family="'Liberation Sans', Arial, sans-serif" font-weight="700" font-style="italic" font-size="20.5" letter-spacing="0" fill="#ffffff" stroke="#173a73" stroke-width="1.5" paint-order="stroke" stroke-linejoin="round">NOBEN</text>
-<path d="M38 77.5 Q50 80.5 62 77.5" fill="none" stroke="#ffffff" stroke-width="1"/><path d="M41 80.2 Q50 82.6 59 80.2" fill="none" stroke="#ffffff" stroke-width="0.8"/>
+<defs><linearGradient id="lv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd52b"/><stop offset="1" stop-color="#f9c412"/></linearGradient>
+<linearGradient id="lx" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f7fd0"/><stop offset="1" stop-color="#2f6cc0"/></linearGradient></defs>
+<path d="M50 0.8 L99.2 50 L50 99.2 L0.8 50 Z" fill="#ffffff"/>
+<path d="M50 3 L97 50 L50 97 L3 50 Z" fill="url(#lv)" stroke="#8f8d55" stroke-width="0.9"/>
+<path d="M50 6.6 L93.4 50 L50 93.4 L6.6 50 Z" fill="none" stroke="#c9a40a" stroke-width="0.5"/>
+<rect x="23.5" y="27" width="53" height="47" fill="url(#lx)" stroke="#ffffff" stroke-width="1.1"/>
+<circle cx="50" cy="27.4" r="4.6" fill="#ffffff"/>
+<text x="50" y="58.6" text-anchor="middle" textLength="70" lengthAdjust="spacingAndGlyphs" font-family="'Liberation Sans', Arial, sans-serif" font-weight="700" font-style="italic" font-size="20" fill="#ffffff" stroke="#1d3a6e" stroke-width="1.6" paint-order="stroke" stroke-linejoin="round">NOBEN</text>
+<path d="M37 78.6 Q50 81.4 63 78.6" fill="none" stroke="#ffffff" stroke-width="0.9"/><path d="M39.5 80.8 Q50 83.2 60.5 80.8" fill="none" stroke="#ffffff" stroke-width="0.7"/><path d="M42 82.8 Q50 84.6 58 82.8" fill="none" stroke="#ffffff" stroke-width="0.5"/>
 </svg>`;
 
 function item(it) {
@@ -75,6 +76,7 @@ async function main() {
   let goc = src;
   if (xoa.length) { goc = path.join(work, `${name}-sach.png`); execFileSync('python3', [path.join(__dirname, 'xoa-chu-nen.py'), src, goc, JSON.stringify(xoa)]); }
   execFileSync('convert', [goc, '-colorspace', 'RGB', '-filter', 'Lanczos', '-define', 'filter:lobes=4', '-resize', `${SCALE * 100}%`, '-colorspace', 'sRGB', '-unsharp', '0x2.4+0.9+0.02', '-quality', '95', bgFile]);
+  if (spec.lam_net) execFileSync('python3', [path.join(__dirname, 'lam-net-hinh.py'), goc, bgFile, bgFile, JSON.stringify(spec.lam_net)]);
   const bg = 'data:image/jpeg;base64,' + fs.readFileSync(bgFile).toString('base64');
   const { chromium } = require('playwright');
   const browser = await chromium.launch();
