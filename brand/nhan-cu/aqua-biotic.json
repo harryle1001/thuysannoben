@@ -25,13 +25,13 @@
         {"kieu": "muc", "chu": "HƯỚNG DẪN SỬ DỤNG"},
         {"kieu": "gach", "chu": "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau:"},
         {"kieu": "gach", "chu": "Trộn vào thức ăn hằng ngày: 5 ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi."},
-        {"kieu": "gach", "chu": "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường."},
+        {"kieu": "gach", "chu": "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường."},
         {"kieu": "gach", "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."},
         {"kieu": "gach", "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."}
       ]
     },
     {
-      "x": 1102, "y": 50, "w": 488, "h": 460, "r": 0, "co": 24, "dong_cao": 1.49,
+      "x": 1102, "y": 50, "w": 488, "h": 460, "r": 0, "co": 23, "dong_cao": 1.55,
       "noi_dung": [
         {"kieu": "dam", "chu": "Hướng dẫn bảo quản:"},
         {"kieu": "dong", "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."},

@@ -16,7 +16,7 @@
       "dem": 4,
       "co": 12.5,
       "phong": "serif",
-      "dong_cao": 1.3,
+      "dong_cao": 1.15,
       "noi_dung": [
         {
           "kieu": "dong",
@@ -53,8 +53,7 @@
         },
         {
           "kieu": "html",
-          "cl": "muc",
-          "chu": "<b>NGUYÊN LIỆU</b>"
+          "chu": "<b style=\"display:block;margin-top:0.35em\">NGUYÊN LIỆU</b>"
         },
         {
           "kieu": "dong",
@@ -62,8 +61,7 @@
         },
         {
           "kieu": "html",
-          "cl": "muc",
-          "chu": "<b>CÔNG DỤNG</b>"
+          "chu": "<b style=\"display:block;margin-top:0.35em\">CÔNG DỤNG</b>"
         },
         {
           "kieu": "gach",
@@ -83,8 +81,7 @@
         },
         {
           "kieu": "html",
-          "cl": "muc",
-          "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+          "chu": "<b style=\"display:block;margin-top:0.35em\">HƯỚNG DẪN SỬ DỤNG</b>"
         },
         {
           "kieu": "gach",
@@ -223,17 +220,35 @@
   ],
   "logo": [
     {
-      "x": 167.5,
-      "y": 43,
-      "s": 79
+      "x": 169,
+      "y": 43.5,
+      "s": 80
     },
     {
-      "x": 440,
-      "y": 372,
-      "s": 58
+      "x": 437,
+      "y": 368.5,
+      "s": 64
     }
   ],
   "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 264,
+      "y": 76.8,
+      "w": 92,
+      "co": 17.3,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        263,
+        62,
+        94,
+        16
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
     {
       "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
       "x": 483,
@@ -296,35 +311,21 @@
         107
       ],
       "bang_mau": [
-        "#f9f9f8",
-        "#161510",
-        "#a09a14"
+        "#fafaf9",
+        "#a89f05",
+        "#0c0b05",
+        "#d6d5ce",
+        "#9f9d2a",
+        "#adaca8",
+        "#818181",
+        "#302f2d",
+        "#68653b"
       ],
       "net": [
-        "#f9f9f8",
-        "#161510",
-        "#a09a14"
+        "#fafaf9",
+        "#0c0b05"
       ],
-      "mem": 500
-    },
-    {
-      "vung": [
-        78,
-        370,
-        325,
-        396
-      ],
-      "bang_mau": [
-        "#f8f3f2",
-        "#da262d",
-        "#191a19"
-      ],
-      "net": [
-        "#f8f3f2",
-        "#da262d",
-        "#191a19"
-      ],
-      "mem": 500
+      "mem": 300
     }
   ],
   "bao_bi": "tui",

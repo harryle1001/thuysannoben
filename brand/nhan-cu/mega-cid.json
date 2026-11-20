@@ -1,0 +1,235 @@
+{
+  "slug": "mega-cid",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-061789_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    935
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 935. Chữ sửa theo hồ sơ TCCS 01:2025/NOBEN (MEGA CID NEW); hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+  "khung": [
+    {
+      "x": 776,
+      "y": 105,
+      "w": 636,
+      "h": 525,
+      "r": 0,
+      "co": 18,
+      "dong_cao": 1.27,
+      "dem": 10,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": " trong 1 lít sản phẩm",
+          "dam": "THÀNH PHẦN:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:66%\"><span style=\"white-space:nowrap\">Acid formic (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">15,9%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:66%\"><span style=\"white-space:nowrap\">Acid lactic (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">2,8%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:66%\"><span style=\"white-space:nowrap\">Acid propionic (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">3,8%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:66%\"><span style=\"white-space:nowrap\">Dung môi (nước RO) vừa đủ</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">1 lít</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "NGUYÊN LIỆU",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Acid formic, acid lactic, acid propionic, nước."
+        },
+        {
+          "kieu": "html",
+          "chu": "CÔNG DỤNG",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung các acid hữu cơ vào thức ăn cho tôm, cá. Giúp tôm, cá tiêu hóa và hấp thụ thức ăn nhanh và phát triển tốt."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ bổ sung vào thức ăn để ngăn ngừa các bệnh đường ruột, gan tụy, tắc ruột, trống đường ruột, phân trắng..."
+        },
+        {
+          "kieu": "html",
+          "chu": "HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 3 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp kết hợp để trị bệnh: Trộn 7-10 ml/1 kg thức ăn, cho ăn đến khi hết bệnh."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Lắc kỹ trước khi dùng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 792,
+      "y": 662,
+      "w": 334,
+      "h": 79,
+      "r": 0,
+      "co": 18,
+      "dong_cao": 1.2,
+      "dem": 3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 01:2025/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-061789"
+        }
+      ]
+    },
+    {
+      "x": 1140,
+      "y": 661,
+      "w": 248,
+      "h": 81,
+      "r": 0,
+      "co": 18,
+      "dong_cao": 1.08,
+      "dem": 1,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 893,
+      "y": 752,
+      "w": 522,
+      "h": 139,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        1140,
+        740,
+        250,
+        3
+      ],
+      "nen": "trang",
+      "le": 0
+    }
+  ],
+  "logo": [
+    {
+      "x": 785,
+      "y": 765,
+      "w": 103,
+      "h": 104
+    },
+    {
+      "x": 303,
+      "y": 52,
+      "w": 131,
+      "h": 132
+    }
+  ],
+  "cong_ty": {
+    "x": 898,
+    "y": 754,
+    "w": 510,
+    "co": 16.5,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        880,
+        40,
+        1310,
+        100
+      ],
+      "bang_mau": [
+        "#ffffff",
+        "#0a0a0a"
+      ],
+      "net": [
+        "#ffffff",
+        "#0a0a0a"
+      ],
+      "mem": 500,
+      "mau": {
+        "#0a0a0a": "#0a0a0a"
+      }
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    730,
+    935
+  ]
+}

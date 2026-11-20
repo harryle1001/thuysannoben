@@ -1,0 +1,323 @@
+{
+  "slug": "iodine-99",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020763_2.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    588
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 588 (chọn ảnh _2: nét hơn, đủ mặt). Chữ sửa theo hồ sơ TCCS 10:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Ô chữ nền vàng chuyển trắng: khung trong suốt + xóa chữ cũ.",
+  "khung": [
+    {
+      "x": 50,
+      "y": 54,
+      "w": 434,
+      "h": 328,
+      "nen": "trong",
+      "co": 20,
+      "dem": 6,
+      "dong_cao": 1.4,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " (trong 1 lít sản phẩm)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Iodine (min): 1%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dung môi (Nước RO) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "html",
+          "cl": "muc",
+          "chu": "<b>CÔNG DỤNG:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Xử lý môi trường ao nuôi, góp phần hạn chế các tác nhân gây hiện tượng cụt râu, sâu đuôi, hoại tử phụ bộ, phân trắng, đốm đen, đen mang, vàng mang..."
+        }
+      ]
+    },
+    {
+      "x": 1056,
+      "y": 50,
+      "w": 508,
+      "h": 312,
+      "nen": "trong",
+      "co": 20,
+      "dem": 5,
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>LIỀU LƯỢNG VÀ CÁCH DÙNG:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Chuẩn bị ao nuôi: 1 lít/3.000 m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Định kỳ: 1 lít/6.000 - 9.000 m³ nước, 10 - 15 ngày/lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tăng liều gấp đôi khi nước bị nhiễm khuẩn nặng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, tạt vào lúc chiều mát."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng sản phẩm: Ngưng sử dụng trước thu hoạch 7-10 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dong",
+          "chu": " * Lắc đều sản phẩm trước khi sử dụng"
+        },
+        {
+          "kieu": "html",
+          "cl": "muc",
+          "chu": "<b>BẢO QUẢN:</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 1060,
+      "y": 424,
+      "w": 210,
+      "h": 42,
+      "nen": "trong",
+      "co": 13.5,
+      "dem": 1,
+      "dong_cao": 1.4,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>Số TCCS 10:2020/NOBEN</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Mã số tiếp nhận: 02-020763</b>"
+        }
+      ]
+    },
+    {
+      "x": 1066,
+      "y": 468,
+      "w": 200,
+      "h": 80,
+      "nen": "trong",
+      "co": 17,
+      "dem": 1,
+      "dong_cao": 1.58,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "HSD:"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        50,
+        56,
+        434,
+        324
+      ],
+      "mau": "#262626",
+      "nguong": 170,
+      "le": 4
+    },
+    {
+      "vung": [
+        1056,
+        52,
+        508,
+        308
+      ],
+      "mau": "#262626",
+      "nguong": 170,
+      "le": 4
+    },
+    {
+      "vung": [
+        1058,
+        424,
+        214,
+        42
+      ],
+      "mau": "#262626",
+      "nguong": 170,
+      "le": 3
+    },
+    {
+      "vung": [
+        1064,
+        468,
+        150,
+        80
+      ],
+      "mau": "#262626",
+      "nguong": 170,
+      "le": 3
+    },
+    {
+      "vung": [
+        56,
+        418,
+        510,
+        122
+      ],
+      "mau": "#262626",
+      "nguong": 170,
+      "le": 4
+    }
+  ],
+  "logo": [
+    {
+      "x": 702,
+      "y": 25,
+      "w": 88,
+      "h": 89
+    }
+  ],
+  "cong_ty": {
+    "x": 64,
+    "y": 422,
+    "w": 418,
+    "co": 13,
+    "ten": "Sản phẩm của: CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com",
+      "Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        520,
+        115,
+        1010,
+        228
+      ],
+      "bang_mau": [
+        "#fbf8f1",
+        "#e8202a",
+        "#f6ee6b",
+        "#787541",
+        "#e7aca1",
+        "#c54248"
+      ],
+      "net": [
+        "#e8202a",
+        "#fbf8f1"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        540,
+        255,
+        995,
+        300
+      ],
+      "bang_mau": [
+        "#f9f49d",
+        "#3a3773",
+        "#e7e6ca",
+        "#6f6c7d",
+        "#b0afb0"
+      ],
+      "net": [
+        "#3a3773"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        570,
+        510,
+        965,
+        555
+      ],
+      "bang_mau": [
+        "#cd2221",
+        "#ef6e30",
+        "#fce8db",
+        "#e5ac94",
+        "#bd6d5e"
+      ],
+      "net": [
+        "#fce8db"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        1058,
+        368,
+        1232,
+        422
+      ],
+      "bang_mau": [
+        "#f8f8f6",
+        "#f0eeca",
+        "#b2b2aa",
+        "#6d6d66",
+        "#181818"
+      ],
+      "net": [
+        "#181818"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    496,
+    0,
+    1040,
+    588
+  ]
+}

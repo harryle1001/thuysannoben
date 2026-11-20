@@ -50,8 +50,8 @@ function html(spec, bg) {
     return `<div class="khung" id="k${i}" data-co="${k.co || 18.5}" style="${st}"><div class="nd" style="${nd}">${k.noi_dung.map(item).join('')}</div></div>`;
   }).join('');
   const logos = (spec.logo || []).map((l) => `<div class="logo" style="left:${l.x}px;top:${l.y}px;width:${l.w || l.s}px;height:${l.h || l.s}px">${LOGO.replace('<svg ', '<svg preserveAspectRatio="none" ')}</div>`).join('');
-  const c = spec.cong_ty;
-  const cty = c ? `<div class="cty" style="left:${c.x}px;top:${c.y}px;width:${c.w}px;${c.mau ? `color:${c.mau};-webkit-text-stroke-color:${c.mau};` : ''}${c.co ? `--k:${c.co / 13.5};` : ''}"><p class="ten">${esc(c.ten)}</p>${c.dong.map((d) => `<p>${esc(d)}</p>`).join('')}${c.xuat_xu ? `<p class="xx">${esc(c.xuat_xu)}</p>` : ''}</div>` : '';
+  // cong_ty: 1 khối (object) hoặc nhiều khối (mảng, vd túi có khối công ty ở cả mặt trước và mặt sau)
+  const cty = [].concat(spec.cong_ty || []).map((c) => `<div class="cty" style="left:${c.x}px;top:${c.y}px;width:${c.w}px;${c.mau ? `color:${c.mau};-webkit-text-stroke-color:${c.mau};` : ''}${c.co ? `--k:${c.co / 13.5};` : ''}${c.can ? `text-align:${c.can};` : ''}"><p class="ten">${esc(c.ten)}</p>${c.dong.map((d) => `<p>${esc(d)}</p>`).join('')}${c.xuat_xu ? `<p class="xx">${esc(c.xuat_xu)}</p>` : ''}</div>`).join('');
   const vec = (spec.chu_vector || []).map((t) => `<text x="${t.x}" y="${t.y}" textLength="${t.w}" lengthAdjust="spacingAndGlyphs" font-family="${t.phong === 'serif' ? "'Liberation Serif', 'Times New Roman', serif" : "'Liberation Sans', Arial, sans-serif"}" font-weight="700" font-size="${t.co}" fill="${t.mau}"${t.bong ? ' filter="url(#bong)"' : ''}>${esc(t.chu)}</text>`).join('');
   const over = vec ? `<svg class="vec" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"><defs><filter id="bong" x="-5%" y="-40%" width="110%" height="180%"><feDropShadow dx="0" dy="0.6" stdDeviation="0.8" flood-color="#0b3d1c" flood-opacity="0.55"/></filter></defs>${vec}</svg>` : '';
   return `<!doctype html><meta charset="utf-8"><style>

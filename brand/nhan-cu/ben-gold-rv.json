@@ -159,9 +159,17 @@
   },
   {
    "x": 601,
+   "y": 236,
+   "w": 195,
+   "h": 8,
+   "r": 0,
+   "noi_dung": []
+  },
+  {
+   "x": 601,
    "y": 243,
    "w": 195,
-   "h": 61,
+   "h": 60,
    "r": 0,
    "dem": 1,
    "co": 7.4,
@@ -196,15 +204,19 @@
   },
   {
    "x": 541,
-   "y": 306,
+   "y": 303,
    "w": 255,
-   "h": 31,
+   "h": 34,
    "r": 0,
    "dem": 1,
    "co": 7.4,
    "mau": "#231f20",
    "dong_cao": 1.12,
    "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;border-top:1.6px solid #2b2b2b;margin:1.2px 10px 2px 1px\"></span>"
+    },
     {
      "kieu": "dong",
      "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh"

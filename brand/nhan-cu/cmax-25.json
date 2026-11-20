@@ -20,7 +20,7 @@
       "noi_dung": [
         {
           "kieu": "html",
-          "chu": "<span style=\"float:right;width:45%;margin-top:2.6em;font-size:.93em\">- Asen (As) vô cơ: KPH<br>- Cadimi (Cd): KPH<br>- Chì (Pb): KPH<br>- Thủy ngân (Hg): KPH<br>- <i>E.coli</i> &lt; 10 CFU/g<br>- <i>Salmonella</i> spp.: KPH</span><b>THÀNH PHẦN</b>"
+          "chu": "<span style=\"float:right;width:45%;margin-top:2.25em;font-size:.93em\">- Asen (As) vô cơ: KPH<br>- Cadimi (Cd): KPH<br>- Chì (Pb): KPH<br>- Thủy ngân (Hg): KPH<br>- <i>E.coli</i> &lt; 10 CFU/g<br>- <i>Salmonella</i> spp.: KPH</span><b>THÀNH PHẦN</b>"
         },
         {
           "kieu": "dong",
@@ -79,7 +79,7 @@
         },
         {
           "kieu": "gach",
-          "chu": "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, khi sang tôm: Dùng 1 kg/1.000 m³ nước."
+          "chu": "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, cá, khi sang tôm, cá: Dùng 1 kg/1.000 m³ nước."
         },
         {
           "kieu": "gach",
@@ -158,9 +158,9 @@
       ]
     },
     {
-      "x": 84,
+      "x": 80,
       "y": 700,
-      "w": 590,
+      "w": 612,
       "h": 162,
       "r": 0,
       "nen": "#09a753",
