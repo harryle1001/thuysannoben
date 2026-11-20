@@ -41,7 +41,7 @@ function html(spec, bg) {
   const boxes = spec.khung.map((k, i) => `<div class="khung" id="k${i}" style="left:${k.x}px;top:${k.y}px;width:${k.w}px;height:${k.h}px;border-radius:${k.r}px${k.bo_duoi === false ? ` ${k.r}px 0 0` : ''}"><div class="nd">${k.noi_dung.map(item).join('')}</div></div>`).join('');
   const logos = (spec.logo || []).map((l) => `<div class="logo" style="left:${l.x}px;top:${l.y}px;width:${l.s}px;height:${l.s}px">${LOGO}</div>`).join('');
   const c = spec.cong_ty;
-  const cty = c ? `<div class="cty" style="left:${c.x}px;top:${c.y}px;width:${c.w}px"><p class="ten">${esc(c.ten)}</p>${c.dong.map((d) => `<p>${esc(d)}</p>`).join('')}</div>` : '';
+  const cty = c ? `<div class="cty" style="left:${c.x}px;top:${c.y}px;width:${c.w}px"><p class="ten">${esc(c.ten)}</p>${c.dong.map((d) => `<p>${esc(d)}</p>`).join('')}${c.xuat_xu ? `<p class="xx">${esc(c.xuat_xu)}</p>` : ''}</div>` : '';
   const vec = (spec.chu_vector || []).map((t) => `<text x="${t.x}" y="${t.y}" textLength="${t.w}" lengthAdjust="spacingAndGlyphs" font-family="${t.phong === 'serif' ? "'Liberation Serif', 'Times New Roman', serif" : "'Liberation Sans', Arial, sans-serif"}" font-weight="700" font-size="${t.co}" fill="${t.mau}"${t.bong ? ' filter="url(#bong)"' : ''}>${esc(t.chu)}</text>`).join('');
   const over = vec ? `<svg class="vec" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"><defs><filter id="bong" x="-5%" y="-40%" width="110%" height="180%"><feDropShadow dx="0" dy="0.6" stdDeviation="0.8" flood-color="#0b3d1c" flood-opacity="0.55"/></filter></defs>${vec}</svg>` : '';
   return `<!doctype html><meta charset="utf-8"><style>
@@ -60,6 +60,7 @@ html,body{margin:0;width:${W}px;height:${H}px;overflow:hidden}
 .logo{position:absolute}.logo svg{width:100%;height:100%;display:block}
 .cty{position:absolute;font-family:'Liberation Sans',Arial,sans-serif;color:#000;-webkit-text-stroke:.15px #000}
 .cty p{margin:0;white-space:nowrap;transform-origin:0 0;transform:scaleX(.74);font-size:13.5px;line-height:1.45;width:135%}
+.cty .xx{font-weight:700;font-size:16px;line-height:1.3;transform:scaleX(.8);width:125%;margin-top:3px;color:#c8102e}
 .cty .ten{font-weight:700;font-size:21px;line-height:1.25;transform:scaleX(.8);width:125%;margin-bottom:2px}
 </style><div id="nhan">${over}${boxes}${logos}${cty}</div>`;
 }

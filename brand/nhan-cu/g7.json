@@ -174,14 +174,15 @@
   ],
   "cong_ty": {
     "x": 1140,
-    "y": 758,
+    "y": 748,
     "w": 418,
     "ten": "CÔNG TY TNHH NO BEN",
     "dong": [
       "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
       "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
       "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
-    ]
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
   },
   "chu_vector": [
     {
