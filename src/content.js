@@ -39,6 +39,8 @@ const pages = { ...read('pages'), ...policies.load() };
 const symptoms = read('symptoms');
 // Motion-graphic ads per product (motion/ → public/media/ads), shown on the product and landing pages.
 const productVideos = read('product-videos');
+// Mô hình 3D xoay được (WebGL) cho một số sản phẩm: { slug: { kind, mm, tex } }.
+const models3d = read('model-3d');
 // Protocol (phác đồ) and dealer films, keyed by landing slug ("dai-ly" = /tuyen-dai-ly).
 const landingVideos = read('landing-videos');
 const texts = {};
@@ -89,6 +91,10 @@ function refreshProduct(p) {
     p.cutout = size ? { src: `/images/products-cutout/${p.slug}.webp`, ...size } : null;
   }
   p.shot = p.cutout || p.image;
+  p.model3d = models3d[p.slug] || null;
+  // Nhãn phẳng vẽ lại nét (scripts/xuat-anh-web.py) cho nút xem nhãn; không có thì dùng ảnh chính.
+  const lbl = webpSize(path.join(__dirname, '..', 'public', 'images', 'products-label', `${p.slug}.webp`));
+  p.labelImg = lbl ? { src: `/images/products-label/${p.slug}.webp`, ...lbl } : null;
   p.video = productVideos[p.slug] || null;
   p.search = fold([p.name, p.tagline, ...p.uses].join(' ').replace(/<[^>]+>/g, ' '));
 }

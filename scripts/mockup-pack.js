@@ -22,20 +22,21 @@ const only = (opt('--chi', '') || '').split(',').filter(Boolean);
 const list = only.length ? labels.filter((l) => only.includes(l.slug)) : labels;
 // Dán ảnh nhãn có sẵn (vd nhãn cũ vẽ lại): --anh file.png --kho chai --mm 240x135 [--ten g7]
 const ANH = opt('--anh', '');
+const TRONG = args.includes('--trong'); // nền trong suốt (ảnh tách nền cho web)
 if (ANH) { const [mw, mh] = opt('--mm', '240x135').split('x').map(Number); list.length = 0; list.push({ slug: opt('--ten', path.basename(ANH, '.png')), bao_bi: opt('--kho', 'chai'), anh: path.resolve(ANH), mw, mh }); }
 
 // Cảnh 3D, chạy trong trình duyệt. Đơn vị: cm.
 function scene() {
   /* global THREE, CFG, LABEL */
   THREE.ColorManagement.legacyMode = false;
-  const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: !!CFG.trong });
   r.setPixelRatio(1); r.setSize(CFG.W, CFG.H);
   r.outputEncoding = THREE.sRGBEncoding; r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = 0.9;
   r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap; r.physicallyCorrectLights = true;
   document.body.appendChild(r.domElement);
   const s = new THREE.Scene();
   const BG = 0xeceff3;
-  s.background = new THREE.Color(BG);
+  if (!CFG.trong) s.background = new THREE.Color(BG);
 
   // Phòng studio cho phản chiếu mềm
   const env = new THREE.Scene(); env.background = new THREE.Color(0x9a9da2);
@@ -136,7 +137,7 @@ function scene() {
 
   // Sàn, bóng tiếp xúc, đèn
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(2000, 2000), new THREE.MeshStandardMaterial({ color: BG, roughness: 0.92, envMapIntensity: 0.25 }));
-  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; s.add(floor);
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; if (!CFG.trong) s.add(floor);
   const cv = document.createElement('canvas'); cv.width = cv.height = 512; const c = cv.getContext('2d');
   const gr = c.createRadialGradient(256, 256, 20, 256, 256, 250); gr.addColorStop(0, 'rgba(30,36,48,.5)'); gr.addColorStop(.45, 'rgba(30,36,48,.2)'); gr.addColorStop(1, 'rgba(30,36,48,0)');
   c.fillStyle = gr; c.fillRect(0, 0, 512, 512);
@@ -156,7 +157,7 @@ function scene() {
   const d = vis / 2 / Math.tan(fov * Math.PI / 360);
   const ty = Hh * 0.47;
   cam.position.set(0, ty + d * 0.1, d); cam.lookAt(0, ty, 0);
-  s.fog = new THREE.Fog(BG, d * 1.15, d * 2.2);
+  if (!CFG.trong) s.fog = new THREE.Fog(BG, d * 1.15, d * 2.2);
   r.render(s, cam);
   return r.domElement.toDataURL('image/png');
 }
@@ -187,7 +188,7 @@ function scene() {
     await page.setContent('<!doctype html><html><body style="margin:0"></body></html>');
     await page.addScriptTag({ path: THREE_JS });
     await page.evaluate(async (src) => { window.LABEL = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = src; }); }, 'data:image/png;base64,' + png.toString('base64'));
-    const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, kind, lw, lh })}; return (${scene.toString()})(); })()`);
+    const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, kind, lw, lh, trong: TRONG })}; return (${scene.toString()})(); })()`);
     const file = path.join(OUT, `${l.slug}.png`);
     fs.writeFileSync(file, Buffer.from(url.split(',')[1], 'base64'));
     await page.close();
