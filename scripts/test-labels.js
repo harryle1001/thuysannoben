@@ -7,7 +7,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
-const HIDDEN = new Set(['flophen', 'flophenicol-40', 'zicotrim', 'prazi-s', 'de-zoo', 'bronopol', 'ben-xid-3000', 'ben-mkc-4000', 'aqua-tech', 'super-gold']);
+const HIDDEN = require(path.join(ROOT, 'src', 'hidden.js'));
 const LAYERS = ['nen', 'dai-thuong-hieu', 'logo', 'ten-san-pham', 'cong-dung', 'huong-dan', 'thanh-phan', 'phap-ly', 'ma-vach', 'vung-an-toan'];
 let failed = 0;
 const check = (ok, msg) => { console.log(`${ok ? 'OK  ' : 'FAIL'} ${msg}`); if (!ok) failed++; };

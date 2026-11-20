@@ -35,7 +35,7 @@ function clean(input, spec) {
   }
   if (input.phap_ly && typeof input.phap_ly === 'object') {
     out.phap_ly = {};
-    for (const k of FIELDS_LEGAL) out.phap_ly[k] = str(input.phap_ly[k], 120) || '[ĐIỀN]';
+    for (const k of FIELDS_LEGAL) out.phap_ly[k] = str(input.phap_ly[k], 120) || '';
   }
   if ('mau_nhan' in input) out.mau_nhan = /^#[0-9a-f]{6}$/i.test(String(input.mau_nhan || '')) ? String(input.mau_nhan).toLowerCase() : null;
   if ('bao_bi' in input && spec.kho[input.bao_bi]) out.bao_bi = input.bao_bi;

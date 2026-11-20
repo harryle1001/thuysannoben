@@ -42,7 +42,7 @@
     TEXTS.forEach(function (k) { if (form.elements[k]) form.elements[k].value = l[k] == null ? '' : l[k]; });
     if (!state.spec.kho[l.bao_bi]) form.elements.bao_bi.value = 'tui';
     LISTS.forEach(function (k) { form.elements[k].value = (l[k] || []).join('\n'); });
-    form.querySelectorAll('[data-legal]').forEach(function (inp) { inp.value = (l.phap_ly || {})[inp.dataset.legal] || '[ĐIỀN]'; });
+    form.querySelectorAll('[data-legal]').forEach(function (inp) { inp.value = (l.phap_ly || {})[inp.dataset.legal] || ''; });
     state.colorSet = Boolean(l.mau_nhan);
     form.elements.mau_nhan.value = l.mau_nhan || themeColor(l);
     var o = l.so_dang_ky_tham_khao || l.so_dang_ky_doc_tu_anh;
@@ -63,7 +63,7 @@
     TEXTS.forEach(function (k) { if (form.elements[k]) out[k] = form.elements[k].value.trim(); });
     LISTS.forEach(function (k) { out[k] = form.elements[k].value.split('\n').map(function (s) { return s.trim(); }).filter(Boolean); });
     out.phap_ly = {};
-    form.querySelectorAll('[data-legal]').forEach(function (inp) { out.phap_ly[inp.dataset.legal] = inp.value.trim() || '[ĐIỀN]'; });
+    form.querySelectorAll('[data-legal]').forEach(function (inp) { out.phap_ly[inp.dataset.legal] = inp.value.trim() || ''; });
     out.mau_nhan = state.colorSet ? form.elements.mau_nhan.value : null;
     return out;
   }

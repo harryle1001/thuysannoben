@@ -1,23 +1,17 @@
 {
- "tao_luc": "2026-11-20T02:59:11.220Z",
- "so_nhan": 94,
+ "tao_luc": "2026-11-20T08:56:12.652Z",
+ "so_nhan": 72,
  "loi": 0,
  "nhan": [
   {
-   "nhan": "amylac@tui",
-   "co_chu_pt": 7.3,
+   "nhan": "aqua-bac@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "aqua-bac@tui",
-   "co_chu_pt": 5.2,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "aqua-bz@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "aqua-bz@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -34,38 +28,26 @@
    "loi": []
   },
   {
-   "nhan": "bacpower@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "bacpower@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "ben-bkc-80@chai",
-   "co_chu_pt": 5.9,
+   "nhan": "ben-copper-500@chai-lon",
+   "co_chu_pt": 6.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "ben-copper-500@chai",
-   "co_chu_pt": 4.8,
+   "nhan": "ben-gold-rv@chai-lon",
+   "co_chu_pt": 6.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "ben-gold-rv@chai",
-   "co_chu_pt": 4.8,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "ben-iq@chai",
-   "co_chu_pt": 5.4,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "bio-book@tui",
-   "co_chu_pt": 6.4,
+   "nhan": "ben-iq@chai-lon",
+   "co_chu_pt": 7.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -76,8 +58,8 @@
    "loi": []
   },
   {
-   "nhan": "bzt@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "bzt@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -94,8 +76,8 @@
    "loi": []
   },
   {
-   "nhan": "iodine-99@chai",
-   "co_chu_pt": 5.4,
+   "nhan": "iodine-99@chai-lon",
+   "co_chu_pt": 7.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -106,20 +88,14 @@
    "loi": []
   },
   {
-   "nhan": "nb-algae@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "nb-algae@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "nb-biopond@chai",
-   "co_chu_pt": 4.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "no-toxin@chai",
-   "co_chu_pt": 5.1,
+   "nhan": "no-toxin@chai-lon",
+   "co_chu_pt": 6.5,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -130,38 +106,32 @@
    "loi": []
   },
   {
-   "nhan": "prawnzyme@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "prawnzyme@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "pro-algae@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "pro-algae@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "proticbest@chai",
-   "co_chu_pt": 4.9,
+   "nhan": "rova-otic@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "rova-otic@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "rovabio-ap@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "rovabio-ap@tui",
-   "co_chu_pt": 5.2,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "rovazyme@tui",
-   "co_chu_pt": 5.2,
+   "nhan": "rovazyme@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -184,12 +154,6 @@
    "loi": []
   },
   {
-   "nhan": "super-din-600@chai",
-   "co_chu_pt": 4.8,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
    "nhan": "super-oxy-02@xo",
    "co_chu_pt": 8.8,
    "duoi_toi_thieu": false,
@@ -208,18 +172,6 @@
    "loi": []
   },
   {
-   "nhan": "toxic-algae@tui",
-   "co_chu_pt": 7.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "vi-sinh-3-trong-1-chuyen-lam-sach-day-nuoc-cat-tao-sach-nhot-bat@tui",
-   "co_chu_pt": 7.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
    "nhan": "yucca-99@chai",
    "co_chu_pt": 6.1,
    "duoi_toi_thieu": false,
@@ -232,14 +184,8 @@
    "loi": []
   },
   {
-   "nhan": "clear-12h@tui",
-   "co_chu_pt": 5.2,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "bio-max@tui",
-   "co_chu_pt": 7.5,
+   "nhan": "clear-12h@tui-lon",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -252,12 +198,6 @@
   {
    "nhan": "down-max-ha-phen@tui",
    "co_chu_pt": 6.8,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "kalimix@tui",
-   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -276,12 +216,6 @@
   {
    "nhan": "mix-79@tui",
    "co_chu_pt": 7.3,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo@tui",
-   "co_chu_pt": 7.5,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -334,8 +268,8 @@
    "loi": []
   },
   {
-   "nhan": "aqua-biotic@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "aqua-biotic@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -376,26 +310,20 @@
    "loi": []
   },
   {
-   "nhan": "biotic-99@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "biotic-99@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "biozyme@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "biozyme@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "butypho@chai",
-   "co_chu_pt": 5.8,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "bz-99@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "bz-99@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -418,20 +346,20 @@
    "loi": []
   },
   {
-   "nhan": "davi-cid-liquid@chai",
-   "co_chu_pt": 5.4,
+   "nhan": "davi-cid-liquid@chai-lon",
+   "co_chu_pt": 6.9,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "hepaliver-fs@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "hepaliver-fs@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "hepatic@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "hepatic@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -442,14 +370,14 @@
    "loi": []
   },
   {
-   "nhan": "hufa@chai",
-   "co_chu_pt": 5.4,
+   "nhan": "hufa@chai-lon",
+   "co_chu_pt": 6.9,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "liver-max@chai",
-   "co_chu_pt": 5.3,
+   "nhan": "liver-max@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -472,26 +400,14 @@
    "loi": []
   },
   {
-   "nhan": "nb-helvirol-b12@chai",
-   "co_chu_pt": 5.3,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "nb-sorbitol-b12@tui",
-   "co_chu_pt": 7,
+   "nhan": "nb-helvirol-b12@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "pro-aq@tui",
    "co_chu_pt": 6,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "prolac@tui",
-   "co_chu_pt": 7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -508,62 +424,14 @@
    "loi": []
   },
   {
-   "nhan": "top-weigh@tui",
-   "co_chu_pt": 7.5,
+   "nhan": "g7-phong-va-tri-benh-gan-chet-som@chai-lon",
+   "co_chu_pt": 6.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "us-lacto@tui",
-   "co_chu_pt": 7,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "antiliv@chai",
-   "co_chu_pt": 5.8,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "bio-mos@tui",
-   "co_chu_pt": 7,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "d-oc@tui",
-   "co_chu_pt": 7,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "g7-phong-va-tri-benh-gan-chet-som@chai",
-   "co_chu_pt": 5.3,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "nb-brown-gay-mau-nuoc-mau-tra@tui",
-   "co_chu_pt": 7.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "sorbest@tui",
-   "co_chu_pt": 4.9,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "sun-blue@tui",
-   "co_chu_pt": 6.9,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "xo-09@tui",
-   "co_chu_pt": 7,
+   "nhan": "sorbest@tui-lon",
+   "co_chu_pt": 6.2,
    "duoi_toi_thieu": false,
    "loi": []
   }

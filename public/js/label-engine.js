@@ -94,6 +94,7 @@
   }
 
   // Ngắt dòng tham lam theo từ; từ dài hơn khung thì cắt theo ký tự.
+  var BLANK = '\u2003\u2003\u2003\u2003\u2003';
   function wrap(M, text, weight, fam, size, width, indent) {
     var words = String(text).split(' ').filter(Boolean);
     var lines = [], cur = '';
@@ -213,8 +214,10 @@
     var legalW = IW - bcW - legalSize * 1.5;
     var legalLines = [];
     if (data.bao_quan) legalLines.push({ t: 'Bảo quản: ' + plain(data.bao_quan), w: 400, c: INK });
-    legalLines.push({ t: 'Số ĐK/MSLH: ' + plain(pl.so_dang_ky || '[ĐIỀN]') + ' · KL tịnh: ' + plain(pl.khoi_luong_tinh || '[ĐIỀN]'), w: 400, c: INK });
-    legalLines.push({ t: 'NSX: ' + plain(pl.nsx || '[ĐIỀN]') + ' · HSD: ' + plain(pl.hsd || '[ĐIỀN]'), w: 400, c: INK });
+    // Ô để trống (in/đóng dấu theo lô): giữ một khoảng em-space, SVG không gộp ký tự này.
+    var val = function (v, last) { v = plain(v); return v && v !== '[ĐIỀN]' ? v : (last ? '' : BLANK); };
+    legalLines.push({ t: 'Số ĐK/MSLH: ' + val(pl.so_dang_ky) + ' · KL tịnh: ' + val(pl.khoi_luong_tinh, true), w: 400, c: INK });
+    legalLines.push({ t: 'NSX: ' + val(pl.nsx) + ' · HSD: ' + val(pl.hsd, true), w: 400, c: INK });
     if (data.quy_cach) legalLines.push({ t: 'Quy cách: ' + plain(data.quy_cach), w: 400, c: INK });
     legalLines.push({ t: plain(data.luu_y || 'Đọc kỹ hướng dẫn sử dụng trước khi dùng.'), w: 600, c: WARN });
     var footLines = [
@@ -477,12 +480,8 @@
       var dy = bcY + bcH - digitSize * 0.1;
       var dg = function (t, x, anchor) { return '<text font-family="' + FAMILY.sans400 + '" font-weight="400" font-size="' + n(digitSize) + '" fill="#000000" text-anchor="' + anchor + '" x="' + n(x) + '" y="' + n(dy) + '">' + t + '</text>'; };
       s.push(dg(code[0], qx - mod * 2, 'end') + dg(code.slice(1, 7), qx + mod * 24, 'middle') + dg(code.slice(7), qx + mod * 71, 'middle'));
-    } else {
-      s.push('<rect x="' + n(bcX) + '" y="' + n(bcY) + '" width="' + n(bcW) + '" height="' + n(bcH) + '" fill="#ffffff" stroke="#c7d3e6" stroke-width="0.25"/>');
-      var ps = Math.max(Math.min(bcH * 0.16, legalSize), minBody * 0.9);
-      s.push('<text font-family="' + FAMILY.sans600 + '" font-weight="600" font-size="' + n(ps) + '" fill="#8a97ab" text-anchor="middle" x="' + n(bcX + bcW / 2) + '" y="' + n(bcY + bcH / 2 - ps * 0.1) + '">MÃ VẠCH</text>');
-      s.push('<text font-family="' + FAMILY.sans400 + '" font-weight="400" font-size="' + n(ps * 0.9) + '" fill="#8a97ab" text-anchor="middle" x="' + n(bcX + bcW / 2) + '" y="' + n(bcY + bcH / 2 + ps * 1.1) + '">EAN-13 [ĐIỀN]</text>');
     }
+    // Chưa có mã vạch: để trống vùng này.
     s.push('</g>');
 
     // vung-an-toan (ẩn): đường xén, tràn lề, vùng an toàn

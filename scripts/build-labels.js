@@ -18,9 +18,9 @@ const flag = (f) => args.includes(f);
 const opt = (f) => { const i = args.indexOf(f); return i > -1 ? args[i + 1] : null; };
 const OUT = path.resolve(opt('--out') || BRAND);
 
-const HIDDEN = new Set(['flophen', 'flophenicol-40', 'zicotrim', 'prazi-s', 'de-zoo', 'bronopol', 'ben-xid-3000', 'ben-mkc-4000', 'aqua-tech', 'super-gold']);
+const HIDDEN = require(path.join(ROOT, 'src', 'hidden.js'));
 const LAYERS = ['nen', 'dai-thuong-hieu', 'logo', 'ten-san-pham', 'cong-dung', 'huong-dan', 'thanh-phan', 'phap-ly', 'ma-vach', 'vung-an-toan'];
-const DIEN = '[ĐIỀN]';
+const DIEN = '';
 const CHIP = { 'gan-ruot': 'Gan ruột', 'mang-dom-den': 'Mang, đốm đen', 'mem-vo': 'Cứng vỏ', 'mau-nuoc': 'Màu nước', 'khi-doc': 'Khí độc', 'oxy-stress': 'Oxy, sốc', 'sat-trung': 'Sát trùng', 'tieu-hoa': 'Tiêu hóa' };
 
 const readJson = (f) => JSON.parse(fs.readFileSync(f, 'utf8'));
