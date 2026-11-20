@@ -1,0 +1,376 @@
+{
+ "slug": "prawnzyme",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-001539_2.jpg",
+ "kich_thuoc_goc": [
+  1600,
+  885
+ ],
+ "_ghi_chu": "Ảnh 02-001539_2 (mặt sau trái, mặt trước phải). Chữ sửa theo hồ sơ TCCS 27:2020/NOBEN; đối tượng tôm. Công dụng và hướng dẫn sử dụng theo TCCS dài hơn nhiều so với nhãn cũ nên cỡ chữ khung chính nhỏ hơn.",
+ "khung": [
+  {
+   "x": 44,
+   "y": 262,
+   "w": 662,
+   "h": 456,
+   "nen": "trong",
+   "co": 19,
+   "dong_cao": 1.28,
+   "dem": 4,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"float:right;width:0;height:379px\"></span><span style=\"float:right;clear:right;width:212px;height:68px\"></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e1222d\">THÀNH PHẦN:</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;width:58%\"><i>Bacillus</i> spp. (min): 1 x 10<sup>9</sup> cfu/kg</span><i>E.coli</i> &lt; 10 CFU/g"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;width:58%\"><i>Bacillus</i> licheniformis: +</span><i>Salmonella</i> spp.: KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "<i>Bacillus</i> megaterium: +"
+    },
+    {
+     "kieu": "html",
+     "chu": "<i>Bacillus</i> mesentericus: +"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chất đệm (Dextrose monohydrate) vừa đủ: 1kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Độ ẩm (max): 10%"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e1222d\">CÔNG DỤNG:</b>",
+     "cl": "muc"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp phân hủy mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Giảm khí độc NH<sub>3</sub>, H<sub>2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi.",
+     "cl": "gach"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e1222d\">HƯỚNG DẪN SỬ DỤNG:</b>",
+     "cl": "muc"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều lượng như sau:"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Chuẩn bị ao: Dùng 454g/2.000-2.500 m³ nước."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Dùng định kỳ: Dùng 454g/3.000-5.000 m³ nước, định kỳ 5-7 ngày sử dụng 1 lần."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000-3.000 m³ nước, dùng liên tục 2 ngày."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000 m³ nước, sử dụng 2 ngày liên tục với liều như trên."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Lưu ý: Sử dụng cho cắt tảo, giảm tảo nên sử dụng vào lúc 10-12 giờ đêm. Có thể ủ sục khí trước khi sử dụng từ trên 12 tiếng để tăng hiệu quả sử dụng của sản phẩm."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e1222d\">BẢO QUẢN:</b>",
+     "cl": "muc"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    }
+   ]
+  },
+  {
+   "x": 704,
+   "y": 262,
+   "w": 40,
+   "h": 284,
+   "noi_dung": []
+  },
+  {
+   "x": 505,
+   "y": 708,
+   "w": 232,
+   "h": 26,
+   "phong": "serif",
+   "co": 21,
+   "dong_cao": 1.1,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>Khối lượng tịnh:</b>"
+    }
+   ]
+  },
+  {
+   "x": 505,
+   "y": 736,
+   "w": 232,
+   "h": 116,
+   "co": 18.5,
+   "dong_cao": 1.24,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Số TCCS 27:2020/NOBEN"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã số tiếp nhận: 02-001539"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"font-family:'Liberation Serif',serif;font-size:1.12em;line-height:2.1\">NSX:</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"font-family:'Liberation Serif',serif;font-size:1.12em\">HSD:</b>"
+    }
+   ]
+  },
+  {
+   "x": 152,
+   "y": 723,
+   "w": 350,
+   "h": 131,
+   "co": 12.6,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.0em;line-height:1.3;text-align:left;\">Sản phẩm của: <b style=\"color:#1f6fb5;font-size:1.55em;vertical-align:-1px\">CÔNG TY TNHH NO BEN</b></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.0em;line-height:1.12;text-align:left;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.0em;line-height:1.12;text-align:left;\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.0em;line-height:1.12;text-align:left;\">Website: thuocthuysannoben.com</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.0em;line-height:1.12;text-align:left;\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi,</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.0em;line-height:1.12;text-align:left;\">Thành phố Hồ Chí Minh, Việt Nam</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:116.28%;margin-left:0.00%;transform:scaleX(0.86);transform-origin:0 0;font-size:1.12em;line-height:1.2;text-align:left;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;\">SẢN XUẤT TẠI VIỆT NAM</span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    44,
+    262,
+    662,
+    383
+   ],
+   "chu": "toi",
+   "le": 3,
+   "no": 9
+  },
+  {
+   "vung": [
+    44,
+    645,
+    456,
+    72
+   ],
+   "chu": "toi",
+   "le": 3,
+   "no": 9
+  },
+  {
+   "vung": [
+    44,
+    262,
+    662,
+    383
+   ],
+   "nen": "trang",
+   "le": 0,
+   "nguong_trang": 254
+  },
+  {
+   "vung": [
+    44,
+    645,
+    456,
+    72
+   ],
+   "nen": "trang",
+   "le": 0,
+   "nguong_trang": 254
+  }
+ ],
+ "logo": [
+  {
+   "x": 51,
+   "y": 741,
+   "w": 97,
+   "h": 106
+  },
+  {
+   "x": 1421,
+   "y": 50,
+   "w": 132,
+   "h": 142
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    55,
+    40,
+    377,
+    252
+   ],
+   "bang_mau": [
+    "#fdfdfc",
+    "#de232c",
+    "#c68269",
+    "#f8c7b5",
+    "#35a5cd",
+    "#9de1f2"
+   ],
+   "net": [
+    "#fdfdfc",
+    "#de232c",
+    "#35a5cd"
+   ],
+   "mem": 500,
+   "mau": {
+    "#fdfdfc": "#ffffff"
+   }
+  },
+  {
+   "vung": [
+    858,
+    153,
+    1212,
+    397
+   ],
+   "bang_mau": [
+    "#fdfefd",
+    "#e1212b",
+    "#1a6db2",
+    "#bf7a5f",
+    "#f7e4d8",
+    "#e7ac9e"
+   ],
+   "net": [
+    "#fdfefd",
+    "#e1212b"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    383,
+    113,
+    732,
+    217
+   ],
+   "bang_mau": [
+    "#fbfbfc",
+    "#3a3a76",
+    "#bcbee1",
+    "#797aa7"
+   ],
+   "net": [
+    "#fbfbfc",
+    "#3a3a76"
+   ],
+   "mem": 500,
+   "mau": {
+    "#fbfbfc": "#ffffff"
+   }
+  },
+  {
+   "vung": [
+    503,
+    646,
+    692,
+    708
+   ],
+   "bang_mau": [
+    "#f8f8f8",
+    "#121212",
+    "#8f8f8f",
+    "#c1c1c1",
+    "#626262"
+   ],
+   "net": [
+    "#f8f8f8",
+    "#121212"
+   ],
+   "mem": 500,
+   "mau": {
+    "#121212": "#0c0c0c",
+    "#f8f8f8": "#ffffff"
+   }
+  }
+ ],
+ "bao_bi": "tui",
+ "kich_thuoc_mm": [
+  240,
+  133
+ ],
+ "mat_truoc": [
+  822,
+  0,
+  1600,
+  885
+ ]
+}

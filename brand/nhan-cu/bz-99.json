@@ -1,0 +1,328 @@
+{
+  "slug": "bz-99",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001542_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    424
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 1600 × 424 (nhãn chai 1 lít quấn). Chữ sửa theo hồ sơ TCCS 72:2020/NOBEN: thành phần Bacillus spp 2,5 × 10^9 CFU/lít (nhãn cũ ghi Bacillus subtilis), liều 5ml/kg (nhãn cũ 4-6ml/kg).",
+  "khung": [
+    {
+      "x": 59,
+      "y": 18,
+      "w": 293,
+      "h": 123,
+      "nen": "#f3f2f7",
+      "dem": 3,
+      "co": 15,
+      "mau": "#1e1e1e",
+      "dong_cao": 1.32,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "&nbsp;- <i>Bacillus</i> spp (min): 2,5 × 10<sup style=\"line-height:0;font-size:.72em\">9</sup> CFU/lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "&nbsp;- Dung môi (nước) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "dam",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Bacillus</i> spp., nước"
+        }
+      ]
+    },
+    {
+      "x": 352,
+      "y": 18,
+      "w": 177,
+      "h": 123,
+      "nen": "#f3f2f7",
+      "dem": 3,
+      "co": 15,
+      "mau": "#1e1e1e",
+      "dong_cao": 1.18,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;height:.75em\"></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Aflatoxin B1: KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- <i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- <i>Salmonella</i> spp.: KPH"
+        }
+      ]
+    },
+    {
+      "x": 59,
+      "y": 141,
+      "w": 470,
+      "h": 253,
+      "nen": "#f3f2f7",
+      "dem": 3,
+      "co": 15,
+      "mau": "#1e1e1e",
+      "dong_cao": 1.34,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:0.5em\">HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Trộn vào thức ăn hằng ngày: 5ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 1015,
+      "y": 33,
+      "nen": "#f3f2f7",
+      "w": 556,
+      "h": 52,
+      "dem": 2,
+      "co": 16,
+      "mau": "#1e1e1e",
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 1015,
+      "y": 90,
+      "nen": "#f3f2f7",
+      "w": 312,
+      "h": 104,
+      "dem": 2,
+      "co": 16,
+      "mau": "#1e1e1e",
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 72:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-001542"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-81"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        }
+      ]
+    },
+    {
+      "x": 1330,
+      "y": 90,
+      "nen": "#f3f2f7",
+      "w": 240,
+      "h": 104,
+      "dem": 2,
+      "co": 16,
+      "mau": "#1e1e1e",
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 1108,
+      "y": 284,
+      "nen": "#f3f2f7",
+      "w": 464,
+      "h": 110,
+      "noi_dung": []
+    }
+  ],
+  "cong_ty": {
+    "x": 1114,
+    "y": 289,
+    "w": 455,
+    "co": 12,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 1011,
+      "y": 287.5,
+      "s": 92
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 685,
+      "y": 122.6,
+      "w": 112,
+      "co": 22.6,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        683,
+        105,
+        117,
+        19
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 551,
+      "y": 371,
+      "w": 427,
+      "co": 20,
+      "phong": "serif",
+      "mau": "#ffffff",
+      "xoa": [
+        548,
+        349,
+        434,
+        25
+      ],
+      "chu_cu": "sang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        600,
+        0,
+        960,
+        75
+      ],
+      "bang_mau": [
+        "#dc212b",
+        "#fbf10f",
+        "#fbcb36",
+        "#ca4f0e"
+      ],
+      "net": [
+        "#dc212b",
+        "#fbf10f"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        600,
+        150,
+        900,
+        342
+      ],
+      "bang_mau": [
+        "#2b3293",
+        "#226bb3",
+        "#ebf8f9",
+        "#8ab1c9",
+        "#555e74"
+      ],
+      "net": [
+        "#2b3293",
+        "#226bb3",
+        "#ebf8f9"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    64
+  ],
+  "mat_truoc": [
+    530,
+    0,
+    1010,
+    424
+  ]
+}

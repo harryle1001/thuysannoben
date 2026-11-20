@@ -1,0 +1,253 @@
+{
+  "slug": "sorbest",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001138_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    970
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 970. Chữ sửa theo hồ sơ TCCS 67:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Đối tượng: tôm, cá.",
+  "khung": [
+    {
+      "x": 786,
+      "y": 58,
+      "w": 782,
+      "h": 610,
+      "r": 0,
+      "co": 20,
+      "dong_cao": 1.36,
+      "dem": 10,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"float:right;width:44%;margin-top:1.3em\">- Asen (As) vô cơ: 0,21 mg/kg<br>- Cadimi (Cd): KPH<br>- Chì (Pb): KPH<br>- Thủy ngân (Hg): KPH</span><b>THÀNH PHẦN:</b> trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Sorbitol (min): 500 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Độ ẩm (max): 10%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chất đệm (dextrose) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "NGUYÊN LIỆU",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sorbitol, dextrose"
+        },
+        {
+          "kieu": "html",
+          "chu": "CÔNG DỤNG",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung sorbitol vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá."
+        },
+        {
+          "kieu": "html",
+          "chu": "HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Lấy 1 gói Sorbest ngâm với nước ấm 40-50°C (nước pha trà) trong 15 phút rồi đem trộn vào thức ăn (có thể tạt xuống ao) với liều lượng như sau:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "* Sử dụng cho định kỳ:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tạt xuống ao với liều 500g/1.600m³ nước, 5-7 ngày tạt 1 lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn vào thức ăn: Trộn 5g/1kg thức ăn, cho ăn ngày 3 - 4 lần và suốt vụ nuôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "* Sử dụng khi gan tôm, cá yếu, ăn kém, gan mờ, đỏ gan..."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 10g/1kg thức ăn, cho ăn 2-3 lần/ngày và cho ăn liên tục 3-5 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tạt xuống ao: Dùng 500g/1.000m³ nước, tạt liên tục 2-3 hôm."
+        },
+        {
+          "kieu": "dong",
+          "chu": "* Lưu ý:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Khi tạt xuống ao nên tạt cách xa bờ 1,5 -20m, để yên 45-60 phút rồi chạy quạt."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Nên trộn cho tôm, cá ăn liên tục từ khi thả nuôi đến thu hoạch để hỗ trợ tôm, cá sinh trưởng và phát triển tốt, lớn nhanh."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Định kỳ 5-7 ngày tạt xuống ao 1 lần để hỗ trợ tăng miễn dịch cho tôm, cá."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dong",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.",
+          "dam": "Hướng dẫn bảo quản:"
+        }
+      ]
+    },
+    {
+      "x": 801,
+      "y": 676,
+      "w": 385,
+      "h": 104,
+      "r": 0,
+      "co": 20,
+      "dong_cao": 1.38,
+      "dem": 3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 67:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-001138"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-76"
+        }
+      ]
+    },
+    {
+      "x": 1202,
+      "y": 676,
+      "w": 354,
+      "h": 104,
+      "r": 0,
+      "co": 20,
+      "dong_cao": 1.22,
+      "dem": 1,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 900,
+      "y": 790,
+      "w": 668,
+      "h": 134,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        1203,
+        776,
+        352,
+        6
+      ],
+      "nen": "trang",
+      "le": 0
+    }
+  ],
+  "logo": [
+    {
+      "x": 789,
+      "y": 804,
+      "w": 104,
+      "h": 105
+    }
+  ],
+  "cong_ty": {
+    "x": 926,
+    "y": 793,
+    "w": 630,
+    "co": 15.5,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        250,
+        376,
+        540,
+        462
+      ],
+      "bang_mau": [
+        "#f9faf9",
+        "#0a0c09",
+        "#757e6a",
+        "#a2a3a1",
+        "#d1d1cf",
+        "#40403c"
+      ],
+      "net": [
+        "#f9faf9",
+        "#0a0c09"
+      ],
+      "mem": 500,
+      "mau": {
+        "#0a0c09": "#0a0c09"
+      }
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    330,
+    200
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    760,
+    970
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "super-bioca",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-000893_1.jpg",
+  "kich_thuoc_goc": [
+    1526,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1526 × 1080. Ảnh duy nhất là nhãn có nhà phân phối LPI (sản phẩm của/sản xuất tại Noben); khối LPI giữ nguyên như nhãn đăng ký. Chữ sửa theo hồ sơ TCCS 07:2016/NOBEN; chữ trên nền xanh vàng: khung trong suốt + xóa chữ cũ. Đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 110,
+      "y": 313,
+      "w": 337,
+      "h": 150,
+      "r": 0,
+      "dem": 3,
+      "co": 20.5,
+      "dong_cao": 1.4,
+      "nen": "trong",
+      "mau": "#1a1a12",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Saponin (Dịch chiết Yucca schidigera) (min): 2%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Nước RO vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella</i> spp. : KPH"
+        }
+      ]
+    },
+    {
+      "x": 110,
+      "y": 515,
+      "w": 337,
+      "h": 84,
+      "r": 0,
+      "dem": 3,
+      "co": 20.5,
+      "dong_cao": 1.22,
+      "nen": "trong",
+      "mau": "#1a1a12",
+      "noi_dung": [
+        {
+          "kieu": "gach",
+          "chu": "Hấp thu các khí độc NH<sub>3</sub> trong ao nuôi thủy sản."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hấp thụ khí độc, cấp cứu khi tôm nổi đầu do khí độc."
+        }
+      ]
+    },
+    {
+      "x": 110,
+      "y": 632,
+      "w": 337,
+      "h": 76,
+      "r": 0,
+      "dem": 3,
+      "co": 16.5,
+      "dong_cao": 1.3,
+      "nen": "trong",
+      "mau": "#1a1a12",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 1028,
+      "y": 316,
+      "w": 376,
+      "h": 262,
+      "r": 0,
+      "dem": 4,
+      "co": 20.5,
+      "dong_cao": 1.36,
+      "nen": "trong",
+      "mau": "#1a1a12",
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "cl": "dam",
+          "chu": "<span style=\"color:#c33a1a\">HƯỚNG DẪN SỬ DỤNG</span>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Pha loãng sản phẩm với 20 lít nước rồi tạt xuống ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Định kỳ: Dùng 1 lít/4.000 - 6.000 m<sup>3</sup> nước, 7 ngày/lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Khi ao nuôi có khí độc cao: Dùng 1 lít/3.000 - 4.000 m<sup>3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 1030,
+      "y": 649,
+      "w": 360,
+      "h": 82,
+      "r": 0,
+      "dem": 3,
+      "co": 20.5,
+      "dong_cao": 1.25,
+      "nen": "trong",
+      "mau": "#1a1a12",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số TCCS 07:2016/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-07"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-000893"
+        }
+      ]
+    },
+    {
+      "x": 1022,
+      "y": 795,
+      "w": 210,
+      "h": 86,
+      "r": 0,
+      "dem": 6,
+      "co": 19,
+      "dong_cao": 1.45,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô SX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "HSD:"
+        }
+      ]
+    },
+    {
+      "x": 116,
+      "y": 815,
+      "w": 340,
+      "h": 86,
+      "r": 0,
+      "dem": 2,
+      "co": 12,
+      "dong_cao": 1.36,
+      "nen": "trong",
+      "mau": "#004616",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Sản phẩm của/ Sản xuất tại: CÔNG TY TNHH NO BEN."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, ấp Phú Lợi A, Xã Củ Chi,"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thành phố Hồ Chí Minh, Việt Nam"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#c8102e;background:#fff;padding:0 .35em;border-radius:.2em;font-size:1.15em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        112,
+        315,
+        334,
+        146
+      ],
+      "mau": "#000000",
+      "nguong": 200,
+      "no": 7
+    },
+    {
+      "vung": [
+        112,
+        518,
+        334,
+        62
+      ],
+      "mau": "#000000",
+      "nguong": 200,
+      "no": 7
+    },
+    {
+      "vung": [
+        112,
+        634,
+        334,
+        58
+      ],
+      "mau": "#000000",
+      "nguong": 200,
+      "no": 7
+    },
+    {
+      "vung": [
+        1030,
+        318,
+        382,
+        206
+      ],
+      "mau": "#000000",
+      "nguong": 200,
+      "no": 7
+    },
+    {
+      "vung": [
+        1030,
+        318,
+        382,
+        26
+      ],
+      "mau": "#bf3c16",
+      "nguong": 110,
+      "no": 7
+    },
+    {
+      "vung": [
+        1032,
+        651,
+        356,
+        78
+      ],
+      "mau": "#000000",
+      "nguong": 200,
+      "no": 7
+    },
+    {
+      "vung": [
+        118,
+        816,
+        322,
+        50
+      ],
+      "mau": "#004616",
+      "nguong": 55,
+      "no": 5
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        520,
+        190,
+        950,
+        290
+      ],
+      "bang_mau": [
+        "#fbfaf4",
+        "#f17122",
+        "#e93126",
+        "#cf7b4d",
+        "#f4c1a2"
+      ],
+      "net": [
+        "#fbfaf4"
+      ]
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    445,
+    125,
+    1000,
+    915
+  ]
+}

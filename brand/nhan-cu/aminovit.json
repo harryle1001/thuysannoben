@@ -1,0 +1,223 @@
+{
+  "slug": "aminovit",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001544_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    886
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 886. Chữ sửa theo hồ sơ TCCS 48:2020/NOBEN (AMINOVIT); hình, màu, bố cục giữ nguyên nhãn đăng ký. Đối tượng: tôm, cá.",
+  "khung": [
+    {
+      "x": 60,
+      "y": 126,
+      "w": 442,
+      "h": 170,
+      "r": 0,
+      "nen": "#feca14",
+      "mau": "#231f20",
+      "co": 24,
+      "dong_cao": 1.68,
+      "dem": 12,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:100%\"><span style=\"white-space:nowrap\">Protein (đạm cá) (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">25%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:100%\"><span style=\"white-space:nowrap\">Dung môi (nước) vừa đủ</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">1 lít</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 60,
+      "y": 341,
+      "w": 442,
+      "h": 290,
+      "r": 0,
+      "nen": "#feca14",
+      "mau": "#231f20",
+      "co": 24,
+      "dong_cao": 1.68,
+      "dem": 12,
+      "noi_dung": [
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung đạm cá, acid amin thiết yếu cho tôm, cá. Giúp tôm, cá ham ăn, chóng lớn. Giúp tôm, cá bắt mồi nhanh do có mùi tanh hấp dẫn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tăng đề kháng, tăng cường hấp thụ chất dinh dưỡng, hạn chế mềm vỏ, chậm lớn, bắt mồi kém."
+        }
+      ]
+    },
+    {
+      "x": 60,
+      "y": 674,
+      "w": 442,
+      "h": 104,
+      "r": 0,
+      "nen": "#feca14",
+      "mau": "#231f20",
+      "co": 24,
+      "dong_cao": 1.68,
+      "dem": 8,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</span>"
+        }
+      ]
+    },
+    {
+      "x": 1108,
+      "y": 126,
+      "w": 416,
+      "h": 402,
+      "r": 0,
+      "nen": "#feca14",
+      "mau": "#231f20",
+      "co": 24,
+      "dong_cao": 1.66,
+      "dem": 10,
+      "noi_dung": [
+        {
+          "kieu": "gach",
+          "chu": "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 1115,
+      "y": 622,
+      "w": 330,
+      "h": 72,
+      "r": 0,
+      "nen": "#feca14",
+      "mau": "#231f20",
+      "co": 21.5,
+      "dong_cao": 1.55,
+      "dem": 5,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "TCCS 48:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-001544"
+        }
+      ]
+    },
+    {
+      "x": 596,
+      "y": 733,
+      "w": 486,
+      "h": 151,
+      "r": 0,
+      "nen": "#f78218",
+      "mau": "#ffffff",
+      "co": 17,
+      "dong_cao": 1.3,
+      "dem": 5,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700;line-height:1.4\">Sản phẩm của: <b style=\"font-size:1.45em;letter-spacing:.01em\">CÔNG TY TNHH NO BEN</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Hồ Chí Minh, Việt Nam. Điện thoại: 0934 246 420</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.8);font-size:1.15em;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.4;text-shadow:0 0 2px #fff,0 0 2px #fff,0 0 1px #fff\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 1014,
+      "y": 651,
+      "w": 58,
+      "h": 42,
+      "r": 0,
+      "nen": "#fff400",
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 790,
+      "y": 34,
+      "w": 117,
+      "h": 123
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        600,
+        180,
+        1090,
+        262
+      ],
+      "bang_mau": [
+        "#fafbdc",
+        "#1d469d",
+        "#2e4883",
+        "#697c9f",
+        "#b8c8d9"
+      ],
+      "net": [
+        "#1d469d"
+      ],
+      "mem": 500,
+      "mau": {
+        "#1d469d": "#1d469d"
+      }
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    515,
+    0,
+    1100,
+    886
+  ]
+}

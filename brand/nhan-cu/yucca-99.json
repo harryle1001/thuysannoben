@@ -1,0 +1,316 @@
+{
+  "slug": "yucca-99",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-001537_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    886
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 886. Chữ sửa theo hồ sơ TCCS 35:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 80,
+      "y": 112,
+      "w": 384,
+      "h": 492,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "co": 24,
+      "dong_cao": 1.4,
+      "dem": 10,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": " (trong 1 lít sản phẩm)",
+          "dam": "THÀNH PHẦN:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Saponin (dịch chiết cây Yucca schidigera) (min): 2%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Nước RO vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hấp thu các khí độc NH<sub>3</sub> trong ao nuôi thủy sản."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hấp thụ khí độc, cấp cứu khi tôm nổi đầu do khí độc."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:.82em\"><b>BẢO QUẢN:</b> Nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</span>"
+        }
+      ]
+    },
+    {
+      "x": 1140,
+      "y": 70,
+      "w": 396,
+      "h": 575,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "co": 26,
+      "dong_cao": 1.45,
+      "dem": 10,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG:</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;padding-left:.6em;text-indent:-.6em;text-align:left\">- Pha loãng sản phẩm với 20 lít nước rồi tạt xuống ao nuôi.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;padding-left:.6em;text-indent:-.6em;text-align:left\">- Định kỳ: Dùng 1 lít/4.000-6.000 m³ nước, 7 ngày/lần.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;padding-left:.6em;text-indent:-.6em;text-align:left\">- Khi ao nuôi có khí độc cao: Dùng 1 lít/3.000-4.000 m³ nước.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;padding-left:.6em;text-indent:-.6em;text-align:left\">- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;padding-left:.6em;text-indent:-.6em;text-align:left\">- Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.</span>"
+        }
+      ]
+    },
+    {
+      "x": 552,
+      "y": 598,
+      "w": 440,
+      "h": 46,
+      "r": 0,
+      "nen": "trong",
+      "co": 31,
+      "dong_cao": 1.3,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:200%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.58);font-weight:700;font-size:34px;line-height:42px;color:#e3202c;-webkit-text-stroke:.4px #e3202c;text-shadow:1.5px 0 #fff,-1.5px 0 #fff,0 1.5px #fff,0 -1.5px #fff,1.1px 1.1px #fff,-1.1px -1.1px #fff,1.1px -1.1px #fff,-1.1px 1.1px #fff\">HỖ TRỢ CẤP CỨU KHI TÔM NỔI ĐẦU</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 520,
+      "y": 741,
+      "w": 580,
+      "h": 101,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#1a1a1a",
+      "can": "center",
+      "co": 15,
+      "dong_cao": 1.32,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:-17.57%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.74);font-size:1em;font-weight:700;line-height:1.3\">Sản phẩm của: <b style=\"font-size:1.55em;color:#1b75bb;-webkit-text-stroke-color:#1b75bb\">CÔNG TY TNHH NO BEN</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:-17.57%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:142.86%;margin-left:-21.43%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.7);font-size:1em;font-weight:700\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:142.86%;margin-left:-21.43%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.7);font-size:1em;font-weight:700\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;margin-left:-12.50%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.8);font-size:1.12em;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.25\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        86,
+        118,
+        378,
+        468
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        1147,
+        72,
+        388,
+        568
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        552,
+        600,
+        430,
+        44
+      ],
+      "mau": "#e3202c",
+      "nguong": 170,
+      "le": 4
+    },
+    {
+      "vung": [
+        552,
+        600,
+        430,
+        44
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        1067,
+        668,
+        42,
+        40
+      ],
+      "mau": "#a52025",
+      "nguong": 120,
+      "le": 3
+    },
+    {
+      "vung": [
+        1067,
+        668,
+        42,
+        40
+      ],
+      "chu": "sang",
+      "le": 3
+    },
+    {
+      "vung": [
+        522,
+        744,
+        580,
+        98
+      ],
+      "mau": "#1a1a1a",
+      "nguong": 120,
+      "le": 3
+    },
+    {
+      "vung": [
+        522,
+        744,
+        580,
+        98
+      ],
+      "mau": "#2a8acb",
+      "nguong": 150,
+      "le": 3
+    },
+    {
+      "vung": [
+        552,
+        600,
+        470,
+        44
+      ],
+      "khac_nen": 31,
+      "nguong": 40,
+      "le": 6
+    },
+    {
+      "vung": [
+        522,
+        744,
+        470,
+        98
+      ],
+      "khac_nen": 31,
+      "nguong": 40,
+      "le": 6
+    },
+    {
+      "vung": [
+        990,
+        812,
+        95,
+        30
+      ],
+      "khac_nen": 31,
+      "nguong": 70,
+      "le": 6
+    }
+  ],
+  "logo": [
+    {
+      "x": 759,
+      "y": 58,
+      "w": 113,
+      "h": 114
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        545,
+        240,
+        1075,
+        432
+      ],
+      "bang_mau": [
+        "#fdf205",
+        "#e81e28",
+        "#faf8eb",
+        "#297f3b",
+        "#f1ef40",
+        "#f1c5b9",
+        "#faf896",
+        "#ba6d5f"
+      ],
+      "net": [
+        "#e81e28",
+        "#faf8eb"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    500,
+    0,
+    1100,
+    886
+  ]
+}

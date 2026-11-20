@@ -1,0 +1,246 @@
+{
+  "slug": "hufa",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001522_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    820
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 820 (ảnh _1: nhãn Noben; ảnh _2 là bản 'KG26' của nhà phân phối, không dùng). Phần trắng bên phải x>1225 của ảnh gốc là nền trống, giữ nguyên. Chữ sửa theo hồ sơ TCCS 47:2020/NOBEN; hình, màu, bố cục giữ nguyên. Nhóm đối tượng: tôm, cá.",
+  "khung": [
+    {
+      "x": 588,
+      "y": 22,
+      "w": 616,
+      "h": 628,
+      "co": 17,
+      "dem": 10,
+      "dong_cao": 1.38,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>THÀNH PHẦN:</b> trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:68%\"><span>Vitamin A (min)</span><span style=\"flex:1;border-bottom:.12em dotted;margin:0 .15em .28em\"></span><span>200 UI/lít</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:68%\"><span>Vitamin B6 (min)</span><span style=\"flex:1;border-bottom:.12em dotted;margin:0 .15em .28em\"></span><span>30 mg/lít</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:68%\"><span>Dung môi (nước RO) vừa đủ</span><span style=\"flex:1;border-bottom:.12em dotted;margin:0 .15em .28em\"></span><span>1 lít</span></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Asen (As) vô cơ: KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>NGUYÊN LIỆU</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Vitamin A, Vitamin B6, nước"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Bổ sung vitamin cần thiết vào thức ăn cho tôm, cá. Giúp tôm, cá phát triển tốt."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hỗ trợ tăng đề kháng, tăng cường hấp thụ chất dinh dưỡng, hạn chế mềm vỏ, chậm lớn, bắt mồi kém."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Trộn 5 ml/kg thức ăn, sử dụng 2 lần/ngày và liên tục 7 ngày, ngưng 3 ngày rồi sau đó lặp lại."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Trường hợp tôm, cá biếng ăn, chậm lớn, còi cọc: Trộn 10-15 ml/kg thức ăn, cho ăn 2-3 lần/ngày và liên tục 5 ngày, sau đó cho ăn với liều lượng bình thường."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Hướng dẫn bảo quản:</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 597,
+      "y": 716,
+      "w": 319,
+      "h": 77,
+      "co": 17,
+      "dem": 2,
+      "dong_cao": 1.35,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 47:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-001522"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-56"
+        }
+      ]
+    },
+    {
+      "x": 924,
+      "y": 700,
+      "w": 272,
+      "h": 93,
+      "co": 17,
+      "dem": 2,
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        }
+      ]
+    },
+    {
+      "x": 25,
+      "y": 674,
+      "w": 548,
+      "h": 144,
+      "nen": "#e7e7e7",
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 228,
+      "y": 70,
+      "w": 103,
+      "h": 112
+    }
+  ],
+  "cong_ty": {
+    "x": 40,
+    "y": 676,
+    "w": 505,
+    "co": 15.5,
+    "mau": "#111111;text-align:center",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "<b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>",
+      "<b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b>",
+      "<b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        105,
+        200,
+        470,
+        315
+      ],
+      "bang_mau": [
+        "#e4e5e9",
+        "#223f97",
+        "#7181b1"
+      ],
+      "net": [
+        "#223f97"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        598,
+        652,
+        812,
+        714
+      ],
+      "bang_mau": [
+        "#f9f9f9",
+        "#9b9b9b",
+        "#d2d2d2",
+        "#575757",
+        "#0f0f0f"
+      ],
+      "net": [
+        "#0f0f0f",
+        "#f9f9f9"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    580,
+    820
+  ]
+}

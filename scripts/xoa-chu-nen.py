@@ -3,6 +3,8 @@
    python3 xoa-chu-nen.py vao.jpg ra.png '[{"vung":[x,y,w,h],"chu":"sang"|"toi","mau":"#rrggbb","nguong":90,"nen":"trang","le":6}]'
    chu: sang = chữ sáng trên nền tối, toi = chữ tối trên nền sáng; mau: chữ màu cụ thể (khoảng cách màu < nguong);
    nen=trang: tô trắng (vùng chữ trên nền trắng); le: số px nới ra quanh vùng để lấy màu nền.
+   nguong_trang=N (tùy chọn, mặc định 235): với nen=trang, điểm tối hơn N thì tô trắng.
+   khac_nen=N (tùy chọn): chữ = điểm lệch màu > nguong (mặc định 60) so với nền lọc trung vị cửa sổ N px (nền chuyển sắc).
 """
 import json
 import sys
@@ -20,7 +22,11 @@ for r in regions:
     lum = band.mean(axis=2)
     inner = np.zeros(lum.shape, bool)
     inner[pad:pad + h, pad:pad + w] = True
-    if r.get('mau'):
+    if r.get('khac_nen'):
+        # tùy chọn: chữ = điểm lệch màu so với nền trung vị (cửa sổ khac_nen px) quá nguong — hợp nền chuyển sắc
+        med = np.asarray(Image.fromarray(band.clip(0, 255).astype(np.uint8)).filter(ImageFilter.MedianFilter(int(r['khac_nen']) | 1))).astype(np.float32)
+        mask = (np.sqrt(((band - med) ** 2).sum(axis=2)) > r.get('nguong', 60)) & inner
+    elif r.get('mau'):
         hx = r['mau'].lstrip('#'); tc = np.array([int(hx[i:i + 2], 16) for i in (0, 2, 4)], np.float32)
         mask = (np.sqrt(((band - tc) ** 2).sum(axis=2)) < r.get('nguong', 90)) & inner
     elif r.get('chu') == 'toi':
@@ -29,10 +35,17 @@ for r in regions:
         sat = band.max(axis=2) - band.min(axis=2)
         mask = (lum > 120) & (sat < 110) & inner
     # nới mặt nạ 2 px để lấp cả viền khử răng cưa
-    m = Image.fromarray((mask * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(5))
+    m = Image.fromarray((mask * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(r.get('no', 5)))
     mask = np.asarray(m) > 0
+    if r.get('chep'):
+        # tùy chọn: lấp điểm chữ bằng điểm ảnh gốc dời [dx,dy] (nền có hình/sọc, khuếch tán bị nhòe)
+        dx, dy = r['chep']
+        src_band = img[y0 + dy:y1 + dy, x0 + dx:x1 + dx]
+        band[mask] = src_band[mask]
+        img[y0:y1, x0:x1] = band
+        continue
     if r.get('nen') == 'trang':
-        band[np.asarray(Image.fromarray((((band.mean(axis=2) < 235) & inner) * 255).astype(np.uint8))) > 0] = 255
+        band[np.asarray(Image.fromarray((((band.mean(axis=2) < r.get('nguong_trang', 235)) & inner) * 255).astype(np.uint8))) > 0] = 255
         img[y0:y1, x0:x1] = band
         continue
     known = ~mask

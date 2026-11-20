@@ -1,0 +1,383 @@
+{
+  "slug": "marimix",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-002253_1.jpg",
+  "kich_thuoc_goc": [
+    1073,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1073 × 1080 (ảnh _1: nhãn Noben; ảnh _2 là bản có 'SIÊU TẢO M45', 'KG26', công dụng gây màu nước không có trong TCCS nên không dùng). Chữ sửa theo hồ sơ TCCS 31:2020/NOBEN; hình, màu, bố cục giữ nguyên. Chữ trắng trên nền xanh: khung trong suốt + xóa chữ cũ theo màu trắng. Nhóm đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 106,
+      "y": 432,
+      "w": 450,
+      "h": 410,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "phong": "serif",
+      "co": 18,
+      "dem": 3,
+      "dong_cao": 1.42,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>THÀNH PHẦN</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>( Trong 1 kg sản phẩm)</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:flex\"><span>P (dạng CaHPO<sub>4</sub>)(min)</span><span style=\"flex:1;border-bottom:.13em dotted;margin:0 .25em .28em\"></span><span>2.500 mg/kg</span></b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:flex\"><span>Mg (dạng MgO)(min)</span><span style=\"flex:1;border-bottom:.13em dotted;margin:0 .25em .28em\"></span><span>1.200 mg/kg</span></b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:flex\"><span>Ca (dạng CaCO<sub>3</sub>)(min)</span><span style=\"flex:1;border-bottom:.13em dotted;margin:0 .25em .28em\"></span><span>2.500 mg/kg</span></b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:flex\"><span>Chất đệm (Dextrose) vừa đủ</span><span style=\"flex:1;border-bottom:.13em dotted;margin:0 .25em .28em\"></span><span>1kg</span></b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Asen (As): KPH</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Cadimi (Cd): KPH</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Chì (Pb): KPH</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Thủy ngân (Hg): KPH</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>NGUYÊN LIỆU: MgO, CaHPO<sub>4</sub>, CaCO<sub>3</sub>, Dextrose</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp cho quá trình lột xác và tạo vỏ của tôm nhanh hơn.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc.</b>"
+        }
+      ]
+    },
+    {
+      "x": 578,
+      "y": 304,
+      "w": 447,
+      "h": 276,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "phong": "serif",
+      "co": 18,
+      "dem": 3,
+      "dong_cao": 1.42,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Trước khi thả giống: Sử dụng 5kg/3.000m³ nước.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Định kỳ: Sử dụng 5kg/5.000m³ nước.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.</b>"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Hướng dẫn bảo quản:</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</b>"
+        }
+      ]
+    },
+    {
+      "x": 578,
+      "y": 674,
+      "w": 350,
+      "h": 182,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "phong": "serif",
+      "co": 18,
+      "dem": 3,
+      "dong_cao": 1.42,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>Số tiêu chuẩn công bố: 31:2020/NOBEN</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Mã số tiếp nhận: 02-002253</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Mã SPHQ: VICB 7178.10-39</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Khối lượng tịnh:</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Số lô sản xuất:</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Ngày sản xuất:</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Hạn sử dụng:</b>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        106,
+        432,
+        450,
+        410
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        578,
+        304,
+        410,
+        276
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        988,
+        304,
+        37,
+        276
+      ],
+      "mau": "#ffffff",
+      "nguong": 130,
+      "le": 3
+    },
+    {
+      "vung": [
+        578,
+        672,
+        350,
+        184
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        296,
+        904,
+        600,
+        130
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        896,
+        904,
+        60,
+        130
+      ],
+      "mau": "#ffffff",
+      "nguong": 130,
+      "le": 3
+    },
+    {
+      "vung": [
+        106,
+        432,
+        450,
+        410
+      ],
+      "mau": "#9cc4ea",
+      "nguong": 75,
+      "le": 4
+    },
+    {
+      "vung": [
+        578,
+        304,
+        410,
+        276
+      ],
+      "mau": "#9cc4ea",
+      "nguong": 75,
+      "le": 4
+    },
+    {
+      "vung": [
+        578,
+        672,
+        350,
+        184
+      ],
+      "mau": "#9cc4ea",
+      "nguong": 75,
+      "le": 4
+    },
+    {
+      "vung": [
+        296,
+        904,
+        600,
+        130
+      ],
+      "mau": "#9cc4ea",
+      "nguong": 75,
+      "le": 4
+    }
+  ],
+  "logo": [
+    {
+      "x": 132,
+      "y": 910,
+      "w": 128,
+      "h": 124
+    }
+  ],
+  "cong_ty": {
+    "x": 301,
+    "y": 906,
+    "w": 650,
+    "co": 16.2,
+    "mau": "#ffffff",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "<b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>",
+      "<b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b>",
+      "<b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>"
+    ],
+    "xuat_xu": "<span style=\"background:#ffffff;padding:0 .25em;border-radius:.15em\">SẢN XUẤT TẠI VIỆT NAM</span>"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        181,
+        75,
+        915,
+        345
+      ],
+      "bang_mau": [
+        "#f1fcfb",
+        "#065498",
+        "#c0191d",
+        "#2e3681",
+        "#fcf10d",
+        "#31a8dc",
+        "#077cbf",
+        "#74213b",
+        "#e0cb48"
+      ],
+      "net": [
+        "#f1fcfb",
+        "#2e3681",
+        "#fcf10d",
+        "#c0191d"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        312,
+        862,
+        812,
+        895
+      ],
+      "bang_mau": [
+        "#f5f9f9",
+        "#3e4473",
+        "#bcc6dd",
+        "#7a819a"
+      ],
+      "net": [
+        "#3e4473",
+        "#f5f9f9"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        582,
+        590,
+        850,
+        667
+      ],
+      "bang_mau": [
+        "#f7f8f8",
+        "#0c0d0d",
+        "#364b5f",
+        "#bebfc0",
+        "#7f8387"
+      ],
+      "net": [
+        "#0c0d0d",
+        "#f7f8f8"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    350,
+    352
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    1073,
+    1080
+  ]
+}

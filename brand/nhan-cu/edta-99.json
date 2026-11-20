@@ -1,0 +1,286 @@
+{
+ "slug": "edta-99",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-002251_1.jpg",
+ "cat": [
+  72,
+  210,
+  1065,
+  949
+ ],
+ "kich_thuoc_goc": [
+  993,
+  739
+ ],
+ "_ghi_chu": "Ảnh 02-002251_1 (1158×1080) cắt bỏ lề và thước đo 25cm × 18,5cm. Chữ sửa theo hồ sơ TCCS 11:2017/NOBEN; đối tượng tôm; hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+ "khung": [
+  {
+   "x": 518,
+   "y": 218,
+   "w": 438,
+   "h": 389,
+   "mau": "#2b2b2b",
+   "co": 15.5,
+   "dong_cao": 1.42,
+   "dem": 4,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e0242c\">THÀNH PHẦN:</b> trong 1kg sản phẩm"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ethylene diamine tetra acetic acid (min): 300mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chất đệm (Dextrose) vừa đủ: 1kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Độ ẩm (max): 10%"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Asen (As): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chì (Pb): KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e0242c\">CÔNG DỤNG:</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Khử kim loại nặng, thuốc trừ sâu, hóa chất, phèn đáy.... tồn dư ở đáy ao."
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Giúp làm sạch nguồn nước ao nuôi."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e0242c\">LIỀU LƯỢNG - CÁCH DÙNG</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "- <b>Khử kim loại nặng:</b> 0,6 - 1kg EDTA 99/1.000m³, định kỳ 7 - 10 ngày."
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Khi tôm nổi đầu, tấp mé, tôm khó lột vỏ do hàm lượng kim loại nặng cao dùng EDTA 99 liều cao gấp 1,5 lần."
+    },
+    {
+     "kieu": "html",
+     "chu": "- <b>Xử lý tảo tàn, giảm keo nhầy sử dụng:</b> 0,3 - 0,6 kg EDTA 99/1.000m³"
+    },
+    {
+     "kieu": "html",
+     "chu": "- <b>Phân hủy thuốc trừ sâu và dư lượng hóa chất, cấp cứu nổi đầu:</b> Sử dụng 1kg EDTA/1.000m³ nước."
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e0242c\">BẢO QUẢN:</b> Nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    }
+   ]
+  },
+  {
+   "x": 521,
+   "y": 613,
+   "w": 210,
+   "h": 74,
+   "mau": "#2b2b2b",
+   "co": 15.5,
+   "dong_cao": 1.42,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>Số TCCS 11:2017/NOBEN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Mã SPHQ: VICB 7178.10-10</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Mã số tiếp nhận: 02-002251</b>"
+    }
+   ]
+  },
+  {
+   "x": 733,
+   "y": 613,
+   "w": 222,
+   "h": 74,
+   "mau": "#2b2b2b",
+   "co": 17,
+   "dong_cao": 1.42,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Số lô SX:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "NSX:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "HSD:"
+    }
+   ]
+  },
+  {
+   "x": 812,
+   "y": 181,
+   "w": 150,
+   "h": 30,
+   "nen": "trong",
+   "mau": "#d23b0a",
+   "co": 17,
+   "dem": 0,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:117.65%;margin-left:0.00%;transform:scaleX(0.85);transform-origin:0 0;font-size:1.0em;line-height:1.5;text-align:left;font-weight:700;\"><b>Khối lượng tịnh:</b></span>"
+    }
+   ]
+  },
+  {
+   "x": 150,
+   "y": 568,
+   "w": 360,
+   "h": 125,
+   "nen": "trong",
+   "co": 13.6,
+   "dem": 0,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1.5px #0d2347,0 0 1.5px #0d2347,0 0 1px #0d2347,0 1px 1px #0d2347;display:block;white-space:nowrap;width:125.00%;margin-left:0.00%;transform:scaleX(0.8);transform-origin:0 0;font-size:1.0em;line-height:1.2;text-align:left;font-weight:700;color:#ffffff;-webkit-text-stroke-color:#ffffff;\">Sản phẩm của/Product of:</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1.5px #0d2347,0 0 1.5px #0d2347,0 0 1px #0d2347,0 1px 1px #0d2347;display:block;white-space:nowrap;width:108.70%;margin-left:0.00%;transform:scaleX(0.92);transform-origin:0 0;font-size:1.55em;line-height:1.2;text-align:left;font-weight:700;color:#fff200;-webkit-text-stroke-color:#fff200;\">CÔNG TY TNHH NO BEN</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1.5px #0d2347,0 0 1.5px #0d2347,0 0 1px #0d2347,0 1px 1px #0d2347;display:block;white-space:nowrap;width:128.21%;margin-left:0.00%;transform:scaleX(0.78);transform-origin:0 0;font-size:1.0em;line-height:1.25;text-align:left;font-weight:700;color:#ffffff;-webkit-text-stroke-color:#ffffff;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Tp. Hồ Chí Minh</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1.5px #0d2347,0 0 1.5px #0d2347,0 0 1px #0d2347,0 1px 1px #0d2347;display:block;white-space:nowrap;width:128.21%;margin-left:0.00%;transform:scaleX(0.78);transform-origin:0 0;font-size:1.0em;line-height:1.25;text-align:left;font-weight:700;color:#ffffff;-webkit-text-stroke-color:#ffffff;\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1.5px #0d2347,0 0 1.5px #0d2347,0 0 1px #0d2347,0 1px 1px #0d2347;display:block;white-space:nowrap;width:128.21%;margin-left:0.00%;transform:scaleX(0.78);transform-origin:0 0;font-size:1.0em;line-height:1.25;text-align:left;font-weight:700;color:#ffffff;-webkit-text-stroke-color:#ffffff;\">Website: thuocthuysannoben.com</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1.5px #0d2347,0 0 1.5px #0d2347,0 0 1px #0d2347,0 1px 1px #0d2347;display:block;white-space:nowrap;width:135.14%;margin-left:0.00%;transform:scaleX(0.74);transform-origin:0 0;font-size:1.0em;line-height:1.25;text-align:left;font-weight:700;color:#ffffff;-webkit-text-stroke-color:#ffffff;\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 2px #fff,0 0 1px #fff,0 0 1px #fff;display:block;white-space:nowrap;width:117.65%;margin-left:0.00%;transform:scaleX(0.85);transform-origin:0 0;font-size:1.12em;line-height:1.25;text-align:left;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;\">SẢN XUẤT TẠI VIỆT NAM</span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    814,
+    182,
+    148,
+    27
+   ],
+   "mau": "#d23b0a",
+   "nguong": 110
+  },
+  {
+   "vung": [
+    150,
+    569,
+    356,
+    114
+   ],
+   "khac_nen": 17,
+   "nguong": 55,
+   "no": 5
+  }
+ ],
+ "logo": [
+  {
+   "x": 38,
+   "y": 566,
+   "w": 112,
+   "h": 113
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    68,
+    80,
+    590,
+    292
+   ],
+   "bang_mau": [
+    "#f8f9f9",
+    "#e52223",
+    "#fdef0b",
+    "#136b9c",
+    "#84a8ad",
+    "#e78c52"
+   ],
+   "net": [
+    "#e52223",
+    "#fdef0b"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    641,
+    48,
+    875,
+    117
+   ],
+   "bang_mau": [
+    "#f9f8f8",
+    "#0f0f10",
+    "#939090",
+    "#c9c6c6",
+    "#605151",
+    "#c32830"
+   ],
+   "net": [
+    "#f9f8f8",
+    "#0f0f10"
+   ],
+   "mem": 500,
+   "mau": {
+    "#0f0f10": "#0c0c0c",
+    "#f9f8f8": "#ffffff"
+   }
+  }
+ ],
+ "bao_bi": "tui",
+ "kich_thuoc_mm": [
+  250,
+  185
+ ],
+ "mat_truoc": [
+  0,
+  0,
+  513,
+  739
+ ]
+}

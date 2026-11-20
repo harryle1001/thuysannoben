@@ -1,0 +1,322 @@
+{
+  "slug": "calcipho",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-028281_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    885
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 885. Chữ sửa theo hồ sơ TCCS 89:2021/NOBEN; hình, màu, bố cục giữ nguyên. Chữ trắng/vàng trên nền xanh: khung trong suốt + xóa chữ cũ. Nhóm đối tượng: tôm, cá.",
+  "khung": [
+    {
+      "x": 50,
+      "y": 172,
+      "w": 450,
+      "h": 566,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "co": 20,
+      "dem": 3,
+      "dong_cao": 1.45,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#f2e34a;-webkit-text-stroke-color:#f2e34a\">CHỈ TIÊU CHẤT LƯỢNG: trong 1 lít sản phẩm</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ca (Dạng CaCl₂) (min): 10.400 mg/lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mg (Dạng MgSO₄.7H₂O) (min): 2.500 mg/lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dung môi (nước) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "html",
+          "chu": "NGUYÊN LIỆU",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ca (Dạng CaCl₂),"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mg (Dạng MgSO₄.7H₂O),"
+        },
+        {
+          "kieu": "dong",
+          "chu": "nước"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#f2e34a;-webkit-text-stroke-color:#f2e34a\">CÔNG DỤNG</span>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung khoáng chất vào thức ăn tôm, cá."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên."
+        }
+      ]
+    },
+    {
+      "x": 1115,
+      "y": 172,
+      "w": 430,
+      "h": 386,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "co": 20,
+      "dem": 3,
+      "dong_cao": 1.45,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#f2e34a;-webkit-text-stroke-color:#f2e34a\">HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</span>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng. Lắc kỹ trước khi dùng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#f2e34a;-webkit-text-stroke-color:#f2e34a\">Hướng dẫn bảo quản:</span> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;padding-left:.9em\">CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN</span>"
+        }
+      ]
+    },
+    {
+      "x": 1132,
+      "y": 576,
+      "w": 400,
+      "h": 236,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "co": 20,
+      "dem": 3,
+      "dong_cao": 1.5,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 89:2021/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-028281"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-89"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        50,
+        172,
+        450,
+        566
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        50,
+        172,
+        450,
+        566
+      ],
+      "mau": "#dfe65e",
+      "nguong": 95,
+      "le": 3
+    },
+    {
+      "vung": [
+        1115,
+        172,
+        430,
+        386
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        1115,
+        172,
+        430,
+        386
+      ],
+      "mau": "#dfe65e",
+      "nguong": 95,
+      "le": 3
+    },
+    {
+      "vung": [
+        1132,
+        576,
+        400,
+        226
+      ],
+      "chu": "sang",
+      "le": 3
+    },
+    {
+      "vung": [
+        614,
+        724,
+        460,
+        92
+      ],
+      "chu": "sang",
+      "le": 3
+    }
+  ],
+  "logo": [
+    {
+      "x": 527,
+      "y": 729,
+      "w": 79,
+      "h": 84
+    }
+  ],
+  "cong_ty": {
+    "x": 618,
+    "y": 726,
+    "w": 455,
+    "co": 11.3,
+    "mau": "#ffffff",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "<b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>",
+      "<b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b>",
+      "<b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>"
+    ],
+    "xuat_xu": "<span style=\"background:#ffffff;padding:0 .25em;border-radius:.15em\">SẢN XUẤT TẠI VIỆT NAM</span>"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        500,
+        70,
+        1100,
+        175
+      ],
+      "bang_mau": [
+        "#e61e27",
+        "#1dabe3",
+        "#fcf112",
+        "#e2eae3",
+        "#f0db81",
+        "#a85d5d"
+      ],
+      "net": [
+        "#e61e27",
+        "#e2eae3"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        550,
+        300,
+        1050,
+        380
+      ],
+      "bang_mau": [
+        "#f7fafb",
+        "#374982",
+        "#9ba9ca"
+      ],
+      "net": [
+        "#374982",
+        "#f7fafb"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        832,
+        638,
+        1050,
+        700
+      ],
+      "bang_mau": [
+        "#f7f8f8",
+        "#475368",
+        "#90969c",
+        "#cccdd0",
+        "#0f1011"
+      ],
+      "net": [
+        "#0f1011",
+        "#f7f8f8"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    500,
+    40,
+    1100,
+    840
+  ]
+}

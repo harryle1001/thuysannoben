@@ -1,77 +1,301 @@
 {
   "slug": "biotic-99",
   "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-023341_1.jpg",
-  "kich_thuoc_goc": [1600, 887],
+  "kich_thuoc_goc": [
+    1600,
+    887
+  ],
   "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 887. Chữ sửa theo hồ sơ TCCS 41:2020/NOBEN (BIOTIC 99); hình, màu, bố cục giữ nguyên nhãn đăng ký. Mã số tiếp nhận theo labels.json (01-023341); tccs.json ghi 01-023334. Đối tượng: tôm, cá.",
   "khung": [
     {
-      "x": 59, "y": 63, "w": 448, "h": 750, "r": 12, "dem": 6, "co": 23,
+      "x": 59,
+      "y": 63,
+      "w": 448,
+      "h": 750,
+      "r": 12,
+      "dem": 6,
+      "co": 23,
       "noi_dung": [
-        {"kieu": "html", "chu": "<b style=\"color:#ce272d\">THÀNH PHẦN:</b> trong 1 lít sản phẩm"},
-        {"kieu": "gach", "chu": "<i>Bacillus</i> spp. (min): 1,0 x 10<sup>9</sup> cfu/lít"},
-        {"kieu": "gach", "chu": "Dung môi (nước) vừa đủ: 1 lít"},
-        {"kieu": "gach", "chu": "Aflatoxin B1: KPH"},
-        {"kieu": "gach", "chu": "Cadimi (Cd): KPH"},
-        {"kieu": "gach", "chu": "Chì (Pb): KPH"},
-        {"kieu": "gach", "chu": "Thủy ngân (Hg): KPH"},
-        {"kieu": "gach", "chu": "<i>E.coli</i> &lt; 1 CFU/ml"},
-        {"kieu": "gach", "chu": "<i>Salmonella</i> spp.: KPH"},
-        {"kieu": "muc", "chu": "NGUYÊN LIỆU"},
-        {"kieu": "html", "chu": "<i>Bacillus subtilis</i>, nước"},
-        {"kieu": "html", "cl": "muc", "chu": "<span style=\"color:#ce272d\">CÔNG DỤNG</span>"},
-        {"kieu": "gach", "chu": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn."},
-        {"kieu": "gach", "chu": "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc."},
-        {"kieu": "gach", "chu": "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."}
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#ce272d\">THÀNH PHẦN:</b> trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "gach",
+          "chu": "<i>Bacillus</i> spp. (min): 1,0 x 10<sup>9</sup> cfu/lít"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Dung môi (nước) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Aflatoxin B1: KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "<i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "gach",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "muc",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus subtilis</i>, nước"
+        },
+        {
+          "kieu": "html",
+          "cl": "muc",
+          "chu": "<span style=\"color:#ce272d\">CÔNG DỤNG</span>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
+        }
       ]
     },
     {
-      "x": 1100, "y": 56, "w": 436, "h": 434, "r": 10, "dem": 6, "co": 23,
+      "x": 1100,
+      "y": 56,
+      "w": 436,
+      "h": 434,
+      "r": 10,
+      "dem": 6,
+      "co": 23,
       "noi_dung": [
-        {"kieu": "html", "cl": "dam", "chu": "<span style=\"color:#ce272d\">HƯỚNG DẪN SỬ DỤNG</span>"},
-        {"kieu": "gach", "chu": "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau:"},
-        {"kieu": "gach", "chu": "Trộn vào thức ăn hằng ngày: 5 ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi."},
-        {"kieu": "gach", "chu": "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường."},
-        {"kieu": "gach", "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."},
-        {"kieu": "gach", "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."},
-        {"kieu": "html", "chu": "<b style=\"color:#ce272d\">Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."}
-      ]
+        {
+          "kieu": "html",
+          "cl": "dam",
+          "chu": "<span style=\"color:#ce272d\">HƯỚNG DẪN SỬ DỤNG</span>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn vào thức ăn hằng ngày: 5 ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#ce272d\">Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ],
+      "dong_cao": 1.3
     },
     {
-      "x": 1100, "y": 540, "w": 436, "h": 286, "r": 10, "dem": 6, "co": 23,
+      "x": 1100,
+      "y": 540,
+      "w": 436,
+      "h": 286,
+      "r": 10,
+      "dem": 6,
+      "co": 23,
       "noi_dung": [
-        {"kieu": "dong", "chu": "Số tiêu chuẩn công bố: 41:2020/NOBEN"},
-        {"kieu": "dong", "chu": "Mã số tiếp nhận: 01-023341"},
-        {"kieu": "dong", "chu": "Mã SPHQ: VICB 7178.10-50"},
-        {"kieu": "trong"},
-        {"kieu": "dong", "chu": "Số lô sản xuất:"},
-        {"kieu": "dong", "chu": "Ngày sản xuất:"},
-        {"kieu": "dong", "chu": "Hạn sử dụng:"},
-        {"kieu": "dong", "chu": "Thể tích thực:"}
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 41:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-023341"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-50"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        }
       ]
     }
   ],
-  "xoa": [{"vung": [522, 714, 556, 112], "chu": "sang"}],
-  "logo": [{"x": 574, "y": 44, "w": 100, "h": 109}],
+  "xoa": [
+    {
+      "vung": [
+        522,
+        714,
+        556,
+        112
+      ],
+      "mau": "#ffffff",
+      "nguong": 175
+    }
+  ],
+  "logo": [
+    {
+      "x": 574,
+      "y": 44,
+      "w": 100,
+      "h": 109
+    }
+  ],
   "cong_ty": {
-    "x": 528, "y": 714, "w": 543, "co": 16.5, "can": "center", "mau": "#ffffff",
+    "x": 528,
+    "y": 714,
+    "w": 543,
+    "co": 16.5,
+    "can": "center",
+    "mau": "#ffffff",
     "ten": "CÔNG TY TNHH NO BEN",
     "dong": [
       "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
       "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
       "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
     ],
-    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM",
+    "xuat_xu_nen": "#ffffff"
   },
   "chu_vector": [
-    {"chu": "ISO 9001:2015", "x": 788, "y": 89.6, "w": 176, "co": 35.5, "phong": "serif", "mau": "#111111",
-     "xoa": [787, 65, 178, 26], "chu_cu": "toi", "le": 1, "nen": "trang"}
+    {
+      "chu": "ISO 9001:2015",
+      "x": 788,
+      "y": 89.6,
+      "w": 176,
+      "co": 35.5,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        787,
+        65,
+        178,
+        26
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
   ],
   "lam_net": [
-    {"vung": [535, 165, 1080, 300], "bang_mau": ["#eb1c27", "#f6f4f0", "#1b9744", "#c2b2b0", "#767b7a", "#c74249", "#0e521d"], "net": ["#eb1c27", "#f6f4f0"]},
-    {"vung": [610, 400, 1020, 660], "bang_mau": ["#214a22", "#276d34", "#7eb44a", "#178d41", "#4c9a44", "#e2f0d7", "#bbce32"], "net": ["#e2f0d7"], "mem": 500},
-    {"vung": [778, 58, 1050, 138], "bang_mau": ["#0b110d", "#f9faf9", "#2d6c47", "#a5a7a6", "#d1d3d2", "#747875"], "net": ["#0b110d", "#f9faf9"], "mem": 500, "mau": {"#0b110d": "#0c0c0c"}}
+    {
+      "vung": [
+        535,
+        165,
+        1080,
+        300
+      ],
+      "bang_mau": [
+        "#eb1c27",
+        "#f6f4f0",
+        "#1b9744",
+        "#c2b2b0",
+        "#767b7a",
+        "#c74249",
+        "#0e521d"
+      ],
+      "net": [
+        "#eb1c27",
+        "#f6f4f0"
+      ]
+    },
+    {
+      "vung": [
+        610,
+        400,
+        1020,
+        660
+      ],
+      "bang_mau": [
+        "#214a22",
+        "#276d34",
+        "#7eb44a",
+        "#178d41",
+        "#4c9a44",
+        "#e2f0d7",
+        "#bbce32"
+      ],
+      "net": [
+        "#e2f0d7"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        778,
+        58,
+        1050,
+        138
+      ],
+      "bang_mau": [
+        "#0b110d",
+        "#f9faf9",
+        "#2d6c47",
+        "#a5a7a6",
+        "#d1d3d2",
+        "#747875"
+      ],
+      "net": [
+        "#0b110d",
+        "#f9faf9"
+      ],
+      "mem": 500,
+      "mau": {
+        "#0b110d": "#0c0c0c"
+      }
+    }
   ],
   "bao_bi": "chai",
-  "kich_thuoc_mm": [240, 135],
-  "mat_truoc": [515, 0, 1090, 887]
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    515,
+    0,
+    1090,
+    887
+  ]
 }

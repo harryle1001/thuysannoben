@@ -1,0 +1,331 @@
+{
+ "slug": "amin-care",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001525_1.jpg",
+ "kich_thuoc_goc": [
+  1504,
+  1080
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1504 × 1080 (mặt trước + mặt sau). Chữ sửa theo hồ sơ TCCS 52:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Ảnh 01-001525_2.jpg là nhãn phân phối LPI (không dùng).",
+ "khung": [
+  {
+   "x": 764,
+   "y": 186,
+   "w": 616,
+   "h": 366,
+   "r": 0,
+   "dem": 2,
+   "co": 17,
+   "mau": "#111111",
+   "dong_cao": 1.17,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>THÀNH PHẦN</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "(trong 1 lít sản phẩm)"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex;width:60%\"><span style=\"white-space:nowrap\">&nbsp;Protein (đạm cá) (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;letter-spacing:.05em\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">25%</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex;width:60%\"><span style=\"white-space:nowrap\">Dung môi (nước) vừa đủ</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;letter-spacing:.05em\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">&nbsp;1 lít</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "- <i>E.coli</i> &lt; 1"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Ethoxyquin: KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "- <i>Salmonella</i> spp.: KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>NGUYÊN LIỆU</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Protein, nước"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;height:.6em\"></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Bổ sung đạm cá, acid amin thiết yếu cho tôm, cá. Giúp tôm, cá ham ăn, chóng lớn. Giúp tôm, cá bắt mồi nhanh do có mùi tanh hấp dẫn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ tăng đề kháng, tăng cường hấp thụ chất dinh dưỡng, hạn chế mềm vỏ, chậm lớn, bắt mồi kém."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    }
+   ]
+  },
+  {
+   "x": 764,
+   "y": 552,
+   "w": 322,
+   "h": 90,
+   "r": 0,
+   "dem": 2,
+   "co": 15.5,
+   "mau": "#111111",
+   "dong_cao": 1.17,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>Hướng dẫn bảo quản:</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    }
+   ]
+  },
+  {
+   "x": 1090,
+   "y": 587,
+   "w": 291,
+   "h": 140,
+   "r": 0,
+   "dem": 2,
+   "co": 17,
+   "mau": "#111111",
+   "dong_cao": 1.12,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Số tiêu chuẩn công bố: 52:2020/NOBEN"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã số tiếp nhận: 01-001525"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã SPHQ: VICB 7178.10-61"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hạn sử dụng:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Thể tích thực:"
+    }
+   ]
+  },
+  {
+   "x": 875,
+   "y": 736,
+   "w": 505,
+   "h": 108,
+   "r": 0,
+   "dem": 2,
+   "co": 17,
+   "mau": "#111111",
+   "dong_cao": 1.18,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.78);transform-origin:0 0\"><b><span style=\"font-size:1.35em\">CÔNG TY TNHH NO BEN</span></b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.66);transform-origin:0 0\"><b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.66);transform-origin:0 0\"><b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.66);transform-origin:0 0\"><b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 0\"><b style=\"color:#c8102e\">SẢN XUẤT TẠI VIỆT NAM</b></span></span>"
+    }
+   ]
+  }
+ ],
+ "chu_vector": [
+  {
+   "chu": "Tel: 0934 246 420 - Email: thuocthuysannoben@gmail.com",
+   "x": 329,
+   "y": 807.3,
+   "w": 206,
+   "co": 11.5,
+   "phong": "sans",
+   "mau": "#f2f4ef",
+   "xoa": [
+    324,
+    795,
+    217,
+    15
+   ],
+   "chu_cu": "sang"
+  }
+ ],
+ "logo": [
+  {
+   "x": 385,
+   "y": 155,
+   "w": 84,
+   "h": 89
+  },
+  {
+   "x": 783,
+   "y": 739,
+   "w": 80,
+   "h": 85
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    860,
+    125,
+    1225,
+    185
+   ],
+   "bang_mau": [
+    "#fcfcfc",
+    "#040404",
+    "#444444",
+    "#afafaf"
+   ],
+   "net": [
+    "#040404",
+    "#fcfcfc"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    765,
+    645,
+    960,
+    702
+   ],
+   "bang_mau": [
+    "#fcfcfc",
+    "#ededed",
+    "#0a0a0a",
+    "#cacaca",
+    "#3f3f40",
+    "#9c9b9c",
+    "#6e6e6e"
+   ],
+   "net": [
+    "#0a0a0a",
+    "#fcfcfc"
+   ],
+   "mem": 500,
+   "mau": {
+    "#0a0a0a": "#0c0c0c"
+   }
+  },
+  {
+   "vung": [
+    318,
+    668,
+    545,
+    735
+   ],
+   "bang_mau": [
+    "#f9f9f7",
+    "#0c0c0b",
+    "#959386",
+    "#514e3f",
+    "#cececb",
+    "#e9da41",
+    "#f2f0a0"
+   ],
+   "net": [
+    "#0c0c0b",
+    "#f9f9f7"
+   ],
+   "mem": 500,
+   "mau": {
+    "#0c0c0b": "#0c0c0c"
+   }
+  },
+  {
+   "vung": [
+    170,
+    270,
+    690,
+    365
+   ],
+   "bang_mau": [
+    "#f4f5f4",
+    "#1e7c6a",
+    "#e81d27",
+    "#d9d1d0",
+    "#c1383e",
+    "#91b4af",
+    "#e18385",
+    "#568d83"
+   ],
+   "net": [
+    "#e81d27",
+    "#f4f5f4"
+   ]
+  }
+ ],
+ "bao_bi": "chai",
+ "kich_thuoc_mm": [
+  265,
+  155
+ ],
+ "mat_truoc": [
+  107,
+  110,
+  745,
+  850
+ ]
+}

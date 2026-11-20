@@ -1,0 +1,314 @@
+{
+  "slug": "clear-12h",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-014385_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    844
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 844. Chữ sửa theo hồ sơ TCCS 01:2020/NOBEN (CLEAR 12H); hình, màu, bố cục giữ nguyên nhãn đăng ký. Tên chủng vi sinh ghi đúng như hồ sơ TCCS. Đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 853,
+      "y": 142,
+      "w": 712,
+      "h": 422,
+      "r": 0,
+      "dem": 4,
+      "co": 19,
+      "dong_cao": 1.27,
+      "phong": "serif",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus</i> spp. (min): 1 x 10<sup>9</sup> CFU/kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus lichenifomis</i>: định danh (+); <i>Bacillus megateri</i>: định danh (+); <i>Bacillus mensentericus</i>: định danh (+)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (dextrose monohydrate) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli</i> &lt; 10 CFU/g"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella spp.</i>: KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "NGUYÊN LIỆU: <i>Bacillus subtilis</i>, dextrose"
+        },
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp phân hủy mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao."
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "- Giảm khí độc NH<sub>3</sub>, H<sub>2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+        },
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều lượng như sau:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Chuẩn bị ao: Dùng 454g/2.000-2.500 m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Dùng định kỳ: Dùng 454g/3.000-5.000 m³ nước, định kỳ 5-7 ngày sử dụng 1 lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000-3.000 m³ nước, dùng liên tục 2 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000 m³ nước, sử dụng 2 ngày liên tục với liều như trên."
+        },
+        {
+          "kieu": "dong",
+          "dam": "Lưu ý:",
+          "chu": " Sử dụng cho cắt tảo, giảm tảo nên sử dụng vào lúc 10-12 giờ đêm. Có thể ủ sục khí trước khi sử dụng từ trên 12 tiếng để tăng hiệu quả sử dụng của sản phẩm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 846,
+      "y": 570,
+      "w": 358,
+      "h": 103,
+      "r": 0,
+      "dem": 4,
+      "co": 19,
+      "dong_cao": 1.27,
+      "phong": "serif",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 01:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-02"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-014385"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 1210,
+      "y": 570,
+      "w": 358,
+      "h": 103,
+      "r": 0,
+      "dem": 10,
+      "co": 19,
+      "dong_cao": 1.27,
+      "phong": "serif",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 988,
+      "y": 707,
+      "w": 578,
+      "h": 103,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 98,
+      "y": 34,
+      "w": 122,
+      "h": 124
+    },
+    {
+      "x": 897,
+      "y": 706,
+      "w": 86,
+      "h": 92
+    }
+  ],
+  "cong_ty": {
+    "x": 994,
+    "y": 706,
+    "w": 560,
+    "co": 12.5,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 466,
+      "y": 74.5,
+      "w": 178,
+      "co": 34.5,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        463,
+        50,
+        184,
+        26
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 1029,
+      "y": 694.6,
+      "w": 332,
+      "co": 15,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        1026,
+        679,
+        338,
+        18
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        185,
+        160,
+        615,
+        330
+      ],
+      "bang_mau": [
+        "#fbf7c9",
+        "#fafad9",
+        "#e12427",
+        "#d7ccaf",
+        "#175b9c",
+        "#a99f8e"
+      ],
+      "net": [
+        "#e12427",
+        "#175b9c"
+      ]
+    },
+    {
+      "vung": [
+        1055,
+        40,
+        1360,
+        140
+      ],
+      "bang_mau": [
+        "#fafbfa",
+        "#db2631",
+        "#155b9e",
+        "#bf9fa8"
+      ],
+      "net": [
+        "#db2631",
+        "#155b9e"
+      ]
+    },
+    {
+      "vung": [
+        260,
+        380,
+        560,
+        600
+      ],
+      "bang_mau": [
+        "#fbfae6",
+        "#f4fdf7",
+        "#3daacb",
+        "#9ce3f1",
+        "#f8af21",
+        "#c7c3ac"
+      ],
+      "net": [
+        "#3daacb"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    150,
+    160
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    800,
+    844
+  ]
+}

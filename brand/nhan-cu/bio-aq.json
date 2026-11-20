@@ -1,0 +1,378 @@
+{
+ "slug": "bio-aq",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-002235_2.jpg",
+ "kich_thuoc_goc": [
+  1600,
+  642
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 642 (nhãn 28 × 9,5 cm ghi trên ảnh, nhãn chiếm x 65–1570, y 62–590). Chữ sửa theo hồ sơ TCCS 71:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Ảnh 01-002235_1.jpg là nhãn nhà phân phối Đức Việt (không dùng). Nhóm tôm, cá. Nền xanh lá nên dòng SẢN XUẤT TẠI VIỆT NAM trong khối công ty vẽ màu vàng.",
+ "bao_bi": "tui",
+ "kich_thuoc_mm": [
+  280,
+  95
+ ],
+ "mat_truoc": [
+  553,
+  62,
+  1085,
+  590
+ ],
+ "khung": [
+  {
+   "x": 104,
+   "y": 90,
+   "w": 442,
+   "h": 425,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#ffffff",
+   "dem": 0,
+   "co": 18.5,
+   "dong_cao": 1.3,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "dam": "THÀNH PHẦN: trong 1kg sản phẩm"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Độ ẩm (max): 10%"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex;align-items:baseline\"><span><i>Bacillus</i> spp. (min)</span><span style=\"flex:1;border-bottom:.12em dotted #fff;margin:0 .15em .25em\"></span><span>1 x 10<sup style=\"line-height:0\">9</sup> cfu/kg</span></span>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "<i>Bacillus licheniformis</i>: định danh (+)"
+    },
+    {
+     "kieu": "dong",
+     "chu": "<i>Bacillus megaterium</i>: định danh (+)"
+    },
+    {
+     "kieu": "dong",
+     "chu": "<i>Bacillus mesentericus</i>: định danh (+)"
+    },
+    {
+     "kieu": "dong",
+     "chu": "<i>Bacillus subtilis</i>: định danh (+)"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chất đệm (Dextrose monohydrate) vừa đủ: 1kg"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex\"><span style=\"width:50%\">- Aflatoxin B1: KPH</span><span>- Thủy ngân (Hg): KPH</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex\"><span style=\"width:50%\">- Cadimi (Cd): KPH</span><span>- <i>E.coli</i> &lt; 10 CFU/g</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex\"><span style=\"width:50%\">- Chì (Pb): KPH</span><span>- <i>Salmonella</i> spp.: KPH</span></span>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "NGUYÊN LIỆU: <i>Bacillus</i> spp., Dextrose"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hình dạng sản phẩm: dạng bột/ hạt"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Màu sắc sản phẩm: màu trắng ngà"
+    },
+    {
+     "kieu": "muc",
+     "chu": "CÔNG DỤNG"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
+    }
+   ]
+  },
+  {
+   "x": 1090,
+   "y": 98,
+   "w": 456,
+   "h": 302,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#ffffff",
+   "dem": 0,
+   "co": 18.5,
+   "dong_cao": 1.32,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau:"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "muc",
+     "chu": "<span style=\"text-transform:none\">Hướng dẫn bảo quản:</span>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"color:#f5e400\">Cảnh báo:</span> Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    }
+   ]
+  },
+  {
+   "x": 420,
+   "y": 281,
+   "w": 800,
+   "h": 108,
+   "r": 0,
+   "nen": "trong",
+   "can": "center",
+   "dem": 0,
+   "co": 27,
+   "dong_cao": 1.33,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.63);font-weight:700;color:#fff;text-shadow:.05em .09em .06em #0b2340,.02em .05em 0 #0b2340\">BỔ SUNG VI SINH VẬT CÓ LỢI VÀO THỨC ĂN CHO TÔM, CÁ</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.74);font-weight:700;color:#fff;text-shadow:.05em .09em .06em #0b2340,.02em .05em 0 #0b2340\">HỖ TRỢ CẢI THIỆN HIỆN TƯỢNG PHÂN TRẮNG,</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.74);font-weight:700;color:#fff;text-shadow:.05em .09em .06em #0b2340,.02em .05em 0 #0b2340\">TRỐNG ĐƯỜNG RUỘT CHO TÔM, CÁ</span>"
+    }
+   ]
+  },
+  {
+   "x": 1098,
+   "y": 526,
+   "w": 215,
+   "h": 32,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#ffffff",
+   "dem": 0,
+   "co": 22,
+   "dong_cao": 1.3,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.82);transform-origin:0 50%;\"><b>Khối lượng tịnh:</b></span>"
+    }
+   ]
+  },
+  {
+   "x": 607,
+   "y": 476,
+   "w": 620,
+   "h": 100,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#ffffff",
+   "dem": 0,
+   "co": 9.3,
+   "dong_cao": 1.45,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 50%;\">Sản phẩm của: <b style=\"font-size:1.75em\">CÔNG TY TNHH NO BEN</b></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 50%;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam.</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 50%;\">Điện thoại: 0934 246 420 / Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 50%;\">Sản xuất tại: CÔNG TY TNHH NO BEN. Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 50%;\">Sản phẩm được phối trộn và đóng gói tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh, Việt Nam</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.85);transform-origin:0 50%;\"><b style=\"color:#fff200;font-size:1.35em\">SẢN XUẤT TẠI VIỆT NAM</b></span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    104,
+    90,
+    442,
+    410
+   ],
+   "mau": "#ffffff",
+   "nguong": 215,
+   "le": 5
+  },
+  {
+   "vung": [
+    104,
+    90,
+    442,
+    410
+   ],
+   "mau": "#f5e400",
+   "nguong": 110,
+   "le": 5
+  },
+  {
+   "vung": [
+    1090,
+    98,
+    456,
+    298
+   ],
+   "mau": "#ffffff",
+   "nguong": 215,
+   "le": 5
+  },
+  {
+   "vung": [
+    1090,
+    98,
+    456,
+    298
+   ],
+   "mau": "#f5e400",
+   "nguong": 120,
+   "le": 5
+  },
+  {
+   "vung": [
+    580,
+    281,
+    484,
+    107
+   ],
+   "mau": "#ffffff",
+   "nguong": 190,
+   "le": 4
+  },
+  {
+   "vung": [
+    580,
+    281,
+    484,
+    107
+   ],
+   "mau": "#12345e",
+   "nguong": 100,
+   "le": 4
+  },
+  {
+   "vung": [
+    1098,
+    527,
+    200,
+    30
+   ],
+   "mau": "#ffffff",
+   "nguong": 235,
+   "le": 4
+  },
+  {
+   "vung": [
+    607,
+    477,
+    450,
+    78
+   ],
+   "mau": "#ffffff",
+   "nguong": 170,
+   "le": 3
+  }
+ ],
+ "logo": [
+  {
+   "x": 768,
+   "y": 84,
+   "w": 100,
+   "h": 106
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    620,
+    188,
+    1015,
+    272
+   ],
+   "bang_mau": [
+    "#0c74b9",
+    "#f5fcfb",
+    "#74a3bf"
+   ],
+   "net": [
+    "#f5fcfb"
+   ],
+   "mau": {
+    "#f5fcfb": "#ffffff"
+   }
+  },
+  {
+   "vung": [
+    1095,
+    415,
+    1278,
+    468
+   ],
+   "bang_mau": [
+    "#f2f3f4",
+    "#9ea2a5",
+    "#2c6e9d",
+    "#424d55",
+    "#0f0f0f"
+   ],
+   "net": [
+    "#0f0f0f",
+    "#f2f3f4"
+   ],
+   "mem": 500,
+   "mau": {
+    "#f2f3f4": "#ffffff"
+   }
+  }
+ ]
+}

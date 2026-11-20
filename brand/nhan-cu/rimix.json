@@ -1,0 +1,227 @@
+{
+  "slug": "rimix",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-026751_2.jpg",
+  "kich_thuoc_goc": [
+    1440,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 1440 × 1080 (ảnh _2: nhãn bao 10kg, ghi kích thước 155x220mm; phần nhãn là vùng vàng x 93-1315, y 111-978, quanh là lề trắng của ảnh). Chữ trong ô trắng có hình tôm mờ: xoá theo màu chữ, đặt chữ mới trong khung trong suốt. Chữ sửa theo hồ sơ TCCS 77:2021/NOBEN. Ngôi sao 'DÙNG TẠT XUỐNG AO: 1,5-2kg/1.000m3 nước' giữ như nhãn cũ (TCCS không ghi liều này).",
+  "xoa": [
+    {
+      "vung": [
+        196,
+        418,
+        672,
+        412
+      ],
+      "mau": "#222222",
+      "nguong": 130
+    },
+    {
+      "vung": [
+        196,
+        418,
+        672,
+        412
+      ],
+      "mau": "#2d3193",
+      "nguong": 110
+    },
+    {
+      "vung": [
+        880,
+        573,
+        378,
+        132
+      ],
+      "chu": "sang"
+    },
+    {
+      "vung": [
+        515,
+        846,
+        90,
+        40
+      ],
+      "mau": "#101010",
+      "nguong": 110
+    }
+  ],
+  "khung": [
+    {
+      "x": 200,
+      "y": 420,
+      "w": 324,
+      "h": 408,
+      "nen": "trong",
+      "dem": 3,
+      "co": 20,
+      "mau": "#222222",
+      "dong_cao": 1.55,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#2d3193;-webkit-text-stroke-color:#2d3193\">THÀNH PHẦN:</b> ( Trong 1 kg sản phẩm)"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Độ ẩm (max):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>10%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>P (dạng CaHPO<sub style=\"line-height:0;font-size:.72em\">4</sub>) (min):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>2.500 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Mg (dạng MgO) (min):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>1.200 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Ca (dạng CaCO<sub style=\"line-height:0;font-size:.72em\">3</sub>) (min):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>2.500 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Chất đệm (dextrose) vừa đủ</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>1kg</span></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): 1.32 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hình dạng sản phẩm: Dạng bột"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Màu sắc sản phẩm: màu trắng ngà"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;color:#2d3193;-webkit-text-stroke-color:#2d3193;margin-top:0.8em\">BẢO QUẢN:</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 532,
+      "y": 420,
+      "w": 334,
+      "h": 408,
+      "nen": "trong",
+      "dem": 3,
+      "co": 20,
+      "mau": "#222222",
+      "dong_cao": 1.55,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;color:#2d3193;-webkit-text-stroke-color:#2d3193;margin-top:0em\">CÔNG DỤNG:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp cho quá trình lột xác và tạo vỏ của tôm nhanh hơn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;color:#2d3193;-webkit-text-stroke-color:#2d3193;margin-top:0.8em\">LIỀU LƯỢNG - CÁCH DÙNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trước khi thả giống: Sử dụng 5kg/3.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Định kỳ: Sử dụng 5kg/5.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        }
+      ]
+    }
+  ],
+  "cong_ty": {
+    "x": 885,
+    "y": 575,
+    "w": 372,
+    "co": 10.3,
+    "mau": "#ffffff",
+    "ten": "Sản phẩm của: CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam",
+      "Điện thoại: 0934 246 420 / Email: thuocthuysannoben@gmail.com",
+      "Website: thuocthuysannoben.com",
+      "Sản xuất tại: CÔNG TY TNHH NO BEN. Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi,",
+      "Thành phố Hồ Chí Minh, Việt Nam",
+      "Sản phẩm được phối trộn và đóng gói tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi,",
+      "Thành Phố Hồ Chí Minh, Việt Nam"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 883,
+      "y": 495.5,
+      "s": 69
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        180,
+        180,
+        900,
+        312
+      ],
+      "bang_mau": [
+        "#18994c",
+        "#2d3193",
+        "#ecf8f6",
+        "#323484",
+        "#9fccae",
+        "#607b8a",
+        "#303268"
+      ],
+      "net": [
+        "#2d3193",
+        "#ecf8f6",
+        "#18994c"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    220,
+    155
+  ],
+  "mat_truoc": [
+    93,
+    111,
+    1316,
+    979
+  ]
+}

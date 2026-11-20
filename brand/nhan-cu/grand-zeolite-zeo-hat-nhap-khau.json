@@ -1,0 +1,293 @@
+{
+  "slug": "grand-zeolite-zeo-hat-nhap-khau",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-001535_1.jpg",
+  "kich_thuoc_goc": [
+    556,
+    600
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 556 × 600. Chữ trên nền ảnh (nước, tôm mờ) được xoá theo màu chữ rồi đặt chữ mới trong khung trong suốt. Chữ sửa theo hồ sơ TCCS 24:2020/NOBEN; địa chỉ giữ như nhãn cũ.",
+  "xoa": [
+    {
+      "vung": [
+        38,
+        198,
+        288,
+        272
+      ],
+      "mau": "#153546",
+      "nguong": 140
+    },
+    {
+      "vung": [
+        350,
+        263,
+        176,
+        208
+      ],
+      "mau": "#153546",
+      "nguong": 140
+    },
+    {
+      "vung": [
+        148,
+        502,
+        374,
+        68
+      ],
+      "mau": "#172d39",
+      "nguong": 140
+    }
+  ],
+  "khung": [
+    {
+      "x": 40,
+      "y": 199,
+      "w": 290,
+      "h": 270,
+      "nen": "trong",
+      "dem": 2,
+      "co": 13,
+      "phong": "serif",
+      "mau": "#16303f",
+      "dong_cao": 1.12,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "THÀNH PHẦN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "( Trong 1 kg sản phẩm)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "SiO<sub style=\"line-height:0;font-size:.72em\">2</sub> (min): 65 %"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Al<sub style=\"line-height:0;font-size:.72em\">2</sub>O<sub style=\"line-height:0;font-size:.72em\">3</sub> (min): 13 %"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Fe<sub style=\"line-height:0;font-size:.72em\">2</sub>O<sub style=\"line-height:0;font-size:.72em\">3</sub> (min): 1 %"
+        },
+        {
+          "kieu": "dong",
+          "chu": "CaO (min): 3 %"
+        },
+        {
+          "kieu": "dong",
+          "chu": "MgO (min): 0,1 %"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dam",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "CaO, Al<sub style=\"line-height:0;font-size:.72em\">2</sub>O<sub style=\"line-height:0;font-size:.72em\">3</sub>, Fe<sub style=\"line-height:0;font-size:.72em\">2</sub>O<sub style=\"line-height:0;font-size:.72em\">3</sub>, SiO<sub style=\"line-height:0;font-size:.72em\">2</sub>, MgO"
+        },
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cung cấp oxy nhanh cho ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hấp thụ NH<sub style=\"line-height:0;font-size:.72em\">3</sub> trong nước ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung khoáng chất, lắng tụ chất lơ lửng trong ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cải tạo môi trường nước ao nuôi, làm sạch nước ao nuôi."
+        },
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trước khi thả giống: Sử dụng 10kg/1.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Định kỳ: Sử dụng 10kg/2.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        }
+      ]
+    },
+    {
+      "x": 352,
+      "y": 265,
+      "w": 172,
+      "h": 205,
+      "nen": "trong",
+      "dem": 2,
+      "co": 13,
+      "phong": "serif",
+      "mau": "#16303f",
+      "dong_cao": 1.38,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "html",
+          "chu": "Số tiêu chuẩn công bố: <b>24:2020/NOBEN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-001535"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-33"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    }
+  ],
+  "cong_ty": {
+    "x": 152,
+    "y": 500,
+    "w": 368,
+    "co": 8.2,
+    "mau": "#10232e",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 72.5,
+      "y": 497.5,
+      "s": 72
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 74,
+      "y": 27.8,
+      "w": 90,
+      "co": 17.3,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        73,
+        14,
+        92,
+        15
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        55,
+        30,
+        495,
+        145
+      ],
+      "bang_mau": [
+        "#070503",
+        "#fbf00a",
+        "#e8f1f6",
+        "#d62922",
+        "#ead541",
+        "#7f8260"
+      ],
+      "net": [
+        "#070503",
+        "#fbf00a",
+        "#d62922"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        62,
+        8,
+        218,
+        58
+      ],
+      "bang_mau": [
+        "#f9f9f8",
+        "#cb2830",
+        "#a39796",
+        "#c8c6c7",
+        "#070707",
+        "#9d4846",
+        "#646465",
+        "#302e2f"
+      ],
+      "net": [
+        "#f9f9f8",
+        "#070707"
+      ],
+      "mem": 300
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    200,
+    216
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    556,
+    600
+  ]
+}

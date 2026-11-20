@@ -1,0 +1,309 @@
+{
+  "slug": "down-max-ha-phen",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-037649_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    926
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 1600 × 926 (ảnh _1, nhãn Noben; ảnh _2 là nhãn nhà phân phối Probiotic, không dùng). Mặt sau có chữ chìm 'HẠ PHÈN': xoá chữ đen theo màu, giữ chữ chìm. Chữ sửa theo hồ sơ TCCS 01:2022/NOBEN.",
+  "xoa": [
+    {
+      "vung": [
+        840,
+        145,
+        350,
+        485
+      ],
+      "mau": "#222222",
+      "nguong": 120
+    },
+    {
+      "vung": [
+        1204,
+        145,
+        358,
+        430
+      ],
+      "mau": "#222222",
+      "nguong": 120
+    },
+    {
+      "vung": [
+        1212,
+        603,
+        340,
+        150
+      ],
+      "mau": "#222222",
+      "nguong": 120
+    },
+    {
+      "vung": [
+        850,
+        705,
+        200,
+        30
+      ],
+      "mau": "#222222",
+      "nguong": 120
+    },
+    {
+      "vung": [
+        962,
+        784,
+        580,
+        110
+      ],
+      "mau": "#222222",
+      "nguong": 120
+    }
+  ],
+  "khung": [
+    {
+      "x": 843,
+      "y": 146,
+      "w": 344,
+      "h": 482,
+      "nen": "trong",
+      "dem": 2,
+      "co": 20,
+      "mau": "#222222",
+      "dong_cao": 1.5,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Zn (Dạng ZnO) (min)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>17.500 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Mn (Dạng MnO) (min)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>8.540 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Mg (Dạng MgO) (min)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>6.200 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Chất đệm (dextrose)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>Vừa đủ 1 kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Asen (As):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>KPH</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Cadimi (Cd):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>KPH</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Chì (Pb):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>KPH</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Thủy ngân (Hg):</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>KPH</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:0.7em\">CÔNG DỤNG:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp cho quá trình lột xác và tạo vỏ của tôm nhanh hơn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc."
+        }
+      ]
+    },
+    {
+      "x": 1206,
+      "y": 146,
+      "w": 354,
+      "h": 428,
+      "nen": "trong",
+      "dem": 2,
+      "co": 20,
+      "mau": "#222222",
+      "dong_cao": 1.5,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trước khi thả giống: Sử dụng 5kg/3.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Định kỳ: Sử dụng 5kg/5.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:.7em\"><b>HƯỚNG DẪN BẢO QUẢN:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</span>"
+        }
+      ]
+    },
+    {
+      "x": 1213,
+      "y": 604,
+      "w": 338,
+      "h": 148,
+      "nen": "trong",
+      "dem": 4,
+      "co": 17,
+      "mau": "#222222",
+      "dong_cao": 1.42,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 01:2022/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-037649"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã HCCQ: VICB7178.10-101"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 852,
+      "y": 706,
+      "w": 200,
+      "h": 28,
+      "nen": "trong",
+      "dem": 1,
+      "co": 19,
+      "mau": "#222222",
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    }
+  ],
+  "cong_ty": {
+    "x": 968,
+    "y": 786,
+    "w": 570,
+    "co": 15,
+    "mau": "#1a1a1a",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh",
+      "Điện thoại: 0934 246 420 / MST: 0304210513 / Email: thuocthuysannoben@gmail.com",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 853.5,
+      "y": 786.5,
+      "s": 100
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 524,
+      "y": 97.6,
+      "w": 148,
+      "co": 28.8,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        522,
+        74,
+        153,
+        26
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "ISO 9001:2015",
+      "x": 858,
+      "y": 659.6,
+      "w": 145,
+      "co": 27.4,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        856,
+        637,
+        150,
+        26
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        58,
+        148,
+        738,
+        298
+      ],
+      "bang_mau": [
+        "#0ba452",
+        "#f2fbf4",
+        "#9f2916",
+        "#2f9c63",
+        "#7c7172",
+        "#bde4cc",
+        "#7cc19d"
+      ],
+      "net": [
+        "#0ba452",
+        "#f2fbf4"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    250,
+    145
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    800,
+    926
+  ]
+}

@@ -1,0 +1,260 @@
+{
+ "slug": "ben-com",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-002230_1.jpg",
+ "kich_thuoc_goc": [
+  1600,
+  886
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 886. Chữ sửa theo hồ sơ TCCS 60:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Chữ cũ trên nền xanh/đỏ được xóa (khuếch tán màu nền) rồi đặt chữ vector.",
+ "khung": [
+  {
+   "x": 22,
+   "y": 118,
+   "w": 462,
+   "h": 612,
+   "r": 0,
+   "nen": "trong",
+   "dem": 4,
+   "co": 23,
+   "mau": "#ffffff",
+   "dong_cao": 1.45,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-decoration:underline;text-underline-offset:.12em\">THÀNH PHẦN:</span>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Protein (đạm cá) (min): 25%"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Dung môi (nước) vừa đủ: 1 lít"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Asen (As): 9.77 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Asen (As) vô cơ: 0.91 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Cadimi (Cd): 0.847 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Chì (Pb): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Thủy ngân (Hg): 0.040 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- E. coli < 1 CFU/ml"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Ethoxyquin: KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Salmonella spp.: KPH"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-decoration:underline;text-underline-offset:.12em\">CÔNG DỤNG</span>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Bổ sung đạm cá, acid amin thiết yếu cho tôm, cá. Giúp tôm, cá ham ăn, chóng lớn. Giúp tôm, cá bắt mồi nhanh do có mùi tanh hấp dẫn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ tăng đề kháng, tăng cường hấp thụ chất dinh dưỡng, hạn chế mềm vỏ, chậm lớn, bắt mồi kém."
+    }
+   ]
+  },
+  {
+   "x": 1106,
+   "y": 46,
+   "w": 462,
+   "h": 740,
+   "r": 0,
+   "nen": "trong",
+   "dem": 4,
+   "co": 24.5,
+   "mau": "#ffffff",
+   "dong_cao": 1.37,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;transform:scaleX(0.8);transform-origin:0 0\"><p class=\"\" style=\"margin:0\"><b style=\"color:#ffd21f\">HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b></p><p class=\"gach\" style=\"margin:0\">- <b>Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.</b></p><p class=\"gach\" style=\"margin:0\">- <b>Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.</b></p><p class=\"gach\" style=\"margin:0\">- <b>Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn.</b></p><p class=\"gach\" style=\"margin:0\">- <b>Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.</b></p><p class=\"gach\" style=\"margin:0\">- <b>Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.</b></p><p class=\"trong\" style=\"margin:0\"></p><p class=\"\" style=\"margin:0\"><b><span style=\"color:#ffd21f\">Hướng dẫn bảo quản:</span> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</b></p><p class=\"trong\" style=\"margin:0\"></p><p class=\"\" style=\"margin:0\"><b>Số tiêu chuẩn công bố: 60:2020/NOBEN</b></p><p class=\"\" style=\"margin:0\"><b>Mã số tiếp nhận: 01-002230</b></p><p class=\"\" style=\"margin:0\"><b>Mã SPHQ: VICB 7178.10-69</b></p><p class=\"trong\" style=\"margin:0\"></p><p class=\"\" style=\"margin:0\"><b>Số lô sản xuất:</b></p><p class=\"\" style=\"margin:0\"><b>Ngày sản xuất:</b></p><p class=\"\" style=\"margin:0\"><b>Hạn sử dụng:</b></p><p class=\"\" style=\"margin:0\"><b>Thể tích thực:</b></p></span></span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    22,
+    120,
+    462,
+    608
+   ],
+   "chu": "sang",
+   "le": 4
+  },
+  {
+   "vung": [
+    1106,
+    48,
+    462,
+    734
+   ],
+   "mau": "#e8c832",
+   "nguong": 135,
+   "le": 4
+  },
+  {
+   "vung": [
+    1106,
+    48,
+    462,
+    734
+   ],
+   "chu": "sang",
+   "le": 4
+  },
+  {
+   "vung": [
+    525,
+    703,
+    562,
+    113
+   ],
+   "chu": "sang",
+   "le": 4
+  }
+ ],
+ "chu_vector": [
+  {
+   "chu": "CÔNG TY TNHH NO BEN",
+   "x": 689,
+   "y": 727,
+   "w": 235,
+   "co": 28,
+   "phong": "sans",
+   "mau": "#ffffff"
+  },
+  {
+   "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+   "x": 560,
+   "y": 751,
+   "w": 489,
+   "co": 17.5,
+   "phong": "sans",
+   "mau": "#ffffff"
+  },
+  {
+   "chu": "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+   "x": 542,
+   "y": 774,
+   "w": 529,
+   "co": 17.5,
+   "phong": "sans",
+   "mau": "#ffffff"
+  },
+  {
+   "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+   "x": 532,
+   "y": 797,
+   "w": 548,
+   "co": 17.5,
+   "phong": "sans",
+   "mau": "#ffffff"
+  },
+  {
+   "chu": "SẢN XUẤT TẠI VIỆT NAM",
+   "x": 720,
+   "y": 821,
+   "w": 172,
+   "co": 19,
+   "phong": "sans",
+   "mau": "#ffd21f"
+  }
+ ],
+ "logo": [
+  {
+   "x": 550,
+   "y": 52,
+   "w": 115,
+   "h": 118
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    840,
+    72,
+    1078,
+    142
+   ],
+   "bang_mau": [
+    "#f8f7f7",
+    "#c8c5c5",
+    "#969090",
+    "#0f0e0e",
+    "#ba171f",
+    "#575151",
+    "#7a272b"
+   ],
+   "net": [
+    "#0f0e0e",
+    "#f8f7f7"
+   ],
+   "mem": 500,
+   "mau": {
+    "#0f0e0e": "#0c0c0c"
+   }
+  },
+  {
+   "vung": [
+    520,
+    255,
+    1085,
+    425
+   ],
+   "bang_mau": [
+    "#eb1c25",
+    "#093d78",
+    "#10427b",
+    "#f4e035",
+    "#393e4e",
+    "#d3460d",
+    "#a1324b",
+    "#909e52"
+   ],
+   "net": [
+    "#eb1c25",
+    "#f4e035"
+   ]
+  }
+ ],
+ "bao_bi": "chai",
+ "kich_thuoc_mm": [
+  240,
+  135
+ ],
+ "mat_truoc": [
+  500,
+  40,
+  1100,
+  835
+ ]
+}

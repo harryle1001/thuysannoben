@@ -1,0 +1,294 @@
+{
+  "slug": "super-vidal",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020756_1.jpg",
+  "kich_thuoc_goc": [
+    800,
+    429
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 429. Chữ sửa theo hồ sơ TCCS 16:2020/NOBEN (hàm lượng Cu, chất đệm, liều); hình, màu, bố cục giữ nguyên nhãn đăng ký. Địa chỉ giữ như nhãn cũ.",
+  "khung": [
+    {
+      "x": 411,
+      "y": 9,
+      "w": 377,
+      "h": 224,
+      "co": 9.5,
+      "dem": 3,
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>CHỈ TIÊU CHẤT LƯỢNG</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "Cu (CuSO<sub>4</sub>.5H<sub>2</sub>O) (min): 1.000 ppm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (bột zeolite) vừa đủ: 1 kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "NGUYÊN LIỆU: CuSO<sub>4</sub>.5H<sub>2</sub>O, bột zeolite"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG:</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp ổn định mật độ tảo, ổn định pH ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hỗ trợ cắt tảo: 100g/1.500m³ nước. Giảm tảo: 100g/3.000m³ nước. Ổn định tảo: 50g/3.000m³ nước."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hòa tan với nước sạch một lượng vừa đủ rồi tạt đều khắp ao vào lúc trời có nắng gắt từ 9-10 giờ. Không sử dụng khi có mưa."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Trường hợp để xử lý tảo lam, tảo sợi, tảo xanh quá dày: Sử dụng 500g sản phẩm/2.000m³ nước, sử dụng 2 liều liên tục và cách nhau 2 ngày, sử dụng vào lúc trời nắng gắt."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Lưu ý: Không sử dụng sản phẩm khi trời ít nắng hoặc mưa. Lắc đều sản phẩm trước khi sử dụng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Ngưng sử dụng trước thu hoạch 15 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 621,
+      "y": 235,
+      "w": 165,
+      "h": 38,
+      "co": 9.5,
+      "dem": 1,
+      "dong_cao": 1.2,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 413,
+      "y": 276,
+      "w": 196,
+      "h": 54,
+      "co": 9.5,
+      "dem": 2,
+      "dong_cao": 1.32,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 16:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-020756"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-27"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 614,
+      "y": 276,
+      "w": 170,
+      "h": 54,
+      "co": 9.5,
+      "dem": 2,
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 478,
+      "y": 333,
+      "w": 308,
+      "h": 63,
+      "noi_dung": []
+    },
+    {
+      "x": 413,
+      "y": 398,
+      "w": 373,
+      "h": 17,
+      "co": 6.6,
+      "dem": 0,
+      "dong_cao": 1.75,
+      "mau": "#333333",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh"
+        }
+      ]
+    }
+  ],
+  "logo": [
+    {
+      "x": 422,
+      "y": 339,
+      "w": 54,
+      "h": 54
+    }
+  ],
+  "cong_ty": {
+    "x": 491,
+    "y": 335,
+    "w": 292,
+    "co": 7.3,
+    "mau": "#333333",
+    "ten": "<span style=\"color:#4a7fb5;-webkit-text-stroke-color:#4a7fb5\">CÔNG TY TNHH NO BEN</span>",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com",
+      "MST: 0304210513"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        62,
+        38,
+        332,
+        99
+      ],
+      "bang_mau": [
+        "#e3222a",
+        "#fbeade",
+        "#a2c641",
+        "#cfd599",
+        "#46542f",
+        "#e27d7d"
+      ],
+      "net": [
+        "#e3222a",
+        "#fbeade"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        140,
+        110,
+        275,
+        151
+      ],
+      "bang_mau": [
+        "#f4f5f6",
+        "#34544a",
+        "#b8b9ba",
+        "#7c8181",
+        "#101213"
+      ],
+      "net": [
+        "#101213",
+        "#f4f5f6"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        75,
+        366,
+        302,
+        390
+      ],
+      "bang_mau": [
+        "#bfc440",
+        "#cdd431",
+        "#e29c40",
+        "#c05c12"
+      ],
+      "net": [
+        "#c05c12"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        417,
+        234,
+        549,
+        273
+      ],
+      "bang_mau": [
+        "#f9f9fa",
+        "#a6a6a7",
+        "#d4d4d6",
+        "#171719",
+        "#666668"
+      ],
+      "net": [
+        "#171719",
+        "#f9f9fa"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    270,
+    145
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    400,
+    429
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "slug": "vita-c-tat",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-037656_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    997
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 997 (ảnh _1: nhãn Noben; ảnh _2 là bản 'KG26' của nhà phân phối, không dùng). Chữ sửa theo hồ sơ TCCS 02:2022/NOBEN (VITA C TAT NEW); hình, màu, bố cục giữ nguyên. Chữ tối trên nền vàng có chữ chìm 'CHỐNG SỐC/CHỐNG STRESS': khung trong suốt + xóa chữ cũ theo màu tối. Nhóm đối tượng: tôm, cá.",
+  "khung": [
+    {
+      "x": 50,
+      "y": 82,
+      "w": 450,
+      "h": 742,
+      "nen": "trong",
+      "co": 22,
+      "dem": 3,
+      "dong_cao": 1.45,
+      "mau": "#1e1e1e",
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-weight:700;color:#2c4b9e;-webkit-text-stroke-color:#2c4b9e\">CHỈ TIÊU CHẤT LƯỢNG</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;justify-content:space-between;gap:.6em\"><span>Tên chỉ tiêu</span><span style=\"white-space:nowrap\">Hàm lượng</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;justify-content:space-between;gap:.6em\"><span>L-Ascorbate-2-Monophosphate (vitamin C 35%) (min)</span><span style=\"white-space:nowrap\">250 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;justify-content:space-between;gap:.6em\"><span>Vitamin B3 (min)</span><span style=\"white-space:nowrap\">150 mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;justify-content:space-between;gap:.6em\"><span>Chất đệm (dextrose) vừa đủ</span><span style=\"white-space:nowrap\">1 kg</span></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli</i> &lt; 10 CFU/g"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-weight:700;color:#2c4b9e;-webkit-text-stroke-color:#2c4b9e\">NGUYÊN LIỆU</span>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "L-Ascorbate-2-Monophosphate, Vitamin B3, dextrose"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-weight:700;color:#2c4b9e;-webkit-text-stroke-color:#2c4b9e\">CÔNG DỤNG:</span>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung vitamin tổng hợp cho tôm, cá."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ giảm stress, giảm sốc khi môi trường thay đổi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tăng cường sức đề kháng giúp tôm cá khỏe mạnh, phát triển tốt."
+        }
+      ]
+    },
+    {
+      "x": 1108,
+      "y": 82,
+      "w": 454,
+      "h": 562,
+      "nen": "trong",
+      "co": 22,
+      "dem": 3,
+      "dong_cao": 1.45,
+      "mau": "#1e1e1e",
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-weight:700;color:#2c4b9e;-webkit-text-stroke-color:#2c4b9e\">HƯỚNG DẪN SỬ DỤNG</span>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sử dụng khi thời tiết thay đổi: Dùng 5kg/3.000m³ nước, tạt vào lúc sáng sớm hoặc chiều mát."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sử dụng khi bị stress: Dùng 5kg/2.000m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa tan với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao. Mở máy sục khí hoặc quạt nước để sản phẩm phân tán đều."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-weight:700;color:#2c4b9e;-webkit-text-stroke-color:#2c4b9e\">HƯỚNG DẪN BẢO QUẢN:</span>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 1110,
+      "y": 680,
+      "w": 454,
+      "h": 254,
+      "nen": "trong",
+      "co": 22,
+      "dem": 3,
+      "dong_cao": 1.47,
+      "mau": "#1e1e1e",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 02:2022/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-037656"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-102"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        50,
+        82,
+        450,
+        700
+      ],
+      "mau": "#2a2a2a",
+      "nguong": 150,
+      "le": 4
+    },
+    {
+      "vung": [
+        50,
+        782,
+        450,
+        42
+      ],
+      "mau": "#2a2a2a",
+      "nguong": 105,
+      "le": 3
+    },
+    {
+      "vung": [
+        1108,
+        82,
+        454,
+        562
+      ],
+      "mau": "#2a2a2a",
+      "nguong": 150,
+      "le": 4
+    },
+    {
+      "vung": [
+        1110,
+        680,
+        454,
+        254
+      ],
+      "mau": "#2a2a2a",
+      "nguong": 130,
+      "le": 4
+    },
+    {
+      "vung": [
+        660,
+        855,
+        406,
+        82
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        660,
+        855,
+        406,
+        82
+      ],
+      "mau": "#f5aa70",
+      "nguong": 60,
+      "le": 4
+    }
+  ],
+  "logo": [
+    {
+      "x": 537,
+      "y": 847,
+      "w": 101,
+      "h": 101
+    }
+  ],
+  "cong_ty": {
+    "x": 664,
+    "y": 855,
+    "w": 400,
+    "co": 11,
+    "mau": "#ffffff",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "<b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>",
+      "<b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b>",
+      "<b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>"
+    ],
+    "xuat_xu": "<span style=\"background:#ffffff;padding:0 .25em;border-radius:.15em\">SẢN XUẤT TẠI VIỆT NAM</span>"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        555,
+        160,
+        1045,
+        255
+      ],
+      "bang_mau": [
+        "#fbf012",
+        "#e86f22",
+        "#f3982e",
+        "#aa4314",
+        "#fdd935",
+        "#210604"
+      ],
+      "net": [
+        "#fbf012",
+        "#210604"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        540,
+        370,
+        1060,
+        505
+      ],
+      "bang_mau": [
+        "#f9fafb",
+        "#3f3e7b",
+        "#9a9abf"
+      ],
+      "net": [
+        "#3f3e7b",
+        "#f9fafb"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        555,
+        30,
+        835,
+        112
+      ],
+      "bang_mau": [
+        "#f6f5f4",
+        "#aeacab",
+        "#72665c",
+        "#161311",
+        "#ea8933"
+      ],
+      "net": [
+        "#161311",
+        "#f6f5f4"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        640,
+        735,
+        955,
+        765
+      ],
+      "bang_mau": [
+        "#f9f8f5",
+        "#f8cbc4",
+        "#ad5151",
+        "#d68d8a"
+      ],
+      "net": [
+        "#ad5151",
+        "#f9f8f5"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    400,
+    250
+  ],
+  "mat_truoc": [
+    515,
+    0,
+    1085,
+    997
+  ]
+}

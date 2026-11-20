@@ -1,0 +1,211 @@
+{
+  "slug": "ben-iq",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-008940_1.jpg",
+  "kich_thuoc_goc": [
+    1527,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1527 × 1080 (nhãn nằm ở y 268–778). Chữ sửa theo hồ sơ TCCS 32:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+  "khung": [
+    {
+      "x": 72,
+      "y": 412,
+      "w": 410,
+      "h": 262,
+      "r": 0,
+      "mau": "#2e2e2e",
+      "co": 17.5,
+      "dong_cao": 1.42,
+      "dem": 12,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#e5197e;-webkit-text-stroke-color:#e5197e\">THÀNH PHẦN:</span> Trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:100%\"><span style=\"white-space:nowrap\">- Iodine (min):</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">1%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;width:100%\"><span style=\"white-space:nowrap\">- Dung môi (nước RO) vừa đủ:</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;padding:0 2px\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">1 lít</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:.7em;color:#e5197e;-webkit-text-stroke-color:#e5197e\">CÔNG DỤNG</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Xử lý môi trường ao nuôi, góp phần hạn chế các tác nhân gây hiện tượng cụt râu, sâu đuôi, hoại tử phụ bộ, phân trắng, đốm đen, đen mang, vàng mang...</span>"
+        }
+      ]
+    },
+    {
+      "x": 1058,
+      "y": 410,
+      "w": 394,
+      "h": 242,
+      "r": 0,
+      "mau": "#2e2e2e",
+      "co": 17.5,
+      "dong_cao": 1.3,
+      "dem": 6,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#e5197e;-webkit-text-stroke-color:#e5197e\">HƯỚNG DẪN SỬ DỤNG:</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chuẩn bị ao nuôi: 1 lít/3.000 m³ nước."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Định kỳ: 1 lít/6.000 - 9.000 m³ nước, 10 - 15 ngày/lần."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Tăng liều gấp đôi khi nước bị nhiễm khuẩn nặng."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, tạt vào lúc chiều mát."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Lắc đều sản phẩm trước khi sử dụng."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng sản phẩm: Ngưng sử dụng trước thu hoạch 7-10 ngày."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:.7em;color:#e5197e;-webkit-text-stroke-color:#e5197e\">BẢO QUẢN: <span style=\"color:#2e2e2e;-webkit-text-stroke-color:#2e2e2e\">Nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 1066,
+      "y": 665,
+      "w": 172,
+      "h": 74,
+      "r": 0,
+      "mau": "#1e1e1e",
+      "co": 14.5,
+      "dong_cao": 1.3,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số TCCS 32:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-008940"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"font-size:1.32em;line-height:1.3\">Thể tích thực:</b>"
+        }
+      ]
+    },
+    {
+      "x": 628,
+      "y": 669,
+      "w": 424,
+      "h": 107,
+      "r": 0,
+      "nen": "#12ae4d",
+      "noi_dung": []
+    },
+    {
+      "x": 642,
+      "y": 669,
+      "w": 410,
+      "h": 107,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "co": 15,
+      "dong_cao": 1.18,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700;line-height:1.25;margin-top:0\"><b style=\"font-size:1.45em;color:#f2e530;-webkit-text-stroke-color:#f2e530\">CÔNG TY TNHH NO BEN</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Website: thuocthuysannoben.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:138.89%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.72);font-size:1em;font-weight:700\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.8);font-size:1.12em;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.3;text-shadow:0 0 2px #fff,0 0 2px #fff,0 0 1px #fff\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    }
+  ],
+  "logo": [
+    {
+      "x": 549,
+      "y": 657,
+      "w": 91,
+      "h": 87
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        585,
+        385,
+        962,
+        472
+      ],
+      "bang_mau": [
+        "#f9fbfa",
+        "#ea1c27",
+        "#c22d35",
+        "#fce1db",
+        "#e0adb1",
+        "#d06a6d"
+      ],
+      "net": [
+        "#ea1c27",
+        "#c22d35"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    135
+  ],
+  "mat_truoc": [
+    488,
+    268,
+    1052,
+    778
+  ]
+}

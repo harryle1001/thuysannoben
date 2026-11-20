@@ -1,0 +1,311 @@
+{
+  "slug": "bzt",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-001534_2.jpg",
+  "kich_thuoc_goc": [
+    1527,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1527 × 1080 (nhãn túi mặt sau + mặt trước). Chữ sửa theo hồ sơ TCCS 29:2020/NOBEN (BZT); tên chủng vi sinh ghi đúng như hồ sơ TCCS. Chữ trắng trên nền xanh ngọc: khung trong suốt + xóa chữ cũ. Khối lượng tịnh/Net Weight để trống. Đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 203,
+      "y": 466,
+      "w": 500,
+      "h": 360,
+      "r": 0,
+      "dem": 3,
+      "co": 15,
+      "dong_cao": 1.3,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "THÀNH PHẦN:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus</i> spp. (min)</span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>1 x 10<sup>9</sup> cfu/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus lichenifomis</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus megateri</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus mensentericus</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span>Chất đệm (dextrose monohydrate)</span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Vừa đủ 1kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span>Độ ẩm (max)</span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>10%</span></span>"
+        },
+        {
+          "kieu": "muc",
+          "chu": "CÔNG DỤNG:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp phân hủy mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giảm khí độc NH<sub>3</sub>, H<sub>2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+        },
+        {
+          "kieu": "muc",
+          "chu": "HƯỚNG DẪN SỬ DỤNG:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều lượng như sau:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Chuẩn bị ao: Dùng 454g/2.000-2.500 m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Dùng định kỳ: Dùng 454g/3.000-5.000 m³ nước, định kỳ 5-7 ngày sử dụng 1 lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000-3.000 m³ nước, dùng liên tục 2 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000 m³ nước, sử dụng 2 ngày liên tục với liều như trên."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Lưu ý: Sử dụng cho cắt tảo, giảm tảo nên sử dụng vào lúc 10-12 giờ đêm. Có thể ủ sục khí trước khi sử dụng từ trên 12 tiếng để tăng hiệu quả sử dụng của sản phẩm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dong",
+          "dam": "Bảo quản:",
+          "chu": " Nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 232,
+      "y": 849,
+      "w": 220,
+      "h": 28,
+      "r": 0,
+      "dem": 0,
+      "co": 20,
+      "nen": "trong",
+      "mau": "#e8f060",
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 598,
+      "y": 887,
+      "w": 177,
+      "h": 86,
+      "r": 6,
+      "dem": 5,
+      "co": 13.5,
+      "dong_cao": 1.28,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số TCCS 29:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-001534"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "HSD:"
+        }
+      ]
+    },
+    {
+      "x": 258,
+      "y": 898,
+      "w": 334,
+      "h": 96,
+      "r": 0,
+      "dem": 1,
+      "co": 9.6,
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-size:.9em\">Sản phẩm của:</span> <b style=\"font-size:1.45em\">CÔNG TY TNHH NO BEN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi,"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thành phố Hồ Chí Minh. Điện thoại: 0934 246 420"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-size:.8em\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#c8102e;font-size:1.2em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+        }
+      ]
+    },
+    {
+      "x": 846,
+      "y": 282,
+      "w": 220,
+      "h": 39,
+      "r": 0,
+      "dem": 0,
+      "co": 22,
+      "mau": "#23257f",
+      "can": "center",
+      "dong_cao": 1.75,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Net Weight:"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        205,
+        466,
+        495,
+        330
+      ],
+      "chu": "sang",
+      "no": 7
+    },
+    {
+      "vung": [
+        205,
+        796,
+        388,
+        50
+      ],
+      "chu": "sang",
+      "no": 7
+    },
+    {
+      "vung": [
+        234,
+        850,
+        215,
+        28
+      ],
+      "mau": "#d6ef60",
+      "nguong": 110,
+      "no": 7
+    }
+  ],
+  "logo": [
+    {
+      "x": 200,
+      "y": 904,
+      "w": 56,
+      "h": 60
+    },
+    {
+      "x": 1093,
+      "y": 347,
+      "w": 100,
+      "h": 110
+    }
+  ],
+  "chu_vector": [],
+  "lam_net": [
+    {
+      "vung": [
+        360,
+        280,
+        590,
+        350
+      ],
+      "bang_mau": [
+        "#137d77",
+        "#f5fcfc",
+        "#5d9490",
+        "#aedcda"
+      ],
+      "net": [
+        "#f5fcfc"
+      ]
+    },
+    {
+      "vung": [
+        940,
+        480,
+        1350,
+        660
+      ],
+      "bang_mau": [
+        "#fcf20a",
+        "#e7252d",
+        "#fbf5f3",
+        "#dea685",
+        "#110c02",
+        "#636031"
+      ],
+      "net": [
+        "#fcf20a",
+        "#110c02"
+      ]
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    300,
+    200
+  ],
+  "mat_truoc": [
+    810,
+    240,
+    1475,
+    1005
+  ]
+}

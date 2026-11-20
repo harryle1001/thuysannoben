@@ -1,0 +1,297 @@
+{
+  "slug": "rovazyme",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020758_2.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    897
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 897 (ảnh _2: mặt trước + mặt sau). Chữ sửa theo hồ sơ TCCS 04:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 858,
+      "y": 199,
+      "w": 450,
+      "h": 490,
+      "r": 0,
+      "nen": "#e8e8e8",
+      "noi_dung": []
+    },
+    {
+      "x": 1308,
+      "y": 279,
+      "w": 252,
+      "h": 330,
+      "r": 0,
+      "nen": "#e8e8e8",
+      "noi_dung": []
+    },
+    {
+      "x": 860,
+      "y": 199,
+      "w": 700,
+      "h": 490,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#1a1a1a",
+      "co": 19,
+      "dong_cao": 1.2,
+      "dem": 10,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"float:right;width:250px;height:78px\"></span><span style=\"float:right;width:0;height:396px\"></span><span style=\"float:right;clear:right;width:258px;height:72px\"></span><b>THÀNH PHẦN:</b> trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus</i> spp (min): 1x10<sup style=\"line-height:0\">9</sup> CFU/kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus lichenifomis</i>: định danh (+)"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus megateri</i>: định danh (+)"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus mensentericus</i>: định danh (+)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Độ ẩm (max): 10%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (dextrose monohydrate) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli</i> &lt; 10 CFU/g"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "CÔNG DỤNG",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Giúp phân hủy mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao."
+        },
+        {
+          "kieu": "html",
+          "chu": "- Giảm khí độc NH<sub style=\"line-height:0\">3</sub>, H<sub style=\"line-height:0\">2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "HƯỚNG DẪN SỬ DỤNG",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều lượng như sau:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>* Chuẩn bị ao:</b> Dùng 454g/2.000-2.500m³ nước."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>* Dùng định kỳ:</b> Dùng 454g/3.000-5.000m³ nước, định kỳ 5-7 ngày sử dụng 1 lần."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>* Trường hợp ao bị ô nhiễm nặng:</b> Dùng 1kg/2.000-3.000m³ nước, dùng liên tục 2 ngày."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>* Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab:</b> Dùng 1kg/2.000m³ nước, sử dụng 2 ngày liên tục với liều như trên."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Lưu ý: Sử dụng cho cắt tảo, giảm tảo nên sử dụng vào lúc 10-12 giờ đêm. Có thể ủ sục khí trước khi sử dụng từ trên 12 tiếng để tăng hiệu quả sử dụng của sản phẩm."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "HƯỚNG DẪN BẢO QUẢN:",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 862,
+      "y": 689,
+      "w": 440,
+      "h": 28,
+      "r": 0,
+      "nen": "#e8e8e8",
+      "co": 22,
+      "dong_cao": 1.2,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;padding-left:38px;color:#2e3a8c;-webkit-text-stroke-color:#2e3a8c\">Khối lượng tịnh:</b>"
+        }
+      ]
+    },
+    {
+      "x": 1308,
+      "y": 605,
+      "w": 252,
+      "h": 141,
+      "r": 0,
+      "nen": "#e8e8e8",
+      "mau": "#1a1a1a",
+      "co": 19.5,
+      "dong_cao": 1.38,
+      "dem": 4,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số TCCS 04:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-020758"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô SX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "HSD:"
+        }
+      ]
+    },
+    {
+      "x": 962,
+      "y": 753,
+      "w": 598,
+      "h": 112,
+      "r": 0,
+      "nen": "#e8e8e8",
+      "mau": "#141414",
+      "co": 15.5,
+      "dong_cao": 1.18,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700;line-height:1.25\">Sản phẩm của: <b style=\"font-size:1.4em;color:#2f75a4;-webkit-text-stroke-color:#2f75a4\">CÔNG TY TNHH NO BEN</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Hồ Chí Minh, Việt Nam. Điện thoại: 0934 246 420</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.8);font-size:1.1em;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.3\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 194,
+      "y": 722,
+      "w": 524,
+      "h": 124,
+      "r": 0,
+      "mau": "#141414",
+      "co": 16.5,
+      "dong_cao": 1.2,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700;line-height:1.25\">Sản phẩm của: <b style=\"font-size:1.4em;color:#2f75a4;-webkit-text-stroke-color:#2f75a4\">CÔNG TY TNHH NO BEN</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Sản xuất tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Hồ Chí Minh, Việt Nam. Điện thoại: 0934 246 420</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;margin-left:0.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.8);font-size:1.1em;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.3\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    }
+  ],
+  "logo": [
+    {
+      "x": 91,
+      "y": 737,
+      "w": 91,
+      "h": 91
+    },
+    {
+      "x": 874,
+      "y": 762,
+      "w": 87,
+      "h": 88
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    360,
+    200
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    790,
+    897
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "slug": "pro-algae",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-001533_1.jpg",
+  "kich_thuoc_goc": [
+    800,
+    426
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 800 × 426 (ảnh _1, bản thiết kế nhãn đăng ký; ảnh _2 là ảnh chụp nhãn in mẫu khác). Chữ sửa theo hồ sơ TCCS 06:2017/NOBEN; địa chỉ giữ như nhãn cũ.",
+  "khung": [
+    {
+      "x": 412,
+      "y": 43,
+      "w": 370,
+      "h": 243,
+      "r": 0,
+      "dem": 4,
+      "co": 12.5,
+      "phong": "serif",
+      "dong_cao": 1.15,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Bacillus</i> spp (min): 1 × 10<sup style=\"line-height:0;font-size:.72em\">9</sup> CFU/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Bacillus licheniformis</i>: định danh (+)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Bacillus megaterium</i>: định danh (+)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Bacillus mesentericus</i>: định danh (+)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (dextrose monohydrate) vừa đủ: 1 kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>E.coli</i> &lt; 10 CFU/g"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:0.35em\">NGUYÊN LIỆU</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "<i>Bacillus</i> spp., Dextrose monohydrate"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:0.35em\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp phân huỷ mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giảm khí độc NH<sub style=\"line-height:0;font-size:.72em\">3</sub>, H<sub style=\"line-height:0;font-size:.72em\">2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:0.35em\">HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều lượng như sau:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Chuẩn bị ao: Dùng 454g/2.000-2.500m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Dùng định kỳ: Dùng 454g/3.000-5.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước, định kỳ 5-7 ngày sử dụng 1 lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000-3.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước, dùng liên tục 2 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước, sử dụng 2 ngày liên tục với liều như trên."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Lưu ý: Sử dụng cho cắt tảo, giảm tảo nên sử dụng vào lúc 10-12 giờ đêm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Có thể ủ sục khí trước khi sử dụng từ trên 12 tiếng để tăng hiệu quả sử dụng của sản phẩm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 412,
+      "y": 290,
+      "w": 186,
+      "h": 45,
+      "r": 0,
+      "dem": 2,
+      "co": 11,
+      "phong": "serif",
+      "dong_cao": 1.25,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 06:2017/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-06"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-001533"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 602,
+      "y": 290,
+      "w": 176,
+      "h": 44,
+      "r": 0,
+      "dem": 2,
+      "co": 11,
+      "phong": "serif",
+      "dong_cao": 1.18,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;height:.55em\"></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 488,
+      "y": 351,
+      "w": 305,
+      "h": 72,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "cong_ty": {
+    "x": 493,
+    "y": 352,
+    "w": 296,
+    "co": 7.6,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 36,
+      "y": 20.5,
+      "s": 77
+    },
+    {
+      "x": 429,
+      "y": 351.5,
+      "s": 55
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "PRO ALGAE",
+      "x": 501,
+      "y": 38.8,
+      "w": 174,
+      "co": 32,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        499,
+        16,
+        178,
+        25
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 506,
+      "y": 344.9,
+      "w": 189,
+      "co": 10.6,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        504,
+        336,
+        193,
+        10
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "ISO 9001:2015",
+      "x": 210,
+      "y": 44.8,
+      "w": 102,
+      "co": 18.7,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        209,
+        30,
+        104,
+        16
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        40,
+        128,
+        362,
+        248
+      ],
+      "bang_mau": [
+        "#f9e409",
+        "#fcf7f5",
+        "#d12d35",
+        "#ec7d3f",
+        "#543474",
+        "#a4a520",
+        "#edb0a3",
+        "#31a24a"
+      ],
+      "net": [
+        "#fcf7f5",
+        "#d12d35",
+        "#543474"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        158,
+        258,
+        274,
+        388
+      ],
+      "bang_mau": [
+        "#fbef02",
+        "#e8f5a7",
+        "#d3cf13",
+        "#71af6c",
+        "#54b9b1",
+        "#929714"
+      ],
+      "net": [
+        "#e8f5a7",
+        "#54b9b1"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        198,
+        23,
+        377,
+        77
+      ],
+      "bang_mau": [
+        "#fbfaf9",
+        "#f8ef12",
+        "#d9d9d7",
+        "#93928b",
+        "#4f4b27",
+        "#b5b6b6",
+        "#0b0b0b",
+        "#636363",
+        "#b0a927"
+      ],
+      "net": [
+        "#fbfaf9",
+        "#0b0b0b"
+      ],
+      "mem": 300
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    240,
+    128
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    410,
+    426
+  ]
+}

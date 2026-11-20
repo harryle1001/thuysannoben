@@ -1,0 +1,384 @@
+{
+ "slug": "miral-n8",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-026750_1.jpg",
+ "kich_thuoc_goc": [
+  1600,
+  950
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 950 (mặt trước + mặt sau). Chữ sửa theo hồ sơ TCCS 79:2021/NOBEN (nhãn cũ ghi 78:2021); hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+ "khung": [
+  {
+   "x": 822,
+   "y": 134,
+   "w": 336,
+   "h": 592,
+   "r": 0,
+   "dem": 4,
+   "co": 19,
+   "mau": "#1d1d1b",
+   "dong_cao": 1.5,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>THÀNH PHẦN</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "(Trong 1 kg sản phẩm)"
+    },
+    {
+     "kieu": "html",
+     "chu": "P (dạng CaHPO<sub style=\"line-height:0\">4</sub>) (min): 2.500 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mg (dạng MgO) (min): 1.200 mg/kg"
+    },
+    {
+     "kieu": "html",
+     "chu": "Ca (dạng CaCO<sub style=\"line-height:0\">3</sub>) (min): 2.500 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chất đệm (dextrose) vừa đủ: 1kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Asen (As): 4.63 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Cadimi (Cd): 0.54 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chì (Pb): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Thủy ngân (Hg): KPH"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "NGUYÊN LIỆU: MgO, CaHPO<sub style=\"line-height:0\">4</sub>, CaCO<sub style=\"line-height:0\">3</sub>, dextrose"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp cho quá trình lột xác và tạo vỏ của tôm nhanh hơn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc."
+    }
+   ]
+  },
+  {
+   "x": 1168,
+   "y": 131,
+   "w": 392,
+   "h": 262,
+   "r": 0,
+   "dem": 3,
+   "co": 19,
+   "mau": "#1d1d1b",
+   "dong_cao": 1.3,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trước khi thả giống: Sử dụng 5kg/3.000m³ nước."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Định kỳ: Sử dụng 5kg/5.000m³ nước."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    }
+   ]
+  },
+  {
+   "x": 1176,
+   "y": 526,
+   "w": 382,
+   "h": 200,
+   "r": 0,
+   "dem": 3,
+   "co": 19.5,
+   "mau": "#1d1d1b",
+   "dong_cao": 1.45,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Số tiêu chuẩn công bố: 79:2021/NOBEN"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã SPHQ: VICB 7178.10-87"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã số tiếp nhận: 02-026750"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Khối lượng tịnh:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hạn sử dụng:"
+    }
+   ]
+  },
+  {
+   "x": 982,
+   "y": 760,
+   "w": 584,
+   "h": 145,
+   "r": 0,
+   "dem": 2,
+   "co": 21,
+   "mau": "#1d1d1b",
+   "dong_cao": 1.12,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.78);transform-origin:0 0\"><b><span style=\"font-size:1.42em\">CÔNG TY TNHH NO BEN</span></b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.66);transform-origin:0 0\"><b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.66);transform-origin:0 0\"><b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.62);transform-origin:0 0\"><b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b></span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 0\"><b style=\"color:#c8102e;font-size:1.05em\">SẢN XUẤT TẠI VIỆT NAM</b></span></span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    108,
+    750,
+    580,
+    125
+   ],
+   "mau": "#111f24",
+   "nguong": 70,
+   "le": 4
+  },
+  {
+   "vung": [
+    108,
+    750,
+    580,
+    125
+   ],
+   "chu": "sang",
+   "le": 4
+  }
+ ],
+ "chu_vector": [
+  {
+   "chu": "CÔNG TY TNHH NO BEN",
+   "x": 275,
+   "y": 785,
+   "w": 243,
+   "co": 30,
+   "phong": "sans",
+   "mau": "#ffffff",
+   "bong": true
+  },
+  {
+   "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+   "x": 142,
+   "y": 811.5,
+   "w": 506,
+   "co": 18,
+   "phong": "sans",
+   "mau": "#ffffff",
+   "bong": true
+  },
+  {
+   "chu": "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+   "x": 124,
+   "y": 838,
+   "w": 544,
+   "co": 18,
+   "phong": "sans",
+   "mau": "#ffffff",
+   "bong": true
+  },
+  {
+   "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+   "x": 114,
+   "y": 864.5,
+   "w": 565,
+   "co": 18,
+   "phong": "sans",
+   "mau": "#ffffff",
+   "bong": true
+  }
+ ],
+ "logo": [
+  {
+   "x": 109,
+   "y": 41,
+   "w": 110,
+   "h": 118
+  },
+  {
+   "x": 844,
+   "y": 757,
+   "w": 112,
+   "h": 121
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    120,
+    215,
+    672,
+    365
+   ],
+   "bang_mau": [
+    "#e61e28",
+    "#f2f4f3",
+    "#06748a",
+    "#7fcde5",
+    "#eec08a",
+    "#cd6a53",
+    "#339ab6",
+    "#a0ae87"
+   ],
+   "net": [
+    "#e61e28",
+    "#f2f4f3"
+   ]
+  },
+  {
+   "vung": [
+    1035,
+    35,
+    1360,
+    105
+   ],
+   "bang_mau": [
+    "#fcfaf9",
+    "#e61d28",
+    "#c73841",
+    "#fac0c0",
+    "#da787c"
+   ],
+   "net": [
+    "#e61d28",
+    "#fcfaf9",
+    "#c73841"
+   ]
+  },
+  {
+   "vung": [
+    1176,
+    452,
+    1410,
+    527
+   ],
+   "bang_mau": [
+    "#fcfcfc",
+    "#eeeeee",
+    "#afafaf",
+    "#818181",
+    "#d5d5d5",
+    "#0d0d0d",
+    "#494949"
+   ],
+   "net": [
+    "#0d0d0d",
+    "#fcfcfc"
+   ],
+   "mem": 500,
+   "mau": {
+    "#0d0d0d": "#0c0c0c"
+   }
+  },
+  {
+   "vung": [
+    496,
+    68,
+    727,
+    138
+   ],
+   "bang_mau": [
+    "#f9fafa",
+    "#657f85",
+    "#34535a",
+    "#b9bcbe",
+    "#0e1010",
+    "#98999a",
+    "#e1e2e2"
+   ],
+   "net": [
+    "#0e1010",
+    "#f9fafa"
+   ],
+   "mem": 500,
+   "mau": {
+    "#0e1010": "#0c0c0c"
+   }
+  }
+ ],
+ "bao_bi": "tui",
+ "kich_thuoc_mm": [
+  380,
+  225
+ ],
+ "mat_truoc": [
+  0,
+  0,
+  800,
+  920
+ ]
+}

@@ -25,7 +25,7 @@
         },
         {
           "kieu": "dong",
-          "chu": "<i>Bacillus</i> spp (min): 1 × 10<sup>9</sup> CFU/kg"
+          "chu": "<i>Bacillus</i> spp (min): 1 × 10<sup style=\"line-height:0;font-size:.72em\">9</sup> CFU/kg"
         },
         {
           "kieu": "dong",
@@ -69,7 +69,7 @@
         },
         {
           "kieu": "gach",
-          "chu": "Giảm khí độc NH<sub>3</sub>, H<sub>2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."
+          "chu": "Giảm khí độc NH<sub style=\"line-height:0;font-size:.72em\">3</sub>, H<sub style=\"line-height:0;font-size:.72em\">2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."
         },
         {
           "kieu": "gach",
@@ -89,19 +89,19 @@
         },
         {
           "kieu": "gach",
-          "chu": "Chuẩn bị ao: Dùng 454g/2.000-2.500m³ nước."
+          "chu": "Chuẩn bị ao: Dùng 454g/2.000-2.500m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
         },
         {
           "kieu": "gach",
-          "chu": "Dùng định kỳ: Dùng 454g/3.000-5.000m³ nước, định kỳ 5-7 ngày sử dụng 1 lần."
+          "chu": "Dùng định kỳ: Dùng 454g/3.000-5.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước, định kỳ 5-7 ngày sử dụng 1 lần."
         },
         {
           "kieu": "gach",
-          "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000-3.000m³ nước, dùng liên tục 2 ngày."
+          "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000-3.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước, dùng liên tục 2 ngày."
         },
         {
           "kieu": "gach",
-          "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000m³ nước, sử dụng 2 ngày liên tục với liều như trên."
+          "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước, sử dụng 2 ngày liên tục với liều như trên."
         },
         {
           "kieu": "gach",
@@ -234,9 +234,9 @@
     {
       "chu": "ISO 9001:2015",
       "x": 264,
-      "y": 76.8,
-      "w": 92,
-      "co": 17.3,
+      "y": 76.6,
+      "w": 91,
+      "co": 19.3,
       "phong": "serif",
       "mau": "#111111",
       "xoa": [

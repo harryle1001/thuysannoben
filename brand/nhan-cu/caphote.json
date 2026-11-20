@@ -1,0 +1,271 @@
+{
+ "slug": "caphote",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001548_1.jpg",
+ "kich_thuoc_goc": [
+  1527,
+  1080
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1527 × 1080 (nhãn 265 × 145 mm nằm trong ảnh). Chữ sửa theo hồ sơ TCCS 56:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Tên lớn trên nhãn là CALPHOTE (TCCS ghi CAPHOTE) — giữ hình, cần chủ sản phẩm quyết.",
+ "khung": [
+  {
+   "x": 160,
+   "y": 212,
+   "w": 376,
+   "h": 540,
+   "r": 0,
+   "nen": "trong",
+   "dem": 4,
+   "co": 21,
+   "mau": "#ffffff",
+   "dong_cao": 1.42,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>THÀNH PHẦN:</b> trong 1 lít sản phẩm"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Ca (Dạng CaCl<sub style=\"line-height:0\">2</sub>) (min): 10.400 mg/lít"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"white-space:nowrap\">- Mg (Dạng MgSO<sub style=\"line-height:0\">4</sub>.7H<sub style=\"line-height:0\">2</sub>O) (min): 2.500 mg/lít</span>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Dung môi (nước) vừa đủ: 1 lít"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Asen (As) vô cơ: KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Cadimi (Cd): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Chì (Pb): 2,537 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "- Thủy ngân (Hg): KPH"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Bổ sung khoáng chất vào thức ăn tôm, cá."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên."
+    }
+   ]
+  },
+  {
+   "x": 1084,
+   "y": 203,
+   "w": 372,
+   "h": 462,
+   "r": 0,
+   "nen": "trong",
+   "dem": 4,
+   "co": 21.5,
+   "mau": "#ffffff",
+   "dong_cao": 1.45,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN SỬ DỤNG:</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    },
+    {
+     "kieu": "dong",
+     "chu": "* Lắc kỹ trước khi dùng."
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>BẢO QUẢN:</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    }
+   ]
+  },
+  {
+   "x": 1084,
+   "y": 711,
+   "w": 215,
+   "h": 64,
+   "r": 0,
+   "nen": "trong",
+   "dem": 2,
+   "co": 15,
+   "mau": "#ffffff",
+   "dong_cao": 1.38,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "TCCS 56:2020/NOBEN"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã số tiếp nhận: 01-001548"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã SPHQ: VICB 7178.10-65"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    160,
+    212,
+    376,
+    540
+   ],
+   "chu": "sang",
+   "le": 5
+  },
+  {
+   "vung": [
+    1084,
+    203,
+    372,
+    462
+   ],
+   "chu": "sang",
+   "le": 5
+  },
+  {
+   "vung": [
+    1084,
+    711,
+    215,
+    64
+   ],
+   "chu": "sang",
+   "le": 4
+  }
+ ],
+ "chu_vector": [
+  {
+   "chu": "SẢN XUẤT TẠI VIỆT NAM",
+   "x": 696,
+   "y": 836,
+   "w": 180,
+   "co": 13,
+   "phong": "sans",
+   "mau": "#ffffff",
+   "bong": true
+  }
+ ],
+ "logo": [
+  {
+   "x": 592,
+   "y": 735,
+   "w": 96,
+   "h": 95
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    590,
+    288,
+    1062,
+    402
+   ],
+   "bang_mau": [
+    "#cd202c",
+    "#fbf6ef",
+    "#f9e165",
+    "#f08823",
+    "#52513e",
+    "#9b7b58",
+    "#cdac7c",
+    "#f1d6bd"
+   ],
+   "net": [
+    "#cd202c",
+    "#fbf6ef"
+   ]
+  },
+  {
+   "vung": [
+    568,
+    186,
+    758,
+    246
+   ],
+   "bang_mau": [
+    "#f9f9f8",
+    "#e99630",
+    "#130e0b",
+    "#b5afa8",
+    "#89827d",
+    "#dbd8d2",
+    "#605142"
+   ],
+   "net": [
+    "#130e0b",
+    "#f9f9f8"
+   ],
+   "mem": 500,
+   "mau": {
+    "#130e0b": "#0c0c0c"
+   }
+  }
+ ],
+ "bao_bi": "chai",
+ "kich_thuoc_mm": [
+  265,
+  145
+ ],
+ "mat_truoc": [
+  540,
+  137,
+  1077,
+  900
+ ]
+}

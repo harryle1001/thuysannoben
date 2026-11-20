@@ -1,0 +1,303 @@
+{
+  "slug": "super-oxy-02",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-000891_1.jpg",
+  "kich_thuoc_goc": [
+    1158,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 1158 × 1080. Chữ trên nền trắng có hình tôm mờ: xoá chữ theo màu rồi đặt chữ mới trong khung trong suốt để giữ hình tôm. Chữ sửa theo hồ sơ TCCS 05:2016/NOBEN (bản Chất đệm Dextrose, đơn vị %); Hạn sử dụng để trống.",
+  "xoa": [
+    {
+      "vung": [
+        124,
+        370,
+        600,
+        376
+      ],
+      "mau": "#2a2a2a",
+      "nguong": 185
+    },
+    {
+      "vung": [
+        738,
+        380,
+        315,
+        350
+      ],
+      "mau": "#2a2a2a",
+      "nguong": 185
+    },
+    {
+      "vung": [
+        955,
+        385,
+        80,
+        300
+      ],
+      "nen": "trang",
+      "le": 1
+    },
+    {
+      "vung": [
+        850,
+        697,
+        150,
+        26
+      ],
+      "nen": "trang",
+      "le": 1
+    }
+  ],
+  "khung": [
+    {
+      "x": 126,
+      "y": 370,
+      "w": 596,
+      "h": 376,
+      "nen": "trong",
+      "dem": 2,
+      "co": 20,
+      "phong": "serif",
+      "mau": "#1e1e1e",
+      "dong_cao": 1.24,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "THÀNH PHẦN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sodium carbonate peroxide (2Na<sub style=\"line-height:0;font-size:.72em\">2</sub>CO<sub style=\"line-height:0;font-size:.72em\">3</sub>. 3H<sub style=\"line-height:0;font-size:.72em\">2</sub>O<sub style=\"line-height:0;font-size:.72em\">2</sub>) (min): 30%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (Dextrose) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dam",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sodium carbonate peroxide (2Na<sub style=\"line-height:0;font-size:.72em\">2</sub>CO<sub style=\"line-height:0;font-size:.72em\">3</sub>. 3H<sub style=\"line-height:0;font-size:.72em\">2</sub>O<sub style=\"line-height:0;font-size:.72em\">2</sub>), dextrose"
+        },
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cung cấp nhanh oxy cho ao nuôi."
+        },
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cấp cứu khi tôm nổi đầu do thiếu oxy: 2-3 kg/1.000 m<sup style=\"line-height:0;font-size:.72em\">3</sup> nước."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Rải đều trực tiếp trên bề mặt ao."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        }
+      ]
+    },
+    {
+      "x": 740,
+      "y": 382,
+      "w": 305,
+      "h": 348,
+      "nen": "trong",
+      "dem": 2,
+      "co": 20,
+      "phong": "serif",
+      "mau": "#1e1e1e",
+      "dong_cao": 1.4,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 05:2016/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-05"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-000891"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 266,
+      "y": 883,
+      "w": 740,
+      "h": 143,
+      "nen": "#09a753",
+      "noi_dung": []
+    },
+    {
+      "x": 266,
+      "y": 866,
+      "w": 270,
+      "h": 18,
+      "nen": "#09a753",
+      "noi_dung": []
+    }
+  ],
+  "cong_ty": {
+    "x": 272,
+    "y": 886,
+    "w": 720,
+    "co": 16,
+    "mau": "#06220f",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 113.5,
+      "y": 886.5,
+      "s": 137
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 741,
+      "y": 122.8,
+      "w": 222,
+      "co": 38.5,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        738,
+        91,
+        228,
+        33
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 340,
+      "y": 853.8,
+      "w": 484,
+      "co": 22,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        338,
+        831,
+        488,
+        25
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        140,
+        86,
+        642,
+        198
+      ],
+      "bang_mau": [
+        "#0ba652",
+        "#fafafa",
+        "#e2c126",
+        "#3b3b6c",
+        "#e43723",
+        "#54b04e",
+        "#a19b9d",
+        "#9d5349"
+      ],
+      "net": [
+        "#fafafa",
+        "#3b3b6c"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        522,
+        190,
+        1062,
+        302
+      ],
+      "bang_mau": [
+        "#0ba652",
+        "#fafafa",
+        "#e2c126",
+        "#3b3b6c",
+        "#e43723",
+        "#54b04e",
+        "#a19b9d",
+        "#9d5349"
+      ],
+      "net": [
+        "#fafafa",
+        "#3b3b6c"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "xo",
+  "kich_thuoc_mm": [
+    230,
+    215
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    1158,
+    1080
+  ]
+}

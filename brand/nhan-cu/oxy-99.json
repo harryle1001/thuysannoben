@@ -1,0 +1,273 @@
+{
+  "slug": "oxy-99",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-000890_1.jpg",
+  "kich_thuoc_goc": [
+    1526,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1526 × 1080 (ảnh ghi khung 26 × 13 cm). Chữ sửa theo hồ sơ TCCS 01:2016/NOBEN (OXY 99); hình, màu, bố cục giữ nguyên nhãn đăng ký. Đối tượng: tôm.",
+  "khung": [
+    {
+      "x": 778,
+      "y": 366,
+      "w": 584,
+      "h": 258,
+      "r": 0,
+      "dem": 4,
+      "co": 13.6,
+      "dong_cao": 1.33,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#169c55\">THÀNH PHẦN:</span> trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Độ ẩm (max): 10%"
+        },
+        {
+          "kieu": "html",
+          "chu": "Sodium carbonate peroxide (2Na<sub>2</sub>CO<sub>3</sub>.3H<sub>2</sub>O<sub>2</sub>) (min): 30 %"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (dextrose) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hình dạng: Dạng bột/hạt/viên"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Màu sắc sản phẩm: Màu Trắng ngà"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#169c55\">CÔNG DỤNG:</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cung cấp nhanh oxy cho ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#169c55\">LIỀU DÙNG:</span>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cấp cứu khi tôm nổi đầu do thiếu ô xy: 2 - 3 kg/1.000 m<sup>3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng suốt vụ nuôi"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi dùng. Tránh xa nơi có nhiệt độ cao."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#169c55\">CÁCH DÙNG:</span> Rải đều trực tiếp trên bề mặt ao."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"color:#169c55\">HƯỚNG DẪN BẢO QUẢN:</span>"
+        }
+      ]
+    },
+    {
+      "x": 1150,
+      "y": 404,
+      "w": 170,
+      "h": 40,
+      "r": 0,
+      "dem": 4,
+      "co": 13.6,
+      "dong_cao": 1.33,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        }
+      ]
+    },
+    {
+      "x": 778,
+      "y": 624,
+      "w": 452,
+      "h": 46,
+      "r": 0,
+      "dem": 2,
+      "co": 13.6,
+      "dong_cao": 1.33,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 780,
+      "y": 676,
+      "w": 292,
+      "h": 74,
+      "r": 16,
+      "dem": 3,
+      "co": 15.6,
+      "dong_cao": 1.18,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#cc2433;font-size:.93em\">CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số TCCS: 01:2016/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-000890"
+        }
+      ]
+    },
+    {
+      "x": 1076,
+      "y": 678,
+      "w": 150,
+      "h": 70,
+      "r": 0,
+      "dem": 3,
+      "co": 15,
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô SX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "HSD:"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        218,
+        708,
+        606,
+        106
+      ],
+      "chu": "sang",
+      "no": 9
+    }
+  ],
+  "logo": [
+    {
+      "x": 103,
+      "y": 705,
+      "w": 104,
+      "h": 107
+    }
+  ],
+  "cong_ty": {
+    "x": 222,
+    "y": 704,
+    "w": 580,
+    "co": 12,
+    "mau": "#ffffff",
+    "xuat_xu_nen": "#ffffff",
+    "ten": "Sản phẩm của: CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam",
+      "Điện thoại: 0934 246 420 / Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com",
+      "Sản xuất tại: CÔNG TY TNHH NO BEN. Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam",
+      "Sản phẩm được phối trộn và đóng gói tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh, Việt Nam"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 469,
+      "y": 292.4,
+      "w": 126,
+      "co": 26,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        467,
+        274,
+        130,
+        20
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        110,
+        300,
+        680,
+        520
+      ],
+      "bang_mau": [
+        "#f6f8f8",
+        "#e91e28",
+        "#bfdbed",
+        "#0a0b0e",
+        "#759cb7",
+        "#306a71",
+        "#e7b96f"
+      ],
+      "net": [
+        "#e91e28",
+        "#0a0b0e"
+      ]
+    },
+    {
+      "vung": [
+        445,
+        505,
+        660,
+        640
+      ],
+      "bang_mau": [
+        "#0aa550",
+        "#e5f13a",
+        "#d3ebe5",
+        "#3fa425",
+        "#5a8a99",
+        "#121718"
+      ],
+      "net": [
+        "#0aa550",
+        "#e5f13a"
+      ]
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    260,
+    130
+  ],
+  "mat_truoc": [
+    64,
+    200,
+    760,
+    830
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "slug": "aqualacto-q",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-002256_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    978
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 978 (ảnh _1: nhãn Noben; ảnh _2 là bản 'KG26' của nhà phân phối, không dùng). Chữ sửa theo hồ sơ TCCS 69:2020/NOBEN; hình, màu, bố cục giữ nguyên. Nhóm đối tượng: tôm, cá.",
+  "khung": [
+    {
+      "x": 756,
+      "y": 44,
+      "w": 836,
+      "h": 770,
+      "co": 20,
+      "dem": 6,
+      "dong_cao": 1.42,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>CHỈ TIÊU CHẤT LƯỢNG</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<table style=\"border-collapse:collapse;margin:.1em 0 .15em;line-height:1.25\"><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">STT</td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Tên chỉ tiêu</td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Hàm lượng</td></tr><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">1</td><td style=\"border:1.3px solid #222;padding:.05em .45em\"><i>Bacillus</i> spp (min)</td><td style=\"border:1.3px solid #222;padding:.05em .45em\">1 x 10<sup>9</sup> cfu/kg</td></tr><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">2</td><td style=\"border:1.3px solid #222;padding:.05em .45em\"><i>Bacillus licheniformis</i></td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Định danh (+)</td></tr><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">3</td><td style=\"border:1.3px solid #222;padding:.05em .45em\"><i>Bacillus megaterium</i></td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Định danh (+)</td></tr><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">4</td><td style=\"border:1.3px solid #222;padding:.05em .45em\"><i>Bacillus mesentericus</i></td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Định danh (+)</td></tr><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">5</td><td style=\"border:1.3px solid #222;padding:.05em .45em\"><i>Bacillus subtilis</i></td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Định danh (+)</td></tr><tr><td style=\"border:1.3px solid #222;padding:.05em .45em\">6</td><td style=\"border:1.3px solid #222;padding:.05em .45em\">Chất đệm (dextrose monohydrate) vừa đủ</td><td style=\"border:1.3px solid #222;padding:.05em .45em\">1 kg</td></tr></table>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Aflatoxin B1: KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>E.coli</i> &lt; 10 CFU/g"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bacillus licheniformis, Bacillus megaterium, Bacillus mesentericus, Bacillus subtilis, dextrose monohydrate"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN</b>",
+          "cl": "muc"
+        }
+      ]
+    },
+    {
+      "x": 777,
+      "y": 821,
+      "w": 421,
+      "h": 110,
+      "co": 20,
+      "dem": 4,
+      "dong_cao": 1.34,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 69:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-002256"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-78"
+        }
+      ]
+    },
+    {
+      "x": 1216,
+      "y": 821,
+      "w": 351,
+      "h": 110,
+      "co": 20,
+      "dem": 4,
+      "dong_cao": 1.34,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 25,
+      "y": 798,
+      "w": 725,
+      "h": 160,
+      "nen": "#e8e8e8",
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 94,
+      "y": 71,
+      "w": 140,
+      "h": 152
+    }
+  ],
+  "cong_ty": {
+    "x": 40,
+    "y": 800,
+    "w": 700,
+    "co": 18.5,
+    "mau": "#111111;text-align:center",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "<b>Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>",
+      "<b>Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</b>",
+      "<b>Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</b>"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        55,
+        280,
+        720,
+        400
+      ],
+      "bang_mau": [
+        "#e71e28",
+        "#e9e7e7",
+        "#fccac6",
+        "#e27d7d"
+      ],
+      "net": [
+        "#e71e28",
+        "#e9e7e7"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        430,
+        105,
+        725,
+        190
+      ],
+      "bang_mau": [
+        "#f9f9f9",
+        "#d6d6d6",
+        "#0e0e0e",
+        "#9b9b9c",
+        "#585858"
+      ],
+      "net": [
+        "#0e0e0e",
+        "#f9f9f9"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        180,
+        450,
+        590,
+        720
+      ],
+      "bang_mau": [
+        "#e6e7e9",
+        "#575e85",
+        "#9aa0c2"
+      ],
+      "net": [
+        "#575e85"
+      ],
+      "mem": 500
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    300,
+    183
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    752,
+    978
+  ]
+}

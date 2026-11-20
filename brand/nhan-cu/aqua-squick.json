@@ -1,0 +1,340 @@
+{
+  "slug": "aqua-squick",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-024687_1.jpg",
+  "kich_thuoc_goc": [
+    800,
+    308
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 308 (nhãn Noben). Ảnh 02-024687_2 là bản có nhà phân phối LPI (27 × 15 cm) nên không dùng làm gốc. Chữ sửa theo hồ sơ TCCS 21:2020/NOBEN; chữ trên nền cam chuyển sắc: khung trong suốt + xóa chữ cũ. Địa chỉ giữ như nhãn cũ. Đối tượng: giữ như TCCS.",
+  "khung": [
+    {
+      "x": 16,
+      "y": 15,
+      "w": 246,
+      "h": 266,
+      "r": 0,
+      "dem": 4,
+      "co": 9.7,
+      "dong_cao": 1.36,
+      "nen": "trong",
+      "mau": "#1a1410",
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#d2420f\">THÀNH PHẦN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "(trong 1 lít sản phẩm)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Glutaraldehyde (min): 15%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dung môi (nước RO) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Glutaraldehyde, Nước RO"
+        },
+        {
+          "kieu": "html",
+          "cl": "muc",
+          "chu": "<b style=\"color:#d2420f\">CÔNG DỤNG:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ sát khuẩn gây phát sáng, đen mang, vàng mang, cụt râu, sâu đuôi, hoại tử phụ bộ."
+        },
+        {
+          "kieu": "html",
+          "cl": "muc",
+          "chu": "<b style=\"color:#d2420f\">HƯỚNG DẪN SỬ DỤNG:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trong thời gian chuẩn bị ao: 1,5 lít/1.000m³ nước để như vậy 2-3 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sát trùng nguồn nước trong quá trình nuôi: 1 lít/1.000m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa tan với nước gấp 100 lần sau đó phun hoặc tạt đều khắp ao."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Ngưng sử dụng trước thu hoạch 15 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Lắc đều sản phẩm trước khi sử dụng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 550,
+      "y": 44,
+      "w": 228,
+      "h": 46,
+      "r": 0,
+      "dem": 3,
+      "co": 10,
+      "dong_cao": 1.36,
+      "nen": "trong",
+      "mau": "#1a1410",
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 550,
+      "y": 130,
+      "w": 228,
+      "h": 112,
+      "r": 0,
+      "dem": 3,
+      "co": 10.5,
+      "dong_cao": 1.36,
+      "nen": "trong",
+      "mau": "#1a1410",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 21:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-024687"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-30"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 329,
+      "y": 201,
+      "w": 192,
+      "h": 88,
+      "r": 0,
+      "dem": 2,
+      "co": 7.4,
+      "dong_cao": 1.24,
+      "nen": "trong",
+      "mau": "#1a1410",
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"font-size:1.45em\">CÔNG TY TNHH NO BEN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com"
+        },
+        {
+          "kieu": "dong",
+          "chu": "MST: 0304210513"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#c8102e;font-size:1.15em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        18,
+        17,
+        244,
+        258
+      ],
+      "mau": "#000000",
+      "nguong": 230,
+      "no": 5,
+      "le": 3
+    },
+    {
+      "vung": [
+        18,
+        17,
+        244,
+        258
+      ],
+      "mau": "#cc4d0e",
+      "nguong": 70,
+      "no": 5,
+      "le": 3
+    },
+    {
+      "vung": [
+        552,
+        46,
+        224,
+        30
+      ],
+      "mau": "#000000",
+      "nguong": 230,
+      "no": 5,
+      "le": 3
+    },
+    {
+      "vung": [
+        552,
+        132,
+        224,
+        108
+      ],
+      "mau": "#000000",
+      "nguong": 230,
+      "no": 5,
+      "le": 3
+    },
+    {
+      "vung": [
+        330,
+        220,
+        210,
+        64
+      ],
+      "mau": "#000000",
+      "nguong": 230,
+      "no": 5,
+      "le": 3
+    },
+    {
+      "vung": [
+        330,
+        203,
+        150,
+        18
+      ],
+      "mau": "#000000",
+      "nguong": 230,
+      "no": 5,
+      "le": 3
+    }
+  ],
+  "logo": [
+    {
+      "x": 271,
+      "y": 219,
+      "w": 53,
+      "h": 53
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 407,
+      "y": 34.6,
+      "w": 82,
+      "co": 15,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        405,
+        23,
+        86,
+        12
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        290,
+        70,
+        500,
+        180
+      ],
+      "bang_mau": [
+        "#f8ad39",
+        "#e2271a",
+        "#f3c978",
+        "#7b7467",
+        "#b2b0a1",
+        "#44321c"
+      ],
+      "net": [
+        "#e2271a",
+        "#7b7467",
+        "#b2b0a1"
+      ]
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    270,
+    104
+  ],
+  "mat_truoc": [
+    262,
+    0,
+    545,
+    308
+  ]
+}

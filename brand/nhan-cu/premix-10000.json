@@ -1,0 +1,340 @@
+{
+ "slug": "premix-10000",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-002248_1.jpg",
+ "kich_thuoc_goc": [
+  1008,
+  1080
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1008 × 1080 (mặt túi). Chữ sửa theo hồ sơ TCCS 34:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Chữ trên nền vàng có vân giọt nước: xóa theo màu chữ rồi vẽ lại. Nền đỏ nên dòng SẢN XUẤT TẠI VIỆT NAM vẽ màu vàng viền tối như chữ công ty.",
+ "bao_bi": "tui",
+ "kich_thuoc_mm": [
+  230,
+  246
+ ],
+ "mat_truoc": [
+  0,
+  0,
+  1008,
+  1080
+ ],
+ "khung": [
+  {
+   "x": 50,
+   "y": 278,
+   "w": 396,
+   "h": 495,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#2b2204",
+   "phong": "serif",
+   "dem": 0,
+   "co": 18.5,
+   "dong_cao": 1.3,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>THÀNH PHẦN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>( Trong 1 kg sản phẩm)</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"display:flex;justify-content:space-between\"><span>P (dạng CaHPO<sub style=\"line-height:0\">4</sub>)(min):</span><span>2.500 mg/kg</span></b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"display:flex;justify-content:space-between\"><span>Mg (dạng MgO)(min):</span><span>1.200 mg/kg</span></b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"display:flex;justify-content:space-between\"><span>Ca (dạng CaCO<sub style=\"line-height:0\">3</sub>)(min):</span><span>2.500 mg/kg</span></b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"display:flex;justify-content:space-between\"><span>Chất đệm (dextrose) vừa đủ:</span><span>1kg</span></b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Asen (As): KPH</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Cadimi (Cd): KPH</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Chì (Pb): KPH</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Thủy ngân (Hg): KPH</b>"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>NGUYÊN LIỆU</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>MgO, CaHPO<sub style=\"line-height:0\">4</sub>, CaCO<sub style=\"line-height:0\">3</sub>, dextrose</b>"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "html",
+     "cl": "gach",
+     "chu": "<b>- Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp cho quá trình lột xác và tạo vỏ của tôm nhanh hơn.</b>"
+    },
+    {
+     "kieu": "html",
+     "cl": "gach",
+     "chu": "<b>- Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc.</b>"
+    }
+   ]
+  },
+  {
+   "x": 469,
+   "y": 372,
+   "w": 500,
+   "h": 238,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#2b2204",
+   "phong": "serif",
+   "dem": 0,
+   "co": 18.5,
+   "dong_cao": 1.3,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>- Trước khi thả giống: sử dụng 5kg/3.000m<sup style=\"line-height:0\">3</sup> nước.</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>- Định kỳ: sử dụng 5kg/5.000m<sup style=\"line-height:0\">3</sup> nước.</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>- Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi.</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.</b>"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN BẢO QUẢN:</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</b>"
+    }
+   ]
+  },
+  {
+   "x": 484,
+   "y": 698,
+   "w": 312,
+   "h": 180,
+   "r": 0,
+   "nen": "trong",
+   "mau": "#2b2204",
+   "phong": "serif",
+   "dem": 0,
+   "co": 16.5,
+   "dong_cao": 1.55,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>Số tiêu chuẩn công bố: 34:2020/NOBEN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Mã số tiếp nhận: 02-002248</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Mã SPHQ: VICB 7178.10-42</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Khối lượng tịnh:</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Số lô sản xuất:</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Ngày sản xuất:</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Hạn sử dụng:</b>"
+    }
+   ]
+  },
+  {
+   "x": 194,
+   "y": 903,
+   "w": 900,
+   "h": 150,
+   "r": 0,
+   "nen": "trong",
+   "dem": 0,
+   "co": 17,
+   "dong_cao": 1.62,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.86);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.09em 0 0 #1d1820,-.09em 0 0 #1d1820,0 .09em 0 #1d1820,0 -.09em 0 #1d1820,.065em .065em 0 #1d1820,-.065em -.065em 0 #1d1820,.065em -.065em 0 #1d1820,-.065em .065em 0 #1d1820;font-size:1.62em;line-height:1.1\">CÔNG TY TNHH NO BEN</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.845);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.09em 0 0 #1d1820,-.09em 0 0 #1d1820,0 .09em 0 #1d1820,0 -.09em 0 #1d1820,.065em .065em 0 #1d1820,-.065em -.065em 0 #1d1820,.065em -.065em 0 #1d1820,-.065em .065em 0 #1d1820;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.845);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.09em 0 0 #1d1820,-.09em 0 0 #1d1820,0 .09em 0 #1d1820,0 -.09em 0 #1d1820,.065em .065em 0 #1d1820,-.065em -.065em 0 #1d1820,.065em -.065em 0 #1d1820,-.065em .065em 0 #1d1820;\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.845);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.09em 0 0 #1d1820,-.09em 0 0 #1d1820,0 .09em 0 #1d1820,0 -.09em 0 #1d1820,.065em .065em 0 #1d1820,-.065em -.065em 0 #1d1820,.065em -.065em 0 #1d1820,-.065em .065em 0 #1d1820;\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(0.8);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.09em 0 0 #1d1820,-.09em 0 0 #1d1820,0 .09em 0 #1d1820,0 -.09em 0 #1d1820,.065em .065em 0 #1d1820,-.065em -.065em 0 #1d1820,.065em -.065em 0 #1d1820,-.065em .065em 0 #1d1820;color:#fff200;font-size:1.1em\">SẢN XUẤT TẠI VIỆT NAM</span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    50,
+    278,
+    396,
+    490
+   ],
+   "mau": "#332803",
+   "nguong": 125,
+   "le": 5
+  },
+  {
+   "vung": [
+    469,
+    372,
+    500,
+    236
+   ],
+   "mau": "#332803",
+   "nguong": 125,
+   "le": 5
+  },
+  {
+   "vung": [
+    484,
+    698,
+    310,
+    180
+   ],
+   "mau": "#362e10",
+   "nguong": 120,
+   "le": 4
+  },
+  {
+   "vung": [
+    194,
+    904,
+    640,
+    122
+   ],
+   "mau": "#ffffff",
+   "nguong": 105,
+   "le": 4
+  },
+  {
+   "vung": [
+    194,
+    904,
+    640,
+    122
+   ],
+   "mau": "#291b1b",
+   "nguong": 110,
+   "le": 4
+  }
+ ],
+ "logo": [
+  {
+   "x": 59,
+   "y": 904,
+   "w": 110,
+   "h": 120
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    215,
+    25,
+    835,
+    225
+   ],
+   "bang_mau": [
+    "#fcfcfa",
+    "#de1a22",
+    "#ba2326",
+    "#be9991",
+    "#5f0b0b",
+    "#06adee",
+    "#d2c7c0"
+   ],
+   "net": [
+    "#fcfcfa",
+    "#5f0b0b"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    470,
+    605,
+    742,
+    686
+   ],
+   "bang_mau": [
+    "#f9f9f7",
+    "#100f0d",
+    "#656345",
+    "#cececb",
+    "#979692",
+    "#ebe540"
+   ],
+   "net": [
+    "#100f0d",
+    "#f9f9f7"
+   ],
+   "mem": 500,
+   "mau": {
+    "#f9f9f7": "#ffffff"
+   }
+  }
+ ]
+}

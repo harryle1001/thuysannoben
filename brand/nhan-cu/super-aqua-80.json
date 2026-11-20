@@ -1,0 +1,315 @@
+{
+ "slug": "super-aqua-80",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020761_1.jpg",
+ "kich_thuoc_goc": [
+  800,
+  348
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 348 (nhãn chiếm y 0–288, phần dưới ảnh trắng). Chữ sửa theo hồ sơ TCCS 12:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Nền ô chữ vàng phẳng #fff301 nên khung tô cùng màu. Địa chỉ giữ như nhãn cũ.",
+ "bao_bi": "chai",
+ "kich_thuoc_mm": [
+  240,
+  86
+ ],
+ "mat_truoc": [
+  268,
+  0,
+  538,
+  288
+ ],
+ "khung": [
+  {
+   "x": 16,
+   "y": 19,
+   "w": 239,
+   "h": 221,
+   "r": 9,
+   "nen": "#fff301",
+   "dem": 3,
+   "co": 9,
+   "dong_cao": 1.32,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e5481b\">THÀNH PHẦN:</b> trong 1 lít sản phẩm"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Benzalkonium Chloride (min): 50%"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Dung môi (nước RO) vừa đủ: 1 lít"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Asen (As): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chì (Pb): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "NGUYÊN LIỆU"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Benzalkonium Chloride, nước RO"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e5481b\">CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước."
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hỗ trợ trong việc xử lý hiện tượng đen mang, đốm đen, sâu đuôi, hoại tử phụ bộ, đen mình..."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e5481b\">HƯỚNG DẪN SỬ DỤNG</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trong thời gian chuẩn bị ao: 1,5 lít/1.000m<sup style=\"line-height:0\">3</sup> nước để như vậy 2-3 ngày."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Sát trùng nguồn nước trong quá trình nuôi: 0,5 - 1 lít/1.000m<sup style=\"line-height:0\">3</sup> nước."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa tan với nước gấp 100 lần sau đó phun hoặc tạt đều khắp ao."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Lắc đều sản phẩm trước khi sử dụng."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    }
+   ]
+  },
+  {
+   "x": 545,
+   "y": 19,
+   "w": 220,
+   "h": 138,
+   "r": 9,
+   "nen": "#fff301",
+   "dem": 3,
+   "co": 8.6,
+   "dong_cao": 1.38,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e5481b\">Hướng dẫn bảo quản:</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    },
+    {
+     "kieu": "dong",
+     "chu": "Số tiêu chuẩn công bố: 12:2020/NOBEN"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã SPHQ: VICB 7178.10-12"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã số tiếp nhận: 02-020761"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Thể tích thực:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hạn sử dụng:"
+    }
+   ]
+  },
+  {
+   "x": 545,
+   "y": 155,
+   "w": 220,
+   "h": 86,
+   "r": 9,
+   "nen": "#fff301",
+   "noi_dung": []
+  },
+  {
+   "x": 601,
+   "y": 148,
+   "w": 164,
+   "h": 68,
+   "r": 0,
+   "nen": "trong",
+   "dem": 1,
+   "co": 7.2,
+   "dong_cao": 1.22,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#2b67b1;font-size:1.3em\">CÔNG TY TNHH NO BEN</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Điện thoại: 0934 246 420"
+    },
+    {
+     "kieu": "dong",
+     "chu": "MST: 0304210513"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Email: thuocthuysannoben@gmail.com"
+    }
+   ]
+  },
+  {
+   "x": 548,
+   "y": 215,
+   "w": 216,
+   "h": 26,
+   "r": 0,
+   "nen": "trong",
+   "dem": 0,
+   "co": 7,
+   "dong_cao": 1.3,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#c8102e\">SẢN XUẤT TẠI VIỆT NAM</b>"
+    }
+   ]
+  }
+ ],
+ "logo": [
+  {
+   "x": 552,
+   "y": 160,
+   "s": 46
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    280,
+    18,
+    420,
+    57
+   ],
+   "bang_mau": [
+    "#f9f012",
+    "#455011",
+    "#5aa35a",
+    "#dbd94c",
+    "#b7e1cf",
+    "#38a5d0",
+    "#e32223"
+   ],
+   "net": [
+    "#f9f012",
+    "#455011"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    358,
+    56,
+    522,
+    97
+   ],
+   "bang_mau": [
+    "#f8ef11",
+    "#525c10",
+    "#33a87f",
+    "#e5e545",
+    "#b7e5d9",
+    "#8fba7e",
+    "#e32223"
+   ],
+   "net": [
+    "#f8ef11",
+    "#525c10"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    420,
+    15,
+    532,
+    52
+   ],
+   "bang_mau": [
+    "#f8f7f7",
+    "#120f11",
+    "#e1242a",
+    "#a29696",
+    "#665f60",
+    "#c9c8c9"
+   ],
+   "net": [
+    "#120f11",
+    "#f8f7f7"
+   ],
+   "mem": 500,
+   "mau": {
+    "#f8f7f7": "#ffffff"
+   }
+  },
+  {
+   "vung": [
+    288,
+    248,
+    522,
+    277
+   ],
+   "bang_mau": [
+    "#faf6f9",
+    "#de3e43",
+    "#3e3e6a",
+    "#c4c1e3",
+    "#8684ac"
+   ],
+   "net": [
+    "#3e3e6a",
+    "#faf6f9"
+   ],
+   "mem": 500,
+   "mau": {
+    "#faf6f9": "#ffffff"
+   }
+  }
+ ]
+}
