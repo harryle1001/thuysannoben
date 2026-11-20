@@ -5,7 +5,7 @@
     python3 scripts/xuat-anh-web.py g7-... aqua-bac
 
 Mỗi sản phẩm tạo:
-  public/images/products/<slug>.webp          ảnh bao bì 3D 4K (2160 × 3840) trên nền studio
+  public/images/products/<slug>.webp          ảnh bao bì 3D 4K (2160 × 3840), nền trong suốt
   public/images/products-cutout/<slug>.webp   bao bì 3D nền trong (1080 × 1920, cắt sát) cho khung xoay trên trang
   public/images/products-label/<slug>.webp    nhãn phẳng đọc được (rộng tối đa 3200 px) cho nút "Xem nhãn"
   public/images/products-3d/<slug>.jpg        ảnh dán lên mô hình 3D xoay (rộng tối đa 2048 px)
@@ -65,8 +65,9 @@ def main():
             tp = os.path.join(tmp, 'tex.png')
             tex.save(tp)
             # 1) ảnh 4K nền studio
-            a = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'a'), ['--w', '2160', '--h', '3840'] + extra_mau)).convert('RGB')
-            a.save(os.path.join(IMG, 'products', f'{slug}.webp'), 'WEBP', quality=84, method=6)
+            # nền trong suốt (không phông, không sàn), giữ khung 2160 × 3840 để các thẻ sản phẩm đều nhau
+            a = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'a'), ['--w', '2160', '--h', '3840', '--trong'] + extra_mau)).convert('RGBA')
+            a.save(os.path.join(IMG, 'products', f'{slug}.webp'), 'WEBP', quality=86, method=6)
             # 2) nền trong, cắt sát
             b = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'b'), ['--w', '1080', '--h', '1920', '--trong'] + extra_mau)).convert('RGBA')
             bb = b.getchannel('A').point(lambda v: 255 if v > 8 else 0).getbbox()
