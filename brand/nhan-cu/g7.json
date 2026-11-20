@@ -1,63 +1,223 @@
 {
   "slug": "g7-phong-va-tri-benh-gan-chet-som",
   "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001531_1.jpg",
-  "kich_thuoc_goc": [1600, 899],
+  "kich_thuoc_goc": [
+    1600,
+    899
+  ],
   "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 899. Chữ sửa theo hồ sơ TCCS 74:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký.",
   "khung": [
     {
-      "x": 36, "y": 32, "w": 428, "h": 843, "r": 12,
+      "x": 36,
+      "y": 32,
+      "w": 428,
+      "h": 843,
+      "r": 12,
       "noi_dung": [
-        { "kieu": "dong", "dam": "THÀNH PHẦN:", "chu": " trong 1 lít sản phẩm" },
-        { "kieu": "gach", "chu": "Sorbitol (min): 10.000 mg/lít" },
-        { "kieu": "gach", "chu": "Methionine (min): 1.500 mg/lít" },
-        { "kieu": "gach", "chu": "Betain (min): 3.000 mg/lít" },
-        { "kieu": "gach", "chu": "Dung môi (nước) vừa đủ: 1 lít" },
-        { "kieu": "gach", "chu": "Asen (As) vô cơ: KPH" },
-        { "kieu": "gach", "chu": "Cadimi (Cd): KPH" },
-        { "kieu": "gach", "chu": "Chì (Pb): KPH" },
-        { "kieu": "gach", "chu": "Thủy ngân (Hg): KPH" },
-        { "kieu": "gach", "chu": "<i>E.coli</i> &lt; 1 CFU/ml" },
-        { "kieu": "gach", "chu": "<i>Salmonella</i> spp.: KPH" },
-        { "kieu": "muc", "chu": "NGUYÊN LIỆU" },
-        { "kieu": "dong", "chu": "Sorbitol, Methionine, Betain, nước." },
-        { "kieu": "muc", "chu": "CÔNG DỤNG" },
-        { "kieu": "gach", "chu": "Bổ sung sorbitol, methionine, lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng." },
-        { "kieu": "gach", "chu": "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm." },
-        { "kieu": "gach", "chu": "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan." },
-        { "kieu": "muc", "chu": "HƯỚNG DẪN SỬ DỤNG" },
-        { "kieu": "gach", "chu": "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi." },
-        { "kieu": "gach", "chu": "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10 ml/kg thức ăn." },
-        { "kieu": "gach", "chu": "Liều dùng gấp đôi đối với tôm cá bị tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường." },
-        { "kieu": "gach", "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn." },
-        { "kieu": "gach", "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi." },
-        { "kieu": "gach", "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng." }
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sorbitol (min): 10.000 mg/lít"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Methionine (min): 1.500 mg/lít"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Betain (min): 3.000 mg/lít"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Dung môi (nước) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Asen (As) vô cơ: KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "gach",
+          "chu": "<i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "gach",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "muc",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sorbitol, Methionine, Betain, nước."
+        },
+        {
+          "kieu": "muc",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung sorbitol, methionine, lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan."
+        },
+        {
+          "kieu": "muc",
+          "chu": "HƯỚNG DẪN SỬ DỤNG"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10 ml/kg thức ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Liều dùng gấp đôi đối với tôm cá bị tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
       ]
     },
     {
-      "x": 1134, "y": 32, "w": 429, "h": 843, "r": 12,
+      "x": 1134,
+      "y": 32,
+      "w": 429,
+      "h": 843,
+      "r": 12,
       "noi_dung": [
-        { "kieu": "dam", "chu": "Hướng dẫn bảo quản:" },
-        { "kieu": "dong", "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em." },
-        { "kieu": "trong" },
-        { "kieu": "dong", "chu": "Số tiêu chuẩn công bố: 74:2020/NOBEN" },
-        { "kieu": "dong", "chu": "Mã số tiếp nhận: 01-001531" },
-        { "kieu": "dong", "chu": "Mã SPHQ: VICB 7178.10-83" },
-        { "kieu": "dong", "chu": "Thể tích thực:" },
-        { "kieu": "trong" },
-        { "kieu": "dong", "chu": "Số lô sản xuất:" },
-        { "kieu": "dong", "chu": "Ngày sản xuất:" },
-        { "kieu": "dong", "chu": "Hạn sử dụng:" }
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 74:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-001531"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-83"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
       ]
     }
   ],
-  "logo": [{ "x": 1152, "y": 635, "s": 102 }],
+  "logo": [
+    {
+      "x": 1152,
+      "y": 635,
+      "s": 102
+    }
+  ],
   "cong_ty": {
-    "x": 1140, "y": 758, "w": 418,
+    "x": 1140,
+    "y": 758,
+    "w": 418,
     "ten": "CÔNG TY TNHH NO BEN",
     "dong": [
       "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
-      "Điện thoại: 0911 883 979 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
       "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
     ]
-  }
+  },
+  "chu_vector": [
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 593,
+      "y": 803.2,
+      "w": 394,
+      "co": 20,
+      "phong": "serif",
+      "mau": "#ffffff",
+      "bong": true,
+      "xoa": [
+        589,
+        781,
+        402,
+        25
+      ],
+      "chu_cu": "sang"
+    },
+    {
+      "chu": "ISO 9001:2015",
+      "x": 878.5,
+      "y": 126.8,
+      "w": 156.5,
+      "co": 41,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        879,
+        97,
+        156,
+        31
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ]
 }

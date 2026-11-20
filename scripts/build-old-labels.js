@@ -42,23 +42,26 @@ function html(spec, bg) {
   const logos = (spec.logo || []).map((l) => `<div class="logo" style="left:${l.x}px;top:${l.y}px;width:${l.s}px;height:${l.s}px">${LOGO}</div>`).join('');
   const c = spec.cong_ty;
   const cty = c ? `<div class="cty" style="left:${c.x}px;top:${c.y}px;width:${c.w}px"><p class="ten">${esc(c.ten)}</p>${c.dong.map((d) => `<p>${esc(d)}</p>`).join('')}</div>` : '';
+  const vec = (spec.chu_vector || []).map((t) => `<text x="${t.x}" y="${t.y}" textLength="${t.w}" lengthAdjust="spacingAndGlyphs" font-family="${t.phong === 'serif' ? "'Liberation Serif', 'Times New Roman', serif" : "'Liberation Sans', Arial, sans-serif"}" font-weight="700" font-size="${t.co}" fill="${t.mau}"${t.bong ? ' filter="url(#bong)"' : ''}>${esc(t.chu)}</text>`).join('');
+  const over = vec ? `<svg class="vec" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"><defs><filter id="bong" x="-5%" y="-40%" width="110%" height="180%"><feDropShadow dx="0" dy="0.6" stdDeviation="0.8" flood-color="#0b3d1c" flood-opacity="0.55"/></filter></defs>${vec}</svg>` : '';
   return `<!doctype html><meta charset="utf-8"><style>
 @page{size:${W}px ${H}px;margin:0}
 html,body{margin:0;width:${W}px;height:${H}px;overflow:hidden}
 #nhan{position:relative;width:${W}px;height:${H}px;background:url(${bg}) 0 0/100% 100% no-repeat}
 .khung{position:absolute;background:#fff;box-sizing:border-box;padding:16px 14px 10px 15px;overflow:hidden}
-.nd{font-family:'Liberation Sans',Arial,sans-serif;color:#1d1d1b;font-size:var(--fs,17.5px);line-height:1.41}
+.nd{font-family:'Liberation Sans',Arial,sans-serif;color:#000;font-size:var(--fs,18.5px);line-height:1.38;-webkit-text-stroke:.18px #000;text-rendering:geometricPrecision}
 .nd p{margin:0}
 .nd .muc{margin-top:.82em;text-transform:uppercase;font-size:1.03em}
 .nd .dam{font-weight:700}
 .nd .gach{padding-left:.55em;text-indent:-.55em;text-align:justify}
 .nd .trong{height:1.41em}
 .nd b{font-weight:700}
+.vec{position:absolute;left:0;top:0;width:100%;height:100%}
 .logo{position:absolute}.logo svg{width:100%;height:100%;display:block}
-.cty{position:absolute;font-family:'Liberation Sans',Arial,sans-serif;color:#111}
+.cty{position:absolute;font-family:'Liberation Sans',Arial,sans-serif;color:#000;-webkit-text-stroke:.15px #000}
 .cty p{margin:0;white-space:nowrap;transform-origin:0 0;transform:scaleX(.74);font-size:13.5px;line-height:1.45;width:135%}
 .cty .ten{font-weight:700;font-size:21px;line-height:1.25;transform:scaleX(.8);width:125%;margin-bottom:2px}
-</style><div id="nhan">${boxes}${logos}${cty}</div>`;
+</style><div id="nhan">${over}${boxes}${logos}${cty}</div>`;
 }
 
 async function main() {
@@ -67,7 +70,10 @@ async function main() {
   const src = path.join(CONG_TY, spec.goc.replace(/^CONG-TY-NOBEN\//, ''));
   const work = path.join(DIR, '_work'); fs.mkdirSync(work, { recursive: true });
   const bgFile = path.join(work, `${name}-nen-4x.jpg`);
-  execFileSync('convert', [src, '-colorspace', 'RGB', '-filter', 'Lanczos', '-define', 'filter:lobes=4', '-resize', `${SCALE * 100}%`, '-colorspace', 'sRGB', '-unsharp', '0x2.4+0.9+0.02', '-quality', '95', bgFile]);
+  const xoa = (spec.chu_vector || []).filter((t) => t.xoa).map((t) => ({ vung: t.xoa, chu: t.chu_cu || 'sang', le: t.le, nen: t.nen }));
+  let goc = src;
+  if (xoa.length) { goc = path.join(work, `${name}-sach.png`); execFileSync('python3', [path.join(__dirname, 'xoa-chu-nen.py'), src, goc, JSON.stringify(xoa)]); }
+  execFileSync('convert', [goc, '-colorspace', 'RGB', '-filter', 'Lanczos', '-define', 'filter:lobes=4', '-resize', `${SCALE * 100}%`, '-colorspace', 'sRGB', '-unsharp', '0x2.4+0.9+0.02', '-quality', '95', bgFile]);
   const bg = 'data:image/jpeg;base64,' + fs.readFileSync(bgFile).toString('base64');
   const { chromium } = require('playwright');
   const browser = await chromium.launch();
@@ -77,7 +83,7 @@ async function main() {
   await page.evaluate(() => document.fonts.ready);
   // Thu cỡ chữ từng khung cho vừa (không cắt nội dung)
   const fit = await page.evaluate(() => [...document.querySelectorAll('.khung')].map((k) => {
-    let fs = 17.5; const nd = k.querySelector('.nd');
+    let fs = 18.5; const nd = k.querySelector('.nd');
     const room = () => k.clientHeight - 26;
     while (nd.scrollHeight > room() && fs > 11) { fs -= 0.25; nd.style.setProperty('--fs', fs + 'px'); }
     return fs;
