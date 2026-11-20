@@ -123,7 +123,7 @@ function factoryVideo() {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     name: 'Nhà máy Noben: quy trình sản xuất thuốc thủy sản',
-    description: 'Phim giới thiệu nhà máy Noben: kiểm tra nguyên liệu đầu vào, kỹ thuật và kiểm nghiệm, dây chuyền cân, trộn, đóng gói tự động, kiểm tra chất lượng theo ISO 9001:2015, chứng nhận hợp quy VinaCert, 94 sản phẩm giao hàng toàn quốc.',
+    description: 'Phim giới thiệu nhà máy Noben: kiểm tra nguyên liệu đầu vào, kỹ thuật và kiểm nghiệm, dây chuyền cân, trộn, đóng gói tự động, kiểm tra chất lượng theo ISO 9001:2015, chứng nhận hợp quy VinaCert, 72 sản phẩm giao hàng toàn quốc.',
     thumbnailUrl: [abs('/media/factory/noben-nha-may-poster.webp')],
     contentUrl: abs('/media/factory/noben-nha-may.mp4'),
     uploadDate: '2026-11-15T08:00:00+07:00',
