@@ -1,0 +1,189 @@
+{
+  "slug": "hi-weigh",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001543_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    987
+  ],
+  "_ghi_chu": "Toạ độ theo ảnh gốc 1600 × 987. Chữ sửa theo hồ sơ TCCS 53:2020/NOBEN: thành phần chỉ còn Protein (đạm sữa) (min) 25% (nhãn cũ: Protein 15%, Methionine 500 mg/kg, Ca 2.500 mg/kg, chất đệm); công dụng, liều theo TCCS (TCCS ghi 3-5 ml/kg dù sản phẩm dạng bột, giữ đúng TCCS, cần chủ sản phẩm xác nhận). Dòng Nguyên liệu giữ như nhãn cũ (TCCS không ghi).",
+  "khung": [
+    {
+      "x": 680,
+      "y": 72,
+      "w": 905,
+      "h": 742,
+      "dem": 10,
+      "co": 17.5,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;width:50%\"><span style=\"display:flex;align-items:baseline\"><span>&nbsp;&nbsp;Protein (đạm sữa) (min)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>25%</span></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:1.0em\">NGUYÊN LIỆU</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Protein, Methionine, CaHPO<sub style=\"line-height:0;font-size:.72em\">4</sub>, Methionine, Dextrose"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:1.0em\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung đạm cá, acid amin thiết yếu cho tôm, cá. Giúp tôm, cá ham ăn, chóng lớn. Giúp tôm, cá bắt mồi nhanh do có mùi tanh hấp dẫn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tăng đề kháng, tăng cường hấp thụ chất dinh dưỡng, hạn chế mềm vỏ, chậm lớn, bắt mồi kém."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:1.0em\">HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;margin-top:1em\"><span style=\"width:41%\">Số tiêu chuẩn công bố: 53:2020/NOBEN<br>Mã số tiếp nhận: 01-001543<br>Mã SPHQ: VICB 7178.10-62</span><span>Số lô sản xuất:<br>Ngày sản xuất:<br>Hạn sử dụng:<br>Khối lượng tịnh:</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 800,
+      "y": 824,
+      "w": 797,
+      "h": 160,
+      "noi_dung": []
+    }
+  ],
+  "cong_ty": {
+    "x": 832,
+    "y": 834,
+    "w": 750,
+    "co": 17,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 679.5,
+      "y": 835.5,
+      "s": 123
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "ISO 9001:2015",
+      "x": 352,
+      "y": 146.6,
+      "w": 171,
+      "co": 31.5,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        350,
+        121,
+        176,
+        27
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        66,
+        255,
+        630,
+        372
+      ],
+      "bang_mau": [
+        "#fbfbfb",
+        "#2a2680",
+        "#35336c",
+        "#9796b9"
+      ],
+      "net": [
+        "#fbfbfb",
+        "#2a2680"
+      ],
+      "mem": 500,
+      "mau": {
+        "#fbfbfb": "#ffffff"
+      }
+    },
+    {
+      "vung": [
+        122,
+        455,
+        604,
+        722
+      ],
+      "bang_mau": [
+        "#fcfdfd",
+        "#344882",
+        "#b7c5e3",
+        "#7282ae"
+      ],
+      "net": [
+        "#fcfdfd",
+        "#344882"
+      ],
+      "mem": 500,
+      "mau": {
+        "#fcfdfd": "#ffffff"
+      }
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    240,
+    148
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    672,
+    987
+  ]
+}

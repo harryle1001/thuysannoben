@@ -1,0 +1,286 @@
+{
+  "slug": "nb-c-sormin",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-037653_1.jpg",
+  "kich_thuoc_goc": [
+    763,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 763 × 1080 (ảnh ghi 150x200mm). Chữ sửa theo hồ sơ TCCS 05:2022/NOBEN (NB C SORMIN NEW); nhãn cũ ghi 55:2022. Chữ trắng/vàng trên nền xanh: khung trong suốt + xóa chữ cũ. Địa chỉ giữ như nhãn cũ. Đối tượng: tôm, cá — dòng hình 'HỖ TRỢ GIẢM SỐC, GIẢM STRESS CHO TÔM' (chữ nghiêng trên dải bạc) chưa đổi được.",
+  "khung": [
+    {
+      "x": 130,
+      "y": 484,
+      "w": 360,
+      "h": 282,
+      "r": 0,
+      "dem": 3,
+      "co": 12.5,
+      "dong_cao": 1.24,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e3ea5c\">THÀNH PHẦN: trong 1kg sản phẩm</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><b>Vitamin C (min)</b></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 2px .32em\"></span><span><b>315 mg/kg</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><b>Mg (dạng MgO) (min)</b></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 2px .32em\"></span><span><b>1.210 mg/kg</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><b>Ca (dạng CaHPO<sub>4</sub>) (min)</b></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 2px .32em\"></span><span><b>1.135 mg/kg</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span><b>Chất đệm (dextrose) Vừa đủ</b></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 2px .32em\"></span><span><b>1kg</b></span></span>"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e3ea5c\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Bổ sung khoáng và vitamin tổng hợp cho tôm, cá.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Hỗ trợ lột xác, hình thành và nhanh cứng vỏ.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Hỗ trợ giảm stress, giảm sốc khi môi trường thay đổi.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Hỗ trợ tăng cường sức đề kháng giúp tôm cá khỏe mạnh, phát triển tốt.</b>"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e3ea5c\">LIỀU DÙNG:</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Sử dụng khi thời tiết thay đổi: Dùng 5kg/3.000m³ nước, tạt vào lúc sáng sớm hoặc chiều mát.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Sử dụng khi bị stress: Dùng 5kg/2.000m³ nước.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Hòa tan với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao. Mở máy sục khí hoặc quạt nước để sản phẩm phân tán đều.</b>"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "<b>- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b><span style=\"color:#e3ea5c\">Bảo quản:</span> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</b>"
+        }
+      ]
+    },
+    {
+      "x": 482,
+      "y": 721,
+      "w": 156,
+      "h": 52,
+      "r": 0,
+      "dem": 2,
+      "co": 12,
+      "dong_cao": 1.36,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "TCCS 05:2022/NOBEN"
+        },
+        {
+          "kieu": "dam",
+          "chu": "Mã số tiếp nhận: 02-037653"
+        },
+        {
+          "kieu": "dam",
+          "chu": "Mã SPCN: VICB 7178.10-105"
+        }
+      ]
+    },
+    {
+      "x": 484,
+      "y": 777,
+      "w": 148,
+      "h": 68,
+      "r": 5,
+      "dem": 4,
+      "co": 13,
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "Khối lượng tịnh:"
+        },
+        {
+          "kieu": "dam",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dam",
+          "chu": "HSD:"
+        }
+      ]
+    },
+    {
+      "x": 207,
+      "y": 774,
+      "w": 272,
+      "h": 102,
+      "r": 0,
+      "dem": 1,
+      "co": 7.6,
+      "dong_cao": 1.3,
+      "nen": "trong",
+      "mau": "#ffffff",
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Sản phẩm của/Product of:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"font-size:1.6em;letter-spacing:.06em;padding-left:2.6em\">CÔNG TY TNHH NO BEN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "ĐC: 228/9 Nguyễn Thị Lắng, ấp Phú Lợi, X.Tân Phú Trung, H.Củ Chi, Tp.HCM"
+        },
+        {
+          "kieu": "dong",
+          "chu": "ĐT: 0934 246 420 - Email: thuocthuysannoben@gmail.com"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sản xuất tại:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "228/9 Nguyễn Thị Lắng, ấp Phú Lợi, X.Tân Phú Trung, H.Củ Chi, Tp.HCM"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#c8102e;background:#fff;padding:0 .35em;border-radius:.2em;font-size:1.2em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        132,
+        485,
+        356,
+        280
+      ],
+      "mau": "#ffffff",
+      "nguong": 175,
+      "no": 7,
+      "le": 3
+    },
+    {
+      "vung": [
+        132,
+        485,
+        356,
+        280
+      ],
+      "mau": "#c8e06a",
+      "nguong": 90,
+      "no": 7,
+      "le": 3
+    },
+    {
+      "vung": [
+        484,
+        723,
+        148,
+        48
+      ],
+      "mau": "#ffffff",
+      "nguong": 175,
+      "no": 7,
+      "le": 2
+    },
+    {
+      "vung": [
+        208,
+        775,
+        266,
+        76
+      ],
+      "mau": "#ffffff",
+      "nguong": 175,
+      "no": 7,
+      "le": 3
+    }
+  ],
+  "logo": [
+    {
+      "x": 133,
+      "y": 774,
+      "w": 72,
+      "h": 74
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        140,
+        180,
+        600,
+        320
+      ],
+      "bang_mau": [
+        "#2c418b",
+        "#f6f7f8",
+        "#7c8091",
+        "#d4ca63",
+        "#c9ccd5",
+        "#060810"
+      ],
+      "net": [
+        "#f6f7f8",
+        "#060810"
+      ]
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    150,
+    200
+  ],
+  "mat_truoc": [
+    108,
+    138,
+    668,
+    880
+  ]
+}

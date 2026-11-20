@@ -35,7 +35,7 @@
         },
         {
           "kieu": "html",
-          "chu": "NGUYÊN LIỆU",
+          "chu": "<b>NGUYÊN LIỆU</b>",
           "cl": "muc"
         },
         {
@@ -44,7 +44,7 @@
         },
         {
           "kieu": "html",
-          "chu": "CÔNG DỤNG",
+          "chu": "<b>CÔNG DỤNG</b>",
           "cl": "muc"
         },
         {
@@ -57,7 +57,7 @@
         },
         {
           "kieu": "html",
-          "chu": "HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>",
           "cl": "muc"
         },
         {

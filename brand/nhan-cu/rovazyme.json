@@ -75,7 +75,7 @@
         },
         {
           "kieu": "html",
-          "chu": "CÔNG DỤNG",
+          "chu": "<b>CÔNG DỤNG</b>",
           "cl": "muc"
         },
         {
@@ -96,7 +96,7 @@
         },
         {
           "kieu": "html",
-          "chu": "HƯỚNG DẪN SỬ DỤNG",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>",
           "cl": "muc"
         },
         {
@@ -133,7 +133,7 @@
         },
         {
           "kieu": "html",
-          "chu": "HƯỚNG DẪN BẢO QUẢN:",
+          "chu": "<b>HƯỚNG DẪN BẢO QUẢN:</b>",
           "cl": "muc"
         },
         {

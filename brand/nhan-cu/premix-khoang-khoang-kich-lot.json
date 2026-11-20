@@ -1,0 +1,338 @@
+{
+ "slug": "premix-khoang-khoang-kich-lot",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001523_1.jpg",
+ "cat": [
+  166,
+  278,
+  600,
+  802
+ ],
+ "kich_thuoc_goc": [
+  434,
+  524
+ ],
+ "_ghi_chu": "Ảnh 01-001523_1 (nhãn Noben nằm giữa trang 766×1080, cắt lấy nhãn 434×524 px nên phóng tối đa ×8 = 3472 px; ảnh _2 là nhãn nhà phân phối Probiotic, không dùng). Chữ sửa theo hồ sơ TCCS 49:2020/NOBEN; đối tượng tôm, cá. Chữ cũ trên nền hồng có hình tôm mờ được xóa theo độ lệch so với nền (khac_nen) để giữ hình.",
+ "khung": [
+  {
+   "x": 17,
+   "y": 94,
+   "w": 400,
+   "h": 282,
+   "nen": "trong",
+   "mau": "#262626",
+   "co": 10.5,
+   "dong_cao": 1.22,
+   "dem": 2,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"float:right;width:136px;height:33px\"></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>THÀNH PHẦN:</b> Trong 1kg Sản Phẩm"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ca (Dạng CaHPO₄) (min)........ 850 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mg (Dạng MgSO₄) (min) ........ 850 mg/kg"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chất đệm (Dextrose) Vừa đủ .................. 1 kg"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>NGUYÊN LIỆU</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ca (Dạng CaHPO₄), Mg (Dạng MgSO₄), Dextrose"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>CÔNG DỤNG</b>",
+     "cl": "muc"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Bổ sung khoáng chất vào thức ăn tôm, cá."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN SỬ DỤNG:</b>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Lắc kỹ trước khi dùng."
+    },
+    {
+     "kieu": "dong",
+     "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.",
+     "dam": "BẢO QUẢN:"
+    }
+   ]
+  },
+  {
+   "x": 19,
+   "y": 380,
+   "w": 205,
+   "h": 43,
+   "nen": "trong",
+   "mau": "#262626",
+   "co": 10.5,
+   "dong_cao": 1.25,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>Số tiêu chuẩn công bố: 49:2020/NOBEN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Mã SPHQ: VICB 7178.10-58</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Mã số tiếp nhận: 01-001523</b>"
+    }
+   ]
+  },
+  {
+   "x": 225,
+   "y": 381,
+   "w": 120,
+   "h": 56,
+   "nen": "trong",
+   "mau": "#262626",
+   "co": 10.5,
+   "dong_cao": 1.28,
+   "dem": 1,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hạn sử dụng:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Khối lượng tịnh:"
+    }
+   ]
+  },
+  {
+   "x": 84,
+   "y": 452,
+   "w": 340,
+   "h": 71,
+   "nen": "trong",
+   "mau": "#111111",
+   "co": 8.6,
+   "dem": 0,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:121.95%;margin-left:0.00%;transform:scaleX(0.82);transform-origin:0 0;font-size:1.75em;line-height:1.2;text-align:left;font-weight:700;\">CÔNG TY TNHH NO BEN</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:128.21%;margin-left:0.00%;transform:scaleX(0.78);transform-origin:0 0;font-size:1.0em;line-height:1.32;text-align:left;font-weight:700;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:128.21%;margin-left:0.00%;transform:scaleX(0.78);transform-origin:0 0;font-size:1.0em;line-height:1.32;text-align:left;font-weight:700;\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:block;white-space:nowrap;width:128.21%;margin-left:0.00%;transform:scaleX(0.78);transform-origin:0 0;font-size:1.0em;line-height:1.32;text-align:left;font-weight:700;\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"text-shadow:0 0 1px #fff,0 0 1px #fff;display:block;white-space:nowrap;width:117.65%;margin-left:0.00%;transform:scaleX(0.85);transform-origin:0 0;font-size:1.15em;line-height:1.25;text-align:left;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;\">SẢN XUẤT TẠI VIỆT NAM</span>"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    17,
+    94,
+    262,
+    74
+   ],
+   "khac_nen": 9,
+   "nguong": 50,
+   "no": 5,
+   "le": 4
+  },
+  {
+   "vung": [
+    17,
+    168,
+    400,
+    209
+   ],
+   "khac_nen": 9,
+   "nguong": 50,
+   "no": 5,
+   "le": 4
+  },
+  {
+   "vung": [
+    19,
+    380,
+    305,
+    55
+   ],
+   "khac_nen": 11,
+   "nguong": 40,
+   "no": 7,
+   "le": 4
+  },
+  {
+   "vung": [
+    24,
+    434,
+    194,
+    11
+   ],
+   "khac_nen": 9,
+   "nguong": 50,
+   "no": 3,
+   "le": 3
+  },
+  {
+   "vung": [
+    84,
+    452,
+    330,
+    62
+   ],
+   "khac_nen": 11,
+   "nguong": 55,
+   "no": 3,
+   "le": 4
+  }
+ ],
+ "chu_vector": [
+  {
+   "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+   "x": 27,
+   "y": 442.6,
+   "w": 186,
+   "co": 8.4,
+   "phong": "sans",
+   "mau": "#333333"
+  }
+ ],
+ "logo": [
+  {
+   "x": 21,
+   "y": 457,
+   "w": 57,
+   "h": 55
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    18,
+    18,
+    422,
+    77
+   ],
+   "bang_mau": [
+    "#ec028b",
+    "#ce0e77",
+    "#209d49",
+    "#ab4665",
+    "#608857",
+    "#d7c373"
+   ],
+   "net": [
+    "#ec028b",
+    "#209d49",
+    "#d7c373"
+   ],
+   "mem": 500
+  },
+  {
+   "vung": [
+    277,
+    86,
+    412,
+    126
+   ],
+   "bang_mau": [
+    "#f9f8f9",
+    "#131314",
+    "#bbb4b8",
+    "#e6dae0",
+    "#8f8d8f",
+    "#605d5f"
+   ],
+   "net": [
+    "#f9f8f9",
+    "#131314"
+   ],
+   "mem": 500,
+   "mau": {
+    "#131314": "#0c0c0c"
+   }
+  }
+ ],
+ "bao_bi": "tui",
+ "kich_thuoc_mm": [
+  200,
+  242
+ ],
+ "mat_truoc": [
+  0,
+  0,
+  434,
+  524
+ ]
+}

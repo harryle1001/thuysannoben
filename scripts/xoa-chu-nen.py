@@ -12,6 +12,18 @@ import sys
 import numpy as np
 from PIL import Image, ImageFilter
 
+
+
+def dich(a, dy, dx, fill):
+    """Dời mảng (dy, dx), phần lộ ra ở mép điền fill (không cuộn vòng như np.roll)."""
+    out = np.full_like(a, fill)
+    H, W = a.shape[:2]
+    ys, yd = (slice(0, H - dy), slice(dy, H)) if dy >= 0 else (slice(-dy, H), slice(0, H + dy))
+    xs, xd = (slice(0, W - dx), slice(dx, W)) if dx >= 0 else (slice(-dx, W), slice(0, W + dx))
+    out[yd, xd] = a[ys, xs]
+    return out
+
+
 src, dst, regions = sys.argv[1], sys.argv[2], json.loads(sys.argv[3])
 img = np.asarray(Image.open(src).convert('RGB')).astype(np.float32)
 for r in regions:
@@ -55,8 +67,8 @@ for r in regions:
         acc = np.zeros_like(fill)
         cnt = np.zeros(mask.shape, np.float32)
         for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, -1), (1, -1), (-1, 1)):
-            k = np.roll(np.roll(known, dy, 0), dx, 1)
-            v = np.roll(np.roll(fill, dy, 0), dx, 1)
+            k = dich(known, dy, dx, False)
+            v = dich(fill, dy, dx, 0)
             acc += v * k[..., None]
             cnt += k
         upd = mask & (cnt > 0)
