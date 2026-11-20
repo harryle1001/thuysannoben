@@ -211,18 +211,18 @@
   },
   {
    "x": 594,
-   "y": 190,
+   "y": 188,
    "w": 187,
-   "h": 50,
+   "h": 53,
    "r": 0,
    "nen": "trong",
-   "dem": 0,
+   "dem": 1.5,
    "co": 5.2,
    "dong_cao": 1.22,
    "noi_dung": [
     {
      "kieu": "html",
-     "chu": "<b style=\"color:#2b67b1;font-size:1.95em;line-height:1.05\">CÔNG TY TNHH NO BEN</b>"
+     "chu": "<b style=\"color:#2b67b1;font-size:1.95em;line-height:1.2\">CÔNG TY TNHH NO BEN</b>"
     },
     {
      "kieu": "dong",
@@ -230,7 +230,11 @@
     },
     {
      "kieu": "dong",
-     "chu": "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513"
+     "chu": "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com"
+    },
+    {
+     "kieu": "dong",
+     "chu": "MST: 0304210513"
     },
     {
      "kieu": "dong",
