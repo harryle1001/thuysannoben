@@ -211,9 +211,9 @@
   },
   {
    "x": 594,
-   "y": 188,
+   "y": 186,
    "w": 187,
-   "h": 53,
+   "h": 55,
    "r": 0,
    "nen": "trong",
    "dem": 1.5,
@@ -242,7 +242,7 @@
     },
     {
      "kieu": "html",
-     "chu": "<b style=\"color:#c8102e;font-size:1.2em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+     "chu": "<b style=\"color:#c8102e;font-size:1.2em;line-height:1.5\">SẢN XUẤT TẠI VIỆT NAM</b>"
     }
    ]
   }
