@@ -118,6 +118,7 @@ const TOPICS = [
   { slug: 'moi-truong', name: 'Môi trường ao', blurb: 'Quản lý pH, độ kiềm, oxy, khí độc, màu nước và tảo để ao nuôi luôn ổn định.' },
   { slug: 'ky-thuat', name: 'Kỹ thuật nuôi', blurb: 'Cải tạo ao, chọn giống, dùng vi sinh, nuôi ao bạt mật độ cao và lịch chăm sóc theo ngày tuổi.' },
   { slug: 'dinh-duong', name: 'Dinh dưỡng & thức ăn', blurb: 'Cho ăn đúng cách, giảm FCR, bổ sung khoáng, vitamin và men tiêu hóa cho tôm.' },
+  { slug: 'dai-ly', name: 'Đại lý & gia công', blurb: 'Mở đại lý thuốc thủy sản, nhập hàng giá nhà máy, gia công theo nhãn riêng, đóng gói, thiết kế nhãn và bán hàng trên mạng.' },
 ];
 const topicBySlug = Object.fromEntries(TOPICS.map((t) => [t.slug, t]));
 // Topics for the articles that came from the old website.
