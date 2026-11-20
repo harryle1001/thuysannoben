@@ -81,8 +81,13 @@ async function main() {
   const W0 = JSON.parse(fs.readFileSync(path.join(DIR, `${name}.json`), 'utf8')).kich_thuoc_goc[0];
   const SCALE = scaleFor(W0);
   const spec = JSON.parse(fs.readFileSync(path.join(DIR, `${name}.json`), 'utf8'));
-  const src = path.join(CONG_TY, spec.goc.replace(/^CONG-TY-NOBEN\//, ''));
+  let src = path.join(CONG_TY, spec.goc.replace(/^CONG-TY-NOBEN\//, ''));
   const work = path.join(DIR, '_work'); fs.mkdirSync(work, { recursive: true });
+  // Tùy chọn "cat": [x0,y0,x1,y1] cắt ảnh gốc (bỏ lề, thước đo cm, mặt nhãn khác); toạ độ spec theo ảnh đã cắt.
+  if (spec.cat) {
+    const [cx0, cy0, cx1, cy1] = spec.cat; const catFile = path.join(work, `${name}-cat.png`);
+    execFileSync('convert', [src, '-crop', `${cx1 - cx0}x${cy1 - cy0}+${cx0}+${cy0}`, '+repage', catFile]); src = catFile;
+  }
   const bgFile = path.join(work, `${name}-nen-4x.jpg`);
   const xoa = [...(spec.chu_vector || []), ...(spec.khung || []), ...(spec.xoa || [])].filter((t) => t.xoa || t.vung)
     .map((t) => (t.vung ? t : { vung: t.xoa, chu: t.chu_cu || 'sang', le: t.le, nen: t.nen_xoa || (t.nen && t.nen.length < 8 ? t.nen : undefined) }));

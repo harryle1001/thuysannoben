@@ -1,0 +1,294 @@
+{
+ "slug": "ben-gold-rv",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020769_1.jpg",
+ "kich_thuoc_goc": [
+  800,
+  362
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 362. Chữ sửa theo hồ sơ TCCS 17:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+ "khung": [
+  {
+   "x": 21,
+   "y": 20,
+   "w": 247,
+   "h": 338,
+   "r": 0,
+   "dem": 3,
+   "co": 11.5,
+   "mau": "#231f20",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<span style=\"color:#e1353f\">THÀNH PHẦN</span> (trong 1 lít sản phẩm)"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Cu (Dạng CuSO₄.5H₂O) (min): 1.000 ppm"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Dung môi (nước RO) vừa đủ: 1 lít"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Asen (As): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Chì (Pb): KPH"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Nguyên liệu:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "CuSO₄.5H₂O, nước RO"
+    },
+    {
+     "kieu": "html",
+     "cl": "muc",
+     "chu": "<span style=\"color:#e1353f\">CÔNG DỤNG</span>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Giúp ổn định mật độ tảo, ổn định pH ao nuôi."
+    },
+    {
+     "kieu": "html",
+     "cl": "muc",
+     "chu": "<span style=\"color:#e1353f\">HƯỚNG DẪN SỬ DỤNG</span>"
+    },
+    {
+     "kieu": "gach",
+     "chu": "Hòa với nước sạch một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều và tăng hiệu quả sử dụng."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Dùng để xử lý các loại tảo độc trong ao nuôi thủy sản: Sử dụng 500 ml sản phẩm/1.500 – 2.000 m³ nước, định kỳ 7-10 ngày sử dụng 1 lần."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Trường hợp để xử lý tảo lam, tảo sợi, tảo xanh quá dày: Sử dụng 500 ml sản phẩm/1.000 m³ nước, sử dụng 2 liều liên tục và cách nhau 2 ngày, sử dụng vào lúc trời nắng gắt."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Lưu ý: Không sử dụng sản phẩm khi trời ít nắng hoặc mưa."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Ngưng sử dụng trước thu hoạch 15 ngày."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Lắc đều sản phẩm trước khi sử dụng."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "gach",
+     "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+    }
+   ]
+  },
+  {
+   "x": 540,
+   "y": 24,
+   "w": 255,
+   "h": 88,
+   "r": 0,
+   "dem": 3,
+   "co": 12,
+   "mau": "#231f20",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#2e6fb7\">Hướng dẫn bảo quản:</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+    }
+   ]
+  },
+  {
+   "x": 540,
+   "y": 114,
+   "w": 255,
+   "h": 124,
+   "r": 0,
+   "dem": 3,
+   "co": 12.5,
+   "mau": "#231f20",
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Số tiêu chuẩn công bố: 17:2020/NOBEN"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã SPHQ: VICB 7178.10-17"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Mã số tiếp nhận: 02-020769"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Thể tích thực:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Hạn sử dụng:"
+    }
+   ]
+  },
+  {
+   "x": 601,
+   "y": 243,
+   "w": 195,
+   "h": 61,
+   "r": 0,
+   "dem": 1,
+   "co": 7.4,
+   "mau": "#231f20",
+   "dong_cao": 1.12,
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#2e6fb7;font-size:1.45em\">CÔNG TY TNHH NO BEN</b>"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi,"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Điện thoại: 0934 246 420"
+    },
+    {
+     "kieu": "dong",
+     "chu": "MST: 0304210513"
+    },
+    {
+     "kieu": "dong",
+     "chu": "Email: thuocthuysannoben@gmail.com"
+    }
+   ]
+  },
+  {
+   "x": 541,
+   "y": 306,
+   "w": 255,
+   "h": 31,
+   "r": 0,
+   "dem": 1,
+   "co": 7.4,
+   "mau": "#231f20",
+   "dong_cao": 1.12,
+   "noi_dung": [
+    {
+     "kieu": "dong",
+     "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#c8102e;font-size:1.2em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+    }
+   ]
+  }
+ ],
+ "logo": [
+  {
+   "x": 287,
+   "y": 18,
+   "w": 60,
+   "h": 64
+  },
+  {
+   "x": 550,
+   "y": 250,
+   "w": 44,
+   "h": 49
+  }
+ ],
+ "lam_net": [
+  {
+   "vung": [
+    280,
+    100,
+    532,
+    235
+   ],
+   "bang_mau": [
+    "#01afaf",
+    "#c7c3ca",
+    "#ece4ed",
+    "#8c2d8a",
+    "#8d828f",
+    "#077061",
+    "#060e10",
+    "#46a7a9"
+   ],
+   "net": [
+    "#8c2d8a",
+    "#ece4ed",
+    "#060e10"
+   ]
+  },
+  {
+   "vung": [
+    386,
+    14,
+    528,
+    66
+   ],
+   "bang_mau": [
+    "#056f5d",
+    "#f6f8f8",
+    "#939898",
+    "#c5c6c7",
+    "#515e5d",
+    "#141718",
+    "#539d9c"
+   ],
+   "net": [
+    "#141718",
+    "#f6f8f8"
+   ],
+   "mem": 500,
+   "mau": {
+    "#141718": "#0c0c0c"
+   }
+  }
+ ],
+ "bao_bi": "chai",
+ "kich_thuoc_mm": [
+  240,
+  135
+ ],
+ "mat_truoc": [
+  268,
+  0,
+  538,
+  362
+ ]
+}

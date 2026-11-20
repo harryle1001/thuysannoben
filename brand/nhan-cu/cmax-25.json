@@ -1,0 +1,241 @@
+{
+  "slug": "cmax-25",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-002232_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    895
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 895. Chữ sửa theo hồ sơ TCCS 32:2017/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+  "khung": [
+    {
+      "x": 852,
+      "y": 80,
+      "w": 660,
+      "h": 548,
+      "r": 0,
+      "phong": "serif",
+      "co": 19,
+      "dong_cao": 1.27,
+      "dem": 6,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"float:right;width:45%;margin-top:2.6em;font-size:.93em\">- Asen (As) vô cơ: KPH<br>- Cadimi (Cd): KPH<br>- Chì (Pb): KPH<br>- Thủy ngân (Hg): KPH<br>- <i>E.coli</i> &lt; 10 CFU/g<br>- <i>Salmonella</i> spp.: KPH</span><b>THÀNH PHẦN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "(trong 1 kg sản phẩm)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Vitamin C (min): 25.000 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chất đệm (Dextrose): Vừa đủ 1 kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Độ ẩm (max): 10%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Cát sạn (max): 3%"
+        },
+        {
+          "kieu": "html",
+          "chu": "NGUYÊN LIỆU",
+          "cl": "muc"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Vitamin C, Dextrose."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung vitamin C cần thiết vào thức ăn cho tôm, cá. Giúp tôm, cá tiêu hóa tốt thức ăn, ăn nhiều, mau lớn."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>",
+          "cl": "muc"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hướng dẫn sử dụng:"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 3-5 g/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Khi môi trường thay đổi, thời tiết giao mùa: Trộn 10 g/kg thức ăn, cho ăn 2-3 lần/ngày và liên tục 2-3 hôm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, khi sang tôm: Dùng 1 kg/1.000 m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        },
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 855,
+      "y": 713,
+      "w": 365,
+      "h": 86,
+      "r": 0,
+      "phong": "serif",
+      "co": 19,
+      "dong_cao": 1.28,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 32:2017/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-47"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 01-002232"
+        }
+      ]
+    },
+    {
+      "x": 1225,
+      "y": 645,
+      "w": 270,
+      "h": 132,
+      "r": 0,
+      "phong": "serif",
+      "co": 19,
+      "dong_cao": 1.62,
+      "dem": 3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 84,
+      "y": 700,
+      "w": 590,
+      "h": 162,
+      "r": 0,
+      "nen": "#09a753",
+      "mau": "#ffffff",
+      "can": "center",
+      "co": 17,
+      "dong_cao": 1.36,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"font-family:Liberation Serif,serif;font-weight:700;font-size:.86em;letter-spacing:.02em;line-height:1.5\">CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;margin-left:-17.57%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.74);font-size:1.6em;font-weight:700;line-height:1.25;margin-top:3px\">CÔNG TY TNHH NO BEN</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:128.21%;margin-left:-14.10%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.78);font-size:1em\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:128.21%;margin-left:-14.10%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.78);font-size:1em\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:128.21%;margin-left:-14.10%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.78);font-size:1em\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;margin-left:-12.50%;white-space:nowrap;text-align:center;transform-origin:50% 0;transform:scaleX(0.8);font-size:1.1em;font-weight:700;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.3;text-shadow:0 0 2px #fff,0 0 1px #fff\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    }
+  ],
+  "logo": [
+    {
+      "x": 308,
+      "y": 63,
+      "w": 141,
+      "h": 143
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        80,
+        255,
+        725,
+        375
+      ],
+      "bang_mau": [
+        "#fdfdfc",
+        "#e71d28"
+      ],
+      "net": [
+        "#fdfdfc",
+        "#e71d28"
+      ],
+      "mem": 500,
+      "mau": {
+        "#e71d28": "#e71d28"
+      }
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    340,
+    190
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    768,
+    895
+  ]
+}

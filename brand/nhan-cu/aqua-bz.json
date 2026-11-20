@@ -1,0 +1,82 @@
+{
+  "slug": "aqua-bz",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-028285_1.jpg",
+  "kich_thuoc_goc": [1600, 932],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 932 (túi: mặt trước trái, mặt sau phải). Chữ sửa theo hồ sơ TCCS 83:2021/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [340, 198],
+  "mat_truoc": [0, 0, 790, 932],
+  "khung": [
+    {
+      "x": 862, "y": 156, "w": 690, "h": 542, "r": 0, "dem": 3, "co": 16, "dong_cao": 1.3,
+      "noi_dung": [
+        {"kieu": "dong", "dam": "THÀNH PHẦN", "chu": " (Trong 1kg sản phẩm)"},
+        {"kieu": "gach", "chu": "<i>Bacillus</i> spp. (min): 1 x 10<sup>9</sup> cfu/kg"},
+        {"kieu": "gach", "chu": "<i>Bacillus licheniformis</i>: định danh (+)"},
+        {"kieu": "gach", "chu": "<i>Bacillus megaterium</i>: định danh (+)"},
+        {"kieu": "gach", "chu": "<i>Bacillus mesentericus</i>: định danh (+)"},
+        {"kieu": "gach", "chu": "Chất đệm (Dextrose monohydrate) vừa đủ: 1kg"},
+        {"kieu": "gach", "chu": "<i>E.Coli</i> &lt; 10 CFU/g"},
+        {"kieu": "gach", "chu": "<i>Salmonella</i> spp.: KPH"},
+        {"kieu": "dong", "dam": "NGUYÊN LIỆU:", "chu": " Bacillus spp., Dextrose."},
+        {"kieu": "dam", "chu": "CÔNG DỤNG"},
+        {"kieu": "gach", "chu": "Giúp phân huỷ mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao."},
+        {"kieu": "gach", "chu": "Giảm khí độc NH<sub>3</sub>, H<sub>2</sub>S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi."},
+        {"kieu": "gach", "chu": "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi."},
+        {"kieu": "gach", "chu": "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."},
+        {"kieu": "dam", "chu": "HƯỚNG DẪN SỬ DỤNG"},
+        {"kieu": "dong", "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao với liều lượng như sau:"},
+        {"kieu": "gach", "chu": "Chuẩn bị ao: Dùng 454g/2.000 - 2.500m<sup>3</sup> nước."},
+        {"kieu": "gach", "chu": "Dùng định kỳ: Dùng 454g/3.000 - 5.000m<sup>3</sup> nước, định kỳ 5 - 7 ngày sử dụng 1 lần."},
+        {"kieu": "gach", "chu": "Trường hợp ao bị ô nhiễm nặng: Dùng 1kg/2.000 - 3.000m<sup>3</sup> nước, dùng liên tục 2 ngày."},
+        {"kieu": "gach", "chu": "Trường hợp làm giảm tảo, hỗ trợ cắt tảo Lablab: Dùng 1kg/2.000m<sup>3</sup> nước, sử dụng 2 ngày liên tục với liều như trên."},
+        {"kieu": "html", "chu": "<b>* Lưu ý:</b> Sử dụng cho cắt tảo, giảm tảo nên sử dụng vào lúc 10 - 12 giờ đêm. Có thể ủ sục khí trước khi sử dụng từ trên 12 tiếng để tăng hiệu quả sử dụng của sản phẩm."},
+        {"kieu": "gach", "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."},
+        {"kieu": "gach", "chu": "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."},
+        {"kieu": "dong", "dam": "Hướng dẫn bảo quản:", "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."}
+      ]
+    },
+    {
+      "x": 866, "y": 704, "w": 255, "h": 88, "r": 0, "dem": 2, "co": 16, "dong_cao": 1.3,
+      "noi_dung": [
+        {"kieu": "dong", "chu": "Số TCCS 83:2021/NOBEN"},
+        {"kieu": "dong", "chu": "Mã SPHQ: VICB 7178.10-92"},
+        {"kieu": "dong", "chu": "Mã số tiếp nhận: 02-028285"},
+        {"kieu": "dong", "chu": "Khối lượng tịnh:"}
+      ]
+    },
+    {
+      "x": 1125, "y": 704, "w": 420, "h": 88, "r": 0, "dem": 2, "co": 16, "dong_cao": 1.72,
+      "noi_dung": [
+        {"kieu": "dong", "chu": "Số lô sản xuất:"},
+        {"kieu": "dong", "chu": "Ngày sản xuất:"},
+        {"kieu": "dong", "chu": "Hạn sử dụng:"}
+      ]
+    }
+  ],
+  "xoa": [
+    {"vung": [186, 780, 516, 102], "mau": "#a4bcd1", "nguong": 112, "le": 4},
+    {"vung": [1003, 801, 530, 97], "nen": "trang", "le": 1}
+  ],
+  "logo": [
+    {"x": 76, "y": 780, "w": 96, "h": 96},
+    {"x": 895, "y": 799, "w": 93, "h": 99}
+  ],
+  "cong_ty": {
+    "x": 190, "y": 779, "w": 515, "co": 16, "mau": "#3f6ea6",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {"vung": [160, 305, 630, 400], "bang_mau": ["#030303", "#fcfcfc", "#707070"], "net": ["#030303", "#fcfcfc"]},
+    {"vung": [80, 415, 705, 470], "bang_mau": ["#373882", "#f8f9f9", "#9395bb"], "net": ["#373882", "#f8f9f9"]},
+    {"vung": [1005, 25, 1415, 110], "bang_mau": ["#040404", "#fbfbfb", "#7f7f7f"], "net": ["#040404", "#fbfbfb"]},
+    {"vung": [935, 110, 1485, 152], "bang_mau": ["#0b0b0b", "#f8f8f8", "#7c7c7c"], "net": ["#0b0b0b", "#f8f8f8"]},
+    {"vung": [445, 55, 740, 137], "bang_mau": ["#0c0b0e", "#fafafa", "#494457", "#aaa9ac", "#d8d8d8", "#7e7c83"], "net": ["#0c0b0e", "#fafafa"], "mem": 500}
+  ]
+}
