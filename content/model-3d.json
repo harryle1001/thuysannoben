@@ -7,13 +7,13 @@
   },
   "iodine-99": {
     "kind": "chainau",
-    "mm": "240x135",
+    "mm": "240x88",
     "tex": "/images/products-3d/iodine-99.jpg",
     "tam": 0.48
   },
   "ben-copper-500": {
     "kind": "chai500",
-    "mm": "240x64",
+    "mm": "240x78",
     "tex": "/images/products-3d/ben-copper-500.jpg",
     "tam": 0.53
   },
@@ -25,17 +25,17 @@
   },
   "aqua-yucca": {
     "kind": "baodet",
-    "mm": "100x242",
+    "mm": "100x115",
     "tex": "/images/products-3d/aqua-yucca.jpg"
   },
   "bzt": {
     "kind": "tuibac",
-    "mm": "131x142",
+    "mm": "131x150",
     "tex": "/images/products-3d/bzt.jpg"
   },
   "edta-99": {
     "kind": "tuivang",
-    "mm": "129x185",
+    "mm": "129x186",
     "tex": "/images/products-3d/edta-99.jpg"
   },
   "cmax-25": {
@@ -46,13 +46,13 @@
   },
   "oxy-99": {
     "kind": "xo",
-    "mm": "260x130",
+    "mm": "260x184",
     "tex": "/images/products-3d/oxy-99.jpg",
     "tam": 0.27
   },
   "vita-c-tat": {
     "kind": "xo",
-    "mm": "400x250",
+    "mm": "400x249",
     "tex": "/images/products-3d/vita-c-tat.jpg",
     "tam": 0.5
   }

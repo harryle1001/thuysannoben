@@ -30,7 +30,8 @@ BAO_BI = json.load(open(os.path.join(SRC, 'bao-bi-3d.json'), encoding='utf8'))
 
 def front(spec, im, kieu):
     """Ảnh và khổ (mm) dán lên bao bì: chai/hũ/xô quấn cả nhãn; túi/bao chỉ mặt trước."""
-    mw, mh = spec.get('kich_thuoc_mm') or [240, 135]
+    mw, _ = spec.get('kich_thuoc_mm') or [240, 135]
+    mh = mw * im.height / im.width  # cao theo tỷ lệ ảnh nhãn thật, tránh méo khi mm ước lệch
     if not kieu.startswith(('tui', 'bao')) or not spec.get('mat_truoc'):
         return im, mw, mh
     cx, cy, cx1, cy1 = spec.get('cat_ra') or [0, 0] + spec['kich_thuoc_goc']
@@ -38,7 +39,8 @@ def front(spec, im, kieu):
     k = im.width / W0
     x0, y0, x1, y1 = [v - o for v, o in zip(spec['mat_truoc'], (cx, cy, cx, cy))]
     crop = im.crop((round(x0 * k), round(y0 * k), round(x1 * k), round(y1 * k)))
-    return crop, mw * (x1 - x0) / W0, mh * (y1 - y0) / H0
+    cw = mw * (x1 - x0) / W0
+    return crop, cw, cw * crop.height / crop.width
 
 
 def render(png, kind, mw, mh, slug, out, extra):
