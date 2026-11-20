@@ -57,7 +57,7 @@ Không dùng hai loại sát trùng cùng lúc. Hòa sản phẩm với nước 
 
 ### Bước 4: Cấy lại vi sinh
 
-Sau khi diệt nấm 2 đến 3 ngày, cấy vi sinh như [AMYLAC](/san-pham/amylac) (ủ 1 gói với 3 kg đường và 50 lít nước, sục khí 12 đến 24 giờ, dùng 15 đến 20 lít cho 1.000 m³ nước ao bạt) hoặc vi sinh tẩy nhớt bạt [CLEAR 12H](/san-pham/clear-12h) theo nhãn để lợi khuẩn chiếm chỗ, hạn chế nấm quay lại.
+Sau khi diệt nấm 2 đến 3 ngày, cấy vi sinh tẩy nhớt bạt [CLEAR 12H](/san-pham/clear-12h) theo nhãn để lợi khuẩn chiếm chỗ, hạn chế nấm quay lại.
 
 ## Phòng nấm cho ao bạt
 

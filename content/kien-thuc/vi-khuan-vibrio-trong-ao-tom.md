@@ -82,7 +82,6 @@ Newman (2015) cho rằng chế phẩm vi sinh không phải lúc nào cũng làm
 Sản phẩm Noben hỗ trợ (liều theo nhãn):
 
 - [IODINE 99](/san-pham/iodine-99) và [BEN IQ](/san-pham/ben-iq): sát trùng nguồn nước, giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong nước.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, phân hủy chất thải hữu cơ, thức ăn dư.
 - [AQUALAC FS](/san-pham/aqualac-fs): bổ sung lợi khuẩn vào thức ăn, cải thiện đường ruột.
 
 Bà con cần tư vấn lịch sát trùng và cấy vi sinh xen kẽ, gọi/Zalo **0934 246 420** để kỹ thuật viên Noben hỗ trợ.

@@ -86,8 +86,6 @@ Cách đo và đọc các chỉ tiêu khác có ở bài [cách đo và đọc c
 Sản phẩm Noben hỗ trợ (liều theo nhãn):
 
 - [SUPER OXY 02](/san-pham/super-oxy-02) và [OXY 99](/san-pham/oxy-99): cung cấp nhanh oxy cho ao nuôi khi oxy tụt.
-- [NB-BIOPOND](/san-pham/nb-biopond): phân hủy chất thải, mùn bã hữu cơ, làm sạch đáy, tăng oxy hòa tan.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, gia tăng hàm lượng oxy, ổn định màu nước.
 
 Khi tôm đã nổi đầu, xem ngay bài [tôm nổi đầu do thiếu oxy](/bai-viet/tom-noi-dau-thieu-oxy-cach-xu-ly) và trang [giải pháp thiếu oxy, sốc stress](/giai-phap/thieu-oxy-soc-stress).
 

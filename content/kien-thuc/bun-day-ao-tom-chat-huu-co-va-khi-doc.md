@@ -91,8 +91,6 @@ Quy trình cải tạo đầy đủ có ở bài [quy trình cải tạo ao](/ba
 
 Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, liều dùng theo nhãn:
 
-- [BIO BOOK](/san-pham/bio-book): xử lý đáy ao, phân hủy chất thải hữu cơ, thức ăn tồn dư, xác tảo tàn, khí độc ở đáy.
-- [NB-BIOPOND](/san-pham/nb-biopond): phân hủy nhanh mùn bã hữu cơ, khí độc tích tụ ở đáy; làm sạch đáy, tăng oxy hòa tan.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy mùn bã hữu cơ, thức ăn thừa, phân tôm; giảm khí độc NH₃, H₂S, giảm mùi hôi.
 - [YUCCA VS ZEO](/san-pham/yucca-vs-zeo): hấp thụ nhanh khí độc, cải tạo môi trường nước, cấp cứu khi tôm nổi đầu.
 

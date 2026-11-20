@@ -81,7 +81,6 @@ Cách bố trí ao lắng, ao chứa và rào chắn có ở bài [an toàn sinh
 Các sản phẩm dưới đây **không diệt được virus trong cơ thể tôm**, chỉ hỗ trợ làm sạch nước và giữ tôm khỏe:
 
 - [IODINE 99](/san-pham/iodine-99): sát trùng nguồn nước, giúp giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong nước.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, ổn định màu nước và pH.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm; trộn 3 đến 5 g/kg thức ăn theo hướng dẫn trên nhãn.
 - [VITA C TẠT](/san-pham/vita-c-tat): tạt xuống ao giúp chống sốc, giảm stress khi thời tiết thay đổi.
 

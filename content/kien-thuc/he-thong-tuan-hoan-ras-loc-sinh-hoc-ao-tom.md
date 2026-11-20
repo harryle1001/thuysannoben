@@ -89,7 +89,6 @@ Nếu không xi phông, xả bể lắng đều, chất thải rắn sẽ phân 
 
 Hệ tuần hoàn dựa vào vi sinh vật nên cần hạn chế hóa chất diệt khuẩn. Khi cần, các sản phẩm sau dùng đúng công dụng ghi trên nhãn:
 
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước; phân hủy chất thải hữu cơ, thức ăn dư, xác tảo và khí độc ở đáy; ổn định pH.
 - [BZT](/san-pham/bzt): phân hủy mùn bã hữu cơ, thức ăn thừa, phân tôm tích tụ; giảm khí độc NH₃, H₂S.
 - [MIRAL N8](/san-pham/miral-n8): khoáng tăng kiềm nhanh, ổn định độ kiềm trong suốt quá trình nuôi.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp nhanh oxy cho ao nuôi khi gặp sự cố.

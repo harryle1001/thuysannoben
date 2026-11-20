@@ -121,7 +121,6 @@ Khi kết quả vượt ngưỡng, dùng theo đúng nhãn:
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 2 đến 3 kg/1.000m³, rải đều mặt ao, kết hợp mở quạt.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc. Định kỳ 1 đến 2 kg/1.000m³, 7 đến 10 ngày/lần; khi tôm nổi đầu do khí độc 3 đến 4 kg/1.000m³.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ và khí độc ở đáy ao. Tạt trực tiếp 1 lít/3.000m³, định kỳ 3 đến 5 ngày.
 
 Dùng [công cụ tính liều](/tinh-lieu) để quy đổi liều theo thể tích ao. Xem thêm giải pháp [thiếu oxy, sốc stress](/giai-phap/thieu-oxy-soc-stress) và [khí độc đáy ao, nhớt bạt](/giai-phap/khi-doc-day-ao-nhot-bat).
 

@@ -86,7 +86,7 @@ Tóm lại các việc kỹ thuật chính và lý do sinh học phía sau:
 5. **Giữ kiềm, khoáng ổn định**: vì tôm cần khoáng để cứng vỏ sau mỗi lần lột.
 6. **Thu hoạch khi tôm cứng vỏ**: hướng dẫn của Khuyến nông Quốc gia khuyên thu tốt nhất sau khi tôm lột xác 5 đến 7 ngày.
 
-Khi môi trường ao thay đổi (mưa, nắng gắt, sau thay nước), bà con có thể dùng [NB C SORMIN](/san-pham/nb-c-sormin) để bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress cho tôm. [TOP WEIGH](/san-pham/top-weigh) bổ sung acid amin, vitamin và khoáng, giúp tôm lột xác đúng chu kỳ, nhanh lớn. Liều dùng theo nhãn; xem [lịch chăm sóc theo ngày tuổi](/lich-cham-soc) để chủ động từng giai đoạn.
+Khi môi trường ao thay đổi (mưa, nắng gắt, sau thay nước), bà con có thể dùng [NB C SORMIN](/san-pham/nb-c-sormin) để bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress cho tôm. Liều dùng theo nhãn; xem [lịch chăm sóc theo ngày tuổi](/lich-cham-soc) để chủ động từng giai đoạn.
 
 ## Câu hỏi thường gặp
 

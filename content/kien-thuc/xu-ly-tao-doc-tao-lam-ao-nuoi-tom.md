@@ -36,7 +36,7 @@ Vi sinh cạnh tranh dinh dưỡng với tảo, giúp giảm mật độ tảo t
 
 - Diệt tảo cục bộ bằng sản phẩm diệt tảo như [BEN COPPER 500](/san-pham/ben-copper-500), liều theo nhãn (tảo quá dày: 500 ml cho 1.000 m³, 2 liều cách nhau 2 ngày), tạt lúc trời nắng gắt, không dùng khi ít nắng hoặc mưa. Sản phẩm gốc đồng độc với tôm hơn khi độ kiềm thấp, nên kiểm tra kiềm trước; ngưng dùng trước thu hoạch 15 ngày.
 - **Tăng quạt khí tối đa** sau khi diệt tảo, vì xác tảo phân hủy tiêu tốn nhiều oxy.
-- Sau 1 đến 2 ngày, xử lý xác tảo tàn và váng bọt bằng [TOXIC ALGAE](/san-pham/toxic-algae) rồi cấy lại vi sinh và gây màu lại.
+- Sau 1 đến 2 ngày, vớt xác tảo tàn và váng bọt rồi cấy lại vi sinh và gây màu lại.
 
 ### Giảm nguồn dinh dưỡng cho tảo
 

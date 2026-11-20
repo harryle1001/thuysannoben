@@ -72,8 +72,6 @@ Cách làm đã được công bố:
 
 Xi phông lấy bùn ra khỏi ao, còn vi sinh giúp phân hủy phần chất thải mịn còn lại trên bạt và trong nước. Dùng theo hướng dẫn trên nhãn:
 
-- [AMYLAC](/san-pham/amylac): tẩy nhớt bạt, nhớt nước cho ao bạt nuôi mật độ cao; làm sạch bạt, sạch đáy, giải phóng khí độc ở đáy ao.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt; phân hủy chất thải hữu cơ, thức ăn dư, xác tảo tàn và khí độc ở đáy ao.
 - [SUPER YUCCA](/san-pham/super-yucca): hấp thu khí độc NH₃, hỗ trợ cấp cứu khi tôm nổi đầu do khí độc.
 - [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao, hỗ trợ chống sốc, giảm stress khi môi trường thay đổi hoặc khi tôm mới lột.
 

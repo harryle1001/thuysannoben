@@ -80,8 +80,6 @@ Lấy mẫu gửi phòng thử nghiệm khi: số chết tăng dần qua nhiều
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp nhanh oxy cho ao nuôi.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc, cấp cứu khi tôm nổi đầu, cải thiện ô nhiễm môi trường.
-- [NB-BIOPOND](/san-pham/nb-biopond): phân hủy chất thải, thức ăn dư, xác tảo, khí độc tích tụ ở đáy ao.
-- [ANTILIV](/san-pham/antiliv): thảo dược và acid amin hỗ trợ phòng ngừa các bệnh gan nhiễm khuẩn, chết rải rác; bổ gan, giải độc gan.
 
 Tính liều theo thể tích ao bằng [công cụ tính liều](/tinh-lieu). Nếu chưa rõ nguyên nhân, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben cùng xem số liệu ao. Xem thêm trang giải pháp [khí độc, đáy ao, nhớt bạt](/giai-phap/khi-doc-day-ao-nhot-bat).
 

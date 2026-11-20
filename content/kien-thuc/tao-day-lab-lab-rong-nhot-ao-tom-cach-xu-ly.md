@@ -104,7 +104,6 @@ Quy chuẩn QCVN 02-19:2014/BNNPTNT quy định độ trong ao nuôi tôm nướ
 Dùng đúng công dụng và liều trên nhãn:
 
 - [SUPER CUT ALGAE](/san-pham/super-cut-algae): hỗ trợ cắt tảo, giảm tảo (gốc đồng). Hỗ trợ cắt tảo: 100g/1.500m³ nước; giảm tảo: 100g/3.000m³. Tảo lam, tảo sợi, tảo xanh quá dày: 500g/2.000m³, dùng 2 liều cách nhau 2 ngày. Tạt lúc nắng gắt 9 đến 10 giờ, không dùng khi mưa hoặc ít nắng; ngưng dùng trước thu hoạch 15 ngày.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ, xác tảo tàn và khí độc ở đáy ao. Tạt trực tiếp 1 lít/3.000m³, định kỳ 3 đến 5 ngày.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc. Khi tôm nổi đầu do khí độc: 3 đến 4kg/1.000m³ nước.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy. 2 đến 3kg/1.000m³, rải đều trên mặt ao.
 

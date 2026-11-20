@@ -108,8 +108,6 @@ Products cannot replace paddlewheel aerators; use them for their intended purpos
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergencies when shrimp surface due to low oxygen; 2–3 kg/1,000 m³ of water, spread evenly over the pond surface, with aerators running.
 - [OXY 99](/san-pham/oxy-99): supplies oxygen quickly during sudden oxygen deficiency; 2–3 kg/1,000 m³ of water, spread evenly over the pond surface, with aerators running.
-- [PROTICBEST](/san-pham/proticbest): probiotic that cleans the bottom, cleans the water, removes liner slime, and breaks down organic waste and uneaten feed on the pond bottom.
-- [NB- BIOPOND](/san-pham/nb-biopond): breaks down waste, organic sludge, uneaten feed and dead algae; cleans the bottom and the water.
 
 ## Frequently asked questions
 

@@ -81,7 +81,6 @@ Tài liệu nước ngoài có nhắc đến kháng sinh trong kiểm soát NHP.
 
 ### Sản phẩm Noben hỗ trợ gan tụy và môi trường
 
-- [ANTILIV](/san-pham/antiliv): thảo dược và acid amin hỗ trợ phòng ngừa các bệnh gan nhiễm khuẩn, teo gan, sưng gan, trắng gan; bổ gan, giải độc gan.
 - [HEPALIVER FS](/san-pham/hepaliver-fs): bổ sung sorbitol, methionine, lysine vào thức ăn, hỗ trợ bồi bổ gan, phục hồi màu gan.
 - [MEGA CID](/san-pham/mega-cid): bổ sung acid hữu cơ vào thức ăn, hỗ trợ ngăn ngừa bệnh đường ruột, gan tụy.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy mùn bã hữu cơ, thức ăn thừa ở đáy ao, giảm khí độc.

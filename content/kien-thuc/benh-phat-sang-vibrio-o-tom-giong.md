@@ -75,7 +75,6 @@ Cục Thủy sản và Kiểm ngư (2026) yêu cầu **tuyệt đối không dù
 ### Sản phẩm Noben hỗ trợ phòng bệnh
 
 - [IODINE 99](/san-pham/iodine-99): sát trùng nguồn nước, giúp giảm vi khuẩn, nấm, nguyên sinh động vật gây hại.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, phân hủy chất thải hữu cơ, thức ăn dư, ổn định màu nước, pH.
 - [AQUALAC FS](/san-pham/aqualac-fs): bổ sung lợi khuẩn vào thức ăn, giúp tôm tiêu hóa tốt, cải thiện đường ruột.
 - [CMAX 25%](/san-pham/cmax-25): bổ sung vitamin C vào thức ăn.
 

@@ -49,7 +49,7 @@ Cho ăn thiếu hoặc dư, không chia đủ cữ, thức ăn kém chất lư�
 
 1. **Ổn định môi trường trước**: oxy trên 5 mg/L, kiềm 120 đến 180 mg/L, khí độc thấp.
 2. **Phục hồi gan ruột**: trộn men vi sinh như [AQUALAC FS](/san-pham/aqualac-fs) 5 g/kg thức ăn, 2 lần/ngày và bổ gan [SORBEST](/san-pham/sorbest) 5 g/kg thức ăn (10 g/kg khi gan yếu, liên tục 3 đến 5 ngày).
-3. **Bổ sung dinh dưỡng tăng trọng**: các sản phẩm bổ sung acid amin, vitamin, khoáng như [TOP WEIGH](/san-pham/top-weigh) hoặc [HI WEIGH](/san-pham/hi-weigh), dùng theo liều trên nhãn; men nong ruột [NB BIOBEST](/san-pham/nb-biobest) trộn 5 g/kg thức ăn, 2 lần/ngày hằng ngày.
+3. **Bổ sung dinh dưỡng tăng trọng**: các sản phẩm bổ sung acid amin, vitamin, khoáng như [HI WEIGH](/san-pham/hi-weigh), dùng theo liều trên nhãn; men nong ruột [NB BIOBEST](/san-pham/nb-biobest) trộn 5 g/kg thức ăn, 2 lần/ngày hằng ngày.
 4. **Bổ sung khoáng trộn và tạt**: [CAPHOTE](/san-pham/caphote) trộn 3 đến 5 ml/kg thức ăn, 3 lần/ngày, giúp chống còi, cứng vỏ nhanh, kết hợp khoáng tạt ban đêm.
 5. **San thưa hoặc thu tỉa** khi mật độ quá cao, giúp tôm còn lại lớn đều (không san tôm từ ao nghi nhiễm EHP sang ao khác).
 

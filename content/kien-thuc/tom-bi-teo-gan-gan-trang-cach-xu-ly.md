@@ -52,7 +52,7 @@ Thức ăn dư thừa vừa làm bẩn đáy vừa khiến gan quá tải. Ao ch
 
 - [SORBEST](/san-pham/sorbest): trộn **10 g/kg thức ăn**, 2 đến 3 lần/ngày, liên tục 3 đến 5 ngày; có thể tạt xuống ao 500 g cho 1.000 m³ nước, liên tục 2 đến 3 hôm (định kỳ: 500 g cho 1.600 m³, 5 đến 7 ngày/lần).
 - Thảo dược [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): định kỳ trộn 7 đến 10 ml/kg thức ăn, 3 đến 4 lần/ngày; khi gan có dấu hiệu bất thường trộn **10 ml/kg**.
-- [HEPALIVER FS](/san-pham/hepaliver-fs) hoặc [ANTILIV](/san-pham/antiliv): khi gan yếu trộn **10 ml/kg thức ăn**, 3 đến 4 lần/ngày (ANTILIV: liên tục 5 ngày).
+- [HEPALIVER FS](/san-pham/hepaliver-fs): khi gan yếu trộn **10 ml/kg thức ăn**, 3 đến 4 lần/ngày.
 - [LIVER MAX](/san-pham/liver-max): trộn 7 đến 10 ml/kg thức ăn, 3 đến 4 lần/ngày; khi gan có dấu hiệu bất thường trộn 10 ml/kg.
 
 Chỉ chọn một sản phẩm bổ gan chính cho mỗi đợt, không trộn nhiều loại cùng lúc.

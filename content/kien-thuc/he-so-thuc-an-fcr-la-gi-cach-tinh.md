@@ -86,7 +86,6 @@ Sản phẩm Noben hỗ trợ (liều theo nhãn):
 
 - [AQUALAC FS](/san-pham/aqualac-fs) và [BIOZYME](/san-pham/biozyme): bổ sung lợi khuẩn vào thức ăn, hỗ trợ tiêu hóa, hấp thụ thức ăn, giảm hệ số FCR.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): hỗ trợ hoạt hóa miễn dịch tự nhiên, hỗ trợ sức khỏe đường ruột, giảm hệ số thức ăn; nhãn hướng dẫn trộn 3 đến 5 g/kg thức ăn, 3 lần/ngày.
-- [TOP WEIGH](/san-pham/top-weigh): bổ sung acid amin, vitamin, khoáng, giúp tăng trọng nhanh, lột xác đúng chu kỳ.
 
 Tham khảo thêm bài [chi phí và lợi nhuận một vụ tôm thẻ ao bạt](/bai-viet/chi-phi-loi-nhuan-vu-tom-the-ao-bat) để thấy FCR ảnh hưởng giá thành ra sao.
 

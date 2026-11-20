@@ -41,7 +41,7 @@ FCR = tổng lượng thức ăn đã dùng / tổng trọng lượng tôm thu h
 - **Men tiêu hóa, enzyme**: [PROZYME](/san-pham/prozyme), [BIOZYME](/san-pham/biozyme) giúp ruột to, phân dài, hấp thu tốt.
 - **Bổ gan**: [HEPALIVER FS](/san-pham/hepaliver-fs) giúp gan tụy khỏe, chuyển hóa thức ăn hiệu quả.
 - **Vitamin C**: [AQUA C30%](/san-pham/aqua-c30) giúp tăng đề kháng, giảm stress.
-- **Tăng trọng**: [TOP WEIGH](/san-pham/top-weigh), [AMINOVIT](/san-pham/aminovit) bổ sung axit amin giúp tôm lớn nhanh, đều cỡ.
+- **Tăng trọng**: [AMINOVIT](/san-pham/aminovit) bổ sung axit amin giúp tôm lớn nhanh, đều cỡ.
 
 Trộn thuốc bổ sung với một ít nước, áo đều lên thức ăn, để khô 15 đến 30 phút rồi mới cho ăn. Có thể dùng chất kết dính để hạn chế thất thoát.
 

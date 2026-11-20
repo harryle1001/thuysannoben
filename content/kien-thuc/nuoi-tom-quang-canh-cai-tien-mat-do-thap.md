@@ -97,7 +97,6 @@ Chài mẫu định kỳ để ước lượng tôm và tính thức ăn; xem [q
 Khi cần, dùng theo công dụng và liều ghi trên nhãn:
 
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy mùn bã hữu cơ, thức ăn thừa, xác tảo tàn tích tụ ở đáy; giảm khí độc NH₃, H₂S.
-- [SUN BLUE](/san-pham/sun-blue): gây màu nhanh bằng màu xanh; giải pháp cho ao khó gây màu, giúp hạn chế lab lab, rong đáy phát triển.
 - [DOWN MAX](/san-pham/down-max-ha-phen): hạ phèn, giải độc phèn, kim loại nặng; hữu ích với vuông mới đào hoặc vùng đất phèn sau mưa.
 
 Quy đổi liều cho vuông lớn bằng [công cụ tính liều](/tinh-lieu). Cần tư vấn cho vuông cụ thể, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ.

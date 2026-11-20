@@ -48,7 +48,7 @@ Nước nhiều nhớt do vi khuẩn, nấm và chất hữu cơ; bạt trơn nh
 
 ### Bước 2: Xử lý váng bọt, nhớt nước
 
-Dùng [TOXIC ALGAE](/san-pham/toxic-algae), chuyên xử lý nhớt nước, xác tảo tàn, váng bọt: khi có váng bọt dùng **3 kg cho 3.000 m³ nước**; định kỳ trong quá trình nuôi 3 kg cho 5.000 m³, 5 ngày/lần. Hòa với nước ao, tạt đều và mở quạt.
+Vớt váng bọt ở cuối hướng gió nhiều lần trong ngày, mở quạt liên tục để bọt tan nhanh và nước không bị phân tầng.
 
 ### Bước 3: Hấp thụ khí độc
 
@@ -56,7 +56,6 @@ Nước nhiều hữu cơ thường kéo theo NH₃, NO₂ tăng. Dùng yucca nh
 
 ### Bước 4: Cấy vi sinh phân hủy hữu cơ, tẩy nhớt
 
-- [AMYLAC](/san-pham/amylac) (tẩy nhớt bạt, nhớt nước): ủ 1 gói với 3 kg đường cát và 50 lít nước, sục khí 12 đến 24 giờ; ao bạt dùng 15 đến 20 lít cho 1.000 m³ nước, 3 ngày/lần; ao đất 10 đến 15 lít cho 1.000 m³, 5 ngày/lần. Mở quạt liên tục khi dùng và dùng vào ngày có nắng.
 - [CLEAR 12H](/san-pham/clear-12h) (vi sinh Bacillus phân hủy mùn bã, xác tảo tàn): định kỳ 454 g cho 3.000 đến 5.000 m³ nước, 5 đến 7 ngày/lần; ao ô nhiễm nặng 1 kg cho 2.000 đến 3.000 m³, dùng liên tục 2 ngày. Có thể ủ sục khí trên 12 giờ trước khi dùng.
 
 Không tạt vi sinh cùng ngày với hóa chất diệt khuẩn. Xem [cách ủ và sử dụng vi sinh](/bai-viet/cach-u-va-su-dung-vi-sinh-cho-ao-tom).

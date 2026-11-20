@@ -15,7 +15,7 @@ Vi sinh (probiotic) là nhóm vi khuẩn có lợi giúp phân hủy chất th�
 
 ## Vi sinh tạt ao và vi sinh trộn thức ăn khác nhau thế nào?
 
-- **Vi sinh tạt ao (xử lý môi trường)**: chứa Bacillus và các chủng phân hủy hữu cơ, khí độc. Ví dụ [AQUA BAC](/san-pham/aqua-bac), [BACPOWER](/san-pham/bacpower), [PROTICBEST](/san-pham/proticbest).
+- **Vi sinh tạt ao (xử lý môi trường)**: chứa Bacillus và các chủng phân hủy hữu cơ, khí độc. Ví dụ [AQUA BAC](/san-pham/aqua-bac), [BACPOWER](/san-pham/bacpower).
 - **Vi sinh trộn thức ăn (đường ruột)**: chứa lợi khuẩn và enzyme giúp tôm tiêu hóa tốt, phòng bệnh đường ruột. Ví dụ [BIOZYME](/san-pham/biozyme), [AQUALAC FS](/san-pham/aqualac-fs).
 
 ## Cách ủ vi sinh tạt ao
@@ -23,9 +23,9 @@ Vi sinh (probiotic) là nhóm vi khuẩn có lợi giúp phân hủy chất th�
 Ủ vi sinh giúp vi khuẩn được kích hoạt và nhân sinh khối trước khi tạt, tăng hiệu quả rõ rệt.
 
 1. Chuẩn bị thùng sạch, nước sạch hoặc nước ao đã lọc.
-2. Hòa vi sinh với mật đường hoặc đường cát theo tỷ lệ ghi trên nhãn. Ví dụ với [AMYLAC](/san-pham/amylac): 1 gói vi sinh, 3 kg đường và 50 lít nước.
+2. Hòa vi sinh với mật đường hoặc đường cát theo tỷ lệ ghi trên nhãn.
 3. **Sục khí liên tục 12 đến 24 giờ**. Thùng ủ phải có sục khí mạnh, không đậy kín.
-4. Tạt đều khắp ao, mở quạt nước hoặc sục khí liên tục khi tạt; thời điểm theo nhãn từng sản phẩm (ví dụ AMYLAC dùng khi có nắng, không dùng khi trời mưa).
+4. Tạt đều khắp ao, mở quạt nước hoặc sục khí liên tục khi tạt; thời điểm theo nhãn từng sản phẩm.
 
 ## Thời điểm tạt vi sinh
 

@@ -72,11 +72,7 @@ Mayer và cộng sự (2011) cho rằng hiệu quả của vi sinh phụ thuộc
 
 Sản phẩm Noben hỗ trợ (liều theo nhãn):
 
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, phân hủy chất thải hữu cơ, thức ăn dư, xác tảo và khí độc ở đáy ao.
-- [NB-BIOPOND](/san-pham/nb-biopond): phân hủy chất thải, mùn bã, khí độc tích tụ ở đáy; tăng oxy hòa tan.
-- [BIO BOOK](/san-pham/bio-book): xử lý đáy ao, làm sạch nhớt, váng bọt, ổn định hệ vi sinh.
 - [AQUALAC FS](/san-pham/aqualac-fs): bổ sung lợi khuẩn vào thức ăn, cải thiện đường ruột, hỗ trợ tiêu hóa.
-- [US LACTO](/san-pham/us-lacto): hỗ trợ tiêu hóa, hỗ trợ ngăn ngừa bệnh đường ruột, làm to đường ruột.
 
 Cần chọn đúng sản phẩm cho tình trạng ao, bà con gọi/Zalo **0934 246 420** để kỹ thuật viên Noben tư vấn.
 

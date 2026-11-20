@@ -84,7 +84,6 @@ Giai đoạn ương và chuyển ao, tôm cần đường ruột, gan khỏe và
 - [NB C SORMIN](/san-pham/nb-c-sormin): bổ sung vitamin và khoáng, hỗ trợ chống sốc, giảm stress khi môi trường ao thay đổi, như lúc chuyển ao.
 - [AQUALAC FS](/san-pham/aqualac-fs): lợi khuẩn trộn thức ăn, giúp tôm tiêu hóa và hấp thụ tốt, cải thiện đường ruột.
 - [SORBEST](/san-pham/sorbest): bổ sung sorbitol vào thức ăn, hỗ trợ bồi bổ gan, giải độc gan.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt trong ao ương.
 
 Xem thêm [lịch chăm sóc theo ngày tuổi](/lich-cham-soc) và quy đổi liều bằng [công cụ tính liều](/tinh-lieu). Cần tư vấn thiết kế ao ương, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ.
 

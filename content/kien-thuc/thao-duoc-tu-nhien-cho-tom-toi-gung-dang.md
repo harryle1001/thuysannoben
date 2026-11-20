@@ -82,8 +82,6 @@ Xem thêm [hỗ trợ phòng bệnh gan, chết sớm bằng thảo dược](/ba
 
 Thay vì tự chế không rõ liều, bà con có thể dùng các sản phẩm phối trộn sẵn, dùng đúng công dụng và liều ghi trên nhãn:
 
-- [ANTILIV](/san-pham/antiliv): hỗn hợp thảo dược và acid amin, hỗ trợ phòng ngừa các bệnh gan như teo gan, sưng gan, trắng gan; bổ gan, giải độc gan.
-- [NB SORBITOL B12](/san-pham/nb-sorbitol-b12): hỗn hợp thảo dược và acid amin, bổ gan, giải độc gan, hỗ trợ phục hồi chức năng gan.
 - [BETA 1.3](/san-pham/beta-13-16-glucan): hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm; nhãn hướng dẫn trộn 3 đến 5 g/kg thức ăn, dùng 3 lần/ngày trong suốt vụ nuôi.
 
 Xem [lịch chăm sóc theo ngày tuổi](/lich-cham-soc) để bố trí thời điểm bổ sung. Cần tư vấn chọn sản phẩm cho từng giai đoạn, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ.

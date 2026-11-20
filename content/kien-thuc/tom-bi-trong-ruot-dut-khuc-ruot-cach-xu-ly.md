@@ -39,7 +39,7 @@ Kiểm tra oxy, pH, khí độc trước; giảm 20 đến 30% thức ăn, tăng
 
 ### Bước 2: Phục hồi đường ruột theo liều trên nhãn
 
-- Trộn men nong ruột khi có dấu hiệu phân lỏng, phân đứt khúc: [AP 79](/san-pham/ap-79) liều gấp đôi **10 g/kg thức ăn**, 2 lần/ngày, hoặc [BIO MOS](/san-pham/bio-mos) **10 đến 15 g/kg thức ăn**, 2 đến 3 lần/ngày, đến khi ruột trở lại bình thường.
+- Trộn men nong ruột khi có dấu hiệu phân lỏng, phân đứt khúc: [AP 79](/san-pham/ap-79) liều gấp đôi **10 g/kg thức ăn**, 2 lần/ngày, đến khi ruột trở lại bình thường.
 - Bổ sung acid hữu cơ hỗ trợ đường ruột như [DAVI CID LIQUID](/san-pham/davi-cid-liquid): **7 đến 10 ml/kg thức ăn**, 3 lần/ngày khi hỗ trợ xử lý. Không trộn chung acid hữu cơ với men vi sinh trong cùng một cữ; nên dùng xen kẽ các cữ ăn.
 
 ### Bước 3: Bổ gan song song

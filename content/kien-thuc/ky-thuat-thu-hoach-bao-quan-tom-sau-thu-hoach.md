@@ -83,7 +83,6 @@ Làm lạnh chậm dẫn đến **đỏ đầu**, giảm chất lượng (Lucien
 
 Tôm cứng vỏ, chắc thịt lúc thu được giá hơn. Trong những tuần cuối vụ (không phải thuốc, nhưng vẫn ghi vào nhật ký), bà con có thể bổ sung khoáng theo hướng dẫn trên nhãn:
 
-- [BIO MAX](/san-pham/bio-max): khoáng hỗ trợ cứng vỏ nhanh, tạo vỏ dày, cải thiện tình trạng lột không đều, mềm vỏ kéo dài; ổn định kiềm, độ cứng, pH.
 - [CAPHOTE](/san-pham/caphote): bổ sung khoáng chất vào thức ăn, giúp tôm hấp thụ khoáng nhanh, hỗ trợ lột xác và cứng vỏ.
 
 Xem thêm bài [khoáng giúp cứng vỏ khi thu hoạch](/bai-viet/khoang-tang-trong-luong-khi-thu-hoach). Cần tư vấn kế hoạch cuối vụ, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ.

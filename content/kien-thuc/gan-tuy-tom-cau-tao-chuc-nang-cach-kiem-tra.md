@@ -92,7 +92,6 @@ Sản phẩm Noben hỗ trợ (liều theo nhãn):
 
 - [SORBEST](/san-pham/sorbest): bổ sung sorbitol vào thức ăn hằng ngày, hỗ trợ bồi bổ gan, giải độc gan.
 - [HEPALIVER FS](/san-pham/hepaliver-fs): bổ sung sorbitol, methionine, lysine; hỗ trợ bồi bổ gan, giải độc gan, giúp phục hồi màu gan.
-- [ANTILIV](/san-pham/antiliv): thảo dược và acid amin hỗ trợ phòng ngừa các bệnh gan như teo gan, sưng gan, trắng gan.
 - [AQUALAC FS](/san-pham/aqualac-fs): bổ sung lợi khuẩn vào thức ăn, giúp tôm tiêu hóa và hấp thụ tốt.
 
 Xem thêm trang [giải pháp men tiêu hóa, tăng đề kháng](/giai-phap/men-tieu-hoa-tang-de-khang). Khi gan tôm có dấu hiệu bất thường kéo dài, bà con gọi/Zalo **0934 246 420** để kỹ thuật viên Noben tư vấn.

@@ -100,7 +100,6 @@ Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, liều dù
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy.
 - [NB ALGAE](/san-pham/nb-algae): vi sinh Bacillus phân hủy xác tảo tàn, mùn bã, hỗ trợ giảm tảo, cắt tảo; nhãn hướng dẫn khi dùng để cắt tảo, giảm tảo thì tạt lúc 22 đến 24 giờ đêm (nhớ duy trì quạt).
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, phân hủy chất thải hữu cơ, thức ăn dư, xác tảo tàn và khí độc ở đáy ao.
 - [NB C SORMIN](/san-pham/nb-c-sormin): bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress khi môi trường ao nuôi thay đổi.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc, cấp cứu khi tôm nổi đầu.
 

@@ -100,7 +100,6 @@ The following products provide support strictly within the uses stated on their 
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergency use when shrimp surface due to lack of oxygen.
 - [NB ALGAE](/san-pham/nb-algae): Bacillus probiotic that breaks down dead algae and organic debris and supports algae thinning; for thinning algae the label instructs application at 10 pm–midnight (keep aerators running).
-- [PROTICBEST](/san-pham/proticbest): probiotics that clean the bottom and water, breaking down organic waste, uneaten feed, dead algae and toxic gases on the pond bottom.
 - [NB C SORMIN](/san-pham/nb-c-sormin): supplies vitamins and minerals, helping prevent shock and reduce stress when pond conditions change.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic gases, for emergency use when shrimp surface.
 

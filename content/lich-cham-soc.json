@@ -11,11 +11,11 @@
       "name": "Ao bạt",
       "tasks": [
         { "from": 15, "text": "Từ tuần thứ 3: xi phông đáy hằng ngày hoặc cách ngày; khi tôm lớn, cho ăn nhiều có thể xi phông 2 lần mỗi ngày." },
-        { "from": 1, "text": "Làm sạch nhớt bạt bằng vi sinh như AMYLAC (ao bạt định kỳ 3 ngày/lần) hoặc CLEAR 12H (định kỳ 5 đến 7 ngày/lần) theo nhãn; không tạt vi sinh cùng ngày với thuốc diệt khuẩn." },
+        { "from": 1, "text": "Làm sạch nhớt bạt bằng vi sinh như CLEAR 12H (định kỳ 5 đến 7 ngày/lần) theo nhãn; không tạt vi sinh cùng ngày với thuốc diệt khuẩn." },
         { "from": 1, "text": "Ao bạt không có khoáng từ đất: tạt khoáng chuyên dùng cho ao bạt như RIMIX thường xuyên, tạt vào chiều tối hoặc ban đêm, nhất là khi tôm lột rộ." },
         { "from": 1, "text": "Giữ oxy hòa tan trên 5 mg/L (không để dưới 4 mg/L), có máy phát điện dự phòng và oxy viên để cấp cứu." }
       ],
-      "products": ["amylac", "clear-12h", "rimix"]
+      "products": ["clear-12h", "rimix"]
     },
     "dat": {
       "name": "Ao đất",
@@ -23,7 +23,7 @@
         { "from": 1, "text": "Duy trì vi sinh xử lý đáy định kỳ để phân hủy chất thải, giữ đáy sạch (ao đất không xi phông được như ao bạt)." },
         { "from": 1, "text": "Quạt nước gom chất thải vào giữa ao, theo dõi đáy ao sau mưa và khi tảo tàn." }
       ],
-      "products": ["aqua-bac", "nb-biopond", "bzt"]
+      "products": ["aqua-bac", "bzt"]
     }
   },
   "watch": [
@@ -45,7 +45,7 @@
         "Giải độc kim loại nặng, phèn; nâng độ kiềm lên 120 mg/L trở lên.",
         "Gây màu nước, sau 1 đến 2 ngày cấy vi sinh; kiểm tra môi trường và chỉ thả giống đã xét nghiệm PCR âm tính."
       ],
-      "products": ["edta-99", "miral-n8", "proticbest"],
+      "products": ["edta-99", "miral-n8", "aqua-bac"],
       "article": "/bai-viet/quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong",
       "articleText": "Quy trình cải tạo ao 7 bước"
     },
@@ -95,7 +95,7 @@
         "Trước thu hoạch, dùng khoáng giúp tôm cứng vỏ, sáng màu.",
         "Ngưng các thuốc có thời gian ngừng thuốc theo hướng dẫn trên nhãn trước khi thu hoạch. Tôm thẻ thường thu sau 75 đến 110 ngày tùy mật độ và cỡ mong muốn."
       ],
-      "products": ["caphote", "top-weigh", "super-yucca"],
+      "products": ["caphote", "super-yucca"],
       "article": "/bai-viet/lich-cham-soc-tom-the-theo-ngay-tuoi",
       "articleText": "Lịch chăm sóc chi tiết"
     }

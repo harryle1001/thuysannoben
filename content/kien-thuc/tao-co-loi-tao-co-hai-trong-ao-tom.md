@@ -76,10 +76,7 @@ Khi tảo đã sụp, xem bài [ao tôm bị sụp tảo](/bai-viet/ao-tom-bi-su
 
 Sản phẩm Noben hỗ trợ (liều theo nhãn):
 
-- [SUN BLUE](/san-pham/sun-blue): gây màu nhanh bằng màu xanh, khắc phục hiện tượng tảo lab lab, rong đáy, tảo độc phát triển; dùng cho ao khó gây màu.
 - [BEN COPPER 500](/san-pham/ben-copper-500): hỗ trợ cắt tảo, giảm tảo, giúp ổn định mật độ tảo và pH.
-- [TOXIC ALGAE](/san-pham/toxic-algae): xử lý xác tảo tàn, váng bọt, nhớt nước; ổn định pH.
-- [PROTICBEST](/san-pham/proticbest): vi sinh phân hủy xác tảo tàn, chất thải hữu cơ; ổn định màu nước.
 
 Xem thêm trang [giải pháp gây màu nước, xử lý tảo](/giai-phap/gay-mau-nuoc-xu-ly-tao).
 

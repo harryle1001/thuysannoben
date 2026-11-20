@@ -77,7 +77,6 @@ Bệnh do virus **không có thuốc đặc hiệu**. Khi ao có dịch, phải 
 Phơi ao là biện pháp chính; sản phẩm chỉ hỗ trợ khi đáy có vấn đề, dùng theo công dụng và liều ghi trên nhãn:
 
 - [BIO EDTA](/san-pham/bio-edta): khử kim loại nặng, thuốc trừ sâu, hóa chất, phèn đáy tồn dư ở đáy ao; giúp làm sạch nguồn nước.
-- [NB BIOPOND](/san-pham/nb-biopond): phân hủy nhanh chất thải, mùn bã hữu cơ, xác tảo, xác động thực vật và khí độc tích tụ ở đáy.
 - [DOWN MAX](/san-pham/down-max-ha-phen): hạ phèn, giải độc phèn, kim loại nặng; tẩy phèn đáy, phèn nước, hữu ích với ao đất phèn sau khi phơi.
 
 Xem [lịch chăm sóc theo ngày tuổi](/lich-cham-soc) để lên kế hoạch vụ mới. Cần tư vấn cải tạo cho ao cụ thể, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ.

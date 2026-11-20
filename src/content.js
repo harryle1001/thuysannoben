@@ -21,6 +21,10 @@ const HIDDEN = new Set([
   // Không có trong danh mục công bố/lưu hành (116 sản phẩm) nên không bán.
   'ben-bkc-80', 'super-din-600', 'vi-sinh-3-trong-1-chuyen-lam-sach-day-nuoc-cat-tao-sach-nhot-bat',
   'kalimix', 'butypho', 'd-oc', 'nb-brown-gay-mau-nuoc-mau-tra', 'xo-09',
+  // Chưa có hồ sơ TCCS (20/11/2026): tạm không đăng cho đến khi có hồ sơ.
+  'amylac', 'bio-book', 'nb-biopond', 'proticbest', 'toxic-algae', 'bio-max',
+  'nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo', 'nb-sorbitol-b12', 'prolac', 'top-weigh',
+  'us-lacto', 'antiliv', 'bio-mos', 'sun-blue',
 ]);
 
 const productData = read('products');
@@ -286,7 +290,7 @@ const articlesForProduct = (product, n = 3) =>
 const FEATURED = ['g7-phong-va-tri-benh-gan-chet-som', 'ben-iq', 'caphote', 'aqua-bac', 'oxy-99', 'sorbest', 'hepatic', 'aqualac-fs'];
 const featured = FEATURED.map((s) => productBySlug[s]).filter(Boolean);
 // Products shown in the 3D carousel on the home page: the featured ones plus one or two from every group.
-const SHOWCASE = [...FEATURED, 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30', 'top-weigh'];
+const SHOWCASE = [...FEATURED, 'super-yucca', 'bio-edta', 'hepaliver-fs', 'grand-zeolite-zeo-hat-nhap-khau', 'aqua-c30'];
 const showcase = SHOWCASE.map((s) => productBySlug[s]).filter(Boolean);
 
 // Images that show the company itself (factory, team, certificates), taken from the old site's posts.

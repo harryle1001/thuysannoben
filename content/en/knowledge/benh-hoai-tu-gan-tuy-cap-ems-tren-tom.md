@@ -54,7 +54,7 @@ There is still no specific treatment once shrimp are severely affected, so preve
 
 1. Cut feed by 50% or skip 1 feeding, and monitor closely.
 2. Increase aeration and check dissolved oxygen (≥ 4 mg/L) and pH; siphon and treat the bottom. If the water is disinfected with an approved chemical, wait 2–3 days before re-inoculating probiotics.
-3. Mix liver-support products such as [ANTILIV](/san-pham/antiliv) or [LIVER MAX](/san-pham/liver-max) into feed according to the label instructions, and send samples for PCR testing to confirm the disease.
+3. Mix liver-support products such as [LIVER MAX](/san-pham/liver-max) into feed according to the label instructions, and send samples for PCR testing to confirm the disease.
 4. If mortality is high and the shrimp have reached a saleable size, consider an early harvest to limit losses.
 
 Never use antibiotics for prevention, and never use banned antibiotics. Antibiotics may only be used following a diagnosis by a veterinary officer, must be on the list of approved products, and the withdrawal period before harvest must be respected.

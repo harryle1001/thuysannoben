@@ -35,7 +35,7 @@
     ],
     "pains_title": "Tôm của bạn đang gặp tình trạng này?",
     "bundle_title": "Phác đồ khoáng khuyên dùng cùng CAPHOTE",
-    "bundle": ["nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo", "calcipho", "premix-khoang-khoang-kich-lot", "aqua-c30"]
+    "bundle": ["calcipho", "premix-khoang-khoang-kich-lot", "aqua-c30"]
   },
   {
     "slug": "aqualac-fs",
@@ -76,25 +76,6 @@
     "bundle": ["davi-cid-liquid", "hepaliver-fs", "g7-phong-va-tri-benh-gan-chet-som", "aqualac-fs"]
   },
   {
-    "slug": "proticbest",
-    "index": true,
-    "product": "proticbest",
-    "solution": "khi-doc-day-ao-nhot-bat",
-    "seo_title": "PROTICBEST – Vi sinh gốc làm sạch đáy, bạt, nước | Noben",
-    "description": "PROTICBEST của Noben: vi sinh gốc làm sạch đáy ao, sạch nhớt bạt, sạch nước; phân hủy nhanh chất thải hữu cơ, thức ăn dư, xác tảo và khí độc đáy ao; ổn định màu nước, pH. Giá nhà máy, tư vấn miễn phí.",
-    "kicker": "Vi sinh gốc cho ao bạt, ao đất",
-    "title": "Đáy sạch, bạt sạch, nước trong với PROTICBEST",
-    "lead": "Vi sinh gốc chuyên làm sạch đáy, sạch nước, sạch nhớt bạt. Phân hủy nhanh chất thải hữu cơ, thức ăn dư thừa, xác tảo tàn và khí độc ở đáy ao. Dùng tạt trực tiếp hoặc ủ sục khí để tăng sinh khối, tiết kiệm chi phí.",
-    "points": [
-      "Làm sạch đáy ao, sạch nhớt bạt, sạch nước",
-      "Phân hủy chất thải hữu cơ, thức ăn dư, xác tảo tàn",
-      "Gia tăng oxy, ổn định màu nước và pH"
-    ],
-    "pains_title": "Ao của bạn đang gặp tình trạng này?",
-    "bundle_title": "Phác đồ xử lý đáy khuyên dùng cùng PROTICBEST",
-    "bundle": ["super-yucca", "grand-zeolite-zeo-hat-nhap-khau", "nb-biopond", "no-toxin"]
-  },
-  {
     "slug": "super-yucca",
     "index": true,
     "product": "super-yucca",
@@ -111,26 +92,7 @@
     ],
     "pains_title": "Ao của bạn đang có những dấu hiệu này?",
     "bundle_title": "Phác đồ xử lý khí độc khuyên dùng cùng SUPER YUCCA",
-    "bundle": ["oxy-99", "proticbest", "grand-zeolite-zeo-hat-nhap-khau", "no-toxin"]
-  },
-  {
-    "slug": "top-weigh",
-    "index": true,
-    "product": "top-weigh",
-    "solution": "men-tieu-hoa-tang-de-khang",
-    "seo_title": "TOP WEIGH – Tăng trọng nhanh, giảm thức ăn cho tôm | Noben",
-    "description": "TOP WEIGH của Noben: bổ sung acid amin, vitamin và khoáng chất giúp tôm tăng trọng nhanh, lột xác đúng chu kỳ, khắc phục ốp thân, mềm vỏ, vỏ xanh; giảm 10 – 15% lượng thức ăn. Giá nhà máy, tư vấn miễn phí.",
-    "kicker": "Tăng trọng cho tôm thẻ, tôm sú",
-    "title": "Tôm lớn nhanh, tiết kiệm thức ăn với TOP WEIGH",
-    "lead": "Bổ sung đầy đủ acid amin, vitamin và khoáng chất cần thiết cho sinh trưởng. Giúp tôm tăng trọng nhanh, lột xác đúng chu kỳ, khắc phục ốp thân, mềm vỏ, vỏ xanh da trời. Trộn thức ăn theo tuổi tôm.",
-    "points": [
-      "Tăng trọng nhanh, lột xác nhanh đúng chu kỳ",
-      "Khắc phục ốp thân, mềm vỏ, vỏ xanh da trời",
-      "Giảm 10 – 15% lượng thức ăn, giảm chi phí đầu tư"
-    ],
-    "pains_title": "Tôm của bạn đang gặp tình trạng này?",
-    "bundle_title": "Phác đồ tăng trọng khuyên dùng cùng TOP WEIGH",
-    "bundle": ["aqualac-fs", "prozyme", "hepaliver-fs", "aqua-c30"]
+    "bundle": ["oxy-99", "aqua-bac", "grand-zeolite-zeo-hat-nhap-khau", "no-toxin"]
   },
   {
     "slug": "ao-bat-mat-do-cao",
@@ -203,10 +165,6 @@
         "name": "Kiểm soát khí độc, giữ kiềm và khoáng",
         "goal": "Lượng thức ăn tăng mạnh: phân hủy chất thải ở đáy, hấp thụ khí độc và bù kiềm đều đặn.",
         "items": [
-          {
-            "product": "proticbest",
-            "note": "Làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải và khí độc. Tạt trực tiếp 1 lít/3.000 m³ nước, định kỳ 3 đến 5 ngày/lần."
-          },
           {
             "product": "aqua-yucca",
             "note": "Hấp thụ nhanh khí độc. Định kỳ 500 g/5.000 m³ nước, 7 ngày/lần; khi khí độc cao 500 g/3.000 m³, dùng liên tục 2 đến 3 lần."
@@ -338,14 +296,6 @@
         "name": "Xử lý tảo tàn, khí độc đáy",
         "goal": "Tảo chết sau mưa chìm xuống đáy, phân hủy sinh khí độc. Gom và phân hủy nhanh để giữ đáy sạch.",
         "items": [
-          {
-            "product": "toxic-algae",
-            "note": "Xử lý xác tảo tàn, váng bọt, nhớt nước. Khi có váng bọt, xác tảo tàn: 3 kg/3.000 m³ nước."
-          },
-          {
-            "product": "nb-biopond",
-            "note": "Phân hủy chất thải, xác tảo tàn và khí độc đáy ao. Đáy ao dơ: 227 g/2.000 m³ nước, tạt sáng sớm hoặc chiều mát."
-          },
           {
             "product": "aqua-yucca",
             "note": "Hấp thụ nhanh khí độc. Khi khí độc cao: 500 g/3.000 m³ nước, dùng liên tục 2 đến 3 lần."

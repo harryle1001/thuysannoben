@@ -87,7 +87,6 @@ Nghĩa là **ao nuôi chỉ chiếm khoảng một phần tư khu nuôi**. Thi�
 
 Thiết kế tốt giúp gom bùn, còn lớp nhớt mỏng bám trên bạt và chất thải mịn trong nước cần vi sinh xử lý. Dùng theo hướng dẫn trên nhãn:
 
-- [AMYLAC](/san-pham/amylac): tẩy nhớt bạt, nhớt nước cho ao bạt và ao nuôi mật độ cao; làm sạch bạt, sạch đáy, giải phóng khí độc ở đáy.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy mùn bã, thức ăn thừa, xác tảo, phân tôm ở đáy; giảm NH₃, H₂S; hỗ trợ làm sạch nhớt bạt, nhớt nước.
 
 Xem thêm trang giải pháp [khí độc, đáy ao, nhớt bạt](/giai-phap/khi-doc-day-ao-nhot-bat). Đang chuẩn bị xây ao bạt, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben tư vấn vận hành.

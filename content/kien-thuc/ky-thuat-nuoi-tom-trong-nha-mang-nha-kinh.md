@@ -72,7 +72,6 @@ Nhà màng giữ nhiệt tốt nhưng ao kín, mật độ cao nên đáy dễ b
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp nhanh oxy cho ao nuôi khi mất điện, quạt hỏng hoặc oxy tụt.
 - [NB ALGAE](/san-pham/nb-algae): phân hủy mùn bã hữu cơ, thức ăn thừa, xác tảo tàn; giảm NH₃, H₂S; hỗ trợ làm sạch nhớt bạt, nhớt nước.
-- [PROTICBEST](/san-pham/proticbest): làm sạch đáy, sạch nước, sạch nhớt bạt; ổn định màu nước, ổn định pH.
 
 Xem thêm trang giải pháp [thiếu oxy, sốc stress](/giai-phap/thieu-oxy-soc-stress) và quy đổi liều bằng [công cụ tính liều](/tinh-lieu). Đang tính làm nhà màng, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben tư vấn quản lý ao.
 

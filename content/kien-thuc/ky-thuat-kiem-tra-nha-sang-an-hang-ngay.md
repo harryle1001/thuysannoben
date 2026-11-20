@@ -87,7 +87,6 @@ Dấu hiệu trong nhá chỉ giúp **nghi ngờ sớm**, không thay được x
 Khi nhá cho thấy ruột lỏng, gan nhạt hoặc tôm ăn kém, ngoài việc tìm nguyên nhân, bà con có thể hỗ trợ đường ruột và gan theo hướng dẫn trên nhãn:
 
 - [AQUALAC FS](/san-pham/aqualac-fs): lợi khuẩn trộn thức ăn, hỗ trợ cải thiện đường ruột, phân lỏng, phân nát, đứt khúc; giúp tiêu hóa tốt, giảm FCR.
-- [PROLAC](/san-pham/prolac): hỗ trợ tiêu hóa, hấp thu nhanh; hỗ trợ ngăn ngừa bệnh đường ruột, phân trắng, trống đường ruột.
 - [SORBEST](/san-pham/sorbest): bổ sung sorbitol, hỗ trợ bồi bổ gan, giải độc gan.
 - [AMIN CARE](/san-pham/amin-care): bổ sung đạm cá, axit amin, mùi tanh hấp dẫn giúp tôm bắt mồi nhanh, ham ăn.
 

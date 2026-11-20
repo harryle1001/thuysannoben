@@ -113,7 +113,6 @@ Products supporting the purposes stated on the label, used at the dose on the la
 
 - [BIOZYME](/san-pham/biozyme): adds beneficial bacteria and supports digestion and rapid feed absorption; the label states it helps reduce FCR; mix 5 ml/kg of feed, 2 times/day.
 - [PROZYME](/san-pham/prozyme): supports digestion and absorption of feed; mix 5 g/kg of feed, 2 times/day.
-- [PROTICBEST](/san-pham/proticbest): probiotic that cleans the bottom, the water and liner slime, and decomposes organic waste and uneaten feed.
 - [CLEAR 12H](/san-pham/clear-12h): probiotic that breaks down organic sludge and uneaten feed on the pond bottom, reduces toxic gases and helps clean liner slime and water slime.
 
 ## Frequently asked questions

@@ -39,7 +39,7 @@ updated: 2026-11-16
 ### Bước 2: Gom và xử lý xác tảo
 
 - Vớt bớt váng xác tảo ở cuối hướng gió.
-- Tạt chất xử lý xác tảo tàn, váng bọt như [TOXIC ALGAE](/san-pham/toxic-algae): khi có váng bọt, xác tảo tàn dùng **3 kg cho 3.000 m³ nước**, mở quạt để thuốc phân tán.
+- Mở quạt liên tục để gom váng về một góc cho dễ vớt.
 - Ao bạt: xi phông đáy để lấy bớt xác tảo lắng.
 
 ### Bước 3: Hấp thụ khí độc

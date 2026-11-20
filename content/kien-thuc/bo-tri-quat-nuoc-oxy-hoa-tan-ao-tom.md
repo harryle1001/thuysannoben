@@ -108,8 +108,6 @@ Sản phẩm không thay thế được quạt nước; dùng đúng công dụn
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy; 2–3 kg/1.000 m³ nước, rải đều mặt ao, kết hợp mở quạt.
 - [OXY 99](/san-pham/oxy-99): cung cấp oxy nhanh khi thiếu oxy tức thời; 2–3 kg/1.000 m³ nước, rải đều mặt ao, kết hợp mở quạt.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải hữu cơ, thức ăn dư thừa ở đáy ao.
-- [NB- BIOPOND](/san-pham/nb-biopond): phân hủy chất thải, mùn bã hữu cơ, thức ăn dư thừa, xác tảo tàn; làm sạch đáy, sạch nước.
 
 ## Câu hỏi thường gặp
 

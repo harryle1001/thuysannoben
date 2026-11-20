@@ -83,7 +83,6 @@ Với cá nước ngọt, ion clorua cạnh tranh với nitrit ở mang, và t�
 
 Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, liều theo nhãn:
 
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải hữu cơ và khí độc ở đáy ao.
 - [CLEAR 12H](/san-pham/clear-12h): vi sinh tẩy nhớt bạt, nhớt nước cho ao bạt và ao nuôi mật độ cao.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc, cấp cứu khi tôm nổi đầu.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy.

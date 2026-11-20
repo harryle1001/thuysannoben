@@ -83,8 +83,6 @@ Kuhn và Lawrence (2012) nhấn mạnh hệ biofloc có **nhu cầu oxy rất ca
 
 Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, dùng theo liều nhãn và theo tư vấn kỹ thuật:
 
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt; phân hủy chất thải hữu cơ, thức ăn dư, xác tảo tàn và khí độc ở đáy ao.
-- [AMYLAC](/san-pham/amylac): tẩy nhớt bạt, nhớt nước cho ao bạt và ao nuôi mật độ cao; bổ sung vi sinh vật có lợi trong suốt quá trình nuôi.
 - [MIRAL N8](/san-pham/miral-n8): khoáng tăng kiềm nhanh, ổn định độ kiềm trong suốt quá trình nuôi.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp nhanh oxy cho ao nuôi khi gặp sự cố.
 

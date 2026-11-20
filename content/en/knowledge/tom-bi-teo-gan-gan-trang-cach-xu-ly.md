@@ -52,7 +52,7 @@ Excess feed both fouls the pond bottom and overloads the hepatopancreas. Ponds f
 
 - [SORBEST](/san-pham/sorbest): mix **10 g/kg feed**, 2–3 times/day for 3–5 consecutive days; it can also be applied to the pond at 500 g per 1,000 m³ of water for 2–3 consecutive days (routine use: 500 g per 1,600 m³, every 5–7 days).
 - The herbal product [G7](/san-pham/g7-phong-va-tri-benh-gan-chet-som): for routine use, mix 7–10 ml/kg feed, 3–4 times/day; when the hepatopancreas looks abnormal, mix **10 ml/kg**.
-- [HEPALIVER FS](/san-pham/hepaliver-fs) or [ANTILIV](/san-pham/antiliv): when the hepatopancreas is weak, mix **10 ml/kg feed**, 3–4 times/day (ANTILIV: for 5 consecutive days).
+- [HEPALIVER FS](/san-pham/hepaliver-fs): when the hepatopancreas is weak, mix **10 ml/kg feed**, 3–4 times/day.
 - [LIVER MAX](/san-pham/liver-max): mix 7–10 ml/kg feed, 3–4 times/day; when the hepatopancreas looks abnormal, mix 10 ml/kg.
 
 Choose only one main liver tonic per course; do not mix several products at the same time.

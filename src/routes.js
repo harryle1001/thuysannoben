@@ -377,6 +377,9 @@ router.get('/lp/:slug', (req, res, next) => {
   const lp = LANDINGS.find((x) => x.slug === req.params.slug);
   if (lp && lp.type === 'combo') return renderCombo(lp, res);
   const p = lp && c.productBySlug[lp.product];
+  // Trang quảng bá của sản phẩm đã ẩn: chuyển về nhóm sản phẩm.
+  const gone = !lp && c.hiddenProducts[req.params.slug.toLowerCase()];
+  if (gone) return res.redirect(301, `/san-pham/nhom/${gone}`);
   if (!p) return next();
   const s = c.solutionBySlug[lp.solution] || null;
   const related = c.relatedProducts(p, 6);
@@ -512,7 +515,7 @@ router.get('/ve-chung-toi', (req, res) =>
 router.get('/thuong-hieu', (req, res) =>
   res.render('pages/brand', {
     meta: { title: 'Nhận diện thương hiệu Noben – Logo và nhãn mác theo tỷ lệ vàng', description: 'Logo Noben dựng theo đường xoắn vàng và số π, cùng hệ thống nhãn mác chia theo đoạn vàng.', image: '/images/brand/golden/noben-construction.webp', noindex: true },
-    labels: ['g7-phong-va-tri-benh-gan-chet-som', 'caphote', 'aqualac-fs', 'sorbest', 'proticbest', 'super-yucca', 'top-weigh', 'amylac'].map((s) => c.productBySlug[s]).filter(Boolean),
+    labels: ['g7-phong-va-tri-benh-gan-chet-som', 'caphote', 'aqualac-fs', 'sorbest', 'super-yucca'].map((s) => c.productBySlug[s]).filter(Boolean),
     jsonld: [crumbs([['Trang chủ', '/'], ['Nhận diện thương hiệu', '/thuong-hieu']])],
   })
 );

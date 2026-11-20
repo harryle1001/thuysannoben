@@ -27,7 +27,7 @@ Mật độ phổ biến từ 100 đến 300 con/m² tùy khả năng cấp oxy,
 ## Quản lý đáy và nhớt bạt
 
 - **Xi phông đáy hằng ngày** hoặc cách ngày từ tuần thứ ba.
-- Nhớt bạt hình thành từ vi khuẩn và chất hữu cơ bám thành ao. Dùng vi sinh tẩy nhớt bạt như [AMYLAC](/san-pham/amylac) (ao bạt: định kỳ 3 ngày/lần theo nhãn) hoặc [CLEAR 12H](/san-pham/clear-12h) (hỗ trợ làm sạch nhớt bạt, định kỳ 5–7 ngày/lần theo nhãn). Không tạt vi sinh cùng ngày với thuốc diệt khuẩn; sau khi diệt khuẩn chờ 2–3 ngày mới cấy lại vi sinh.
+- Nhớt bạt hình thành từ vi khuẩn và chất hữu cơ bám thành ao. Dùng vi sinh tẩy nhớt bạt như [CLEAR 12H](/san-pham/clear-12h) (hỗ trợ làm sạch nhớt bạt, định kỳ 5–7 ngày/lần theo nhãn). Không tạt vi sinh cùng ngày với thuốc diệt khuẩn; sau khi diệt khuẩn chờ 2–3 ngày mới cấy lại vi sinh.
 - Vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) giúp phân hủy phần chất thải còn lại.
 
 ## Bổ sung khoáng

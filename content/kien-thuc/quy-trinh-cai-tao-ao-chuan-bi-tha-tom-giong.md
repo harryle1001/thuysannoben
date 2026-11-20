@@ -41,7 +41,7 @@ Nhiều vụ tôm thất bại bắt nguồn từ khâu chuẩn bị ao vội v�
 
 ## Bước 6: Gây màu và cấy vi sinh
 
-- Gây màu nước, sau 1 đến 2 ngày cấy vi sinh [PROTICBEST](/san-pham/proticbest).
+- Gây màu nước, sau 1 đến 2 ngày cấy vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac).
 - Chi tiết xem bài [cách gây màu nước ao nuôi tôm](/bai-viet/cach-gay-mau-nuoc-ao-nuoi-tom).
 
 ## Bước 7: Kiểm tra môi trường trước khi thả

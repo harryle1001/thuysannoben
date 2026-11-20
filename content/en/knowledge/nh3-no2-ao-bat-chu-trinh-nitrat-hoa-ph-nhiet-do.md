@@ -83,7 +83,6 @@ For freshwater fish, chloride ions compete with nitrite at the gills, and a chlo
 
 The following products provide support according to the uses stated on the label, at the label dose:
 
-- [PROTICBEST](/san-pham/proticbest): probiotic that cleans the pond bottom, water and liner slime, and breaks down organic waste and toxic compounds at the pond bottom.
 - [CLEAR 12H](/san-pham/clear-12h): probiotic that removes liner slime and water slime in lined ponds and high-density ponds.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic compounds; emergency use when shrimp surface at the pond edge.
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly; emergency use when shrimp surface due to oxygen shortage.

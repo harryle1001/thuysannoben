@@ -35,7 +35,6 @@ Bài này tập trung vào **men vi sinh đường ruột**.
 | [AQUALAC FS](/san-pham/aqualac-fs) | 5 g/kg thức ăn, 2 lần/ngày | 10 g/kg thức ăn (gấp đôi) |
 | [PROZYME](/san-pham/prozyme) (enzyme tiêu hóa amylase, protease) | 5 g/kg thức ăn, 2 lần/ngày | 10 g/kg thức ăn (gấp đôi) |
 | [AP 79](/san-pham/ap-79) | 5 g/kg thức ăn, 2 lần/ngày | 10 g/kg thức ăn (gấp đôi) |
-| [US LACTO](/san-pham/us-lacto) | 5 g/kg thức ăn, 2 đến 3 lần/ngày | 10 đến 15 g/kg thức ăn |
 | [BIOZYME](/san-pham/biozyme) (men sống dạng nước) | 5 ml/kg thức ăn, 2 lần/ngày | 10 ml/kg (gấp đôi) đến khi ruột tôm bình thường |
 
 Hòa men với một ít nước sạch, trộn đều lên thức ăn, để yên khoảng 15 phút cho thấm rồi mới cho tôm ăn.

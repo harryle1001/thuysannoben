@@ -75,7 +75,6 @@ Mô hình ở Bình Sơn (Quảng Ngãi, 2018) trên ao đất 5.000 m², hình 
 
 Đáy ao tôm vẫn tích tụ chất thải theo thời gian. Khi cần, các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn:
 
-- [NB BIOPOND](/san-pham/nb-biopond): phân hủy nhanh chất thải, mùn bã hữu cơ, thức ăn dư, xác tảo tàn; phân hủy khí độc tích tụ ở đáy ao.
 - [AQUA BAC](/san-pham/aqua-bac): phân hủy mùn bã hữu cơ, phân tôm ở đáy ao; giảm khí độc NH₃, H₂S, giảm mùi hôi.
 - [SUPER YUCCA](/san-pham/super-yucca): hấp thu khí độc NH₃, cấp cứu khi tôm nổi đầu do khí độc.
 

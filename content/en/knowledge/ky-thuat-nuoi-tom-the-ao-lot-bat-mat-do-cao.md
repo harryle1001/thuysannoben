@@ -27,7 +27,7 @@ Common densities range from 100–300 shrimp/m², depending on oxygen supply cap
 ## Bottom and liner slime management
 
 - **Siphon the bottom daily** or every other day from the third week.
-- Liner slime forms from bacteria and organic matter adhering to the pond walls. Use liner-slime probiotics such as [AMYLAC](/san-pham/amylac) (lined ponds: every 3 days per the label) or [CLEAR 12H](/san-pham/clear-12h) (helps clean liner slime; every 5–7 days per the label). Never apply probiotics on the same day as a disinfectant; wait 2–3 days after disinfection before reseeding probiotics.
+- Liner slime forms from bacteria and organic matter adhering to the pond walls. Use liner-slime probiotics such as [CLEAR 12H](/san-pham/clear-12h) (helps clean liner slime; every 5–7 days per the label). Never apply probiotics on the same day as a disinfectant; wait 2–3 days after disinfection before reseeding probiotics.
 - Bottom-treatment probiotics such as [AQUA BAC](/san-pham/aqua-bac) help break down the remaining waste.
 
 ## Mineral supplementation

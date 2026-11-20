@@ -39,7 +39,7 @@ Một số virus như IMNV cũng gây hoại tử cơ. Nếu tôm đục cơ hà
 ## Cách xử lý
 
 1. **Ổn định nhiệt độ và oxy**: tăng mực nước, chạy quạt nhiều hơn vào buổi trưa và ban đêm, hạn chế thay nước lớn.
-2. **Bổ sung khoáng trộn và khoáng tạt**: dùng [NB MIX 5000](/san-pham/nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo) hoặc [MIX 79](/san-pham/mix-79) tạt ao, kết hợp trộn [CAPHOTE](/san-pham/caphote) vào thức ăn.
+2. **Bổ sung khoáng trộn và khoáng tạt**: dùng [MIX 79](/san-pham/mix-79) tạt ao, kết hợp trộn [CAPHOTE](/san-pham/caphote) vào thức ăn.
 3. **Bổ sung vitamin C** để giảm stress: trộn [AQUA C30%](/san-pham/aqua-c30) hoặc [CMAX 25%](/san-pham/cmax-25), khi trời nắng nóng có thể tạt [KIA C TAT](/san-pham/kia-c-tat).
 4. **Hạn chế tác động**: không chài tôm, không kéo lưới trong thời gian tôm yếu.
 

@@ -37,7 +37,7 @@ Bà con nên dùng bộ test nhanh để kiểm tra 2 đến 3 lần mỗi tuầ
 - Hạ pH về mức 7,5 đến 8,0 nếu pH buổi chiều quá cao, vì pH cao làm NH₃ độc hơn.
 - Tăng quạt khí; nếu có nguồn nước sạch đã xử lý thì thay một phần nước.
 - Dùng yucca như [SUPER YUCCA](/san-pham/super-yucca) để hỗ trợ giảm NH₃, liều theo nhãn.
-- Cấy vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) hoặc [NB-BIOPOND](/san-pham/nb-biopond) để phân hủy chất thải từ gốc.
+- Cấy vi sinh xử lý đáy như [AQUA BAC](/san-pham/aqua-bac) để phân hủy chất thải từ gốc.
 
 ### Giảm NO₂
 

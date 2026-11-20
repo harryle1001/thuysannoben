@@ -54,7 +54,7 @@ Bà con có thể gửi mẫu tôm đến phòng xét nghiệm để làm PCR x�
 
 1. Giảm 50% thức ăn hoặc ngưng cho ăn 1 cữ, theo dõi sát.
 2. Tăng cường quạt khí, kiểm tra oxy hòa tan (≥ 4 mg/L) và pH; xi phông, xử lý đáy. Nếu diệt khuẩn nước bằng hóa chất được phép, chờ 2 đến 3 ngày mới cấy lại vi sinh.
-3. Trộn sản phẩm hỗ trợ gan như [ANTILIV](/san-pham/antiliv) hoặc [LIVER MAX](/san-pham/liver-max) theo hướng dẫn trên nhãn; đồng thời gửi mẫu xét nghiệm PCR để xác định bệnh.
+3. Trộn sản phẩm hỗ trợ gan như [LIVER MAX](/san-pham/liver-max) theo hướng dẫn trên nhãn; đồng thời gửi mẫu xét nghiệm PCR để xác định bệnh.
 4. Nếu tôm chết nhiều và đã đạt cỡ có thể bán, cân nhắc thu hoạch sớm để hạn chế thiệt hại.
 
 Không dùng kháng sinh để phòng bệnh và tuyệt đối không dùng kháng sinh cấm. Việc dùng kháng sinh phải có chẩn đoán của cán bộ thú y, dùng đúng danh mục được phép và đảm bảo thời gian ngừng thuốc trước thu hoạch.

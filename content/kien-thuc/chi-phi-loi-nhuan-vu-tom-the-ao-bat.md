@@ -113,7 +113,6 @@ Sản phẩm hỗ trợ đúng công dụng ghi trên nhãn, dùng theo liều t
 
 - [BIOZYME](/san-pham/biozyme): bổ sung lợi khuẩn, hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, nhãn ghi giảm hệ số FCR; trộn 5 ml/kg thức ăn, 2 lần/ngày.
 - [PROZYME](/san-pham/prozyme): hỗ trợ tiêu hóa và hấp thu thức ăn; trộn 5 g/kg thức ăn, 2 lần/ngày.
-- [PROTICBEST](/san-pham/proticbest): vi sinh làm sạch đáy, sạch nước, sạch nhớt bạt, phân hủy chất thải hữu cơ và thức ăn dư thừa.
 - [CLEAR 12H](/san-pham/clear-12h): vi sinh phân hủy mùn bã hữu cơ, thức ăn thừa ở đáy ao, giảm khí độc và hỗ trợ làm sạch nhớt bạt, nhớt nước.
 
 ## Câu hỏi thường gặp

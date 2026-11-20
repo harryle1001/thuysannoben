@@ -82,7 +82,6 @@ Quy trình lắng lọc thông thường xem bài [cải tạo ao và chuẩn b�
 Tùy tình huống, các sản phẩm sau dùng đúng công dụng ghi trên nhãn:
 
 - [BIO EDTA](/san-pham/bio-edta): khử kim loại nặng, thuốc trừ sâu, hóa chất, phèn đáy tồn dư; giúp làm sạch nguồn nước ao nuôi. Hữu ích khi nguồn nước chảy qua vùng trồng trọt.
-- [NB BIOPOND](/san-pham/nb-biopond): phân hủy nhanh chất thải, mùn bã hữu cơ, xác tảo tàn và khí độc tích tụ ở đáy.
 - [IODINE 99](/san-pham/iodine-99): sát trùng nguồn nước, giảm vi khuẩn, nấm, nguyên sinh động vật gây hại; chỉ dùng ở ngăn xử lý riêng khi thật cần, không đánh vào ngăn đang nuôi cá, rong, sò.
 
 Liều theo nhãn, quy đổi bằng [công cụ tính liều](/tinh-lieu). Cần tư vấn thiết kế ao lắng cho diện tích cụ thể, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ.

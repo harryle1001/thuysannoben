@@ -37,7 +37,7 @@ Farmers should use rapid test kits to check 2–3 times a week, and more often o
 - Bring pH down to 7.5–8.0 if the afternoon pH is too high, because high pH makes NH₃ more toxic.
 - Increase aeration; if treated clean water is available, exchange part of the water.
 - Use yucca such as [SUPER YUCCA](/san-pham/super-yucca) to help reduce NH₃, at the label dose.
-- Apply bottom-treatment probiotics such as [AQUA BAC](/san-pham/aqua-bac) or [NB-BIOPOND](/san-pham/nb-biopond) to break down waste at the source.
+- Apply bottom-treatment probiotics such as [AQUA BAC](/san-pham/aqua-bac) to break down waste at the source.
 
 ### Reducing NO₂
 

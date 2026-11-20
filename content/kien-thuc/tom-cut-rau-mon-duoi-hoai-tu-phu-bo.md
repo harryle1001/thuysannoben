@@ -76,7 +76,6 @@ DFO cho biết bệnh vỏ do vi khuẩn phân hủy kitin **không có cách x�
 
 - [BEN IQ](/san-pham/ben-iq): sát trùng nguồn nước, xử lý môi trường ao nuôi, góp phần hạn chế các tác nhân gây hiện tượng cụt râu, sâu đuôi, hoại tử phụ bộ, đốm đen, đen mang.
 - [SUPER AQUA 80](/san-pham/super-aqua-80): sát trùng nguồn nước, hỗ trợ xử lý hiện tượng đen mang, đốm đen, sâu đuôi, hoại tử phụ bộ.
-- [BIO BOOK](/san-pham/bio-book): xử lý đáy ao, phân hủy chất thải hữu cơ, thức ăn tồn dư, xác tảo tàn, làm sạch nước.
 - [CMAX 25%](/san-pham/cmax-25): bổ sung vitamin C vào thức ăn.
 
 Dùng liều theo nhãn hoặc tính bằng [công cụ tính liều](/tinh-lieu). Bà con cần hướng dẫn xen kẽ sát trùng và vi sinh có thể gọi/Zalo 0934 246 420 để kỹ thuật viên Noben tư vấn. Xem thêm trang giải pháp [đen mang, đốm đen, đóng rong](/giai-phap/den-mang-dom-den-dong-rong).

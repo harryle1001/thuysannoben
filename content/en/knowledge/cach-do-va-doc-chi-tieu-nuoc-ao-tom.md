@@ -121,7 +121,6 @@ When results exceed the thresholds, use according to the label:
 
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly; emergency use when shrimp surface due to oxygen shortage. 2–3 kg/1,000m³, spread evenly over the pond surface, together with running the aerators.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic compounds. Routine 1–2 kg/1,000m³ every 7–10 days; when shrimp surface because of toxic gas 3–4 kg/1,000m³.
-- [PROTICBEST](/san-pham/proticbest): probiotic that cleans the pond bottom and breaks down organic waste and toxic compounds at the pond bottom. Apply directly 1 litre/3,000m³, routinely every 3–5 days.
 
 Use the [dose calculator](/tinh-lieu) to convert doses to the pond volume. See also the solutions for [oxygen shortage and stress shock](/giai-phap/thieu-oxy-soc-stress) and [toxic gases at the pond bottom and liner slime](/giai-phap/khi-doc-day-ao-nhot-bat).
 
