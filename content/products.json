@@ -2493,11 +2493,11 @@
     "uses": [
       "Bổ sung khoáng chất vào thức ăn tôm, cá.",
       "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng",
-      "Hỗ trợ tôm lột xác và cứng vỏ nhanh, giúp tôm chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
+      "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh, giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
+      "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.",
@@ -2585,7 +2585,7 @@
     "uses": [
       "Bổ sung vitamin tổng hợp cho tôm, cá",
       "Hỗ trợ giảm stress, giảm sốc, khi môi trường thay đổi",
-      "Hỗ trợ tăng cường sức đề kháng giúp tôm cá khỏe mạnh, phát triển tốt"
+      "Hỗ trợ tăng cường sức đề kháng giúp tôm, cá khỏe mạnh, phát triển tốt"
     ],
     "dose": [
       "Sử dụng khi thời tiết thay đổi: Dùng 5kg/3.000m<sup>3</sup> nước, tạt vào lúc sáng sớm hoặc chiều mát.",
@@ -2634,7 +2634,7 @@
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
+      "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -2679,7 +2679,7 @@
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
+      "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -2706,7 +2706,7 @@
   {
     "slug": "ap-79",
     "name": "AP 79",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -2719,14 +2719,14 @@
       "tieu-hoa": 2
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -2756,7 +2756,7 @@
   {
     "slug": "aqua-biotic",
     "name": "AQUA BIOTIC",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -2769,14 +2769,14 @@
       "mem-vo": 1
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -2820,7 +2820,7 @@
     "dose": [
       "Trộn 3-5 g/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
       "Khi môi trường thay đổi, thời tiết giao mùa: Trộn 10g/kg thức ăn, cho ăn 2-3 lần/ngày và liên tục 2-3 hôm.",
-      "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, khi sang tôm: Dùng 1kg/1.000m<sup>3</sup>",
+      "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, cá, khi sang tôm, cá: Dùng 1kg/1.000m<sup>3</sup>",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -2848,7 +2848,7 @@
   {
     "slug": "aqualac-fs",
     "name": "AQUALAC FS",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -2861,14 +2861,14 @@
       "tieu-hoa": 2
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -2898,7 +2898,7 @@
   {
     "slug": "aqualacto-q",
     "name": "AQUALACTO Q",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -2911,14 +2911,14 @@
       "tieu-hoa": 2
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -2966,7 +2966,7 @@
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
+      "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -2993,7 +2993,7 @@
   {
     "slug": "beta-13-16-glucan",
     "name": "BETA 1.3",
-    "tagline": "Hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm, cá , giúp tôm cá khỏe mạnh , nhanh lớn",
+    "tagline": "Hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm, cá , giúp tôm, cá khỏe mạnh , nhanh lớn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "tieu-hoa"
@@ -3002,12 +3002,12 @@
       "tieu-hoa": 8
     },
     "uses": [
-      "Hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm, cá, giúp tôm cá khỏe mạnh, nhanh lớn",
+      "Hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm, cá, giúp tôm, cá khỏe mạnh, nhanh lớn",
       "Hỗ trợ sức khỏe đường ruột và khả năng liên kết một số vi khuẩn bất lợi, giúp tôm, cá hấp thu thức ăn tốt, giảm hệ số thức ăn"
     ],
     "dose": [
       "Trộn 3-5 g/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm ăn yếu, thời tiết giao mùa thay đổi đột ngột, hoạt động kém: Tăng liều gấp đôi",
+      "Trường hợp tôm, cá ăn yếu, thời tiết giao mùa thay đổi đột ngột, hoạt động kém: Tăng liều gấp đôi",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3037,7 +3037,7 @@
   {
     "slug": "bio-aq",
     "name": "BIO AQ",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -3050,14 +3050,14 @@
       "tieu-hoa": 2
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -3087,7 +3087,7 @@
   {
     "slug": "biotic-99",
     "name": "BIOTIC 99",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -3100,14 +3100,14 @@
       "mem-vo": 1
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -3133,7 +3133,7 @@
   {
     "slug": "biozyme",
     "name": "BIOZYME",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -3146,14 +3146,14 @@
       "mem-vo": 1
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -3217,7 +3217,7 @@
   {
     "slug": "bz-99",
     "name": "BZ 99",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -3230,14 +3230,14 @@
       "mem-vo": 1
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5ml/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -3274,11 +3274,11 @@
     "uses": [
       "Bổ sung khoáng chất vào thức ăn tôm, cá.",
       "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng",
-      "Hỗ trợ tôm lột xác và cứng vỏ nhanh, giúp tôm chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
+      "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh, giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
+      "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.",
@@ -3318,11 +3318,11 @@
     "uses": [
       "Bổ sung khoáng chất vào thức ăn tôm, cá.",
       "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng",
-      "Hỗ trợ tôm lột xác và cứng vỏ nhanh, giúp tôm chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
+      "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh, giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
+      "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.",
@@ -3369,7 +3369,7 @@
     "dose": [
       "Trộn 3-5 g/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
       "Khi môi trường thay đổi, thời tiết giao mùa: Trộn 10g/kg thức ăn, cho ăn 2-3 lần/ngày và liên tục 2-3 hôm.",
-      "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, khi sang tôm: Dùng 1kg/1.000m<sup>3</sup>",
+      "Có thể tạt xuống ao để hỗ trợ giảm stress cho tôm, cá, khi sang tôm, cá: Dùng 1kg/1.000m<sup>3</sup>",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3454,13 +3454,13 @@
       "tieu-hoa": 1
     },
     "uses": [
-      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
-      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm",
+      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm, cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá",
       "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan."
     ],
     "dose": [
       "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
+      "Trường hợp tôm, cá bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3502,13 +3502,13 @@
       "tieu-hoa": 1
     },
     "uses": [
-      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
-      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm",
+      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm, cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá",
       "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan."
     ],
     "dose": [
       "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
+      "Trường hợp tôm, cá bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3555,7 +3555,7 @@
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
+      "Trường hợp tôm, cá bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3599,7 +3599,7 @@
     ],
     "dose": [
       "Trộn 5 ml/kg thức ăn, sử dụng 2 lần/ngày và liên tục 7 ngày, ngưng 3 ngày rồi sau đó lặp lại.",
-      "Trường hợp tôm biếng ăn, chậm lớn, còi cọc: Trộn 10-15ml/kg thức ăn, cho ăn 2-3/ ngày và liên tục 5 ngày, sau đó cho ăn với liều lượng bình thường.",
+      "Trường hợp tôm, cá biếng ăn, chậm lớn, còi cọc: Trộn 10-15ml/kg thức ăn, cho ăn 2-3/ ngày và liên tục 5 ngày, sau đó cho ăn với liều lượng bình thường.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3638,13 +3638,13 @@
       "mem-vo": 1
     },
     "uses": [
-      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
-      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm",
+      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm, cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá",
       "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan."
     ],
     "dose": [
       "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
+      "Trường hợp tôm, cá bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3717,7 +3717,7 @@
   {
     "slug": "nb-biobest",
     "name": "NB BIOBEST",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -3730,14 +3730,14 @@
       "tieu-hoa": 2
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -3781,7 +3781,7 @@
       "Bổ sung khoáng và vitamin tổng hợp cho tôm, cá",
       "Hỗ trợ lột xác, hình thành và nhanh cứng vỏ",
       "Hỗ trợ giảm stress, giảm sốc, khi môi trường thay đổi",
-      "Hỗ trợ tăng cường sức đề kháng giúp tôm cá khỏe mạnh, phát triển tốt"
+      "Hỗ trợ tăng cường sức đề kháng giúp tôm, cá khỏe mạnh, phát triển tốt"
     ],
     "dose": [
       "Sử dụng khi thời tiết thay đổi: Dùng 5kg/3.000m<sup>3</sup> nước, tạt vào lúc sáng sớm hoặc chiều mát.",
@@ -3826,13 +3826,13 @@
       "tieu-hoa": 1
     },
     "uses": [
-      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
-      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm",
+      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm, cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá",
       "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan."
     ],
     "dose": [
       "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
+      "Trường hợp tôm, cá bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -3904,7 +3904,7 @@
   {
     "slug": "pro-aq",
     "name": "PRO AQ",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -3917,14 +3917,14 @@
       "tieu-hoa": 2
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -3995,7 +3995,7 @@
   {
     "slug": "prozyme",
     "name": "PROZYME",
-    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+    "tagline": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
     "category": "thuc-an-bo-sung",
     "symptoms": [
       "gan-ruot",
@@ -4008,14 +4008,14 @@
       "mem-vo": 1
     },
     "uses": [
-      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
+      "Bổ sung lợi khuẩn vào thức ăn, giúp tôm, cá tiêu hóa và hấp thụ tốt thức ăn",
       "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, hiện tượng phân trắng, hiện tượng tắc ruột, phân nát, đứt khúc.",
       "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
     ],
     "dose": [
       "Hòa với nước sạch một lượng vừa đủ rồi trộn đều lên thức ăn với liều như sau",
       "Trộn vào thức ăn hằng ngày: 5g/kg thức ăn, 2 lần/ngày và cho ăn liên tục suốt vụ nuôi.",
-      "Liều dùng gấp đôi đối với tôm cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm đứt khúc. Trộn cho ăn đến khi đường ruột tôm trở lại bình thường.",
+      "Liều dùng gấp đôi đối với tôm, cá bị hiện tượng tiêu chảy, phân trắng, đường ruột đứt khúc, phân tôm, cá đứt khúc. Trộn cho ăn đến khi đường ruột tôm, cá trở lại bình thường.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
@@ -4053,11 +4053,11 @@
     "uses": [
       "Bổ sung khoáng chất vào thức ăn tôm, cá.",
       "Giúp tôm, cá hấp thụ khoáng chất nhanh chóng",
-      "Hỗ trợ tôm lột xác và cứng vỏ nhanh, giúp tôm chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
+      "Hỗ trợ tôm, cá lột xác và cứng vỏ nhanh, giúp tôm, cá chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên"
     ],
     "dose": [
       "Trộn 3-5 ml/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi.",
-      "Trường hợp tôm mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
+      "Trường hợp tôm, cá mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn",
       "Thời hạn sử dụng: sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.",
@@ -4360,13 +4360,13 @@
       "tieu-hoa": 1
     },
     "uses": [
-      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
-      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm",
+      "Bổ sung sorbitol, methionine, Lysine… vào thức ăn hằng ngày cho tôm, cá. Giúp tôm, cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá",
       "Giúp phục hồi và chuyển màu gan nhanh chóng, giúp hỗ trợ cải thiện các hiện tượng về gan."
     ],
     "dose": [
       "Trộn 7-10 ml/kg thức ăn, sử dụng 3 - 4 lần/ngày và trộn cho ăn trong suốt vụ nuôi.",
-      "Trường hợp tôm bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
+      "Trường hợp tôm, cá bị bệnh gan, gan có dấu hiệu bất thường: Trộn 10ml/kg thức ăn.",
       "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
@@ -4478,21 +4478,21 @@
       "tieu-hoa": 1
     },
     "uses": [
-      "Bổ sung sorbitol vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
-      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm"
+      "Bổ sung sorbitol vào thức ăn hằng ngày cho tôm, cá. Giúp tôm, cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+      "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm, cá"
     ],
     "dose": [
       "Lấy 1 gói Sorbest ngâm với nước ấm 40-50°C (Nước pha trà) trong 15 phút rồi đem trộn vào thức ăn (có thể tạt xuống ao) với liều lượng như sau:",
       "Sử dụng cho định kỳ",
       "Tạt xuống ao với liều 500g/1.600m<sup>3</sup> nước, 5-7 ngày tạt 1 lần.",
       "Trộn vào thức ăn: Trộn 5g/1 kg thức ăn, cho ăn ngày 3 - lần và suốt vụ nuôi",
-      "Sử dụng khi gan tôm yếu, ăn kém, gan mờ, đỏ gan...",
+      "Sử dụng khi gan tôm, cá yếu, ăn kém, gan mờ, đỏ gan...",
       "Trộn 10g/1kg thức ăn, cho ăn 2-3 lần/ ngày và cho ăn liên tục 3- 5 ngày.",
       "Tạt xuống ao: Dùng 500g/1.000m<sup>3</sup> nước, Tạt liên tục 2-3 hôm.",
       "Lưu ý:",
       "Khi tạt xuống ao nên tạt cách xa bờ 1,5 -20m, để yên 45-60 phút rồi chạy quạt.",
-      "Nên trộn cho tôm ăn liên tục từ khi thả nuôi đến thu hoạch để hỗ trợ tôm sinh trưởng và phát triển tốt, lớn nhanh",
-      "Định kỳ 5-7 ngày tạt xuống ao 1 lần để hỗ trợ tăng miễn dịch cho tôm.",
+      "Nên trộn cho tôm, cá ăn liên tục từ khi thả nuôi đến thu hoạch để hỗ trợ tôm, cá sinh trưởng và phát triển tốt, lớn nhanh",
+      "Định kỳ 5-7 ngày tạt xuống ao 1 lần để hỗ trợ tăng miễn dịch cho tôm, cá.",
       "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.",
       "Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
     ],
