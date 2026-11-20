@@ -8,3 +8,6 @@
 - Game: kích thước UI, tỉ lệ màn chơi, đường cong độ khó/XP nhân φ mỗi cấp.
 - Nội dung: cấu trúc ý chính ~61.8%, phần phụ ~38.2%.
 Khai báo biến --phi: 1.61803 trong CSS/code để dùng thống nhất.
+
+# Quy tắc nội dung sản phẩm: theo hồ sơ TCCS
+Từ 20/11/2026, mọi nội dung về sản phẩm (thành phần, công dụng, liều dùng, hạn dùng, quy cách, mã số tiếp nhận) trên nhãn, web và tài liệu phải lấy đúng theo hồ sơ TCCS của công ty (kho `harryle1001/CONG-TY-NOBEN`, thư mục `TCCS- XỬ LÝ MÔI TRƯỜNG (62SP)`, `38 TCCS-TA tccs`, `TCCS-7-SAN-PHAM-MOI`). Khi hồ sơ TCCS khác với danh mục, web hay nhãn cũ thì theo TCCS và báo lại chỗ lệch. Sản phẩm chưa có hồ sơ TCCS thì không tự điền, hỏi lại.
