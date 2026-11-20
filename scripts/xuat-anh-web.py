@@ -25,10 +25,13 @@ SRC = os.path.join(ROOT, 'brand', 'nhan-cu')
 IMG = os.path.join(ROOT, 'public', 'images')
 
 
-def front(spec, im):
-    """Ảnh và khổ (mm) dán lên bao bì: chai/xô quấn cả nhãn; túi chỉ mặt trước."""
+BAO_BI = json.load(open(os.path.join(SRC, 'bao-bi-3d.json'), encoding='utf8'))
+
+
+def front(spec, im, kieu):
+    """Ảnh và khổ (mm) dán lên bao bì: chai/hũ/xô quấn cả nhãn; túi/bao chỉ mặt trước."""
     mw, mh = spec.get('kich_thuoc_mm') or [240, 135]
-    if spec.get('bao_bi') != 'tui' or not spec.get('mat_truoc'):
+    if not kieu.startswith(('tui', 'bao')) or not spec.get('mat_truoc'):
         return im, mw, mh
     W0, H0 = spec['kich_thuoc_goc']
     k = im.width / W0
@@ -53,17 +56,19 @@ def main():
             print(f'{slug}: chưa có nhãn vẽ lại, bỏ qua')
             continue
         spec = json.load(open(jf))
-        kind = spec.get('bao_bi', 'chai')
+        bb3 = BAO_BI.get(slug, {})
+        kind = bb3.get('kieu') or {'chai': 'chai1l', 'xo': 'xo'}.get(spec.get('bao_bi'), 'tuibac')
+        extra_mau = ['--mau', bb3['mau']] if bb3.get('mau') else []
         im = Image.open(pf).convert('RGB')
-        tex, mw, mh = front(spec, im)
+        tex, mw, mh = front(spec, im, kind)
         with tempfile.TemporaryDirectory() as tmp:
             tp = os.path.join(tmp, 'tex.png')
             tex.save(tp)
             # 1) ảnh 4K nền studio
-            a = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'a'), ['--w', '2160', '--h', '3840'])).convert('RGB')
+            a = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'a'), ['--w', '2160', '--h', '3840'] + extra_mau)).convert('RGB')
             a.save(os.path.join(IMG, 'products', f'{slug}.webp'), 'WEBP', quality=84, method=6)
             # 2) nền trong, cắt sát
-            b = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'b'), ['--w', '1080', '--h', '1920', '--trong'])).convert('RGBA')
+            b = Image.open(render(tp, kind, mw, mh, slug, os.path.join(tmp, 'b'), ['--w', '1080', '--h', '1920', '--trong'] + extra_mau)).convert('RGBA')
             bb = b.getchannel('A').point(lambda v: 255 if v > 8 else 0).getbbox()
             if bb:
                 pad = 24
@@ -72,7 +77,7 @@ def main():
         lab = im.copy()
         lab.thumbnail((3200, 3200), Image.LANCZOS)
         lab.save(os.path.join(IMG, 'products-label', f'{slug}.webp'), 'WEBP', quality=86, method=6)
-        t3 = (im if kind != 'tui' else tex).copy()
+        t3 = tex.copy()
         t3.thumbnail((2048, 2048), Image.LANCZOS)
         t3.save(os.path.join(IMG, 'products-3d', f'{slug}.jpg'), 'JPEG', quality=86, optimize=True, progressive=True)
         for d in ('products', 'products-cutout'):

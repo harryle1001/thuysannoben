@@ -1,42 +1,42 @@
 {
   "g7-phong-va-tri-benh-gan-chet-som": {
-    "kind": "chai",
+    "kind": "chai1l",
     "mm": "240x135",
     "tex": "/images/products-3d/g7-phong-va-tri-benh-gan-chet-som.jpg"
   },
   "iodine-99": {
-    "kind": "chai",
+    "kind": "chainau",
     "mm": "240x135",
     "tex": "/images/products-3d/iodine-99.jpg"
   },
   "ben-copper-500": {
-    "kind": "chai",
+    "kind": "chai500",
     "mm": "240x64",
     "tex": "/images/products-3d/ben-copper-500.jpg"
   },
   "hepatic": {
-    "kind": "chai",
+    "kind": "chai1l",
     "mm": "240x161",
     "tex": "/images/products-3d/hepatic.jpg"
   },
   "aqua-yucca": {
-    "kind": "tui",
+    "kind": "baodet",
     "mm": "100x242",
     "tex": "/images/products-3d/aqua-yucca.jpg"
   },
   "bzt": {
-    "kind": "tui",
+    "kind": "tuibac",
     "mm": "131x142",
     "tex": "/images/products-3d/bzt.jpg"
   },
   "edta-99": {
-    "kind": "tui",
+    "kind": "tuivang",
     "mm": "129x185",
     "tex": "/images/products-3d/edta-99.jpg"
   },
   "cmax-25": {
-    "kind": "tui",
-    "mm": "163x190",
+    "kind": "hu",
+    "mm": "340x190",
     "tex": "/images/products-3d/cmax-25.jpg"
   },
   "oxy-99": {

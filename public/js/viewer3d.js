@@ -12,11 +12,12 @@
 
   var threeReady = null;
   function loadThree() {
-    if (window.THREE) return Promise.resolve();
+    if (window.THREE && window.Pack3D) return Promise.resolve();
     if (threeReady) return threeReady;
     threeReady = new Promise(function (ok, no) {
       var s = document.createElement('script');
-      s.src = '/js/vendor/three-0.149.0.min.js'; s.async = true; s.onload = ok; s.onerror = no;
+      s.src = '/js/vendor/three-0.149.0.min.js'; s.async = true; s.onerror = no;
+      s.onload = function () { var p = document.createElement('script'); p.src = '/js/pack3d.js?v=1'; p.onload = ok; p.onerror = no; document.head.appendChild(p); };
       document.head.appendChild(s);
     });
     return threeReady;
@@ -43,64 +44,11 @@
     var key = new T.DirectionalLight(0xfffaf4, 2.2); key.position.set(-40, 60, 50); s.add(key);
     var rim = new T.DirectionalLight(0xffffff, 1.0); rim.position.set(30, 40, -60); s.add(rim);
 
-    var white = new T.MeshPhysicalMaterial({ color: 0xf3f3f0, roughness: 0.5, clearcoat: 0.14, clearcoatRoughness: 0.55, envMapIntensity: 0.9 });
-    var capMat = new T.MeshPhysicalMaterial({ color: 0xfbfbfa, roughness: 0.4, clearcoat: 0.25, envMapIntensity: 0.9 });
     var tex = new T.TextureLoader().load(stage.dataset.tex, function () { draw(); stage.classList.add('is-3d-ready'); });
     tex.encoding = T.sRGBEncoding; tex.anisotropy = r.capabilities.getMaxAnisotropy();
     var labelMat = new T.MeshPhysicalMaterial({ map: tex, roughness: 0.55, clearcoat: 0.12, clearcoatRoughness: 0.45, envMapIntensity: 0.6 });
-    var V2 = function (p) { return p.map(function (q) { return new T.Vector2(q[0], q[1]); }); };
-    var g = new T.Group(), H = 20, Wd = 10;
-
-    if (kind === 'chai') {
-      var k = (LH + 1) / 14.5, R = 4.6 * k;
-      var pts = [[0, 0], [3.7, 0], [4.2, 0.1], [4.5, 0.38], [4.6, 0.9], [4.6, 15.4]];
-      for (var i = 1; i <= 18; i++) { var t = (i / 18) * Math.PI / 2; pts.push([2.2 + 2.4 * Math.cos(t), 15.4 + 4.3 * Math.sin(t)]); }
-      pts.push([2.2, 20.1], [2.52, 20.2], [2.52, 20.5], [2.12, 20.6], [2.12, 22.4]);
-      g.add(new T.Mesh(new T.LatheGeometry(V2(pts.map(function (p) { return [p[0] * k, p[1] * k]; })), 128), white));
-      var cap = new T.Mesh(new T.LatheGeometry(V2([[0, 2.62], [2.05, 2.62], [2.26, 2.56], [2.38, 2.42], [2.42, 2.22], [2.42, 0.06], [2.36, 0], [2.12, 0]].map(function (p) { return [p[0] * k, p[1] * k]; })), 96), capMat);
-      cap.position.y = 21.16 * k; g.add(cap);
-      var len = Math.min(LW / (R + 0.012), Math.PI * 2 - 0.05);
-      var l = new T.Mesh(new T.CylinderGeometry(R + 0.012, R + 0.012, LH, 160, 1, true, -len / 2, len), labelMat);
-      l.position.y = 0.9 * k + (14.5 * k - LH) / 2 + LH / 2; g.add(l);
-      H = 23.8 * k; Wd = 2 * R;
-    } else if (kind === 'xo') {
-      var Hb = LH + 4.2, rb = Math.max(LW / 4.4, LH * 0.42), rt = rb + 1.7;
-      var rAt = function (y) { return rb + (rt - rb) * (y / Hb); };
-      var p = [[0, 0], [rb - 0.5, 0], [rb - 0.1, 0.15], [rb, 0.6]];
-      for (var j = 1; j <= 20; j++) { var y = 0.6 + (Hb - 2.2) * j / 20; p.push([rAt(y), y]); }
-      p.push([rAt(Hb - 1.5) + 0.35, Hb - 1.5], [rAt(Hb - 1.1), Hb - 1.1], [rt + 0.5, Hb - 0.4], [rt + 0.55, Hb], [0, Hb]);
-      g.add(new T.Mesh(new T.LatheGeometry(V2(p), 128), white));
-      g.add(new T.Mesh(new T.LatheGeometry(V2([[0, Hb + 0.9], [rt - 1.5, Hb + 0.85], [rt + 0.35, Hb + 0.75], [rt + 0.75, Hb + 0.55], [rt + 0.8, Hb - 0.6], [rt + 0.6, Hb - 0.7]]), 128), capMat));
-      var y0 = 1.8, y1 = y0 + LH, rm = rAt((y0 + y1) / 2) + 0.02, ln = Math.min(LW / rm, Math.PI * 2 - 0.05);
-      var lx = new T.Mesh(new T.CylinderGeometry(rAt(y1) + 0.02, rAt(y0) + 0.02, LH, 160, 1, true, -ln / 2, ln), labelMat);
-      lx.position.y = (y0 + y1) / 2; g.add(lx);
-      var metal = new T.MeshStandardMaterial({ color: 0x9aa1aa, metalness: 0.9, roughness: 0.32 });
-      var ey = Hb - 2.6, er = rAt(ey) + 0.35, hp = [];
-      for (var q = 0; q <= 48; q++) { var a = Math.PI * q / 48; hp.push(new T.Vector3(-Math.cos(a) * (er + 0.3), ey + Math.sin(a) * rt * 0.62, -Math.sin(a) * rt * 0.55)); }
-      g.add(new T.Mesh(new T.TubeGeometry(new T.CatmullRomCurve3(hp), 120, 0.13, 8, false), metal));
-      H = Hb + rt * 0.62 + 1.5; Wd = 2 * (rt + 1.2);
-    } else {
-      // túi: mặt trước phồng (nhãn là ảnh mặt trước), mặt sau trắng
-      var Wb = LW, Hbg = LH * 1.08, D = Wb * 0.16;
-      var bul = function (u, v) { var vv = Math.min(v / 0.9, 1); return Math.pow(Math.sin(Math.PI * u), 0.75) * Math.pow(Math.sin(Math.PI * vv), 0.5) * (v > 0.9 ? 0 : 1); };
-      var surf = function (sg) {
-        var geo = new T.BufferGeometry(), P = [], UV = [], I = [], nu = 80, nv = 110;
-        for (var jj = 0; jj <= nv; jj++) for (var ii = 0; ii <= nu; ii++) {
-          var u = ii / nu, v = jj / nv, b = bul(u, v);
-          P.push((u - 0.5) * Wb * (1 - 0.07 * b), v * Hbg, sg * D * b);
-          UV.push(sg > 0 ? u : 1 - u, Math.min(v / 0.92, 1));
-        }
-        for (jj = 0; jj < nv; jj++) for (ii = 0; ii < nu; ii++) {
-          var A = jj * (nu + 1) + ii, B = A + 1, C = A + nu + 1, E = C + 1;
-          if (sg > 0) I.push(A, B, E, A, E, C); else I.push(A, E, B, A, C, E);
-        }
-        geo.setAttribute('position', new T.Float32BufferAttribute(P, 3)); geo.setAttribute('uv', new T.Float32BufferAttribute(UV, 2));
-        geo.setIndex(I); geo.computeVertexNormals(); return geo;
-      };
-      g.add(new T.Mesh(surf(1), labelMat));
-      g.add(new T.Mesh(surf(-1), new T.MeshPhysicalMaterial({ color: 0xf4f4f2, roughness: 0.6, sheen: 0.4, side: T.DoubleSide })));
-      H = Hbg; Wd = Wb;
-    }
+    var built = window.Pack3D.build(T, kind, { lw: LW, lh: LH }, labelMat, { mau: stage.dataset.mau ? new T.Color(stage.dataset.mau) : null });
+    var g = built.group, H = built.H, Wd = built.W;
     g.position.y = -H * 0.5;
     var pivot = new T.Group(); pivot.add(g); s.add(pivot);
 

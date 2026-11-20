@@ -5,7 +5,7 @@
 
 <article class="wrap product">
   <div class="product__media" data-gallery>
-    <div class="stage3d cat-bg--<%= p.category %>" <% if (p.model3d) { %>data-model3d data-kind="<%= p.model3d.kind %>" data-tex="<%= p.model3d.tex %>" data-mm="<%= p.model3d.mm %>"<% } else { %>data-spin<% } %> tabindex="0" role="img" aria-label="Bao bì sản phẩm <%= p.name %>. Kéo sang trái, phải để xoay xem sản phẩm.">
+    <div class="stage3d cat-bg--<%= p.category %>" <% if (p.model3d) { %>data-model3d data-kind="<%= p.model3d.kind %>" data-tex="<%= p.model3d.tex %>" data-mm="<%= p.model3d.mm %>"<% if (p.model3d.mau) { %> data-mau="<%= p.model3d.mau %>"<% } %><% } else { %>data-spin<% } %> tabindex="0" role="img" aria-label="Bao bì sản phẩm <%= p.name %>. Kéo sang trái, phải để xoay xem sản phẩm.">
       <span class="stage3d__spot" aria-hidden="true"></span>
       <div class="stage3d__obj" data-spin-obj>
         <%- img(p.shot, { alt: 'Bao bì sản phẩm ' + p.name, loading: 'eager', fetchpriority: 'high', draggable: 'false', class: p.cutout ? 'is-cutout' : '' }) %>
@@ -14,7 +14,7 @@
       <span class="stage3d__shadow" aria-hidden="true"></span>
       <p class="stage3d__hint" aria-hidden="true"><span class="showcase__hand"></span><%= p.model3d ? 'Vuốt để xoay 360°' : 'Kéo để xoay' %></p>
     </div>
-    <% if (p.model3d) { %><script src="/js/viewer3d.js?v=1" defer></script><% } %>
+    <% if (p.model3d) { %><script src="/js/viewer3d.js?v=2" defer></script><% } %>
     <div class="product__views">
       <% if (p.labelImg) { %>
       <a class="product__view" href="<%= p.labelImg.src %>" data-lb="<%= p.labelImg.src %>" data-caption="Nhãn đầy đủ của <%= p.name %>">

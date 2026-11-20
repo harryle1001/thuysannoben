@@ -1,0 +1,218 @@
+{
+ "_ghi_chu": "Dạng bao bì 3D theo ảnh bao bì đang bán (ảnh web cũ). kieu xem public/js/pack3d.js; mau = màu nhựa chai.",
+ "aqua-bac": {
+  "kieu": "tuibac"
+ },
+ "aqua-bz": {
+  "kieu": "tuibac"
+ },
+ "aqua-squick": {
+  "kieu": "chai1l"
+ },
+ "aqua-yucca": {
+  "kieu": "baodet"
+ },
+ "bacpower": {
+  "kieu": "tuibac"
+ },
+ "ben-copper-500": {
+  "kieu": "chai500"
+ },
+ "ben-gold-rv": {
+  "kieu": "chai1l"
+ },
+ "ben-iq": {
+  "kieu": "chainau"
+ },
+ "bio-edta": {
+  "kieu": "tuivang"
+ },
+ "bzt": {
+  "kieu": "tuibac"
+ },
+ "edta-99": {
+  "kieu": "tuivang"
+ },
+ "grand-zeolite-zeo-hat-nhap-khau": {
+  "kieu": "baogiay"
+ },
+ "iodine-99": {
+  "kieu": "chainau"
+ },
+ "kia-c-tat": {
+  "kieu": "xo"
+ },
+ "nb-algae": {
+  "kieu": "baodet"
+ },
+ "oxy-99": {
+  "kieu": "xo"
+ },
+ "prawnzyme": {
+  "kieu": "tuibac"
+ },
+ "pro-algae": {
+  "kieu": "tuibac"
+ },
+ "rova-otic": {
+  "kieu": "tuibac"
+ },
+ "rovabio-ap": {
+  "kieu": "tuibac"
+ },
+ "rovazyme": {
+  "kieu": "tuibac"
+ },
+ "super-aqua-80": {
+  "kieu": "chai1l"
+ },
+ "super-bioca": {
+  "kieu": "chai1l"
+ },
+ "super-cut-algae": {
+  "kieu": "tuibac"
+ },
+ "super-oxy-02": {
+  "kieu": "xo"
+ },
+ "super-vidal": {
+  "kieu": "hu"
+ },
+ "super-yucca": {
+  "kieu": "chai1l",
+  "mau": "#1f6b3a"
+ },
+ "yucca-99": {
+  "kieu": "chai1l",
+  "mau": "#1f6b3a"
+ },
+ "yucca-vs-zeo": {
+  "kieu": "xo"
+ },
+ "clear-12h": {
+  "kieu": "tuibac"
+ },
+ "bio-premix": {
+  "kieu": "tuibac"
+ },
+ "down-max-ha-phen": {
+  "kieu": "tuibac"
+ },
+ "marimix": {
+  "kieu": "tuibac"
+ },
+ "miral-n8": {
+  "kieu": "tuibac"
+ },
+ "mix-79": {
+  "kieu": "tuivang"
+ },
+ "premix-10000": {
+  "kieu": "tuivang"
+ },
+ "premix-9999": {
+  "kieu": "tuivang"
+ },
+ "premix-khoang-khoang-kich-lot": {
+  "kieu": "tuivang"
+ },
+ "rimix": {
+  "kieu": "tuibac"
+ },
+ "vita-c-tat": {
+  "kieu": "xo"
+ },
+ "amin-care": {
+  "kieu": "chai1l"
+ },
+ "aminovit": {
+  "kieu": "chai1l"
+ },
+ "ap-79": {
+  "kieu": "tuibac"
+ },
+ "aqua-biotic": {
+  "kieu": "chai1l"
+ },
+ "aqua-c30": {
+  "kieu": "hu"
+ },
+ "aqualac-fs": {
+  "kieu": "hucao"
+ },
+ "aqualacto-q": {
+  "kieu": "hucao"
+ },
+ "ben-com": {
+  "kieu": "chai1l"
+ },
+ "beta-13-16-glucan": {
+  "kieu": "tuibac"
+ },
+ "bio-aq": {
+  "kieu": "hu"
+ },
+ "biotic-99": {
+  "kieu": "chai1l"
+ },
+ "biozyme": {
+  "kieu": "chai1l"
+ },
+ "bz-99": {
+  "kieu": "chai1l"
+ },
+ "calcipho": {
+  "kieu": "chai1l"
+ },
+ "caphote": {
+  "kieu": "chai1l"
+ },
+ "cmax-25": {
+  "kieu": "hu"
+ },
+ "davi-cid-liquid": {
+  "kieu": "chai500"
+ },
+ "hepaliver-fs": {
+  "kieu": "chai1l"
+ },
+ "hepatic": {
+  "kieu": "chai1l"
+ },
+ "hi-weigh": {
+  "kieu": "hucao"
+ },
+ "hufa": {
+  "kieu": "chai1l"
+ },
+ "liver-max": {
+  "kieu": "chai1l"
+ },
+ "mega-cid": {
+  "kieu": "tuibac"
+ },
+ "nb-biobest": {
+  "kieu": "hucao"
+ },
+ "nb-c-sormin": {
+  "kieu": "tuibac"
+ },
+ "nb-helvirol-b12": {
+  "kieu": "chai1l"
+ },
+ "pro-aq": {
+  "kieu": "hu"
+ },
+ "prozyme": {
+  "kieu": "hutron"
+ },
+ "rocaphos": {
+  "kieu": "chai1l"
+ },
+ "g7-phong-va-tri-benh-gan-chet-som": {
+  "kieu": "chai1l"
+ },
+ "sorbest": {
+  "kieu": "tuibac"
+ }
+}
