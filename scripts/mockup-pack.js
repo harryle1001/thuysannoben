@@ -23,7 +23,8 @@ const list = only.length ? labels.filter((l) => only.includes(l.slug)) : labels;
 // Dán ảnh nhãn có sẵn (vd nhãn cũ vẽ lại): --anh file.png --kho chai --mm 240x135 [--ten g7]
 const ANH = opt('--anh', '');
 const TRONG = args.includes('--trong');
-const MAU = opt('--mau', ''); // nền trong suốt (ảnh tách nền cho web)
+const MAU = opt('--mau', '');
+const TAM = opt('--tam', ''); // phần (0–1) theo bề ngang nhãn đặt ra mặt trước khi quấn // nền trong suốt (ảnh tách nền cho web)
 if (ANH) { const [mw, mh] = opt('--mm', '240x135').split('x').map(Number); list.length = 0; list.push({ slug: opt('--ten', path.basename(ANH, '.png')), bao_bi: opt('--kho', 'chai'), anh: path.resolve(ANH), mw, mh }); }
 
 // Cảnh 3D, chạy trong trình duyệt. Đơn vị: cm.
@@ -49,7 +50,7 @@ function scene() {
   const LW = CFG.lw / 10, LH = CFG.lh / 10; // khổ nhãn, cm
   const labelMat = new THREE.MeshPhysicalMaterial({ map: tex, roughness: 0.55, clearcoat: 0.12, clearcoatRoughness: 0.45, envMapIntensity: 0.6 });
   // Khuôn bao bì dùng chung với web (public/js/pack3d.js): kích thước cố định, nhãn thu cho vừa
-  const built = Pack3D.build(THREE, CFG.kind, { lw: LW, lh: LH }, labelMat, { mau: CFG.mau ? new THREE.Color(CFG.mau) : null });
+  const built = Pack3D.build(THREE, CFG.kind, { lw: LW, lh: LH }, labelMat, { mau: CFG.mau ? new THREE.Color(CFG.mau) : null, tam: CFG.tam });
   const g = built.group; CFG.height = built.H; CFG.width = built.W;
   s.add(g);
   g.rotation.y = /^(tui|bao)/.test(CFG.kind) ? -0.3 : -0.2;
@@ -109,7 +110,7 @@ function scene() {
     await page.addScriptTag({ path: THREE_JS });
     await page.addScriptTag({ path: path.join(ROOT, 'public', 'js', 'pack3d.js') });
     await page.evaluate(async (src) => { window.LABEL = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = src; }); }, 'data:image/png;base64,' + png.toString('base64'));
-    const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, kind, lw, lh, trong: TRONG, mau: MAU })}; return (${scene.toString()})(); })()`);
+    const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, kind, lw, lh, trong: TRONG, mau: MAU, tam: TAM === '' ? null : +TAM })}; return (${scene.toString()})(); })()`);
     const file = path.join(OUT, `${l.slug}.png`);
     fs.writeFileSync(file, Buffer.from(url.split(',')[1], 'base64'));
     await page.close();

@@ -12,11 +12,13 @@
     var add = function (m) { m.castShadow = true; m.receiveShadow = true; g.add(m); return m; };
     var white = mat(opt.mau || 0xf3f3f0), cap = mat(0xfbfbfa, { roughness: 0.4, clearcoat: 0.25 });
     // khổ nhãn sau khi thu cho vừa (giữ tỷ lệ)
-    function fit(maxW, maxH) { var s = Math.min(1, maxW / L.lw, maxH / L.lh); return { w: L.lw * s, h: L.lh * s }; }
+    function fit(maxW, maxH) { var s = Math.min(maxW / L.lw, maxH / L.lh); return { w: L.lw * s, h: L.lh * s }; } // phóng/thu giữ tỷ lệ cho vừa vùng dán
     function wrap(r0, r1, y0, h, lb) { // nhãn quấn mặt trụ/côn, giữa nhãn quay ra trước
       var rm = (r0 + r1) / 2 + 0.015, len = Math.min(lb.w / rm, Math.PI * 2 - 0.02);
       var m = new T.Mesh(new T.CylinderGeometry(r1 + 0.015, r0 + 0.015, h, 200, 1, true, -len / 2, len), labelMat);
-      m.position.y = y0 + h / 2; m.receiveShadow = true; g.add(m); return m;
+      m.position.y = y0 + h / 2; m.receiveShadow = true;
+      if (opt.tam != null) m.rotation.y = -len * (opt.tam - 0.5); // quay mặt trước nhãn ra phía trước
+      g.add(m); return m;
     }
     function lathe(pts, m, seg) { return add(new T.Mesh(new T.LatheGeometry(V2(pts), seg || 160), m)); }
     function screwCap(r, h, y, m, ribs) {
@@ -52,7 +54,7 @@
       // hũ nhựa trắng nắp vặn: hũ 1 kg Ø12 × 13; hũ cao Ø11,4 × 15,5; hũ bầu Ø13 × 12
       var Rj = kieu === 'hucao' ? 5.7 : kieu === 'hutron' ? 6.5 : 6.0, Hj = kieu === 'hucao' ? 15.5 : kieu === 'hutron' ? 12 : 13;
       var pj = [[0, 0], [Rj - 0.6, 0], [Rj - 0.15, 0.15], [Rj, 0.6]];
-      if (kieu === 'hutron') { for (var q = 0; q <= 16; q++) { var tt = q / 16; pj.push([Rj + Math.sin(tt * Math.PI) * 0.6, 0.6 + tt * (Hj - 2.2)]); } }
+      if (kieu === 'hutron') { pj = [[0, 0], [Rj - 1.4, 0], [Rj - 0.5, 0.3], [Rj, 1.2], [Rj, Hj - 2.4], [Rj - 0.5, Hj - 1.5]]; }
       else pj.push([Rj, Hj - 1.6]);
       pj.push([Rj - 0.4, Hj - 1.1], [Rj - 0.55, Hj - 0.9], [Rj - 0.55, Hj]);
       lathe(pj, white);

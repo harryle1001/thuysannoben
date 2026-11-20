@@ -33,9 +33,10 @@ def front(spec, im, kieu):
     mw, mh = spec.get('kich_thuoc_mm') or [240, 135]
     if not kieu.startswith(('tui', 'bao')) or not spec.get('mat_truoc'):
         return im, mw, mh
-    W0, H0 = spec['kich_thuoc_goc']
+    cx, cy, cx1, cy1 = spec.get('cat_ra') or [0, 0] + spec['kich_thuoc_goc']
+    W0, H0 = cx1 - cx, cy1 - cy
     k = im.width / W0
-    x0, y0, x1, y1 = spec['mat_truoc']
+    x0, y0, x1, y1 = [v - o for v, o in zip(spec['mat_truoc'], (cx, cy, cx, cy))]
     crop = im.crop((round(x0 * k), round(y0 * k), round(x1 * k), round(y1 * k)))
     return crop, mw * (x1 - x0) / W0, mh * (y1 - y0) / H0
 
@@ -59,6 +60,10 @@ def main():
         bb3 = BAO_BI.get(slug, {})
         kind = bb3.get('kieu') or {'chai': 'chai1l', 'xo': 'xo'}.get(spec.get('bao_bi'), 'tuibac')
         extra_mau = ['--mau', bb3['mau']] if bb3.get('mau') else []
+        if not kind.startswith(('tui', 'bao')) and spec.get('mat_truoc'):
+            mt = spec['mat_truoc']
+            cx, cx1 = (spec.get('cat_ra') or [0, 0, spec['kich_thuoc_goc'][0]])[0::2][:2]
+            extra_mau += ['--tam', f"{((mt[0] + mt[2]) / 2 - cx) / (cx1 - cx):.4f}"]
         im = Image.open(pf).convert('RGB')
         tex, mw, mh = front(spec, im, kind)
         with tempfile.TemporaryDirectory() as tmp:

@@ -41,6 +41,8 @@ function item(it) {
 
 function html(spec, bg) {
   const [W, H] = spec.kich_thuoc_goc;
+  // cat_ra: [x0,y0,x1,y1] chỉ xuất phần nhãn (bỏ chữ ghi kích thước, lề trắng của ảnh gốc)
+  const [CX, CY, CX1, CY1] = spec.cat_ra || [0, 0, W, H], CW = CX1 - CX, CH = CY1 - CY;
   const fam = (f) => (f === 'serif' ? "'Liberation Serif','Times New Roman',serif" : "'Liberation Sans',Arial,sans-serif");
   const boxes = (spec.khung || []).map((k, i) => {
     const st = [`left:${k.x}px`, `top:${k.y}px`, `width:${k.w}px`, `height:${k.h}px`, `border-radius:${k.r || 0}px`,
@@ -55,9 +57,9 @@ function html(spec, bg) {
   const vec = (spec.chu_vector || []).map((t) => `<text x="${t.x}" y="${t.y}" textLength="${t.w}" lengthAdjust="spacingAndGlyphs" font-family="${t.phong === 'serif' ? "'Liberation Serif', 'Times New Roman', serif" : "'Liberation Sans', Arial, sans-serif"}" font-weight="700" font-size="${t.co}" fill="${t.mau}"${t.vien ? ` stroke="${t.vien}" stroke-width="${t.vien_rong || 1.6}" paint-order="stroke" stroke-linejoin="round"` : ''}${t.bong ? ' filter="url(#bong)"' : ''}>${esc(t.chu)}</text>`).join('');
   const over = vec ? `<svg class="vec" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"><defs><filter id="bong" x="-5%" y="-40%" width="110%" height="180%"><feDropShadow dx="0" dy="0.6" stdDeviation="0.8" flood-color="#0b3d1c" flood-opacity="0.55"/></filter></defs>${vec}</svg>` : '';
   return `<!doctype html><meta charset="utf-8"><style>
-@page{size:${W}px ${H}px;margin:0}
-html,body{margin:0;width:${W}px;height:${H}px;overflow:hidden}
-#nhan{position:relative;width:${W}px;height:${H}px;background:url(${bg}) 0 0/100% 100% no-repeat}
+@page{size:${CW}px ${CH}px;margin:0}
+html,body{margin:0;width:${CW}px;height:${CH}px;overflow:hidden}
+#nhan{position:relative;left:${-CX}px;top:${-CY}px;width:${W}px;height:${H}px;background:url(${bg}) 0 0/100% 100% no-repeat}
 .khung{position:absolute;background:#fff;box-sizing:border-box;padding:16px 14px 10px 15px;overflow:hidden}
 .nd{font-family:'Liberation Sans',Arial,sans-serif;color:#000;font-size:var(--fs,18.5px);line-height:1.38;-webkit-text-stroke-width:.012em;text-rendering:geometricPrecision}
 .nd .muc,.nd .dam,.nd b{color:var(--mau-muc,inherit)}
@@ -98,7 +100,8 @@ async function main() {
   const bg = 'data:image/jpeg;base64,' + fs.readFileSync(bgFile).toString('base64');
   const { chromium } = require('playwright');
   const browser = await chromium.launch();
-  const [W, H] = spec.kich_thuoc_goc;
+  const [WA, HA] = spec.kich_thuoc_goc;
+  const [cx0, cy0, cx1, cy1] = spec.cat_ra || [0, 0, WA, HA], W = cx1 - cx0, H = cy1 - cy0;
   const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: SCALE });
   await page.setContent(html(spec, bg));
   await page.evaluate(() => document.fonts.ready);

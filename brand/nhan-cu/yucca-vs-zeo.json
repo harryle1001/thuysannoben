@@ -1,312 +1,318 @@
 {
- "slug": "yucca-vs-zeo",
- "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-037663_1.jpg",
- "kich_thuoc_goc": [
-  1157,
-  1080
- ],
- "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1157 × 1080 (nhãn túi 230x295mm ghi trên ảnh, nhãn chiếm x 14–1147, y 145–1010). Chữ sửa theo hồ sơ TCCS 06:2022/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Dòng MgO, CaO, Độ ẩm nhãn cũ có mà TCCS không ghi: giữ như nhãn cũ (cần chủ sản phẩm xác nhận).",
- "bao_bi": "tui",
- "kich_thuoc_mm": [
-  230,
-  295
- ],
- "mat_truoc": [
-  14,
-  145,
-  1147,
-  1010
- ],
- "khung": [
-  {
-   "x": 70,
-   "y": 479,
-   "w": 414,
-   "h": 266,
-   "r": 0,
-   "dem": 2,
-   "co": 17,
-   "dong_cao": 1.38,
-   "noi_dung": [
-    {
-     "kieu": "html",
-     "chu": "<b style=\"color:#e1262d\">THÀNH PHẦN</b>: trong 1kg sản phẩm"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>Độ ẩm (max):</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>10%</span></span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>SiO<sub style=\"line-height:0\">2</sub>(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>65%</span></span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>MgO(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>30mg/kg</span></span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>Fe<sub style=\"line-height:0\">2</sub>O<sub style=\"line-height:0\">3</sub>(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>1%</span></span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>CaO(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>0,1%</span></span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>Al<sub style=\"line-height:0\">2</sub>O<sub style=\"line-height:0\">3</sub>(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>8%</span></span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:flex;align-items:baseline\"><span>Chất đệm (Dextrose) vừa đủ</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>1kg</span></span>"
-    },
-    {
-     "kieu": "trong"
-    },
-    {
-     "kieu": "html",
-     "chu": "<b style=\"color:#e1262d\">Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
-    }
-   ]
-  },
-  {
-   "x": 528,
-   "y": 520,
-   "w": 545,
-   "h": 56,
-   "r": 0,
-   "nen": "trong",
-   "mau": "#1b1b1b",
-   "dem": 0,
-   "co": 17,
-   "dong_cao": 1.55,
-   "noi_dung": [
-    {
-     "kieu": "gach",
-     "chu": "Xử lý cải tạo môi trường ao nuôi trồng thủy sản, làm giảm khí độc NH<sub style=\"line-height:0\">3</sub>."
-    },
-    {
-     "kieu": "gach",
-     "chu": "Giúp làm trong nước, ổn định pH, gia tăng Oxy hòa tan."
-    }
-   ]
-  },
-  {
-   "x": 528,
-   "y": 631,
-   "w": 545,
-   "h": 112,
-   "r": 0,
-   "nen": "trong",
-   "mau": "#1b1b1b",
-   "dem": 0,
-   "co": 17,
-   "dong_cao": 1.55,
-   "noi_dung": [
-    {
-     "kieu": "gach",
-     "chu": "Xử lý định kỳ: 1 - 2kg/1.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 7 - 10 ngày/lần."
-    },
-    {
-     "kieu": "gach",
-     "chu": "Trong trường hợp tôm nổi đầu do khí độc: 3 - 4kg/1.000m<sup style=\"line-height:0\">3</sup> nước."
-    },
-    {
-     "kieu": "gach",
-     "chu": "Rải đều khắp mặt ao, không sử dụng chung với các loại hóa chất khác."
-    },
-    {
-     "kieu": "gach",
-     "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
-    }
-   ]
-  },
-  {
-   "x": 333,
-   "y": 839,
-   "w": 760,
-   "h": 104,
-   "r": 0,
-   "nen": "trong",
-   "dem": 0,
-   "co": 12.3,
-   "dong_cao": 1.18,
-   "noi_dung": [
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;font-size:.82em;font-weight:400\">Sản phẩm của/Product of:</span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(1.32);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;font-size:2.075em;line-height:1.08;letter-spacing:.09em;color:#f7941d\">CÔNG TY TNHH NO BEN</span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh</span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com</span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Website: thuocthuysannoben.com</span><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.85);transform-origin:0 50%;font-weight:700;color:#c8102e;margin-left:4em;text-shadow:.08em 0 0 #fff,-.08em 0 0 #fff,0 .08em 0 #fff,0 -.08em 0 #fff,.06em .06em 0 #fff,-.06em -.06em 0 #fff,.06em -.06em 0 #fff,-.06em .06em 0 #fff\">SẢN XUẤT TẠI VIỆT NAM</span>"
-    },
-    {
-     "kieu": "html",
-     "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.9);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh, Việt Nam</span>"
-    }
-   ]
-  },
-  {
-   "x": 76,
-   "y": 467,
-   "w": 326,
-   "h": 12,
-   "r": 0,
-   "noi_dung": []
-  }
- ],
- "xoa": [
-  {
-   "vung": [
-    70,
-    469,
-    330,
-    10
-   ],
-   "nen": "trang",
-   "le": 1
-  },
-  {
-   "vung": [
-    528,
-    522,
-    535,
-    52
-   ],
-   "mau": "#222222",
-   "nguong": 95,
-   "le": 5
-  },
-  {
-   "vung": [
-    528,
-    632,
-    535,
-    108
-   ],
-   "mau": "#222222",
-   "nguong": 95,
-   "le": 5
-  },
-  {
-   "vung": [
-    333,
-    840,
-    494,
-    100
-   ],
-   "mau": "#f39a2b",
-   "nguong": 95,
-   "le": 4
-  },
-  {
-   "vung": [
-    333,
-    840,
-    494,
-    100
-   ],
-   "mau": "#111111",
-   "nguong": 80,
-   "le": 4
-  },
-  {
-   "vung": [
-    333,
-    840,
-    494,
-    100
-   ],
-   "mau": "#ffffff",
-   "nguong": 100,
-   "le": 4
-  }
- ],
- "logo": [
-  {
-   "x": 233,
-   "y": 839,
-   "w": 91,
-   "h": 99
-  }
- ],
- "lam_net": [
-  {
-   "vung": [
-    120,
-    175,
-    1010,
+  "slug": "yucca-vs-zeo",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-037663_1.jpg",
+  "kich_thuoc_goc": [
+    1157,
+    1080
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1157 × 1080 (nhãn túi 230x295mm ghi trên ảnh, nhãn chiếm x 14–1147, y 145–1010). Chữ sửa theo hồ sơ TCCS 06:2022/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Dòng MgO, CaO, Độ ẩm nhãn cũ có mà TCCS không ghi: giữ như nhãn cũ (cần chủ sản phẩm xác nhận).",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    230,
     295
-   ],
-   "bang_mau": [
-    "#ea1d28",
-    "#f0edea",
-    "#c8cacb",
-    "#0b663b",
-    "#c94047",
-    "#8da099",
-    "#f4a1a2"
-   ],
-   "net": [
-    "#ea1d28",
-    "#f0edea"
-   ],
-   "mem": 500
-  },
-  {
-   "vung": [
-    730,
-    358,
-    1006,
-    442
-   ],
-   "bang_mau": [
-    "#fbfbfa",
-    "#090a09",
-    "#788075",
-    "#41433a",
-    "#aeaea4",
-    "#d2d2d1"
-   ],
-   "net": [
-    "#090a09",
-    "#fbfbfa"
-   ],
-   "mem": 500,
-   "mau": {
-    "#fbfbfa": "#ffffff"
-   }
-  },
-  {
-   "vung": [
-    370,
-    380,
-    530,
-    445
-   ],
-   "bang_mau": [
-    "#fbf208",
-    "#fce62a",
-    "#ce350a",
-    "#fbb936",
-    "#e07918"
-   ],
-   "net": [
-    "#ce350a"
-   ],
-   "mem": 500
-  }
- ]
+  ],
+  "mat_truoc": [
+    14,
+    145,
+    1147,
+    1010
+  ],
+  "khung": [
+    {
+      "x": 70,
+      "y": 479,
+      "w": 414,
+      "h": 266,
+      "r": 0,
+      "dem": 2,
+      "co": 17,
+      "dong_cao": 1.38,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e1262d\">THÀNH PHẦN</b>: trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Độ ẩm (max):</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>10%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>SiO<sub style=\"line-height:0\">2</sub>(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>65%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>MgO(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>30mg/kg</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Fe<sub style=\"line-height:0\">2</sub>O<sub style=\"line-height:0\">3</sub>(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>1%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>CaO(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>0,1%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Al<sub style=\"line-height:0\">2</sub>O<sub style=\"line-height:0\">3</sub>(min)</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>8%</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;align-items:baseline\"><span>Chất đệm (Dextrose) vừa đủ</span><span style=\"flex:1;border-bottom:.13em dotted #222;margin:0 .15em .22em\"></span><span>1kg</span></span>"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e1262d\">Hướng dẫn bảo quản:</b> Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        }
+      ]
+    },
+    {
+      "x": 528,
+      "y": 520,
+      "w": 545,
+      "h": 56,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#1b1b1b",
+      "dem": 0,
+      "co": 17,
+      "dong_cao": 1.55,
+      "noi_dung": [
+        {
+          "kieu": "gach",
+          "chu": "Xử lý cải tạo môi trường ao nuôi trồng thủy sản, làm giảm khí độc NH<sub style=\"line-height:0\">3</sub>."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Giúp làm trong nước, ổn định pH, gia tăng Oxy hòa tan."
+        }
+      ]
+    },
+    {
+      "x": 528,
+      "y": 631,
+      "w": 545,
+      "h": 112,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#1b1b1b",
+      "dem": 0,
+      "co": 17,
+      "dong_cao": 1.55,
+      "noi_dung": [
+        {
+          "kieu": "gach",
+          "chu": "Xử lý định kỳ: 1 - 2kg/1.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 7 - 10 ngày/lần."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trong trường hợp tôm nổi đầu do khí độc: 3 - 4kg/1.000m<sup style=\"line-height:0\">3</sup> nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Rải đều khắp mặt ao, không sử dụng chung với các loại hóa chất khác."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        }
+      ]
+    },
+    {
+      "x": 333,
+      "y": 839,
+      "w": 760,
+      "h": 104,
+      "r": 0,
+      "nen": "trong",
+      "dem": 0,
+      "co": 12.3,
+      "dong_cao": 1.18,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;font-size:.82em;font-weight:400\">Sản phẩm của/Product of:</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(1.32);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;font-size:2.075em;line-height:1.08;letter-spacing:.09em;color:#f7941d\">CÔNG TY TNHH NO BEN</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.99);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Website: thuocthuysannoben.com</span><span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.85);transform-origin:0 50%;font-weight:700;color:#c8102e;margin-left:4em;text-shadow:.08em 0 0 #fff,-.08em 0 0 #fff,0 .08em 0 #fff,0 -.08em 0 #fff,.06em .06em 0 #fff,-.06em -.06em 0 #fff,.06em -.06em 0 #fff,-.06em .06em 0 #fff\">SẢN XUẤT TẠI VIỆT NAM</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;white-space:nowrap;transform:scaleX(.9);transform-origin:0 50%;font-weight:700;color:#fff;text-shadow:.1em 0 0 #111,-.1em 0 0 #111,0 .1em 0 #111,0 -.1em 0 #111,.075em .075em 0 #111,-.075em -.075em 0 #111,.075em -.075em 0 #111,-.075em .075em 0 #111;\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh, Việt Nam</span>"
+        }
+      ]
+    },
+    {
+      "x": 76,
+      "y": 467,
+      "w": 326,
+      "h": 12,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        70,
+        469,
+        330,
+        10
+      ],
+      "nen": "trang",
+      "le": 1
+    },
+    {
+      "vung": [
+        528,
+        522,
+        535,
+        52
+      ],
+      "mau": "#222222",
+      "nguong": 95,
+      "le": 5
+    },
+    {
+      "vung": [
+        528,
+        632,
+        535,
+        108
+      ],
+      "mau": "#222222",
+      "nguong": 95,
+      "le": 5
+    },
+    {
+      "vung": [
+        333,
+        840,
+        494,
+        100
+      ],
+      "mau": "#f39a2b",
+      "nguong": 95,
+      "le": 4
+    },
+    {
+      "vung": [
+        333,
+        840,
+        494,
+        100
+      ],
+      "mau": "#111111",
+      "nguong": 80,
+      "le": 4
+    },
+    {
+      "vung": [
+        333,
+        840,
+        494,
+        100
+      ],
+      "mau": "#ffffff",
+      "nguong": 100,
+      "le": 4
+    }
+  ],
+  "logo": [
+    {
+      "x": 233,
+      "y": 839,
+      "w": 91,
+      "h": 99
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        120,
+        175,
+        1010,
+        295
+      ],
+      "bang_mau": [
+        "#ea1d28",
+        "#f0edea",
+        "#c8cacb",
+        "#0b663b",
+        "#c94047",
+        "#8da099",
+        "#f4a1a2"
+      ],
+      "net": [
+        "#ea1d28",
+        "#f0edea"
+      ],
+      "mem": 500
+    },
+    {
+      "vung": [
+        730,
+        358,
+        1006,
+        442
+      ],
+      "bang_mau": [
+        "#fbfbfa",
+        "#090a09",
+        "#788075",
+        "#41433a",
+        "#aeaea4",
+        "#d2d2d1"
+      ],
+      "net": [
+        "#090a09",
+        "#fbfbfa"
+      ],
+      "mem": 500,
+      "mau": {
+        "#fbfbfa": "#ffffff"
+      }
+    },
+    {
+      "vung": [
+        370,
+        380,
+        530,
+        445
+      ],
+      "bang_mau": [
+        "#fbf208",
+        "#fce62a",
+        "#ce350a",
+        "#fbb936",
+        "#e07918"
+      ],
+      "net": [
+        "#ce350a"
+      ],
+      "mem": 500
+    }
+  ],
+  "cat_ra": [
+    13,
+    145,
+    1120,
+    1012
+  ]
 }

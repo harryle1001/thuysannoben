@@ -47,7 +47,7 @@
     var tex = new T.TextureLoader().load(stage.dataset.tex, function () { draw(); stage.classList.add('is-3d-ready'); });
     tex.encoding = T.sRGBEncoding; tex.anisotropy = r.capabilities.getMaxAnisotropy();
     var labelMat = new T.MeshPhysicalMaterial({ map: tex, roughness: 0.55, clearcoat: 0.12, clearcoatRoughness: 0.45, envMapIntensity: 0.6 });
-    var built = window.Pack3D.build(T, kind, { lw: LW, lh: LH }, labelMat, { mau: stage.dataset.mau ? new T.Color(stage.dataset.mau) : null });
+    var built = window.Pack3D.build(T, kind, { lw: LW, lh: LH }, labelMat, { mau: stage.dataset.mau ? new T.Color(stage.dataset.mau) : null, tam: stage.dataset.tam ? +stage.dataset.tam : null });
     var g = built.group, H = built.H, Wd = built.W;
     g.position.y = -H * 0.5;
     var pivot = new T.Group(); pivot.add(g); s.add(pivot);
