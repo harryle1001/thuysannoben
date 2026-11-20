@@ -54,12 +54,12 @@ Tôm thiếu vitamin C, khoáng và chất đạm kéo dài sẽ yếu, dễ s�
 ### Bước 2: Giảm ăn, chống sốc
 
 - Giảm 30 đến 50% lượng thức ăn trong 1 đến 2 ngày đầu; tôm yếu ăn không hết sẽ làm nước thêm bẩn.
-- Tạt vitamin C chống sốc như [KIA C TẠT](/san-pham/kia-c-tat) 5 kg cho 3.000 m³ nước ngay khi tôm bị stress.
+- Tạt vitamin C chống sốc như [KIA C TẠT](/san-pham/kia-c-tat) 5 kg cho 2.000 m³ nước ngay khi tôm bị stress.
 - Trộn vitamin C vào thức ăn, ví dụ [AQUA C30%](/san-pham/aqua-c30) 10 g/kg thức ăn khi thời tiết biến động.
 
 ### Bước 3: Xử lý khí độc và đáy ao
 
-Dùng sản phẩm yucca hấp thụ khí độc như [AQUA YUCCA](/san-pham/aqua-yucca) 500 g cho 3.000 m³ nước khi khí độc cao, kết hợp xi phông đáy (ao bạt) và cấy vi sinh xử lý đáy. Nếu phải diệt khuẩn ở bước 4 thì để 2 đến 3 ngày sau diệt khuẩn mới cấy vi sinh.
+Dùng sản phẩm yucca hấp thụ khí độc như [AQUA YUCCA](/san-pham/aqua-yucca) 3 đến 4 kg cho 1.000 m³ nước khi tôm nổi đầu do khí độc, kết hợp xi phông đáy (ao bạt) và cấy vi sinh xử lý đáy. Nếu phải diệt khuẩn ở bước 4 thì để 2 đến 3 ngày sau diệt khuẩn mới cấy vi sinh.
 
 ### Bước 4: Diệt khuẩn khi nghi nhiễm Vibrio
 

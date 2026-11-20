@@ -1,5 +1,5 @@
 {
- "tao_luc": "2026-11-16T00:42:13.000Z",
+ "tao_luc": "2026-11-20T02:59:11.220Z",
  "so_nhan": 94,
  "loi": 0,
  "nhan": [
@@ -47,19 +47,19 @@
   },
   {
    "nhan": "ben-copper-500@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 4.8,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "ben-gold-rv@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 4.8,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "ben-iq@chai",
-   "co_chu_pt": 4.8,
+   "co_chu_pt": 5.4,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -71,31 +71,31 @@
   },
   {
    "nhan": "bio-edta@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "bzt@tui",
-   "co_chu_pt": 6.4,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "edta-99@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "grand-zeolite-zeo-hat-nhap-khau@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 6.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "iodine-99@chai",
-   "co_chu_pt": 4.8,
+   "co_chu_pt": 5.4,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -107,7 +107,7 @@
   },
   {
    "nhan": "nb-algae@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -119,7 +119,7 @@
   },
   {
    "nhan": "no-toxin@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -131,13 +131,13 @@
   },
   {
    "nhan": "prawnzyme@tui",
-   "co_chu_pt": 5.9,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "pro-algae@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -149,25 +149,25 @@
   },
   {
    "nhan": "rova-otic@tui",
-   "co_chu_pt": 6.4,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "rovabio-ap@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "rovazyme@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "super-aqua-80@chai",
-   "co_chu_pt": 5.9,
+   "co_chu_pt": 6.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -179,7 +179,7 @@
   },
   {
    "nhan": "super-cut-algae@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 5.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -197,7 +197,7 @@
   },
   {
    "nhan": "super-vidal@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 5.7,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -233,7 +233,7 @@
   },
   {
    "nhan": "clear-12h@tui",
-   "co_chu_pt": 7.3,
+   "co_chu_pt": 5.2,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -245,13 +245,13 @@
   },
   {
    "nhan": "bio-premix@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "down-max-ha-phen@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 6.8,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -263,19 +263,19 @@
   },
   {
    "nhan": "marimix@tui",
-   "co_chu_pt": 6.4,
+   "co_chu_pt": 6.8,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "miral-n8@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "mix-79@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -287,103 +287,103 @@
   },
   {
    "nhan": "premix-10000@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "premix-9999@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "premix-khoang-khoang-kich-lot@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 6.8,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "rimix@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 7.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "vita-c-tat@xo",
-   "co_chu_pt": 8.6,
+   "co_chu_pt": 8.1,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "amin-care@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "aminovit@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "ap-79@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "aqua-biotic@chai",
-   "co_chu_pt": 6.1,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "aqua-c30@tui",
-   "co_chu_pt": 7.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "aqualac-fs@tui",
-   "co_chu_pt": 7,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "aqualacto-q@tui",
-   "co_chu_pt": 7.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "ben-com@chai",
    "co_chu_pt": 5.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
+   "nhan": "aqua-c30@tui",
+   "co_chu_pt": 6.8,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "aqualac-fs@tui",
+   "co_chu_pt": 6,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "aqualacto-q@tui",
+   "co_chu_pt": 6,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "ben-com@chai",
+   "co_chu_pt": 5.6,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
    "nhan": "beta-13-16-glucan@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 6.4,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "bio-aq@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "biotic-99@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "biozyme@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -395,7 +395,7 @@
   },
   {
    "nhan": "bz-99@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -407,73 +407,73 @@
   },
   {
    "nhan": "caphote@chai",
-   "co_chu_pt": 6.1,
+   "co_chu_pt": 5.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "cmax-25@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 6.8,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "davi-cid-liquid@chai",
-   "co_chu_pt": 6.1,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "hepaliver-fs@chai",
-   "co_chu_pt": 5.9,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "hepatic@chai",
-   "co_chu_pt": 5.9,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "hi-weigh@tui",
-   "co_chu_pt": 7.5,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "hufa@chai",
-   "co_chu_pt": 4.8,
-   "duoi_toi_thieu": false,
-   "loi": []
-  },
-  {
-   "nhan": "liver-max@chai",
    "co_chu_pt": 5.4,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
-   "nhan": "mega-cid@tui",
+   "nhan": "hepaliver-fs@chai",
+   "co_chu_pt": 5.3,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "hepatic@chai",
+   "co_chu_pt": 5.3,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "hi-weigh@tui",
    "co_chu_pt": 7,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "hufa@chai",
+   "co_chu_pt": 5.4,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "liver-max@chai",
+   "co_chu_pt": 5.3,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "mega-cid@tui",
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "nb-biobest@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "nb-c-sormin@tui",
-   "co_chu_pt": 7.5,
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "nb-helvirol-b12@chai",
-   "co_chu_pt": 5.9,
+   "co_chu_pt": 5.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -485,7 +485,7 @@
   },
   {
    "nhan": "pro-aq@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 6,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -497,13 +497,13 @@
   },
   {
    "nhan": "prozyme@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 6.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
   {
    "nhan": "rocaphos@chai",
-   "co_chu_pt": 5.8,
+   "co_chu_pt": 5.6,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -539,7 +539,7 @@
   },
   {
    "nhan": "g7-phong-va-tri-benh-gan-chet-som@chai",
-   "co_chu_pt": 5.9,
+   "co_chu_pt": 5.3,
    "duoi_toi_thieu": false,
    "loi": []
   },
@@ -551,7 +551,7 @@
   },
   {
    "nhan": "sorbest@tui",
-   "co_chu_pt": 7,
+   "co_chu_pt": 4.9,
    "duoi_toi_thieu": false,
    "loi": []
   },

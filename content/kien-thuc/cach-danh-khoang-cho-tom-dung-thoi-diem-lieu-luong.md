@@ -35,8 +35,8 @@ Trong nước biển tự nhiên, **magie gấp khoảng 3 lần canxi** và can
 
 Bổ sung khoáng hòa tan vào nước, tôm hấp thu qua mang và vỏ, đặc biệt lúc lột xác. Phù hợp để duy trì độ kiềm, bù khoáng sau mưa và kích thích tôm lột đều. Ví dụ:
 
-- [MIX 79](/san-pham/mix-79), [MIRAL N8](/san-pham/miral-n8): khoáng tăng kiềm, cứng vỏ; định kỳ **5 kg cho 3.000 m³ nước, 2 ngày/lần**; khi cần tăng kiềm dùng 5 kg cho 1.500 m³, liên tục 2 ngày.
-- [RIMIX](/san-pham/rimix): khoáng tăng kiềm, cứng vỏ cho ao bạt; định kỳ 5 kg cho 3.000 m³, 2 ngày/lần.
+- [MIX 79](/san-pham/mix-79), [MIRAL N8](/san-pham/miral-n8): khoáng tạt ao giúp tôm lột xác đúng chu kỳ, vỏ cứng dày; định kỳ **5 kg cho 5.000 m³ nước**; trước khi thả giống 5 kg cho 3.000 m³.
+- [RIMIX](/san-pham/rimix): khoáng cứng vỏ cho ao bạt; định kỳ 5 kg cho 5.000 m³ nước; trước khi thả giống 5 kg cho 3.000 m³.
 - [PREMIX KHOÁNG](/san-pham/premix-khoang-khoang-kich-lot): khoáng kích lột và cứng vỏ nhanh.
 
 ### Khoáng trộn vào thức ăn

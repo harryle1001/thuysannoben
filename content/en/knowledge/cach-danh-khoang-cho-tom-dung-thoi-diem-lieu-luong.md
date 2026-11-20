@@ -35,8 +35,8 @@ In natural seawater, **magnesium is about 3 times calcium** and calcium is rough
 
 These add dissolved minerals to the water, which shrimp absorb through the gills and shell, especially during moulting. They are suitable for maintaining alkalinity, replenishing minerals after rain and stimulating even moulting. Examples:
 
-- [MIX 79](/san-pham/mix-79), [MIRAL N8](/san-pham/miral-n8): alkalinity-raising, shell-hardening minerals; routine dose **5 kg per 3,000 m³ of water, every 2 days**; when alkalinity needs raising, use 5 kg per 1,500 m³ for 2 consecutive days.
-- [RIMIX](/san-pham/rimix): alkalinity-raising, shell-hardening mineral for lined ponds; routine dose 5 kg per 3,000 m³, every 2 days.
+- [MIX 79](/san-pham/mix-79), [MIRAL N8](/san-pham/miral-n8): pond-applied minerals that help shrimp moult on schedule with a thick, hard shell; routine dose **5 kg per 5,000 m³ of water**; before stocking 5 kg per 3,000 m³.
+- [RIMIX](/san-pham/rimix): shell-hardening mineral for lined ponds; routine dose 5 kg per 5,000 m³ of water; before stocking 5 kg per 3,000 m³.
 - [PREMIX MINERAL](/san-pham/premix-khoang-khoang-kich-lot): mineral that stimulates moulting and rapid shell hardening.
 
 ### Minerals mixed into feed

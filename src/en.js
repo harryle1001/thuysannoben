@@ -82,6 +82,7 @@ const products = c.products.map((p) => {
     uses: p.uses.map(tr).filter(Boolean),
     dose: p.dose.map(tr).filter(Boolean),
     composition: p.composition.map(tr).filter(Boolean),
+    packaging: tr(p.packaging),
     category: cat.slug,
     categoryInfo: cat,
     search: `${p.search} ${tagline.toLowerCase()}`,

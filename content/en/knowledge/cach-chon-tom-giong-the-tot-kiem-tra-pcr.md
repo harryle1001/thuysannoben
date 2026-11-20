@@ -109,8 +109,8 @@ Support for pond preparation and stocking, used according to the label:
 
 - [SUPER VIDAL](/san-pham/super-vidal): supports stable algal density and pH while building water colour before stocking; for algae stabilisation use 50 g/3,000 m³ of water, applied in strong sun at 9–10 a.m., not when it is raining.
 - [IODINE 99](/san-pham/iodine-99): disinfects the water source, reducing harmful bacteria, fungi and protozoa; for pond preparation use 1 litre/3,000 m³ of water, applied in the cool late afternoon; wait 2–3 days before building water colour and adding probiotics.
-- [VITA C (pond application)](/san-pham/vita-c-tat): vitamin C for pond application to help prevent shock and reduce stress; before stocking use 5 kg/2,000 m³ of water, applied 30 minutes before stocking.
-- [BETA 1.3](/san-pham/beta-13-16-glucan): strengthens resistance and boosts the immunity of shrimp; mix 5–10 g/kg of feed.
+- [VITA C (pond application)](/san-pham/vita-c-tat): vitamin C for pond application to help prevent shock and reduce stress; when the weather changes use 5 kg/3,000 m³ of water, when shrimp are stressed use 5 kg/2,000 m³ of water.
+- [BETA 1.3](/san-pham/beta-13-16-glucan): helps activate the natural immune system of shrimp; mix 3–5 g/kg of feed, 3 times a day.
 
 Use the [dose calculator](/tinh-lieu) to convert label doses to your pond volume.
 

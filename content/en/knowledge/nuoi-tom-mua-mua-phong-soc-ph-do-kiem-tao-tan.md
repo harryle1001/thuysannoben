@@ -100,7 +100,7 @@ Ca Mau reports that when salinity falls below 10 ppt, green algae grow readily a
 The following products provide support strictly within the uses stated on their labels; use them at label doses:
 
 - [VITA C (pond application)](/san-pham/vita-c-tat): vitamin C applied directly to the pond to help prevent shock and reduce stress when the weather changes; 5 kg/3,000 m³ of water.
-- [DOWN MAX](/san-pham/down-max-ha-phen): reduces acidity and neutralises alum toxicity, removes alum from the bottom and water and alum adhering to shrimp legs and gills; during the culture cycle use 500 g/2,000 m³ of water.
+- [DOWN MAX](/san-pham/down-max-ha-phen): according to its registered standard, a mineral supplement for the pond environment that helps shrimp moult on schedule with a thick, hard shell; routine dose 5 kg/5,000 m³ of water.
 - [SUPER OXY 02](/san-pham/super-oxy-02): supplies oxygen quickly, for emergency use when shrimp surface due to lack of oxygen.
 - [AQUA YUCCA](/san-pham/aqua-yucca): rapidly absorbs toxic gases, for emergency use when shrimp surface.
 - [PREMIX MINERAL](/san-pham/premix-khoang-khoang-kich-lot): supplies minerals for shell formation and moulting; supports shrimp with uneven moulting or prolonged soft shell.

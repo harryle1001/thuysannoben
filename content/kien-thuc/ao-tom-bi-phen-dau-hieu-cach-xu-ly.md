@@ -44,12 +44,12 @@ Nhiều vùng nuôi tôm ở Đồng bằng sông Cửu Long và ven biển nằ
 ### 2. Nâng pH và độ kiềm
 
 - Bón vôi CaCO₃ hoặc dolomite xuống ao và rải trên bờ, đặc biệt trước và sau mưa. Không dùng vôi sống liều cao khi ao đang có tôm vì dễ làm pH tăng đột ngột.
-- Bổ sung khoáng tăng kiềm như [MIX 79](/san-pham/mix-79) hoặc [MIRAL N8](/san-pham/miral-n8): **5 kg cho 1.500 m³ nước**, dùng liên tục 2 ngày khi cần tăng kiềm, tạt vào chiều tối.
+- Bổ sung khoáng như [MIX 79](/san-pham/mix-79) hoặc [MIRAL N8](/san-pham/miral-n8): định kỳ **5 kg cho 5.000 m³ nước** (trước khi thả giống 5 kg cho 3.000 m³), hòa với nước sạch rồi tạt đều xuống ao.
 
 ### 3. Hạ phèn, giải độc phèn
 
-- [DOWN MAX](/san-pham/down-max-ha-phen): hạ phèn, giải độc phèn, tẩy phèn dính chân và mang tôm. Trong quá trình nuôi dùng **500 g cho 2.000 m³ nước**, định kỳ 3 ngày/lần; trước thả giống 2 đến 3 ngày dùng 500 g cho 1.000 m³.
-- [MARIMIX](/san-pham/marimix): chuyên xử lý phèn nhôm, phèn sắt. Khi phèn cao dùng **1 kg cho 2.000 m³ nước**, xử lý 2 ngày liên tục; định kỳ dùng 1 kg cho 5.000 m³, 3 đến 5 ngày/lần.
+- [DOWN MAX](/san-pham/down-max-ha-phen): theo hồ sơ công bố là khoáng bổ sung vào môi trường ao nuôi, giúp tôm lột xác đúng chu kỳ, vỏ cứng dày. Định kỳ dùng **5 kg cho 5.000 m³ nước**; trước thả giống dùng 5 kg cho 3.000 m³.
+- [MARIMIX](/san-pham/marimix): theo hồ sơ công bố là khoáng bổ sung vào môi trường ao nuôi, giúp tôm lột xác đúng chu kỳ, vỏ cứng dày. Định kỳ dùng **5 kg cho 5.000 m³ nước**; trước thả giống dùng 5 kg cho 3.000 m³.
 - Khi nghi có kim loại nặng, thuốc trừ sâu tồn dư từ nguồn nước: dùng chất giải độc như [EDTA 99](/san-pham/edta-99) 0,6 đến 1 kg cho 1.000 m³ nước (khử kim loại nặng, theo nhãn) hoặc [NO TOXIN](/san-pham/no-toxin) theo nhãn, tạt sáng sớm hoặc chiều mát.
 
 Hòa sản phẩm với nước ao, tạt đều khắp ao và mở quạt để thuốc phân tán.
@@ -82,4 +82,4 @@ Không nên dùng vôi sống liều cao khi ao có tôm vì làm pH tăng vọt
 
 ### Bao lâu nên xử lý phèn một lần?
 
-Ở vùng đất phèn nên dùng liều phòng định kỳ theo nhãn (ví dụ DOWN MAX 3 ngày/lần), và xử lý tăng cường sau mỗi trận mưa lớn.
+Ở vùng đất phèn nên dùng liều phòng định kỳ theo nhãn (ví dụ DOWN MAX 5 kg cho 5.000 m³ nước), và xử lý tăng cường sau mỗi trận mưa lớn.

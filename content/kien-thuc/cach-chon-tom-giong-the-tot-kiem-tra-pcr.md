@@ -109,8 +109,8 @@ Hỗ trợ khâu chuẩn bị ao và thả giống, dùng theo nhãn:
 
 - [SUPER VIDAL](/san-pham/super-vidal): hỗ trợ ổn định mật độ tảo, ổn định pH khi gây màu nước trước thả; ổn định tảo dùng 50 g/3.000 m³ nước, tạt lúc nắng 9 đến 10 giờ, không dùng khi mưa.
 - [IODINE 99](/san-pham/iodine-99): sát trùng nguồn nước, giảm vi khuẩn, nấm, nguyên sinh động vật gây hại; chuẩn bị ao dùng 1 lít/3.000 m³ nước, tạt lúc chiều mát; sau 2 đến 3 ngày mới gây màu, cấy vi sinh.
-- [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao giúp chống sốc, giảm stress; trước khi thả tôm dùng 5 kg/2.000 m³ nước, tạt trước khi thả 30 phút.
-- [BETA 1.3](/san-pham/beta-13-16-glucan): tăng sức đề kháng, tăng khả năng miễn dịch cho tôm; trộn 5 đến 10 g/kg thức ăn.
+- [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao giúp chống sốc, giảm stress; khi thời tiết thay đổi dùng 5 kg/3.000 m³ nước, khi tôm bị stress dùng 5 kg/2.000 m³ nước.
+- [BETA 1.3](/san-pham/beta-13-16-glucan): hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm; trộn 3 đến 5 g/kg thức ăn, 3 lần/ngày.
 
 Dùng [công cụ tính liều](/tinh-lieu) để quy đổi liều trên nhãn theo thể tích ao.
 

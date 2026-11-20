@@ -52,7 +52,7 @@ Dùng [TOXIC ALGAE](/san-pham/toxic-algae), chuyên xử lý nhớt nước, xá
 
 ### Bước 3: Hấp thụ khí độc
 
-Nước nhiều hữu cơ thường kéo theo NH₃, NO₂ tăng. Dùng yucca như [AQUA YUCCA](/san-pham/aqua-yucca) 500 g cho 3.000 m³ hoặc [SUPER YUCCA](/san-pham/super-yucca) 1 lít cho 3.000 m³ nước khi khí độc cao, tạt sáng sớm hoặc chiều mát.
+Nước nhiều hữu cơ thường kéo theo NH₃, NO₂ tăng. Dùng yucca như [AQUA YUCCA](/san-pham/aqua-yucca) 3 đến 4 kg cho 1.000 m³ hoặc [SUPER YUCCA](/san-pham/super-yucca) 1 lít cho 3.000 đến 4.000 m³ nước khi khí độc cao, tạt sáng sớm hoặc chiều mát.
 
 ### Bước 4: Cấy vi sinh phân hủy hữu cơ, tẩy nhớt
 

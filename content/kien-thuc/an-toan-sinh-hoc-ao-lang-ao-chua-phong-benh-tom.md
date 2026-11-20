@@ -71,7 +71,7 @@ Taw (2010) nhấn mạnh **không chờ kết quả PCR mới cách ly**. Kết 
 ### Sản phẩm Noben hỗ trợ xử lý nước cấp
 
 - [IODINE 99](/san-pham/iodine-99): sát trùng nguồn nước, giúp giảm vi khuẩn, nấm, nguyên sinh động vật gây hại.
-- [AQUA SQUICK](/san-pham/aqua-squick): sát trùng nguồn nước ao nuôi tôm, khử mùi hôi đáy ao, hỗ trợ quản lý tảo.
+- [AQUA SQUICK](/san-pham/aqua-squick): sát trùng nguồn nước, giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước.
 - [EDTA 99](/san-pham/edta-99): khử kim loại nặng, thuốc trừ sâu, hóa chất tồn dư, giúp làm sạch nguồn nước.
 
 Liều dùng theo nhãn hoặc tính theo thể tích ao bằng [công cụ tính liều](/tinh-lieu). Cần tư vấn thiết kế quy trình xử lý nước cho trại mình, bà con gọi/Zalo 0934 246 420 để kỹ thuật viên Noben hỗ trợ. Xem thêm trang giải pháp [sát trùng, diệt ốc, ký sinh](/giai-phap/sat-trung-diet-oc-ky-sinh).

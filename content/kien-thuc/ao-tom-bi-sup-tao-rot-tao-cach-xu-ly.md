@@ -44,7 +44,7 @@ updated: 2026-11-16
 
 ### Bước 3: Hấp thụ khí độc
 
-Xác tảo phân hủy làm NH₃, NO₂ tăng sau 1 đến 2 ngày. Dùng yucca như [AQUA YUCCA](/san-pham/aqua-yucca) 500 g cho 3.000 m³ nước khi khí độc cao, dùng liên tục 2 đến 3 lần. Xem thêm [xử lý khí độc trong ao tôm](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom).
+Xác tảo phân hủy làm NH₃, NO₂ tăng sau 1 đến 2 ngày. Dùng yucca như [AQUA YUCCA](/san-pham/aqua-yucca) 3 đến 4 kg cho 1.000 m³ nước khi tôm nổi đầu do khí độc (định kỳ 1 đến 2 kg cho 1.000 m³, 7 đến 10 ngày/lần). Xem thêm [xử lý khí độc trong ao tôm](/bai-viet/xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom).
 
 ### Bước 4: Chống sốc cho tôm
 

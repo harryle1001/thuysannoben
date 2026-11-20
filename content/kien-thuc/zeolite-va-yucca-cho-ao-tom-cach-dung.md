@@ -38,9 +38,9 @@ Yucca là chiết xuất từ cây Yucca schidigera, chứa saponin và các h�
 
 ## Liều dùng theo nhãn sản phẩm Noben
 
-- [GRAND ZEOLITE hạt](/san-pham/grand-zeolite-zeo-hat-nhap-khau): định kỳ **20 kg cho 2.000 m² mặt nước**, 5 ngày/lần; khi khí độc cao, cấp cứu nổi đầu dùng 20 kg cho 1.000 m², 2 ngày liên tục. Rải khắp ao, tập trung nơi có nhiều chất thải.
-- [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) (kết hợp yucca và zeolite): định kỳ 10 kg cho 5.000 m³ nước, 7 ngày/lần; khi khí độc cao dùng 10 kg cho 3.000 m³.
-- [AQUA YUCCA](/san-pham/aqua-yucca) (bột): định kỳ 500 g cho 5.000 m³, 7 ngày/lần; khí độc cao 500 g cho 3.000 m³, dùng 2 đến 3 lần.
+- [GRAND ZEOLITE hạt](/san-pham/grand-zeolite-zeo-hat-nhap-khau): trước khi thả giống **10 kg cho 1.000 m³ nước**; định kỳ 10 kg cho 2.000 m³ nước. Hòa với nước sạch rồi tạt đều xuống ao.
+- [YUCCA VS ZEO](/san-pham/yucca-vs-zeo) (kết hợp yucca và zeolite): định kỳ 1 đến 2 kg cho 1.000 m³ nước, 7 đến 10 ngày/lần; khi tôm nổi đầu do khí độc dùng 3 đến 4 kg cho 1.000 m³. Rải đều khắp mặt ao, không dùng chung với hóa chất khác.
+- [AQUA YUCCA](/san-pham/aqua-yucca) (bột): định kỳ 1 đến 2 kg cho 1.000 m³ nước, 7 đến 10 ngày/lần; khi tôm nổi đầu do khí độc 3 đến 4 kg cho 1.000 m³.
 - [SUPER YUCCA](/san-pham/super-yucca) (dạng nước): pha loãng với 20 lít nước rồi tạt; định kỳ 1 lít cho 4.000 đến 6.000 m³, 7 ngày/lần; khí độc cao 1 lít cho 3.000 đến 4.000 m³.
 
 Tạt yucca vào sáng sớm hoặc chiều mát và mở quạt để sản phẩm phân tán đều.
@@ -68,4 +68,4 @@ Yucca ở liều theo nhãn không làm giảm oxy đáng kể. Vẫn nên mở 
 
 ### Bao lâu dùng zeolite một lần?
 
-Theo nhãn GRAND ZEOLITE, định kỳ 5 ngày/lần; ao đáy sạch, ít chất thải có thể giãn ra lâu hơn.
+Hồ sơ công bố của GRAND ZEOLITE ghi liều định kỳ 10 kg cho 2.000 m³ nước và không ấn định số ngày giữa hai lần; ao đáy sạch, ít chất thải có thể giãn ra lâu hơn.

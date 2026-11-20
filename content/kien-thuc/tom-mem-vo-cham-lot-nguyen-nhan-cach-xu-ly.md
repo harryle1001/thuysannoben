@@ -56,7 +56,7 @@ Trộn khoáng hữu cơ dạng nước như [CAPHOTE](/san-pham/caphote) hoặc
 
 Theo hướng dẫn trên nhãn sản phẩm Noben:
 
-- Tạt [MIX 79](/san-pham/mix-79) 3 kg cho 2.000 m³ nước, liên tục 2 ngày.
+- Tạt [MIX 79](/san-pham/mix-79) 5 kg cho 5.000 m³ nước theo liều định kỳ.
 - Trộn [CAPHOTE](/san-pham/caphote) hoặc [ROCAPHOS](/san-pham/rocaphos) liều gấp đôi theo nhãn (6 đến 10 ml/kg thức ăn, 3 lần/ngày) để phòng cong thân, đục cơ và giúp tôm cứng vỏ nhanh; khi tôm ổn định thì về liều thường 3 đến 5 ml/kg.
 - Song song, cấy vi sinh xử lý đáy, giảm khí độc và tăng oxy tầng đáy để tôm lột trong môi trường sạch.
 

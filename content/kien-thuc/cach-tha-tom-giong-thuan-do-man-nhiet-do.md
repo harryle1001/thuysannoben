@@ -110,9 +110,9 @@ Theo hướng dẫn của Cục Thủy sản và Kiểm ngư (2026), hoại tử
 
 Hỗ trợ giảm sốc, giữ oxy khi thả giống, dùng theo nhãn:
 
-- [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao giúp chống sốc, giảm stress; trước khi thả tôm dùng 5 kg/2.000 m³ nước, tạt trước khi thả 30 phút.
+- [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt xuống ao giúp chống sốc, giảm stress; khi thời tiết thay đổi dùng 5 kg/3.000 m³ nước, khi tôm bị stress dùng 5 kg/2.000 m³ nước.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy; dùng 2 đến 3 kg/1.000 m³ nước, rải đều trên mặt ao, kết hợp mở quạt.
-- [NB C SORMIN](/san-pham/nb-c-sormin): bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress khi môi trường thay đổi; trộn 5 đến 10 g/kg thức ăn.
+- [NB C SORMIN](/san-pham/nb-c-sormin): bổ sung vitamin, khoáng, hỗ trợ chống sốc, giảm stress khi môi trường thay đổi; tạt 5 kg/3.000 m³ nước khi thời tiết thay đổi, 5 kg/2.000 m³ khi tôm bị stress.
 - [AQUA C30%](/san-pham/aqua-c30): bổ sung vitamin C vào thức ăn; trộn 3 đến 5 g/kg thức ăn, khi môi trường thay đổi, thời tiết giao mùa trộn 10 g/kg thức ăn trong 2 đến 3 ngày.
 
 Dùng [công cụ tính liều](/tinh-lieu) để quy đổi liều trên nhãn theo thể tích ao.

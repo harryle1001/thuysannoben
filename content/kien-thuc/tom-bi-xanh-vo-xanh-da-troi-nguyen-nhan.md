@@ -52,7 +52,7 @@ Gây và duy trì màu nước, độ trong 30 đến 40 cm. Ao mất màu có t
 
 ### 3. Bổ sung khoáng tạt, ổn định kiềm
 
-Tạt khoáng tăng kiềm, cứng vỏ như [MIX 79](/san-pham/mix-79) 5 kg cho 3.000 m³ nước, 2 ngày/lần vào chiều tối. Xem [cách đánh khoáng cho tôm](/bai-viet/cach-danh-khoang-cho-tom-dung-thoi-diem-lieu-luong).
+Tạt khoáng tăng kiềm, cứng vỏ như [MIX 79](/san-pham/mix-79) 5 kg cho 5.000 m³ nước theo liều định kỳ. Xem [cách đánh khoáng cho tôm](/bai-viet/cach-danh-khoang-cho-tom-dung-thoi-diem-lieu-luong).
 
 ### 4. Chuẩn bị trước thu hoạch
 

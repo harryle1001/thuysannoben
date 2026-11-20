@@ -32,12 +32,12 @@ Tôm không tự tổng hợp được vitamin C, trong khi nhu cầu tăng mạ
 ### Vitamin C trộn thức ăn (dùng hằng ngày)
 
 - [AQUA C30%](/san-pham/aqua-c30) hoặc [CMAX 25%](/san-pham/cmax-25): trộn **3 đến 5 g/kg thức ăn**, 3 lần/ngày suốt vụ; khi môi trường, thời tiết thay đổi trộn **10 g/kg**, 2 đến 3 lần/ngày, liên tục 2 đến 3 ngày. Có thể tạt xuống ao 1 kg cho 1.000 m³ nước để giảm stress, khi sang tôm.
-- [NB C SORMIN](/san-pham/nb-c-sormin) (vitamin + khoáng chống sốc): trộn 5 đến 10 g/kg thức ăn, 2 đến 3 lần/ngày; khi có dấu hiệu dịch bệnh hoặc thời tiết thay đổi đột ngột trộn **20 g/kg**; có thể tạt 1 kg cho 1.000 m³ nước.
 
 ### Vitamin C tạt xuống ao (cấp cứu, tác dụng nhanh)
 
-- [VITA C TẠT](/san-pham/vita-c-tat): tạt **5 kg cho 3.000 m³ nước** ngay sau khi tôm bị stress, thời tiết thay đổi; trước khi thả tôm dùng 5 kg cho 2.000 m³, tạt trước khi thả 30 phút.
-- [KIA C TẠT](/san-pham/kia-c-tat): tạt 5 kg cho 3.000 m³ nước khi tôm stress.
+- [VITA C TẠT](/san-pham/vita-c-tat): tạt **5 kg cho 3.000 m³ nước** khi thời tiết thay đổi; khi tôm bị stress dùng 5 kg cho 2.000 m³.
+- [KIA C TẠT](/san-pham/kia-c-tat): tạt 5 kg cho 3.000 m³ nước khi thời tiết thay đổi; khi tôm bị stress dùng 5 kg cho 2.000 m³.
+- [NB C SORMIN](/san-pham/nb-c-sormin) (vitamin + khoáng chống sốc): tạt 5 kg cho 3.000 m³ nước khi thời tiết thay đổi; khi tôm bị stress dùng 5 kg cho 2.000 m³.
 
 Tạt vào sáng sớm hoặc chiều mát. Ao nuôi dày nên **kết hợp cả hai**: trộn hằng ngày để duy trì, tạt khi có biến động.
 

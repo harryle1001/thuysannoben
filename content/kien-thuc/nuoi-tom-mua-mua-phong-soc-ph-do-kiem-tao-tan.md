@@ -100,7 +100,7 @@ Cà Mau ghi nhận khi độ mặn xuống dưới 10‰, tảo lục dễ phát
 Các sản phẩm sau hỗ trợ đúng công dụng ghi trên nhãn, liều dùng theo nhãn:
 
 - [VITA C TẠT](/san-pham/vita-c-tat): vitamin C tạt trực tiếp xuống ao, giúp chống sốc, giảm stress khi thời tiết thay đổi; 5 kg/3.000 m³ nước.
-- [DOWN MAX](/san-pham/down-max-ha-phen): hạ phèn, giải độc phèn, tẩy phèn đáy, phèn nước, phèn dính chân và mang tôm; trong quá trình nuôi dùng 500 g/2.000 m³ nước.
+- [DOWN MAX](/san-pham/down-max-ha-phen): theo hồ sơ công bố là khoáng bổ sung vào môi trường ao nuôi, giúp tôm lột xác đúng chu kỳ, vỏ cứng dày; định kỳ dùng 5 kg/5.000 m³ nước.
 - [SUPER OXY 02](/san-pham/super-oxy-02): cung cấp oxy nhanh, cấp cứu khi tôm nổi đầu do thiếu oxy.
 - [AQUA YUCCA](/san-pham/aqua-yucca): hấp thụ nhanh khí độc, cấp cứu khi tôm nổi đầu.
 - [PREMIX KHOÁNG](/san-pham/premix-khoang-khoang-kich-lot): bổ sung khoáng cho quá trình tạo vỏ, lột vỏ; hỗ trợ khi tôm lột vỏ không đều, mềm vỏ kéo dài.
