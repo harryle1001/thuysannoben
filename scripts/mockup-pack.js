@@ -20,6 +20,9 @@ const engine = require(path.join(ROOT, 'public', 'js', 'label-engine.js'));
 const labels = JSON.parse(fs.readFileSync(path.join(ROOT, 'brand', 'labels.json'), 'utf8')).san_pham;
 const only = (opt('--chi', '') || '').split(',').filter(Boolean);
 const list = only.length ? labels.filter((l) => only.includes(l.slug)) : labels;
+// Dán ảnh nhãn có sẵn (vd nhãn cũ vẽ lại): --anh file.png --kho chai --mm 240x135 [--ten g7]
+const ANH = opt('--anh', '');
+if (ANH) { const [mw, mh] = opt('--mm', '240x135').split('x').map(Number); list.length = 0; list.push({ slug: opt('--ten', path.basename(ANH, '.png')), bao_bi: opt('--kho', 'chai'), anh: path.resolve(ANH), mw, mh }); }
 
 // Cảnh 3D, chạy trong trình duyệt. Đơn vị: cm.
 function scene() {
@@ -166,15 +169,17 @@ function scene() {
   for (const l of list) {
     const t0 = Date.now();
     // 1) Nhãn → PNG độ phân giải cao bằng phông thật
+    let png, lw, lh;
+    if (l.anh) { png = fs.readFileSync(l.anh); lw = l.mw; lh = l.mh; } else {
     let svg = fs.readFileSync(path.join(ROOT, 'brand', 'nhan', `${l.slug}.svg`), 'utf8').replace(/^<\?xml[^>]*>\s*/, '');
     svg = engine.trimView(svg);
     const m = /width="([\d.]+)mm" height="([\d.]+)mm"/.exec(svg);
-    const lw = +m[1], lh = +m[2], px = Math.round(lh * 16); // ≈ 400 dpi
+    lw = +m[1]; lh = +m[2]; const px = Math.round(lh * 16); // ≈ 400 dpi
     const lp = await browser.newPage({ viewport: { width: Math.round(px * lw / lh), height: px } });
     await lp.setContent(`<!doctype html><meta charset="utf-8"><style>${css}\nhtml,body{margin:0}svg{display:block;width:100vw;height:100vh}</style>${svg}`);
     await lp.evaluate(() => document.fonts.ready);
-    const png = await lp.screenshot({ type: 'png' });
-    await lp.close();
+    png = await lp.screenshot({ type: 'png' });
+    await lp.close(); }
     // 2) Dựng cảnh và chụp
     const kind = /^chai/.test(l.bao_bi) ? 'chai' : l.bao_bi === 'xo' ? 'xo' : 'tui';
     const page = await browser.newPage({ viewport: { width: 800, height: 600 } });
