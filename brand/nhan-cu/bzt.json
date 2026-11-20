@@ -29,15 +29,15 @@
         },
         {
           "kieu": "html",
-          "chu": "<span style=\"display:flex\"><span><i>Bacillus lichenifomis</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus licheniformis</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
         },
         {
           "kieu": "html",
-          "chu": "<span style=\"display:flex\"><span><i>Bacillus megateri</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus megaterium</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
         },
         {
           "kieu": "html",
-          "chu": "<span style=\"display:flex\"><span><i>Bacillus mensentericus</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
+          "chu": "<span style=\"display:flex\"><span><i>Bacillus mesentericus</i></span><span style=\"flex:1;border-bottom:1.2px dotted currentColor;margin:0 3px .32em\"></span><span>Định danh (+)</span></span>"
         },
         {
           "kieu": "html",
