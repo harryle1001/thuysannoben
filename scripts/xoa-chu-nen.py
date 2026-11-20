@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Xóa chữ cũ trên ảnh nhãn gốc trước khi đặt chữ vector: lấp điểm chữ bằng màu nền xung quanh (khuếch tán).
-   python3 xoa-chu-nen.py vao.jpg ra.png '[{"vung":[x,y,w,h],"chu":"sang"|"toi"}]'
+   python3 xoa-chu-nen.py vao.jpg ra.png '[{"vung":[x,y,w,h],"chu":"sang"|"toi","mau":"#rrggbb","nguong":90,"nen":"trang","le":6}]'
+   chu: sang = chữ sáng trên nền tối, toi = chữ tối trên nền sáng; mau: chữ màu cụ thể (khoảng cách màu < nguong);
+   nen=trang: tô trắng (vùng chữ trên nền trắng); le: số px nới ra quanh vùng để lấy màu nền.
 """
 import json
 import sys
@@ -18,7 +20,10 @@ for r in regions:
     lum = band.mean(axis=2)
     inner = np.zeros(lum.shape, bool)
     inner[pad:pad + h, pad:pad + w] = True
-    if r.get('chu') == 'toi':
+    if r.get('mau'):
+        hx = r['mau'].lstrip('#'); tc = np.array([int(hx[i:i + 2], 16) for i in (0, 2, 4)], np.float32)
+        mask = (np.sqrt(((band - tc) ** 2).sum(axis=2)) < r.get('nguong', 90)) & inner
+    elif r.get('chu') == 'toi':
         mask = (lum < 150) & inner
     else:
         sat = band.max(axis=2) - band.min(axis=2)

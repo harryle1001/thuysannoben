@@ -15,7 +15,7 @@ import sys
 import numpy as np
 from PIL import Image
 
-SC, SS = 4, 2  # phóng ×4, lấy mẫu dư ×2
+SC, SS = (int(sys.argv[5]) if len(sys.argv) > 5 else 4), 2  # phóng ×SC, lấy mẫu dư ×2
 
 
 def hexrgb(h):
