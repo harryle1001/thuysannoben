@@ -19,7 +19,8 @@ const PHI = 1.61803;
 // LABEL_H: chiều cao nhãn (mm). 100 cho chai 1 lít. Chai 500 ml: LABEL_H=80, mặt trước 49,4 × 80 (đúng φ : 1),
 // hai mặt bên giữ rộng 50 mm như nhãn 1 lít để chữ hướng dẫn không nhỏ quá: khổ 149,4 × 80 mm.
 const H = +process.env.LABEL_H || 100, BLEED = 3, MARK = 6;
-const FRONT = +(H * 0.618).toFixed(1), SIDE = +process.env.SIDE_W || 50, W = +(FRONT + 2 * SIDE).toFixed(1); // 61,8 mm = 38,2% tổng
+// FRONT_W: bề ngang mặt trước (mm) khi dựng cho túi có khổ thật (tui.js tự đặt); mặc định theo tỷ lệ vàng 0,618 × cao
+const FRONT = +process.env.FRONT_W || +(H * 0.618).toFixed(1), SIDE = +process.env.SIDE_W || 50, W = +(FRONT + 2 * SIDE).toFixed(1); // 61,8 mm = 38,2% tổng
 const MIN_BODY = 1.6; // mm ≈ 4,5 pt
 
 // Thang chữ φ (mm), gốc 2,1 mm ≈ 6 pt.

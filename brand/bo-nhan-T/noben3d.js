@@ -54,7 +54,7 @@ function scene() {
   const capMat = new THREE.MeshPhysicalMaterial({ color: 0xfbfbfa, roughness: 0.4, clearcoat: 0.25, clearcoatRoughness: 0.4, envMapIntensity: 0.9 });
   function bottle(img) {
     const g = new THREE.Group();
-    const R = 4.6, pts = [[0, 0], [3.7, 0], [4.2, 0.1], [4.5, 0.38], [R, 0.9], [R, 15.4]];
+    const R = 4.3, pts = [[0, 0], [R - 0.9, 0], [R - 0.4, 0.1], [R - 0.1, 0.38], [R, 0.9], [R, 15.4]]; // chai 1 lít BVT2: Ø86 × cao 238 mm
     for (let i = 1; i <= 18; i++) { const t = (i / 18) * Math.PI / 2; pts.push([2.2 + (R - 2.2) * Math.cos(t), 15.4 + 4.3 * Math.sin(t)]); }
     pts.push([2.2, 20.1], [2.52, 20.2], [2.52, 20.5], [2.12, 20.6], [2.12, 22.4]);
     const body = new THREE.Mesh(new THREE.LatheGeometry(pts.map(([x, y]) => new THREE.Vector2(x, y)), 192), hdpe);

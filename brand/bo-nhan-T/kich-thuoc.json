@@ -1,0 +1,6 @@
+{
+ "_ghi_chu": "Kích thước bao bì thật (mm), theo file Kich-thuoc-bao-bi T5.2023 của công ty, đã xác nhận 21/11/2026. Túi: [ngang, cao]. Chai: [đường kính, cao].",
+ "tui": { "227 g": [170, 220], "250 g": [170, 220], "500 g": [180, 260], "3 kg": [310, 390], "5 kg": [310, 390] },
+ "tui_mac_dinh": [180, 260],
+ "chai": { "chai1l": [86, 238], "chai500": [79, 165] }
+}

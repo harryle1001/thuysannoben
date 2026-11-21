@@ -99,8 +99,8 @@
    "Giúp ổn định mật độ tảo, ổn định pH ao nuôi."
   ],
   "kieu": "tui",
-  "w": 12.36,
-  "h": 22.49
+  "w": 17.0,
+  "h": 22.0
  },
  {
   "slug": "edta-99",
@@ -118,8 +118,8 @@
    "Giúp làm sạch nguồn nước ao nuôi."
   ],
   "kieu": "tui",
-  "w": 26,
-  "h": 47.31
+  "w": 31.0,
+  "h": 39.0
  },
  {
   "slug": "bacpower",
@@ -139,8 +139,8 @@
    "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
   ],
   "kieu": "tui",
-  "w": 12.36,
-  "h": 22.49
+  "w": 17.0,
+  "h": 22.0
  },
  {
   "slug": "prawnzyme",
@@ -160,8 +160,8 @@
    "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
   ],
   "kieu": "tui",
-  "w": 12.36,
-  "h": 22.49
+  "w": 17.0,
+  "h": 22.0
  },
  {
   "slug": "super-yucca",
@@ -200,8 +200,8 @@
    "Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc."
   ],
   "kieu": "tui",
-  "w": 30,
-  "h": 54.59
+  "w": 31.0,
+  "h": 39.0
  },
  {
   "slug": "kia-c-tat",
@@ -219,8 +219,8 @@
    "Hỗ trợ giảm stress, giảm sốc, khi môi trường thay đổi"
   ],
   "kieu": "tui",
-  "w": 30,
-  "h": 54.59
+  "w": 31.0,
+  "h": 39.0
  },
  {
   "slug": "pro-aq",
@@ -239,8 +239,8 @@
    "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
   ],
   "kieu": "tui",
-  "w": 15,
-  "h": 27.29
+  "w": 18.0,
+  "h": 26.0
  },
  {
   "slug": "prozym",
@@ -259,8 +259,8 @@
    "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
   ],
   "kieu": "tui",
-  "w": 15,
-  "h": 27.29
+  "w": 18.0,
+  "h": 26.0
  },
  {
   "slug": "aqua-biotic",

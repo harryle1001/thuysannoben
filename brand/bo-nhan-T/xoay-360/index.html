@@ -108,22 +108,23 @@ dt{color:var(--dim)}dd{margin:0;font-weight:500;font-variant-numeric:tabular-num
 
   // ---- chai HDPE: 1 lít (Ø92 mm) hoặc 500 ml (Ø72 mm); nhãn quấn đúng khổ in
   function bottle(t, k) {
-    var g = new T.Group(), s = k === 'chai500' ? 0.79 : 1, R = 4.6 * s;
+    // chai 1 lít BVT2: Ø86 × 238 mm; chai 500 ml 3 sọc: Ø79 × 165 mm (kich-thuoc.json)
+    var g = new T.Group(), s5 = k === 'chai500', sr = s5 ? 3.95 / 4.3 : 1, s = s5 ? 16.5 / 23.78 : 1, R0 = 4.3, R = R0 * sr;
     var hdpe = new T.MeshPhysicalMaterial({ color: 0xf1f1ee, roughness: 0.5, clearcoat: 0.14, clearcoatRoughness: 0.55, sheen: 0.2, sheenRoughness: 0.8, envMapIntensity: 0.9 });
     var capM = new T.MeshPhysicalMaterial({ color: 0xfbfbfa, roughness: 0.4, clearcoat: 0.25, clearcoatRoughness: 0.4, envMapIntensity: 0.9 });
-    var pts = [[0, 0], [3.7, 0], [4.2, 0.1], [4.5, 0.38], [4.6, 0.9], [4.6, 15.4]];
-    for (var i = 1; i <= 18; i++) { var a = i / 18 * Math.PI / 2; pts.push([2.2 + 2.4 * Math.cos(a), 15.4 + 4.3 * Math.sin(a)]); }
+    var pts = [[0, 0], [R0 - 0.9, 0], [R0 - 0.4, 0.1], [R0 - 0.1, 0.38], [R0, 0.9], [R0, 15.4]];
+    for (var i = 1; i <= 18; i++) { var a = i / 18 * Math.PI / 2; pts.push([2.2 + (R0 - 2.2) * Math.cos(a), 15.4 + 4.3 * Math.sin(a)]); }
     pts.push([2.2, 20.1], [2.52, 20.2], [2.52, 20.5], [2.12, 20.6], [2.12, 22.4]);
-    var V = function (p) { return p.map(function (q) { return new T.Vector2(q[0] * s, q[1] * s); }); };
+    var V = function (p) { return p.map(function (q) { return new T.Vector2(q[0] * sr, q[1] * s); }); };
     g.add(new T.Mesh(new T.LatheGeometry(V(pts), 160), hdpe));
     var ring = new T.Mesh(new T.LatheGeometry(V([[2.12, 0], [2.5, 0.03], [2.52, 0.34], [2.44, 0.4], [2.12, 0.4]]), 100), capM); ring.position.y = 20.68 * s; g.add(ring);
     var cap = new T.Mesh(new T.LatheGeometry(V([[0, 2.62], [2.05, 2.62], [2.26, 2.56], [2.38, 2.42], [2.42, 2.22], [2.42, 0.06], [2.36, 0], [2.12, 0]]), 100), capM); cap.position.y = 21.16 * s; g.add(cap);
-    var rib = new T.BoxGeometry(0.085 * s, 2.0 * s, 0.09 * s);
-    for (var j = 0; j < 72; j++) { var b2 = j / 72 * Math.PI * 2, m = new T.Mesh(rib, capM); m.position.set(Math.sin(b2) * 2.44 * s, (21.16 + 1.12) * s, Math.cos(b2) * 2.44 * s); m.rotation.y = b2; g.add(m); }
+    var rib = new T.BoxGeometry(0.085 * sr, 2.0 * s, 0.09 * sr);
+    for (var j = 0; j < 72; j++) { var b2 = j / 72 * Math.PI * 2, m = new T.Mesh(rib, capM); m.position.set(Math.sin(b2) * 2.44 * sr, (21.16 + 1.12) * s, Math.cos(b2) * 2.44 * sr); m.rotation.y = b2; g.add(m); }
     var lw = (k === 'chai500' ? 15.94 : 16.18), lh = (k === 'chai500' ? 8 : 10), len = lw / (R + 0.012);
     var lab = new T.Mesh(new T.CylinderGeometry(R + 0.012, R + 0.012, lh, 200, 1, true, -len / 2, len), new T.MeshPhysicalMaterial({ map: t, roughness: 0.6, clearcoat: 0.1, clearcoatRoughness: 0.5, envMapIntensity: 0.62 }));
     lab.position.y = 8.3 * s; g.add(lab);
-    return { g: g, h: 23.8 * s, w: 2 * R, d: 2 * R };
+    return { g: g, h: 23.78 * s, w: 2 * R, d: 2 * R };
   }
 
   // ---- túi gối chứa bột: phồng ở đáy, xẹp dần lên miệng, mép hàn phẳng có vân, eo túi thắt vào

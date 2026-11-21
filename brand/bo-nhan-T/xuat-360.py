@@ -14,18 +14,18 @@ def table(name):
 LOAI, MAU = table('LOAI'), table('MAU_LOAI')
 data = json.loads((D / 'nhan' / 'san-pham-son-ha.json').read_text(encoding='utf-8'))['san_pham']
 TEX = D / 'xoay-360' / 'tex'; TEX.mkdir(parents=True, exist_ok=True)
-TUI = {'227 g': 12.36, '250 g': 12.36, '500 g': 15, '3 kg': 26, '5 kg': 30}  # rộng túi (cm), cao = rộng × 1,8196 (giả định)
+KT = json.loads((D / 'kich-thuoc.json').read_text(encoding='utf-8'))  # khổ bao bì thật (mm)
 out = []
 for p in data:
     s = p['slug']; it = {k: p[k] for k in ('slug', 'ten', 'quy_cach', 'ma_so', 'tccs', 'the_tich')}
     it.update(loai=LOAI.get(p['loai'], ''), mau=MAU.get(p['loai'], '#0c2a63'), cach='Trộn ăn' if p['cach_dung'] == 'tron-an' else 'Tạt ao',
               hoat_chat=re.sub(r'\s*\(min\)', '', p['thanh_phan'][0]).replace(':', ''), cong_dung=p['cong_dung'])
     if p['dang'] == 'goi':
-        w = TUI.get(p['the_tich'], 15)
-        it.update(kieu='tui', w=w, h=round(w * 224.9 / 123.6, 2))
+        wm, hm = KT['tui'].get(p['the_tich'], KT['tui_mac_dinh'])
+        it.update(kieu='tui', w=wm / 10, h=hm / 10)
         for k in ('truoc', 'sau'):
             im = Image.open(D / 'out' / 'tui' / f'{s}-{k}.png').convert('RGB')
-            im.resize((1126, 2048), Image.LANCZOS).save(TEX / f'{s}-{k}.jpg', quality=86, optimize=True, progressive=True)
+            im.resize((round(2048 * im.width / im.height), 2048), Image.LANCZOS).save(TEX / f'{s}-{k}.jpg', quality=86, optimize=True, progressive=True)
     else:
         f500 = D / 'nhan' / 'out500' / f'{s}-concept-t.png'
         f = f500 if f500.exists() else D / 'nhan' / 'out' / f'{s}-concept-t.png'
