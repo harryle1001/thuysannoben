@@ -85,10 +85,10 @@
     } else {
       // túi / bao: hai mặt phồng, mép hàn; túi zip có đường zip, túi đứng có đáy phồng
       var cfg = {
-        tuibac: { w: 16, h: 25, d: 0.17, mat: mat(0xc8ccd2, { metalness: 0.88, roughness: 0.26, clearcoat: 0.3 }), zip: true, dan: { w: 12, h: 15.5, cy: 0.46 } },
-        tuivang: { w: 18, h: 26, d: 0.16, mat: mat(0xd9b23c, { metalness: 0.85, roughness: 0.3, clearcoat: 0.3 }), zip: true, in: { x: 0.04, y: 0.05, h: 0.8 } },
-        baodet: { w: 42, h: 62, d: 0.13, mat: mat(0xf1f1ec, { roughness: 0.85, clearcoat: 0, sheen: 0.4, sheenRoughness: 0.8 }), dan: { w: 28, h: 30, cy: 0.5 }, det: true },
-        baogiay: { w: 40, h: 62, d: 0.12, mat: mat(0xf2efe6, { roughness: 0.9, clearcoat: 0 }), in: { x: 0.02, y: 0.03, h: 0.93 } }
+        tuibac: { w: 16, h: 25, d: 0.32, mat: mat(0xc8ccd2, { metalness: 0.88, roughness: 0.26, clearcoat: 0.3 }), zip: true, dan: { w: 12, h: 15.5, cy: 0.46 } },
+        tuivang: { w: 18, h: 26, d: 0.3, mat: mat(0xd9b23c, { metalness: 0.85, roughness: 0.3, clearcoat: 0.3 }), zip: true, in: { x: 0.04, y: 0.05, h: 0.8 } },
+        baodet: { w: 42, h: 62, d: 0.26, mat: mat(0xf1f1ec, { roughness: 0.85, clearcoat: 0, sheen: 0.4, sheenRoughness: 0.8 }), dan: { w: 28, h: 30, cy: 0.5 }, det: true },
+        baogiay: { w: 40, h: 62, d: 0.25, mat: mat(0xf2efe6, { roughness: 0.9, clearcoat: 0 }), in: { x: 0.02, y: 0.03, h: 0.93 } }
       }[kieu] || null;
       if (!cfg) cfg = { w: 16, h: 25, d: 0.17, mat: white, dan: { w: 12, h: 15.5, cy: 0.46 } };
       var Wb = cfg.w, Hbg = cfg.h, D = Wb * cfg.d, topSeal = cfg.zip ? 0.9 : 0.94;
@@ -99,13 +99,30 @@
         var bt = new T.CanvasTexture(cv); bt.wrapS = bt.wrapT = T.RepeatWrapping; bt.repeat.set(Wb / 2, Hbg / 2);
         cfg.mat.bumpMap = bt; cfg.mat.bumpScale = 0.04;
       }
-      var bul = function (u, v) {
-        var a = Math.pow(Math.sin(Math.PI * u), 0.7);
-        var vt = v > topSeal ? 0 : v > topSeal - 0.08 ? (topSeal - v) / 0.08 : 1;
-        var vb = v < 0.05 ? 0.55 + v / 0.05 * 0.45 : 1; // đáy túi đứng vẫn phồng
-        var vv = Math.min(v / topSeal, 1); return a * Math.pow(Math.sin(Math.PI * (0.12 + 0.88 * vv)), 0.45) * vt * vb;
+      // Túi đựng bột: bột dồn xuống nên phồng nhất ở 1/3 dưới, thót dần lên mép hàn; hai bên mép co vào;
+      // nếp nhăn chéo từ góc trên và gợn nhỏ dọc mép như túi thật.
+      var prof = function (v) { // độ phồng theo chiều cao
+        if (v >= topSeal) return 0;
+        var t = v / topSeal;
+        var up = 1 - Math.pow(Math.max(0, (t - 0.38) / 0.62), 1.6); // giảm dần lên trên
+        var dn = 0.72 + 0.28 * Math.sin(Math.min(t / 0.38, 1) * Math.PI / 2); // đáy đứng vẫn dày
+        var cap = t > 0.9 ? (1 - t) / 0.1 : 1;
+        return Math.max(0, up * dn * cap);
       };
-      var P = function (u, v, sg, off) { var b = bul(u, v); return [(u - 0.5) * Wb * (1 - 0.06 * b), v * Hbg, sg * (D * b + off) + Math.sin(u * 23 + v * 17) * 0.04 * b]; };
+      var bul = function (u, v) { return Math.pow(Math.sin(Math.PI * u), 0.5) * prof(v); };
+      var P = function (u, v, sg, off) {
+        var f = prof(v), b = bul(u, v), t = v / topSeal;
+        var x = (u - 0.5) * Wb * (1 - 0.17 * f * (0.45 + 0.55 * Math.sin(Math.PI * u)));
+        var nep = 0;
+        if (t > 0.5 && t < 1) { // nếp chéo từ hai góc trên
+          var g = Math.sin(Math.PI * (t - 0.5) / 0.5);
+          nep += 0.16 * g * Math.sin(Math.PI * 7 * (u + (t - 0.5) * 0.35)) * Math.pow(Math.abs(u - 0.5) * 2, 1.5);
+          nep += 0.08 * g * Math.sin(Math.PI * 11 * (u - (t - 0.5) * 0.25));
+        }
+        var mep = Math.pow(1 - Math.sin(Math.PI * u), 6) * 0.06 * Math.sin(v * 70) * f; // gợn dọc mép
+        var z = sg * (D * b + off) + (nep * (0.4 + 0.6 * f) + mep) * (b > 0 ? 1 : 0);
+        return [x, v * Hbg, z];
+      };
       var surf = function (u0, u1, v0, v1, sg, off, nu, nv) {
         var geo = new T.BufferGeometry(), PP = [], UV = [], I = [], jj, ii;
         for (jj = 0; jj <= nv; jj++) for (ii = 0; ii <= nu; ii++) {
@@ -122,6 +139,8 @@
       cfg.mat.side = T.DoubleSide;
       add(new T.Mesh(surf(0, 1, 0, 1, 1, 0, 120, 170), cfg.mat));
       add(new T.Mesh(surf(0, 1, 0, 1, -1, 0, 60, 90), cfg.mat));
+      // đáy túi đứng: hình bầu dục nối mặt trước và sau
+      var day = add(new T.Mesh(new T.CircleGeometry(1, 64), cfg.mat)); day.rotation.x = Math.PI / 2; day.scale.set(Wb * 0.46, D * prof(0.001) * 0.98, 1); day.position.y = 0.01;
       if (cfg.zip) { var zp = add(new T.Mesh(new T.BoxGeometry(Wb * 0.96, 0.22, 0.12), mat(0xb9bdc4, { metalness: 0.6, roughness: 0.4 }))); zp.position.set(0, Hbg * (topSeal - 0.035), 0.05); }
       var seal = add(new T.Mesh(new T.BoxGeometry(Wb, Hbg * 0.012, 0.03), mat(0xd0d3d8, { metalness: 0.4, roughness: 0.5 }))); seal.position.set(0, Hbg * 0.965, 0.02);
       if (cfg.in) { // in toàn mặt trước: ảnh nhãn phủ vùng giữa, giữ tỷ lệ

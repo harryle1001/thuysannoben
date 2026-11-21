@@ -53,7 +53,7 @@ function scene() {
   const built = Pack3D.build(THREE, CFG.kind, { lw: LW, lh: LH }, labelMat, { mau: CFG.mau ? new THREE.Color(CFG.mau) : null, tam: CFG.tam });
   const g = built.group; CFG.height = built.H; CFG.width = built.W;
   s.add(g);
-  g.rotation.y = /^(tui|bao)/.test(CFG.kind) ? -0.3 : -0.2;
+  g.rotation.y = /^(tui|bao)/.test(CFG.kind) ? -0.52 : -0.2;
 
   // Sàn, bóng tiếp xúc, đèn
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(2000, 2000), new THREE.MeshStandardMaterial({ color: BG, roughness: 0.92, envMapIntensity: 0.25 }));
