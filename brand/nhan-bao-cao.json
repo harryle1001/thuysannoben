@@ -1,6 +1,6 @@
 {
- "tao_luc": "2026-11-20T08:56:12.652Z",
- "so_nhan": 72,
+ "tao_luc": "2026-11-21T01:19:46.630Z",
+ "so_nhan": 73,
  "loi": 0,
  "nhan": [
   {
@@ -60,6 +60,12 @@
   {
    "nhan": "bzt@tui-lon",
    "co_chu_pt": 6.6,
+   "duoi_toi_thieu": false,
+   "loi": []
+  },
+  {
+   "nhan": "de-zoo@tui",
+   "co_chu_pt": 5.9,
    "duoi_toi_thieu": false,
    "loi": []
   },
