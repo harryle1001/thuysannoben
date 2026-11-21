@@ -17,6 +17,17 @@ export const theme = {
     line: "rgba(169, 205, 255, 0.16)",
     glow: "rgba(255, 194, 14, 0.45)",
   },
+  // Light palette for the dealer-recruitment film: paper white + label navy, one muted group colour per scene (same colours as the label spines).
+  light: {
+    paper: "#f4f6fa",
+    white: "#ffffff",
+    ink: "#0c2a63",
+    blue: "#14479a",
+    dim: "#5d6b84",
+    line: "rgba(12, 42, 99, 0.16)",
+    wash: "rgba(20, 71, 154, 0.07)",
+    spines: ["#1f6f78", "#4a6fa5", "#4a7c59", "#b07d2b", "#7d2e3c", "#5e3b6e", "#0c2a63"],
+  },
   fonts: {
     display: "Archivo",
     body: "Be Vietnam Pro",

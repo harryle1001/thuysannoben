@@ -433,7 +433,7 @@ function renderKnowledge(req, res, topic) {
       description: topic ? topic.blurb : 'Cẩm nang nuôi tôm thẻ chân trắng, tôm sú: nhận biết và xử lý bệnh tôm, quản lý môi trường ao, kỹ thuật nuôi và dinh dưỡng do đội kỹ thuật Noben biên soạn.',
     },
     topic,
-    topics: c.TOPICS.map((t) => ({ ...t, count: all.filter((p) => p.topic === t.slug).length })),
+    topics: c.TOPICS.map((t) => ({ ...t, count: all.filter((p) => p.topic === t.slug).length })).filter((t) => t.count),
     list,
     total: all.length,
     solutions: c.solutions,
