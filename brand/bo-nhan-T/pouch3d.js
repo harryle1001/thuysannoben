@@ -39,10 +39,10 @@ function scene() {
   const sealS = 0.035, sealB = 0.03, sealT = 0.085;
   const smooth = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
   function bulge(u, v) {
-    const sx = Math.pow(Math.sin(Math.PI * Math.min(1, Math.max(0, (u - sealS) / (1 - 2 * sealS)))), 0.85);
+    const sx = Math.pow(Math.sin(Math.PI * Math.min(1, Math.max(0, (u - sealS) / (1 - 2 * sealS)))), 0.3);
     const vv = Math.min(1, Math.max(0, (v - sealB) / (1 - sealB - sealT)));
-    const fillV = Math.pow(Math.sin(Math.PI * Math.min(1, vv * 0.92 + 0.04)), 0.5) * (1.12 - 0.5 * vv);
-    const top = 1 - smooth(0.62, 1.0, vv) * 0.55; // phần trên ít bột, xẹp xuống
+    const fillV = Math.pow(Math.sin(Math.PI * Math.min(1, vv * 0.96 + 0.02)), 0.3) * (1.04 - 0.12 * vv);
+    const top = 1 - smooth(0.8, 1.0, vv) * 0.25; // phần trên ít bột, xẹp xuống
     return Math.max(0, sx * fillV * top);
   }
   // nếp nhăn: chỉ ở phần trên (không có bột), nhỏ, ngẫu nhiên nhưng cố định
@@ -51,7 +51,7 @@ function scene() {
 
   function pouch(img, w, h) {
     const g = new THREE.Group();
-    const D = w * 0.27; // độ dày nửa túi lúc đầy (cm)
+    const D = w * 0.11; // độ dày nửa túi lúc đầy (cm)
     const nx = 120, ny = 200;
     const make = (sign, mat) => {
       const geo = new THREE.PlaneGeometry(w, h, nx, ny);
@@ -59,9 +59,9 @@ function scene() {
       for (let i = 0; i < p.count; i++) {
         const u = uv.getX(i), v = uv.getY(i);
         const b = bulge(u, v);
-        const x = (u - 0.5) * w * (1 - 0.11 * bulge(0.5, v) - 0.05 * b * Math.pow(Math.abs(u - 0.5) * 2, 1.2)); // mép co vào khi túi phồng
-        const y = v * h - (1 - v) * 0.12 * b * h * 0.05;
-        const z = sign * (D * b + 0.005 * w * wr(u, v) * (0.35 + b) + 0.012);
+        const x = (u - 0.5) * w; // hai cạnh thẳng, không thắt eo
+        const y = v * h;
+        const z = sign * (D * b + 0.0025 * w * wr(u, v) + 0.012);
         p.setXYZ(i, x, y, z);
       }
       if (sign < 0) { const idx = geo.index.array; for (let i = 0; i < idx.length; i += 3) { const t = idx[i]; idx[i] = idx[i + 2]; idx[i + 2] = t; } }
