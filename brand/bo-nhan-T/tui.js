@@ -6,7 +6,8 @@ const fs = require('fs'), path = require('path');
 const { chromium } = require('playwright');
 const D = __dirname, N = path.join(D, 'nhan');
 const args = process.argv.slice(2), only = args.includes('--chi') ? new Set(args[args.indexOf('--chi') + 1].split(',')) : null;
-const data = JSON.parse(fs.readFileSync(path.join(N, 'san-pham-son-ha.json'), 'utf8')).san_pham.filter((p) => p.dang === 'goi' && (!only || only.has(p.slug)));
+const LAB_DIR = process.env.NHAN_OUT ? path.resolve(process.env.NHAN_OUT) : path.join(N, 'out');
+const data = JSON.parse(fs.readFileSync(process.env.DATA ? path.resolve(process.env.DATA) : path.join(N, 'san-pham-son-ha.json'), 'utf8')).san_pham.filter((p) => p.dang === 'goi' && (!only || only.has(p.slug)));
 const src = fs.readFileSync(path.join(N, 'build.js'), 'utf8');
 const grab = (a, b) => { const i = src.indexOf(a); return src.slice(i, src.indexOf(b, i) + b.length); };
 const MAU = new Function(`${grab('const MAU_LOAI = {', '\n};')}\nreturn MAU_LOAI;`)();
@@ -16,7 +17,7 @@ const F = path.join(N, 'fonts');
 const face = (w, s) => `@font-face{font-family:BVP;font-weight:${w};src:url(data:font/woff2;base64,${fs.readFileSync(path.join(F, `be-vietnam-pro-${s}-${w}-normal.woff2`)).toString('base64')})}`;
 const fonts = [500, 600, 700].flatMap((w) => ['latin', 'vietnamese'].map((s) => face(w, s))).join('');
 const PHI = 1.61803, W = 123.6, LH = 200, SEAL = 200 / PHI ** 5, BOT = 200 / PHI ** 7, H = SEAL + LH + BOT;
-const OUT = path.join(D, 'out', 'tui'); fs.mkdirSync(OUT, { recursive: true });
+const OUT = process.env.TUI_OUT ? path.resolve(process.env.TUI_OUT) : path.join(D, 'out', 'tui'); fs.mkdirSync(OUT, { recursive: true });
 const sealCss = (col) => `
 .seal{position:absolute;left:0;right:0;top:0;height:${SEAL}mm;background:${col}}
 .rib{position:absolute;left:0;right:0;top:${SEAL / PHI ** 2}mm;height:${SEAL / PHI ** 2}mm;background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 .6mm,transparent .6mm 1.2mm)}
@@ -33,7 +34,7 @@ const seal = '<div class="seal"><div class="rib"></div></div><div class="tear"><
   const page = await b.newPage({ viewport: { width: Math.round(W * pxmm), height: 3840 } });
   for (const p of data) {
     const col = MAU[p.loai] || '#0c2a63';
-    const lab = `data:image/png;base64,${fs.readFileSync(path.join(N, 'out', `${p.slug}-concept-t.png`)).toString('base64')}`;
+    const lab = `data:image/png;base64,${fs.readFileSync(path.join(LAB_DIR, `${p.slug}-concept-t.png`)).toString('base64')}`;
     const base = `*{margin:0;box-sizing:border-box}body{width:${W}mm;height:${H}mm;position:relative;background:#fff;font-family:BVP;color:#0c2a63;overflow:hidden;zoom:${pxmm / (96 / 25.4)}}${fonts}${sealCss(col)}`;
     // nhãn 161,8 mm: mặt trước 50–111,8 mm (background-position 50 %), hai mặt bên 0–50 mm (0 %) và 111,8–161,8 mm (100 %)
     const front = `<style>${base}.lab{position:absolute;left:0;top:${SEAL}mm;width:${W}mm;height:${LH}mm;background:url(${lab}) no-repeat;background-size:261.8% 100%;background-position:50% 0}</style>${seal}<div class="lab"></div>`;

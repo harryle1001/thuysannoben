@@ -2,8 +2,9 @@
 const fs = require('fs'), path = require('path');
 const { chromium } = require('playwright');
 const D = __dirname, R = path.join(D, '..'), N = path.join(R, 'nhan');
-const data = JSON.parse(fs.readFileSync(path.join(N, 'san-pham-son-ha.json'), 'utf8')).san_pham;
-const gia = JSON.parse(fs.readFileSync(path.join(D, 'gia.json'), 'utf8'));
+const data = JSON.parse(fs.readFileSync(process.env.DATA ? path.resolve(process.env.DATA) : path.join(N, 'san-pham-son-ha.json'), 'utf8')).san_pham;
+const O = process.env.OUT_ROOT ? path.resolve(process.env.OUT_ROOT) : path.join(R, 'out');
+const gia = JSON.parse(fs.readFileSync(process.env.GIA ? path.resolve(process.env.GIA) : path.join(D, 'gia.json'), 'utf8'));
 const src = fs.readFileSync(path.join(N, 'build.js'), 'utf8');
 const grab = (start, end) => { const i = src.indexOf(start); return src.slice(i, src.indexOf(end, i) + end.length); };
 const TYPE_ICON = new Function(`${grab('const TI =', ';\n')}\n${grab('const TYPE_ICON = {', '\n};')}\nreturn TYPE_ICON;`)();
@@ -12,15 +13,15 @@ const MAU = new Function(`${grab('const MAU_LOAI = {', '\n};')}\nreturn MAU_LOAI
 const NB_LOGO = fs.readFileSync(path.join(R, '..', '..', 'public', 'images', 'brand', 'logo-noben.svg'), 'utf8');
 const F = path.join(N, 'fonts');
 const face = (w, s) => `@font-face{font-family:BVP;font-weight:${w};src:url(data:font/woff2;base64,${fs.readFileSync(path.join(F, `be-vietnam-pro-${s}-${w}-normal.woff2`)).toString('base64')})}`;
-const fonts = [400, 500, 600, 700].flatMap((w) => ['latin', 'latin-ext', 'vietnamese'].map((s) => face(w, s))).join('');
+const fonts = [400, 500, 600, 700].flatMap((w) => ['latin', 'vietnamese'].map((s) => face(w, s))).join('');
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const rich = (s) => esc(s).replace(/m3\b/g, 'm³').replace(/10⁹|10\^9/g, '10⁹');
 const img = (f) => `data:image/${f.endsWith('.png') ? 'png' : f.endsWith('.jpg') ? 'jpeg' : 'webp'};base64,${fs.readFileSync(f).toString('base64')}`;
 // ảnh sản phẩm: ảnh 3D trong out/3d (lam-lai.sh --3d); chưa có thì dùng mặt trước phẳng
 const pic = (p) => {
-  const f3 = path.join(R, 'out', '3d', `${p.slug}.png`);
+  const f3 = path.join(O, '3d', `${p.slug}.png`);
   if (fs.existsSync(f3)) return f3;
-  if (p.dang === 'goi') return path.join(R, 'out', 'tui', `${p.slug}-truoc.png`);
+  if (p.dang === 'goi') return path.join(O, 'tui', `${p.slug}-truoc.png`);
   return path.join(R, 'xoay-360', 'tex', `${p.slug}.jpg`);
 };
 const vnd = (n) => n == null ? 'Liên hệ' : n.toLocaleString('vi-VN') + ' đ';
@@ -94,7 +95,7 @@ pages.push(`<section class="pg cv"><div class="lg">${NB_LOGO}</div>
 <div class="t1">Công ty TNHH Noben · 2026</div><div class="t2">Catalogue sản phẩm<br>và bảng giá</div>
 <div class="t3">${data.length} sản phẩm thuốc thủy sản · giá sỉ và giá lẻ</div>
 <div class="sw">${loais.map((l) => `<div><i style="background:${MAU[l]}"></i>${esc(LOAI[l])}</div>`).join('')}</div>
-<div class="band"><img src="${img(path.join(R, 'out', '3d', '00-chai.png'))}"></div></section>`);
+<div class="band"><img src="${img(path.join(O, '3d', '00-chai.png'))}"></div></section>`);
 for (let i = 0; i < data.length; i += 2) {
   pages.push(`<section class="pg">${hdr(pages.length + 1)}${card(data[i], 'a')}${data[i + 1] ? card(data[i + 1], 'b') : ''}</section>`);
 }
@@ -102,21 +103,21 @@ const rows = data.map((p, i) => { const pr = price(p); return `<tr><td>${i + 1}<
 pages.push(`<section class="pg">${hdr(pages.length + 1)}<div style="position:absolute;left:13mm;right:13mm;top:24mm">
 <div style="font-size:9mm;font-weight:700;letter-spacing:-.02em;margin-bottom:5mm">Bảng giá sỉ và lẻ</div>
 <table><thead><tr><th>STT</th><th>Sản phẩm</th><th>Loại</th><th>Quy cách</th><th class="n">Giá sỉ</th><th class="n">Giá lẻ</th></tr></thead><tbody>${rows}</tbody></table>
-<div class="note">Giá đã gồm VAT nếu có theo bảng giá gốc. Giá lẻ là giá bán đề xuất tại cửa hàng. Nội dung sản phẩm theo hồ sơ tiêu chuẩn cơ sở (TCCS) của công ty. Chỉ dùng trong nuôi trồng thủy sản.</div></div></section>`);
+<div class="note">Giá sỉ là giá net công ty giao; giá lẻ là giá bán đề xuất tại cửa hàng (bằng 3 lần giá sỉ). Nội dung sản phẩm theo hồ sơ tiêu chuẩn cơ sở (TCCS) của công ty. Chỉ dùng trong nuôi trồng thủy sản.</div></div></section>`);
 pages.push(`<section class="pg cv"><div class="lg">${NB_LOGO}</div>
 <div class="t2" style="top:${297 / PHI ** 2}mm;font-size:12mm">Liên hệ đặt hàng</div>
 <div class="t3" style="top:${297 / PHI ** 2 + 18}mm;line-height:1.7;color:#0c2a63">CÔNG TY TNHH NOBEN<br>228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi A, Xã Củ Chi, TP.HCM<br>Hotline/Zalo: <b>0934 246 420</b><br>thuysannoben.com</div>
-<div class="band"><img src="${img(path.join(R, 'out', '3d', '00-tui.png'))}"></div></section>`);
+<div class="band"><img src="${img(path.join(O, '3d', '00-tui.png'))}"></div></section>`);
 const html = `<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Catalogue Noben 2026</title><style>${css}</style></head><body>${pages.join('')}</body></html>`;
-fs.writeFileSync(path.join(R, 'out', 'catalogue.html'), html);
+fs.writeFileSync(path.join(O, 'catalogue.html'), html);
 (async () => {
   const b = await chromium.launch(); const pg = await b.newPage();
   await pg.setContent(html, { waitUntil: 'load' }); await pg.evaluate(() => document.fonts.ready);
   const rep = await pg.evaluate(() => [...document.querySelectorAll('[data-fit]')].map((e) => { let fs = 2.75; const mm = 96 / 25.4; const over = () => e.scrollHeight > e.clientHeight + 1; while (over() && fs > 2.1) { fs -= 0.05; e.style.setProperty('--fs', fs + 'mm'); } return [e.querySelector('h2').textContent, +fs.toFixed(2), over()]; }));
   rep.filter((r) => r[1] < 2.75 || r[2]).forEach((r) => console.log('co chữ', r));
-  await pg.pdf({ path: path.join(R, 'out', 'CATALOGUE-NOBEN-2026.pdf'), preferCSSPageSize: true, printBackground: true });
+  await pg.pdf({ path: path.join(O, 'CATALOGUE-NOBEN-2026.pdf'), preferCSSPageSize: true, printBackground: true });
   await pg.setViewportSize({ width: 794, height: 1123 });
   const n = await pg.evaluate(() => document.querySelectorAll('.pg').length);
-  for (let i = 0; i < n; i++) { const el = (await pg.$$('.pg'))[i]; await el.screenshot({ path: path.join(R, 'out', `catalogue-trang-${String(i + 1).padStart(2, '0')}.png`) }); }
+  for (let i = 0; i < n; i++) { const el = (await pg.$$('.pg'))[i]; await el.screenshot({ path: path.join(O, `catalogue-trang-${String(i + 1).padStart(2, '0')}.png`) }); }
   await b.close(); console.log('ok', n, 'trang');
 })();

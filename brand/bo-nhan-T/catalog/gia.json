@@ -1,9 +1,19 @@
 {
- "_ghi_chu": "gia_nhap (đồng): giá sỉ = giá nhập, giá lẻ = 3 × giá nhập (làm tròn nghìn). Tạm lấy từ BANG-GIA-NOBEN-2026.xlsx cho sản phẩm khớp đúng tên và quy cách; null = chưa có giá.",
- "ben-iq": [395000, "Bảng báo giá Noben (B) 2026: BEN IQ chai 1 lít"],
- "edta-99": [295000, "Bảng giá Noben 2026: EDTA 99 gói 3 kg"],
- "bacpower": [390000, "Bảng báo giá Noben (B) 2026: BAC POWER gói 227 g"],
- "super-yucca": [450000, "Bảng giá Tôm 02-03: SUPER YUCCA chai 1 lít"],
- "aqua-biotic": [750000, "Bảng giá Tôm 02-03: AQUABIOTIC chai 1 lít"],
- "hepaliver-fs": [320000, "Bảng báo giá Noben (B) 2026: HEPALIV – FS chai 1 lít"]
+ "_ghi_chu": "gia_nhap (đồng) = giá net công ty giao. Giá sỉ = giá nhập; giá lẻ = 3 × giá nhập. Chỉ 4 sản phẩm có trong bảng giá net 15SP; sản phẩm khác để Liên hệ cho đến khi có giá.",
+ "vh-glubenco-pro": [
+  85000,
+  "Danh mục 15SP Noben nhượng, giá net công ty giao (21/11/2026)"
+ ],
+ "super-yucca": [
+  90000,
+  "Danh mục 15SP Noben nhượng, giá net công ty giao (21/11/2026)"
+ ],
+ "hepaliver-fs": [
+  80000,
+  "Danh mục 15SP Noben nhượng, giá net công ty giao (21/11/2026)"
+ ],
+ "premix-ora": [
+  75000,
+  "Danh mục 15SP Noben nhượng, giá net công ty giao (21/11/2026)"
+ ]
 }
