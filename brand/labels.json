@@ -447,6 +447,48 @@
       "quy_cach_nguon": "theo hồ sơ TCCS (trang công bố)"
     },
     {
+      "slug": "de-zoo",
+      "nhom": "sinh-hoc",
+      "bao_bi": "tui",
+      "ten": "DE ZOO",
+      "phu_de": "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản",
+      "nhan_phu": [
+        "Mang, đốm đen",
+        "Gan ruột",
+        "Khí độc"
+      ],
+      "cong_dung": [
+        "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản.",
+        "Giúp ổn định mật độ tảo, ổn định pH ao nuôi."
+      ],
+      "thanh_phan": [
+        "Cu (CuSO4.5H2O) (min): 1.000 ppm",
+        "Dung môi (nước RO) vừa đủ: 1 lít"
+      ],
+      "huong_dan": [
+        "Hòa với nước sạch một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều và tăng hiệu quả sử dụng.",
+        "Dùng để xử lý các loại tảo độc trong ao nuôi thủy sản:",
+        "Sử dụng 500ml sản phẩm /1.500 – 2.000 m³ nước, định kỳ 7-10 ngày sử dụng 1 lần",
+        "Trường hợp để xử lý tảo lam, tảo sợi, tảo xanh quá dày: Sử dụng 500ml sản phẩm/1.000m³ nước, sử dụng 2 liều liên tục và cách nhau 2 ngày, sử dụng vào lúc trời nắng gắt.",
+        "Lưu ý: Không sử dụng sản phẩm khi trời ít nắng hoặc mưa.",
+        "Ngưng sử dụng trước thu hoạch 15 ngày.",
+        "Lắc đều sản phẩm trước khi sử dụng",
+        "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+      ],
+      "quy_cach": "250ml, 500ml, 1 lít, 2 lít, 5 lít",
+      "bao_quan": "Nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+      "luu_y": "Đọc kỹ hướng dẫn sử dụng trước khi dùng.",
+      "mau_nhan": null,
+      "phap_ly": {
+        "so_dang_ky": "",
+        "nsx": "",
+        "hsd": "",
+        "khoi_luong_tinh": "",
+        "ma_vach": ""
+      },
+      "so_dang_ky_doc_tu_anh": null
+    },
+    {
       "slug": "edta-99",
       "nhom": "sinh-hoc",
       "bao_bi": "tui",
