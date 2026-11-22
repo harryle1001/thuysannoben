@@ -1,0 +1,330 @@
+{
+ "slug": "nb-mix-5000-ho-tro-phong-cong-than-duc-co-mem-vo",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001526_1.jpg",
+ "kich_thuoc_goc": [
+  775,
+  1080
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 775 × 1080 (ảnh 01-001526_1, nhãn túi NB - Mix 5000 Noben). Chọn mã 01-001526 (NB-MIX 5000, thức ăn bổ sung) chứ không phải 02-037654 (NB-MIX 500 NEW, xử lý môi trường) vì: tên in trên bao bì ảnh cutout là 'NB - Mix 5000' (kiểu chữ, dải đỏ, logo ISO giống nhãn 01-001526), slug ghi 'hỗ trợ phòng cong thân, đục cơ, mềm vỏ' khớp công dụng/HDSD của 01-001526; cả 3 ảnh 02-037654 đều in 'NB-MIX 500 NEW'. Lưu ý: ảnh cutout là bản in khác (dòng 'CỨNG VỎ NHANH - GÂY MÀU XANH', hình cua) nhưng cùng tên sản phẩm. content/tccs.json KHÔNG có hồ sơ TCCS 50:2020/NOBEN nên giữ chữ như nhãn cũ. CẢNH BÁO: CSDL Tổng cục (data.json) của 01-001526 khai chỉ tiêu KHÁC hẳn nhãn: Mn (MnSO4) 1.250, P (CaHPO4) 1.200, Mg (MgO) 1.500, Na (Na2CO3) 1.500 mg/kg, chất đệm CaCO3 vừa đủ 1 kg, độ ẩm 10%, As vô cơ, Cd, Pb, Hg; nguyên liệu Sodium bicarbonate, Magnesium sulfate, Magnesium oxide, Dicalcium phosphate, CaCO3 — trong khi nhãn ghi Ca (calcium gluconate) 850, Cu (Cu-chelate) 850, P (CaHPO4) 650 mg/kg, Dextrose. Không tự đổi; cần chủ sản phẩm đối chiếu file TCCS. HDSD/bảo quản khớp CSDL. Chỉ sửa: 'calcum' → 'calcium', '-Thời hạn sử dụng: sử dụng' → '- Thời hạn sử dụng: Sử dụng', thêm dấu chấm cuối dòng, điện thoại 0911 883 979 → 0934 246 420, thêm SẢN XUẤT TẠI VIỆT NAM (nền trắng chữ đỏ vì khối công ty chữ trắng trên nền xanh; dồn dòng công ty sát hơn cho vừa). Mã SPHQ VICB 7178.10-59, địa chỉ, email, MST giữ như nhãn cũ.",
+ "bao_bi": "tui",
+ "mat_truoc": [
+  0,
+  0,
+  775,
+  1080
+ ],
+ "khung": [
+  {
+   "x": 42,
+   "y": 345,
+   "w": 696,
+   "h": 456,
+   "nen": "trong",
+   "r": 0,
+   "co": 15.3,
+   "dong_cao": 1.392,
+   "dem": 4,
+   "can": "justify",
+   "mau": "#0f1f0f",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e2f03a\">THÀNH PHẦN: trong 1kg sản phẩm</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex;width:407px;margin-left:8px\"><span style=\"white-space:nowrap\">Ca (Dạng calcium gluconate) (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;letter-spacing:.02em\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">850 mg/kg</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex;width:374px;margin-left:8px\"><span style=\"white-space:nowrap\">Cu (Dạng Cu-chelate) (min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;letter-spacing:.02em\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">850 mg/kg</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"display:flex;width:367px;margin-left:8px\"><span style=\"white-space:nowrap\">P (Dạng CaHPO<sub style=\"font-size:.65em;line-height:0;vertical-align:-.2em\">4</sub>)(min)</span><span style=\"flex:1;overflow:hidden;white-space:nowrap;letter-spacing:.02em\">........................................................................................................................................................................................................</span><span style=\"white-space:nowrap\">650 mg/kg</span></span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"margin-left:8px\">Chất đệm (Dextrose) Vừa đủ</span>"
+    },
+    {
+     "kieu": "html",
+     "chu": "NGUYÊN LIỆU"
+    },
+    {
+     "kieu": "html",
+     "chu": "<span style=\"margin-left:8px\">Ca (Dạng calcium gluconate), Cu (Dạng Cu-chelate), P (Dạng CaHPO<sub style=\"font-size:.65em;line-height:0;vertical-align:-.2em\">4</sub>), Dextrose</span>"
+    },
+    {
+     "kieu": "trong"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e2f03a\">CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Bổ sung khoáng chất cần thiết vào thức ăn cho tôm, cá. Giúp tôm, cá ăn nhiều, phát triển tốt."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Hỗ trợ tôm lột xác và cứng vỏ nhanh, hỗ trợ phòng ngừa bệnh cong thân, đục cơ, mềm vỏ, khó lột, lột vỏ không đều."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Giúp tôm chắc thịt, nặng ký, vỏ bóng đẹp tự nhiên."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e2f03a\">HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Trộn 3-5 g/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi và tiến hành tạt xuống ao với liều 5kg/3.000m<sup style=\"font-size:.65em;line-height:0;vertical-align:.45em\">3</sup> nước."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Trường hợp tôm mềm vỏ khó lột, chậm cứng vỏ, cong thân đục cơ...: Trộn liều gấp đôi và tạt xuống ao với liều 5kg/2.000m<sup style=\"font-size:.65em;line-height:0;vertical-align:.45em\">3</sup> nước."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#e2f03a\">Hướng dẫn bảo quản:</b> Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp."
+    }
+   ]
+  },
+  {
+   "x": 55,
+   "y": 835,
+   "w": 325,
+   "h": 87,
+   "nen": "trong",
+   "r": 0,
+   "co": 15.3,
+   "dong_cao": 1.373,
+   "dem": 0,
+   "mau": "#0f1f0f",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "Số tiêu chuẩn công bố: 50:2020/NOBEN"
+    },
+    {
+     "kieu": "html",
+     "chu": "Mã số tiếp nhận: 01-001526"
+    },
+    {
+     "kieu": "html",
+     "chu": "Mã SPHQ: VICB 7178.10-59"
+    }
+   ]
+  },
+  {
+   "x": 402,
+   "y": 836.5,
+   "w": 325,
+   "h": 86,
+   "nen": "trong",
+   "r": 0,
+   "co": 15.3,
+   "dong_cao": 1.373,
+   "dem": 0,
+   "mau": "#0f1f0f",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "html",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "html",
+     "chu": "Hạn sử dụng:"
+    },
+    {
+     "kieu": "html",
+     "chu": "Khối lượng tịnh:"
+    }
+   ]
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    42,
+    346,
+    438,
+    454
+   ],
+   "mau": "#0a1f0a",
+   "nguong": 115
+  },
+  {
+   "vung": [
+    480,
+    346,
+    258,
+    119
+   ],
+   "mau": "#0a1f0a",
+   "nguong": 115
+  },
+  {
+   "vung": [
+    480,
+    655,
+    258,
+    145
+   ],
+   "mau": "#0a1f0a",
+   "nguong": 115
+  },
+  {
+   "vung": [
+    480,
+    479,
+    132,
+    18
+   ],
+   "khac_nen": 7,
+   "nguong": 45,
+   "le": 3,
+   "no": 3
+  },
+  {
+   "vung": [
+    480,
+    544,
+    228,
+    18
+   ],
+   "khac_nen": 7,
+   "nguong": 45,
+   "le": 3,
+   "no": 3
+  },
+  {
+   "vung": [
+    468,
+    565,
+    270,
+    18
+   ],
+   "khac_nen": 7,
+   "nguong": 45,
+   "le": 3,
+   "no": 3
+  },
+  {
+   "vung": [
+    44,
+    350,
+    258,
+    18
+   ],
+   "mau": "#d3f035",
+   "nguong": 85,
+   "le": 3
+  },
+  {
+   "vung": [
+    44,
+    521,
+    98,
+    18
+   ],
+   "mau": "#d3f035",
+   "nguong": 85,
+   "le": 3
+  },
+  {
+   "vung": [
+    44,
+    628,
+    316,
+    18
+   ],
+   "mau": "#d3f035",
+   "nguong": 85,
+   "le": 3
+  },
+  {
+   "vung": [
+    44,
+    779,
+    128,
+    18
+   ],
+   "mau": "#d3f035",
+   "nguong": 85,
+   "le": 3
+  },
+  {
+   "vung": [
+    50,
+    836,
+    330,
+    86
+   ],
+   "mau": "#0a1f0a",
+   "nguong": 115
+  },
+  {
+   "vung": [
+    399,
+    836,
+    328,
+    86
+   ],
+   "mau": "#0a1f0a",
+   "nguong": 115
+  },
+  {
+   "vung": [
+    158,
+    932,
+    515,
+    96
+   ],
+   "mau": "#ffffff",
+   "nguong": 150,
+   "le": 4
+  }
+ ],
+ "logo": [
+  {
+   "x": 55.5,
+   "y": 937,
+   "w": 84,
+   "h": 90.5
+  }
+ ],
+ "cong_ty": {
+  "x": 162,
+  "y": 929,
+  "w": 575,
+  "co": 13.8,
+  "mau": "#ffffff",
+  "xuat_xu_nen": "#ffffff",
+  "ten": "CÔNG TY TNHH NO BEN",
+  "dong": [
+   "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+   "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+   "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+  ],
+  "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+ }
+}
