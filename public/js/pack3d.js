@@ -85,10 +85,10 @@
     } else {
       // túi / bao: hai mặt phồng, mép hàn; túi zip có đường zip, túi đứng có đáy phồng
       var cfg = {
-        tuibac: { w: 16, h: 25, d: 0.32, mat: mat(0xc8ccd2, { metalness: 0.88, roughness: 0.26, clearcoat: 0.3 }), zip: true, dan: { w: 12, h: 15.5, cy: 0.46 } },
-        tuivang: { w: 18, h: 26, d: 0.3, mat: mat(0xd9b23c, { metalness: 0.85, roughness: 0.3, clearcoat: 0.3 }), zip: true, in: { x: 0.04, y: 0.05, h: 0.8 } },
-        baodet: { w: 42, h: 62, d: 0.26, mat: mat(0xf1f1ec, { roughness: 0.85, clearcoat: 0, sheen: 0.4, sheenRoughness: 0.8 }), dan: { w: 28, h: 30, cy: 0.5 }, det: true },
-        baogiay: { w: 40, h: 62, d: 0.25, mat: mat(0xf2efe6, { roughness: 0.9, clearcoat: 0 }), in: { x: 0.02, y: 0.03, h: 0.93 } }
+        tuibac: { w: 16, h: 25, d: 0.11, mat: mat(0xc8ccd2, { metalness: 0.88, roughness: 0.26, clearcoat: 0.3 }), zip: true, dan: { w: 12, h: 15.5, cy: 0.46 } },
+        tuivang: { w: 18, h: 26, d: 0.11, mat: mat(0xd9b23c, { metalness: 0.85, roughness: 0.3, clearcoat: 0.3 }), zip: true, in: { x: 0.04, y: 0.05, h: 0.8 } },
+        baodet: { w: 42, h: 62, d: 0.1, mat: mat(0xf1f1ec, { roughness: 0.85, clearcoat: 0, sheen: 0.4, sheenRoughness: 0.8 }), dan: { w: 28, h: 30, cy: 0.5 }, det: true },
+        baogiay: { w: 40, h: 62, d: 0.1, mat: mat(0xf2efe6, { roughness: 0.9, clearcoat: 0 }), in: { x: 0.02, y: 0.03, h: 0.93 } }
       }[kieu] || null;
       if (!cfg) cfg = { w: 16, h: 25, d: 0.17, mat: white, dan: { w: 12, h: 15.5, cy: 0.46 } };
       var Wb = cfg.w, Hbg = cfg.h, D = Wb * cfg.d, topSeal = cfg.zip ? 0.9 : 0.94;
@@ -99,29 +99,19 @@
         var bt = new T.CanvasTexture(cv); bt.wrapS = bt.wrapT = T.RepeatWrapping; bt.repeat.set(Wb / 2, Hbg / 2);
         cfg.mat.bumpMap = bt; cfg.mat.bumpScale = 0.04;
       }
-      // Túi đựng bột: bột dồn xuống nên phồng nhất ở 1/3 dưới, thót dần lên mép hàn; hai bên mép co vào;
-      // nếp nhăn chéo từ góc trên và gợn nhỏ dọc mép như túi thật.
-      var prof = function (v) { // độ phồng theo chiều cao
+      // Túi đựng bột (đồng bộ brand/bo-nhan-T/pouch3d.js): hai cạnh thẳng, phồng đều, không thắt eo;
+      // phần trên ít bột hơi xẹp, nếp nhăn nhỏ chỉ ở phần trên.
+      var smooth = function (a0, b0, x) { var t = Math.min(1, Math.max(0, (x - a0) / (b0 - a0))); return t * t * (3 - 2 * t); };
+      var prof = function (v) {
+        var vv = Math.min(1, Math.max(0, (v - 0.02) / (topSeal - 0.02)));
         if (v >= topSeal) return 0;
-        var t = v / topSeal;
-        var up = 1 - Math.pow(Math.max(0, (t - 0.38) / 0.62), 1.6); // giảm dần lên trên
-        var dn = 0.72 + 0.28 * Math.sin(Math.min(t / 0.38, 1) * Math.PI / 2); // đáy đứng vẫn dày
-        var cap = t > 0.9 ? (1 - t) / 0.1 : 1;
-        return Math.max(0, up * dn * cap);
+        return Math.pow(Math.sin(Math.PI * Math.min(1, vv * 0.96 + 0.02)), 0.3) * (1.04 - 0.12 * vv) * (1 - smooth(0.8, 1.0, vv) * 0.25);
       };
-      var bul = function (u, v) { return Math.pow(Math.sin(Math.PI * u), 0.5) * prof(v); };
+      var bul = function (u, v) { return Math.pow(Math.sin(Math.PI * Math.min(1, Math.max(0, (u - 0.035) / 0.93))), 0.3) * prof(v); };
       var P = function (u, v, sg, off) {
-        var f = prof(v), b = bul(u, v), t = v / topSeal;
-        var x = (u - 0.5) * Wb * (1 - 0.17 * f * (0.45 + 0.55 * Math.sin(Math.PI * u)));
-        var nep = 0;
-        if (t > 0.5 && t < 1) { // nếp chéo từ hai góc trên
-          var g = Math.sin(Math.PI * (t - 0.5) / 0.5);
-          nep += 0.16 * g * Math.sin(Math.PI * 7 * (u + (t - 0.5) * 0.35)) * Math.pow(Math.abs(u - 0.5) * 2, 1.5);
-          nep += 0.08 * g * Math.sin(Math.PI * 11 * (u - (t - 0.5) * 0.25));
-        }
-        var mep = Math.pow(1 - Math.sin(Math.PI * u), 6) * 0.06 * Math.sin(v * 70) * f; // gợn dọc mép
-        var z = sg * (D * b + off) + (nep * (0.4 + 0.6 * f) + mep) * (b > 0 ? 1 : 0);
-        return [x, v * Hbg, z];
+        var b = bul(u, v), t = v / topSeal;
+        var nep = t > 0.7 && t < 1 ? 0.04 * Math.sin(Math.PI * (t - 0.7) / 0.3) * Math.sin(u * 37 + v * 23) * Math.sin(u * 13 - v * 41) : 0;
+        return [(u - 0.5) * Wb, v * Hbg, sg * (D * b + off) + nep * (b > 0 ? 1 : 0)];
       };
       var surf = function (u0, u1, v0, v1, sg, off, nu, nv) {
         var geo = new T.BufferGeometry(), PP = [], UV = [], I = [], jj, ii;
