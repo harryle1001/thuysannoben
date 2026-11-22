@@ -5,7 +5,7 @@
     800,
     288
   ],
-  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 288 (phóng ×8). Ảnh _1 là nhãn Noben 'BEN BKC' (cùng mẫu xanh lá với ảnh sản phẩm BEN BKC 80% trên web); ảnh _2 (BIOPRO), _3 (Probiotic), _4 (Đức Việt) là nhãn nhà phân phối, không dùng. LƯU Ý: hồ sơ 02-039607 là BEN BKC hàm lượng 50% (TCCS 04:2016/NOBEN), còn web ghi tên 'BEN BKC 80%' — nhãn này giữ tên BEN BKC và 50% theo hồ sơ, cần chủ sản phẩm xác nhận trước khi dùng cho BEN BKC 80%. Chữ sửa theo content/tccs.json: thêm công dụng thứ hai, 'Lắc đều…', 'Cảnh báo…'; bảo quản theo TCCS. Tên hoạt chất giữ 'Alkyl Dimethyl Benzyl Ammonium Chloride' như nhãn cũ và CSDL (tccs.json ghi Benzalkonium Chloride, cùng chất). Dòng 'Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi' giữ như nhãn cũ (TCCS không ghi). Mã SPHQ 'VICB 7178 10-03' sửa thành 'VICB 7178.10-03' (như các nhãn phân phối cùng mã). Địa chỉ giữ như nhãn cũ; hạn sử dụng để trống (nhãn cũ ghi 2 năm). CẬP NHẬT 22/11/2026 theo chủ sản phẩm (\"dùng như web\"): tên BEN BKC 80% (thêm chữ 80% dưới tên), hàm lượng 80%, công dụng và hướng dẫn sử dụng lấy đúng trang sản phẩm trên web. Số TCCS 04:2016 và mã số 02-039607 vẫn là hồ sơ bản 50%: cần hồ sơ cho bản 80% trước khi in.",
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 288 (phóng ×8). Ảnh 02-039607_1 là nhãn Noben BEN BKC (cùng mẫu xanh lá với ảnh sản phẩm trên web). Chữ theo đúng hồ sơ TCCS 04:2016/NOBEN (kho CONG-TY-NOBEN, '3-BEN BKC.doc', ban hành 01/11/2026), theo yêu cầu chủ sản phẩm 22/11/2026: Benzalkonium Chloride (min) 50%; dung môi nước RO vừa đủ 1 lít; As (max) 5 mg/l, Pb (max) 30 mg/l (nhãn cũ ghi KPH); nguyên liệu Benzalkonium Chloride, nước RO; công dụng và hướng dẫn sử dụng theo mục 5.1–5.2; bỏ dòng 'Thời hạn sử dụng: trong suốt quá trình nuôi' (TCCS không có). Tên trên web 'BEN BKC 80%' không khớp hồ sơ (50%). Mã SPHQ 'VICB 7178 10-03' sửa thành 'VICB 7178.10-03'. Hạn sử dụng để trống (TCCS: 24 tháng).",
   "khung": [
     {
       "x": 3,
@@ -25,7 +25,7 @@
         },
         {
           "kieu": "dong",
-          "chu": "Alkyl Dimethyl Benzyl Ammonium Chloride (min): 80%"
+          "chu": "Benzalkonium Chloride (min): 50%"
         },
         {
           "kieu": "dong",
@@ -33,11 +33,11 @@
         },
         {
           "kieu": "dong",
-          "chu": "Asen (As): KPH"
+          "chu": "Asen (As) (max): 5 mg/l"
         },
         {
           "kieu": "dong",
-          "chu": "Chì (Pb): KPH"
+          "chu": "Chì (Pb) (max): 30 mg/l"
         },
         {
           "kieu": "dam",
@@ -45,19 +45,19 @@
         },
         {
           "kieu": "dong",
-          "chu": "Alkyl Dimethyl Benzyl Ammonium Chloride, Nước RO"
+          "chu": "Benzalkonium Chloride, Nước RO"
         },
         {
           "kieu": "dam",
           "chu": "CÔNG DỤNG"
         },
         {
-          "kieu": "gach",
-          "chu": "Sát trùng nguồn nước ao nuôi tôm, khử mùi hôi ở đáy ao."
+          "kieu": "dong",
+          "chu": "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước."
         },
         {
-          "kieu": "gach",
-          "chu": "Hỗ trợ quản lý mật độ tảo, cắt tảo ao nuôi."
+          "kieu": "dong",
+          "chu": "Hỗ trợ trong việc xử lý hiện tượng đen mang, đốm đen, sâu đuôi, hoại tử phụ bộ, đen mình..."
         },
         {
           "kieu": "dam",
@@ -66,25 +66,20 @@
         {
           "kieu": "html",
           "cl": "gach",
-          "chu": "- Trước khi thả giống: Dùng 1 lít/2.000m<sup style=\"line-height:0\">3</sup> nước, trước khi thả giống 3 - 5 ngày."
+          "chu": "- Trong thời gian chuẩn bị ao: 1,5 lít/1.000m<sup style=\"line-height:0\">3</sup> nước để như vậy <span style=\"white-space:nowrap\">2-3 ngày.</span>"
         },
         {
           "kieu": "html",
           "cl": "gach",
-          "chu": "- Trong quá trình nuôi: Dùng 1 lít/3.000 - 5.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 7 - 10 ngày/lần."
-        },
-        {
-          "kieu": "html",
-          "cl": "gach",
-          "chu": "- Trong hỗ trợ xử lý bệnh: Dùng 1 lít/2.000m<sup style=\"line-height:0\">3</sup> nước, sử dụng 2 ngày liên tục."
+          "chu": "- Sát trùng nguồn nước trong quá trình nuôi: 0,5 - 1 lít/1.000m<sup style=\"line-height:0\">3</sup> nước."
         },
         {
           "kieu": "gach",
-          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều."
+          "chu": "Hòa tan với nước gấp 100 lần sau đó phun hoặc tạt đều khắp ao."
         },
         {
           "kieu": "gach",
-          "chu": "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp, không dùng sản phẩm khi trời ít nắng và mưa."
+          "chu": "Lắc đều sản phẩm trước khi sử dụng."
         },
         {
           "kieu": "gach",
@@ -200,17 +195,6 @@
       "y": 10,
       "w": 55,
       "h": 56
-    }
-  ],
-  "chu_vector": [
-    {
-      "chu": "80%",
-      "x": 352,
-      "y": 180,
-      "w": 72,
-      "co": 36,
-      "phong": "sans",
-      "mau": "#e8222a"
     }
   ]
 }
