@@ -132,7 +132,7 @@
     $('uses').innerHTML = ''; p.cong_dung.forEach(function (c) { var li = document.createElement('li'); li.textContent = c; $('uses').appendChild(li); });
     [].forEach.call(document.querySelectorAll('.list button'), function (b) { b.setAttribute('aria-current', b.dataset.s === p.slug ? 'true' : 'false'); });
     $('load').hidden = false;
-    var job = p.kieu === 'tui' ? Promise.all([tex('/xoay-360-3d/tex/' + p.slug + '-truoc.jpg'), tex('/xoay-360/tex/' + p.slug + '-sau.jpg')]) : tex('/xoay-360/tex/' + p.slug + '.jpg').then(function (t) { return [t]; });
+    var job = p.kieu === 'tui' ? Promise.all([tex('/xoay-360-3d/tex/' + p.slug + '-truoc.jpg'), tex('/xoay-360-3d/tex/' + p.slug + '-sau.jpg')]) : tex('/xoay-360-3d/tex/' + p.slug + '.jpg').then(function (t) { return [t]; });
     job.then(function (ts) {
       if (cur) { holder.remove(cur.g); cur.g.traverse(function (o) { if (o.geometry) o.geometry.dispose(); }); }
       cur = p.kieu === 'tui' ? pouch(ts[0], ts[1], p.w, p.h) : bottle(ts[0], p.kieu);
