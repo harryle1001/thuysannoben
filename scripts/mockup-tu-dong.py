@@ -106,6 +106,11 @@ def tron(sess, slug, out):
     rm0 = float(np.median(r[len(r) // 3: 2 * len(r) // 3]))
     ye = max(np.where(A[:, int(cx + sg * 0.85 * rm0)])[0][-1] for sg in (-1, 1))
     kb = float(np.clip((y1 - ye) / (0.473 * rm0), 0, 0.4))
+    cosv = 1.0
+    if is_xo:   # xô chụp từ cao: mặt nắp là elip lớn; đo độ dẹt từ đỉnh tới hàng đạt bề rộng tối đa, bù chiều cao theo góc
+        has_cap = False
+        n4 = max(5, int(0.4 * len(r))); im_ = int(np.argmax(r[:n4] >= 0.97 * r[:n4].max()))
+        kb = float(np.clip(im_ / max(r[im_], 1), 0.1, 0.85)); cosv = float(np.sqrt(1 - kb ** 2))
     cb = int(round(kb * np.percentile(r[-len(r) // 8:], 90)))
     ct = int(round(kb * np.percentile(r[:max(3, len(r) // 20)], 90)))
     if has_cap: ct = 0                      # nắp hẹp: elip mặt trên không đáng kể
@@ -115,8 +120,9 @@ def tron(sess, slug, out):
     # tỉ lệ cm/px theo thể tích
     if q is None: q, unit = 1000, 'ml'
     V = q * 1.15 if unit == 'ml' else q * (1.8 if is_xo else 2.3)
-    s = (V / (np.pi * (r ** 2).sum())) ** (1 / 3)
-    cap = dict(y0=float((y1 - (y0 + cy1)) * s), y1=float((y1 - y0) * s), r=float(np.percentile(r[:max(3, cy1)], 90) * s)) if has_cap else None
+    s = (V * cosv / (np.pi * (r ** 2).sum())) ** (1 / 3)
+    sy = s / cosv                            # cm/px theo chiều cao (chỉ khác s ở xô)
+    cap = dict(y0=float((y1 - (y0 + cy1)) * sy), y1=float((y1 - y0) * sy), r=float(np.percentile(r[:max(3, cy1)], 90) * s)) if has_cap else None
     # màu thân theo hàng (dải giữa), khử bóng
     band = np.zeros((y1 - y0 + 1, 3))
     for i, y in enumerate(range(y0, y1 + 1)):
@@ -133,7 +139,7 @@ def tron(sess, slug, out):
     norm = rgb * (ref / np.maximum(colref, 1))[None]
     dist = np.sqrt(((norm - ref) ** 2).sum(-1))
     mask = (dist > 48) & A
-    ystart = y0 + (int((y1 - (cap['y0'] / s)) - y0) + 2 if cap else 0)
+    ystart = y0 + (int((y1 - (cap['y0'] / sy)) - y0) + 2 if cap else 0)
     mask[:ystart] = False; mask[y0 + int(nb * 0.97):] = False
     mask = ndi.binary_opening(mask, structure=np.ones((5, 1)))
     rm = float(np.median(r[nb // 3: 2 * nb // 3]))
@@ -177,7 +183,7 @@ def tron(sess, slug, out):
         Image.fromarray(flat.astype(np.uint8)).save(os.path.join(out, slug + '-nhan-goc.png'))
         tw, th = save_sr(sess, flat, os.path.join(out, slug + '-nhan-4k.png'))
         # độ cao nhãn theo trục (cm từ đáy): lấy tại mép (cos = 0), là đường tròn thật trên thân
-        label = dict(y0=float((y1 - ba) * s), y1=float((y1 - ta) * s), u0=u0, u1=u1, wrap=bool(wrap))
+        label = dict(y0=float((y1 - ba) * sy), y1=float((y1 - ta) * sy), u0=u0, u1=u1, wrap=bool(wrap))
         lab_rows = (np.arange(y0, y1 + 1) >= ta + tb) & (np.arange(y0, y1 + 1) <= ba + bb)
         band[lab_rows] = np.nan
     # màu đỉnh: nội suy qua vùng nhãn, đưa về albedo
@@ -191,9 +197,9 @@ def tron(sess, slug, out):
     alb[~white] = np.clip(band[~white] * 1.12, 0, 255)
     step = 2
     idx = np.arange(0, nb, step)
-    prof = [[float(r[i] * s), float((y1 - (y0 + i)) * s)] for i in idx][::-1]   # đáy -> đỉnh
+    prof = [[float(r[i] * s), float((y1 - (y0 + i)) * sy)] for i in idx][::-1]   # đáy -> đỉnh
     cols = [lin(alb[i]).round(4).tolist() for i in idx][::-1]
-    spec = dict(kind='tron', slug=slug, cm_per_px=float(s), h=float((y1 - y0) * s), w=float(2 * rmax * s),
+    spec = dict(kind='tron', slug=slug, cm_per_px=float(s), h=float((y1 - y0) * sy), w=float(2 * rmax * s),
                 profile=prof, colors=cols, glass=glass, cap=cap, label=label, xo=is_xo)
     json.dump(spec, open(os.path.join(out, slug + '.json'), 'w'))
     return spec
