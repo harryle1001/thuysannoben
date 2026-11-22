@@ -1,0 +1,323 @@
+{
+  "slug": "de-zoo",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-014384_1.jpg",
+  "cat": [
+    70,
+    188,
+    1530,
+    1000
+  ],
+  "kich_thuoc_goc": [
+    1460,
+    812
+  ],
+  "_ghi_chu": "Ảnh gốc 02-014384_1 (1600 × 1028) cắt bỏ dòng ghi kích thước 'Cao 14.5 cm x ngang 26.5 cm' và lề trắng (cat); toạ độ theo ảnh đã cắt 1460 × 812. Chữ sửa theo hồ sơ TCCS 02:2020/NOBEN (content/tccs.json, khớp labels.json/website): Cu (CuSO4.5H2O) 1.000 ppm, dung môi 1 lít, công dụng cắt tảo/ổn định pH, hướng dẫn xử lý tảo, ngưng trước thu hoạch 15 ngày, bảo quản. LƯU Ý: nhãn cũ và CSDL data.json (bản khai Tổng cục) ghi Cu 1.500 mg/lít, công dụng xử lý nấm/ký sinh trùng, liều 1 lít/3.000 m³ — khác TCCS, cần chủ sản phẩm xác nhận bản nào đúng. Asen, Chì KPH, Nguyên liệu, Hình dạng, Màu sắc (TCCS không ghi) giữ như nhãn cũ. Thể tích thực để trống (nhãn cũ ghi 1 lít). Dòng 'Sản xuất tại Việt Nam' sẵn có ở góc phải dưới đổi thành SẢN XUẤT TẠI VIỆT NAM đậm đỏ (khối công ty giữa nền tím đã kín chỗ). Chữ trên nền tím nhạt chuyển sắc: khung trong suốt + xóa chữ cũ theo độ tối.",
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    265,
+    145
+  ],
+  "mat_truoc": [
+    470,
+    0,
+    990,
+    812
+  ],
+  "khung": [
+    {
+      "x": 44,
+      "y": 56,
+      "w": 400,
+      "h": 612,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#111111",
+      "dem": 2,
+      "co": 21,
+      "dong_cao": 1.45,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "Cu (CuSO<sub style=\"line-height:0\">4</sub>.5H<sub style=\"line-height:0\">2</sub>O) (min): 1.000 ppm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dung môi (nước RO) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "html",
+          "chu": "Cu (dạng CuSO<sub style=\"line-height:0\">4</sub>.5H<sub style=\"line-height:0\">2</sub>O), nước lọc RO"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hình dạng sản phẩm: dạng lỏng/ gel, sệt"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Màu sắc sản phẩm: màu xanh lơ"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;height:.8em\"></span>"
+        },
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Giúp ổn định mật độ tảo, ổn định pH ao nuôi.</span>"
+        }
+      ]
+    },
+    {
+      "x": 996,
+      "y": 74,
+      "w": 428,
+      "h": 654,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#111111",
+      "dem": 2,
+      "co": 21,
+      "dong_cao": 1.4,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">Hòa với nước sạch một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều và tăng hiệu quả sử dụng.</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dùng để xử lý các loại tảo độc trong ao nuôi thủy sản:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">+ Sử dụng 500ml sản phẩm/1.500 - 2.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 7-10 ngày sử dụng 1 lần.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">+ Trường hợp để xử lý tảo lam, tảo sợi, tảo xanh quá dày: Sử dụng 500ml sản phẩm/1.000m<sup style=\"line-height:0\">3</sup> nước, sử dụng 2 liều liên tục và cách nhau 2 ngày, sử dụng vào lúc trời nắng gắt.</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "* Lưu ý: Không sử dụng sản phẩm khi trời ít nắng hoặc mưa."
+        },
+        {
+          "kieu": "dong",
+          "chu": "* Ngưng sử dụng trước thu hoạch 15 ngày."
+        },
+        {
+          "kieu": "dong",
+          "chu": "* Lắc đều sản phẩm trước khi sử dụng."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">* Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.</span>"
+        },
+        {
+          "kieu": "dam",
+          "chu": "BẢO QUẢN:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">Nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;height:.35em\"></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số TCCS 02:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-014384"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NSX:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "HSD:"
+        }
+      ]
+    },
+    {
+      "x": 1220,
+      "y": 699,
+      "w": 204,
+      "h": 28,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#c8102e",
+      "dem": 0,
+      "co": 18,
+      "can": "right",
+      "dong_cao": 1.5,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "SẢN XUẤT TẠI VIỆT NAM"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        44,
+        52,
+        400,
+        616
+      ],
+      "chu": "toi",
+      "le": 4,
+      "no": 7
+    },
+    {
+      "vung": [
+        44,
+        52,
+        400,
+        616
+      ],
+      "khac_nen": 21,
+      "nguong": 22,
+      "le": 6,
+      "no": 5
+    },
+    {
+      "vung": [
+        996,
+        72,
+        430,
+        658
+      ],
+      "chu": "toi",
+      "le": 4,
+      "no": 7
+    },
+    {
+      "vung": [
+        996,
+        72,
+        430,
+        658
+      ],
+      "khac_nen": 21,
+      "nguong": 22,
+      "le": 6,
+      "no": 5
+    },
+    {
+      "vung": [
+        998,
+        737,
+        180,
+        31
+      ],
+      "mau": "#f6e840",
+      "nguong": 110,
+      "le": 3
+    },
+    {
+      "vung": [
+        578,
+        657,
+        405,
+        110
+      ],
+      "mau": "#ffffff",
+      "nguong": 100,
+      "le": 3
+    },
+    {
+      "vung": [
+        578,
+        657,
+        405,
+        104
+      ],
+      "khac_nen": 15,
+      "nguong": 28,
+      "le": 4
+    },
+    {
+      "vung": [
+        1000,
+        740,
+        176,
+        27
+      ],
+      "khac_nen": 15,
+      "nguong": 28,
+      "le": 2
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "Thể tích thực:",
+      "x": 1002,
+      "y": 762,
+      "w": 124,
+      "co": 24,
+      "phong": "sans",
+      "mau": "#f6e840"
+    }
+  ],
+  "logo": [
+    {
+      "x": 486,
+      "y": 667,
+      "w": 88,
+      "h": 90
+    }
+  ],
+  "cong_ty": {
+    "x": 582,
+    "y": 657,
+    "w": 400,
+    "co": 9.4,
+    "mau": "#ffffff",
+    "ten": "<span style=\"font-weight:400;font-size:.6em\">Sản phẩm của: </span>CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam",
+      "Điện thoại: 0934 246 420 / Email: thuocthuysannoben@gmail.com / Website: thuocthuysannoben.com",
+      "Sản xuất tại: CÔNG TY TNHH NO BEN. Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi,",
+      "Thành phố Hồ Chí Minh, Việt Nam",
+      "Sản phẩm được phối trộn và đóng gói tại: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ",
+      "Chí Minh, Việt Nam"
+    ]
+  }
+}

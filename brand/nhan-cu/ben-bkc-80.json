@@ -1,0 +1,216 @@
+{
+  "slug": "ben-bkc-80",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-039607_1.jpg",
+  "kich_thuoc_goc": [
+    800,
+    288
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 288 (phóng ×8). Ảnh _1 là nhãn Noben 'BEN BKC' (cùng mẫu xanh lá với ảnh sản phẩm BEN BKC 80% trên web); ảnh _2 (BIOPRO), _3 (Probiotic), _4 (Đức Việt) là nhãn nhà phân phối, không dùng. LƯU Ý: hồ sơ 02-039607 là BEN BKC hàm lượng 50% (TCCS 04:2016/NOBEN), còn web ghi tên 'BEN BKC 80%' — nhãn này giữ tên BEN BKC và 50% theo hồ sơ, cần chủ sản phẩm xác nhận trước khi dùng cho BEN BKC 80%. Chữ sửa theo content/tccs.json: thêm công dụng thứ hai, 'Lắc đều…', 'Cảnh báo…'; bảo quản theo TCCS. Tên hoạt chất giữ 'Alkyl Dimethyl Benzyl Ammonium Chloride' như nhãn cũ và CSDL (tccs.json ghi Benzalkonium Chloride, cùng chất). Dòng 'Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi' giữ như nhãn cũ (TCCS không ghi). Mã SPHQ 'VICB 7178 10-03' sửa thành 'VICB 7178.10-03' (như các nhãn phân phối cùng mã). Địa chỉ giữ như nhãn cũ; hạn sử dụng để trống (nhãn cũ ghi 2 năm). CẬP NHẬT 22/11/2026 theo chủ sản phẩm (\"dùng như web\"): tên BEN BKC 80% (thêm chữ 80% dưới tên), hàm lượng 80%, công dụng và hướng dẫn sử dụng lấy đúng trang sản phẩm trên web. Số TCCS 04:2016 và mã số 02-039607 vẫn là hồ sơ bản 50%: cần hồ sơ cho bản 80% trước khi in.",
+  "khung": [
+    {
+      "x": 3,
+      "y": 3,
+      "w": 250,
+      "h": 282,
+      "r": 0,
+      "phong": "serif",
+      "co": 10.6,
+      "dong_cao": 1.33,
+      "dem": 5,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1 lít sản phẩm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Alkyl Dimethyl Benzyl Ammonium Chloride (min): 80%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dung môi (Nước RO) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dam",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Alkyl Dimethyl Benzyl Ammonium Chloride, Nước RO"
+        },
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sát trùng nguồn nước ao nuôi tôm, khử mùi hôi ở đáy ao."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ quản lý mật độ tảo, cắt tảo ao nuôi."
+        },
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG"
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "- Trước khi thả giống: Dùng 1 lít/2.000m<sup style=\"line-height:0\">3</sup> nước, trước khi thả giống 3 - 5 ngày."
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "- Trong quá trình nuôi: Dùng 1 lít/3.000 - 5.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 7 - 10 ngày/lần."
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "- Trong hỗ trợ xử lý bệnh: Dùng 1 lít/2.000m<sup style=\"line-height:0\">3</sup> nước, sử dụng 2 ngày liên tục."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa với nước ao nuôi một lượng vừa đủ rồi tạt đều khắp ao, mở máy quạt nước để sản phẩm phân tán đều."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Lưu ý: Tùy theo tình trạng sức khỏe tôm để tăng hoặc giảm liều lượng cho thích hợp, không dùng sản phẩm khi trời ít nắng và mưa."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 518,
+      "y": 3,
+      "w": 278,
+      "h": 160,
+      "r": 0,
+      "phong": "serif",
+      "co": 10.6,
+      "dong_cao": 1.36,
+      "dem": 5,
+      "noi_dung": [
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 04:2016/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-03"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-039607"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 518,
+      "y": 170,
+      "w": 278,
+      "h": 115,
+      "r": 0,
+      "phong": "serif",
+      "co": 8.2,
+      "dong_cao": 1.3,
+      "dem": 5,
+      "noi_dung": [
+        {
+          "kieu": "dam",
+          "chu": "CÔNG TY TNHH NO BEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Điện thoại: 0934 246 420"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Email: thuocthuysannoben@gmail.com"
+        },
+        {
+          "kieu": "dong",
+          "chu": "MST: 0304210513"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#c8102e;-webkit-text-stroke-color:#c8102e;font-family:'Liberation Sans',Arial,sans-serif;font-size:1.15em\">SẢN XUẤT TẠI VIỆT NAM</b>"
+        }
+      ]
+    }
+  ],
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    86
+  ],
+  "mat_truoc": [
+    255,
+    0,
+    515,
+    288
+  ],
+  "logo": [
+    {
+      "x": 273,
+      "y": 10,
+      "w": 55,
+      "h": 56
+    }
+  ],
+  "chu_vector": [
+    {
+      "chu": "80%",
+      "x": 352,
+      "y": 180,
+      "w": 72,
+      "co": 36,
+      "phong": "sans",
+      "mau": "#e8222a"
+    }
+  ]
+}

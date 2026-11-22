@@ -1,0 +1,242 @@
+{
+  "slug": "super-gold",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020762_1.jpg",
+  "kich_thuoc_goc": [
+    799,
+    289
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 799 × 289 (phóng ×8). Chữ sửa theo hồ sơ TCCS 15:2020/NOBEN; hình, màu, bố cục giữ nguyên nhãn đăng ký. Công dụng thêm dòng 2 theo TCCS; hướng dẫn sử dụng theo TCCS (bỏ dòng 'Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi' vì TCCS ghi 'Ngưng sử dụng trước thu hoạch 15 ngày'; CSDL Tổng cục ghi 10-15 ngày). Asen, Chì KPH và dòng Nguyên liệu giữ như nhãn cũ (TCCS không ghi). Hạn sử dụng để trống (nhãn cũ ghi 2 năm). Địa chỉ giữ như nhãn cũ; SẢN XUẤT TẠI VIỆT NAM đặt dưới dòng địa chỉ sản xuất (phần trắng còn trống cuối nhãn).",
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [
+    240,
+    87
+  ],
+  "mat_truoc": [
+    264,
+    0,
+    537,
+    289
+  ],
+  "khung": [
+    {
+      "x": 22,
+      "y": 9,
+      "w": 238,
+      "h": 275,
+      "r": 0,
+      "dem": 2,
+      "co": 9.3,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>THÀNH PHẦN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "(trong 1 lít sản phẩm)"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Glutaraldehyde (min): 15%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dung môi (nước RO) vừa đủ: 1 lít"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Glutaraldehyde, nước RO"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.8em\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước."
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hỗ trợ sát khuẩn gây phát sáng, đen mang, vàng mang, cụt râu, sâu đuôi, hoại tử phụ bộ."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.8em\">HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trong thời gian chuẩn bị ao: 1,5 lít/1.000m³ nước để như vậy 2-3 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Sát trùng nguồn nước trong quá trình nuôi: 1 lít/1.000m³ nước."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa tan với nước gấp 100 lần sau đó phun hoặc tạt đều khắp ao."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Ngưng sử dụng trước thu hoạch 15 ngày."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Lắc đều sản phẩm trước khi sử dụng."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng."
+        }
+      ]
+    },
+    {
+      "x": 540,
+      "y": 25,
+      "w": 250,
+      "h": 176,
+      "r": 0,
+      "dem": 3,
+      "co": 9.8,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.42,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em."
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 15:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-16"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-020762"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thể tích thực:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 582,
+      "y": 216,
+      "w": 213,
+      "h": 44,
+      "r": 0,
+      "dem": 1,
+      "co": 6.4,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.18,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.8)\"><b style=\"font-size:1.5em;line-height:1.2\">CÔNG TY TNHH NO BEN</b></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.8)\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi,</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.8)\">Thành Phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.8)\">Điện thoại: 0934 246 420 - MST: 0304210513</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.8)\">Email: thuocthuysannoben@gmail.com</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 539,
+      "y": 262.5,
+      "w": 257,
+      "h": 24,
+      "r": 0,
+      "dem": 1,
+      "co": 6.4,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.2,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:140%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.714)\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125%;white-space:nowrap;transform-origin:0 0;transform:scaleX(.8)\"><b style=\"color:#c8102e;-webkit-text-stroke-color:#c8102e;font-size:1.45em\">SẢN XUẤT TẠI VIỆT NAM</b></span></span>"
+        }
+      ]
+    }
+  ],
+  "logo": [
+    {
+      "x": 545,
+      "y": 222,
+      "w": 36,
+      "h": 37
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        272,
+        30,
+        530,
+        86
+      ],
+      "bang_mau": [
+        "#e11a24",
+        "#f6f0ee",
+        "#1c1414",
+        "#f4a514",
+        "#f6b62a",
+        "#f2c45a"
+      ],
+      "net": [
+        "#e11a24",
+        "#f6f0ee",
+        "#1c1414"
+      ],
+      "mem": 500
+    }
+  ]
+}
