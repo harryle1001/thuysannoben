@@ -22,6 +22,11 @@ upscale = import_module('mockup-nhan-cu').upscale
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 SRC = os.path.join(ROOT, 'public', 'images', 'products-cutout')
+# ảnh chụp chung nhiều gói: chỉ lấy gói đứng trước (khung x0, y0, x1, y1 trên ảnh tách nền)
+CROP = {'bio-edta': (45, 425, 605, 900), 'edta-99': (40, 250, 860, 820),
+        'grand-zeolite-zeo-hat-nhap-khau': (20, 20, 460, 820), 'xo-09': (20, 20, 520, 820)}
+# can / chai có quai (khối "thổi phồng" từ đường viền): độ sâu = k × bề ngang
+KHOI = {'ben-bkc-80': 0.85, 'antiliv': 0.8, 'no-toxin': 0.5}
 QC = {p['slug']: (p.get('quy_cach') or '') for p in json.load(open(os.path.join(ROOT, 'brand', 'labels.json')))['san_pham']}
 
 
@@ -44,6 +49,8 @@ def qty(slug):
 def load(slug):
     im = np.asarray(Image.open(os.path.join(SRC, slug + '.webp')).convert('RGBA')).astype(np.float32)
     a = im[..., 3] / 255.
+    if slug in CROP:
+        x0, y0, x1, y1 = CROP[slug]; keep = np.zeros_like(a); keep[y0:y1, x0:x1] = 1; a = a * keep
     return im[..., :3] * a[..., None] + 255. * (1 - a[..., None]), a
 
 
@@ -203,6 +210,7 @@ def det(sess, slug, out):
     topband = slice(int(h * 0.02), int(h * 0.10))
     foil_any = (sat < 0.16) & (val > 0.35) & a          # kể cả chỗ nhôm lóa trắng
     is_foil = foil_any[topband][a[topband]].mean() > 0.5
+    if slug in ('grand-zeolite-zeo-hat-nhap-khau',): is_foil = False   # bao PP trắng in, không phải túi nhôm
     if is_foil:
         nf = ndi.binary_opening(a & ~foil, iterations=2)
         lab, n = ndi.label(nf)
@@ -210,7 +218,7 @@ def det(sess, slug, out):
         for i in range(1, n + 1):
             if sizes[i] > 0.015 * a.sum(): keep |= lab == i
         keep = ndi.binary_fill_holes(ndi.binary_closing(keep, iterations=6))
-        if keep.any():
+        if keep.any() and slug not in CROP:
             ky, kx = np.where(keep); bb = (ky.max() - ky.min() + 1) * (kx.max() - kx.min() + 1)
             sparse = bb > 0.5 * a.sum() and keep.sum() < 0.7 * bb       # vùng in rời rạc trên túi trắng: gộp thành một khung
         else: sparse = False
@@ -233,6 +241,34 @@ def det(sess, slug, out):
     return spec
 
 
+def khoi(sess, slug, out):
+    """Can/chai có quai: khối thổi phồng từ đường viền (thân dày, nắp và quai mỏng, giữ lỗ quai)."""
+    rgb, al = load(slug)
+    A = ndi.binary_opening(al > 0.5, iterations=1)
+    lab, n = ndi.label(A); A = lab == (np.argmax(np.bincount(lab.ravel())[1:]) + 1)
+    yy, xx = np.where(A); y0, y1, x0, x1 = yy.min(), yy.max(), xx.min(), xx.max()
+    A = A[y0:y1 + 1, x0:x1 + 1]; c = rgb[y0:y1 + 1, x0:x1 + 1]
+    Wpx = A.shape[1]; Dh = KHOI[slug] * Wpx / 2                      # nửa độ sâu (px)
+    dt = ndi.gaussian_filter(ndi.distance_transform_edt(A), 1.5)
+    M = np.minimum(ndi.maximum_filter(dt, size=max(5, int(0.15 * Wpx))), Dh)
+    d = np.minimum(dt, M)
+    z = np.sqrt(np.clip(d * (2 * M - d), 0, None)) * A              # mặt cắt tròn bán kính M
+    q, unit = qty(slug)
+    V = (q or 1000) * 1.1
+    s = (V / (2 * z.sum())) ** (1 / 3)
+    st = 3                                                             # lưới 3 px
+    g = z[::st, ::st] * s; m = A[::st, ::st]
+    edge = m & ~ndi.binary_erosion(m)
+    g[edge] = 0; g[~m] = -1
+    tw, th = save_sr(sess, c, os.path.join(out, slug + '-nhan-4k.png'))
+    ring = A & ~ndi.binary_erosion(A, iterations=6)
+    body = np.median(c[ring], 0)
+    spec = dict(kind='khoi', slug=slug, w=float(Wpx * s), h=float(A.shape[0] * s), step=float(st * s),
+                grid=np.round(g, 3).tolist(), base=lin(body).round(4).tolist())
+    json.dump(spec, open(os.path.join(out, slug + '.json'), 'w'))
+    return spec
+
+
 if __name__ == '__main__':
     import onnxruntime as ort
     model, out, kind = sys.argv[1:4]
@@ -241,7 +277,7 @@ if __name__ == '__main__':
     for slug in sys.argv[4:]:
         if os.path.exists(os.path.join(out, slug + '.json')): print('bỏ qua (đã có)', slug, flush=True); continue
         try:
-            sp = (tron if kind == 'tron' else det)(sess, slug, out)
+            sp = {'tron': tron, 'det': det, 'khoi': khoi}[kind](sess, slug, out)
             print(slug, sp['kind'], f"{sp['w']:.1f}×{sp['h']:.1f} cm", 'nhãn' if sp.get('label') or sp['kind'] != 'tron' else 'KHÔNG THẤY NHÃN', flush=True)
         except Exception as e:
             print('LỖI', slug, e, flush=True)

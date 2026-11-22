@@ -13,7 +13,8 @@ const OUT = opt('--out', 'mockup.png');
 const SHOT = opt('--shot', 'chai');
 const GOC = +opt('--goc', 0);
 const KIEU = opt('--kieu', 'cu');
-const SPEC = opt('--spec', '');   // thông số tự đo (scripts/mockup-tu-dong.py): chai/hũ/xô bất kỳ, túi, bao
+const SPEC = opt('--spec', '');
+const TRONG = args.includes('--trong');   // nền trong suốt (ảnh cho website), chỉ giữ bóng tiếp xúc   // thông số tự đo (scripts/mockup-tu-dong.py): chai/hũ/xô bất kỳ, túi, bao
 const W = +opt('--w', 3072), H = +opt('--h', 3840);
 const SLUG = { chai: 'super-yucca', hu: 'bio-aq', tui: 'clear-12h', bao: 'mix-79' };
 const THREE_JS = process.env.THREE_JS || [path.join(process.cwd(), 'node_modules', 'three', 'build', 'three.min.js'), path.join(__dirname, '..', 'node_modules', 'three', 'build', 'three.min.js')].find((f) => fs.existsSync(f)) || '';
@@ -24,7 +25,7 @@ function scene() {
   const PHI = 1.61803;
   const CU = CFG.kieu === 'cu';   // 'cu': nhãn cũ quấn kín thân / in trực tiếp như bao bì cũ; 'moi': nhãn decal mới
   THREE.ColorManagement.legacyMode = false;
-  const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+  const r = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: CFG.trong });
   r.setPixelRatio(1); r.setSize(CFG.W, CFG.H);
   r.outputEncoding = THREE.sRGBEncoding; r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = 0.86;
   r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap; r.physicallyCorrectLights = true;
@@ -153,6 +154,32 @@ function scene() {
     return g;
   }
 
+  // ---- Can / chai có quai: khối thổi phồng từ đường viền ảnh cũ (lưới độ sâu z, -1 = ngoài hình)
+  function khoiSpec(img, P) {
+    const g = new THREE.Group(), G = P.grid, ny = G.length, nx = G[0].length, st = P.step;
+    const build = (sg) => {
+      const pos = [], uv = [], idx = [], id = new Int32Array(nx * ny).fill(-1);
+      for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+        const z = G[j][i]; if (z < 0) continue;
+        id[j * nx + i] = pos.length / 3;
+        pos.push(i * st - P.w / 2, (ny - 1 - j) * st, sg * z); uv.push(i / (nx - 1), 1 - j / (ny - 1));
+      }
+      for (let j = 0; j < ny - 1; j++) for (let i = 0; i < nx - 1; i++) {
+        const a = id[j * nx + i], b = id[j * nx + i + 1], c = id[(j + 1) * nx + i], d = id[(j + 1) * nx + i + 1];
+        if (a < 0 || b < 0 || c < 0 || d < 0) continue;
+        if (sg > 0) idx.push(a, c, b, b, c, d); else idx.push(a, b, c, b, d, c);
+      }
+      const ge = new THREE.BufferGeometry();
+      ge.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); ge.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+      ge.setIndex(idx); ge.computeVertexNormals(); return ge;
+    };
+    const front = new THREE.Mesh(build(1), new THREE.MeshPhysicalMaterial({ map: tex(img), roughness: 0.45, clearcoat: 0.18, clearcoatRoughness: 0.45, envMapIntensity: 0.75, side: THREE.DoubleSide }));
+    const back = new THREE.Mesh(build(-1), new THREE.MeshPhysicalMaterial({ color: new THREE.Color().fromArray(P.base), roughness: 0.46, clearcoat: 0.16, envMapIntensity: 0.9, side: THREE.DoubleSide }));
+    for (const m of [front, back]) { m.castShadow = true; m.receiveShadow = true; g.add(m); }
+    contact(g, P.w * 1.5, P.w * 1.1); g.userData = { h: P.h, w: P.w };
+    return g;
+  }
+
   // ---- Hũ nhựa 500 g: Ø100 × cao 150 mm, nắp vặn rộng bằng thân, có khía mịn (đo theo ảnh hũ Bio AQ cũ)
   function hu(img) {
     const g = new THREE.Group(); const R = 4.96;
@@ -265,7 +292,7 @@ function scene() {
     cam.position.set(4, 34, 205); cam.lookAt(-1.5, 20.5, 0); setFog(205);
   } else {
     const P = CFG.spec;
-    const o = P ? (P.kind === 'tron' ? tronSpec : P.kind === 'tui' ? tui : bao)(TEX.spec, P) : make[CFG.shot](TEX[CFG.shot]); const { h, w } = o.userData;
+    const o = P ? (P.kind === 'tron' ? tronSpec : P.kind === 'khoi' ? khoiSpec : P.kind === 'tui' ? tui : bao)(TEX.spec, P) : make[CFG.shot](TEX[CFG.shot]); const { h, w } = o.userData;
     o.rotation.y = -CFG.goc * Math.PI / 180 * (CU && (CFG.shot === 'chai' || CFG.shot === 'hu' || (P && P.label && P.label.wrap)) ? 0.62 : 1); s.add(o);   // nhãn cũ chỉ có nửa mặt trước nên chai, hũ xoay ~21°
     lights(Math.max(h, w * 1.3));
     const fov = 21; cam = new THREE.PerspectiveCamera(fov, CFG.W / CFG.H, 1, 4000);
@@ -274,6 +301,7 @@ function scene() {
     const up = CFG.goc ? 0.2 : 0.06;                                         // góc 3/4 nhìn hơi từ trên xuống
     setFog(dist); cam.position.set(0, h * 0.5 + dist * up, dist); cam.lookAt(0, h * 0.47, 0);
   }
+  if (CFG.trong) { s.background = null; s.fog = null; floor.visible = false; r.setClearColor(0x000000, 0); }
   r.render(s, cam);
   return r.domElement.toDataURL('image/png');
 }
@@ -297,7 +325,7 @@ function scene() {
     window.TEX = {};
     for (const k of Object.keys(T)) window.TEX[k] = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = T[k]; });
   }, data);
-  const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, shot: SPEC ? 'spec' : SHOT, goc: GOC, kieu: KIEU, spec: SPEC ? JSON.parse(fs.readFileSync(SPEC, 'utf8')) : null })}; return (${scene.toString()})(); })()`);
+  const url = await page.evaluate(`(() => { window.CFG = ${JSON.stringify({ W, H, trong: TRONG, shot: SPEC ? 'spec' : SHOT, goc: GOC, kieu: KIEU, spec: SPEC ? JSON.parse(fs.readFileSync(SPEC, 'utf8')) : null })}; return (${scene.toString()})(); })()`);
   fs.writeFileSync(OUT, Buffer.from(url.split(',')[1], 'base64'));
   console.log('saved', OUT, W + '×' + H);
   await browser.close();
