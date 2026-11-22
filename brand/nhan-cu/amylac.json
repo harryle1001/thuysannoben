@@ -1,0 +1,318 @@
+{
+  "slug": "amylac",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-002254_1.jpg",
+  "kich_thuoc_goc": [
+    800,
+    424
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 424 (phóng ×8; túi: mặt trước trái, mặt sau phải). content/tccs.json chưa có AMYLAC nên chữ sửa theo hồ sơ công bố TCCS 26:2020/NOBEN trên CSDL (CONG-TY-NOBEN/ho-so-san-pham/data.json, mã 02-002254): chỉ tiêu Bacillus subtilis (min) 1,5 × 10^6 CFU/g (nhãn cũ ghi 1,5 x 10^9 cfu/kg, cùng giá trị), thêm Độ ẩm (max) 10%, 'Chất đệm' → 'Chất mang', thêm cảnh báo an toàn. Hồ sơ không có mục công dụng nên CÔNG DỤNG giữ như nhãn cũ, chỉ sửa 'Phân thức ăn thừa' → 'Phân hủy thức ăn thừa' (thiếu chữ) và 'Giảm' → 'giảm'. Mã SPHQ, địa chỉ giữ như nhãn cũ. Hạn sử dụng để trống (nhãn cũ ghi 2 năm).",
+  "khung": [
+    {
+      "x": 424,
+      "y": 56,
+      "w": 162,
+      "h": 181,
+      "r": 0,
+      "phong": "serif",
+      "co": 9.6,
+      "dong_cao": 1.5,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"font-size:1.05em\">CHỈ TIÊU CHẤT LƯỢNG</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "Bacillus subtilis (min): 1,5 x 10<sup style=\"line-height:0\">6</sup> CFU/g"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Độ ẩm (max): 10%"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất mang (Dextrose) vừa đủ: 1 kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli</i> &lt; 10 CFU/g"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "trong"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bacillus subtilis, Dextrose"
+        }
+      ]
+    },
+    {
+      "x": 587,
+      "y": 56,
+      "w": 209,
+      "h": 226,
+      "r": 0,
+      "phong": "serif",
+      "co": 9.5,
+      "dong_cao": 1.24,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Cung cấp vi sinh vật có lợi và enzyme cho môi trường ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "cl": "gach",
+          "chu": "- Phân hủy thức ăn thừa, chất thải tôm cá, giảm khí độc NH<sub style=\"line-height:0\">3</sub>, H<sub style=\"line-height:0\">2</sub>S, làm sạch đáy và nước ao nuôi, cải thiện chất lượng môi trường ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.6em\">HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hòa tan sản phẩm với nước ao nuôi, tạt đều khắp mặt ao với liều lượng như sau:"
+        },
+        {
+          "kieu": "html",
+          "chu": "Trước khi thả nuôi: Dùng 500g cho 3.000 m<sup style=\"line-height:0\">3</sup> nước"
+        },
+        {
+          "kieu": "html",
+          "chu": "Tháng thứ 1 - 2: dùng 500g cho 6.000 m<sup style=\"line-height:0\">3</sup> - 8.000 m<sup style=\"line-height:0\">3</sup> nước, định kỳ 5 - 7 ngày/lần"
+        },
+        {
+          "kieu": "html",
+          "chu": "Tháng thứ 3 - 4: dùng 500g cho 4.000 m<sup style=\"line-height:0\">3</sup> - 6.000 m<sup style=\"line-height:0\">3</sup> nước, định kỳ 5 - 7 ngày/lần"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Tránh xa tầm tay trẻ em. Không dùng cho người, chỉ dùng trong ao nuôi trồng thủy sản."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.6em\">Hướng dẫn bảo quản:</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô ráo, thoáng mát. Tránh ánh nắng trực tiếp."
+        }
+      ]
+    },
+    {
+      "x": 425,
+      "y": 285,
+      "w": 187,
+      "h": 49,
+      "r": 0,
+      "phong": "serif",
+      "co": 10.2,
+      "dong_cao": 1.16,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 26:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-002254"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-35"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 617,
+      "y": 285,
+      "w": 163,
+      "h": 49,
+      "r": 0,
+      "phong": "serif",
+      "co": 10.2,
+      "dong_cao": 1.5,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 468,
+      "y": 357,
+      "w": 328,
+      "h": 64,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 163,
+      "y": 33,
+      "w": 68,
+      "h": 68
+    },
+    {
+      "x": 419,
+      "y": 358,
+      "w": 47,
+      "h": 48
+    }
+  ],
+  "cong_ty": {
+    "x": 472,
+    "y": 357,
+    "w": 322,
+    "co": 6.7,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "lam_net": [
+    {
+      "vung": [
+        30,
+        118,
+        382,
+        222
+      ],
+      "bang_mau": [
+        "#fdf301",
+        "#8e1d14",
+        "#e6e2dc",
+        "#f47a24",
+        "#c42726",
+        "#faf23e",
+        "#99744f"
+      ],
+      "net": [
+        "#fdf301",
+        "#8e1d14"
+      ]
+    },
+    {
+      "vung": [
+        508,
+        10,
+        698,
+        50
+      ],
+      "bang_mau": [
+        "#ffffff",
+        "#222222",
+        "#909090"
+      ],
+      "net": [
+        "#ffffff",
+        "#222222"
+      ],
+      "mem": 500,
+      "mau": {
+        "#222222": "#111111"
+      }
+    }
+  ],
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    300,
+    160
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    402,
+    424
+  ],
+  "chu_vector": [
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 96.5,
+      "y": 386.3,
+      "w": 208,
+      "co": 10.8,
+      "phong": "serif",
+      "mau": "#f8e8e6"
+    },
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 489,
+      "y": 346.6,
+      "w": 205.5,
+      "co": 10.2,
+      "phong": "serif",
+      "mau": "#1a1a1a",
+      "xoa": [
+        487,
+        336,
+        210,
+        13
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        92,
+        365,
+        216,
+        28
+      ],
+      "khac_nen": 25,
+      "nguong": 16,
+      "le": 4
+    },
+    {
+      "vung": [
+        92,
+        364,
+        216,
+        30
+      ],
+      "khac_nen": 31,
+      "nguong": 9,
+      "le": 4
+    }
+  ]
+}

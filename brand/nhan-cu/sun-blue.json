@@ -1,0 +1,297 @@
+{
+ "slug": "sun-blue",
+ "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-001538_1.jpg",
+ "kich_thuoc_goc": [
+  559,
+  600
+ ],
+ "_ghi_chu": "Toạ độ theo pixel ảnh gốc 559 × 600 (ảnh _1 duy nhất, nhãn túi SUN BLUE Noben; ảnh cutout là bao bì in khác nhưng cùng tên, cùng Noben). Ảnh gốc nhỏ nên hệ số phóng tối đa ×8 (4472 px ngang). content/tccs.json KHÔNG có hồ sơ TCCS 37:2020/NOBEN (mã 02-001538) nên giữ chữ như nhãn cũ; đối chiếu CSDL Tổng cục (data.json): chỉ tiêu Na 2.500-5.000, K 2.700-5.200 mg/kg, kim loại nặng KPH, HDSD khớp; KHÁC nhãn: CSDL ghi 'Chất mang (CaCO3) vừa đủ' (nhãn ghi 'Chất đệm'), có thêm 'Độ ẩm (max) 10%', nguyên liệu CSDL gồm CaCO3/MgCO3, Sodium dihydrogen phosphate, Ferric oxide, Potassium phosphate (nhãn ghi NaH2PO4, K2HPO4, CaCO3) — giữ như nhãn cũ, cần chủ sản phẩm đối chiếu file TCCS. Chỉ sửa: bỏ '-' thừa cuối dòng K, khoảng cách '1kg/5.000m³', '5 - 7 ngày/lần', mã số '02001538' → '02-001538', điện thoại 02837966039 → 0934 246 420, thêm SẢN XUẤT TẠI VIỆT NAM (nền trắng chữ đỏ trên nền xanh lá). Địa chỉ cũ (Tổ 5, Xã Tân Phú Trung, Huyện Củ Chi), email, MST, Mã SPHQ VICB 7178.10-45 giữ như nhãn cũ.",
+ "bao_bi": "tui",
+ "mat_truoc": [
+  0,
+  0,
+  559,
+  600
+ ],
+ "khung": [
+  {
+   "x": 26,
+   "y": 104,
+   "w": 410,
+   "h": 288,
+   "nen": "trong",
+   "r": 0,
+   "co": 11.2,
+   "phong": "serif",
+   "dong_cao": 1.265,
+   "dem": 2,
+   "mau": "#1e1e1e",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b>THÀNH PHẦN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "( Trong 1 kg sản phẩm)"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Na (dạng NaH<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">2</sub>PO<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">4</sub>)(min-max): 2.500 - 5.000 mg/kg"
+    },
+    {
+     "kieu": "html",
+     "chu": "- K (dạng K<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">2</sub>HPO<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">4</sub>)(min-max): 2.700 - 5.200 mg/kg"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Chất đệm (CaCO<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">3</sub>) vừa đủ: 1 kg"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Asen (As): KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Cadimi (Cd): KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Chì (Pb): KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Thủy ngân (Hg): KPH"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>NGUYÊN LIỆU:</b> NaH<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">2</sub>PO<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">4</sub>, K<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">2</sub>HPO<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">4</sub>, CaCO<sub style=\"font-size:.7em;line-height:0;vertical-align:-.22em\">3</sub>"
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>CÔNG DỤNG</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Làm giàu khoáng chất cho ao nuôi, hỗ trợ tôm lột xác nhanh và lột hoàn toàn."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Giúp tôm cứng vỏ nhanh sau khi lột."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Giúp gây màu nước nhanh chóng."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "- Định kỳ: Sử dụng 1kg/5.000m<sup style=\"font-size:.7em;line-height:0;vertical-align:.45em\">3</sup> nước, 5 - 7 ngày/lần."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Giúp tôm cứng vỏ nhanh sau khi lột: 1kg/2.000m<sup style=\"font-size:.7em;line-height:0;vertical-align:.45em\">3</sup> nước."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi."
+    },
+    {
+     "kieu": "html",
+     "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b>Hướng dẫn bảo quản:</b> Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp."
+    }
+   ]
+  },
+  {
+   "x": 33,
+   "y": 398,
+   "w": 243,
+   "h": 64,
+   "nen": "trong",
+   "r": 0,
+   "co": 14.2,
+   "phong": "serif",
+   "dong_cao": 1.092,
+   "dem": 1,
+   "mau": "#1e1e1e",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "Số tiêu chuẩn công bố: 37:2020/NOBEN"
+    },
+    {
+     "kieu": "html",
+     "chu": "Mã SPHQ: VICB 7178.10-45"
+    },
+    {
+     "kieu": "html",
+     "chu": "Mã số tiếp nhận: 02-001538"
+    },
+    {
+     "kieu": "html",
+     "chu": "Khối lượng tịnh:"
+    }
+   ]
+  },
+  {
+   "x": 298,
+   "y": 403,
+   "w": 215,
+   "h": 56,
+   "nen": "trong",
+   "r": 0,
+   "co": 14.2,
+   "phong": "serif",
+   "dong_cao": 1.07,
+   "dem": 0,
+   "mau": "#1e1e1e",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "Số lô sản xuất:"
+    },
+    {
+     "kieu": "html",
+     "chu": "Ngày sản xuất:"
+    },
+    {
+     "kieu": "html",
+     "chu": "Hạn sử dụng:"
+    }
+   ]
+  },
+  {
+   "x": 129,
+   "y": 484,
+   "w": 428,
+   "h": 116,
+   "nen": "trong",
+   "r": 0,
+   "co": 11.2,
+   "phong": "serif",
+   "dong_cao": 1.265,
+   "dem": 0,
+   "mau": "#1a1a1a",
+   "noi_dung": [
+    {
+     "kieu": "html",
+     "chu": "<b style=\"font-size:16.5px;line-height:17px;display:block\">CÔNG TY TNHH NO BEN</b>"
+    },
+    {
+     "kieu": "html",
+     "chu": "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi,"
+    },
+    {
+     "kieu": "html",
+     "chu": "Thành Phố Hồ Chí Minh."
+    },
+    {
+     "kieu": "html",
+     "chu": "Điện thoại: 0934 246 420.&nbsp;&nbsp;&nbsp;Email: thuocthuysannoben@gmail.com"
+    },
+    {
+     "kieu": "html",
+     "chu": "MST: 0304210513"
+    },
+    {
+     "kieu": "html",
+     "chu": "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện"
+    },
+    {
+     "kieu": "html",
+     "chu": "Củ Chi, Thành Phố Hồ Chí Minh."
+    },
+    {
+     "kieu": "html",
+     "chu": "<b style=\"color:#c8102e;background:#fff;padding:0 .3em;border-radius:.2em;font-family:'Liberation Sans',Arial,sans-serif;font-size:10.5px\">SẢN XUẤT TẠI VIỆT NAM</b>"
+    }
+   ]
+  }
+ ],
+ "chu_vector": [
+  {
+   "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+   "x": 169,
+   "y": 478.5,
+   "w": 286,
+   "co": 12,
+   "phong": "serif",
+   "mau": "#1a1a1a",
+   "xoa": [
+    166,
+    468,
+    293,
+    13
+   ],
+   "chu_cu": "toi",
+   "le": 2
+  }
+ ],
+ "xoa": [
+  {
+   "vung": [
+    26,
+    104,
+    318,
+    62
+   ],
+   "mau": "#262626",
+   "nguong": 95
+  },
+  {
+   "vung": [
+    26,
+    166,
+    412,
+    226
+   ],
+   "mau": "#262626",
+   "nguong": 95
+  },
+  {
+   "vung": [
+    33,
+    398,
+    243,
+    64
+   ],
+   "mau": "#262626",
+   "nguong": 95
+  },
+  {
+   "vung": [
+    298,
+    400,
+    215,
+    58
+   ],
+   "mau": "#262626",
+   "nguong": 95
+  },
+  {
+   "vung": [
+    129,
+    485,
+    428,
+    105
+   ],
+   "mau": "#1e2a1e",
+   "nguong": 95
+  }
+ ],
+ "logo": [
+  {
+   "x": 40,
+   "y": 496,
+   "w": 76,
+   "h": 82
+  }
+ ]
+}
