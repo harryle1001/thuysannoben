@@ -15,6 +15,7 @@
       <p class="stage3d__hint" aria-hidden="true"><span class="showcase__hand"></span><%= p.model3d ? 'Vuốt để xoay 360°' : 'Kéo để xoay' %></p>
     </div>
     <% if (p.model3d) { %><script src="/js/viewer3d.js?v=3" defer></script><% } %>
+    <% if (locals.spin360) { %><a class="product__spin360" href="/xoay-360#<%= spin360 %>">Xem bao bì mẫu mới xoay 360°</a><% } %>
     <div class="product__views">
       <% if (p.labelImg) { %>
       <a class="product__view" href="<%= p.labelImg.src %>" data-lb="<%= p.labelImg.src %>" data-caption="Nhãn đầy đủ của <%= p.name %>">

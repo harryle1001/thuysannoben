@@ -333,7 +333,9 @@ router.get('/san-pham/:slug', (req, res, next) => {
   const faq = productFaq(p, related, solutions);
   const productReviews = reviews.approved(p.slug).map(reviewView);
   const productLd = withRatings(seo.product(p), productReviews);
+  const spin = SPIN360.find((x) => x.web === p.slug);
   res.render('pages/product', {
+    spin360: spin ? spin.slug : null,
     meta: { title: productTitle(p), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
     p,
     kind: KIND[p.category] || 'thuốc thủy sản',
@@ -591,6 +593,22 @@ const videoObject = (v) => ({
   duration: isoDur(v.duration),
   inLanguage: 'vi',
   publisher: { '@type': 'Organization', name: c.company.legal, logo: { '@type': 'ImageObject', url: seo.abs('/images/brand/logo-noben.png') } },
+});
+// Xem bao bì 3D xoay 360° (dữ liệu public/xoay-360, xuất từ brand/bo-nhan-T)
+const SPIN360 = (() => { try { return require('../public/xoay-360/san-pham.json'); } catch (e) { return []; } })();
+const SPIN360_V = (() => { try { return String(Math.round(require('fs').statSync(require('path').join(__dirname, '..', 'public', 'xoay-360', 'san-pham.json')).mtimeMs / 1000)); } catch (e) { return '1'; } })();
+router.get('/xoay-360', (req, res, next) => {
+  if (!SPIN360.length) return next();
+  res.render('pages/spin360', {
+    meta: {
+      title: 'Xem bao bì sản phẩm Noben xoay 360° – Thủy sản Noben',
+      description: `Xem 3D xoay 360° ${SPIN360.length} sản phẩm Noben: chai, túi đúng kích thước thật, mặt trước, mặt sau, thành phần và công dụng theo hồ sơ TCCS.`,
+      css: '/css/spin360.css?v=' + SPIN360_V,
+    },
+    count: SPIN360.length,
+    v: SPIN360_V,
+    jsonld: [crumbs([['Trang chủ', '/'], ['Sản phẩm', '/san-pham'], ['Xem bao bì 3D', '/xoay-360']])],
+  });
 });
 router.get('/video', (req, res) =>
   res.render('pages/videos', {
@@ -947,6 +965,7 @@ router.get('/sitemap.xml', (req, res) => {
     { loc: '/tuyen-dai-ly', priority: '0.7', changefreq: 'monthly' },
     ...LANDINGS.filter((x) => x.index).map((x) => ({ loc: `/lp/${x.slug}`, priority: '0.7', changefreq: 'monthly', images: x.hero_image ? [x.hero_image.src] : [] })),
     { loc: '/video', priority: '0.7', changefreq: 'monthly', videos: c.videos },
+    ...(SPIN360.length ? [{ loc: '/xoay-360', priority: '0.6', changefreq: 'monthly' }] : []),
     { loc: '/tinh-lieu', priority: '0.7', changefreq: 'monthly' },
     { loc: '/lich-cham-soc', priority: '0.7', changefreq: 'monthly' },
     { loc: '/danh-gia', priority: '0.6', changefreq: 'weekly' },

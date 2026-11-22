@@ -6,6 +6,7 @@
   "ma_so": "02-020761",
   "tccs": "12:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Sát trùng nước",
   "mau": "#7d2e3c",
   "cach": "Tạt ao",
@@ -27,6 +28,7 @@
   "ma_so": "02-063194",
   "tccs": "02:2026/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Sát trùng nước",
   "mau": "#7d2e3c",
   "cach": "Tạt ao",
@@ -48,6 +50,7 @@
   "ma_so": "02-008940",
   "tccs": "32:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Sát trùng nước",
   "mau": "#7d2e3c",
   "cach": "Tạt ao",
@@ -69,6 +72,7 @@
   "ma_so": "02-014384",
   "tccs": "02:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Xử lý tảo",
   "mau": "#7a7f3a",
   "cach": "Tạt ao",
@@ -90,6 +94,7 @@
   "ma_so": "[ĐIỀN]",
   "tccs": "09:2026/NOBEN",
   "the_tich": "250 g",
+  "web": null,
   "loai": "Xử lý tảo",
   "mau": "#7a7f3a",
   "cach": "Tạt ao",
@@ -109,6 +114,7 @@
   "ma_so": "02-002251",
   "tccs": "11:2017/NOBEN",
   "the_tich": "3 kg",
+  "web": null,
   "loai": "Khử kim loại nặng",
   "mau": "#5c6670",
   "cach": "Tạt ao",
@@ -128,6 +134,7 @@
   "ma_so": "02-001536",
   "tccs": "28:2020/NOBEN",
   "the_tich": "227 g",
+  "web": null,
   "loai": "Vi sinh xử lý nước",
   "mau": "#1f6f78",
   "cach": "Tạt ao",
@@ -149,6 +156,7 @@
   "ma_so": "02-001539",
   "tccs": "27:2020/NOBEN",
   "the_tich": "227 g",
+  "web": null,
   "loai": "Vi sinh xử lý nước",
   "mau": "#1f6f78",
   "cach": "Tạt ao",
@@ -170,6 +178,7 @@
   "ma_so": "02-020760",
   "tccs": "08:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Hấp thu khí độc",
   "mau": "#4a7c59",
   "cach": "Tạt ao",
@@ -191,6 +200,7 @@
   "ma_so": "02-026749",
   "tccs": "79:2021/NOBEN",
   "the_tich": "5 kg",
+  "web": null,
   "loai": "Khoáng chất",
   "mau": "#4a6fa5",
   "cach": "Tạt ao",
@@ -210,6 +220,7 @@
   "ma_so": "02-028279",
   "tccs": "85:2021/NOBEN",
   "the_tich": "5 kg",
+  "web": null,
   "loai": "Vitamin tổng hợp",
   "mau": "#a8466a",
   "cach": "Tạt ao",
@@ -229,6 +240,7 @@
   "ma_so": "01-028280",
   "tccs": "87:2020/NOBEN",
   "the_tich": "500 g",
+  "web": null,
   "loai": "Lợi khuẩn tiêu hóa",
   "mau": "#b07d2b",
   "cach": "Trộn ăn",
@@ -249,6 +261,7 @@
   "ma_so": "01-002234",
   "tccs": "65:2020/NOBEN",
   "the_tich": "[ĐIỀN]",
+  "web": null,
   "loai": "Men tiêu hóa",
   "mau": "#b07d2b",
   "cach": "Trộn ăn",
@@ -269,6 +282,7 @@
   "ma_so": "01-001540",
   "tccs": "73:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Lợi khuẩn tiêu hóa",
   "mau": "#b07d2b",
   "cach": "Trộn ăn",
@@ -291,6 +305,7 @@
   "ma_so": "01-001544",
   "tccs": "48:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Đạm · acid amin",
   "mau": "#a8553a",
   "cach": "Trộn ăn",
@@ -312,6 +327,7 @@
   "ma_so": "01-002233",
   "tccs": "55:2020/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Bổ gan",
   "mau": "#5e3b6e",
   "cach": "Trộn ăn",
@@ -334,6 +350,7 @@
   "ma_so": "01-028282",
   "tccs": "90:2021/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Bổ gan",
   "mau": "#5e3b6e",
   "cach": "Trộn ăn",
@@ -356,6 +373,7 @@
   "ma_so": "01-063183",
   "tccs": "04:2026/NOBEN",
   "the_tich": "1 lít",
+  "web": null,
   "loai": "Khoáng chất",
   "mau": "#4a6fa5",
   "cach": "Trộn ăn",
@@ -379,6 +397,7 @@
   "ma_so": "01-061789",
   "tccs": "01:2025/NOBEN",
   "the_tich": "500 ml",
+  "web": null,
   "loai": "Acid hữu cơ",
   "mau": "#b07d2b",
   "cach": "Trộn ăn",
@@ -391,6 +410,224 @@
   "nhan_mm": [
    159.4,
    80
+  ]
+ },
+ {
+  "slug": "clear-12h",
+  "ten": "CLEAR 12H",
+  "quy_cach": "Gói 227 g",
+  "ma_so": "02-014385",
+  "tccs": "01:2020/NOBEN",
+  "the_tich": "227 g",
+  "web": null,
+  "loai": "Vi sinh xử lý nước",
+  "mau": "#1f6f78",
+  "cach": "Tạt ao",
+  "hoat_chat": "Bacillus spp 1 × 10⁹ CFU/kg",
+  "cong_dung": [
+   "Giúp phân huỷ mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao.",
+   "Giảm khí độc NH3, H2S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi.",
+   "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi.",
+   "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+  ],
+  "kieu": "tui",
+  "w": 17.0,
+  "h": 22.0
+ },
+ {
+  "slug": "rovazyme",
+  "ten": "ROVAZYME",
+  "quy_cach": "Gói 227 g",
+  "ma_so": "02-020758",
+  "tccs": "04:2020/NOBEN",
+  "the_tich": "227 g",
+  "web": null,
+  "loai": "Vi sinh xử lý nước",
+  "mau": "#1f6f78",
+  "cach": "Tạt ao",
+  "hoat_chat": "Bacillus spp 1 × 10⁹ CFU/kg",
+  "cong_dung": [
+   "Giúp phân huỷ mùn bã hữu cơ, thức ăn thừa, xác tảo tàn, phân tôm tích tụ ở đáy ao.",
+   "Giảm khí độc NH3, H2S, cải thiện chất lượng môi trường ao nuôi, giảm mùi hôi.",
+   "Hỗ trợ làm sạch nhớt bạt, nhớt nước ao nuôi.",
+   "Hỗ trợ làm giảm tảo độc, hỗ trợ cắt tảo Lablab ao nuôi."
+  ],
+  "kieu": "tui",
+  "w": 17.0,
+  "h": 22.0
+ },
+ {
+  "slug": "ben-bkc",
+  "ten": "BEN BKC",
+  "quy_cach": "Chai 1 lít",
+  "ma_so": "02-039607",
+  "tccs": "04:2016/NOBEN",
+  "the_tich": "1 lít",
+  "web": null,
+  "loai": "Sát trùng nước",
+  "mau": "#7d2e3c",
+  "cach": "Tạt ao",
+  "hoat_chat": "Benzalkonium Chloride 50%",
+  "cong_dung": [
+   "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước.",
+   "Hỗ trợ trong việc xử lý hiện tượng đen mang, đốm đen, sâu đuôi, hoại tử phụ bộ, đen mình."
+  ],
+  "kieu": "chai1l",
+  "nhan_mm": [
+   161.8,
+   100
+  ]
+ },
+ {
+  "slug": "mix-79",
+  "ten": "MIX 79",
+  "quy_cach": "Gói 5 kg",
+  "ma_so": "02-002245",
+  "tccs": "13:2017/NOBEN",
+  "the_tich": "5 kg",
+  "web": null,
+  "loai": "Khoáng chất",
+  "mau": "#4a6fa5",
+  "cach": "Tạt ao",
+  "hoat_chat": "P (dạng CaHPO4) 2.500 mg/kg",
+  "cong_dung": [
+   "Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp cho quá trình lột xác và tạo vỏ của tôm nhanh hơn.",
+   "Giúp tôm lột xác đúng chu kỳ, vỏ cứng dày, thịt săn chắc."
+  ],
+  "kieu": "tui",
+  "w": 31.0,
+  "h": 39.0
+ },
+ {
+  "slug": "ben-copper-500",
+  "ten": "BEN COPPER 500",
+  "quy_cach": "Chai 1 lít",
+  "ma_so": "02-001532",
+  "tccs": "63:2018/NOBEN",
+  "the_tich": "1 lít",
+  "web": null,
+  "loai": "Xử lý tảo",
+  "mau": "#7a7f3a",
+  "cach": "Tạt ao",
+  "hoat_chat": "Cu (CuSO4.5H2O) 1.000 ppm",
+  "cong_dung": [
+   "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản.",
+   "Giúp ổn định mật độ tảo, ổn định pH ao nuôi."
+  ],
+  "kieu": "chai1l",
+  "nhan_mm": [
+   161.8,
+   100
+  ]
+ },
+ {
+  "slug": "super-cut-alga",
+  "ten": "SUPER CUT ALGA",
+  "quy_cach": "Gói 500 g",
+  "ma_so": "02-000889",
+  "tccs": "23:2020/NOBEN",
+  "the_tich": "500 g",
+  "web": null,
+  "loai": "Xử lý tảo",
+  "mau": "#7a7f3a",
+  "cach": "Tạt ao",
+  "hoat_chat": "Cu (CuSO4.5H2O) 1.000 ppm",
+  "cong_dung": [
+   "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản.",
+   "Giúp ổn định mật độ tảo, ổn định pH ao nuôi."
+  ],
+  "kieu": "tui",
+  "w": 18.0,
+  "h": 26.0
+ },
+ {
+  "slug": "vh-dio-99",
+  "ten": "VH-DIO 99",
+  "quy_cach": "Chai 1 lít",
+  "ma_so": "02-063196",
+  "tccs": "03:2026/NOBEN",
+  "the_tich": "1 lít",
+  "web": null,
+  "loai": "Sát trùng nước",
+  "mau": "#7d2e3c",
+  "cach": "Tạt ao",
+  "hoat_chat": "Iodine 1%",
+  "cong_dung": [
+   "Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước.",
+   "Xử lý môi trường ao nuôi, góp phần hạn chế các tác nhân gây hiện tượng cụt râu, sâu đuôi, hoại tử phụ bộ, phân trắng, đốm đen, đen mang, vàng mang."
+  ],
+  "kieu": "chai1l",
+  "nhan_mm": [
+   161.8,
+   100
+  ]
+ },
+ {
+  "slug": "biotic-99",
+  "ten": "BIOTIC 99",
+  "quy_cach": "Chai 1 lít",
+  "ma_so": "01-023341",
+  "tccs": "41:2020/NOBEN",
+  "the_tich": "1 lít",
+  "web": null,
+  "loai": "Lợi khuẩn tiêu hóa",
+  "mau": "#b07d2b",
+  "cach": "Trộn ăn",
+  "hoat_chat": "Bacillus spp 1,0 × 10⁹ CFU/lít",
+  "cong_dung": [
+   "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn.",
+   "Giúp cải thiện đường ruột, cải thiện nhanh hiện tượng phân lỏng, phân trắng, tắc ruột, phân nát, đứt khúc.",
+   "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh, giảm hệ số FCR."
+  ],
+  "kieu": "chai1l",
+  "nhan_mm": [
+   161.8,
+   100
+  ]
+ },
+ {
+  "slug": "amin-care",
+  "ten": "AMIN CARE",
+  "quy_cach": "Chai 1 lít",
+  "ma_so": "01-001525",
+  "tccs": "52:2020/NOBEN",
+  "the_tich": "1 lít",
+  "web": null,
+  "loai": "Đạm · acid amin",
+  "mau": "#a8553a",
+  "cach": "Trộn ăn",
+  "hoat_chat": "Protein (đạm cá) 25%",
+  "cong_dung": [
+   "Bổ sung đạm cá, acid amin thiết yếu cho tôm, cá. Giúp tôm, cá ham ăn, chóng lớn, bắt mồi nhanh do có mùi tanh hấp dẫn.",
+   "Hỗ trợ tăng đề kháng, tăng cường hấp thụ chất dinh dưỡng, hạn chế mềm vỏ, chậm lớn, bắt mồi kém."
+  ],
+  "kieu": "chai1l",
+  "nhan_mm": [
+   161.8,
+   100
+  ]
+ },
+ {
+  "slug": "liver-max",
+  "ten": "LIVER - MAX",
+  "quy_cach": "Chai 1 lít",
+  "ma_so": "01-001528",
+  "tccs": "54:2020/NOBEN",
+  "the_tich": "1 lít",
+  "web": null,
+  "loai": "Bổ gan",
+  "mau": "#5e3b6e",
+  "cach": "Trộn ăn",
+  "hoat_chat": "Sorbitol 10.000 mg/lít",
+  "cong_dung": [
+   "Bổ sung sorbitol, methionine, lysine vào thức ăn hằng ngày cho tôm, cá. Giúp tôm cá bồi bổ gan, tiêu hóa tốt, hấp thụ thức ăn nhanh chóng.",
+   "Hỗ trợ bồi bổ gan, giải độc gan, tái tạo chức năng gan cho tôm.",
+   "Giúp phục hồi và chuyển màu gan nhanh chóng, hỗ trợ cải thiện các hiện tượng về gan."
+  ],
+  "kieu": "chai1l",
+  "nhan_mm": [
+   161.8,
+   100
   ]
  }
 ]

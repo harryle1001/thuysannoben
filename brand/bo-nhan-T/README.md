@@ -32,6 +32,9 @@ Cần Node 20+, Playwright (Chromium) và Python 3 có Pillow. Thư mục `out/`
 
 ## Trang xoay 360°
 
+Trên web: https://thuysannoben.com/xoay-360 (route `/xoay-360`, dữ liệu `public/xoay-360/`). `xuat-360.py` ghi thẳng vào `public/xoay-360/`, gộp bộ Sơn Hà và bộ nhượng, chỉ lấy sản phẩm đang hiện trên web và không còn chỗ `[ĐIỀN]`. Chạy `WEB=0 python3 xuat-360.py` để xuất bản nội bộ đủ sản phẩm vào `xoay-360/`.
+
+
 `xoay-360/index.html`: kéo để xoay một vòng, nút Mặt trước, Mặt sau, Tự xoay, cuộn hoặc chụm hai ngón để phóng to.
 Chai dựng bằng three.js với nhãn quấn đúng khổ in (1 lít: 161,8 × 100 mm; 500 ml: 159,4 × 80 mm). Túi có mặt sau in thành phần, công dụng, hướng dẫn sử dụng lấy từ hai mặt bên của nhãn.
 Mở trên máy: phục vụ thư mục `xoay-360/` qua một máy chủ web bất kỳ (trang tải `san-pham.json` và ảnh trong `tex/`).

@@ -1,0 +1,45 @@
+<%- include('../partials/header') %>
+<section class="khead">
+  <div class="wrap">
+    <%- include('../partials/crumbs', { items: [['Sản phẩm', '/san-pham'], ['Xem bao bì 3D']] }) %>
+    <h1 class="khead__title">Xem bao bì sản phẩm Noben xoay 360°</h1>
+    <p class="khead__lead">Kéo để xoay chai, túi một vòng, xem mặt trước, mặt sau và thông tin theo hồ sơ tiêu chuẩn cơ sở (TCCS) của từng sản phẩm.</p>
+  </div>
+</section>
+<section class="section section--top-tight">
+  <div class="wrap s360" data-v="<%= v %>">
+    <div class="s360__app">
+      <div class="s360__stage" id="stage" aria-label="Sản phẩm 3D, kéo để xoay">
+        <div class="s360__load" id="load">Đang tải mô hình 3D…</div>
+        <noscript><div class="s360__load">Bật JavaScript để xem sản phẩm 3D.</div></noscript>
+        <div class="s360__hint">Kéo để xoay · cuộn hoặc chụm hai ngón để phóng to</div>
+        <div class="s360__tools">
+          <button type="button" id="b-front">Mặt trước</button>
+          <button type="button" id="b-back">Mặt sau</button>
+          <button type="button" id="b-spin" aria-pressed="true">Tự xoay</button>
+        </div>
+      </div>
+      <aside class="s360__panel">
+        <span class="s360__type" id="type">Loại</span>
+        <h2 class="s360__name" id="name">Sản phẩm</h2>
+        <div class="s360__hc" id="hc"></div>
+        <dl>
+          <dt>Quy cách</dt><dd id="qc"></dd>
+          <dt>Cách dùng</dt><dd id="cach"></dd>
+          <dt>Mã số</dt><dd id="ms"></dd>
+          <dt>TCCS</dt><dd id="tc"></dd>
+        </dl>
+        <div class="s360__lbl">Công dụng</div>
+        <ul class="s360__uses" id="uses"></ul>
+        <a class="s360__more" id="link" href="/san-pham" hidden>Xem chi tiết, liều dùng</a>
+        <div class="s360__lbl">Chọn sản phẩm (<%= count %>)</div>
+        <div class="s360__list" id="list"></div>
+      </aside>
+    </div>
+    <p class="s360__note">Hình 3D dựng theo kích thước bao bì thật (chai 1 lít, chai 500 ml, túi 227 g, 500 g, 5 kg) với mẫu nhãn mới. Bao bì thực tế có thể khác về màu in.</p>
+  </div>
+</section>
+<script src="/js/vendor/three-0.149.0.min.js" defer></script>
+<script src="/js/spin360.js?v=<%= v %>" defer></script>
+<%- include('../partials/quick-contact') %>
+<%- include('../partials/footer') %>

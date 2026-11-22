@@ -2220,3 +2220,5 @@ html.has-sunrise body { background: transparent; }
   .hsearch__field .ico { display: none; } /* the yellow button already says Tìm */
   .hsearch__btn { min-height: 42px; padding: 0 16px; font-size: 0.9375rem; }
 }
+/* liên kết tới trang xoay 360° dưới khung ảnh sản phẩm */
+.product__spin360{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;font-size:14px;color:var(--brand,#14479a);text-decoration:underline;text-underline-offset:3px}

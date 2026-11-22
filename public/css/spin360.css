@@ -1,0 +1,30 @@
+/* Trang xoay 360°: sân khấu 3D 61,8 % | bảng thông tin 38,2 % (dọc trên điện thoại). */
+.s360{--phi:1.618;--s-stage:#e6e9ee;--s-panel:#fff;--s-ink:#0c2a63;--s-dim:#5d6b84;--s-line:rgba(12,42,99,.14);--s-chip:#f3f5f8;--c:#0c2a63}
+:root[data-theme="dark"] .s360{--s-stage:#1a2438;--s-panel:#121c30;--s-ink:#e8eefb;--s-dim:#9aa8c2;--s-line:rgba(232,238,251,.14);--s-chip:#1b2740}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .s360{--s-stage:#1a2438;--s-panel:#121c30;--s-ink:#e8eefb;--s-dim:#9aa8c2;--s-line:rgba(232,238,251,.14);--s-chip:#1b2740}}
+.s360 [hidden]{display:none!important}
+.s360__app{display:grid;grid-template-columns:61.8fr 38.2fr;gap:16px;min-height:min(78vh,760px)}
+.s360__stage{position:relative;background:radial-gradient(120% 90% at 50% 35%,color-mix(in srgb,var(--s-stage) 70%,#fff 30%),var(--s-stage));border-radius:16px;overflow:hidden;min-height:440px;touch-action:none;cursor:grab}
+.s360__stage:active{cursor:grabbing}
+.s360__stage canvas{display:block;width:100%;height:100%;position:absolute;inset:0}
+.s360__hint{position:absolute;left:16px;bottom:16px;font-size:12px;color:var(--s-dim);pointer-events:none}
+.s360__tools{position:absolute;right:12px;bottom:12px;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.s360__tools button{font:600 13px/1 inherit;font-family:inherit;color:var(--s-ink);background:var(--s-panel);border:1px solid var(--s-line);border-radius:999px;padding:9px 14px;cursor:pointer}
+.s360__tools button[aria-pressed="true"]{background:var(--s-ink);color:var(--s-panel);border-color:var(--s-ink)}
+.s360 button:focus-visible,.s360 a:focus-visible{outline:2px solid var(--c);outline-offset:2px}
+.s360__load{position:absolute;inset:0;display:grid;place-items:center;color:var(--s-dim);font-size:13px}
+.s360__panel{background:var(--s-panel);color:var(--s-ink);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:16px;min-width:0;border:1px solid var(--s-line)}
+.s360__type{display:inline-flex;align-self:flex-start;background:var(--c);color:#fff;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:6px}
+.s360__name{font-size:clamp(28px,3.4vw,42px);line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.s360__hc{color:var(--c);font-weight:600;margin-top:-6px}
+.s360 dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0;font-size:14px}
+.s360 dt{color:var(--s-dim)}.s360 dd{margin:0;font-weight:500;font-variant-numeric:tabular-nums}
+.s360__uses{margin:0;padding-left:18px;font-size:14px}.s360__uses li{margin-bottom:4px}
+.s360__lbl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--s-dim);font-weight:600;margin-bottom:-8px}
+.s360__more{align-self:flex-start;font-weight:600;color:var(--c);text-decoration:underline;text-underline-offset:3px}
+.s360__list{display:flex;flex-wrap:wrap;gap:6px}
+.s360__list button{font:500 12.5px/1.2 inherit;font-family:inherit;color:var(--s-ink);background:var(--s-chip);border:1px solid transparent;border-radius:8px;padding:7px 10px 7px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.s360__list button i{width:9px;height:9px;border-radius:2px;display:block;flex:none}
+.s360__list button[aria-current="true"]{border-color:var(--s-ink);font-weight:700}
+.s360__note{font-size:13px;color:var(--s-dim);margin-top:12px}
+@media (max-width:860px){.s360__app{grid-template-columns:1fr;min-height:0}.s360__stage{height:62vh;min-height:360px}.s360__panel{padding:18px}}
