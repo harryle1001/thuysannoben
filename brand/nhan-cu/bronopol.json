@@ -1,0 +1,66 @@
+{
+  "slug": "bronopol",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-038019_1.jpg",
+  "kich_thuoc_goc": [1600, 888],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 888 (nhãn chai BRONOPOL 99). Chữ sửa theo hồ sơ TCCS 11:2022/NOBEN: thêm công dụng 'Hỗ trợ xử lý nấm…', hướng dẫn 'Xử lý nấm bám trên ao bạt…', 'Ngưng sử dụng trước thu hoạch 15 ngày', 'Lắc đều…', 'Cảnh báo…'; bỏ dòng 'Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi' của nhãn cũ vì TCCS ghi ngưng trước thu hoạch 15 ngày. Asen, Chì KPH và Nguyên liệu (TCCS không ghi) giữ như nhãn cũ. Hạn sử dụng để trống (nhãn cũ ghi 2 năm). Ô chữ nền vàng kem phẳng #fcf8ae nên khung tô cùng màu. Nội dung TCCS dài hơn nhãn cũ nên cỡ chữ ô trái nhỏ hơn.",
+  "bao_bi": "chai",
+  "kich_thuoc_mm": [240, 135],
+  "mat_truoc": [490, 0, 1110, 888],
+  "khung": [
+    {
+      "x": 52, "y": 84, "w": 420, "h": 718, "r": 0, "nen": "#fcf8ae", "mau": "#222222", "dem": 3, "co": 22, "dong_cao": 1.33,
+      "noi_dung": [
+        {"kieu": "html", "chu": "<b style=\"color:#d9261c\">CHỈ TIÊU CHẤT LƯỢNG</b>"},
+        {"kieu": "dong", "chu": "(trong 1 lít sản phẩm)"},
+        {"kieu": "dong", "chu": "Bronopol (min): 100.000 mg/lít"},
+        {"kieu": "dong", "chu": "Dung môi (nước RO) vừa đủ: 1 lít"},
+        {"kieu": "dong", "chu": "Asen (As): KPH"},
+        {"kieu": "dong", "chu": "Chì (Pb): KPH"},
+        {"kieu": "html", "chu": "<span style=\"display:block;height:.45em\"></span>"},
+        {"kieu": "dong", "chu": "NGUYÊN LIỆU"},
+        {"kieu": "dong", "chu": "Bronopol, Nước RO"},
+        {"kieu": "html", "chu": "<span style=\"display:block;height:.45em\"></span>"},
+        {"kieu": "html", "chu": "<b style=\"color:#d9261c\">CÔNG DỤNG</b>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Sát trùng nguồn nước. Giúp làm giảm vi khuẩn, nấm, nguyên sinh động vật gây hại trong môi trường nước.</span>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Hỗ trợ xử lý nấm (nấm chân chó, nấm đồng tiền), nguyên sinh động vật, nội ngoại ký sinh trùng trong ao nuôi.</span>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;height:.45em\"></span>"},
+        {"kieu": "html", "chu": "<b style=\"color:#d9261c\">HƯỚNG DẪN SỬ DỤNG</b>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Trong thời gian chuẩn bị ao: 1 lít/1.000m<sup style=\"line-height:0\">3</sup> nước để như vậy 2-3 ngày.</span>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Sát trùng nguồn nước trong quá trình nuôi: 1 lít/3.000m<sup style=\"line-height:0\">3</sup> nước.</span>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Xử lý nấm bám trên ao bạt: Dùng 1 lít/1.000m<sup style=\"line-height:0\">3</sup> nước, tạt 2 ngày liên tục vào lúc nắng gắt.</span>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Hòa tan với nước gấp 100 lần sau đó phun hoặc tạt đều khắp ao.</span>"},
+        {"kieu": "dong", "chu": "- Ngưng sử dụng trước thu hoạch 15 ngày."},
+        {"kieu": "dong", "chu": "- Lắc đều sản phẩm trước khi sử dụng."},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">- Cảnh báo: Tránh xa trẻ em, đậy kín sản phẩm sau khi sử dụng.</span>"}
+      ]
+    },
+    {
+      "x": 1128, "y": 98, "w": 420, "h": 510, "r": 0, "nen": "#fcf8ae", "mau": "#222222", "dem": 3, "co": 23.5, "dong_cao": 1.75,
+      "noi_dung": [
+        {"kieu": "html", "chu": "<b style=\"color:#d9261c\">HƯỚNG DẪN BẢO QUẢN:</b>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;text-align:justify\">Bảo quản nơi khô, thoáng, tránh ánh nắng trực tiếp. Để xa tầm tay trẻ em.</span>"},
+        {"kieu": "html", "chu": "<span style=\"display:block;height:.6em\"></span>"},
+        {"kieu": "dong", "chu": "Số tiêu chuẩn công bố"},
+        {"kieu": "dong", "chu": "11:2022/NOBEN"},
+        {"kieu": "dong", "chu": "Mã số tiếp nhận: 02-038019"},
+        {"kieu": "dong", "chu": "Mã SPHQ: VICB 7178.10-111"},
+        {"kieu": "dong", "chu": "Thể tích thực:"},
+        {"kieu": "dong", "chu": "Số lô sản xuất:"},
+        {"kieu": "dong", "chu": "Ngày sản xuất:"},
+        {"kieu": "dong", "chu": "Hạn sử dụng:"}
+      ]
+    },
+    {"x": 615, "y": 751, "w": 480, "h": 110, "r": 0, "dem": 0, "noi_dung": []}
+  ],
+  "logo": [{"x": 504, "y": 758, "w": 112, "h": 113}],
+  "cong_ty": {
+    "x": 620, "y": 751, "w": 470, "co": 12.6, "mau": "#111111",
+    "ten": "<span style=\"font-size:1.15em;line-height:1\">CÔNG TY TNHH NO BEN</span>",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "bio-book",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-020770_1.jpg",
+  "cat": [
+    190,
+    148,
+    1398,
+    852
+  ],
+  "kich_thuoc_goc": [
+    1208,
+    704
+  ],
+  "_ghi_chu": "Ảnh gốc 02-020770_1 (1527 × 1080) cắt bỏ lề và thước đo 110mm × 130mm (cat); toạ độ theo ảnh đã cắt 1208 × 704 (mặt trước trái, mặt sau phải). content/tccs.json KHÔNG có hồ sơ TCCS 07:2020/NOBEN (BIO BOOK) nên chữ giữ như nhãn cũ (khớp CSDL data.json), chỉ sửa: '227gg' → '227g', điện thoại 0934 246 420, thêm SẢN XUẤT TẠI VIỆT NAM, Khối lượng tịnh mặt sau để trống. Mặt trước (chữ tiếng Anh, huy hiệu N.Wt 227g) giữ nguyên hình như nhãn cũ. Cần chủ sản phẩm đối chiếu khi có file TCCS.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    220,
+    130
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    600,
+    704
+  ],
+  "khung": [
+    {
+      "x": 653,
+      "y": 138,
+      "w": 514,
+      "h": 346,
+      "r": 0,
+      "dem": 1,
+      "co": 14.6,
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#2a9a5c\">THÀNH PHẦN:</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span style=\"width:66%\">Độ ẩm (max): 10%</span><span><i>E.coli &lt; 10 CFU/g</i></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex\"><span style=\"width:66%\"><i>Bacillus subtilis</i> (min): 1 x 10<sup style=\"line-height:0\">9</sup> CFU/kg</span><span><i>Salmonella spp.: KPH</i></span></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Dextrose vừa đủ: 1kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>NGUYÊN LIỆU: Bacillus subtilis, dextrose</i>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#2a9a5c\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Phân hủy các chất hữu cơ, thức ăn dư thừa, mùn bã hữu cơ tích tụ ở đáy ao."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Làm sạch đáy ao, sạch nước, sạch nhớt bạt, giảm tảo ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "- Phân hủy và giải phóng khí NH<sub style=\"line-height:0\">3</sub>, NO<sub style=\"line-height:0\">2</sub>..."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#2a9a5c\">HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <b>Trước khi thả giống 2 - 3 ngày:</b> 300g/5.000m<sup style=\"line-height:0\">3</sup> nước"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <b>Tháng thứ 1 - 2:</b> 227g/5.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 7 ngày/lần"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <b>Tháng thứ 3 - 4:</b> 227g/3.000m<sup style=\"line-height:0\">3</sup> nước, định kỳ 3-5 ngày/lần"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">Hòa với nước ao nuôi, khuấy đều rồi tạt khắp ao, mở máy sục khí để Vi Sinh phân tán đều khắp ao.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Để giảm tảo xanh nên ủ vi sinh với đường từ 10-24 tiếng sau đó tạt vào lúc 22-24h.</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        }
+      ]
+    },
+    {
+      "x": 653,
+      "y": 484,
+      "w": 272,
+      "h": 50,
+      "r": 0,
+      "dem": 1,
+      "co": 14.6,
+      "dong_cao": 1.3,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#2a9a5c\">Hướng dẫn bảo quản:</b> Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp."
+        }
+      ]
+    },
+    {
+      "x": 977,
+      "y": 499,
+      "w": 185,
+      "h": 88,
+      "r": 0,
+      "dem": 0,
+      "co": 13,
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;transform:scaleX(.86);transform-origin:0 0;white-space:nowrap\">Số TCCS 07:2020/NOBEN</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;transform:scaleX(.86);transform-origin:0 0;white-space:nowrap\">Mã số tiếp nhận: 02-020770</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;transform:scaleX(.86);transform-origin:0 0\">Số lô SX:</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;transform:scaleX(.86);transform-origin:0 0\">NSX:</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;transform:scaleX(.86);transform-origin:0 0\">HSD:</span>"
+        }
+      ]
+    },
+    {
+      "x": 698,
+      "y": 539,
+      "w": 150,
+      "h": 22,
+      "r": 0,
+      "dem": 0,
+      "co": 14,
+      "phong": "serif",
+      "can": "center",
+      "dong_cao": 1.4,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"text-decoration:underline\">Khối lượng tịnh:</b>"
+        }
+      ]
+    },
+    {
+      "x": 718,
+      "y": 593,
+      "w": 449,
+      "h": 71,
+      "r": 0,
+      "dem": 0,
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 655,
+      "y": 595,
+      "w": 62,
+      "h": 65
+    }
+  ],
+  "cong_ty": {
+    "x": 722,
+    "y": 591,
+    "w": 440,
+    "co": 8.8,
+    "mau": "#4377ae",
+    "ten": "<span style=\"font-weight:400;font-size:.62em;-webkit-text-stroke-width:0\">Sản phẩm của: </span><span style=\"color:#2f74b4;-webkit-text-stroke-color:#2f74b4\">CÔNG TY TNHH NO BEN</span>",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh",
+      "Điện thoại: 0934 246 420 / Email: thuocthuysannoben@gmail.com",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành phố Hồ Chí Minh, Việt Nam"
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  }
+}

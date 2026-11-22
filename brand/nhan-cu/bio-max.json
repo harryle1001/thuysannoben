@@ -1,0 +1,301 @@
+{
+  "slug": "bio-max",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-026752_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    950
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 950 (túi: mặt trước trái, mặt sau phải). content/tccs.json KHÔNG có hồ sơ TCCS 81:2021/NOBEN (BIO MAX); CSDL data.json ghi thành phần khác hẳn nhãn (K dạng KCl, Ca dạng CaCl2) nên chữ giữ như nhãn cũ, chỉ sửa lỗi gõ (Bircarbonate → Bicarbonate, khoảng trắng dấu ngoặc/dấu phẩy, '2- 3' → '2-3'), điện thoại 0934 246 420, thêm SẢN XUẤT TẠI VIỆT NAM (mặt trước: chữ đỏ trên nền trắng), Hạn sử dụng để trống (nhãn cũ ghi 2 năm). Dòng 'Số tiêu chuẩn công bố' bị dấu ISO che một nửa: vẽ lại dưới dấu, các dòng dưới dồn khít lại. Kim loại nặng (As 1.23, Cd 0.60, Pb 1.13 mg/kg) giữ như nhãn cũ (CSDL ghi As 1,3). Cần chủ sản phẩm đối chiếu khi có file TCCS.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    340,
+    200
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    800,
+    950
+  ],
+  "khung": [
+    {
+      "x": 824,
+      "y": 132,
+      "w": 320,
+      "h": 580,
+      "r": 0,
+      "dem": 1,
+      "co": 19.5,
+      "dong_cao": 1.22,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>THÀNH PHẦN</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "(Trong 1 kg sản phẩm)"
+        },
+        {
+          "kieu": "html",
+          "chu": "Ca (Dạng CaHPO<sub style=\"line-height:0\">4</sub>) (min): 500 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mg (Dạng MgO) (min): 1.500 mg/kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "Ca (CaCO<sub style=\"line-height:0\">3</sub>) (min): 10.000 mg/kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify;text-align-last:left\">Na (dạng Sodium Bicarbonate NaHCO<sub style=\"line-height:0\">3</sub>): 10.000 mg/kg</span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (Dextrose) vừa đủ: 1 kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): 1.23 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Cadimi (Cd): 0.60 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): 1.13 mg/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Thủy ngân (Hg): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "html",
+          "chu": "CaHPO<sub style=\"line-height:0\">4</sub>, MgO, CaCO<sub style=\"line-height:0\">3</sub>, NaHCO<sub style=\"line-height:0\">3</sub>, dextrose"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;height:.9em\"></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Làm giàu khoáng chất cho ao nuôi, hỗ trợ tôm lột xác và tạo vỏ nhanh chóng."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hỗ trợ điều trị bệnh cong thân, đục cơ, mềm vỏ, khó lột."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Giúp tôm sinh trưởng, phát triển tốt, mang lại năng suất cao."
+        }
+      ]
+    },
+    {
+      "x": 1166,
+      "y": 132,
+      "w": 411,
+      "h": 318,
+      "r": 0,
+      "dem": 1,
+      "co": 19.5,
+      "dong_cao": 1.22,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b>HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Trước khi thả giống: Sử dụng 5kg/3.000m<sup style=\"line-height:0\">3</sup> nước.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "- Định kỳ: Sử dụng 5kg/5.000m<sup style=\"line-height:0\">3</sup> nước."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">Trường hợp tôm bị mềm vỏ, khó lột, cong thân, đục cơ: Nên sử dụng liều 5kg/2.000m<sup style=\"line-height:0\">3</sup> nước, dùng liên tục 2-3 ngày.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Hòa sản phẩm với nước sạch rồi tạt đều xuống ao nuôi, nên tạt vào lúc chiều tối là tốt nhất.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\">- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;text-align:justify\"><b>Hướng dẫn bảo quản:</b> Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</span>"
+        }
+      ]
+    },
+    {
+      "x": 1166,
+      "y": 557,
+      "w": 411,
+      "h": 214,
+      "r": 0,
+      "dem": 1,
+      "co": 19.5,
+      "dong_cao": 1.33,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 81:2021/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-90"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-026752"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;height:.55em\"></span>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 975,
+      "y": 781,
+      "w": 616,
+      "h": 131,
+      "r": 0,
+      "dem": 0,
+      "noi_dung": []
+    },
+    {
+      "x": 1419,
+      "y": 537,
+      "w": 122,
+      "h": 20,
+      "r": 0,
+      "dem": 0,
+      "noi_dung": []
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        220,
+        746,
+        350,
+        52
+      ],
+      "mau": "#f2cf3c",
+      "nguong": 120,
+      "le": 6
+    },
+    {
+      "vung": [
+        110,
+        798,
+        570,
+        66
+      ],
+      "mau": "#f2cf3c",
+      "nguong": 120,
+      "le": 6
+    },
+    {
+      "vung": [
+        104,
+        746,
+        590,
+        118
+      ],
+      "khac_nen": 21,
+      "nguong": 30,
+      "le": 10,
+      "no": 7
+    },
+    {
+      "vung": [
+        104,
+        746,
+        590,
+        118
+      ],
+      "khac_nen": 11,
+      "nguong": 25,
+      "le": 10,
+      "no": 5
+    }
+  ],
+  "logo": [
+    {
+      "x": 106,
+      "y": 40,
+      "w": 118,
+      "h": 120
+    },
+    {
+      "x": 846,
+      "y": 780,
+      "w": 121,
+      "h": 124
+    }
+  ],
+  "cong_ty": [
+    {
+      "x": 100,
+      "y": 756,
+      "w": 600,
+      "co": 17.5,
+      "can": "center",
+      "mau": "#f7d63c;font-weight:700;text-shadow:1px 0px #0d2356,-1px 0px #0d2356,0px 1px #0d2356,0px -1px #0d2356,0.7px 0.7px #0d2356,-0.7px -0.7px #0d2356,0.7px -0.7px #0d2356,-0.7px 0.7px #0d2356",
+      "ten": "<span style=\"font-size:1.3em;line-height:1\">CÔNG TY TNHH NO BEN</span>",
+      "dong": [
+        "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh",
+        "Điện thoại: 0934 246 420 / MST: 0304210513 / Email: thuocthuysannoben@gmail.com",
+        "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh"
+      ],
+      "xuat_xu": "<span style=\"background:#ffffff;padding:0 .3em;border-radius:.2em;text-shadow:none\">SẢN XUẤT TẠI VIỆT NAM</span>"
+    },
+    {
+      "x": 982,
+      "y": 783,
+      "w": 600,
+      "co": 15.2,
+      "mau": "#111111",
+      "ten": "<span style=\"font-size:1.35em;line-height:1\">CÔNG TY TNHH NO BEN</span>",
+      "dong": [
+        "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh",
+        "Điện thoại: 0934 246 420 / MST: 0304210513 / Email: thuocthuysannoben@gmail.com",
+        "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh"
+      ],
+      "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+    }
+  ]
+}

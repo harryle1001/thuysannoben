@@ -1,0 +1,249 @@
+{
+  "slug": "nb-biopond",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-000897_2.jpg",
+  "kich_thuoc_goc": [
+    800,
+    431
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 800 × 431 (ảnh _2: bản thiết kế nhãn đăng ký, mặt trước trái, mặt sau phải; ảnh _1 là ảnh chụp túi thật bản cũ khác, không dùng). Ảnh gốc 800 px nên phóng ×8. content/tccs.json KHÔNG có hồ sơ TCCS 20:2020/NOBEN (NB-BIOPOND) nên chữ giữ như nhãn cũ (khớp CSDL data.json: Bacillus subtilis 2,0 x 10^6 CFU/g = 2.0 x 10^9 CFU/kg), chỉ sửa khoảng trắng thừa, điện thoại 0934 246 420, thêm SẢN XUẤT TẠI VIỆT NAM; địa chỉ giữ như nhãn cũ; dòng địa chỉ dài trong khối công ty dồn 1 dòng (chữ hẹp) để đủ chỗ dòng SẢN XUẤT TẠI VIỆT NAM. Kích thước nhãn ước (ảnh không ghi). Cần chủ sản phẩm đối chiếu khi có file TCCS.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    300,
+    162
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    400,
+    431
+  ],
+  "khung": [
+    {
+      "x": 429,
+      "y": 54,
+      "w": 344,
+      "h": 196,
+      "r": 0,
+      "dem": 1,
+      "co": 10.4,
+      "phong": "serif",
+      "dong_cao": 1.2,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus subtilis</i> (min): 2.0 x 10<sup style=\"line-height:0\">9</sup> CFU/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chất đệm (dextrose) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>E.coli &lt; 10 CFU/g</i>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Salmonella spp.: KPH</i>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "NGUYÊN LIỆU"
+        },
+        {
+          "kieu": "html",
+          "chu": "<i>Bacillus subtilis</i>, dextrose"
+        },
+        {
+          "kieu": "dam",
+          "chu": "CÔNG DỤNG:"
+        },
+        {
+          "kieu": "html",
+          "chu": "Phân hủy các chất hữu cơ dư thừa ở trong ao nuôi. Hấp thụ khí NH<sub style=\"line-height:0\">3</sub>"
+        },
+        {
+          "kieu": "dam",
+          "chu": "HƯỚNG DẪN SỬ DỤNG:"
+        },
+        {
+          "kieu": "html",
+          "chu": "- Sử dụng với liều lượng: 227g/5.000 - 10.000 m<sup style=\"line-height:0\">3</sup> nước, định kỳ 5 - 7 ngày/1 lần."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Hòa thêm 20 lít nước sạch tạt đều ao, có mở quạt nước."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "dam",
+          "chu": "Hướng dẫn bảo quản:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp."
+        }
+      ]
+    },
+    {
+      "x": 430,
+      "y": 254,
+      "w": 180,
+      "h": 53,
+      "r": 0,
+      "dem": 0,
+      "co": 10.4,
+      "phong": "serif",
+      "dong_cao": 1.22,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 20:2020/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-29"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-000897"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        }
+      ]
+    },
+    {
+      "x": 617,
+      "y": 254,
+      "w": 155,
+      "h": 53,
+      "r": 0,
+      "dem": 0,
+      "co": 10.4,
+      "phong": "serif",
+      "dong_cao": 1.32,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 503,
+      "y": 325,
+      "w": 270,
+      "h": 86,
+      "r": 0,
+      "dem": 0,
+      "noi_dung": []
+    }
+  ],
+  "logo": [
+    {
+      "x": 158,
+      "y": 22,
+      "w": 60,
+      "h": 62
+    },
+    {
+      "x": 433,
+      "y": 331,
+      "w": 66,
+      "h": 72
+    }
+  ],
+  "cong_ty": {
+    "x": 510,
+    "y": 325,
+    "w": 262,
+    "co": 7.3,
+    "mau": "#111111;font-family:'Liberation Serif','Times New Roman',serif",
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420",
+      "Email: thuocthuysannoben@gmail.com",
+      "MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "chu_vector": [
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 490,
+      "y": 318.8,
+      "w": 197,
+      "co": 11.5,
+      "phong": "serif",
+      "mau": "#111111",
+      "xoa": [
+        488,
+        309,
+        202,
+        12
+      ],
+      "chu_cu": "toi",
+      "le": 1,
+      "nen": "trang"
+    },
+    {
+      "chu": "CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN",
+      "x": 91,
+      "y": 395.6,
+      "w": 195,
+      "co": 11,
+      "phong": "serif",
+      "mau": "#fbe6df",
+      "xoa": [
+        88,
+        384,
+        202,
+        14
+      ],
+      "chu_cu": "sang",
+      "le": 2
+    }
+  ],
+  "lam_net": [
+    {
+      "vung": [
+        505,
+        26,
+        695,
+        57
+      ],
+      "bang_mau": [
+        "#ef1827",
+        "#fdfdfd",
+        "#f6b6ba"
+      ],
+      "net": [
+        "#ef1827",
+        "#fdfdfd"
+      ],
+      "mem": 500,
+      "mau": {
+        "#fdfdfd": "#ffffff"
+      }
+    }
+  ]
+}
