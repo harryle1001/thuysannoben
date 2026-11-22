@@ -594,9 +594,9 @@ const videoObject = (v) => ({
   inLanguage: 'vi',
   publisher: { '@type': 'Organization', name: c.company.legal, logo: { '@type': 'ImageObject', url: seo.abs('/images/brand/logo-noben.png') } },
 });
-// Xem bao bì 3D xoay 360° (dữ liệu public/xoay-360, xuất từ brand/bo-nhan-T)
-const SPIN360 = (() => { try { return require('../public/xoay-360/san-pham.json'); } catch (e) { return []; } })();
-const SPIN360_V = (() => { try { return String(Math.round(require('fs').statSync(require('path').join(__dirname, '..', 'public', 'xoay-360', 'san-pham.json')).mtimeMs / 1000)); } catch (e) { return '1'; } })();
+// Xem bao bì 3D xoay 360° (dữ liệu public/xoay-360-3d, xuất từ brand/bo-nhan-T)
+const SPIN360 = (() => { try { return require('../public/xoay-360-3d/san-pham.json'); } catch (e) { return []; } })();
+const SPIN360_V = (() => { try { return String(Math.round(require('fs').statSync(require('path').join(__dirname, '..', 'public', 'xoay-360-3d', 'san-pham.json')).mtimeMs / 1000)); } catch (e) { return '1'; } })();
 router.get('/xoay-360', (req, res, next) => {
   if (!SPIN360.length) return next();
   res.render('pages/spin360', {

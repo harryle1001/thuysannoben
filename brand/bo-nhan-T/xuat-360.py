@@ -26,7 +26,7 @@ web_slugs = set()
 if WEB:
     js = subprocess.run(['node', '-e', "const c=require('./src/content');process.stdout.write(JSON.stringify(c.products.map(p=>p.slug)))"], cwd=ROOT, capture_output=True, text=True).stdout
     web_slugs = set(json.loads(js[js.rindex('["'):]))
-DEST = (ROOT / 'public' / 'xoay-360') if WEB else (D / 'xoay-360')
+DEST = (ROOT / 'public' / 'xoay-360-3d') if WEB else (D / 'xoay-360')
 TEX = DEST / 'tex'; shutil.rmtree(TEX, ignore_errors=True); TEX.mkdir(parents=True, exist_ok=True)
 out, seen = [], set()
 for data_f, lab, lab500, tui in BO:
