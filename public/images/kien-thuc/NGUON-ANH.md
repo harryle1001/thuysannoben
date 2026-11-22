@@ -50,3 +50,8 @@ Mọi ảnh đều đã được chỉnh sửa so với bản gốc: cắt theo 
 ## Chuyên mục Đại lý & gia công (20/11/2026)
 
 10 ảnh bìa bài đại lý do Noben tự dựng: logo Noben, ảnh nhà máy Noben (`/images/brand/banner-2.webp`) và ảnh sản phẩm Noben đã tách nền. Không dùng ảnh bên ngoài.
+
+## Chuyên mục Sản phẩm nổi bật và Tin tức thủy sản (22/11/2026)
+
+- 10 ảnh bìa bài sản phẩm (g7-noben…, caphote-khoang…, aqualac-fs-men…, sorbest-ho-tro…, super-yucca-hap-thu…, aqua-bac-vi-sinh…, oxy-99-oxy-vien…, hepaliver-fs-bo-gan…, ben-iq-iodine…, edta-99-khu-kim-loai…): Noben tự dựng từ logo và ảnh sản phẩm Noben.
+- 10 ảnh bìa bài tin tức (xuat-khau-thuy-san-10-thang-2026, xuat-khau-tom-10-thang-2026, thue-chong-ban-pha-gia-tom-por20-2026, gia-tom-nguyen-lieu-thang-11-2026, xuat-khau-ca-tra-10-thang-2026, tom-hum-xuat-khau-2026, go-the-vang-iuu-2026, mmpa-my-thuy-san-viet-nam-2026, dich-benh-tom-nuoc-lo-2026, thong-tu-16-2026-quan-ly-giong-thuc-an-thuy-san): bố cục Noben, nửa phải dùng lại ảnh "Nuôi tôm thẻ công nghiệp tại Đông Hải, Phan Rang" của Windrain (Wikimedia Commons, CC BY-SA 4.0), như bài an-toan-sinh-hoc-ao-lang-ao-chua-phong-benh-tom ở trên.
