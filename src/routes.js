@@ -16,6 +16,7 @@ const SITE_URL = (process.env.SITE_URL || 'https://thuysannoben.com').replace(/\
 
 const smallCache = new Map();
 const hasSmall = (src) => {
+  src = src.split('?')[0];   // bỏ ?v= (phiên bản ảnh)
   if (!/^\/images\/(products|products-cutout|posts|kien-thuc)\/[^/]+\.webp$/.test(src)) return false;
   if (!smallCache.has(src)) smallCache.set(src, require('fs').existsSync(require('path').join(__dirname, '..', 'public', src.replace(/([^/]+)$/, 'sm/$1'))));
   return smallCache.get(src);
