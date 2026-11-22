@@ -86,6 +86,8 @@ function webpSize(file) {
   return null;
 }
 const cutoutDir = path.join(__dirname, '..', 'public', 'images', 'products-cutout');
+// Đổi khi thay bộ ảnh bao bì (ảnh/video được cache 30 ngày trong public/.htaccess): '3d1' = ảnh 3D giữ nhãn cũ.
+const CUTOUT_V = '3d1';
 
 function refreshProduct(p) {
   p.url = `/san-pham/${p.slug}`;
@@ -94,7 +96,7 @@ function refreshProduct(p) {
   // Package photo without the poster background (scripts/cutout-products.py); falls back to the poster.
   if (p.cutout === undefined) {
     const size = webpSize(path.join(cutoutDir, `${p.slug}.webp`));
-    p.cutout = size ? { src: `/images/products-cutout/${p.slug}.webp`, ...size } : null;
+    p.cutout = size ? { src: `/images/products-cutout/${p.slug}.webp?v=${CUTOUT_V}`, ...size } : null;
   }
   p.shot = p.cutout || p.image;
   p.video = productVideos[p.slug] || null;
