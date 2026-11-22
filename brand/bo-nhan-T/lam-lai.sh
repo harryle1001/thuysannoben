@@ -11,8 +11,9 @@ DATA=nhan/san-pham-son-ha.json DPI=$DPI node nhan/build.js --concept t
 echo "2/4 Nhãn chai 500 ml (khổ 159,4 × 80 mm)"
 mkdir -p nhan/out500
 DATA=nhan/san-pham-son-ha.json LABEL_H=80 SIDE_W=55 OUT_DIR=nhan/out500 DPI=$DPI node nhan/build.js --chi mega-cid-new --concept t
-echo "3/4 Mặt trước, mặt sau túi bột"
+echo "3/4 Mặt trước, mặt sau túi bột và file in túi (PDF vector)"
 node tui.js
+node tui-in.js
 echo "4/4 Trang xoay 360°"
 python3 xuat-360.py
 if [[ "${1:-}" == "--3d" ]]; then
@@ -34,4 +35,4 @@ subprocess.run(['node', 'pouch3d.js', '--items', ','.join(f"out/tui/{p['slug']}-
 PY
   node catalog/build.js
 fi
-echo "Xong. Nhãn in: nhan/out/*.pdf · túi: out/tui · xoay 360°: xoay-360/index.html"
+echo "Xong. Nhãn chai in: nhan/out/*.pdf · file in túi: out/in/ · ảnh túi: out/tui · xoay 360°: xoay-360/index.html"

@@ -20,7 +20,7 @@ Mọi thứ dựng từ dữ liệu, nên khi đổi thông tin chỉ sửa dữ
 bash brand/bo-nhan-T/lam-lai.sh
 ```
 
-Ra: nhãn in PDF có tràn lề và dấu xén (`nhan/out/*.pdf`, chai 500 ml ở `nhan/out500/`), mặt trước và mặt sau túi (`out/tui/`), ảnh dán và danh sách cho trang xoay (`xoay-360/`).
+Ra: nhãn chai in PDF có tràn lề và dấu xén (`nhan/out/*.pdf`, chai 500 ml ở `nhan/out500/`), file in túi theo từng khổ (`out/in/tui-<ngang>x<cao>mm/*.pdf`, 2 trang: mặt trước, mặt sau), ảnh mặt trước và mặt sau túi (`out/tui/`), ảnh dán và danh sách cho trang xoay (`xoay-360/`).
 
 ```bash
 bash brand/bo-nhan-T/lam-lai.sh --3d
@@ -54,3 +54,7 @@ DATA=nhan/san-pham-nhuong.json GIA=catalog/gia-nhuong.json OUT_ROOT=out/nhuong n
 ```
 
 Catalogue lấy ảnh 3D trong `out/nhuong/3d/` (dựng bằng `noben3d.js` cho chai, `pouch3d.js` cho túi); chưa có thì dùng mặt trước phẳng.
+
+## File in sửa được
+
+Mọi file in là PDF vector, chữ còn là chữ (phông Be Vietnam Pro nhúng sẵn), mở và sửa được bằng Illustrator, CorelDRAW, Affinity, Inkscape. Cạnh mỗi PDF có file `.html` cùng tên: mở bằng trình duyệt, sửa chữ rồi in ra PDF. Sửa lâu dài thì sửa dữ liệu rồi chạy lại `lam-lai.sh`.
