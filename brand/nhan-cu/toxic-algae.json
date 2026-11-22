@@ -1,0 +1,259 @@
+{
+  "slug": "toxic-algae",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/02-002250_1.jpg",
+  "kich_thuoc_goc": [
+    559,
+    600
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 559 × 600 (phóng ×8, ảnh gốc nhỏ nên PNG chỉ 4472 px ngang). Ảnh _1 là nhãn Noben; ảnh 02-002250_2.jpg là nhãn nhà phân phối Probiotic (Toxic Algae – Siêu lắng) nên không dùng. content/tccs.json KHÔNG có hồ sơ TCCS 12:2017/NOBEN (TOXIC ALGAE) nên thành phần, công dụng, hướng dẫn sử dụng, bảo quản giữ nguyên như nhãn cũ (khớp CSDL Tổng cục: Sodium thiosulfate min 10%, chất đệm CaCO3, liều 1 kg/1.000 m³). Chỉ đổi điện thoại 0934 246 420, thêm SẢN XUẤT TẠI VIỆT NAM; địa chỉ giữ như nhãn cũ. Chữ nằm trên nền ảnh: xóa chữ cũ theo màu chữ (cách nb-algae). Cần xác nhận: CSDL còn ghi chỉ tiêu Độ ẩm (max) 10% mà nhãn cũ không có.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    200,
+    215
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    559,
+    600
+  ],
+  "khung": [
+    {
+      "x": 22,
+      "y": 205,
+      "w": 320,
+      "h": 248,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#1c221c",
+      "phong": "serif",
+      "co": 11.6,
+      "dong_cao": 1.24,
+      "dem": 3,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "dam": "THÀNH PHẦN:",
+          "chu": " trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Sodium thiosulfate (min): 10%"
+        },
+        {
+          "kieu": "html",
+          "chu": "Chất đệm CaCO<sub style=\"line-height:0;font-size:.72em\">3</sub> vừa đủ: 1kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Asen (As): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Chì (Pb): KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b>NGUYÊN LIỆU</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "Sodium thiosulfate, CaCO<sub style=\"line-height:0;font-size:.72em\">3</sub>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.85em\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Khử chlorine trong nước ao nuôi."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.85em\">HƯỚNG DẪN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Sử dụng 1 kg/1.000 m³ nước, hòa thêm nước sạch tạt đều ao, có mở mạnh quạt nước."
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp."
+        }
+      ]
+    },
+    {
+      "x": 364,
+      "y": 315,
+      "w": 168,
+      "h": 131,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#1c221c",
+      "phong": "serif",
+      "co": 11.4,
+      "dong_cao": 1.32,
+      "dem": 2,
+      "noi_dung": [
+        {
+          "kieu": "dong",
+          "chu": "Số tiêu chuẩn công bố: 12:2017/NOBEN"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã SPHQ: VICB 7178.10-11"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Mã số tiếp nhận: 02-002250"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Khối lượng tịnh:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Số lô sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Ngày sản xuất:"
+        },
+        {
+          "kieu": "dong",
+          "chu": "Hạn sử dụng:"
+        }
+      ]
+    },
+    {
+      "x": 148,
+      "y": 484,
+      "w": 402,
+      "h": 86,
+      "r": 0,
+      "nen": "trong",
+      "mau": "#111111",
+      "co": 9,
+      "dong_cao": 1.3,
+      "dem": 0,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"font-family:Liberation Serif,serif;font-size:1.75em;line-height:1.1\">CÔNG TY TNHH NO BEN</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Địa chỉ: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh.</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Điện thoại: 0934 246 420 &nbsp;&nbsp;/&nbsp;&nbsp; Email: thuocthuysannoben@gmail.com</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">MST: 0304210513</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:135.14%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.74);font-size:1em;font-weight:700\">Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Tổ 5, Ấp Phú Lợi, Xã Tân Phú Trung, Huyện Củ Chi, Thành Phố Hồ Chí Minh.</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;overflow:hidden\"><span style=\"display:block;width:125.00%;white-space:nowrap;text-align:left;transform-origin:0 0;transform:scaleX(0.8);font-size:1em;font-weight:700;font-size:1.15em;color:#c8102e;-webkit-text-stroke-color:#c8102e;line-height:1.25;text-shadow:0 0 1.5px #fff,0 0 1px #fff\">SẢN XUẤT TẠI VIỆT NAM</span></span>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        24,
+        207,
+        306,
+        246
+      ],
+      "mau": "#253021",
+      "nguong": 85,
+      "le": 3
+    },
+    {
+      "vung": [
+        24,
+        207,
+        150,
+        105
+      ],
+      "khac_nen": 11,
+      "nguong": 45,
+      "le": 4
+    },
+    {
+      "vung": [
+        24,
+        364,
+        306,
+        90
+      ],
+      "khac_nen": 9,
+      "nguong": 50,
+      "le": 4
+    },
+    {
+      "vung": [
+        364,
+        316,
+        168,
+        128
+      ],
+      "mau": "#253021",
+      "nguong": 110,
+      "le": 2
+    },
+    {
+      "vung": [
+        364,
+        316,
+        168,
+        128
+      ],
+      "khac_nen": 15,
+      "nguong": 30,
+      "le": 6
+    },
+    {
+      "vung": [
+        148,
+        484,
+        400,
+        74
+      ],
+      "mau": "#202020",
+      "nguong": 130,
+      "le": 3
+    },
+    {
+      "vung": [
+        148,
+        484,
+        400,
+        76
+      ],
+      "khac_nen": 15,
+      "nguong": 14,
+      "le": 5
+    }
+  ],
+  "logo": [
+    {
+      "x": 57,
+      "y": 482,
+      "w": 72,
+      "h": 77
+    }
+  ]
+}

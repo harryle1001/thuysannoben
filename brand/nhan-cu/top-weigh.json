@@ -1,0 +1,158 @@
+{
+  "slug": "top-weigh",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-001549_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    932
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 932 (túi: mặt trước trái, mặt sau phải). content/tccs.json KHÔNG có hồ sơ TCCS 46:2020/NOBEN (TOP-WEIGH) nên thành phần, công dụng, hướng dẫn sử dụng, bảo quản giữ nguyên như nhãn cũ (khớp CSDL Tổng cục data.json về Protein 15%, Ca 1.500 mg/kg, liều 3-5 g/kg). Chỉ sửa: 'Cadimin' → 'Cadimi'; 'Số tiêu chuẩn công bố: :' bỏ dấu hai chấm thừa; thêm gạch đầu dòng còn thiếu ở dòng 'Trường hợp tôm bị bệnh…'; điện thoại 0934 246 420; thêm SẢN XUẤT TẠI VIỆT NAM. Cần xác nhận: Cadimi nhãn cũ ghi 0,813 mg/kg, CSDL ghi '8.813 (LOQ=1.5'. Mã SPHQ VICB 7178.10-55 giữ như nhãn cũ.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    240,
+    140
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    800,
+    932
+  ],
+  "khung": [
+    {
+      "x": 838,
+      "y": 108,
+      "w": 730,
+      "h": 562,
+      "r": 0,
+      "dem": 6,
+      "co": 18.5,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.26,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:5px\"><b>THÀNH PHẦN:</b> trong 1kg sản phẩm</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;width:52%\"><span style=\"display:flex;align-items:baseline\"><span>Protein (min)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>15%</span></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;width:52%\"><span style=\"display:flex;align-items:baseline\"><span>Ca (Dạng CaHPO<sub style=\"line-height:0;font-size:.72em\">4</sub>) (min)</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>1.500 mg/kg</span></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;width:52%\"><span style=\"display:flex;align-items:baseline\"><span>Chất đệm (dextrose) vừa đủ</span><span style=\"flex:1;border-bottom:.12em dotted currentColor;margin:0 .15em\"></span><span>1kg</span></span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:.45em\"><span style=\"display:inline-block;width:38%\">- Asen (As): 2,38 mg/kg</span><span style=\"display:inline-block;width:33%\">- Chì (Pb): KPH</span><span>- Ethoxyquin: KPH</span></span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;width:38%\">- Asen (As) vô cơ: 1,56 mg/kg</span><span style=\"display:inline-block;width:33%\">- Thủy ngân (Hg): KPH</span><span>- <i>Salmonella</i> spp.: KPH</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:inline-block;width:38%\">- Cadimi (Cd): 0,813 mg/kg</span><span style=\"display:inline-block;width:33%\">- <i>E.coli</i> &lt; 10 CFU/g</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.7em\">NGUYÊN LIỆU</b>"
+        },
+        {
+          "kieu": "html",
+          "chu": "Protein, CaHPO<sub style=\"line-height:0;font-size:.72em\">4</sub>, dextrose"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block\">CÔNG DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Bổ sung đạm, vitamin, acid amin và khoáng chất cần thiết cho sự sinh trưởng và phát triển của tôm, cá. Giúp tôm, cá phát triển tốt."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ phòng các bệnh ốp thân, mềm vỏ, chậm lớn, bắt mồi kém."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ tiêu hóa và hấp thụ thức ăn nhanh chóng, nhanh lớn."
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:1.1em\">HƯỚNG DẪN SỬ DỤNG, THỜI HẠN SỬ DỤNG</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trộn 3-5 g/kg thức ăn, sử dụng 3 lần/ngày trong suốt vụ nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trường hợp tôm bị bệnh, bắt mồi kém, chậm lớn: Trộn tăng liều gấp đôi, cho ăn 3-5 ngày sau đó cho ăn với liều lượng bình thường."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hòa sản phẩm với lượng nước vừa đủ rồi trộn đều vào thức ăn, để ráo trước khi cho ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Thời hạn sử dụng: Sử dụng trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "dong",
+          "dam": "Hướng dẫn bảo quản:",
+          "chu": " Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp."
+        }
+      ]
+    },
+    {
+      "x": 838,
+      "y": 678,
+      "w": 730,
+      "h": 92,
+      "r": 0,
+      "dem": 3,
+      "co": 18.5,
+      "mau": "#1a1a1a",
+      "dong_cao": 1.24,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;margin-left:14px\"><span style=\"width:55%\">Số tiêu chuẩn công bố: 46:2020/NOBEN<br>Mã số tiếp nhận: 01-001549<br>Mã SPHQ: VICB 7178.10-55<br>Khối lượng tịnh:</span><span>Số lô sản xuất:<br>Ngày sản xuất:<br>Hạn sử dụng:</span></span>"
+        }
+      ]
+    },
+    {
+      "x": 958,
+      "y": 778,
+      "w": 612,
+      "h": 128,
+      "r": 0,
+      "noi_dung": []
+    }
+  ],
+  "cong_ty": {
+    "x": 975,
+    "y": 782,
+    "w": 590,
+    "co": 14.6,
+    "ten": "CÔNG TY TNHH NO BEN",
+    "dong": [
+      "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+      "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+      "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+    ],
+    "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+  },
+  "logo": [
+    {
+      "x": 846,
+      "y": 782,
+      "w": 104,
+      "h": 115
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "slug": "us-lacto",
+  "goc": "CONG-TY-NOBEN/ho-so-san-pham/nhan/01-002236_1.jpg",
+  "kich_thuoc_goc": [
+    1600,
+    1029
+  ],
+  "_ghi_chu": "Toạ độ theo pixel ảnh gốc 1600 × 1029 (túi: mặt trước trái, mặt sau phải). content/tccs.json KHÔNG có hồ sơ TCCS 42:2020/NOBEN (US LACTO) nên thành phần, công dụng, hướng dẫn sử dụng, bảo quản giữ nguyên như nhãn cũ. Chỉ sửa: 'Vừa đủ' → 'vừa đủ', 'cfu/kg' → 'CFU/kg', mã số tiếp nhận '01- 002236' → '01-002236', 50⁰C → 50°C; khối lượng tịnh để trống (nhãn cũ ghi 500g); điện thoại 0934 246 420 ở cả 2 khối công ty; thêm SẢN XUẤT TẠI VIỆT NAM (mặt trước nền xanh đậm nên màu vàng, mặt sau đỏ). Cần chủ sản phẩm xác nhận: hướng dẫn sử dụng nhãn cũ (ngâm nước ấm, phòng 5g/kg, trị 10g/kg, câu '100% tôm không bị bệnh vi bào tử…') khác CSDL Tổng cục (trộn 2-4g/kg, 2 lần/ngày; gấp đôi khi bệnh đường ruột); CSDL có thêm chỉ tiêu Độ ẩm (max) 10%.",
+  "bao_bi": "tui",
+  "kich_thuoc_mm": [
+    240,
+    154
+  ],
+  "mat_truoc": [
+    0,
+    0,
+    810,
+    1029
+  ],
+  "khung": [
+    {
+      "x": 862,
+      "y": 262,
+      "w": 352,
+      "h": 466,
+      "r": 0,
+      "dem": 4,
+      "co": 19,
+      "mau": "#2b2b2b",
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e0282e\">Thành phần:</b> trong 1kg sản phẩm"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>Bacillus subtilis</i> (min): 1,7x 10<sup style=\"line-height:0;font-size:.7em\">9</sup> CFU/kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chất đệm (Dextrose) vừa đủ: 1kg"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Aflatoxin B1: KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Cadimi (Cd): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Chì (Pb): KPH"
+        },
+        {
+          "kieu": "dong",
+          "chu": "- Thủy ngân (Hg): 0,036 mg/kg"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>E.coli</i> &lt; 1 CFU/ml"
+        },
+        {
+          "kieu": "html",
+          "chu": "- <i>Salmonella</i> spp.: KPH"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e0282e;display:block;margin-top:1.05em\">Công dụng:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Kích thích tôm bắt mồi, tiêu hóa và hấp thụ thức ăn nhanh, nong nở to đường ruột, tăng sức đề kháng cho tôm."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Hỗ trợ phòng ngừa bệnh phân trắng, phân lỏng, phân đứt khúc cho tôm."
+        },
+        {
+          "kieu": "html",
+          "chu": "<i style=\"display:block;margin-top:.75em;font-size:.9em;white-space:nowrap\">CHỈ DÙNG TRONG NUÔI TRỒNG THỦY SẢN</i>"
+        }
+      ]
+    },
+    {
+      "x": 1230,
+      "y": 262,
+      "w": 330,
+      "h": 466,
+      "r": 0,
+      "dem": 4,
+      "co": 19,
+      "mau": "#2b2b2b",
+      "dong_cao": 1.27,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<b style=\"color:#e0282e;display:block;margin-top:0\">Hướng dẫn sử dụng:</b>"
+        },
+        {
+          "kieu": "gach",
+          "chu": "Ngâm vào nước ấm 40 - 50°C trong 15 phút để US LACTO tan hoàn toàn rồi trộn đều lên thức ăn."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Phòng bệnh: Trộn 5g/kg thức ăn, ngày cho ăn 1 – 2 lần, cho ăn liên trong suốt quá trình nuôi."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Trị bệnh: Trộn 10g/kg thức ăn, cho ăn 3 - 4 lần/ngày và liên tục 5 – 7 ngày sau đó cho ăn theo chế độ phòng bệnh."
+        },
+        {
+          "kieu": "gach",
+          "chu": "Đặc biệt sau khi sử dụng sản phẩm US LACTO trong suốt quá trình nuôi 100% tôm không bị bệnh vi bào tử, phân trắng, trống đường ruột."
+        },
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:block;margin-top:1.05em\"><b>Bảo quản:</b> Nơi khô ráo, thoáng mát, đậy kín sản phẩm sau khi sử dụng.</span>"
+        },
+        {
+          "kieu": "html",
+          "chu": "<b style=\"display:block;margin-top:.45em\">Khối lượng tịnh:</b>"
+        }
+      ]
+    },
+    {
+      "x": 862,
+      "y": 735,
+      "w": 696,
+      "h": 78,
+      "r": 0,
+      "dem": 2,
+      "co": 19,
+      "mau": "#2b2b2b",
+      "dong_cao": 1.36,
+      "noi_dung": [
+        {
+          "kieu": "html",
+          "chu": "<span style=\"display:flex;margin-left:9px\"><span style=\"width:52.6%\">Số TCCS 42:2020/NOBEN<br>Mã SPHQ: VICB 7178.10-51<br>Mã số tiếp nhận: 01-002236</span><span>Số lô SX:<br>NSX:<br>HSD:</span></span>"
+        }
+      ]
+    }
+  ],
+  "xoa": [
+    {
+      "vung": [
+        226,
+        826,
+        500,
+        90
+      ],
+      "chu": "sang",
+      "le": 4
+    },
+    {
+      "vung": [
+        226,
+        826,
+        500,
+        90
+      ],
+      "khac_nen": 15,
+      "nguong": 40,
+      "le": 6
+    },
+    {
+      "vung": [
+        866,
+        809,
+        470,
+        5
+      ],
+      "nen": "trang",
+      "le": 0,
+      "nguong_trang": 254
+    },
+    {
+      "vung": [
+        1046,
+        822,
+        440,
+        94
+      ],
+      "mau": "#222222",
+      "nguong": 150,
+      "le": 3
+    },
+    {
+      "vung": [
+        1046,
+        822,
+        440,
+        94
+      ],
+      "khac_nen": 11,
+      "nguong": 25,
+      "le": 5
+    },
+    {
+      "vung": [
+        1425,
+        868,
+        70,
+        22
+      ],
+      "khac_nen": 21,
+      "nguong": 10,
+      "le": 6
+    }
+  ],
+  "cong_ty": [
+    {
+      "x": 233,
+      "y": 826,
+      "w": 470,
+      "co": 13,
+      "mau": "#ffffff",
+      "ten": "CÔNG TY TNHH NO BEN",
+      "dong": [
+        "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+        "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+        "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+      ],
+      "xuat_xu": "<span style=\"color:#ffe600;-webkit-text-stroke-color:#ffe600\">SẢN XUẤT TẠI VIỆT NAM</span>"
+    },
+    {
+      "x": 1051,
+      "y": 824,
+      "w": 470,
+      "co": 13.5,
+      "mau": "#111111",
+      "ten": "CÔNG TY TNHH NO BEN",
+      "dong": [
+        "Địa chỉ: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh.",
+        "Điện thoại: 0934 246 420 - Email: thuocthuysannoben@gmail.com - MST: 0304210513",
+        "Địa chỉ sản xuất: 228/9 Nguyễn Thị Lắng, Ấp Phú Lợi A, Xã Củ Chi, Thành Phố Hồ Chí Minh."
+      ],
+      "xuat_xu": "SẢN XUẤT TẠI VIỆT NAM"
+    }
+  ],
+  "logo": [
+    {
+      "x": 952,
+      "y": 823,
+      "w": 86,
+      "h": 94
+    }
+  ]
+}
