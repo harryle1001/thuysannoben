@@ -230,7 +230,7 @@ router.get('/', (req, res) => {
       preloadImagePhone: '/media/sunrise/sunrise-poster-9x16.webp',
       title: 'Thuốc thủy sản Noben – Thuốc nuôi tôm, chế phẩm sinh học, khoáng chất',
       description:
-        'Thuốc thủy sản Noben: thuốc trị bệnh tôm, vi sinh xử lý đáy, khoáng chất, men tiêu hóa cho ao tôm, cá. Nhà máy ISO 9001:2015 tại Củ Chi, hơn 22 năm kinh nghiệm, tư vấn kỹ thuật miễn phí.',
+        'Thuốc thủy sản Noben: vi sinh xử lý đáy, khoáng, men tiêu hóa, sản phẩm hỗ trợ phòng bệnh tôm, cá. Nhà máy ISO 9001:2015 Củ Chi, hơn 22 năm, tư vấn miễn phí.',
       image: '/images/brand/banner-1.webp',
     },
     featured: c.featured,
@@ -633,7 +633,7 @@ router.get('/video', (req, res) =>
 router.get('/lien-he', (req, res) => {
   const product = c.productBySlug[req.query['san-pham']];
   res.render('pages/contact', {
-    meta: { title: 'Liên hệ – Thủy sản Noben', description: `Gọi ${c.company.hotline} hoặc để lại lời nhắn, kỹ thuật viên Noben sẽ gọi lại tư vấn miễn phí.` },
+    meta: { title: 'Liên hệ – Thủy sản Noben', description: `Liên hệ Thủy sản Noben: gọi ${c.company.hotline}, Zalo hoặc để lại lời nhắn, kỹ thuật viên gọi lại tư vấn miễn phí về thuốc thủy sản, đặt hàng và làm đại lý.` },
     prefill: { product: product ? product.name : '', need: product ? 'Mua sản phẩm' : String(req.query['nhu-cau'] || '') },
     needs: leads.NEEDS,
     sent: req.query.da_gui === '1',
