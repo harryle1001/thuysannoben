@@ -328,7 +328,12 @@ router.get('/san-pham/:slug', (req, res, next) => {
   const p = c.productBySlug[req.params.slug.toLowerCase()];
   if (!p) return next();
   if (req.params.slug !== p.slug) return res.redirect(301, p.url);
-  const desc = `${p.name}: ${p.tagline}. ${p.uses[0] ? p.uses[0].replace(/<[^>]+>/g, '') + ' ' : ''}Sản phẩm của Thủy sản Noben, nhà máy ISO 9001:2015. Gọi ${c.company.hotline} để được tư vấn.`;
+  // mô tả: công dụng (không lặp câu), thành phần chính, quy cách, rồi lời mời tư vấn; head.ejs cắt còn ~158 ký tự
+  const strip = (s) => String(s || '').replace(/<[^>]+>/g, '').replace(/\s+([,.])/g, '$1').replace(/[.\s]+$/, '');
+  const tagS = strip(p.tagline), use0 = strip(p.uses[0]);
+  const lead = use0 && use0.toLowerCase() !== tagS.toLowerCase() && !use0.toLowerCase().startsWith(tagS.toLowerCase().slice(0, 30)) ? `${tagS}. ${use0}` : tagS;
+  const hc = strip((p.composition || [])[0]).replace(/\s*\(min\)/i, '').replace(/:\s*/, ' ');
+  const desc = `${p.name}: ${lead}.${hc ? ` Thành phần: ${hc}.` : ''}${p.packaging ? ` Quy cách: ${strip(p.packaging)}.` : ''} Nhà máy Noben ISO 9001:2015, gọi ${c.company.hotline}.`;
   const related = c.relatedProducts(p, 10);
   const solutions = p.symptoms.map((s) => c.symptomBySlug[s] && c.symptomBySlug[s].solution).filter(Boolean);
   const faq = productFaq(p, related, solutions);

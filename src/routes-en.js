@@ -75,7 +75,10 @@ router.get('/en/products/:slug', (req, res, next) => {
   // tagline chưa có bản dịch thì vẫn là tiếng Việt: dùng tên nhóm tiếng Anh để title khác bản tiếng Việt
   const vi = /[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]/i.test(tag);
   const title = p.name.length > 34 ? `${p.name} | Noben` : `${p.name} – ${cut(vi ? `${p.categoryInfo.name} for shrimp and fish` : tag, 64 - p.name.length - 11)} | Noben`;
-  const desc = `${p.name}: ${tag}. ${p.uses[0] ? plain(p.uses[0]) + ' ' : ''}Made by NOBEN CO., LTD in an ISO 9001:2015 factory in Vietnam.`;
+  const use0 = plain(p.uses[0] || '');
+  const desc = vi
+    ? `${p.name}: ${p.categoryInfo.name.toLowerCase()} for shrimp and fish ponds, made by NOBEN CO., LTD in an ISO 9001:2015 factory in Vietnam. Specifications, dosage and export enquiries.`
+    : `${p.name}: ${tag}. ${use0 && use0.toLowerCase() !== tag.toLowerCase() ? use0 + ' ' : ''}Made by NOBEN CO., LTD in an ISO 9001:2015 factory in Vietnam.`;
   const faq = [];
   if (p.uses.length) faq.push({ q: `What is ${p.name} used for?`, a: `<p>${esc(p.name)} is a ${esc(kind)} made by Noben. ${esc(tag)}.</p><ul>${p.uses.map((u) => `<li>${esc(plain(u))}</li>`).join('')}</ul>` });
   if (p.dose.length) faq.push({ q: `How do I use ${p.name}?`, a: `<p>According to the label:</p><ul>${p.dose.slice(0, 4).map((d) => `<li>${esc(plain(d))}</li>`).join('')}</ul><p>Rates may be adjusted to pond conditions; contact our technical team for advice.</p>` });
