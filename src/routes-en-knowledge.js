@@ -33,7 +33,7 @@ function knowledge(req, res, topic) {
   res.render('en/knowledge', {
     meta: {
       title: topic ? `${topic.name}: shrimp farming guides – Noben Aquaculture` : 'Shrimp farming knowledge: diseases, water quality, minerals – Noben',
-      description: topic ? topic.blurb : 'Technical guides for whiteleg and black tiger shrimp farming: AHPND/EMS, EHP, white spot, white feces disease, water quality, minerals and lined ponds, with references.',
+      description: topic ? `${topic.blurb} Practical guides by the Noben technical team for shrimp farmers.` : 'Technical guides for whiteleg and black tiger shrimp farming: AHPND/EMS, EHP, white spot, white feces disease, water quality, minerals and lined ponds, with references.',
     },
     topic,
     topics: k.TOPICS.map((t) => ({ ...t, count: k.articles.filter((a) => a.topic === t.slug).length })).filter((t) => t.count),

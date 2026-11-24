@@ -8,7 +8,14 @@
   const fullTitle = fullTitle0.length <= 65 ? fullTitle0 : (() => { const bare = fullTitle0.replace(/\s*[–|-]\s*(Thủy sản Noben|Thuốc thủy sản Noben|Noben Aquaculture|Noben)\s*$/, ''); return bare.length <= 65 ? bare : cutW(bare, 62); })();
   const desc0 = m.description || (isEn ? 'NOBEN CO., LTD manufactures aquaculture health products, probiotics, minerals and feed supplements for shrimp and fish ponds.' : '') || 'Công ty TNHH Noben sản xuất thuốc thú y thủy sản, chế phẩm sinh học, khoáng chất và thức ăn bổ sung cho ao tôm, cá.';
   // mô tả tối đa ~158 ký tự: cắt ở cuối câu hoặc cuối từ, không để dở dang
-  const desc = desc0.length <= 158 ? desc0 : (() => { const t = desc0.slice(0, 158); const k = Math.max(t.lastIndexOf('. '), t.lastIndexOf('; ')); return k > 100 ? t.slice(0, k + 1) : t.replace(/\s+\S*$/, '').replace(/[\s,:;–-]+$/, '') + '…'; })();
+  const desc = desc0.length <= 158 ? desc0 : (() => {
+    // giữ trọn câu theo thứ tự, bỏ câu không vừa; nếu vẫn ngắn (<120) thì cắt theo từ để tận dụng chỗ
+    const ss = desc0.match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) || [desc0];
+    let out = ss[0].trim().length <= 158 ? ss[0].trim() : '';
+    for (const s of ss.slice(1)) { const t = s.trim(); if (out && (out + ' ' + t).length <= 158) out += ' ' + t; }
+    if (out.length >= 120) return out;
+    return desc0.slice(0, 157).replace(/\s+\S*$/, '').replace(/[\s,:;–-]+$/, '') + '…';
+  })();
   const ogImage = /^https?:/.test(m.image || '') ? m.image : siteUrl + (m.image || '/images/brand/banner-1.webp');
 %><!doctype html>
 <html lang="<%= isEn ? 'en' : 'vi' %>">

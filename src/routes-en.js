@@ -52,7 +52,7 @@ function catalog(req, res, cat) {
   res.render('en/catalog', {
     meta: {
       title: cat ? `${cat.name} for shrimp ponds – Noben Aquaculture` : 'Products – Shrimp health, probiotics, minerals | Noben',
-      description: cat ? cat.blurb : `${en.products.length} Noben aquaculture products: probiotics and pond care, minerals, feed supplements, liver and gut health support for shrimp and fish.`,
+      description: cat ? `${cat.blurb} Made by NOBEN CO., LTD in Vietnam, ISO 9001:2015. Specifications and export quotations on request.` : `${en.products.length} Noben aquaculture products: probiotics and pond care, minerals, feed supplements, liver and gut health support for shrimp and fish.`,
       noindex: Boolean(symptom || q),
     },
     heading: title,
