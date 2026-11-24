@@ -258,7 +258,8 @@ function renderCatalog(req, res, category) {
   res.render('pages/catalog', {
     meta: {
       title: catInfo ? `${catInfo.name} cho tôm, cá – Thuốc thủy sản Noben` : 'Sản phẩm thuốc thủy sản, thuốc nuôi tôm – Noben',
-      description: catInfo ? catInfo.blurb : `${c.products.length} sản phẩm thuốc thủy sản Noben: chế phẩm sinh học, khoáng chất, thức ăn bổ sung, đặc trị bệnh tôm cá.`,
+      description: catInfo ? `${catInfo.blurb} Hàng chính hãng nhà máy Noben, ISO 9001:2015, giao toàn quốc, kỹ thuật tư vấn miễn phí.` : `${c.products.length} sản phẩm thuốc thủy sản Noben: chế phẩm sinh học, khoáng chất, thức ăn bổ sung, hỗ trợ xử lý bệnh tôm cá. Hàng nhà máy, giao toàn quốc.`,
+      keywords: catInfo ? `${catInfo.name.toLowerCase()}, thuốc thủy sản, thuốc nuôi tôm, Noben` : 'thuốc thủy sản, thuốc nuôi tôm, chế phẩm sinh học, khoáng chất cho tôm, thức ăn bổ sung, Noben',
       noindex: Boolean(symptom || q),
     },
     heading: title,
@@ -336,7 +337,7 @@ router.get('/san-pham/:slug', (req, res, next) => {
   const spin = SPIN360.find((x) => x.web === p.slug);
   res.render('pages/product', {
     spin360: spin ? spin.slug : null,
-    meta: { title: productTitle(p), description: clip(desc, 300), image: p.image && p.image.src, type: 'product' },
+    meta: { title: productTitle(p), description: clip(desc, 300), image: p.image && p.image.src, type: 'product', keywords: [p.name, `${p.name} Noben`, `${p.name} cho tôm`, p.categoryInfo && p.categoryInfo.name.toLowerCase(), 'thuốc thủy sản', 'thuốc nuôi tôm'].filter(Boolean).join(', ') },
     p,
     kind: KIND[p.category] || 'thuốc thủy sản',
     related,
@@ -433,7 +434,8 @@ function renderKnowledge(req, res, topic) {
   res.render('pages/knowledge', {
     meta: {
       title: topic ? `${topic.name}: kiến thức nuôi tôm thẻ, tôm sú – Noben` : 'Kiến thức nuôi tôm: bệnh tôm, môi trường ao, kỹ thuật nuôi – Noben',
-      description: topic ? topic.blurb : 'Cẩm nang nuôi tôm thẻ chân trắng, tôm sú: nhận biết và xử lý bệnh tôm, quản lý môi trường ao, kỹ thuật nuôi và dinh dưỡng do đội kỹ thuật Noben biên soạn.',
+      keywords: topic ? `${topic.name.toLowerCase()}, kiến thức nuôi tôm, nuôi tôm thẻ, tôm sú, Noben` : 'kiến thức nuôi tôm, bệnh tôm, môi trường ao nuôi, kỹ thuật nuôi tôm thẻ, Noben',
+      description: topic ? `${topic.blurb} Bài viết do đội kỹ thuật Noben biên soạn, cập nhật thường xuyên cho bà con.` : 'Cẩm nang nuôi tôm thẻ chân trắng, tôm sú: nhận biết và xử lý bệnh tôm, quản lý môi trường ao, kỹ thuật nuôi và dinh dưỡng do đội kỹ thuật Noben biên soạn.',
     },
     topic,
     topics: c.TOPICS.map((t) => ({ ...t, count: all.filter((p) => p.topic === t.slug).length })).filter((t) => t.count),
@@ -488,7 +490,8 @@ router.get('/bai-viet/:slug', (req, res, next) => {
   res.render('pages/post', {
     meta: {
       title: post.seoTitle,
-      description: clip(post.description || post.excerpt, 300),
+      description: clip(post.description || post.excerpt || `${post.title}. Tin hoạt động của Công ty TNHH Noben, nhà sản xuất thuốc thủy sản tại Củ Chi, TP.HCM.`, 300),
+      keywords: Array.isArray(post.keywords) ? post.keywords.join(', ') : post.keywords || '',
       image: post.ogImage || (post.cover && post.cover.src),
       type: 'article',
       published: post.date,

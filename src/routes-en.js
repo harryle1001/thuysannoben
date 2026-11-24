@@ -72,7 +72,9 @@ router.get('/en/products/:slug', (req, res, next) => {
   if (req.params.slug !== p.slug) return res.redirect(301, p.url);
   const kind = p.categoryInfo.kind;
   const tag = plain(p.tagline);
-  const title = p.name.length > 34 ? `${p.name} | Noben` : `${p.name} – ${cut(tag, 64 - p.name.length - 11)} | Noben`;
+  // tagline chưa có bản dịch thì vẫn là tiếng Việt: dùng tên nhóm tiếng Anh để title khác bản tiếng Việt
+  const vi = /[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]/i.test(tag);
+  const title = p.name.length > 34 ? `${p.name} | Noben` : `${p.name} – ${cut(vi ? `${p.categoryInfo.name} for shrimp and fish` : tag, 64 - p.name.length - 11)} | Noben`;
   const desc = `${p.name}: ${tag}. ${p.uses[0] ? plain(p.uses[0]) + ' ' : ''}Made by NOBEN CO., LTD in an ISO 9001:2015 factory in Vietnam.`;
   const faq = [];
   if (p.uses.length) faq.push({ q: `What is ${p.name} used for?`, a: `<p>${esc(p.name)} is a ${esc(kind)} made by Noben. ${esc(tag)}.</p><ul>${p.uses.map((u) => `<li>${esc(plain(u))}</li>`).join('')}</ul>` });
