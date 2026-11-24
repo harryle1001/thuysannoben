@@ -31,7 +31,10 @@ const MERGED = {
   'diet-oc-dinh-oc-buou-vang-hen-trong-ao-nuoi-tom': 'quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong',
   'cach-su-dung-de-zoo-de-tieu-diet-cac-loai-nam-noi-ngoai-ky-sinh-trung-hen-trong-ao-nuoi-tom': 'tom-bi-nam-nam-dong-tien-ao-bat',
 };
+const illustrations = require('./illustrations');
 const posts = [...read('posts').filter((p) => !MERGED[p.slug]), ...articles.load()].sort((a, b) => (a.date < b.date ? 1 : -1));
+// ảnh minh họa trong bài (content/anh-minh-hoa.json)
+for (const p of posts) p.body = illustrations.inject(p.body, p.slug, 'vi');
 const solutions = read('giai-phap');
 const policies = require('./policies');
 // Policy pages: Markdown in content/chinh-sach/ (falls back to the old content/pages.json entries).

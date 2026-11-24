@@ -116,7 +116,7 @@ const articles = files
       updated: meta.updated || vi.updated || meta.date,
       cover: vi.cover || null,
       ogImage: vi.ogImage || null,
-      body: html,
+      body: require('./illustrations').inject(html, slug, 'en'),
       toc,
       faq,
       words,

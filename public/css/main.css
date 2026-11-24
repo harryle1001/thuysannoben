@@ -2222,3 +2222,10 @@ html.has-sunrise body { background: transparent; }
 }
 /* liên kết tới trang xoay 360° dưới khung ảnh sản phẩm */
 .product__spin360{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;font-size:14px;color:var(--brand,#14479a);text-decoration:underline;text-underline-offset:3px}
+
+/* Ảnh minh họa trong bài (src/illustrations.js) */
+.prose .art-fig { margin: var(--space-5, 26px) 0; }
+.prose .art-fig img { display: block; width: 100%; height: auto; margin: 0; border-radius: var(--radius-m); background: var(--line); }
+.prose .art-fig figcaption { margin-top: 10px; font-size: 0.9rem; line-height: 1.618; color: var(--muted, #5b6670); }
+.prose .art-fig__credit { display: block; font-size: 0.8rem; opacity: 0.85; }
+.prose .art-fig__credit a { color: inherit; }

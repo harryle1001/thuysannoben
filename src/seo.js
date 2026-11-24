@@ -70,7 +70,7 @@ function article(post) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': abs(post.url) },
     headline: post.title.slice(0, 110),
     description: post.description,
-    image: [abs(post.ogImage || (post.cover && post.cover.src))].filter(Boolean),
+    image: [abs(post.ogImage || (post.cover && post.cover.src)), ...require('./illustrations').imagesFor(post.slug).map((i) => abs(`/images/minh-hoa/${i.id}-1600.webp`))].filter(Boolean),
     datePublished: post.date,
     dateModified: post.updated || post.date,
     inLanguage: 'vi-VN',

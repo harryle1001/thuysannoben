@@ -1,0 +1,1091 @@
+{
+ "images": {
+  "ao-quat-nuoc-bot": {
+   "alt": "Quạt nước chạy trong ao nuôi tôm, tạo dòng chảy và lớp bọt trên mặt ao",
+   "alt_en": "A paddlewheel aerator running in a shrimp pond, creating current and surface foam",
+   "author": "ALLJET",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Efficiency_of_FORJET_paddlewheel_aerator_01.JPG",
+   "file": "Efficiency of FORJET paddlewheel aerator 01.JPG",
+   "w": 3840,
+   "h": 2880
+  },
+  "quat-nuoc-giua-ao": {
+   "alt": "Dàn quạt nước đặt giữa ao nuôi tôm đất",
+   "alt_en": "Paddlewheel aerators in the middle of an earthen shrimp pond",
+   "author": "iMahesh",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Aeration_system_in_a_Aqua_Pond%2C_Eluru.jpg",
+   "file": "Aeration system in a Aqua Pond, Eluru.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "quat-nuoc-sat-bo": {
+   "alt": "Quạt nước đặt sát bờ ao nuôi tôm",
+   "alt_en": "A paddlewheel aerator near the bank of a shrimp pond",
+   "author": "iMahesh",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Aeration_systems_in_an_Aqua_pond_near_Eluru.jpg",
+   "file": "Aeration systems in an Aqua pond near Eluru.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "quat-guong-tung-nuoc": {
+   "alt": "Quạt guồng đánh tung nước để tăng oxy hòa tan",
+   "alt_en": "A paddle aerator splashing water to raise dissolved oxygen",
+   "author": "USFWS Mountain Prairie",
+   "license": "Public domain",
+   "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Paddle_aerator_%2851252351275%29.jpg",
+   "file": "Paddle aerator (51252351275).jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "ao-nuoi-ven-bien": {
+   "alt": "Các ao nuôi thủy sản ven biển có quạt nước",
+   "alt_en": "Coastal aquaculture ponds with aerators",
+   "author": "Norbert Nagel",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Aquaculture_ponds_with_an_aerator_at_Marim_near_Olh%C3%A3o_-_Portugal_-_2015-08-08.jpg",
+   "file": "Aquaculture ponds with an aerator at Marim near Olhão - Portugal - 2015-08-08.jpg",
+   "w": 2215,
+   "h": 1246
+  },
+  "tom-the-trong-be": {
+   "alt": "Tôm thẻ chân trắng trong bể nuôi",
+   "alt_en": "Whiteleg shrimp in a holding tank",
+   "author": "Sadopaul",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Litopenaeus_vannamei_in_Muan_in_2026_%281%29.jpg",
+   "file": "Litopenaeus vannamei in Muan in 2026 (1).jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-the-can-canh": {
+   "alt": "Tôm thẻ chân trắng tươi chụp cận cảnh",
+   "alt_en": "Close-up of fresh whiteleg shrimp",
+   "author": "Fotokannan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific_white_shrimp.jpg",
+   "file": "Pacific white shrimp.jpg",
+   "w": 3840,
+   "h": 2358
+  },
+  "thau-tom-the": {
+   "alt": "Thau tôm thẻ vừa bắt lên",
+   "alt_en": "A basin of freshly caught whiteleg shrimp",
+   "author": "Judgefloro",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:JfBulacan9141SanPascualHagonoyfvf_15.JPG",
+   "file": "JfBulacan9141SanPascualHagonoyfvf 15.JPG",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-the-tren-tay": {
+   "alt": "Kiểm tra tôm thẻ trên tay",
+   "alt_en": "Checking whiteleg shrimp by hand",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:2884Whiteleg_shrimp_in_the_Philippines_textures_07.jpg",
+   "file": "2884Whiteleg shrimp in the Philippines textures 07.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-the-dau-nguc": {
+   "alt": "Phần đầu ngực tôm thẻ, nơi chứa gan tụy",
+   "alt_en": "The cephalothorax of a whiteleg shrimp, where the hepatopancreas sits",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:2884Whiteleg_shrimp_in_the_Philippines_textures_26.jpg",
+   "file": "2884Whiteleg shrimp in the Philippines textures 26.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-the-gan-ruot": {
+   "alt": "Thân tôm thẻ nhìn rõ gan tụy và đường ruột qua vỏ",
+   "alt_en": "A whiteleg shrimp with the hepatopancreas and gut visible through the shell",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:2884Whiteleg_shrimp_in_the_Philippines_textures_20.jpg",
+   "file": "2884Whiteleg shrimp in the Philippines textures 20.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-the-duong-ruot": {
+   "alt": "Đường ruột tôm thẻ nhìn qua vỏ lưng",
+   "alt_en": "The gut line of a whiteleg shrimp seen through the back",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:2884Whiteleg_shrimp_in_the_Philippines_textures_28.jpg",
+   "file": "2884Whiteleg shrimp in the Philippines textures 28.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-su-tom-bac-ngoai-cho": {
+   "alt": "Tôm sú và tôm bạc bày bán ngoài chợ",
+   "alt_en": "Black tiger and white banana prawns on sale at a market",
+   "author": "Pelagic",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Black_tiger_and_white_banana_prawns.jpg",
+   "file": "Black tiger and white banana prawns.jpg",
+   "w": 3777,
+   "h": 2125
+  },
+  "tom-su-nen-trang": {
+   "alt": "Tôm sú (Penaeus monodon) nhìn ngang",
+   "alt_en": "Black tiger shrimp (Penaeus monodon)",
+   "author": "Louisiana Sea Grant",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Mike_the_Tiger_Prawn_08.20.2013_012.jpg",
+   "file": "Mike the Tiger Prawn 08.20.2013 012.jpg",
+   "w": 3840,
+   "h": 2543
+  },
+  "tom-su-trong-be": {
+   "alt": "Tôm sú trong bể kiểm tra",
+   "alt_en": "A black tiger shrimp in an inspection tank",
+   "author": "Louisiana Sea Grant",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Mike_the_Tiger_Prawn_08.20.2013_055.jpg",
+   "file": "Mike the Tiger Prawn 08.20.2013 055.jpg",
+   "w": 3840,
+   "h": 2543
+  },
+  "tom-su-thu-hoach": {
+   "alt": "Tôm sú vừa thu hoạch",
+   "alt_en": "Freshly harvested black tiger shrimp",
+   "author": "Narek75",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Shrimps_75.jpg",
+   "file": "Shrimps 75.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "cai-tao-ao-dat": {
+   "alt": "Người nuôi sửa bờ, cải tạo ao đất",
+   "alt_en": "Farmers repairing banks and renovating an earthen pond",
+   "author": "Stephen Kennedy",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Construction_of_Freshwater_Shrimp_Farm%2C_Pekalongan.jpg",
+   "file": "Construction of Freshwater Shrimp Farm, Pekalongan.jpg",
+   "w": 3840,
+   "h": 2163
+  },
+  "ao-nuoi-co-quat": {
+   "alt": "Ao nuôi có quạt nước và bờ trồng cỏ",
+   "alt_en": "An aquaculture pond with aerators and grassed banks",
+   "author": "Anna Frodesiak",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Fish_farm_in_Hainan_-_01.JPG",
+   "file": "Fish farm in Hainan - 01.JPG",
+   "w": 3840,
+   "h": 2869
+  },
+  "vung-nuoi-tu-tren-cao": {
+   "alt": "Vùng nuôi tôm ven biển nhìn từ vệ tinh",
+   "alt_en": "Coastal shrimp farms seen from a satellite",
+   "author": "Planet Labs, Inc.",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Shrimp_Ponds%2C_Mexico_by_Planet_Labs.jpg",
+   "file": "Shrimp Ponds, Mexico by Planet Labs.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "ao-lot-bat-quang-ngai": {
+   "alt": "Ao nuôi tôm lót bạt trên cát ở Quảng Ngãi",
+   "alt_en": "A lined shrimp pond on sand in Quang Ngai, Vietnam",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:V%C3%B9ng_nu%C3%B4i_t%C3%B4m_tr%C3%AAn_c%C3%A1t-%C4%90%E1%BB%A9c_Minh-M%E1%BB%99_%C4%90%E1%BB%A9c-Qu%E1%BA%A3ng_Ng%C3%A3i_-_panoramio.jpg",
+   "file": "Vùng nuôi tôm trên cát-Đức Minh-Mộ Đức-Quảng Ngãi - panoramio.jpg",
+   "w": 3840,
+   "h": 2868
+  },
+  "thu-hoach-ro-tom": {
+   "alt": "Người nuôi thu hoạch tôm vào rổ",
+   "alt_en": "Farm workers harvesting shrimp into a basket",
+   "author": "Yosep Kondang Lelono",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:YKL_7880.jpg",
+   "file": "YKL 7880.jpg",
+   "w": 3840,
+   "h": 2564
+  },
+  "ao-nuoi-tom-dat": {
+   "alt": "Ao nuôi tôm đất có cây xanh quanh bờ",
+   "alt_en": "An earthen shrimp pond lined with trees",
+   "author": "Ganesh Mohan T",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Prawn_Farming_in_Ulavaipu_Kerala_01.jpg",
+   "file": "Prawn Farming in Ulavaipu Kerala 01.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "ao-tom-chan-doi-phu-yen": {
+   "alt": "Ao nuôi tôm dưới chân đồi ở Phú Yên",
+   "alt_en": "A shrimp pond at the foot of a hill in Phu Yen, Vietnam",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Khu_nu%C3%B4i_t%C3%B4m%2C_c%C3%A1_n%C6%B0%E1%BB%9Bc_l%E1%BB%A3%2C_s%E1%BB%AD_d%E1%BB%A5ng_n%C6%B0%E1%BB%9Bc_ng%E1%BA%A7m_t%E1%BA%A1i_huy%E1%BB%87n_%C4%90%C3%B4ng_H%C3%B2a-Ph%C3%BA_Y%C3%AAn_-_panoramio.jpg",
+   "file": "Khu nuôi tôm, cá nước lợ, sử dụng nước ngầm tại huyện Đông Hòa-Phú Yên - panoramio.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "ao-tom-quat-phu-yen": {
+   "alt": "Ao nuôi tôm có quạt nước ở Phú Yên",
+   "alt_en": "A shrimp pond with aerators in Phu Yen, Vietnam",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Nu%C3%B4i_t%C3%B4m%2C_c%C3%A1_n%C6%B0%E1%BB%9Bc_l%E1%BB%A3_h%E1%BA%A1_l%C6%B0u_s%C3%B4ng_B%C3%A0n_Th%E1%BA%A1ch-Huy%E1%BB%87n_%C4%90%C3%B4ng_H%C3%B2a-Ph%C3%BA_Y%C3%AAn_-_panoramio.jpg",
+   "file": "Nuôi tôm, cá nước lợ hạ lưu sông Bàn Thạch-Huyện Đông Hòa-Phú Yên - panoramio.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "ao-bat-tren-cat-phu-yen": {
+   "alt": "Vùng ao nuôi tôm trên cát ở Phú Yên",
+   "alt_en": "Shrimp ponds on sand in Phu Yen, Vietnam",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Nu%C3%B4i_t%C3%B4m_tr%C3%AAn_c%C3%A1t-Huy%E1%BB%87n_%C4%90%C3%B4ng_H%C3%B2a-Ph%C3%BA_Y%C3%AAn_-_panoramio.jpg",
+   "file": "Nuôi tôm trên cát-Huyện Đông Hòa-Phú Yên - panoramio.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "ao-bat-ong-cap-nuoc": {
+   "alt": "Ao tôm lót bạt với đường ống cấp nước",
+   "alt_en": "A lined shrimp pond with water supply pipes",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Nu%C3%B4i_t%C3%B4m_tr%C3%AAn_c%C3%A1t-Huy%E1%BB%87n_%C4%90%C3%B4ng_H%C3%B2a-Ph%C3%BA_Y%C3%AAn_-_panoramio_%283%29.jpg",
+   "file": "Nuôi tôm trên cát-Huyện Đông Hòa-Phú Yên - panoramio (3).jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "ao-tom-nhieu-quat": {
+   "alt": "Ao nuôi tôm có nhiều dàn quạt nước",
+   "alt_en": "A shrimp pond with several aerator lines",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:V%C3%B9ng_nu%C3%B4i_t%C3%B4m_tr%C3%AAn_c%C3%A1t_x%C3%A3_Tam_Ti%E1%BA%BFn-N%C3%BAi_Th%C3%A0nh-Qu%E1%BA%A3ng_Nam_%28%E1%BA%A2nh_ch%E1%BB%A5p_th%C3%A1ng_11-2015%29_-_panoramio.jpg",
+   "file": "Vùng nuôi tôm trên cát xã Tam Tiến-Núi Thành-Quảng Nam (Ảnh chụp tháng 11-2015) - panoramio.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "ao-tom-canh-nha": {
+   "alt": "Ao nuôi tôm cạnh nhà người nuôi",
+   "alt_en": "A shrimp pond next to the farmer's house",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:V%C3%B9ng_nu%C3%B4i_t%C3%B4m_tr%C3%AAn_c%C3%A1t_x%C3%A3_Tam_Ti%E1%BA%BFn_-_N%C3%BAi_Th%C3%A0nh_-_Qu%E1%BA%A3ng_Nam_-_panoramio.jpg",
+   "file": "Vùng nuôi tôm trên cát xã Tam Tiến - Núi Thành - Quảng Nam - panoramio.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "tom-rung-ngap-man": {
+   "alt": "Vùng nuôi tôm cạnh rừng ngập mặn nhìn từ trên cao",
+   "alt_en": "A shrimp farm beside mangroves seen from above",
+   "author": "Amdadphoto",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Shrimp_Farm_by_the_Mangroves.jpg",
+   "file": "Shrimp Farm by the Mangroves.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "thu-hoach-tom-ven-bien": {
+   "alt": "Thu hoạch tôm ở vùng nuôi ven biển",
+   "alt_en": "Harvesting shrimp on a coastal farm",
+   "author": "Gannu03",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Egrets_foraging_around_shrimp_harvest_along_the_Kerala_coast.jpg",
+   "file": "Egrets foraging around shrimp harvest along the Kerala coast.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "may-cho-an-tu-dong": {
+   "alt": "Châm thức ăn vào máy cho ăn tự động cạnh quạt nước",
+   "alt_en": "Refilling an automatic feeder next to an aerator",
+   "author": "USFWS Mountain Prairie",
+   "license": "Public domain",
+   "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Refilling_an_automatic_fish_feeder_%2849647414778%29.jpg",
+   "file": "Refilling an automatic fish feeder (49647414778).jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "thuc-an-vien": {
+   "alt": "Thức ăn dạng viên trong máy cho ăn",
+   "alt_en": "Feed pellets in a feeder",
+   "author": "USFWS Mountain Prairie",
+   "license": "Public domain",
+   "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Automatic_fish_feeder_%2849623831351%29.jpg",
+   "file": "Automatic fish feeder (49623831351).jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "may-ep-vien-thuc-an": {
+   "alt": "Dây chuyền ép viên thức ăn thủy sản",
+   "alt_en": "An aquafeed pellet extrusion line",
+   "author": "RICHI Machinery",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Floating_Fish_Feed_Extruder_Machine.jpg",
+   "file": "Floating Fish Feed Extruder Machine.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "do-do-trong-secchi": {
+   "alt": "Đo độ trong của nước bằng đĩa Secchi",
+   "alt_en": "Measuring water transparency with a Secchi disk",
+   "author": "U.S. Fish and Wildlife Service (Midwest Region)",
+   "license": "Public domain",
+   "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Turbidity_Testing_%286286377754%29.jpg",
+   "file": "Turbidity Testing (6286377754).jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "may-do-ph-coc": {
+   "alt": "Đo pH mẫu nước bằng máy đo cầm tay",
+   "alt_en": "Measuring the pH of a water sample with a handheld meter",
+   "author": "AgrisR",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:PH_meter_in_a_glass_of_slightly_alkaline_water.jpg",
+   "file": "PH meter in a glass of slightly alkaline water.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "may-do-ph": {
+   "alt": "Máy đo pH cầm tay dùng ngoài hiện trường",
+   "alt_en": "A portable field pH meter",
+   "author": "Hannes Grobe",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Ph-meter_hanna_hg.jpg",
+   "file": "Ph-meter hanna hg.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "kinh-hien-vi-man-hinh": {
+   "alt": "Kính hiển vi nối màn hình để soi mẫu",
+   "alt_en": "A microscope connected to a screen for sample analysis",
+   "author": "Shixart1985",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Microscope_and_computer_display_showing_detailed_analysis.jpg",
+   "file": "Microscope and computer display showing detailed analysis.jpg",
+   "w": 3840,
+   "h": 2555
+  },
+  "soi-kinh-hien-vi": {
+   "alt": "Soi mẫu bằng kính hiển vi",
+   "alt_en": "Examining a sample under a microscope",
+   "author": "Aliva Sahoo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Person_with_Microscope_in_Research.jpg",
+   "file": "Person with Microscope in Research.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "bat-hdpe-ao": {
+   "alt": "Ao được lót bạt chống thấm",
+   "alt_en": "A pond lined with a geomembrane",
+   "author": "Pandu Equator",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Pemasangan_Geomembrane.jpg",
+   "file": "Pemasangan Geomembrane.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "artemia": {
+   "alt": "Artemia, thức ăn tươi sống cho ấu trùng tôm",
+   "alt_en": "Artemia, live feed for shrimp larvae",
+   "author": "Hans Hillewaert",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Artemia_salina_4.jpg",
+   "file": "Artemia salina 4.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "tom-bo-me": {
+   "alt": "Tôm bố mẹ trong vợt ở trại giống",
+   "alt_en": "Shrimp broodstock in a hand net at a hatchery",
+   "author": "IAEA Imagebank",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Shrimp_Broodstock_%2808010634%29_%2846940311272%29.jpg",
+   "file": "Shrimp Broodstock (08010634) (46940311272).jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "au-trung-tom-phong-thi-nghiem": {
+   "alt": "Theo dõi ấu trùng tôm dưới kính hiển vi",
+   "alt_en": "Monitoring shrimp larvae under a microscope",
+   "author": "IAEA Imagebank",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Shrimp_Larvae_Growth_%2808010637%29_%2846940310182%29.jpg",
+   "file": "Shrimp Larvae Growth (08010637) (46940310182).jpg",
+   "w": 3840,
+   "h": 2559
+  },
+  "trai-giong-be-uong": {
+   "alt": "Dãy bể ương trong trại giống",
+   "alt_en": "Rows of rearing tanks in a hatchery",
+   "author": "IAEA Imagebank",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Salmiya_Research_Campus_Laboratory_%2808010631%29_%2832050753257%29.jpg",
+   "file": "Salmiya Research Campus Laboratory (08010631) (32050753257).jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "dia-petri-vi-sinh": {
+   "alt": "Khuẩn lạc vi sinh vật trên đĩa petri",
+   "alt_en": "Microbial colonies on a Petri dish",
+   "author": "Oksana Lastochkina",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B8%D0%B5_%D0%BF%D0%BE%D1%87%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%84%D0%BB%D0%BE%D1%80%D1%8B_%D0%B2_%D1%87%D0%B0%D1%88%D0%BA%D0%B5_%D0%9F%D0%B5%D1%82%D1%80%D0%B8.jpg",
+   "file": "Разнообразие почвенной микрофлоры в чашке Петри.jpg",
+   "w": 3840,
+   "h": 2160
+  },
+  "tau-container-hai-phong": {
+   "alt": "Tàu container ở cảng Hải Phòng",
+   "alt_en": "A container ship at Hai Phong port",
+   "author": "Nathan.cima",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Container_Ship_at_the_Hai_Phong_International_Container_Terminal_01.jpg",
+   "file": "Container Ship at the Hai Phong International Container Terminal 01.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "kho-ca-tra": {
+   "alt": "Khô cá tra phơi bán",
+   "alt_en": "Dried pangasius on sale",
+   "author": "Bùi Thụy Đào Nguyên",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Kh%C3%B4_c%C3%A1_tra.jpg",
+   "file": "Khô cá tra.jpg",
+   "w": 3840,
+   "h": 2875
+  },
+  "may-xuc-ao": {
+   "alt": "Máy xúc nạo vét, đắp bờ ao",
+   "alt_en": "An excavator dredging and building pond banks",
+   "author": "USDAgov",
+   "license": "Public domain",
+   "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Construction_%2820191019-NRCS-LSC-0015%29.jpg",
+   "file": "Construction (20191019-NRCS-LSC-0015).jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "biofloc-be-tron": {
+   "alt": "Các bể tròn nuôi theo công nghệ biofloc",
+   "alt_en": "Round tanks in a biofloc system",
+   "author": "M Joko Apriyo Putro",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Biofloc_Tilapia_Harvest.jpg",
+   "file": "Biofloc Tilapia Harvest.jpg",
+   "w": 3840,
+   "h": 2560
+  },
+  "he-thong-ras": {
+   "alt": "Bộ lọc trong hệ thống tuần hoàn RAS",
+   "alt_en": "Filters in a recirculating aquaculture system",
+   "author": "Narek75",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Recirculating_Aquaculture_System_1.jpg",
+   "file": "Recirculating Aquaculture System 1.jpg",
+   "w": 3840,
+   "h": 2880
+  },
+  "duong-ong-cap-nuoc-man": {
+   "alt": "Đường ống bơm nước mặn, nước ngọt cho vùng nuôi tôm trên cát",
+   "alt_en": "Pipes supplying seawater and freshwater to sand-based shrimp farms",
+   "author": "Nghiem DangVi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:%C4%90%C6%B0%E1%BB%9Dng_%E1%BB%91ng_b%C6%A1m_n%C6%B0%E1%BB%9Bc_m%E1%BA%B7n_v%C3%A0_n%C6%B0%E1%BB%9Bc_ng%E1%BB%8Dt_v%C3%B9ng_nu%C3%B4i_t%C3%B4m_tr%C3%AAn_c%C3%A1t_x%C3%A3_%C4%90%E1%BB%A9c_Minh-M%E1%BB%99_%C4%90%E1%BB%A9c-Qu%E1%BA%A3ng_Ng%C3%A3i_-_panoramio.jpg",
+   "file": "Đường ống bơm nước mặn và nước ngọt vùng nuôi tôm trên cát xã Đức Minh-Mộ Đức-Quảng Ngãi - panoramio.jpg",
+   "w": 3840,
+   "h": 2868
+  },
+  "container-song-sai-gon": {
+   "alt": "Bốc xếp container bên sông Sài Gòn",
+   "alt_en": "Container handling on the Saigon River",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Saig%C3%B3n%2C_Ciudad_Ho_Chi_Minh%2C_Vietnam%2C_2013-08-14%2C_DD_28.JPG",
+   "file": "Río Saigón, Ciudad Ho Chi Minh, Vietnam, 2013-08-14, DD 28.JPG",
+   "w": 3840,
+   "h": 2227
+  },
+  "tom-thu-hoach-thau": {
+   "alt": "Tôm vừa thu hoạch trong thau",
+   "alt_en": "Freshly harvested shrimp in a basin",
+   "author": "Officialben48",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Tray_of_freshly_harvested_prawns.jpg",
+   "file": "Tray of freshly harvested prawns.jpg",
+   "w": 3840,
+   "h": 2880
+  }
+ },
+ "articles": {
+  "xu-ly-nuoc-thai-bun-thai-ao-nuoi-tom": [
+   "vung-nuoi-tu-tren-cao",
+   "may-xuc-ao",
+   "duong-ong-cap-nuoc-man"
+  ],
+  "nuoi-tom-vu-nghich-mua-lanh-giu-nhiet": [
+   "tom-the-trong-be",
+   "do-do-trong-secchi",
+   "ao-tom-canh-nha"
+  ],
+  "ky-thuat-nuoi-tom-su-ao-dat": [
+   "tom-su-nen-trang",
+   "ao-nuoi-tom-dat",
+   "tom-rung-ngap-man"
+  ],
+  "kiem-tra-tom-bang-kinh-hien-vi-tai-trai": [
+   "kinh-hien-vi-man-hinh",
+   "tom-the-dau-nguc",
+   "tom-the-gan-ruot"
+  ],
+  "chon-va-bao-quan-thuc-an-cong-nghiep-cho-tom": [
+   "thuc-an-vien",
+   "may-cho-an-tu-dong",
+   "tom-the-tren-tay"
+  ],
+  "super-yucca-hap-thu-khi-doc-ao-tom": [
+   "may-do-ph",
+   "ao-tom-chan-doi-phu-yen"
+  ],
+  "sorbest-ho-tro-gan-tom-the": [
+   "tom-the-duong-ruot",
+   "may-ep-vien-thuc-an"
+  ],
+  "oxy-99-oxy-vien-cap-cuu-tom-noi-dau": [
+   "quat-nuoc-giua-ao",
+   "may-do-ph-coc"
+  ],
+  "hepaliver-fs-bo-gan-tom-dang-nuoc": [
+   "tom-the-can-canh",
+   "may-cho-an-tu-dong"
+  ],
+  "gia-tom-nguyen-lieu-thang-11-2026": [
+   "tau-container-hai-phong",
+   "thu-hoach-ro-tom"
+  ],
+  "g7-noben-ho-tro-gan-tuy-tom": [
+   "thau-tom-the",
+   "thuc-an-vien"
+  ],
+  "edta-99-khu-kim-loai-nang-phen-ao-tom": [
+   "cai-tao-ao-dat",
+   "ao-tom-quat-phu-yen"
+  ],
+  "caphote-khoang-tron-cung-vo-tom": [
+   "tom-the-gan-ruot",
+   "thu-hoach-tom-ven-bien"
+  ],
+  "ben-iq-iodine-sat-trung-nuoc-ao-nuoi": [
+   "soi-kinh-hien-vi",
+   "tom-the-dau-nguc"
+  ],
+  "aqualac-fs-men-vi-sinh-duong-ruot-tom": [
+   "tom-the-duong-ruot",
+   "may-ep-vien-thuc-an"
+  ],
+  "aqua-bac-vi-sinh-xu-ly-day-ao": [
+   "ao-quat-nuoc-bot",
+   "ao-bat-tren-cat-phu-yen"
+  ],
+  "xuat-khau-ca-tra-10-thang-2026": [
+   "container-song-sai-gon",
+   "tom-su-tom-bac-ngoai-cho"
+  ],
+  "tuyen-dai-ly-thuoc-thuy-san-noben-chinh-sach-ho-tro": [
+   "ao-tom-nhieu-quat",
+   "may-cho-an-tu-dong"
+  ],
+  "tom-hum-xuat-khau-2026": [
+   "kho-ca-tra",
+   "tom-thu-hoach-thau"
+  ],
+  "thue-chong-ban-pha-gia-tom-por20-2026": [
+   "tau-container-hai-phong",
+   "tom-su-thu-hoach"
+  ],
+  "sai-lam-thuong-gap-khi-mo-cua-hang-thuoc-thuy-san": [
+   "ao-tom-canh-nha",
+   "thuc-an-vien"
+  ],
+  "nhap-thuoc-thuy-san-gia-nha-may-hay-qua-trung-gian": [
+   "thau-tom-the",
+   "may-ep-vien-thuc-an"
+  ],
+  "mo-dai-ly-thuoc-thuy-san-can-gi-huong-dan-tung-buoc": [
+   "ao-tom-nhieu-quat",
+   "may-cho-an-tu-dong"
+  ],
+  "kinh-doanh-thuoc-thuy-san-theo-vung-nuoi-tom-ca": [
+   "ao-tom-canh-nha",
+   "thuc-an-vien"
+  ],
+  "ho-tro-dai-ly-thuoc-thuy-san-website-thiet-ke-dong-goi-gia-cong": [
+   "ao-lot-bat-quang-ngai",
+   "ao-bat-ong-cap-nuoc"
+  ],
+  "gia-cong-thuoc-thuy-san-nhan-rieng-cho-dai-ly": [
+   "thau-tom-the",
+   "may-ep-vien-thuc-an"
+  ],
+  "dong-goi-thuoc-thuy-san-quy-cach-chai-tui-bao-nhan": [
+   "ao-tom-nhieu-quat",
+   "may-cho-an-tu-dong"
+  ],
+  "cau-hoi-thuong-gap-khi-lam-dai-ly-thuoc-thuy-san": [
+   "tau-container-hai-phong",
+   "thuc-an-vien"
+  ],
+  "ban-thuoc-thuy-san-online-website-zalo-facebook-cho-dai-ly": [
+   "ao-tom-canh-nha",
+   "may-ep-vien-thuc-an"
+  ],
+  "vong-doi-sinh-hoc-tom-the-chan-trang": [
+   "tom-bo-me",
+   "tom-the-tren-tay"
+  ],
+  "virus-div1-anh-sang-tren-tom": [
+   "dia-petri-vi-sinh",
+   "tom-the-can-canh"
+  ],
+  "vi-khuan-vibrio-trong-ao-tom": [
+   "au-trung-tom-phong-thi-nghiem",
+   "tom-the-trong-be"
+  ],
+  "tom-cut-rau-mon-duoi-hoai-tu-phu-bo": [
+   "soi-kinh-hien-vi",
+   "tom-the-gan-ruot"
+  ],
+  "tom-chet-rai-rac-day-ao-nguyen-nhan-cach-xu-ly": [
+   "ao-tom-chan-doi-phu-yen",
+   "tom-the-dau-nguc"
+  ],
+  "thao-duoc-tu-nhien-cho-tom-toi-gung-dang": [
+   "tom-the-duong-ruot",
+   "may-cho-an-tu-dong"
+  ],
+  "tao-co-loi-tao-co-hai-trong-ao-tom": [
+   "may-do-ph",
+   "ao-tom-quat-phu-yen"
+  ],
+  "tang-de-khang-tu-nhien-cho-tom-beta-glucan-vitamin": [
+   "tom-the-tren-tay",
+   "thuc-an-vien"
+  ],
+  "qua-trinh-lot-xac-cua-tom": [
+   "tom-the-can-canh",
+   "thu-hoach-ro-tom"
+  ],
+  "phoi-ao-luan-canh-nghi-ao-giua-cac-vu": [
+   "bat-hdpe-ao",
+   "ao-bat-tren-cat-phu-yen"
+  ],
+  "oxy-hoa-tan-trong-ao-tom": [
+   "quat-nuoc-sat-bo",
+   "may-do-ph-coc"
+  ],
+  "nuoi-tom-quang-canh-cai-tien-mat-do-thap": [
+   "ao-nuoi-co-quat",
+   "ao-lot-bat-quang-ngai"
+  ],
+  "nuoi-tom-huu-co-giam-hoa-chat-chung-nhan": [
+   "ao-nuoi-ven-bien",
+   "ao-bat-ong-cap-nuoc"
+  ],
+  "nuoi-tom-cong-nghe-biofloc": [
+   "biofloc-be-tron",
+   "bat-hdpe-ao"
+  ],
+  "nuoi-ghep-tom-voi-ca-ro-phi-ca-doi": [
+   "ao-nuoi-tom-dat",
+   "duong-ong-cap-nuoc-man"
+  ],
+  "mo-hinh-tom-rung-sinh-thai": [
+   "ao-nuoi-co-quat",
+   "ao-tom-chan-doi-phu-yen"
+  ],
+  "mo-hinh-tom-lua-ben-vung": [
+   "tom-rung-ngap-man",
+   "ao-tom-quat-phu-yen"
+  ],
+  "ky-thuat-xi-phong-day-ao-bat": [
+   "ao-lot-bat-quang-ngai",
+   "ao-bat-tren-cat-phu-yen"
+  ],
+  "ky-thuat-uong-tom-giong-ao-ve": [
+   "trai-giong-be-uong",
+   "tom-the-trong-be"
+  ],
+  "ky-thuat-uoc-luong-so-luong-sinh-khoi-tom-trong-ao": [
+   "thu-hoach-tom-ven-bien",
+   "ao-bat-ong-cap-nuoc"
+  ],
+  "ky-thuat-thu-hoach-bao-quan-tom-sau-thu-hoach": [
+   "tom-thu-hoach-thau",
+   "duong-ong-cap-nuoc-man"
+  ],
+  "ky-thuat-thiet-ke-ao-bat-ho-xa-day-trung-tam": [
+   "bat-hdpe-ao",
+   "ao-tom-chan-doi-phu-yen"
+  ],
+  "ky-thuat-san-tom-tia-tom-thu-tia": [
+   "tom-su-thu-hoach",
+   "ao-tom-quat-phu-yen"
+  ],
+  "ky-thuat-nuoi-tom-trong-nha-mang-nha-kinh": [
+   "he-thong-ras",
+   "ao-lot-bat-quang-ngai"
+  ],
+  "ky-thuat-nuoi-tom-2-giai-doan": [
+   "biofloc-be-tron",
+   "ao-bat-ong-cap-nuoc"
+  ],
+  "ky-thuat-kiem-tra-nha-sang-an-hang-ngay": [
+   "may-ep-vien-thuc-an",
+   "tom-the-gan-ruot"
+  ],
+  "ky-thuat-ghi-chep-nhat-ky-ao-nuoi-tom": [
+   "ao-bat-tren-cat-phu-yen",
+   "do-do-trong-secchi"
+  ],
+  "he-thong-tuan-hoan-ras-loc-sinh-hoc-ao-tom": [
+   "container-song-sai-gon",
+   "thu-hoach-ro-tom"
+  ],
+  "he-so-thuc-an-fcr-la-gi-cach-tinh": [
+   "may-cho-an-tu-dong",
+   "tom-the-dau-nguc"
+  ],
+  "gan-tuy-tom-cau-tao-chuc-nang-cach-kiem-tra": [
+   "tom-the-duong-ruot",
+   "thuc-an-vien"
+  ],
+  "do-man-va-anh-huong-den-tom-the": [
+   "ao-quat-nuoc-bot",
+   "ao-tom-nhieu-quat"
+  ],
+  "bun-day-ao-tom-chat-huu-co-va-khi-doc": [
+   "cai-tao-ao-dat",
+   "duong-ong-cap-nuoc-man"
+  ],
+  "benh-taura-tsv-tren-tom": [
+   "kinh-hien-vi-man-hinh",
+   "tom-the-tren-tay"
+  ],
+  "benh-phat-sang-vibrio-o-tom-giong": [
+   "dia-petri-vi-sinh",
+   "tom-the-can-canh"
+  ],
+  "benh-ihhnv-tom-coi-coc-di-hinh": [
+   "au-trung-tom-phong-thi-nghiem",
+   "tom-the-trong-be"
+  ],
+  "benh-hoai-tu-gan-tuy-nhp-tren-tom": [
+   "soi-kinh-hien-vi",
+   "thau-tom-the"
+  ],
+  "benh-dau-vang-yhv-tren-tom": [
+   "kinh-hien-vi-man-hinh",
+   "tom-the-gan-ruot"
+  ],
+  "bacillus-lactobacillus-vi-sinh-nao-cho-ao-tom": [
+   "may-do-ph",
+   "ao-tom-chan-doi-phu-yen"
+  ],
+  "ao-lang-sinh-hoc-ca-rong-loc-nuoc-cap": [
+   "vung-nuoi-tu-tren-cao",
+   "ao-tom-quat-phu-yen"
+  ],
+  "an-toan-sinh-hoc-ao-lang-ao-chua-phong-benh-tom": [
+   "dia-petri-vi-sinh",
+   "tom-the-dau-nguc"
+  ],
+  "xuat-khau-tom-10-thang-2026": [
+   "tom-su-tom-bac-ngoai-cho",
+   "thu-hoach-tom-ven-bien"
+  ],
+  "xet-nghiem-pcr-ehp-diet-bao-tu-khi-cai-tao-ao": [
+   "au-trung-tom-phong-thi-nghiem",
+   "tom-the-duong-ruot"
+  ],
+  "tao-day-lab-lab-rong-nhot-ao-tom-cach-xu-ly": [
+   "may-do-ph-coc",
+   "ao-bat-tren-cat-phu-yen"
+  ],
+  "phan-biet-nguyen-nhan-hoi-chung-phan-trang-wfs-va-xet-nghiem": [
+   "soi-kinh-hien-vi",
+   "tom-the-tren-tay"
+  ],
+  "nuoi-tom-mua-nang-nong-nhiet-do-cao": [
+   "ao-tom-canh-nha",
+   "tom-the-can-canh"
+  ],
+  "nuoi-tom-mua-mua-phong-soc-ph-do-kiem-tao-tan": [
+   "do-do-trong-secchi",
+   "ao-lot-bat-quang-ngai"
+  ],
+  "nh3-no2-ao-bat-chu-trinh-nitrat-hoa-ph-nhiet-do": [
+   "bat-hdpe-ao",
+   "ao-tom-nhieu-quat"
+  ],
+  "khoang-cho-tom-nuoi-do-man-thap-ty-le-mg-ca-kali": [
+   "tom-the-trong-be",
+   "tom-thu-hoach-thau"
+  ],
+  "chi-phi-loi-nhuan-vu-tom-the-ao-bat": [
+   "ao-bat-ong-cap-nuoc",
+   "duong-ong-cap-nuoc-man"
+  ],
+  "cach-tha-tom-giong-thuan-do-man-nhiet-do": [
+   "artemia",
+   "thau-tom-the"
+  ],
+  "cach-do-va-doc-chi-tieu-nuoc-ao-tom": [
+   "ao-quat-nuoc-bot",
+   "ao-tom-chan-doi-phu-yen"
+  ],
+  "cach-chon-tom-giong-the-tot-kiem-tra-pcr": [
+   "kinh-hien-vi-man-hinh",
+   "tom-the-gan-ruot"
+  ],
+  "bo-tri-quat-nuoc-oxy-hoa-tan-ao-tom": [
+   "quat-guong-tung-nuoc",
+   "may-do-ph"
+  ],
+  "benh-dom-trang-khi-troi-lanh-giao-mua-va-cach-bao-dich": [
+   "dia-petri-vi-sinh",
+   "tom-the-dau-nguc"
+  ],
+  "an-toan-sinh-hoc-phong-ahpnd-30-ngay-dau-tha-tom": [
+   "tom-bo-me",
+   "tom-the-duong-ruot"
+  ],
+  "zeolite-va-yucca-cho-ao-tom-cach-dung": [
+   "may-do-ph-coc",
+   "ao-tom-quat-phu-yen"
+  ],
+  "vitamin-c-cho-tom-chong-soc-tang-de-khang": [
+   "tom-the-tren-tay",
+   "may-ep-vien-thuc-an"
+  ],
+  "tom-cham-lon-coi-lech-co-cach-khac-phuc": [
+   "may-cho-an-tu-dong",
+   "tom-the-can-canh"
+  ],
+  "tom-bi-trong-ruot-dut-khuc-ruot-cach-xu-ly": [
+   "tom-the-trong-be",
+   "thuc-an-vien"
+  ],
+  "tom-bi-teo-gan-gan-trang-cach-xu-ly": [
+   "thau-tom-the",
+   "may-ep-vien-thuc-an"
+  ],
+  "men-vi-sinh-cho-tom-cach-chon-va-su-dung": [
+   "tom-the-gan-ruot",
+   "may-cho-an-tu-dong"
+  ],
+  "tom-bi-xanh-vo-xanh-da-troi-nguyen-nhan": [
+   "tom-the-dau-nguc",
+   "tom-su-thu-hoach"
+  ],
+  "tom-bi-nam-nam-dong-tien-ao-bat": [
+   "au-trung-tom-phong-thi-nghiem",
+   "tom-the-duong-ruot"
+  ],
+  "tom-bi-do-than-nguyen-nhan-cach-xu-ly": [
+   "soi-kinh-hien-vi",
+   "tom-the-tren-tay"
+  ],
+  "cach-danh-khoang-cho-tom-dung-thoi-diem-lieu-luong": [
+   "tom-the-can-canh",
+   "thu-hoach-ro-tom"
+  ],
+  "ao-tom-nhieu-bot-bot-kho-tan-cach-xu-ly": [
+   "do-do-trong-secchi",
+   "ao-bat-tren-cat-phu-yen"
+  ],
+  "ao-tom-bi-sup-tao-rot-tao-cach-xu-ly": [
+   "ao-quat-nuoc-bot",
+   "ao-tom-canh-nha"
+  ],
+  "ao-tom-bi-phen-dau-hieu-cach-xu-ly": [
+   "may-xuc-ao",
+   "ao-lot-bat-quang-ngai"
+  ],
+  "go-the-vang-iuu-2026": [
+   "kho-ca-tra",
+   "thu-hoach-tom-ven-bien"
+  ],
+  "ky-thuat-nuoi-tom-the-ao-lot-bat-mat-do-cao": [
+   "bat-hdpe-ao",
+   "ao-tom-nhieu-quat"
+  ],
+  "xuat-khau-thuy-san-10-thang-2026": [
+   "container-song-sai-gon",
+   "tom-thu-hoach-thau"
+  ],
+  "lich-cham-soc-tom-the-theo-ngay-tuoi": [
+   "ao-bat-ong-cap-nuoc",
+   "may-do-ph"
+  ],
+  "quan-ly-thuc-an-cho-tom-an-dung-cach": [
+   "thuc-an-vien",
+   "tom-the-trong-be"
+  ],
+  "cach-u-va-su-dung-vi-sinh-cho-ao-tom": [
+   "may-do-ph-coc",
+   "duong-ong-cap-nuoc-man"
+  ],
+  "xu-ly-tao-doc-tao-lam-ao-nuoi-tom": [
+   "do-do-trong-secchi",
+   "ao-tom-chan-doi-phu-yen"
+  ],
+  "mmpa-my-thuy-san-viet-nam-2026": [
+   "tom-su-tom-bac-ngoai-cho",
+   "tom-su-thu-hoach"
+  ],
+  "cach-gay-mau-nuoc-ao-nuoi-tom": [
+   "ao-quat-nuoc-bot",
+   "ao-tom-quat-phu-yen"
+  ],
+  "quan-ly-ph-do-kiem-ao-nuoi-tom": [
+   "may-do-ph",
+   "ao-bat-tren-cat-phu-yen"
+  ],
+  "xu-ly-khi-doc-nh3-no2-h2s-ao-nuoi-tom": [
+   "may-do-ph-coc",
+   "ao-tom-canh-nha"
+  ],
+  "tom-noi-dau-thieu-oxy-cach-xu-ly": [
+   "quat-nuoc-giua-ao",
+   "do-do-trong-secchi"
+  ],
+  "benh-cong-than-duc-co-tren-tom": [
+   "kinh-hien-vi-man-hinh",
+   "thau-tom-the"
+  ],
+  "tom-mem-vo-cham-lot-nguyen-nhan-cach-xu-ly": [
+   "tom-the-gan-ruot",
+   "thu-hoach-ro-tom"
+  ],
+  "dich-benh-tom-nuoc-lo-2026": [
+   "kho-ca-tra",
+   "thu-hoach-tom-ven-bien"
+  ],
+  "benh-den-mang-vang-mang-tren-tom": [
+   "dia-petri-vi-sinh",
+   "tom-the-dau-nguc"
+  ],
+  "benh-vi-bao-tu-trung-ehp-tren-tom": [
+   "au-trung-tom-phong-thi-nghiem",
+   "tom-the-duong-ruot"
+  ],
+  "benh-dom-trang-wssv-tren-tom": [
+   "soi-kinh-hien-vi",
+   "tom-the-tren-tay"
+  ],
+  "benh-hoai-tu-gan-tuy-cap-ems-tren-tom": [
+   "kinh-hien-vi-man-hinh",
+   "tom-the-can-canh"
+  ],
+  "benh-phan-trang-tren-tom-the": [
+   "dia-petri-vi-sinh",
+   "tom-the-trong-be"
+  ],
+  "quy-trinh-cai-tao-ao-chuan-bi-tha-tom-giong": [
+   "trai-giong-be-uong",
+   "thau-tom-the"
+  ],
+  "thong-tu-16-2026-quan-ly-giong-thuc-an-thuy-san": [
+   "tau-container-hai-phong",
+   "tom-thu-hoach-thau"
+  ],
+  "benh-dong-rong-hay-mang-bam": [
+   "au-trung-tom-phong-thi-nghiem",
+   "tom-the-gan-ruot"
+  ],
+  "mot-so-benh-thuong-gap-tren-tom-the": [
+   "soi-kinh-hien-vi",
+   "tom-the-dau-nguc"
+  ],
+  "su-dung-thao-duoc-tu-nhien-an-toan-sinh-hoc-de-phong-va-tri-hieu-qua-benh-gan-chet-som-chet-tap-me": [
+   "kinh-hien-vi-man-hinh",
+   "tom-the-duong-ruot"
+  ],
+  "benh-dom-den-tren-tom-the": [
+   "dia-petri-vi-sinh",
+   "tom-the-tren-tay"
+  ],
+  "chuyen-tu-van-gia-cong-hang-thanh-pham-ban-thanh-pham-huong-dan-thu-tuc-cap-ma-so-hchq-san-pham": [
+   "ao-quat-nuoc-bot",
+   "ao-lot-bat-quang-ngai"
+  ],
+  "khoang-tang-trong-luong-khi-thu-hoach": [
+   "tom-the-can-canh",
+   "tom-su-thu-hoach"
+  ],
+  "chung-nhan-san-pham-thuc-an-thuy-san-thuc-an-bo-sung": [
+   "may-ep-vien-thuc-an",
+   "tom-the-trong-be"
+  ],
+  "tong-quan-ve-cong-ty": [
+   "ao-tom-nhieu-quat",
+   "thau-tom-the"
+  ]
+ }
+}
