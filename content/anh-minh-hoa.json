@@ -1086,6 +1086,46 @@
   "tong-quan-ve-cong-ty": [
    "ao-tom-nhieu-quat",
    "thau-tom-the"
+  ],
+  "mat-dien-ao-tom-du-phong-oxy-may-phat": [
+   "ao-tom-nhieu-quat",
+   "quat-guong-tung-nuoc"
+  ],
+  "cac-loai-voi-cho-ao-tom-cach-chon-dung": [
+   "cai-tao-ao-dat",
+   "may-do-ph"
+  ],
+  "cach-tinh-the-tich-ao-va-lieu-thuoc-che-pham": [
+   "ao-lot-bat-quang-ngai",
+   "ao-nuoi-tom-dat"
+  ],
+  "phoi-hop-vi-sinh-voi-sat-trung-cat-tao-cach-nhau-bao-lau": [
+   "dia-petri-vi-sinh",
+   "ao-quat-nuoc-bot"
+  ],
+  "thay-nuoc-cap-nuoc-ao-tom-dung-cach": [
+   "duong-ong-cap-nuoc-man",
+   "ao-bat-ong-cap-nuoc"
+  ],
+  "cach-tat-thuoc-che-pham-xuong-ao-tom-an-toan": [
+   "quat-nuoc-sat-bo",
+   "ao-tom-quat-phu-yen"
+  ],
+  "bao-quan-thuoc-che-pham-thuy-san-tai-trai": [
+   "ao-tom-canh-nha",
+   "thuc-an-vien"
+  ],
+  "nuoi-tom-bang-nuoc-gieng-khoan-nuoc-ngam": [
+   "ao-tom-chan-doi-phu-yen",
+   "may-do-ph-coc"
+  ],
+  "cach-tron-che-pham-vao-thuc-an-cho-tom": [
+   "thuc-an-vien",
+   "may-cho-an-tu-dong"
+  ],
+  "tom-giam-an-bo-an-dot-ngot-nguyen-nhan": [
+   "tom-the-tren-tay",
+   "tom-the-gan-ruot"
   ]
  }
 }
