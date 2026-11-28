@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="116mm" height="183.98mm" viewBox="-3 -3 116 183.98" data-trim="110 177.98" data-tran-le="3" data-an-toan="4.82">
-<title>Nhãn PROZYME – Túi / gói / hũ 110×177.98 mm</title>
+<title>Nhãn PROZYM – Túi / gói / hũ 110×177.98 mm</title>
 <desc>Noben · nhãn chỉnh sửa được. Kích thước xén 110×177.98 mm, tràn lề 3 mm mỗi cạnh, lề an toàn 4.82 mm. Phông: Be Vietnam Pro 400/600, Playfair Display 800. Sinh bởi scripts/build-labels.js.</desc>
 <defs><clipPath id="nb-trang-giua"><rect x="0" y="44.36" width="110" height="117.29"/></clipPath></defs>
 <g id="nen" inkscape:groupmode="layer" inkscape:label="nen">
@@ -30,7 +30,7 @@
 </g>
 <g id="ten-san-pham" inkscape:groupmode="layer" inkscape:label="ten-san-pham" data-khung="4.82 44.36 100.36 34.9">
 <text font-family="'Be Vietnam Pro SemiBold', 'Be Vietnam Pro', sans-serif" font-weight="600" font-size="2.2" fill="#9a5a00" text-anchor="middle" letter-spacing="0.26"><tspan x="55" y="49.19">THỨC ĂN BỔ SUNG</tspan></text>
-<text font-family="'Playfair Display ExtraBold', 'Playfair Display', serif" font-weight="800" font-size="10.68" fill="#0b2347" text-anchor="middle"><tspan x="55" y="64.86">PROZYME</tspan></text>
+<text font-family="'Playfair Display ExtraBold', 'Playfair Display', serif" font-weight="800" font-size="10.68" fill="#0b2347" text-anchor="middle"><tspan x="55" y="64.86">PROZYM</tspan></text>
 <text font-family="'Be Vietnam Pro SemiBold', 'Be Vietnam Pro', sans-serif" font-weight="600" font-size="2.64" fill="#9a5a00" text-anchor="middle"><tspan x="55" y="72.56">Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn</tspan></text>
 </g>
 <g id="cong-dung" inkscape:groupmode="layer" inkscape:label="cong-dung" data-khung="4.82 79.25 47.61 31.67">

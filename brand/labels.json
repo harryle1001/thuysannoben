@@ -1110,7 +1110,7 @@
       "slug": "super-cut-algae",
       "nhom": "sinh-hoc",
       "bao_bi": "tui",
-      "ten": "SUPER CUT ALGAE",
+      "ten": "SUPER CUT ALGA",
       "phu_de": "Hỗ trợ cắt tảo, giảm tảo trong nước ao nuôi thủy sản",
       "nhan_phu": [
         "Màu nước",
@@ -1153,7 +1153,7 @@
       "slug": "super-oxy-02",
       "nhom": "sinh-hoc",
       "bao_bi": "xo",
-      "ten": "SUPER OXY 02",
+      "ten": "SUPER OXY - O2",
       "phu_de": "Cung cấp nhanh oxy cho ao nuôi",
       "nhan_phu": [
         "Oxy, sốc"
@@ -1315,7 +1315,7 @@
       "slug": "yucca-vs-zeo",
       "nhom": "sinh-hoc",
       "bao_bi": "xo",
-      "ten": "YUCCA VS ZEO",
+      "ten": "YUCCA VS ZEO NEW",
       "phu_de": "Làm sạch đáy ao và nguồn nước ao nuôi, hấp thụ nhanh khí độc, cải tạo môi trường ao nuôi",
       "nhan_phu": [
         "Khí độc",
@@ -1433,7 +1433,7 @@
       "slug": "down-max-ha-phen",
       "nhom": "khoang-chat",
       "bao_bi": "tui",
-      "ten": "DOWN MAX",
+      "ten": "DOWN MAX NEW",
       "phu_de": "Bổ sung khoáng chất cần thiết vào môi trường ao nuôi, giúp tôm lột xác và tạo vỏ nhanh hơn",
       "nhan_phu": [
         "Khí độc",
@@ -1746,7 +1746,7 @@
       "slug": "vita-c-tat",
       "nhom": "khoang-chat",
       "bao_bi": "xo",
-      "ten": "VITA C TẠT",
+      "ten": "VITA C TAT NEW",
       "phu_de": "Vitaminc tạt xuống ao, chống sốc giảm stress cho tôm, cá",
       "nhan_phu": [
         "Oxy, sốc",
@@ -2115,7 +2115,7 @@
       "slug": "beta-13-16-glucan",
       "nhom": "thuc-an-bo-sung",
       "bao_bi": "tui",
-      "ten": "BETA 1.3",
+      "ten": "BETA 1,3-1,6 GLUCAN",
       "phu_de": "Hỗ trợ hoạt hóa hệ miễn dịch tự nhiên của tôm, cá , giúp tôm cá khỏe mạnh , nhanh lớn",
       "nhan_phu": [
         "Tiêu hóa"
@@ -2687,7 +2687,7 @@
       "slug": "mega-cid",
       "nhom": "thuc-an-bo-sung",
       "bao_bi": "tui",
-      "ten": "MEGA CID",
+      "ten": "MEGA CID NEW",
       "phu_de": "Bổ sung các acid hữu cơ vào thức ăn cho tôm, cá",
       "nhan_phu": [
         "Gan ruột"
@@ -2771,7 +2771,7 @@
       "slug": "nb-c-sormin",
       "nhom": "thuc-an-bo-sung",
       "bao_bi": "tui",
-      "ten": "NB C SORMIN",
+      "ten": "NB C SORMIN NEW",
       "phu_de": "Chống sốc, giảm stress, tăng sức đề kháng",
       "nhan_phu": [
         "Oxy, sốc",
@@ -2898,7 +2898,7 @@
       "slug": "prozyme",
       "nhom": "thuc-an-bo-sung",
       "bao_bi": "tui",
-      "ten": "PROZYME",
+      "ten": "PROZYM",
       "phu_de": "Bổ sung lợi khuẩn vào thức ăn, giúp tôm cá tiêu hóa và hấp thụ tốt thức ăn",
       "nhan_phu": [
         "Gan ruột",

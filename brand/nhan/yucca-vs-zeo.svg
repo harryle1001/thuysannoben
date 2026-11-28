@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="136mm" height="216.34mm" viewBox="-3 -3 136 216.34" data-trim="130 210.34" data-tran-le="3" data-an-toan="5.69">
-<title>Nhãn YUCCA VS ZEO – Xô / thùng 130×210.34 mm</title>
+<title>Nhãn YUCCA VS ZEO NEW – Xô / thùng 130×210.34 mm</title>
 <desc>Noben · nhãn chỉnh sửa được. Kích thước xén 130×210.34 mm, tràn lề 3 mm mỗi cạnh, lề an toàn 5.69 mm. Phông: Be Vietnam Pro 400/600, Playfair Display 800. Sinh bởi scripts/build-labels.js.</desc>
 <defs><clipPath id="nb-trang-giua"><rect x="0" y="52.42" width="130" height="138.62"/></clipPath></defs>
 <g id="nen" inkscape:groupmode="layer" inkscape:label="nen">
@@ -30,7 +30,7 @@
 </g>
 <g id="ten-san-pham" inkscape:groupmode="layer" inkscape:label="ten-san-pham" data-khung="5.69 52.42 118.61 46.56">
 <text font-family="'Be Vietnam Pro SemiBold', 'Be Vietnam Pro', sans-serif" font-weight="600" font-size="2.6" fill="#1f7a4d" text-anchor="middle" letter-spacing="0.31"><tspan x="65" y="58.47">CHẾ PHẨM SINH HỌC</tspan></text>
-<text font-family="'Playfair Display ExtraBold', 'Playfair Display', serif" font-weight="800" font-size="12.62" fill="#0b2347" text-anchor="middle"><tspan x="65" y="77">YUCCA VS ZEO</tspan></text>
+<text font-family="'Playfair Display ExtraBold', 'Playfair Display', serif" font-weight="800" font-size="12.06" fill="#0b2347" text-anchor="middle"><tspan x="65" y="77">YUCCA VS ZEO NEW</tspan></text>
 <text font-family="'Be Vietnam Pro SemiBold', 'Be Vietnam Pro', sans-serif" font-weight="600" font-size="3.12" fill="#1f7a4d" text-anchor="middle"><tspan x="65" y="86.09">Làm sạch đáy ao và nguồn nước ao nuôi, hấp thụ nhanh khí độc, cải tạo môi</tspan><tspan x="65" y="90.15">trường ao nuôi</tspan></text>
 </g>
 <g id="cong-dung" inkscape:groupmode="layer" inkscape:label="cong-dung" data-khung="5.69 98.98 42.68 32.52">
